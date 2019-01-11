@@ -1,12 +1,17 @@
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes/routes';
+
 
 class App extends Component {
   render() {
-      return (
-        <div className="app">
-            <h1>Heimdal</h1>
-        </div>
-      );
-    }
+    return (
+      <Router>
+        <Routes />
+      </Router>
+    );
+  }
 }
+
 export default App;
