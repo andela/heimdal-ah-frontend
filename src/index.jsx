@@ -1,13 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
 import configureStore from './store/configureStore';
-import App from './App.jsx';
+import Routes from './routes/routes';
 
 const store = configureStore();
 
 render(
   <Provider store={store}>
-    <App />
+    <Routes />
   </Provider>,
   document.getElementById('app')
 );
