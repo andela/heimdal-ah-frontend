@@ -10,7 +10,7 @@
     "test": "nyc jest --coverage",
     "test:watch": "nyc jest --coverage --watchAll",
     "coverage": "npm run coveralls:coverage",
-    "coveralls:coverage": "nyc report --reporter=text-lcov",
+    "coveralls:coverage": "nyc report --reporter=lcov",
     "start": "node index.js"
   },
   "keywords": [],
