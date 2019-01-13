@@ -15,7 +15,7 @@ module.exports = {
   ],
 
   // The directory where Jest should output its coverage files
-  // coverageDirectory: 'coverage-jest',
+  coverageDirectory: 'coverage-jest',
 
   // A list of reporter names that Jest uses when writing coverage reports
   coverageReporters: [
