@@ -24,13 +24,6 @@
       "import/prefer-default-export":0,
       "import/no-extraneous-dependencies":0,
       "no-extraneous-dependencies":0,
-      "react/jsx-filename-extension": [
-        {
-          "extensions": [
-            ".js",
-            ".jsx"
-          ]
-        }
-      ]
+      "react/jsx-filename-extension": [1]
     }
   }
