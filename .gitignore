@@ -4,3 +4,4 @@ coverage-jest/
 dist/
 .nyc_output/
 .github/
+package-lock.json/
