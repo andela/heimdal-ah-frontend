@@ -1,3 +1,4 @@
+
 # Logs
 logs
 *.log
@@ -57,7 +58,6 @@ typings/
 # dotenv environment variables file
 .env
 
-app_data_structure/models/Order.model.js
-app_data_structure/models/Food.model.js
-app_data_structure/controllers/ordersController.js
-app_data_structure/controllers/foodsController.js
+node_modules/
+.DS_Store/
+package-lock.json/
