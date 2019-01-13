@@ -38,7 +38,7 @@ module.exports = {
   },
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  setupFiles: ['<rootDir>/enzyme.config.js'],
+  setupFiles: ['<rootDir>/enzyme.config.js', 'jest-localstorage-mock'],
 
   // The glob patterns Jest uses to detect test files
   testMatch: ['**/__tests__/**/*.js?(x)', '**/?(*.)+(spec|test).js?(x)'],
