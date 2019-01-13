@@ -1,5 +1,6 @@
 import React from 'react';
 import HomepageButton from '../UI/buttons/HomepageButton';
+import Button from '../UI/buttons/Button';
 
 const HomePage = () => (
   <div>
@@ -7,6 +8,7 @@ const HomePage = () => (
         Welcome to the Home page...
       <div>
         <HomepageButton />
+        <Button />
       </div>
     </h2>
   </div>
