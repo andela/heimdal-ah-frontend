@@ -1,7 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Routes from './routes/routes';
+import Routes from './routes/routes.jsx';
 
 
 class App extends Component {

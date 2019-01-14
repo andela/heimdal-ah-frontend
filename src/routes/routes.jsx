@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import LoginPage from '../component/Pages/LoginPage.jsx';
 import Homepage from '../component/Pages/HomePage.jsx';
-import Layout from '../component/Layout/Layout.js';
+import Layout from '../component/Layout/Layout.jsx';
 import NotFound from '../component/Pages/NotFound.jsx';
 
 const Routes = () => (
