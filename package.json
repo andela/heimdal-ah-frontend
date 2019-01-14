@@ -8,8 +8,9 @@
     "start:dev": "webpack-dev-server --config webpack.dev.js",
     "postinstall": "npm run build",
     "test": "nyc jest --coverage",
+    "test:watch": "nyc jest --coverage --watchAll",
     "coverage": "npm run coveralls:coverage",
-    "coveralls:coverage": "nyc report --reporter=text-lcov | coveralls",
+    "coveralls:coverage": "nyc report --reporter=lcov",
     "start": "node index.js"
   },
   "keywords": [],
@@ -22,7 +23,13 @@
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^23.6.0",
+    "raf": "^3.4.1",
+    "react-test-renderer": "^16.7.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
