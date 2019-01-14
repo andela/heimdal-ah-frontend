@@ -65,4 +65,5 @@ dist/
 .nyc_output/
 .github/
 package-lock.json/
+dist/
 
