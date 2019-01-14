@@ -30,7 +30,7 @@ class Glow extends Component {
           onClick={this.handleGlow}
           className={`btn fs-20 btn-default ${isGlowedByUser && 'bg-blue'}`}
         >
-          <i className={`fa fa-lightbulb ${isGlowedByUser ? 'fa-spin' : 'text-primary'}`} />
+          <i className={`far fa-lightbulb ${isGlowedByUser ? 'fa-spin' : 'text-primary'}`} />
           <span> Glow</span>
         </button>
       </div>
