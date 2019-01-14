@@ -19,20 +19,15 @@ class Glow extends Component {
     return (
       <div>
         <div className='glow-text'>
-          <small>
-            {glowCount}
-            <span> Glows.</span>
-          </small>
           {isGlowedByUser && <small> You glowed this article</small>}
         </div>
-        <button
-          type="button"
+        <span
+          className={`glow-btn ${isGlowedByUser ? 'glow-on' : 'glow-off'}`} 
+          role="button"
+          tabIndex={0}
           onClick={this.handleGlow}
-          className={`btn fs-20 btn-default ${isGlowedByUser && 'bg-blue'}`}
-        >
-          <i className={`far fa-lightbulb ${isGlowedByUser ? 'fa-spin' : 'text-primary'}`} />
-          <span> Glow</span>
-        </button>
+          onKeyPress={this.handleGlow}
+        />
       </div>
     );
   }
