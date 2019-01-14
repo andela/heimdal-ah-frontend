@@ -1,3 +1,9 @@
+$default-color: #00b4fa;
+$white-color: #ffffff;
+$btn-google: #f13921;
+$btn-facebook: #2a59a1;
+$btn-most: #606e86;
+
 button {
   &:hover {
     opacity: 0.7;
@@ -12,10 +18,10 @@ button:active {
 }
 
 .btn-signup {
-  background: #606e86;
+  background: $btn-most;
   border-radius: 0.8em;
   box-shadow: 1px 1px rgba(77, 56, 56, 0.2);
-  color: white;
+  color: $white-color;
   cursor: pointer;
   font-family: 'Reem Kufi', sans-serif;
   font-size: 1.2em;
@@ -26,10 +32,10 @@ button:active {
 }
 
 .btn-login {
-  background: #606e86;
+  background: $btn-most;
   border-radius: 0.8em;
   box-shadow: 1px 1px rgba(77, 56, 56, 0.2);
-  color: white;
+  color: $white-color;
   cursor: pointer;
   font-family: 'Reem Kufi', sans-serif;
   font-size: 1.2em;
@@ -40,10 +46,9 @@ button:active {
 }
 
 .btn-follow {
-  color: white;
+  color: $white-color;
   cursor: pointer;
-  background: #00B4fa;
-  border: 0;
+  background: $default-color;
   box-shadow: 2.5px 3.5px rgba(107, 105, 105, 0.8);
   font-family: 'Cardo', serif;
   font-size: 1em;
@@ -55,9 +60,9 @@ button:active {
 }
 
 .btn-tag {
-  color: white;
+  color: $white-color;
   cursor: pointer;
-  background: #606e86;
+  background: $btn-most;
   font-family: 'Ovo', serif;
   font-size: 0.7em;
   padding: 0;
@@ -65,14 +70,13 @@ button:active {
   width: 12%;
   border-radius: 0.3em;
   outline: none;
-  border: 0;
 }
 
 
 .btn-login2 {
-  color: white;
+  color: $white-color;
   cursor: pointer;
-  background: #606e86;
+  background: $btn-most;
   font-family: 'Ovo', serif;
   font-size: 0.7em;
   padding: 0;
@@ -80,14 +84,13 @@ button:active {
   width: 12%;
   border-radius: 0.3em;
   outline: none;
-  border: 0;
 }
 
 
 .btn-signup2  {
-  color: white;
+  color: $white-color;
   cursor: pointer;
-  background: #606e86;
+  background: $btn-most;
   font-family: 'Ovo', serif;
   font-size: 0.7em;
   padding: 0;
@@ -102,7 +105,7 @@ button:active {
   background: transparent;
   border: 1px solid white;
   border-radius: 0.8em;
-  color: white;
+  color: $white-color;
   font-family: 'Reem Kufi', sans-serif;
   font-size: 0.7em;
   height: 32.85;
@@ -113,9 +116,9 @@ button:active {
 }
 
 .btn-publish {
-  background: white;
+  background: $white-color;
   border: 1px solid white;
-  color: #606e86;
+  color: $btn-most;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-weight: bold;
@@ -127,10 +130,10 @@ button:active {
 }
 
 .btn-report {
-  background: #f13921;
+  background: $btn-google;
   border-radius: 1em;
   box-shadow: 1px 2.5px rgba(107, 105, 105, 0.2);
-  color: white;
+  color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
@@ -141,9 +144,8 @@ button:active {
 }
 
 .btn-notifications {
-  background: #606e86;
-  border: 0;  
-  color: white;
+  background: $btn-most;
+  color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
@@ -154,10 +156,10 @@ button:active {
 }
 
 .btn-article {
-  background: #606e86;
+  background: $btn-most;
   border-radius: 15em;
   box-shadow: 1px 1.5px rgba(77, 56, 56, 0.2);   
-  color: white;
+  color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
@@ -168,11 +170,10 @@ button:active {
 }
 
 .btn-profile {
-  background: #606e86;
-  border: 0;
+  background: $btn-most;
   border-radius: 0.5em;
   box-shadow: 3px 3px rgba(77, 56, 56, 0.3); 
-  color: white;
+  color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
@@ -183,11 +184,10 @@ button:active {
 }
 
 .btn-save-profile {
-  background: #606e86;
-  border: 0;
+  background: $btn-most;
   border-radius: 0.5em;
   box-shadow: 3px 3px rgba(77, 56, 56, 0.3); 
-  color: white;
+  color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
@@ -198,11 +198,10 @@ button:active {
 }
 
 .btn-cancel {
-  background: #606e86;
-  border: 0;
+  background: $btn-most;
   border-radius: 0.5em;
   box-shadow: 3px 3px rgba(77, 56, 56, 0.3); 
-  color: white;
+  color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
@@ -213,10 +212,9 @@ button:active {
 }
 
 .btn-edit-profile {
-  background: white;
-  border: 0;
+  background: $white-color;
   box-shadow: 2.5px 4.5px rgba(22, 22, 22, 0.3);
-  color: #606e86;
+  color: $btn-most;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
@@ -228,11 +226,10 @@ button:active {
 }
 
 .btn-reply {
-  border: 0; 
   border-radius: 0.5em;
-  color: white;
+  color: $white-color;
   cursor: pointer;
-  background: #606e86;
+  background: $btn-most;
   font-family: 'Cardo', serif;
   font-size: 0.9em;
   height: 2.5em;
@@ -243,11 +240,10 @@ button:active {
 
 
 .btn-comment {
-  border: 0; 
   border-radius: 0.5em;
-  color: white;
+  color: $white-color;
   cursor: pointer;
-  background: #606e86;
+  background: $btn-most;
   font-family: 'Cardo', serif;
   font-size: 0.9em;
   height: 2.5em;
@@ -258,11 +254,10 @@ button:active {
 
 
 .btn-stories {
-  border: 0; 
   border-radius: 0.5em;
-  color: white;
+  color: $white-color;
   cursor: pointer;
-  background: #606e86;
+  background: $btn-most;
   font-family: 'Cardo', serif;
   font-size: 0.9em;
   height: 2.5em;
@@ -272,10 +267,9 @@ button:active {
 }
 
 .btn-twitter {
-  border: 0;    
-  color: white;
+  color: $white-color;
   cursor: pointer;
-  background: #00B4fa;
+  background: $default-color;
   font-family: 'Cardo', serif;
   font-weight: bold;
   font-size: 0.8em;
@@ -286,9 +280,8 @@ button:active {
 }
 
 .btn-facebook {
-  background: #2a59a1;
-  border: 0;  
-  color: white;
+  background: $btn-facebook;
+  color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 0.8em;
@@ -300,29 +293,27 @@ button:active {
 }
 
 .btn-google {
-  border: 0; 
-  background: #f13921;
-  color: white;
+  background: $btn-google;
+  color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 0.8em;
   font-weight: bold;
   height: 2em;
-  outline: none;   
+  outline: none;
   padding: 5px 20px;
   width: 28%;
 }
 
 .btn-default {
-  color: white;
+  background: $default-color;
+  color: $white-color;
   cursor: pointer;
-  background: #00B4fa;
-  border: 0;
   font-family: 'Cardo', serif;
   font-size: 1em;
   font-weight: bold;
   height: 2.5em;
   outline: none;
   padding: 5px 20px;
-  width: 30%;  
+  width: 30%;
 }

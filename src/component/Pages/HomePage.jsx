@@ -6,7 +6,6 @@ const HomePage = () => (
     <h2 className='lead mt-5'>
       Welcome to the Home page...
       <div>
-        <Button />
         <Button btnType='signup' btnTitle='Signup' />
         <br />
         <br />
