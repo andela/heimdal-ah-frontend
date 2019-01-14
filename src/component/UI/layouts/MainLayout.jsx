@@ -3,7 +3,7 @@ import PropsTypes from 'prop-types';
 import './MainLayout.scss';
 
 const MainLayout = ({ children }) => (
-  <div id="content" className="p-5">
+  <div className="p-5 content">
     {children}
   </div>
 );
