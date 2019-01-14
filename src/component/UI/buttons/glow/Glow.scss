@@ -1,0 +1,32 @@
+.glow-text {
+  font-size: 15px;
+  min-height: 25px
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px;
+  min-height: 35px;
+  max-width: 100%;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  font-family: inherit;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bg-blue {
+  background-color: #2694ee;
+  color: white;
+}
+
+.bg-blue:hover {
+  color: white;
+}
