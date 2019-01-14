@@ -36,6 +36,8 @@
               "document": false
             }
           }
-      ]
+      ],
+      "react/destructuring-assignment": ["always", { "ignoreClassFields": true }],
+      "react/prop-types": [1]
     }
   }
