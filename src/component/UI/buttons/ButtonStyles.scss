@@ -11,6 +11,7 @@ button {
   &:hover {
     opacity: 0.7;
   }
+
 }
 
 button:focus {
@@ -49,9 +50,9 @@ button:active {
 
 .btn-follow {
   background: $default-color;
+  box-shadow: 2.5px 3.5px $shadow3;
   color: $white-color;
   cursor: pointer;
-  box-shadow: 2.5px 3.5px $shadow3;
   font-family: 'Cardo', serif;
   font-size: 1em;
   font-weight: bold;
@@ -62,6 +63,7 @@ button:active {
 
 .btn-tag {
   background: $btn-most;
+  border-radius: 0.3em;
   color: $white-color;
   cursor: pointer;
   font-family: 'Ovo', serif;
@@ -69,11 +71,11 @@ button:active {
   padding: 0;
   height: 2.7em;
   width: 12%;
-  border-radius: 0.3em;
 }
 
 .btn-login2 {
   background: $btn-most;
+  border-radius: 0.3em;
   color: $white-color;
   cursor: pointer;
   font-family: 'Ovo', serif;
@@ -81,7 +83,6 @@ button:active {
   padding: 0;
   height: 2.7em;
   width: 12%;
-  border-radius: 0.3em;
 }
 
 
