@@ -1,0 +1,9 @@
+language:
+  nodejs: 
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm install
+  - npm test
