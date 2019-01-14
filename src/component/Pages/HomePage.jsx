@@ -1,12 +1,12 @@
 import React from 'react';
-// import HomepageButton from '../UI/buttons/HomepageButton';
 import Button from '../UI/buttons/Button';
 
 const HomePage = () => (
   <div>
     <h2 className='lead mt-5'>
-        Welcome to the Home page...
+      Welcome to the Home page...
       <div>
+        <Button />
         <Button btnType='signup' btnTitle='Signup' />
         <br />
         <br />
@@ -43,7 +43,7 @@ const HomePage = () => (
         <br />
         <br />
         <br />
-        <Button btnType='save_profile' btnTitle='Save Profile' />
+        <Button btnType='save-profile' btnTitle='Save Profile' />
         <br />
         <br />
         <br />
@@ -80,7 +80,7 @@ const HomePage = () => (
           <br />
           <br />
           <br />
-          <Button btnType='edit_profile' btnTitle='Edit' />
+          <Button btnType='edit-profile' btnTitle='Edit' />
           <br />
           <br />
           <br />

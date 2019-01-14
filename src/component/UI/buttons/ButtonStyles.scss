@@ -1,224 +1,328 @@
 button {
-    &:hover {
-        opacity: 0.7;
-    }
+  &:hover {
+    opacity: 0.7;
+  }
 }
 button:focus {
-    outline: 0;
+  outline: 0;
 }
 
 button:active {
-    transform: translateY(3px);
+  transform: translateY(3px);
 }
 
-.btn-signup-login  {
-    color:#ffff;
-    background: #606E86;
-    font-family: 'Reem Kufi', sans-serif;
-    padding: 5px 20px;
-    border-radius: 0.8em;
-    font-size: 1.2em;
-    height: 2.2em;
-    width: 11.5%;
-    cursor: pointer;
-    outline: 0;
-    box-shadow: 1px 1px rgba(77, 56, 56, 0.2);
+.btn-signup {
+  background: #606e86;
+  border-radius: 0.8em;
+  box-shadow: 1px 1px rgba(77, 56, 56, 0.2);
+  color: white;
+  cursor: pointer;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1.2em;
+  height: 2.2em;
+  outline: 0;
+  padding: 5px 20px;
+  width: 11.5%;
+}
+
+.btn-login {
+  background: #606e86;
+  border-radius: 0.8em;
+  box-shadow: 1px 1px rgba(77, 56, 56, 0.2);
+  color: white;
+  cursor: pointer;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1.2em;
+  height: 2.2em;
+  outline: 0;
+  padding: 5px 20px;
+  width: 11.5%;
 }
 
 .btn-follow {
-    color:#ffff;
-    background: #00B4FA;
-    font-family: 'Cardo', serif;
-    font-weight: bold;
-    padding: 5px 20px;
-    font-size: 1em;
-    height: 2em;
-    width: 12.2%;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    box-shadow: 2.5px 3.5px rgba(107, 105, 105, 0.8);
+  color: white;
+  cursor: pointer;
+  background: #00B4fa;
+  border: 0;
+  box-shadow: 2.5px 3.5px rgba(107, 105, 105, 0.8);
+  font-family: 'Cardo', serif;
+  font-size: 1em;
+  font-weight: bold;
+  height: 2em;
+  outline: none;
+  padding: 5px 20px;
+  width: 12.2%;
 }
 
-.btn-tag-login2-signup2  {
-    color:#ffff;
-    background: #606E86;
-    font-family: 'Ovo', serif;
-    padding: 0;
-    font-size: 0.7em;
-    height: 2.7em;
-    width: 12%;
-    border-radius: 0.3em;
-    cursor: pointer;
-    outline: none;
-    border: 0;
+.btn-tag {
+  color: white;
+  cursor: pointer;
+  background: #606e86;
+  font-family: 'Ovo', serif;
+  font-size: 0.7em;
+  padding: 0;
+  height: 2.7em;
+  width: 12%;
+  border-radius: 0.3em;
+  outline: none;
+  border: 0;
+}
+
+
+.btn-login2 {
+  color: white;
+  cursor: pointer;
+  background: #606e86;
+  font-family: 'Ovo', serif;
+  font-size: 0.7em;
+  padding: 0;
+  height: 2.7em;
+  width: 12%;
+  border-radius: 0.3em;
+  outline: none;
+  border: 0;
+}
+
+
+.btn-signup2  {
+  color: white;
+  cursor: pointer;
+  background: #606e86;
+  font-family: 'Ovo', serif;
+  font-size: 0.7em;
+  padding: 0;
+  height: 2.7em;
+  width: 12%;
+  border-radius: 0.3em;
+  outline: none;
+  border: 0;
 }
 
 .btn-subscribe {
-    color:#ffff;
-    background: transparent;
-    font-family: 'Reem Kufi', sans-serif;
-    border: 1px solid white;
-    padding: 5px 20px;
-    border-radius: 0.8em;
-    font-size: 0.7em;
-    height: 32.85;
-    width: 99.22;
-    cursor: pointer;
-    outline: none;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 0.8em;
+  color: white;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 0.7em;
+  height: 32.85;
+  padding: 5px 20px;
+  width: 99.22;
+  cursor: pointer;
+  outline: none;
 }
 
 .btn-publish {
-    color:#606E86;
-    background: #ffff;
-    font-family: 'Cardo', serif;
-    font-weight: bold;
-    border: 1px solid white;
-    padding: 5px 20px;
-    font-size: 1em;
-    height: 32.85;
-    width: 12%;
-    cursor: pointer;
-    outline: none;
+  background: white;
+  border: 1px solid white;
+  color: #606e86;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+  font-weight: bold;
+  font-size: 1em;
+  height: 32.85;
+  outline: none;
+  padding: 5px 20px;
+  width: 12%;
 }
 
 .btn-report {
-    color:#ffff;
-    background: #F13921;
-    font-family: 'Cardo', serif;
-    padding: 1px;
-    border-radius: 1em;
-    font-size: 1em;
-    height: 2.9em;
-    width: 15%;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 1px 2.5px rgba(107, 105, 105, 0.2);
+  background: #f13921;
+  border-radius: 1em;
+  box-shadow: 1px 2.5px rgba(107, 105, 105, 0.2);
+  color: white;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+  font-size: 1em;
+  height: 2.9em;
+  outline: none;
+  padding: 1px;
+  width: 15%;
 }
 
 .btn-notifications {
-    color:#ffff;
-    background: #606E86;
-    font-family: 'Cardo', serif;
-    padding: 0.5em;
-    font-size: 1em;
-    height: 2.7em;
-    width: 13%;
-    cursor: pointer;
-    outline: none;
-    border: 0;
+  background: #606e86;
+  border: 0;  
+  color: white;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+  font-size: 1em;
+  height: 2.7em;
+  outline: none;
+  padding: 0.5em;
+  width: 13%;
 }
 
-.btn-post-article {
-    color:#ffff;
-    background: #606E86;
-    font-family: 'Cardo', serif;
-    padding: 1px;
-    border-radius: 15em;
-    font-size: 1em;
-    height: 2em;
-    width: 14%;
-    cursor: pointer;
-    outline: 0;
-    box-shadow: 1px 1.5px rgba(77, 56, 56, 0.2);
+.btn-article {
+  background: #606e86;
+  border-radius: 15em;
+  box-shadow: 1px 1.5px rgba(77, 56, 56, 0.2);   
+  color: white;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+  font-size: 1em;
+  height: 2em;
+  outline: 0;
+  padding: 1px;
+  width: 14%;     
 }
-.btn-profile-cancel {
-    color:#ffff;
-    background: #606E86;
-    font-family: 'Cardo', serif;
-    padding: 0;
-    font-size: 1em;
-    height: 2.8em;
-    width: 13.5%;
-    border-radius: 0.5em;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    box-shadow: 3px 3px rgba(77, 56, 56, 0.3);
+
+.btn-profile {
+  background: #606e86;
+  border: 0;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px rgba(77, 56, 56, 0.3); 
+  color: white;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+  font-size: 1em;
+  height: 2.8em;
+  outline: none;
+  padding: 0;
+  width: 13.5%;   
+}
+
+.btn-save-profile {
+  background: #606e86;
+  border: 0;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px rgba(77, 56, 56, 0.3); 
+  color: white;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+  font-size: 1em;
+  height: 2.8em;
+  outline: none;
+  padding: 0;
+  width: 13.5%;   
+}
+
+.btn-cancel {
+  background: #606e86;
+  border: 0;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px rgba(77, 56, 56, 0.3); 
+  color: white;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+  font-size: 1em;
+  height: 2.8em;
+  outline: none;
+  padding: 0;
+  width: 13.5%;   
 }
 
 .btn-edit-profile {
-    color:#606E86;
-    background: #ffff;
-    font-family: 'Cardo', serif;
-    font-weight: bold;
-    padding: 5px 20px;
-    font-size: 1em;
-    height: 2em;
-    width: 12.2%;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    box-shadow: 2.5px 4.5px rgba(22, 22, 22, 0.3);
+  background: white;
+  border: 0;
+  box-shadow: 2.5px 4.5px rgba(22, 22, 22, 0.3);
+  color: #606e86;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+  font-size: 1em;
+  font-weight: bold;
+  height: 2em;
+  outline: none;
+  padding: 5px 20px;
+  width: 12.2%;
 }
 
-.btn-reply-comment-stories {
-    color:#ffff;
-    background: #606E86;
-    font-family: 'Cardo', serif;
-    padding: 0;
-    font-size: 0.9em;
-    height: 2.5em;
-    width: 15%;
-    border-radius: 0.5em;
-    cursor: pointer;
-    outline: none;
-    border: 0;
+.btn-reply {
+  border: 0; 
+  border-radius: 0.5em;
+  color: white;
+  cursor: pointer;
+  background: #606e86;
+  font-family: 'Cardo', serif;
+  font-size: 0.9em;
+  height: 2.5em;
+  outline: none;
+  padding: 0;
+  width: 15%;   
+}
+
+
+.btn-comment {
+  border: 0; 
+  border-radius: 0.5em;
+  color: white;
+  cursor: pointer;
+  background: #606e86;
+  font-family: 'Cardo', serif;
+  font-size: 0.9em;
+  height: 2.5em;
+  outline: none;
+  padding: 0;
+  width: 15%;   
+}
+
+
+.btn-stories {
+  border: 0; 
+  border-radius: 0.5em;
+  color: white;
+  cursor: pointer;
+  background: #606e86;
+  font-family: 'Cardo', serif;
+  font-size: 0.9em;
+  height: 2.5em;
+  outline: none;
+  padding: 0;
+  width: 15%;   
 }
 
 .btn-twitter {
-    color:#ffff;
-    background: #00B4FA;
-    font-family: 'Cardo', serif;
-    font-weight: bold;
-    padding: 5px 20px;
-    font-size: 0.8em;
-    height: 2em;
-    width: 28%;
-    cursor: pointer;
-    outline: none;
-    border: 0;
+  border: 0;    
+  color: white;
+  cursor: pointer;
+  background: #00B4fa;
+  font-family: 'Cardo', serif;
+  font-weight: bold;
+  font-size: 0.8em;
+  height: 2em;
+  outline: none;
+  padding: 5px 20px;
+  width: 28%;
 }
 
 .btn-facebook {
-    color:#ffff;
-    background: #2A59A1;
-    font-family: 'Cardo', serif;
-    font-weight: bold;
-    padding: 5px 20px;
-    font-size: 0.8em;
-    height: 2em;
-    width: 28%;
-    cursor: pointer;
-    outline: none;
-    border: 0;
+  background: #2a59a1;
+  border: 0;  
+  color: white;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  height: 2em;
+  outline: none;
+  padding: 5px 20px;
+  width: 28%;  
 }
 
 .btn-google {
-    color:#ffff;
-    background:#F13921;
-    font-family: 'Cardo', serif;
-    font-weight: bold;
-    padding: 5px 20px;
-    font-size: 0.8em;
-    height: 2em;
-    width: 28%;
-    cursor: pointer;
-    outline: none;
-    border: 0;
+  border: 0; 
+  background: #f13921;
+  color: white;
+  cursor: pointer;
+  font-family: 'Cardo', serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  height: 2em;
+  outline: none;   
+  padding: 5px 20px;
+  width: 28%;
 }
 
-
-
 .btn-default {
-    color:#ffff;
-    background: #606E86;
-    padding: 5px 20px;
-    border: 1px solid #ffff;
-    border-radius: 0.8em;
-    font-size: 0.7em;
-    height: 2em;
-    width: 10%;
-    cursor: pointer;
-    outline: none;
+  color: white;
+  cursor: pointer;
+  background: #00B4fa;
+  border: 0;
+  font-family: 'Cardo', serif;
+  font-size: 1em;
+  font-weight: bold;
+  height: 2.5em;
+  outline: none;
+  padding: 5px 20px;
+  width: 30%;  
 }
