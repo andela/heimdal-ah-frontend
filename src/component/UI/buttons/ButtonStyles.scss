@@ -3,6 +3,9 @@ $white-color: #ffffff;
 $btn-google: #f13921;
 $btn-facebook: #2a59a1;
 $btn-most: #606e86;
+$shadow: rgba(77, 56, 56, 0.3);
+$shadow2: rgba(107, 105, 105, 0.2);
+$shadow3: rgba(107, 105, 105, 0.8);
 
 button {
   &:hover {
@@ -20,13 +23,12 @@ button:active {
 .btn-signup {
   background: $btn-most;
   border-radius: 0.8em;
-  box-shadow: 1px 1px rgba(77, 56, 56, 0.2);
+  box-shadow: 1px 1px $shadow;
   color: $white-color;
   cursor: pointer;
   font-family: 'Reem Kufi', sans-serif;
   font-size: 1.2em;
   height: 2.2em;
-  outline: 0;
   padding: 5px 20px;
   width: 11.5%;
 }
@@ -34,13 +36,12 @@ button:active {
 .btn-login {
   background: $btn-most;
   border-radius: 0.8em;
-  box-shadow: 1px 1px rgba(77, 56, 56, 0.2);
+  box-shadow: 1px 1px $shadow;
   color: $white-color;
   cursor: pointer;
   font-family: 'Reem Kufi', sans-serif;
   font-size: 1.2em;
   height: 2.2em;
-  outline: 0;
   padding: 5px 20px;
   width: 11.5%;
 }
@@ -49,12 +50,11 @@ button:active {
   color: $white-color;
   cursor: pointer;
   background: $default-color;
-  box-shadow: 2.5px 3.5px rgba(107, 105, 105, 0.8);
+  box-shadow: 2.5px 3.5px $shadow3;
   font-family: 'Cardo', serif;
   font-size: 1em;
   font-weight: bold;
   height: 2em;
-  outline: none;
   padding: 5px 20px;
   width: 12.2%;
 }
@@ -69,7 +69,6 @@ button:active {
   height: 2.7em;
   width: 12%;
   border-radius: 0.3em;
-  outline: none;
 }
 
 
@@ -83,7 +82,6 @@ button:active {
   height: 2.7em;
   width: 12%;
   border-radius: 0.3em;
-  outline: none;
 }
 
 
@@ -97,8 +95,6 @@ button:active {
   height: 2.7em;
   width: 12%;
   border-radius: 0.3em;
-  outline: none;
-  border: 0;
 }
 
 .btn-subscribe {
@@ -124,7 +120,6 @@ button:active {
   font-weight: bold;
   font-size: 1em;
   height: 32.85;
-  outline: none;
   padding: 5px 20px;
   width: 12%;
 }
@@ -132,13 +127,12 @@ button:active {
 .btn-report {
   background: $btn-google;
   border-radius: 1em;
-  box-shadow: 1px 2.5px rgba(107, 105, 105, 0.2);
+  box-shadow: 1px 2.5px $shadow2;
   color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
   height: 2.9em;
-  outline: none;
   padding: 1px;
   width: 15%;
 }
@@ -150,7 +144,6 @@ button:active {
   font-family: 'Cardo', serif;
   font-size: 1em;
   height: 2.7em;
-  outline: none;
   padding: 0.5em;
   width: 13%;
 }
@@ -158,13 +151,12 @@ button:active {
 .btn-article {
   background: $btn-most;
   border-radius: 15em;
-  box-shadow: 1px 1.5px rgba(77, 56, 56, 0.2);   
+  box-shadow: 1px 1.5px $shadow;   
   color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
   height: 2em;
-  outline: 0;
   padding: 1px;
   width: 14%;     
 }
@@ -172,98 +164,85 @@ button:active {
 .btn-profile {
   background: $btn-most;
   border-radius: 0.5em;
-  box-shadow: 3px 3px rgba(77, 56, 56, 0.3); 
+  box-shadow: 3px 3px $shadow; 
   color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
   height: 2.8em;
-  outline: none;
-  padding: 0;
-  width: 13.5%;   
+  width: 13.5%;
 }
 
 .btn-save-profile {
   background: $btn-most;
   border-radius: 0.5em;
-  box-shadow: 3px 3px rgba(77, 56, 56, 0.3); 
+  box-shadow: 3px 3px $shadow;
   color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
   height: 2.8em;
-  outline: none;
-  padding: 0;
-  width: 13.5%;   
+  width: 13.5%;
 }
 
 .btn-cancel {
   background: $btn-most;
   border-radius: 0.5em;
-  box-shadow: 3px 3px rgba(77, 56, 56, 0.3); 
+  box-shadow: 3px 3px $shadow; 
   color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
   height: 2.8em;
-  outline: none;
-  padding: 0;
-  width: 13.5%;   
+  width: 13.5%;
 }
 
 .btn-edit-profile {
   background: $white-color;
-  box-shadow: 2.5px 4.5px rgba(22, 22, 22, 0.3);
+  box-shadow: 2.5px 4.5px $shadow;
   color: $btn-most;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
   font-weight: bold;
   height: 2em;
-  outline: none;
   padding: 5px 20px;
   width: 12.2%;
 }
 
 .btn-reply {
+  background: $btn-most;
   border-radius: 0.5em;
   color: $white-color;
   cursor: pointer;
-  background: $btn-most;
   font-family: 'Cardo', serif;
   font-size: 0.9em;
   height: 2.5em;
-  outline: none;
-  padding: 0;
   width: 15%;   
 }
 
 
 .btn-comment {
+  background: $btn-most;
   border-radius: 0.5em;
   color: $white-color;
   cursor: pointer;
-  background: $btn-most;
   font-family: 'Cardo', serif;
   font-size: 0.9em;
   height: 2.5em;
-  outline: none;
-  padding: 0;
   width: 15%;   
 }
 
 
 .btn-stories {
+  background: $btn-most;
   border-radius: 0.5em;
   color: $white-color;
   cursor: pointer;
-  background: $btn-most;
   font-family: 'Cardo', serif;
   font-size: 0.9em;
   height: 2.5em;
-  outline: none;
-  padding: 0;
-  width: 15%;   
+  width: 15%;
 }
 
 .btn-twitter {
@@ -274,7 +253,6 @@ button:active {
   font-weight: bold;
   font-size: 0.8em;
   height: 2em;
-  outline: none;
   padding: 5px 20px;
   width: 28%;
 }
@@ -287,9 +265,8 @@ button:active {
   font-size: 0.8em;
   font-weight: bold;
   height: 2em;
-  outline: none;
   padding: 5px 20px;
-  width: 28%;  
+  width: 28%;
 }
 
 .btn-google {
@@ -300,7 +277,6 @@ button:active {
   font-size: 0.8em;
   font-weight: bold;
   height: 2em;
-  outline: none;
   padding: 5px 20px;
   width: 28%;
 }
@@ -313,7 +289,6 @@ button:active {
   font-size: 1em;
   font-weight: bold;
   height: 2.5em;
-  outline: none;
   padding: 5px 20px;
   width: 30%;
 }
