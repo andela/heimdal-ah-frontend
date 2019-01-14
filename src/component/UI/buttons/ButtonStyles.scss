@@ -12,6 +12,7 @@ button {
     opacity: 0.7;
   }
 }
+
 button:focus {
   outline: 0;
 }
@@ -47,9 +48,9 @@ button:active {
 }
 
 .btn-follow {
+  background: $default-color;
   color: $white-color;
   cursor: pointer;
-  background: $default-color;
   box-shadow: 2.5px 3.5px $shadow3;
   font-family: 'Cardo', serif;
   font-size: 1em;
@@ -60,9 +61,9 @@ button:active {
 }
 
 .btn-tag {
+  background: $btn-most;
   color: $white-color;
   cursor: pointer;
-  background: $btn-most;
   font-family: 'Ovo', serif;
   font-size: 0.7em;
   padding: 0;
@@ -70,12 +71,11 @@ button:active {
   width: 12%;
   border-radius: 0.3em;
 }
-
 
 .btn-login2 {
+  background: $btn-most;
   color: $white-color;
   cursor: pointer;
-  background: $btn-most;
   font-family: 'Ovo', serif;
   font-size: 0.7em;
   padding: 0;
@@ -85,10 +85,10 @@ button:active {
 }
 
 
-.btn-signup2  {
+.btn-signup2 {
+  background: $btn-most;
   color: $white-color;
   cursor: pointer;
-  background: $btn-most;
   font-family: 'Ovo', serif;
   font-size: 0.7em;
   padding: 0;
@@ -99,26 +99,25 @@ button:active {
 
 .btn-subscribe {
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid $white-color;
   border-radius: 0.8em;
   color: $white-color;
+  cursor: pointer;
   font-family: 'Reem Kufi', sans-serif;
   font-size: 0.7em;
   height: 32.85;
   padding: 5px 20px;
   width: 99.22;
-  cursor: pointer;
-  outline: none;
 }
 
 .btn-publish {
   background: $white-color;
-  border: 1px solid white;
+  border: 1px solid $white-color;
   color: $btn-most;
   cursor: pointer;
   font-family: 'Cardo', serif;
-  font-weight: bold;
   font-size: 1em;
+  font-weight: bold;
   height: 32.85;
   padding: 5px 20px;
   width: 12%;
@@ -151,20 +150,20 @@ button:active {
 .btn-article {
   background: $btn-most;
   border-radius: 15em;
-  box-shadow: 1px 1.5px $shadow;   
+  box-shadow: 1px 1.5px $shadow;
   color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
   font-size: 1em;
   height: 2em;
   padding: 1px;
-  width: 14%;     
+  width: 14%;
 }
 
 .btn-profile {
   background: $btn-most;
   border-radius: 0.5em;
-  box-shadow: 3px 3px $shadow; 
+  box-shadow: 3px 3px $shadow;
   color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
@@ -188,7 +187,7 @@ button:active {
 .btn-cancel {
   background: $btn-most;
   border-radius: 0.5em;
-  box-shadow: 3px 3px $shadow; 
+  box-shadow: 3px 3px $shadow;
   color: $white-color;
   cursor: pointer;
   font-family: 'Cardo', serif;
@@ -246,12 +245,12 @@ button:active {
 }
 
 .btn-twitter {
+  background: $default-color;
   color: $white-color;
   cursor: pointer;
-  background: $default-color;
   font-family: 'Cardo', serif;
-  font-weight: bold;
   font-size: 0.8em;
+  font-weight: bold;
   height: 2em;
   padding: 5px 20px;
   width: 28%;
