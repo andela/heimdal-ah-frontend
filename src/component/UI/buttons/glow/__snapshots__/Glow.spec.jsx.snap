@@ -4,8 +4,8 @@ exports[`<Button /> should render the Glow component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Glow
-    glowCount={0}
-    isGlowedByUser={false}
+    active={false}
+    handleGlow={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

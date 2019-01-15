@@ -17,8 +17,12 @@ const Glow = (props) => {
 };
 
 Glow.propTypes = {
-  active: PropTypes.bool.isRequired,
+  active: PropTypes.bool,
   handleGlow: PropTypes.func.isRequired,
+};
+
+Glow.defaultProps = {
+  active: false,
 };
 
 
