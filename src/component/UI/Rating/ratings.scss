@@ -1,5 +1,6 @@
-.fa {
-    color: #FFD15C;
+$star-default: #ffd15c;
+.fa{
+    color: $star-default;
     font-size: 35px
 }
 .rate .star {
@@ -7,12 +8,9 @@
     position: relative;
     cursor: pointer;
   }
-  
-  /* prev siblings should be red */
   .rate:hover i {
-    color: #FFD15C;
+    color: $star-default;
   }
- 
   .rate .star:hover ~ i {
-    color: #FFD15C;
+    color: $star-default;
   }
