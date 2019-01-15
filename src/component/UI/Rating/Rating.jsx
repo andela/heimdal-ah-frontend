@@ -1,46 +1,24 @@
-import React, { Component } from 'react';
-import _ from 'lodash';
+import React from 'react';
 import PropTypes from 'prop-types';
-import 'font-awesome/css/font-awesome.min.css';
+import _ from 'lodash';
 import './ratings.scss';
 
-class Rating extends Component {
-   state = {
-     ratings: this.props.ratings,
-   };
+const Rating = props => (
+  <div className="rate">
+    {
+      _.range(1, 6).map(value => (
+        <i
+          key={value}
+          className={Rating.getClassNames(value, props.ratings)}
+        />
+      ))
+    }
+  </div>
+);
 
-   setRating(value) {
-     this.setState(prevState => ({ ...prevState, ratings: value }));
-   }
-
-   getClassName(value) {
-     const { ratings } = this.state;
-     if (value <= Math.trunc(ratings)) return 'fa fa-star star';
-     return 'fa fa-star-o star';
-   }
-
-
-   render() {
-     return (
-       <div className="rate">
-         {
-            _.range(1, 6).map(
-              value => (
-                <i
-                  key={value}
-                  role="button"
-                  tabIndex={0}
-                  onClick={() => this.setRating(value)}
-                  onKeyPress={() => this.setRatings(value)}
-                  className={this.getClassName(value)}
-                />
-              ),
-            )
-          }
-       </div>
-     );
-   }
-}
+Rating.getClassNames = (value, ratings) => (
+  (value <= Math.trunc(ratings)) ? 'fa fa-star star' : 'fa fa-star-o star'
+);
 
 Rating.propTypes = {
   ratings: PropTypes.number,

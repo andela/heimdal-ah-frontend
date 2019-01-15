@@ -1,6 +1,6 @@
 import React from 'react';
 import HomepageButton from '../UI/buttons/HomepageButton';
-import Rating from '../UI/Rating/Rating';
+import Rating from '../UI/rating/Rating';
 
 const HomePage = () => (
   <div>
@@ -8,7 +8,7 @@ const HomePage = () => (
         Welcome to the Home page...
       <div>
         <HomepageButton />
-        <Rating ratings={3} />
+        <Rating className='fa fa-star' ratings={2.5} />
       </div>
     </h2>
   </div>
