@@ -8,8 +8,8 @@ const HomePage = () => (
         Welcome to the Home page...
       <div>
         <HomepageButton />
-        <Glow isGlowedByUser={false} glowCount={200} />
       </div>
+      <Glow isGlowedByUser={false} glowCount={200} />
     </h2>
   </div>
 );
