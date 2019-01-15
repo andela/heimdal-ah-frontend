@@ -6,84 +6,84 @@ const HomePage = () => (
     <h2 className='lead mt-5'>
       Welcome to the Home page...
       <div>
-        <Button btnType='signup' btnTitle='Signup' />
+        <Button type='signup' label='Signup' />
         <br />
         <br />
         <br />
-        <Button btnType='login' btnTitle='Login' />
+        <Button type='login' label='Login' />
         <br />
         <br />
         <br />
-        <Button btnType='login2' btnTitle='Login' />
+        <Button type='login2' label='Login' />
         <br />
         <br />
         <br />
-        <Button btnType='signup2' btnTitle='Sign Up' />
+        <Button type='signup2' label='Sign Up' />
         <br />
         <br />
         <br />
-        <Button btnType='follow' btnTitle='Follow' />
+        <Button type='follow' label='Follow' />
         <br />
         <br />
         <br />
-        <Button btnType='tag' btnTitle='Technology' />
+        <Button type='tag' label='Technology' />
         <br />
         <br />
         <br />
-        <Button btnType='report' btnTitle='Report Article' />
+        <Button type='report' label='Report Article' />
         <br />
         <br />
         <br />
-        <Button btnType='notifications' btnTitle='load older...' />
+        <Button type='notifications' label='load older...' />
         <br />
         <br />
         <br />
-        <Button btnType='article' btnTitle='Post Article' />
+        <Button type='article' label='Post Article' />
         <br />
         <br />
         <br />
-        <Button btnType='save-profile' btnTitle='Save Profile' />
+        <Button type='save-profile' label='Save Profile' />
         <br />
         <br />
         <br />
-        <Button btnType='cancel' btnTitle='Cancel' />
+        <Button type='cancel' label='Cancel' />
         <br />
         <br />
         <br />
-        <Button btnType='reply' btnTitle='Add Reply' />
+        <Button type='reply' label='Add Reply' />
         <br />
         <br />
         <br />
-        <Button btnType='comment' btnTitle='Add Comment' />
+        <Button type='comment' label='Add Comment' />
         <br />
         <br />
         <br />
-        <Button btnType='stories' btnTitle='All Stories' />
+        <Button type='stories' label='All Stories' />
         <br />
         <br />
         <br />
-        <Button btnType='facebook' btnTitle='Login with Facebook' />
+        <Button type='facebook' label='Login with Facebook' />
         <br />
         <br />
         <br />
-        <Button btnType='twitter' btnTitle='Login with Twitter' />
+        <Button type='twitter' label='Login with Twitter' />
         <br />
         <br />
         <br />
-        <Button btnType='google' btnTitle='Login with Google' />
+        <Button type='google' label='Login with Google' />
         <br />
         <br />
         <br />
         <div style={{ background: '#606E86', height: '40vh', padding: '1em' }}>
-          <Button btnType='subscribe' btnTitle='Subscribe' />
+          <Button type='subscribe' label='Subscribe' />
           <br />
           <br />
           <br />
-          <Button btnType='edit-profile' btnTitle='Edit' />
+          <Button type='edit-profile' label='Edit' />
           <br />
           <br />
           <br />
-          <Button btnType='publish' btnTitle='Publish' />
+          <Button type='publish' label='Publish' />
         </div>
       </div>
     </h2>

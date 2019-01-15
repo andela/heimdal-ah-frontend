@@ -5,7 +5,7 @@ const LoginPage = () => (
   <h2 className='lead mt-5'>
       Welcome to the login page...
     <div>
-      <Button btnType='login' btnTitle='Login' />
+      <Button type='login' label='Login' />
     </div>
   </h2>
 );
