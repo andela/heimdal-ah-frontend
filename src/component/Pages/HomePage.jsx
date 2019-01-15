@@ -1,6 +1,7 @@
 import React from 'react';
 import HomepageButton from '../UI/buttons/HomepageButton';
 import Glow from '../UI/buttons/glow/Glow';
+import { DemoArticleCoponentWithGlowState } from '../UI/buttons/glow/DemoArticleCoponentWithGlowState';
 
 const HomePage = () => (
   <div>
@@ -9,7 +10,9 @@ const HomePage = () => (
       <div>
         <HomepageButton />
       </div>
-      <Glow isGlowedByUser={false} glowCount={200} />
+      <div>
+        <DemoArticleCoponentWithGlowState />
+      </div>
     </h2>
   </div>
 );

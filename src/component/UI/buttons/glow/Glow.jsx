@@ -1,42 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Glow.scss';
 import PropTypes from 'prop-types';
 
-class Glow extends Component {
-  state = {
-    isGlowedByUser: this.props.isGlowedByUser,
-    glowCount: this.props.glowCount,
-  };
+const Glow = (props) => {
+  const { active, handleGlow } = props;
 
-  handleGlow = () => {
-    this.setState(prevState => ({
-      isGlowedByUser: !prevState.isGlowedByUser,
-      glowCount: prevState.isGlowedByUser ? prevState.glowCount - 1 : prevState.glowCount + 1,
-    }));
-  };
-
-  render() {
-    const { isGlowedByUser } = this.state;
-    return (
-      <i
-        className={`glow-btn ${isGlowedByUser ? 'glow-on' : 'glow-off'}`}
-        role="button"
-        tabIndex={0}
-        onClick={this.handleGlow}
-        onKeyPress={this.handleGlow}
-      />
-    );
-  }
-}
+  return (
+    <i
+      className={`glow-btn ${active ? 'glow-on' : 'glow-off'}`}
+      role="button"
+      tabIndex={0}
+      onClick={handleGlow}
+      onKeyPress={handleGlow}
+    />
+  );
+};
 
 Glow.propTypes = {
-  isGlowedByUser: PropTypes.bool,
-  glowCount: PropTypes.number,
+  active: PropTypes.bool.isRequired,
+  handleGlow: PropTypes.func.isRequired,
 };
 
-Glow.defaultProps = {
-  glowCount: 0,
-  isGlowedByUser: false,
-};
 
 export default Glow;
