@@ -8,7 +8,7 @@ const HomePage = () => (
         Welcome to the Home page...
       <div>
         <HomepageButton />
-        <Rating />
+        <Rating ratings={3} />
       </div>
     </h2>
   </div>
