@@ -1,0 +1,29 @@
+.glow-text {
+  font-size: 15px;
+  min-height: 25px
+}
+
+.glow-count-text {
+  max-width: 100%;
+  margin-top: -100px;
+}
+
+.glow-btn {
+  border: none;
+  outline: none;
+  padding: 40px 20px 0px 40px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.glow-on {
+  background-image: url(./glow-on.svg);
+  background-repeat: no-repeat;
+}
+.glow-off {
+  background-image: url(./glow-off.svg);
+  background-repeat: no-repeat;
+}

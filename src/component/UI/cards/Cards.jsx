@@ -1,4 +1,5 @@
 import React from 'react';
+import Glow from '../buttons/glow/Glow';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Cards extends React.Component {
@@ -12,8 +13,8 @@ class Cards extends React.Component {
           <p className="card-text">low as a natural lead-in to additional content. This content is a little bit longer.</p>
           <i className="fas fa-user-circle" />
           <p className="col-8 col-md-7" style={{ display: 'inline-block' }}>Peter Debs</p>
-          <i className="far fa-clock" style={{}}> 5days ago</i>
-          <i className="far fa-lightbulb col-4" style={{ padding: '0rem' }}> 5000</i>
+          <i className="far fa-clock " style={{}}> 5days ago</i>
+          <Glow className="col-6" />
           <div className='stars col-7' style={{ display: 'inline-block' }}>
             <i className="far fa-star" />
             <i className="far fa-star" />
