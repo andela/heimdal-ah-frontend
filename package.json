@@ -17,19 +17,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "express": "^4.16.4",
+    "font-awesome": "^4.7.0",
     "logger": "0.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
-    "react-router-dom": "^4.3.1",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1",
-    "enzyme-to-json": "^3.3.5",
-    "jest": "^23.6.0",
-    "raf": "^3.4.1",
-    "react-test-renderer": "^16.7.0"
+    "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
@@ -70,6 +66,9 @@
     "webpack": "^4.28.1",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14",
-    "webpack-merge": "^4.1.4"
+    "webpack-merge": "^4.1.4",
+    "url-loader": "^1.1.2",
+    "raf": "^3.4.1",
+    "react-test-renderer": "^16.7.0"
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../UI/buttons/Button';
+import { DemoArticleCoponentWithGlowState } from '../UI/buttons/glow/DemoArticleCoponentWithGlowState';
 
 const HomePage = () => (
   <div>
@@ -85,6 +86,9 @@ const HomePage = () => (
           <br />
           <Button type='publish' label='Publish' />
         </div>
+      </div>
+      <div>
+        <DemoArticleCoponentWithGlowState />
       </div>
     </h2>
   </div>
