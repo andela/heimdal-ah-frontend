@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import 'font-awesome/css/font-awesome.min.css';
 import './footer.scss';
 
 const Footer = () => (

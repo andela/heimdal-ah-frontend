@@ -54,7 +54,7 @@ ShallowWrapper {
                     className="btn-floating btn-fb mx-1 fa-2x mr-5"
                   >
                     <i
-                      className="fab fa-facebook-f"
+                      className="fa fa-facebook-f"
                     />
                   </a>
                 </li>
@@ -65,7 +65,7 @@ ShallowWrapper {
                     className="btn-floating mx-1"
                   >
                     <i
-                      className="fab fa-instagram fa-2x mr-5"
+                      className="fa fa-instagram fa-2x mr-5"
                     />
                   </a>
                 </li>
@@ -76,7 +76,7 @@ ShallowWrapper {
                     className="btn-floating btn-tw mx-1"
                   >
                     <i
-                      className="fab fa-twitter fa-2x"
+                      className="fa fa-twitter fa-2x"
                     />
                   </a>
                 </li>
@@ -238,7 +238,7 @@ ShallowWrapper {
           Inc. All rights reserved.
         </div>,
       ],
-      "className": "page-footer font-small indigo .footerWrapper",
+      "className": "page-footer font-small indigo footerWrapper",
       "id": "footerWrapper",
     },
     "ref": null,
@@ -282,7 +282,7 @@ ShallowWrapper {
                       className="btn-floating btn-fb mx-1 fa-2x mr-5"
                     >
                       <i
-                        className="fab fa-facebook-f"
+                        className="fa fa-facebook-f"
                       />
                     </a>
                   </li>
@@ -293,7 +293,7 @@ ShallowWrapper {
                       className="btn-floating mx-1"
                     >
                       <i
-                        className="fab fa-instagram fa-2x mr-5"
+                        className="fa fa-instagram fa-2x mr-5"
                       />
                     </a>
                   </li>
@@ -304,7 +304,7 @@ ShallowWrapper {
                       className="btn-floating btn-tw mx-1"
                     >
                       <i
-                        className="fab fa-twitter fa-2x"
+                        className="fa fa-twitter fa-2x"
                       />
                     </a>
                   </li>
@@ -496,7 +496,7 @@ ShallowWrapper {
                         className="btn-floating btn-fb mx-1 fa-2x mr-5"
                       >
                         <i
-                          className="fab fa-facebook-f"
+                          className="fa fa-facebook-f"
                         />
                       </a>
                     </li>
@@ -507,7 +507,7 @@ ShallowWrapper {
                         className="btn-floating mx-1"
                       >
                         <i
-                          className="fab fa-instagram fa-2x mr-5"
+                          className="fa fa-instagram fa-2x mr-5"
                         />
                       </a>
                     </li>
@@ -518,7 +518,7 @@ ShallowWrapper {
                         className="btn-floating btn-tw mx-1"
                       >
                         <i
-                          className="fab fa-twitter fa-2x"
+                          className="fa fa-twitter fa-2x"
                         />
                       </a>
                     </li>
@@ -615,7 +615,7 @@ ShallowWrapper {
                         className="btn-floating btn-fb mx-1 fa-2x mr-5"
                       >
                         <i
-                          className="fab fa-facebook-f"
+                          className="fa fa-facebook-f"
                         />
                       </a>
                     </li>
@@ -626,7 +626,7 @@ ShallowWrapper {
                         className="btn-floating mx-1"
                       >
                         <i
-                          className="fab fa-instagram fa-2x mr-5"
+                          className="fa fa-instagram fa-2x mr-5"
                         />
                       </a>
                     </li>
@@ -637,7 +637,7 @@ ShallowWrapper {
                         className="btn-floating btn-tw mx-1"
                       >
                         <i
-                          className="fab fa-twitter fa-2x"
+                          className="fa fa-twitter fa-2x"
                         />
                       </a>
                     </li>
@@ -658,7 +658,7 @@ ShallowWrapper {
                           className="btn-floating btn-fb mx-1 fa-2x mr-5"
                         >
                           <i
-                            className="fab fa-facebook-f"
+                            className="fa fa-facebook-f"
                           />
                         </a>
                       </li>,
@@ -669,7 +669,7 @@ ShallowWrapper {
                           className="btn-floating mx-1"
                         >
                           <i
-                            className="fab fa-instagram fa-2x mr-5"
+                            className="fa fa-instagram fa-2x mr-5"
                           />
                         </a>
                       </li>,
@@ -680,7 +680,7 @@ ShallowWrapper {
                           className="btn-floating btn-tw mx-1"
                         >
                           <i
-                            className="fab fa-twitter fa-2x"
+                            className="fa fa-twitter fa-2x"
                           />
                         </a>
                       </li>,
@@ -698,7 +698,7 @@ ShallowWrapper {
                           className="btn-floating btn-fb mx-1 fa-2x mr-5"
                         >
                           <i
-                            className="fab fa-facebook-f"
+                            className="fa fa-facebook-f"
                           />
                         </a>,
                         "className": "list-inline-item",
@@ -710,7 +710,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": <i
-                            className="fab fa-facebook-f"
+                            className="fa fa-facebook-f"
                           />,
                           "className": "btn-floating btn-fb mx-1 fa-2x mr-5",
                         },
@@ -720,7 +720,7 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "className": "fab fa-facebook-f",
+                            "className": "fa fa-facebook-f",
                           },
                           "ref": null,
                           "rendered": null,
@@ -739,7 +739,7 @@ ShallowWrapper {
                           className="btn-floating mx-1"
                         >
                           <i
-                            className="fab fa-instagram fa-2x mr-5"
+                            className="fa fa-instagram fa-2x mr-5"
                           />
                         </a>,
                         "className": "list-inline-item",
@@ -751,7 +751,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": <i
-                            className="fab fa-instagram fa-2x mr-5"
+                            className="fa fa-instagram fa-2x mr-5"
                           />,
                           "className": "btn-floating mx-1",
                         },
@@ -761,7 +761,7 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "className": "fab fa-instagram fa-2x mr-5",
+                            "className": "fa fa-instagram fa-2x mr-5",
                           },
                           "ref": null,
                           "rendered": null,
@@ -780,7 +780,7 @@ ShallowWrapper {
                           className="btn-floating btn-tw mx-1"
                         >
                           <i
-                            className="fab fa-twitter fa-2x"
+                            className="fa fa-twitter fa-2x"
                           />
                         </a>,
                         "className": "list-inline-item",
@@ -792,7 +792,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": <i
-                            className="fab fa-twitter fa-2x"
+                            className="fa fa-twitter fa-2x"
                           />,
                           "className": "btn-floating btn-tw mx-1",
                         },
@@ -802,7 +802,7 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "className": "fab fa-twitter fa-2x",
+                            "className": "fa fa-twitter fa-2x",
                           },
                           "ref": null,
                           "rendered": null,
@@ -1754,7 +1754,7 @@ ShallowWrapper {
                       className="btn-floating btn-fb mx-1 fa-2x mr-5"
                     >
                       <i
-                        className="fab fa-facebook-f"
+                        className="fa fa-facebook-f"
                       />
                     </a>
                   </li>
@@ -1765,7 +1765,7 @@ ShallowWrapper {
                       className="btn-floating mx-1"
                     >
                       <i
-                        className="fab fa-instagram fa-2x mr-5"
+                        className="fa fa-instagram fa-2x mr-5"
                       />
                     </a>
                   </li>
@@ -1776,7 +1776,7 @@ ShallowWrapper {
                       className="btn-floating btn-tw mx-1"
                     >
                       <i
-                        className="fab fa-twitter fa-2x"
+                        className="fa fa-twitter fa-2x"
                       />
                     </a>
                   </li>
@@ -1938,7 +1938,7 @@ ShallowWrapper {
             Inc. All rights reserved.
           </div>,
         ],
-        "className": "page-footer font-small indigo .footerWrapper",
+        "className": "page-footer font-small indigo footerWrapper",
         "id": "footerWrapper",
       },
       "ref": null,
@@ -1982,7 +1982,7 @@ ShallowWrapper {
                         className="btn-floating btn-fb mx-1 fa-2x mr-5"
                       >
                         <i
-                          className="fab fa-facebook-f"
+                          className="fa fa-facebook-f"
                         />
                       </a>
                     </li>
@@ -1993,7 +1993,7 @@ ShallowWrapper {
                         className="btn-floating mx-1"
                       >
                         <i
-                          className="fab fa-instagram fa-2x mr-5"
+                          className="fa fa-instagram fa-2x mr-5"
                         />
                       </a>
                     </li>
@@ -2004,7 +2004,7 @@ ShallowWrapper {
                         className="btn-floating btn-tw mx-1"
                       >
                         <i
-                          className="fab fa-twitter fa-2x"
+                          className="fa fa-twitter fa-2x"
                         />
                       </a>
                     </li>
@@ -2196,7 +2196,7 @@ ShallowWrapper {
                           className="btn-floating btn-fb mx-1 fa-2x mr-5"
                         >
                           <i
-                            className="fab fa-facebook-f"
+                            className="fa fa-facebook-f"
                           />
                         </a>
                       </li>
@@ -2207,7 +2207,7 @@ ShallowWrapper {
                           className="btn-floating mx-1"
                         >
                           <i
-                            className="fab fa-instagram fa-2x mr-5"
+                            className="fa fa-instagram fa-2x mr-5"
                           />
                         </a>
                       </li>
@@ -2218,7 +2218,7 @@ ShallowWrapper {
                           className="btn-floating btn-tw mx-1"
                         >
                           <i
-                            className="fab fa-twitter fa-2x"
+                            className="fa fa-twitter fa-2x"
                           />
                         </a>
                       </li>
@@ -2315,7 +2315,7 @@ ShallowWrapper {
                           className="btn-floating btn-fb mx-1 fa-2x mr-5"
                         >
                           <i
-                            className="fab fa-facebook-f"
+                            className="fa fa-facebook-f"
                           />
                         </a>
                       </li>
@@ -2326,7 +2326,7 @@ ShallowWrapper {
                           className="btn-floating mx-1"
                         >
                           <i
-                            className="fab fa-instagram fa-2x mr-5"
+                            className="fa fa-instagram fa-2x mr-5"
                           />
                         </a>
                       </li>
@@ -2337,7 +2337,7 @@ ShallowWrapper {
                           className="btn-floating btn-tw mx-1"
                         >
                           <i
-                            className="fab fa-twitter fa-2x"
+                            className="fa fa-twitter fa-2x"
                           />
                         </a>
                       </li>
@@ -2358,7 +2358,7 @@ ShallowWrapper {
                             className="btn-floating btn-fb mx-1 fa-2x mr-5"
                           >
                             <i
-                              className="fab fa-facebook-f"
+                              className="fa fa-facebook-f"
                             />
                           </a>
                         </li>,
@@ -2369,7 +2369,7 @@ ShallowWrapper {
                             className="btn-floating mx-1"
                           >
                             <i
-                              className="fab fa-instagram fa-2x mr-5"
+                              className="fa fa-instagram fa-2x mr-5"
                             />
                           </a>
                         </li>,
@@ -2380,7 +2380,7 @@ ShallowWrapper {
                             className="btn-floating btn-tw mx-1"
                           >
                             <i
-                              className="fab fa-twitter fa-2x"
+                              className="fa fa-twitter fa-2x"
                             />
                           </a>
                         </li>,
@@ -2398,7 +2398,7 @@ ShallowWrapper {
                             className="btn-floating btn-fb mx-1 fa-2x mr-5"
                           >
                             <i
-                              className="fab fa-facebook-f"
+                              className="fa fa-facebook-f"
                             />
                           </a>,
                           "className": "list-inline-item",
@@ -2410,7 +2410,7 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": <i
-                              className="fab fa-facebook-f"
+                              className="fa fa-facebook-f"
                             />,
                             "className": "btn-floating btn-fb mx-1 fa-2x mr-5",
                           },
@@ -2420,7 +2420,7 @@ ShallowWrapper {
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "className": "fab fa-facebook-f",
+                              "className": "fa fa-facebook-f",
                             },
                             "ref": null,
                             "rendered": null,
@@ -2439,7 +2439,7 @@ ShallowWrapper {
                             className="btn-floating mx-1"
                           >
                             <i
-                              className="fab fa-instagram fa-2x mr-5"
+                              className="fa fa-instagram fa-2x mr-5"
                             />
                           </a>,
                           "className": "list-inline-item",
@@ -2451,7 +2451,7 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": <i
-                              className="fab fa-instagram fa-2x mr-5"
+                              className="fa fa-instagram fa-2x mr-5"
                             />,
                             "className": "btn-floating mx-1",
                           },
@@ -2461,7 +2461,7 @@ ShallowWrapper {
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "className": "fab fa-instagram fa-2x mr-5",
+                              "className": "fa fa-instagram fa-2x mr-5",
                             },
                             "ref": null,
                             "rendered": null,
@@ -2480,7 +2480,7 @@ ShallowWrapper {
                             className="btn-floating btn-tw mx-1"
                           >
                             <i
-                              className="fab fa-twitter fa-2x"
+                              className="fa fa-twitter fa-2x"
                             />
                           </a>,
                           "className": "list-inline-item",
@@ -2492,7 +2492,7 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": <i
-                              className="fab fa-twitter fa-2x"
+                              className="fa fa-twitter fa-2x"
                             />,
                             "className": "btn-floating btn-tw mx-1",
                           },
@@ -2502,7 +2502,7 @@ ShallowWrapper {
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "className": "fab fa-twitter fa-2x",
+                              "className": "fa fa-twitter fa-2x",
                             },
                             "ref": null,
                             "rendered": null,
