@@ -1,11 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
-import HomepageButton from '../ui/buttons/HomepageButton';
+import Button from '../ui/buttons/Button';
 import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
-=======
-import Button from '../UI/buttons/Button';
-import { DemoArticleCoponentWithGlowState } from '../UI/buttons/glow/DemoArticleCoponentWithGlowState';
->>>>>>> 4363c8ae28747207fd0f599296e9053e5e4fc41d
 
 const HomePage = () => (
   <div>

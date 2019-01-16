@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import LoginButton from '../ui/buttons/LoginButton.jsx';
-=======
-import Button from '../UI/buttons/Button.jsx';
->>>>>>> 4363c8ae28747207fd0f599296e9053e5e4fc41d
+import Button from '../ui/buttons/Button.jsx';
 
 const LoginPage = () => (
   <h2 className='lead mt-5'>
