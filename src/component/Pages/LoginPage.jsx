@@ -1,11 +1,11 @@
 import React from 'react';
-import LoginButton from '../UI/buttons/LoginButton.jsx';
+import Button from '../UI/buttons/Button.jsx';
 
 const LoginPage = () => (
   <h2 className='lead mt-5'>
       Welcome to the login page...
     <div>
-      <LoginButton />
+      <Button type='login' label='Login' />
     </div>
   </h2>
 );
