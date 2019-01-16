@@ -1,32 +1,38 @@
-$heimdalFooterBackground: #606E86;
-$heimdalTextColor: #fff;
-$heimdallinkHover: whitesmoke;
-$heimdalTextfieldBackground: #6A7384;
+@import "../../../styles/global.scss";
+@import url('https://fonts.googleapis.com/css?family=Cardo');
 
-footer{
-    background: $heimdalFooterBackground;
+.footerWrapper {
+  background: $heimdalFooterBackground;
+  color: $heimdalTextColor;
+  font-family: 'Cardo';
+  a {
     color: $heimdalTextColor;
-}
-a{
-    color: $heimdalTextColor;
-}
-a:hover{
+  }
+  :hover {
     color: $heimdallinkHover;
-}
-.footerBtn{
+  }
+  .footerBtn {
     color: $heimdalTextColor;
     border: solid 1px;
     border-radius: 10px;
-    padding-right:50px;
-}
-.footerTextField{
+    padding-right: 50px;
+  }
+  .footerTextField {
     background: $heimdalTextfieldBackground;
     color: $heimdalTextColor;
-    border:none;
+    border: none;
     font-size: 15px;
     padding-left: 5px;
     padding-right: 40px;
-}
-::placeholder{
+  }
+  ::placeholder {
     color: $heimdalTextColor;
+  }
+  i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+   
+   }
 }

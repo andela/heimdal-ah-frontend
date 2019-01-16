@@ -1,5 +1,5 @@
 import React from 'react';
-import HomepageButton from '../UI/buttons/HomepageButton';
+import HomepageButton from '../ui/buttons/HomepageButton';
 
 const HomePage = () => (
   <div>

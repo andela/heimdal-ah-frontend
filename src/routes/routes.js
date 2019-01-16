@@ -1,9 +1,10 @@
+/* eslint-disable react/jsx-filename-extension */
 import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import LoginPage from '../component/Pages/LoginPage.jsx';
 import Homepage from '../component/Pages/HomePage.jsx';
-import Footer from '../component/UI/footer/Footer.jsx';
+import Footer from '../component/ui/footer/Footer.jsx';
 
 const Routes = () => (
   <Fragment>

@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './footer.scss';
 
 const Footer = () => (
-  <footer className="page-footer font-small indigo">
+  <footer id='footerWrapper' className="page-footer font-small indigo footerWrapper">
     <div className="container text-center text-md-left">
       <div className='row'>
         <div className='col-md-6'>
@@ -18,19 +19,19 @@ const Footer = () => (
           <ul className="list-unstyled list-inline text-center">
             <li className="list-inline-item">
               <a className="btn-floating btn-fb mx-1 fa-2x mr-5">
-                <i className="fab fa-facebook-f" />
+                <i className="fa fa-facebook-f" />
               </a>
             </li>
 
             <li className="list-inline-item">
               <a className="btn-floating mx-1">
-                <i className="fab fa-instagram fa-2x mr-5" />
+                <i className="fa fa-instagram fa-2x mr-5" />
               </a>
             </li>
 
             <li className="list-inline-item">
               <a className="btn-floating btn-tw mx-1">
-                <i className="fab fa-twitter fa-2x" />
+                <i className="fa fa-twitter fa-2x" />
               </a>
             </li>
           </ul>
@@ -48,19 +49,19 @@ const Footer = () => (
         <div className="col-md-2 mx-auto mt-5">
           <ul className="list-unstyled">
             <li>
-              <a href="#">Top articles </a>
+              <Link to='/top-articles'>Top articles </Link>
             </li>
             <li>
-              <a href="#!">Ediitor’s pick</a>
+              <Link to='/editors-pick'>Ediitor’s pick</Link>
             </li>
             <li>
-              <a href="#!">Writers’ Arena  </a>
+              <Link to='/writers-arena'>Writers’ Arena  </Link>
             </li>
             <li>
-              <a href="#!">Featured </a>
+              <Link to='/featured'>Featured </Link>
             </li>
             <li>
-              <a href="#!">Categories </a>
+              <Link to='/categories'>Categories </Link>
             </li>
           </ul>
 
@@ -70,17 +71,17 @@ const Footer = () => (
 
           <ul className="list-unstyled">
             <li>
-              <a href="#!">About us</a>
+              <Link to="/about-us">About us</Link>
             </li>
             <br />
             <li>
-              <a href="#!">Company</a>
+              <Link to="/company">Company</Link>
             </li>
             <li>
-              <a href="#!">Terms of use</a>
+              <Link to="terms-of-use">Terms of use</Link>
             </li>
             <li>
-              <a href="#!">Privacy policies</a>
+              <Link to="privacy-policy">Privacy policies</Link>
             </li>
           </ul>
 
@@ -90,14 +91,14 @@ const Footer = () => (
 
           <ul className="list-unstyled mt-5">
             <li>
-              <a href="#!">Need help?</a>
+              <Link to="need-help">Need help?</Link>
             </li>
             <br />
             <li>
-              <a href="#!">Contact Us</a>
+              <Link to="contact-us">Contact Us</Link>
             </li>
             <li>
-              <a href="#!">Knowledge Base</a>
+              <Link to="knopwledge-base">Knowledge Base</Link>
             </li>
 
           </ul>
@@ -106,7 +107,11 @@ const Footer = () => (
     </div>
 
     <div className="footer-copyright text-center py-3">
-    @heimdal 2019 Inc. All rights reserved.
+    @heimdal
+      {' '}
+      {new Date().getFullYear()}
+      {' '}
+Inc. All rights reserved.
     </div>
   </footer>
 );
