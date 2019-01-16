@@ -1,5 +1,6 @@
 import React from 'react';
 import HomepageButton from '../ui/buttons/HomepageButton';
+import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
 
 const HomePage = () => (
   <div>
@@ -7,6 +8,9 @@ const HomePage = () => (
         Welcome to the Home page...
       <div>
         <HomepageButton />
+      </div>
+      <div>
+        <DemoArticleCoponentWithGlowState />
       </div>
     </h2>
   </div>
