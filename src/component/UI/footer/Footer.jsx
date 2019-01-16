@@ -5,7 +5,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import './footer.scss';
 
 const Footer = () => (
-  <footer id='footerWrapper' className="page-footer font-small indigo footerWrapper">
+  <footer className="page-footer font-small indigo footerWrapper">
     <div className="container text-center text-md-left">
       <div className='row'>
         <div className='col-md-6'>
