@@ -3,17 +3,19 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Header.scss';
 import NavItems from '../navItems/NavItems';
-import ActiveUser from '../../Widgets/activeUser';
+import ActiveUser from '../../Widgets/activeuser/ActiveUser';
 import Logo from '../logo/Logo';
-import SearchForm from '../../Widgets/submitForm/SubmitForm';
+import SearchForm from '../../Widgets/searchForm/SearchForm';
+import HeaderButton from '../../Widgets/headerButton/HeaderButton';
+
 
 const Header = (props) => {
   const [formData] = useState({
     search: {
       element: 'input',
+      className: 'search-input',
       value: '',
       config: {
         name: 'search',
@@ -22,13 +24,6 @@ const Header = (props) => {
       },
     },
   });
-
-  const button = () => (
-    <div className="header-button-group">
-      <Link to='/signup'><button type='button' className="header-button">Signup</button></Link>
-      <Link to='/login'><button type='button' className="header-button">Login</button></Link>
-    </div>
-  );
 
   const { isValidated } = props;
   return (
@@ -39,8 +34,7 @@ const Header = (props) => {
           <ul className="navbar-nav mr-auto">
             <NavItems />
           </ul>
-          {isValidated ? <ActiveUser /> : button()}
-          {/* {searchForm()} */}
+          {isValidated ? <ActiveUser /> : <HeaderButton />}
           <SearchForm formData={formData} />
         </div>
       </nav>

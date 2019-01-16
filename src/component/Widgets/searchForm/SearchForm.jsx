@@ -1,4 +1,6 @@
+/* eslint-disable react/forbid-prop-types */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import Input from '../../ui/Input/Input';
 
 const SearchForm = ({ formData }) => {
@@ -9,7 +11,6 @@ const SearchForm = ({ formData }) => {
         <Input
           className='form-control mr-sm-2'
           formDetails={formData.search}
-          onClick={() => {}}
         />
       </div>
       <div
@@ -26,5 +27,8 @@ const SearchForm = ({ formData }) => {
   );
 };
 
+SearchForm.propTypes = {
+  formData: PropTypes.object.isRequired,
+};
 
 export default SearchForm;

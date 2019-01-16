@@ -28,29 +28,27 @@ button:active {
   }
 
   &.btn-signup {
-    background: $btn-most;
-    border-radius: 0.8em;
-    box-shadow: 1px 1px $shadow;
     color: $white-color;
-    cursor: pointer;
-    font-family: $reem-kufi;
-    font-size: 1.2em;
-    height: 2.2em;
-    padding: 5px 20px;
-    width: 11.5%;
+    background:$btn-most;
+    padding: 8px 20px;
+    border: 1px solid $white-color;
+    border-radius: 5rem;
+    font-size: 1em;
+    margin: 7px;
+    margin-right: 20px;
+    margin-top: -2px;
   }
 
   &.btn-login {
-    background: $btn-most;
-    border-radius: 0.8em;
-    box-shadow: 1px 1px $shadow;
     color: $white-color;
-    cursor: pointer;
-    font-family: $reem-kufi;
-    font-size: 1.2em;
-    height: 2.2em;
-    padding: 5px 20px;
-    width: 11.5%;
+    background:$btn-most;
+    padding: 8px 20px;
+    border: 1px solid $white-color;
+    border-radius: 5rem;
+    font-size: 1em;
+    margin: 7px;
+    margin-right: 20px;
+    margin-top: -2px;
   }
 
   &.btn-follow {

@@ -12,7 +12,7 @@ const NavItems = () => {
       linkClass: 'nav-link',
     },
     {
-      link: '/all_stories',
+      link: '/all-stories',
       text: 'All Stories',
       isActive: false,
       linkClass: 'nav-link',

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Logo.scss';
 
 const Logo = () => (
   <Link to='/'>
-    <img className='logo' src='/public/images/logo.png' alt="heimdal-logo" />
+    <img className='logo' src='/src/public/images/logo.png' alt="heimdal-logo" />
   </Link>
 );
 

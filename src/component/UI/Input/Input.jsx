@@ -1,16 +1,20 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Input = ({formDetails}) => {
+const Input = ({ formDetails }) => {
   const renderTemplate = () => {
     let formTemplate = null;
-    switch (formDetails.element) {
+    const { element } = formDetails;
+    switch (element) {
       case 'input':
         formTemplate = (
           <div className='form-group'>
             <input
-              className="form-control"
+              className={`form-control ${formDetails.className}`}
               {...formDetails.config}
               value={formDetails.value}
+              onChange={() => {}}
             />
           </div>
         );
@@ -27,6 +31,11 @@ const Input = ({formDetails}) => {
       {renderTemplate()}
     </div>
   );
+};
+
+
+Input.propTypes = {
+  formDetails: PropTypes.object.isRequired,
 };
 
 export default Input;
