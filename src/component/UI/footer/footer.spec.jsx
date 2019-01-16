@@ -9,13 +9,12 @@ describe('Footer Snapshot Test', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
-// check that the style/ classname for the 4 columns exist four times
-// check for 2 links
+
 describe('grid layout classname test', () => {
-  const wrapper = shallow(<Footer />);
   it('should test for the grid classnames', () => {
-    const classname = wrapper.find('footWrapper');
-    expect(classname.length).to.equal(true);
-    console.log(wrapper.debug);
+    const wrapper = shallow(<Footer />);
+    expect(wrapper.find('footer').length).toBe(1);
+    expect(wrapper.find('footer').hasClass('footerWrapper')).toBe(true);
+    expect(wrapper.find('div').at(2).hasClass('col-md-6')).toBe(true);
   });
 });
