@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import _ from 'lodash';
-import './ratings.scss';
+import { range } from 'lodash';
+import './Ratings.scss';
 
 const Rating = props => (
   <div className="rate">
     {
-      _.range(1, 6).map(value => (
+      range(1, 6).map(value => (
         <i
           key={value}
           className={Rating.getClassNames(value, props.ratings)}
