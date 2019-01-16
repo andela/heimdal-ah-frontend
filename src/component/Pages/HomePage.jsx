@@ -1,7 +1,7 @@
 import React from 'react';
-import Rating from '../UI/rating/Rating';
-import Button from '../UI/buttons/Button';
-import { DemoArticleCoponentWithGlowState } from '../UI/buttons/glow/DemoArticleCoponentWithGlowState';
+import Rating from '../ui/rating/Rating';
+import Button from '../ui/buttons/Button';
+import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
 
 const HomePage = () => (
   <div>
