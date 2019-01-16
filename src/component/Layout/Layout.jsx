@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
-import Header from '../UI/Header/Header';
+import Header from '../ui/header/Header';
 
 class Layout extends Component {
   state = {

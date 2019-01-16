@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginButton from '../UI/buttons/LoginButton.jsx';
+import LoginButton from '../ui/buttons/LoginButton.jsx';
 
 const LoginPage = () => (
   <h2 className='lead mt-5'>
