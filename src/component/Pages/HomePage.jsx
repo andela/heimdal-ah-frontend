@@ -1,5 +1,5 @@
 import React from 'react';
-import Rating from '../UI/rating/Rating';
+import Rating from '../UI/rating/Rating.jsx';
 import Button from '../UI/buttons/Button';
 import { DemoArticleCoponentWithGlowState } from '../UI/buttons/glow/DemoArticleCoponentWithGlowState';
 
