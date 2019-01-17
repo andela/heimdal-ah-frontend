@@ -1,0 +1,137 @@
+$default-color: #00b4fa;
+$white-color: #ffffff;
+$btn-google: #f13921;
+$btn-facebook: #2a59a1;
+$btn-most: #606e86;
+$shadow: rgba(77, 56, 56, 0.3);
+$shadow2: rgba(107, 105, 105, 0.2);
+$shadow3: rgba(107, 105, 105, 0.8);
+$reem-kufi: 'Reem Kufi', sans-serif;
+$cardo: 'Cardo', serif;
+$ovo: 'Ovo', serif;
+
+*{
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+}
+.NotificationCards{
+    width: 700px;
+    height: 280px;
+    border: 1px solid rgba(77, 56, 56, 0.1);
+    padding-left: 12px;
+    .text{
+        line-height: 100%;
+        font-family: $ovo;
+        font-size: 20px;
+        padding-left: 20px;
+
+    };
+
+    .header{
+        
+        h1{
+            font-family: $cardo;
+            font-size: 30px;
+            font-weight: bolder;
+            display: inline-block;
+            padding-top: 10px;
+            padding-left: 10px;
+        };
+        .bookmark-logo{
+           width: 55px;
+           height: 59px;
+           margin-top: -20px;
+        } 
+    }
+    .username{
+        font-family: $cardo;
+        font-size: 30px;
+        color: $btn-most;
+    };
+    .user-section{
+        .glow-text{
+            padding-top: 500px;
+            color: $btn-most;
+            font-family: $ovo; 
+        };
+        .user-image{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            font-weight: 200;
+        }
+    };   
+}
+
+.LargeCards{
+    width: 300px;
+    .stars{
+        margin-left: 30px;
+    }
+}
+
+.SmallCards{
+    width: 450px;
+    height: 140px;
+    .small-card-image{
+      width: 100%;
+      height: 140px;
+      background-color: $white-color
+    };
+    .article-header{
+        font-family: $ovo;
+        padding-left: 0px
+        
+    }
+    .small-card-text{
+        margin-top: 5px;
+        line-height: 100%;
+        font-family: $ovo;
+        font-size: 10px;
+        padding-left: 0px;
+    };
+    .user-section{
+        margin-top: 15px;
+        .glow-text{
+            color: $btn-most;
+            font-family: $ovo; 
+        };
+        .user-name{
+          font-size: 14px;
+          font-family: $ovo;
+          font-weight: lighter;
+          display: inline-block;
+          padding-left: 5px;
+        };
+        .glow-text{
+          font-size: 10px;
+          margin-bottom: 5px;
+          
+        };
+        .user-image{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        };
+        .timer{
+            float: right;
+            margin-top: 20px;
+            font-size: 10px;
+            padding-right: 5px
+        };
+        .comments{
+            padding-right: 0px;
+        }
+    }; 
+}
+.LargeCards{
+    font-family: $ovo;
+    .user-image{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+    };
+}

@@ -2,8 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import LoginPage from '../component/Pages/LoginPage.jsx';
-import Homepage from '../component/Pages/HomePage.jsx';
-import Cards from '../component/UI/cards/Cards';
+import Cards from '../component/UI/cards/NotificationCards';
 
 const Routes = () => (
   <div className='container'>
