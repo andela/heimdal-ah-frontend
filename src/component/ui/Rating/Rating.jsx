@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { range } from 'lodash';
-import './Ratings.scss';
+import './Rating.scss';
 
 const Rating = props => (
   <div className="rate">
