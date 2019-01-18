@@ -7,6 +7,9 @@ import Logo from '../logo/Logo';
 import SearchForm from '../../Widgets/searchForm/SearchForm';
 import HeaderButton from '../../Widgets/headerButton/HeaderButton';
 
+/**
+ * @param {boolean} isValidated should be a boolean
+ */
 const Header = (props) => {
   const { isValidated } = props;
   return (
@@ -17,7 +20,7 @@ const Header = (props) => {
           <ul className="navbar-nav mr-auto">
             <NavItems />
           </ul>
-          {isValidated ? <ActiveUser /> : <HeaderButton />}
+          {!isValidated ? <ActiveUser /> : <HeaderButton />}
           <SearchForm />
         </div>
       </nav>

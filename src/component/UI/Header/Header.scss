@@ -43,7 +43,7 @@ $reem-kufi: 'Reem Kufi', sans-serif;
   }
 
   .search-input {
-    margin-right: 10px!important;
+    margin-right: 10px !important;
     width: 150px;
   }
 
@@ -57,6 +57,7 @@ $reem-kufi: 'Reem Kufi', sans-serif;
   .username {
     font-size: 18px;
     padding: 10px;
+
     &::after {
       border-bottom: 1px solid $primary-color;
       content: '';
@@ -78,9 +79,10 @@ $reem-kufi: 'Reem Kufi', sans-serif;
     box-shadow: $dropdown-content-shadow;
     display: none;
     font-family: 'Cardo', serif;
-    position: absolute;
     min-width: 160px;
+    position: absolute;
     z-index: 1;
+
     a {
       color: $primary-color;
       display: block;
@@ -93,9 +95,9 @@ $reem-kufi: 'Reem Kufi', sans-serif;
     }
   }
 
-  .user_settings::before {
+  .user-settings::before {
     border-top: 1px solid $primary-color;
-    content: '';
+    content: "";
     display: block;
     margin: 0 auto;
     width: 90%;

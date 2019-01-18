@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import Header from '../ui/header/Header';
-
+/**
+ * Layout component
+ */
 class Layout extends Component {
   state = {
     isAuthenticated: false,
