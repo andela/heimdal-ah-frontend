@@ -1,0 +1,2903 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleCard1 /> should render the Article card coreectly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleCard1
+    articleImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+    articleSnippet="Lorem ipsum dolor sit amet consectetur a"
+    articleTitle="Lorem ipsum dol"
+    updatedTime="5 mins read"
+    userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+    username="Henry"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="col-md-12 high articleCard1"
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-md-5 m-r-0"
+            >
+              <img
+                alt="Card cap"
+                className=""
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                width="120"
+              />
+            </div>
+            <div
+              className="col-md-7"
+            >
+              <h6
+                className="card-title"
+              >
+                Lorem ipsum dol
+              </h6>
+              <p
+                className="card-text fs-13 "
+              >
+                Lorem ipsum dolor sit amet consectetur a
+              </p>
+              <div
+                className="row card-buttom"
+              >
+                <div
+                  className="col-md-12"
+                >
+                  <span>
+                    <img
+                      alt="user"
+                      className="user-image"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    />
+                  </span>
+                  <div
+                    className="col-8 col-md-6 user-name"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    Henry
+                  </div>
+                  <i
+                    className="far fa-comment-alt comment"
+                  >
+                     10
+                  </i>
+                </div>
+                <div
+                  className="col-md-12"
+                >
+                  <Glow
+                    active={true}
+                    handleGlow={[Function]}
+                  />
+                  <span
+                    className="float-right fs-13 m-t-10 m-r-15"
+                  >
+                    5 mins read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="card"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-md-5 m-r-0"
+            >
+              <img
+                alt="Card cap"
+                className=""
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                width="120"
+              />
+            </div>
+            <div
+              className="col-md-7"
+            >
+              <h6
+                className="card-title"
+              >
+                Lorem ipsum dol
+              </h6>
+              <p
+                className="card-text fs-13 "
+              >
+                Lorem ipsum dolor sit amet consectetur a
+              </p>
+              <div
+                className="row card-buttom"
+              >
+                <div
+                  className="col-md-12"
+                >
+                  <span>
+                    <img
+                      alt="user"
+                      className="user-image"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    />
+                  </span>
+                  <div
+                    className="col-8 col-md-6 user-name"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    Henry
+                  </div>
+                  <i
+                    className="far fa-comment-alt comment"
+                  >
+                     10
+                  </i>
+                </div>
+                <div
+                  className="col-md-12"
+                >
+                  <Glow
+                    active={true}
+                    handleGlow={[Function]}
+                  />
+                  <span
+                    className="float-right fs-13 m-t-10 m-r-15"
+                  >
+                    5 mins read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>,
+        "className": "col-md-12 high articleCard1",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="row"
+          >
+            <div
+              className="col-md-5 m-r-0"
+            >
+              <img
+                alt="Card cap"
+                className=""
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                width="120"
+              />
+            </div>
+            <div
+              className="col-md-7"
+            >
+              <h6
+                className="card-title"
+              >
+                Lorem ipsum dol
+              </h6>
+              <p
+                className="card-text fs-13 "
+              >
+                Lorem ipsum dolor sit amet consectetur a
+              </p>
+              <div
+                className="row card-buttom"
+              >
+                <div
+                  className="col-md-12"
+                >
+                  <span>
+                    <img
+                      alt="user"
+                      className="user-image"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    />
+                  </span>
+                  <div
+                    className="col-8 col-md-6 user-name"
+                    style={
+                      Object {
+                        "display": "inline-block",
+                      }
+                    }
+                  >
+                    Henry
+                  </div>
+                  <i
+                    className="far fa-comment-alt comment"
+                  >
+                     10
+                  </i>
+                </div>
+                <div
+                  className="col-md-12"
+                >
+                  <Glow
+                    active={true}
+                    handleGlow={[Function]}
+                  />
+                  <span
+                    className="float-right fs-13 m-t-10 m-r-15"
+                  >
+                    5 mins read
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>,
+          "className": "card",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col-md-5 m-r-0"
+              >
+                <img
+                  alt="Card cap"
+                  className=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  width="120"
+                />
+              </div>,
+              <div
+                className="col-md-7"
+              >
+                <h6
+                  className="card-title"
+                >
+                  Lorem ipsum dol
+                </h6>
+                <p
+                  className="card-text fs-13 "
+                >
+                  Lorem ipsum dolor sit amet consectetur a
+                </p>
+                <div
+                  className="row card-buttom"
+                >
+                  <div
+                    className="col-md-12"
+                  >
+                    <span>
+                      <img
+                        alt="user"
+                        className="user-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      />
+                    </span>
+                    <div
+                      className="col-8 col-md-6 user-name"
+                      style={
+                        Object {
+                          "display": "inline-block",
+                        }
+                      }
+                    >
+                      Henry
+                    </div>
+                    <i
+                      className="far fa-comment-alt comment"
+                    >
+                       10
+                    </i>
+                  </div>
+                  <div
+                    className="col-md-12"
+                  >
+                    <Glow
+                      active={true}
+                      handleGlow={[Function]}
+                    />
+                    <span
+                      className="float-right fs-13 m-t-10 m-r-15"
+                    >
+                      5 mins read
+                    </span>
+                  </div>
+                </div>
+              </div>,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="Card cap"
+                  className=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  width="120"
+                />,
+                "className": "col-md-5 m-r-0",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Card cap",
+                  "className": "",
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                  "width": "120",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h6
+                    className="card-title"
+                  >
+                    Lorem ipsum dol
+                  </h6>,
+                  <p
+                    className="card-text fs-13 "
+                  >
+                    Lorem ipsum dolor sit amet consectetur a
+                  </p>,
+                  <div
+                    className="row card-buttom"
+                  >
+                    <div
+                      className="col-md-12"
+                    >
+                      <span>
+                        <img
+                          alt="user"
+                          className="user-image"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                        />
+                      </span>
+                      <div
+                        className="col-8 col-md-6 user-name"
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
+                      >
+                        Henry
+                      </div>
+                      <i
+                        className="far fa-comment-alt comment"
+                      >
+                         10
+                      </i>
+                    </div>
+                    <div
+                      className="col-md-12"
+                    >
+                      <Glow
+                        active={true}
+                        handleGlow={[Function]}
+                      />
+                      <span
+                        className="float-right fs-13 m-t-10 m-r-15"
+                      >
+                        5 mins read
+                      </span>
+                    </div>
+                  </div>,
+                ],
+                "className": "col-md-7",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Lorem ipsum dol",
+                    "className": "card-title",
+                  },
+                  "ref": null,
+                  "rendered": "Lorem ipsum dol",
+                  "type": "h6",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Lorem ipsum dolor sit amet consectetur a",
+                    "className": "card-text fs-13 ",
+                  },
+                  "ref": null,
+                  "rendered": "Lorem ipsum dolor sit amet consectetur a",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="col-md-12"
+                      >
+                        <span>
+                          <img
+                            alt="user"
+                            className="user-image"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                          />
+                        </span>
+                        <div
+                          className="col-8 col-md-6 user-name"
+                          style={
+                            Object {
+                              "display": "inline-block",
+                            }
+                          }
+                        >
+                          Henry
+                        </div>
+                        <i
+                          className="far fa-comment-alt comment"
+                        >
+                           10
+                        </i>
+                      </div>,
+                      <div
+                        className="col-md-12"
+                      >
+                        <Glow
+                          active={true}
+                          handleGlow={[Function]}
+                        />
+                        <span
+                          className="float-right fs-13 m-t-10 m-r-15"
+                        >
+                          5 mins read
+                        </span>
+                      </div>,
+                    ],
+                    "className": "row card-buttom",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span>
+                            <img
+                              alt="user"
+                              className="user-image"
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                            />
+                          </span>,
+                          <div
+                            className="col-8 col-md-6 user-name"
+                            style={
+                              Object {
+                                "display": "inline-block",
+                              }
+                            }
+                          >
+                            Henry
+                          </div>,
+                          <i
+                            className="far fa-comment-alt comment"
+                          >
+                             10
+                          </i>,
+                        ],
+                        "className": "col-md-12",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <img
+                              alt="user"
+                              className="user-image"
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                            />,
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "alt": "user",
+                              "className": "user-image",
+                              "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "img",
+                          },
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Henry",
+                            "className": "col-8 col-md-6 user-name",
+                            "style": Object {
+                              "display": "inline-block",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": "Henry",
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": " 10",
+                            "className": "far fa-comment-alt comment",
+                          },
+                          "ref": null,
+                          "rendered": " 10",
+                          "type": "i",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <Glow
+                            active={true}
+                            handleGlow={[Function]}
+                          />,
+                          <span
+                            className="float-right fs-13 m-t-10 m-r-15"
+                          >
+                            5 mins read
+                          </span>,
+                        ],
+                        "className": "col-md-12",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "active": true,
+                            "handleGlow": [Function],
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "5 mins read",
+                            "className": "float-right fs-13 m-t-10 m-r-15",
+                          },
+                          "ref": null,
+                          "rendered": "5 mins read",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="col-md-12 high articleCard1"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-md-5 m-r-0"
+              >
+                <img
+                  alt="Card cap"
+                  className=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  width="120"
+                />
+              </div>
+              <div
+                className="col-md-7"
+              >
+                <h6
+                  className="card-title"
+                >
+                  Lorem ipsum dol
+                </h6>
+                <p
+                  className="card-text fs-13 "
+                >
+                  Lorem ipsum dolor sit amet consectetur a
+                </p>
+                <div
+                  className="row card-buttom"
+                >
+                  <div
+                    className="col-md-12"
+                  >
+                    <span>
+                      <img
+                        alt="user"
+                        className="user-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      />
+                    </span>
+                    <div
+                      className="col-8 col-md-6 user-name"
+                      style={
+                        Object {
+                          "display": "inline-block",
+                        }
+                      }
+                    >
+                      Henry
+                    </div>
+                    <i
+                      className="far fa-comment-alt comment"
+                    >
+                       10
+                    </i>
+                  </div>
+                  <div
+                    className="col-md-12"
+                  >
+                    <Glow
+                      active={true}
+                      handleGlow={[Function]}
+                    />
+                    <span
+                      className="float-right fs-13 m-t-10 m-r-15"
+                    >
+                      5 mins read
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="card"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-md-5 m-r-0"
+              >
+                <img
+                  alt="Card cap"
+                  className=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  width="120"
+                />
+              </div>
+              <div
+                className="col-md-7"
+              >
+                <h6
+                  className="card-title"
+                >
+                  Lorem ipsum dol
+                </h6>
+                <p
+                  className="card-text fs-13 "
+                >
+                  Lorem ipsum dolor sit amet consectetur a
+                </p>
+                <div
+                  className="row card-buttom"
+                >
+                  <div
+                    className="col-md-12"
+                  >
+                    <span>
+                      <img
+                        alt="user"
+                        className="user-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      />
+                    </span>
+                    <div
+                      className="col-8 col-md-6 user-name"
+                      style={
+                        Object {
+                          "display": "inline-block",
+                        }
+                      }
+                    >
+                      Henry
+                    </div>
+                    <i
+                      className="far fa-comment-alt comment"
+                    >
+                       10
+                    </i>
+                  </div>
+                  <div
+                    className="col-md-12"
+                  >
+                    <Glow
+                      active={true}
+                      handleGlow={[Function]}
+                    />
+                    <span
+                      className="float-right fs-13 m-t-10 m-r-15"
+                    >
+                      5 mins read
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>,
+          "className": "col-md-12 high articleCard1",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="row"
+            >
+              <div
+                className="col-md-5 m-r-0"
+              >
+                <img
+                  alt="Card cap"
+                  className=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  width="120"
+                />
+              </div>
+              <div
+                className="col-md-7"
+              >
+                <h6
+                  className="card-title"
+                >
+                  Lorem ipsum dol
+                </h6>
+                <p
+                  className="card-text fs-13 "
+                >
+                  Lorem ipsum dolor sit amet consectetur a
+                </p>
+                <div
+                  className="row card-buttom"
+                >
+                  <div
+                    className="col-md-12"
+                  >
+                    <span>
+                      <img
+                        alt="user"
+                        className="user-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      />
+                    </span>
+                    <div
+                      className="col-8 col-md-6 user-name"
+                      style={
+                        Object {
+                          "display": "inline-block",
+                        }
+                      }
+                    >
+                      Henry
+                    </div>
+                    <i
+                      className="far fa-comment-alt comment"
+                    >
+                       10
+                    </i>
+                  </div>
+                  <div
+                    className="col-md-12"
+                  >
+                    <Glow
+                      active={true}
+                      handleGlow={[Function]}
+                    />
+                    <span
+                      className="float-right fs-13 m-t-10 m-r-15"
+                    >
+                      5 mins read
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>,
+            "className": "card",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="col-md-5 m-r-0"
+                >
+                  <img
+                    alt="Card cap"
+                    className=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    width="120"
+                  />
+                </div>,
+                <div
+                  className="col-md-7"
+                >
+                  <h6
+                    className="card-title"
+                  >
+                    Lorem ipsum dol
+                  </h6>
+                  <p
+                    className="card-text fs-13 "
+                  >
+                    Lorem ipsum dolor sit amet consectetur a
+                  </p>
+                  <div
+                    className="row card-buttom"
+                  >
+                    <div
+                      className="col-md-12"
+                    >
+                      <span>
+                        <img
+                          alt="user"
+                          className="user-image"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                        />
+                      </span>
+                      <div
+                        className="col-8 col-md-6 user-name"
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
+                      >
+                        Henry
+                      </div>
+                      <i
+                        className="far fa-comment-alt comment"
+                      >
+                         10
+                      </i>
+                    </div>
+                    <div
+                      className="col-md-12"
+                    >
+                      <Glow
+                        active={true}
+                        handleGlow={[Function]}
+                      />
+                      <span
+                        className="float-right fs-13 m-t-10 m-r-15"
+                      >
+                        5 mins read
+                      </span>
+                    </div>
+                  </div>
+                </div>,
+              ],
+              "className": "row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt="Card cap"
+                    className=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    width="120"
+                  />,
+                  "className": "col-md-5 m-r-0",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Card cap",
+                    "className": "",
+                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                    "width": "120",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h6
+                      className="card-title"
+                    >
+                      Lorem ipsum dol
+                    </h6>,
+                    <p
+                      className="card-text fs-13 "
+                    >
+                      Lorem ipsum dolor sit amet consectetur a
+                    </p>,
+                    <div
+                      className="row card-buttom"
+                    >
+                      <div
+                        className="col-md-12"
+                      >
+                        <span>
+                          <img
+                            alt="user"
+                            className="user-image"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                          />
+                        </span>
+                        <div
+                          className="col-8 col-md-6 user-name"
+                          style={
+                            Object {
+                              "display": "inline-block",
+                            }
+                          }
+                        >
+                          Henry
+                        </div>
+                        <i
+                          className="far fa-comment-alt comment"
+                        >
+                           10
+                        </i>
+                      </div>
+                      <div
+                        className="col-md-12"
+                      >
+                        <Glow
+                          active={true}
+                          handleGlow={[Function]}
+                        />
+                        <span
+                          className="float-right fs-13 m-t-10 m-r-15"
+                        >
+                          5 mins read
+                        </span>
+                      </div>
+                    </div>,
+                  ],
+                  "className": "col-md-7",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Lorem ipsum dol",
+                      "className": "card-title",
+                    },
+                    "ref": null,
+                    "rendered": "Lorem ipsum dol",
+                    "type": "h6",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Lorem ipsum dolor sit amet consectetur a",
+                      "className": "card-text fs-13 ",
+                    },
+                    "ref": null,
+                    "rendered": "Lorem ipsum dolor sit amet consectetur a",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <div
+                          className="col-md-12"
+                        >
+                          <span>
+                            <img
+                              alt="user"
+                              className="user-image"
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                            />
+                          </span>
+                          <div
+                            className="col-8 col-md-6 user-name"
+                            style={
+                              Object {
+                                "display": "inline-block",
+                              }
+                            }
+                          >
+                            Henry
+                          </div>
+                          <i
+                            className="far fa-comment-alt comment"
+                          >
+                             10
+                          </i>
+                        </div>,
+                        <div
+                          className="col-md-12"
+                        >
+                          <Glow
+                            active={true}
+                            handleGlow={[Function]}
+                          />
+                          <span
+                            className="float-right fs-13 m-t-10 m-r-15"
+                          >
+                            5 mins read
+                          </span>
+                        </div>,
+                      ],
+                      "className": "row card-buttom",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <span>
+                              <img
+                                alt="user"
+                                className="user-image"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                              />
+                            </span>,
+                            <div
+                              className="col-8 col-md-6 user-name"
+                              style={
+                                Object {
+                                  "display": "inline-block",
+                                }
+                              }
+                            >
+                              Henry
+                            </div>,
+                            <i
+                              className="far fa-comment-alt comment"
+                            >
+                               10
+                            </i>,
+                          ],
+                          "className": "col-md-12",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <img
+                                alt="user"
+                                className="user-image"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                              />,
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "alt": "user",
+                                "className": "user-image",
+                                "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "img",
+                            },
+                            "type": "span",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Henry",
+                              "className": "col-8 col-md-6 user-name",
+                              "style": Object {
+                                "display": "inline-block",
+                              },
+                            },
+                            "ref": null,
+                            "rendered": "Henry",
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": " 10",
+                              "className": "far fa-comment-alt comment",
+                            },
+                            "ref": null,
+                            "rendered": " 10",
+                            "type": "i",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <Glow
+                              active={true}
+                              handleGlow={[Function]}
+                            />,
+                            <span
+                              className="float-right fs-13 m-t-10 m-r-15"
+                            >
+                              5 mins read
+                            </span>,
+                          ],
+                          "className": "col-md-12",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "active": true,
+                              "handleGlow": [Function],
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "5 mins read",
+                              "className": "float-right fs-13 m-t-10 m-r-15",
+                            },
+                            "ref": null,
+                            "rendered": "5 mins read",
+                            "type": "span",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<ArticleCard2 /> should render the Article card coreectly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleCard2
+    Article="low as a natural lead-in to additional content. This content is a little bit longer."
+    ArticleImage="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+    ArticleTitle="Lorem ipsum dolor"
+    updatedTime=" 5 days ago"
+    userImage="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+    username="Peter Debby"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h5
+          className="card-title"
+        >
+          Lorem ipsum dolor
+        </h5>,
+        <img
+          alt="Card"
+          className="card-img-top"
+          src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+        />,
+        <div
+          className="card-body"
+          style={
+            Object {
+              "padding": "0rem",
+            }
+          }
+        >
+          <br />
+          <p
+            className="card-text"
+          >
+            low as a natural lead-in to additional content. This content is a little bit longer.
+          </p>
+          <span>
+            <img
+              alt="user"
+              className="user-image"
+              src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+            />
+          </span>
+          <p
+            className="col-8 col-md-8 user-name"
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            Peter Debby
+          </p>
+          <i
+            className="far fa-clock updated-time"
+            style={Object {}}
+          >
+             5 days ago
+          </i>
+          <div
+            className="row"
+          >
+            <div
+              className="col-md-3"
+            >
+              <Glow
+                active={true}
+                handleGlow={[Function]}
+              />
+            </div>
+            <div
+              className="col-md-6 text-center ratings"
+            >
+              <Rating
+                ratings={0}
+              />
+            </div>
+            <div
+              className="col-md-3"
+            >
+              <i
+                className="far fa-comment-alt comment"
+              >
+                 10
+              </i>
+            </div>
+          </div>
+        </div>,
+      ],
+      "className": "article-Card-2",
+      "style": Object {
+        "border": "0rem",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Lorem ipsum dolor",
+          "className": "card-title",
+        },
+        "ref": null,
+        "rendered": "Lorem ipsum dolor",
+        "type": "h5",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "Card",
+          "className": "card-img-top",
+          "src": "https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <br />,
+            <p
+              className="card-text"
+            >
+              low as a natural lead-in to additional content. This content is a little bit longer.
+            </p>,
+            <span>
+              <img
+                alt="user"
+                className="user-image"
+                src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+              />
+            </span>,
+            <p
+              className="col-8 col-md-8 user-name"
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              Peter Debby
+            </p>,
+            <i
+              className="far fa-clock updated-time"
+              style={Object {}}
+            >
+               5 days ago
+            </i>,
+            <div
+              className="row"
+            >
+              <div
+                className="col-md-3"
+              >
+                <Glow
+                  active={true}
+                  handleGlow={[Function]}
+                />
+              </div>
+              <div
+                className="col-md-6 text-center ratings"
+              >
+                <Rating
+                  ratings={0}
+                />
+              </div>
+              <div
+                className="col-md-3"
+              >
+                <i
+                  className="far fa-comment-alt comment"
+                >
+                   10
+                </i>
+              </div>
+            </div>,
+          ],
+          "className": "card-body",
+          "style": Object {
+            "padding": "0rem",
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "low as a natural lead-in to additional content. This content is a little bit longer.",
+              "className": "card-text",
+            },
+            "ref": null,
+            "rendered": "low as a natural lead-in to additional content. This content is a little bit longer.",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="user"
+                className="user-image"
+                src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "user",
+                "className": "user-image",
+                "src": "https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Peter Debby",
+              "className": "col-8 col-md-8 user-name",
+              "style": Object {
+                "display": "inline-block",
+              },
+            },
+            "ref": null,
+            "rendered": "Peter Debby",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " 5 days ago",
+              "className": "far fa-clock updated-time",
+              "style": Object {},
+            },
+            "ref": null,
+            "rendered": " 5 days ago",
+            "type": "i",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="col-md-3"
+                >
+                  <Glow
+                    active={true}
+                    handleGlow={[Function]}
+                  />
+                </div>,
+                <div
+                  className="col-md-6 text-center ratings"
+                >
+                  <Rating
+                    ratings={0}
+                  />
+                </div>,
+                <div
+                  className="col-md-3"
+                >
+                  <i
+                    className="far fa-comment-alt comment"
+                  >
+                     10
+                  </i>
+                </div>,
+              ],
+              "className": "row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Glow
+                    active={true}
+                    handleGlow={[Function]}
+                  />,
+                  "className": "col-md-3",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "active": true,
+                    "handleGlow": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Rating
+                    ratings={0}
+                  />,
+                  "className": "col-md-6 text-center ratings",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "ratings": 0,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <i
+                    className="far fa-comment-alt comment"
+                  >
+                     10
+                  </i>,
+                  "className": "col-md-3",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " 10",
+                    "className": "far fa-comment-alt comment",
+                  },
+                  "ref": null,
+                  "rendered": " 10",
+                  "type": "i",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h5
+            className="card-title"
+          >
+            Lorem ipsum dolor
+          </h5>,
+          <img
+            alt="Card"
+            className="card-img-top"
+            src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+          />,
+          <div
+            className="card-body"
+            style={
+              Object {
+                "padding": "0rem",
+              }
+            }
+          >
+            <br />
+            <p
+              className="card-text"
+            >
+              low as a natural lead-in to additional content. This content is a little bit longer.
+            </p>
+            <span>
+              <img
+                alt="user"
+                className="user-image"
+                src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+              />
+            </span>
+            <p
+              className="col-8 col-md-8 user-name"
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              Peter Debby
+            </p>
+            <i
+              className="far fa-clock updated-time"
+              style={Object {}}
+            >
+               5 days ago
+            </i>
+            <div
+              className="row"
+            >
+              <div
+                className="col-md-3"
+              >
+                <Glow
+                  active={true}
+                  handleGlow={[Function]}
+                />
+              </div>
+              <div
+                className="col-md-6 text-center ratings"
+              >
+                <Rating
+                  ratings={0}
+                />
+              </div>
+              <div
+                className="col-md-3"
+              >
+                <i
+                  className="far fa-comment-alt comment"
+                >
+                   10
+                </i>
+              </div>
+            </div>
+          </div>,
+        ],
+        "className": "article-Card-2",
+        "style": Object {
+          "border": "0rem",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Lorem ipsum dolor",
+            "className": "card-title",
+          },
+          "ref": null,
+          "rendered": "Lorem ipsum dolor",
+          "type": "h5",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Card",
+            "className": "card-img-top",
+            "src": "https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <br />,
+              <p
+                className="card-text"
+              >
+                low as a natural lead-in to additional content. This content is a little bit longer.
+              </p>,
+              <span>
+                <img
+                  alt="user"
+                  className="user-image"
+                  src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                />
+              </span>,
+              <p
+                className="col-8 col-md-8 user-name"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                Peter Debby
+              </p>,
+              <i
+                className="far fa-clock updated-time"
+                style={Object {}}
+              >
+                 5 days ago
+              </i>,
+              <div
+                className="row"
+              >
+                <div
+                  className="col-md-3"
+                >
+                  <Glow
+                    active={true}
+                    handleGlow={[Function]}
+                  />
+                </div>
+                <div
+                  className="col-md-6 text-center ratings"
+                >
+                  <Rating
+                    ratings={0}
+                  />
+                </div>
+                <div
+                  className="col-md-3"
+                >
+                  <i
+                    className="far fa-comment-alt comment"
+                  >
+                     10
+                  </i>
+                </div>
+              </div>,
+            ],
+            "className": "card-body",
+            "style": Object {
+              "padding": "0rem",
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "low as a natural lead-in to additional content. This content is a little bit longer.",
+                "className": "card-text",
+              },
+              "ref": null,
+              "rendered": "low as a natural lead-in to additional content. This content is a little bit longer.",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="user"
+                  className="user-image"
+                  src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "user",
+                  "className": "user-image",
+                  "src": "https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Peter Debby",
+                "className": "col-8 col-md-8 user-name",
+                "style": Object {
+                  "display": "inline-block",
+                },
+              },
+              "ref": null,
+              "rendered": "Peter Debby",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " 5 days ago",
+                "className": "far fa-clock updated-time",
+                "style": Object {},
+              },
+              "ref": null,
+              "rendered": " 5 days ago",
+              "type": "i",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="col-md-3"
+                  >
+                    <Glow
+                      active={true}
+                      handleGlow={[Function]}
+                    />
+                  </div>,
+                  <div
+                    className="col-md-6 text-center ratings"
+                  >
+                    <Rating
+                      ratings={0}
+                    />
+                  </div>,
+                  <div
+                    className="col-md-3"
+                  >
+                    <i
+                      className="far fa-comment-alt comment"
+                    >
+                       10
+                    </i>
+                  </div>,
+                ],
+                "className": "row",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Glow
+                      active={true}
+                      handleGlow={[Function]}
+                    />,
+                    "className": "col-md-3",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "active": true,
+                      "handleGlow": [Function],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Rating
+                      ratings={0}
+                    />,
+                    "className": "col-md-6 text-center ratings",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "ratings": 0,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <i
+                      className="far fa-comment-alt comment"
+                    >
+                       10
+                    </i>,
+                    "className": "col-md-3",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": " 10",
+                      "className": "far fa-comment-alt comment",
+                    },
+                    "ref": null,
+                    "rendered": " 10",
+                    "type": "i",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<BookmarksCards /> should render the Article card coreectly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BookmarksCards
+    Article="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis."
+    ArticleTitle="Lorem ipsum dolor sit amet,"
+    moreClass=""
+    userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+    username="pato azu"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="bookmarksCards "
+      >
+        <div
+          className="header"
+        >
+          <h1
+            className="col-md-10"
+          >
+            Lorem ipsum dolor sit amet,
+          </h1>
+          <img
+            alt="bookmark-logo"
+            className="bookmark-logo col-md-3"
+            src="/src/images/livello42.svg"
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <p
+            className="text col-md-8"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+          </p>
+        </div>
+        <br />
+        <div
+          className="user-section"
+        >
+          <span>
+            <img
+              alt="user"
+              className="user-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+            />
+          </span>
+          <p
+            className="col-8 col-md-9 username"
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            pato azu
+          </p>
+          <span>
+            <Glow
+              active={true}
+              className="col-1 glowButton"
+              handleGlow={[Function]}
+            />
+          </span>
+          <span
+            className="glow-text"
+          >
+            5000
+          </span>
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="header"
+          >
+            <h1
+              className="col-md-10"
+            >
+              Lorem ipsum dolor sit amet,
+            </h1>
+            <img
+              alt="bookmark-logo"
+              className="bookmark-logo col-md-3"
+              src="/src/images/livello42.svg"
+            />
+          </div>,
+          <div
+            className="row"
+          >
+            <p
+              className="text col-md-8"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+            </p>
+          </div>,
+          <br />,
+          <div
+            className="user-section"
+          >
+            <span>
+              <img
+                alt="user"
+                className="user-image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+              />
+            </span>
+            <p
+              className="col-8 col-md-9 username"
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              pato azu
+            </p>
+            <span>
+              <Glow
+                active={true}
+                className="col-1 glowButton"
+                handleGlow={[Function]}
+              />
+            </span>
+            <span
+              className="glow-text"
+            >
+              5000
+            </span>
+          </div>,
+        ],
+        "className": "bookmarksCards ",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="col-md-10"
+              >
+                Lorem ipsum dolor sit amet,
+              </h1>,
+              <img
+                alt="bookmark-logo"
+                className="bookmark-logo col-md-3"
+                src="/src/images/livello42.svg"
+              />,
+            ],
+            "className": "header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Lorem ipsum dolor sit amet,",
+                "className": "col-md-10",
+              },
+              "ref": null,
+              "rendered": "Lorem ipsum dolor sit amet,",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "bookmark-logo",
+                "className": "bookmark-logo col-md-3",
+                "src": "/src/images/livello42.svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <p
+              className="text col-md-8"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+            </p>,
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
+              "className": "text col-md-8",
+            },
+            "ref": null,
+            "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
+            "type": "p",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span>
+                <img
+                  alt="user"
+                  className="user-image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                />
+              </span>,
+              <p
+                className="col-8 col-md-9 username"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                pato azu
+              </p>,
+              <span>
+                <Glow
+                  active={true}
+                  className="col-1 glowButton"
+                  handleGlow={[Function]}
+                />
+              </span>,
+              <span
+                className="glow-text"
+              >
+                5000
+              </span>,
+            ],
+            "className": "user-section",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="user"
+                  className="user-image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "user",
+                  "className": "user-image",
+                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "pato azu",
+                "className": "col-8 col-md-9 username",
+                "style": Object {
+                  "display": "inline-block",
+                },
+              },
+              "ref": null,
+              "rendered": "pato azu",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Glow
+                  active={true}
+                  className="col-1 glowButton"
+                  handleGlow={[Function]}
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "active": true,
+                  "className": "col-1 glowButton",
+                  "handleGlow": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "5000",
+                "className": "glow-text",
+              },
+              "ref": null,
+              "rendered": "5000",
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="bookmarksCards "
+        >
+          <div
+            className="header"
+          >
+            <h1
+              className="col-md-10"
+            >
+              Lorem ipsum dolor sit amet,
+            </h1>
+            <img
+              alt="bookmark-logo"
+              className="bookmark-logo col-md-3"
+              src="/src/images/livello42.svg"
+            />
+          </div>
+          <div
+            className="row"
+          >
+            <p
+              className="text col-md-8"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+            </p>
+          </div>
+          <br />
+          <div
+            className="user-section"
+          >
+            <span>
+              <img
+                alt="user"
+                className="user-image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+              />
+            </span>
+            <p
+              className="col-8 col-md-9 username"
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              pato azu
+            </p>
+            <span>
+              <Glow
+                active={true}
+                className="col-1 glowButton"
+                handleGlow={[Function]}
+              />
+            </span>
+            <span
+              className="glow-text"
+            >
+              5000
+            </span>
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="header"
+            >
+              <h1
+                className="col-md-10"
+              >
+                Lorem ipsum dolor sit amet,
+              </h1>
+              <img
+                alt="bookmark-logo"
+                className="bookmark-logo col-md-3"
+                src="/src/images/livello42.svg"
+              />
+            </div>,
+            <div
+              className="row"
+            >
+              <p
+                className="text col-md-8"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+              </p>
+            </div>,
+            <br />,
+            <div
+              className="user-section"
+            >
+              <span>
+                <img
+                  alt="user"
+                  className="user-image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                />
+              </span>
+              <p
+                className="col-8 col-md-9 username"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                pato azu
+              </p>
+              <span>
+                <Glow
+                  active={true}
+                  className="col-1 glowButton"
+                  handleGlow={[Function]}
+                />
+              </span>
+              <span
+                className="glow-text"
+              >
+                5000
+              </span>
+            </div>,
+          ],
+          "className": "bookmarksCards ",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1
+                  className="col-md-10"
+                >
+                  Lorem ipsum dolor sit amet,
+                </h1>,
+                <img
+                  alt="bookmark-logo"
+                  className="bookmark-logo col-md-3"
+                  src="/src/images/livello42.svg"
+                />,
+              ],
+              "className": "header",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Lorem ipsum dolor sit amet,",
+                  "className": "col-md-10",
+                },
+                "ref": null,
+                "rendered": "Lorem ipsum dolor sit amet,",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "bookmark-logo",
+                  "className": "bookmark-logo col-md-3",
+                  "src": "/src/images/livello42.svg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <p
+                className="text col-md-8"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+              </p>,
+              "className": "row",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
+                "className": "text col-md-8",
+              },
+              "ref": null,
+              "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
+              "type": "p",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span>
+                  <img
+                    alt="user"
+                    className="user-image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  />
+                </span>,
+                <p
+                  className="col-8 col-md-9 username"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                    }
+                  }
+                >
+                  pato azu
+                </p>,
+                <span>
+                  <Glow
+                    active={true}
+                    className="col-1 glowButton"
+                    handleGlow={[Function]}
+                  />
+                </span>,
+                <span
+                  className="glow-text"
+                >
+                  5000
+                </span>,
+              ],
+              "className": "user-section",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt="user"
+                    className="user-image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "user",
+                    "className": "user-image",
+                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "pato azu",
+                  "className": "col-8 col-md-9 username",
+                  "style": Object {
+                    "display": "inline-block",
+                  },
+                },
+                "ref": null,
+                "rendered": "pato azu",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Glow
+                    active={true}
+                    className="col-1 glowButton"
+                    handleGlow={[Function]}
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "active": true,
+                    "className": "col-1 glowButton",
+                    "handleGlow": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "5000",
+                  "className": "glow-text",
+                },
+                "ref": null,
+                "rendered": "5000",
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

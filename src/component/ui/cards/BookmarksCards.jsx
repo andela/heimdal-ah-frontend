@@ -4,7 +4,7 @@ import './Cards.scss';
 import Glow from '../buttons/glow/Glow.jsx';
 
 
-const NotificationCards = (props) => {
+const BookmarksCards = (props) => {
   const {
     ArticleTitle,
     Article,
@@ -29,7 +29,7 @@ const NotificationCards = (props) => {
           <span><img className="user-image" src={userImage} alt="user" /></span>
           {/* <i className="fas fa-user-circle" /> */}
           <p className="col-8 col-md-9 username" style={{ display: 'inline-block' }}>{ username }</p>
-          <span><Glow className="col-1 glowButton" active /></span>
+          <span><Glow className="col-1 glowButton" active handleGlow={() => {}} /></span>
           <span className='glow-text'>5000</span>
         </div>
       </div>
@@ -44,7 +44,7 @@ const image = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfs
 const userName = 'pato azu';
 const articleTitle = 'Lorem ipsum dolor sit amet,';
 
-NotificationCards.defaultProps = {
+BookmarksCards.defaultProps = {
   ArticleTitle: articleTitle,
   Article: article,
   userImage: image,
@@ -53,7 +53,7 @@ NotificationCards.defaultProps = {
 };
 
 
-NotificationCards.propTypes = {
+BookmarksCards.propTypes = {
   ArticleTitle: PropTypes.string,
   Article: PropTypes.string,
   userImage: PropTypes.string,
@@ -61,4 +61,4 @@ NotificationCards.propTypes = {
   moreClass: PropTypes.string,
 };
 
-export default NotificationCards;
+export default BookmarksCards;

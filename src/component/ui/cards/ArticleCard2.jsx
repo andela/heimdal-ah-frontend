@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Glow from '../buttons/glow/Glow.jsx';
 import './Cards.scss';
+import Rating from '../Rating/Rating';
 
 const ArticleCard2 = (props) => {
   const {
@@ -22,16 +23,17 @@ const ArticleCard2 = (props) => {
         <span><img className="user-image" src={userImage} alt="user" /></span>
         <p className="col-8 col-md-8 user-name" style={{ display: 'inline-block' }}>{username}</p>
         <i className="far fa-clock updated-time" style={{}}>{ updatedTime }</i>
-        <Glow active />
-        <div className='stars col-7' style={{ display: 'inline-block' }}>
-          <i className="far fa-star" />
-          <i className="far fa-star" />
-          <i className="far fa-star" />
-          <i className="far fa-star" />
-          <i className="far fa-star" />
+        <div className='row'>
+          <div className='col-md-3'>
+            <Glow active handleGlow={() => {}} />
+          </div>
+          <div className='col-md-6 text-center ratings'>
+            <Rating />
+          </div>
+          <div className='col-md-3'>
+            <i className="far fa-comment-alt comment"> 10</i>
+          </div>
         </div>
-        <i className="far fa-comment-alt comment"> 10</i>
-        <hr />
       </div>
     </div>
   );
