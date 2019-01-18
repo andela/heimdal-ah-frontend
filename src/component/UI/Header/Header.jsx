@@ -1,8 +1,5 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './Header.scss';
 import NavItems from '../navItems/NavItems';
 import ActiveUser from '../../Widgets/activeuser/ActiveUser';
@@ -24,7 +21,6 @@ const Header = (props) => {
       },
     },
   });
-
   const { isValidated } = props;
   return (
     <header className='header'>
@@ -42,5 +38,9 @@ const Header = (props) => {
   );
 };
 
+
+Header.propTypes = {
+  isValidated: PropTypes.bool.isRequired,
+};
 
 export default Header;

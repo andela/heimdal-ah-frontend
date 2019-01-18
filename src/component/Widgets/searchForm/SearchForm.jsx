@@ -1,4 +1,4 @@
-/* eslint-disable react/forbid-prop-types */
+/* eslint-disable no-undef */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Input from '../../ui/Input/Input';
@@ -28,7 +28,7 @@ const SearchForm = ({ formData }) => {
 };
 
 SearchForm.propTypes = {
-  formData: PropTypes.object.isRequired,
+  formData: PropTypes.InstanceOf(object).isRequired,
 };
 
 export default SearchForm;

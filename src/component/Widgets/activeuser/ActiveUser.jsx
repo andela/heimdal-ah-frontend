@@ -31,5 +31,4 @@ const ActiveUser = () => (
   </div>
 );
 
-
 export default ActiveUser;

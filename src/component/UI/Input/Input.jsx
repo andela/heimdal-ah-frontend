@@ -33,7 +33,6 @@ const Input = ({ formDetails }) => {
   );
 };
 
-
 Input.propTypes = {
   formDetails: PropTypes.object.isRequired,
 };
