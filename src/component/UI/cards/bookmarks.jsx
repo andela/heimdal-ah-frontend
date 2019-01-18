@@ -14,7 +14,7 @@ const NotificationCards = (props) => {
   } = props;
   return (
     <Fragment>
-      <div className={`NotificationCards ${moreClass}`}>
+      <div className={`bookmarksCards ${moreClass}`}>
         <div className='header'>
           <h1 className="col-md-10">{ ArticleTitle }</h1>
           <img className='bookmark-logo col-md-3' src='/src/images/livello42.svg' alt='bookmark-logo' />
