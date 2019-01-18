@@ -1,12 +1,15 @@
 import React from 'react';
+import Rating from '../ui/Rating/Rating';
 import Button from '../ui/buttons/Button';
 import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
+
 
 const HomePage = () => (
   <div>
     <h2 className='lead mt-5'>
       Welcome to the Home page...
       <div>
+        <Rating className='fa fa-star' ratings={2.5} />
         <Button type='signup' label='Signup' />
         <br />
         <br />

@@ -1,14 +1,12 @@
+@import "../../../styles/globals";
+
 $default-color: #00b4fa;
-$white-color: #ffffff;
 $btn-google: #f13921;
 $btn-facebook: #2a59a1;
 $btn-most: #606e86;
 $shadow: rgba(77, 56, 56, 0.3);
 $shadow2: rgba(107, 105, 105, 0.2);
 $shadow3: rgba(107, 105, 105, 0.8);
-$reem-kufi: 'Reem Kufi', sans-serif;
-$cardo: 'Cardo', serif;
-$ovo: 'Ovo', serif;
 
 button:hover {
   opacity: 0.7;
@@ -218,7 +216,7 @@ button:active {
     font-family: $cardo;
     font-size: 0.9em;
     height: 2.5em;
-    width: 15%;   
+    width: 15%;
   }
 
   &.btn-comment {
@@ -229,7 +227,7 @@ button:active {
     font-family: $cardo;
     font-size: 0.9em;
     height: 2.5em;
-    width: 15%;   
+    width: 15%;
   }
 
   &.btn-stories {
