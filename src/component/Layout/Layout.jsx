@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../ui/header/Header';
+import Header from '../ui/header/Header.jsx';
 /**
  * Layout component
  */
