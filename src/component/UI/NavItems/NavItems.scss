@@ -1,16 +1,20 @@
+$primary-color: #606E86;
+
 .nav-item {
   font-size: 1.2em;
   margin-left: 50px;
 }
+
 .nav-link {
+  color: $primary-color!important;
   margin-left: 80px;
-  color: #606E86!important;
 }
-.active::after{
+
+.active::after {
+  border-bottom: 2px solid $primary-color;
   content: "";
   display: block; 
+  float: right;
   margin: 0 auto; 
   width: 50%;
-  float: right;
-  border-bottom: 2px solid #606E86;
 }

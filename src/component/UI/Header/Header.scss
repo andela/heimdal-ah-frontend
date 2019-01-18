@@ -1,9 +1,9 @@
-$primary-color: #606E86;
-$secondary-color : #ffff;
-$reem-kufi: 'Reem Kufi', sans-serif;
 $cardo: 'Cardo', serif;
 $dropdown-content: #f1f1f1;
 $dropdown-content-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+$primary-color: #606E86;
+$secondary-color : #ffff;
+$reem-kufi: 'Reem Kufi', sans-serif;
 
 .header {
   font-family: $reem-kufi;
@@ -17,9 +17,9 @@ $dropdown-content-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
 
   .header-form {
-    margin-top: -10px !important;
     padding: 10px;
     margin-right: 20px;
+    margin-top: -10px !important;
   }
 
   .header-input {
@@ -31,60 +31,61 @@ $dropdown-content-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
 
   .notification_icon {
-    width: 35px;
     margin-right: 60px;
+    width: 35px;
   }
 
   .profile-icon {
-    width: 30px;
     margin-left: 70px;
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 30px;
   }
 
   .search-input {
     margin-right: 10px!important;
+    width: 150px;
   }
 
   .search_icon {
-    color: $primary-color;
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    color: $primary-color;
     cursor: pointer;
+    transform: scaleX(-1);
   }
 
   .username {
     font-size: 18px;
-    text-align: center;
     padding: 10px;
     &::after {
+      border-bottom: 1px solid $primary-color;
       content: '';
       display: block;
       margin: 0 auto;
-      width: 90%;
       margin-top: 12px;
-      border-bottom: 1px solid $primary-color;
+      width: 90%;
     }
+    text-align: center;
   }
 
   .dropdown {
-    position: relative;
     display: inline-block;
+    position: relative;
   }
 
   .dropdown-content {
-    display: none;
-    position: absolute;
     background-color: $dropdown-content;
-    min-width: 160px;
     box-shadow: $dropdown-content-shadow;
-    z-index: 1;
+    display: none;
     font-family: 'Cardo', serif;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
     a {
       color: $primary-color;
+      display: block;
       padding: 12px 16px;
       text-decoration: none;
-      display: block;
       &:hover {
         background-color: $primary-color;
         color: $secondary-color;
@@ -93,11 +94,11 @@ $dropdown-content-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
 
   .user_settings::before {
+    border-top: 1px solid $primary-color;
     content: '';
     display: block;
     margin: 0 auto;
     width: 90%;
-    border-top: 1px solid $primary-color;
   }
 
   .dropdown:hover .dropdown-content {

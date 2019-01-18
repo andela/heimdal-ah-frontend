@@ -1,30 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const ActiveUser = () => (
   <div className="active_user_logo">
     <div className="dropdown">
-      <img className="notification_icon dropbtn" src="/src/public/images/Icons.png" alt="notification-logo" />
+      <img className="notification_icon dropbtn" src="/src/images/Icons.png" alt="notification-logo" />
       <div className="dropdown-content">
         <div className='username'>Notification</div>
-        <Link to="/">Link 1</Link>
-        <Link to="/">Link 2</Link>
-        <Link to="/">Link 3</Link>
+        <a to="/">a 1</a>
+        <a to="/">a 2</a>
+        <a to="/">a 3</a>
       </div>
     </div>
     <div className='dropdown'>
       <img className="profile-icon" src='/src/images/Group 2.1.png' alt="profile-logo" />
       <div className="dropdown-content">
         <div className='username'>@el-Joft</div>
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/create-article">Write An Article</Link>
-        <Link to="/reading-stats">Reading Stats</Link>
-        <Link to="/bookmarks">Bookmarks</Link>
-        <Link to="/notifications">Notification</Link>
-        <Link to="/publication">Publication</Link>
+        <a to="/dashboard">Dashboard</a>
+        <a to="/create-article">Write An Article</a>
+        <a to="/reading-stats">Reading Stats</a>
+        <a to="/bookmarks">Bookmarks</a>
+        <a to="/notifications">Notification</a>
+        <a to="/publication">Publication</a>
         <div className='user-settings'>
-          <Link to="/user-profile">Profile</Link>
-          <Link to="/logout">Logout</Link>
+          <a to="/user-profile">Profile</a>
+          <a to="/logout">Logout</a>
         </div>
       </div>
     </div>

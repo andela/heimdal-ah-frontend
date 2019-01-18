@@ -43,7 +43,6 @@ const NavItems = () => {
         )
         }
     </div>
-
   ));
 };
 
