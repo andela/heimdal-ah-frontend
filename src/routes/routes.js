@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import LoginPage from '../component/Pages/LoginPage.jsx';
 import Homepage from '../component/Pages/HomePage.jsx';
-import Footer from '../component/ui/footer/Footer';
+import Footer from '../component/ui/footer/Footer.jsx';
 
 const Routes = () => (
   <Fragment>
