@@ -2,7 +2,7 @@ import React, { Fragment, Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Button from '../../UI/buttons/Button';
+import Button from '../../ui/buttons/Button';
 import './PasswordReset.scss';
 import UpdatePassword from '../../../actions/PasswordReset/UpdatePasswordActions';
 
