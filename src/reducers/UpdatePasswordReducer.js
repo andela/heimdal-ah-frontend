@@ -1,9 +1,9 @@
 import {
   START_LOADING,
   STOP_LOADING,
-  RESET_PASSWORD_SUCCESS,
-  RESET_PASSWORD_FAILED,
-  RESET_PASSWORD_ERROR,
+  UPDATE_PASSWORD_SUCCESS,
+  UPDATE_PASSWORD_FAILED,
+  UPDATE_PASSWORD_ERROR,
 } from '../actions/actionTypes';
 
 const initialState = {
@@ -27,21 +27,21 @@ export default (state = initialState, action) => {
         status: 'LOADING_FINISHED',
       });
 
-    case RESET_PASSWORD_FAILED:
+    case UPDATE_PASSWORD_FAILED:
       return ({
         ...state,
         payload: action.payload,
         status: 'FAILED',
       });
 
-    case RESET_PASSWORD_SUCCESS:
+    case UPDATE_PASSWORD_SUCCESS:
       return ({
         ...state,
         payload: action.payload,
         status: 'SUCCESS',
       });
 
-    case RESET_PASSWORD_ERROR:
+    case UPDATE_PASSWORD_ERROR:
       return ({
         ...state,
         payload: action.payload,

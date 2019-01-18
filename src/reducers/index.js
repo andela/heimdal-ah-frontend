@@ -1,3 +1,7 @@
 import ResetPassword from './ResetPasswordReducer';
+import UpdatePassword from './UpdatePasswordReducer';
 
-export default ResetPassword;
+export {
+  ResetPassword,
+  UpdatePassword,
+};

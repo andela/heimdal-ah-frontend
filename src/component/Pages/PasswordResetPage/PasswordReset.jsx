@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Button from '../../UI/buttons/Button';
 import './PasswordReset.scss';
-import ResetPassword from '../../../actions/ResetPasswordActions';
+import ResetPassword from '../../../actions/PasswordReset/ResetPasswordActions';
 
 class PasswordReset extends Component {
   state = {
@@ -20,17 +20,22 @@ class PasswordReset extends Component {
 
   onHandleSubmit(e) {
     e.preventDefault();
+    // eslint-disable-next-line react/destructuring-assignment
     this.props.ResetPassword();
   }
 
   render() {
     const { email } = this.state;
-    const { status, error } = this.props;
+    const { status } = this.props;
+    if (status === 'LOADING') {
+      document.querySelector('.password-reset button').innerHTML = 'Loading...';
+    } else if (status === 'LOADING_FINISHED') {
+      document.querySelector('.password-reset button').innerHTML = 'Reset';
+    }
     return (
       <Fragment>
         {status === 'SUCCESS' && <Redirect to='/updatepassword' />}
         {status === 'FAILED' && <Redirect to='/resetpassword' />}
-        {status === 'ERROR' ? console.log(error) : ''}
         <div className='password-reset header'>
           Our Header
         </div>
@@ -39,7 +44,9 @@ class PasswordReset extends Component {
           <form onSubmit={e => this.onHandleSubmit(e)}>
             <input type='email' className='password-reset input-reset-password' name='email' value={email} placeholder='Enter your Email' onChange={e => this.onHandleChange(e)} required />
             <br />
-            <Button type='login2' label='Reset' Class='password-reset button' />
+            {status === 'ERROR' && <span>Server error</span>}
+            <br />
+            <Button type='login2' label='Reset' Class='password-reset button' ref={this.button} />
           </form>
         </div>
         <br />
@@ -53,13 +60,11 @@ class PasswordReset extends Component {
 
 PasswordReset.propTypes = {
   status: PropTypes.string.isRequired,
-  error: PropTypes.string.isRequired,
+  ResetPassword: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
   status: state.resetpassword.status,
-  error: state.resetpassword.error,
-  payload: state.resetpassword.payload,
 });
 
 export default connect(mapStateToProps, { ResetPassword })(PasswordReset);
