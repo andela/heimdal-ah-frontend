@@ -1,6 +1,7 @@
 import React from 'react';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/buttons/Button';
+import ModalH from '../ui/Modals/ModalH';
 import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
 
 
@@ -9,6 +10,7 @@ const HomePage = () => (
     <h2 className='lead mt-5'>
       Welcome to the Home page...
       <div>
+        <ModalH title='Report' modalType='Report' classname=''><h1>I am a child component</h1></ModalH>
         <Rating className='fa fa-star' ratings={2.5} />
         <Button type='signup' label='Signup' />
         <br />
