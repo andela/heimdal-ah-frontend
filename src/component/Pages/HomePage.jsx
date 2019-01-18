@@ -1,33 +1,16 @@
 import React from 'react';
-import Button from '../UI/buttons/Button';
-import { DemoArticleCoponentWithGlowState } from '../UI/buttons/glow/DemoArticleCoponentWithGlowState';
-import ArticleCard1 from '../UI/cards/ArticleCard1';
-import ArticleCard2 from '../UI/cards/ ArticleCard2';
+import Rating from '../ui/Rating/Rating';
+import Button from '../ui/buttons/Button';
+import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
+
 
 const HomePage = () => (
   <div>
-    <h2 className='lead mt-5'>
+     <h2 className='lead mt-5'>
       Welcome to the Home page...
-      <div className='row m-b-10'>
-        <div className='col-md-4'>
-          <ArticleCard1 />
-        </div>
-        <div className='col-md-4'>
-        </div>
-        <div className='col-md-4'>
-          <ArticleCard1 />
-        </div>
-      </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <ArticleCard2 />
-        <br />
-        <br />
-        <br />
-        <br />
+    </h2>
       <div>
+        <Rating className='fa fa-star' ratings={2.5} />
         <Button type='signup' label='Signup' />
         <br />
         <br />
@@ -111,8 +94,8 @@ const HomePage = () => (
       <div>
         <DemoArticleCoponentWithGlowState />
       </div>
-    </h2>
   </div>
 );
 
 export default HomePage;
+
