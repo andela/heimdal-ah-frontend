@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import LoginPage from '../component/Pages/LoginPage.jsx';
 import Homepage from '../component/Pages/HomePage.jsx';
-import PasswordReset from '../component/Pages/PasswordResetPage/PasswordReset.jsx';
+import { PasswordReset, UpdatePassword } from '../component/Pages/PasswordResetPage';
 
 const Routes = () => (
   <div className='container'>
@@ -11,6 +11,7 @@ const Routes = () => (
       <Route exact path='/' component={Homepage} />
       <Route exact path='/login' component={LoginPage} />
       <Route exact path='/resetpassword' component={PasswordReset} />
+      <Route exact path='/updatepassword' component={UpdatePassword} />
     </Switch>
   </div>
 );
