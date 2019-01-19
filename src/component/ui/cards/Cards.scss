@@ -11,169 +11,153 @@ $cardo: 'Cardo', serif;
 $ovo: 'Ovo', serif;
 
 *{
-    box-sizing: border-box;
-    background-color: #F9F9F9;
+  box-sizing: border-box;
+  background-color: #F9F9F9;
 }
-.bookmarksCards{
+.bookmarksCards {
     width: 700px;
     height: 280px;
     border: 1px solid rgba(77, 56, 56, 0.1);
     padding-left: 12px;
-    .text{
-        line-height: 100%;
-        font-family: $ovo;
-        font-size: 20px;
-        padding-left: 20px;
-
+    .text {
+      line-height: 100%;
+      font-family: $ovo;
+      font-size: 20px;
+      padding-left: 20px;
     };
-
-    .header{
-        
-        h1{
-            font-family: $cardo;
-            font-size: 30px;
-            font-weight: bolder;
-            display: inline-block;
-            padding-top: 10px;
-            padding-left: 10px;
-        };
-        .bookmark-logo{
-           width: 55px;
-           height: 59px;
-           margin-top: -20px;
-        } 
-    }
-    .username{
+    .header{  
+      h1{
         font-family: $cardo;
         font-size: 30px;
-        color: $btn-most;
+        font-weight: bolder;
+        display: inline-block;
+        padding-top: 10px;
+        padding-left: 10px;
+      };
+      .bookmark-logo {
+        width: 55px;
+        height: 59px;
+        margin-top: -20px;
+      }; 
+    };
+    .username {
+      font-family: $cardo;
+      font-size: 30px;
+      color: $btn-most;
     };
     .user-section{
-        .glow-text{
-            padding-top: 500px;
-            color: $btn-most;
-            font-family: $ovo; 
-        };
-        .user-image{
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            font-weight: 200;
-        }
-    };   
-}
-
-.article-Card-2{
-    width: 300px;
-    font-family: $cardo;
-    .card-text{
-        font-size: 14px;
-        color: black; 
-    };
-    .comment{
-        font-size: 15px;
-        padding-left: 15px;
-        margin-top: 12px 
-    }
-    .user-name{
-        font-size: 15px;
-        padding-left: 10px;
-        // margin-bottom: 3px;
-    };
-    .user-image{
-        width: 22px;
-        height: 22px;
-        border-radius: 50%;
-        font-weight: 200;
-    };
-    .updated-time{
-        font-size: 14px;
-        color: black;   
-    }
-    .ratings{
-        margin-top: 10px;;
-    }
-}
-
-.articleCard1{
-    font-family: $ovo;
-    .card-text{
-        font-size: 12px;
-        color: black;
-        font-weight: lighter 
-    };
-    .card-title{
-       font-weight: 1000;
-    };
-    .user-image{
-        width: 20px;
-        height: 20px;
+      .glow-text {
+        padding-top: 500px;
+        color: $btn-most;
+        font-family: $ovo; 
+      };
+      .user-image {
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         margin-bottom: 10px;
         font-weight: 200;
-        margin-top: 10px;
-    };
-    .comment{
-        font-size: 13px;
-        padding-left: 30px; 
-    };
-    .user-name{
-        font-size: 10px;
-        padding-left: 10px;
-        // margin-bottom: 3px;
-    };
-}
+      }
+    };   
+};
 
-.LargeCards{
-    font-family: $ovo;
-    .user-image{
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        margin-bottom: 5px;
-    };
-}
+.article-Card-2 {
+  width: 300px;
+  font-family: $cardo;
+  .card-text {
+    font-size: 14px;
+    color: black; 
+  };
+  .comment {
+    font-size: 15px;
+    padding-left: 15px;
+    margin-top: 12px 
+  }
+  .user-name {
+    font-size: 15px;
+    padding-left: 10px;
+    display: 'inline-block'
+  };
+  .card-body {
+    padding: '0rem'
+  }
+  .user-image {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-weight: 200;
+  };
+  .updated-time {
+    font-size: 14px;
+    color: black;   
+  };
+  .ratings {
+    margin-top: 10px;
+  };
+};
 
-.fs-13{
-    font-size: 13px
-}
+.articleCard1 {
+  font-family: $ovo;
+  .card-text {
+    font-size: 12px;
+    color: black;
+    font-weight: lighter 
+  };
+  .card-title {
+    font-weight: 1000;
+  };
+  .user-image {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    font-weight: 200;
+    margin-top: 10px;
+  };
+  .comment {
+    font-size: 13px;
+    padding-left: 30px; 
+  };
+  .user-name {
+    font-size: 10px;
+    padding-left: 10px;
+  };
+};
 
+.LargeCards {
+  font-family: $ovo;
+  .user-image{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  };
+};
+
+.fs-13 { 
+  font-size: 13px
+};
 .card {
-    // box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    position: relative;
-    border: 0;
-    // background-color: #00b4fa
-}
-
+  position: relative;
+  border: 0;
+};
 .card-buttom {
-    position: absolute;
-    bottom: 0px
-}
-
+  position: absolute;
+  bottom: 0px
+};
 .high {
-    max-height: 80px
-}
+  max-height: 80px
+};
+.m-r-0 {
+  margin-right: -5px
+};
+.m-t-10 {
+  margin-top: 10px
+};
+.m-r-15 {
+  margin-right: 15px
+};
+.p-t-5 {
+  padding-top: 10px
+};
 
-.m-r-0{
-    margin-right: -5px
-}
-.m-t-10{
-    margin-top: 10px
-}
-.m-r-15{
-    margin-right: 15px
-}
-.p-t-5{
-    padding-top: 10px
-}
-
-// .article-Card-2{
-//     width: 30%;
-//     display: grid;
-//     grid-template-rows: 60% 40%;
-//     grid-row-gap: 1em;
-//     .card-body{
-//       padding: 0em;
-//     }
-// }

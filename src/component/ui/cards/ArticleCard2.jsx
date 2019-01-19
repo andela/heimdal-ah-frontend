@@ -17,11 +17,11 @@ const ArticleCard2 = (props) => {
     <div className="article-Card-2" style={{ border: '0rem' }}>
       <h5 className="card-title">{ArticleTitle}</h5>
       <img className="card-img-top" src={ArticleImage} alt="Card" />
-      <div className="card-body" style={{ padding: '0rem' }}>
+      <div className="card-body">
         <br />
         <p className="card-text">{Article}</p>
         <span><img className="user-image" src={userImage} alt="user" /></span>
-        <p className="col-8 col-md-8 user-name" style={{ display: 'inline-block' }}>{username}</p>
+        <p className="col-8 col-md-8 user-name">{username}</p>
         <i className="far fa-clock updated-time" style={{}}>{ updatedTime }</i>
         <div className='row'>
           <div className='col-md-3'>
