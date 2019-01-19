@@ -19,9 +19,10 @@ class PasswordReset extends Component {
 
 
   onHandleSubmit(e) {
+    const { email } = this.state;
     e.preventDefault();
     // eslint-disable-next-line react/destructuring-assignment
-    this.props.ResetPassword();
+    this.props.ResetPassword(email);
   }
 
   render() {
