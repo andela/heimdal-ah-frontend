@@ -18,14 +18,16 @@ class PasswordUpdate extends Component {
     });
   }
 
-  onHandleSubmit() {
+  onHandleSubmit(e) {
     const { password, confirmpassword } = this.state;
+    e.preventDefault();
     const token = new URLSearchParams(window.location.search).get('token');
     if (password === confirmpassword) {
       // eslint-disable-next-line react/destructuring-assignment
       this.props.UpdatePassword(token, { password, confirmpassword });
+    } else {
+      document.querySelector('.feedback').style.display = 'block';
     }
-    document.querySelector('.feedback').style.display = 'block';
   }
 
   render() {
@@ -46,11 +48,11 @@ class PasswordUpdate extends Component {
         <div className='password-reset body'>
           <p>Enter Your New Password</p>
           {status === 'ERROR' && <span>Server error</span>}
-          <form>
-            <input type='text' className='password-reset input-reset-password' name='oldpassword' value={password} placeholder='Password' onChange={e => this.onHandleChange(e)} required />
+          <form onSubmit={e => this.onHandleSubmit(e)}>
+            <input type='text' className='password-reset input-reset-password' name='password' value={password} placeholder='Password' onChange={e => this.onHandleChange(e)} required />
             <br />
             <br />
-            <input type='text' className='password-reset input-reset-password' name='newpassword' value={confirmpassword} placeholder='Confirm Password' onChange={e => this.onHandleChange(e)} required />
+            <input type='text' className='password-reset input-reset-password' name='confirmpassword' value={confirmpassword} placeholder='Confirm Password' onChange={e => this.onHandleChange(e)} required />
             <br />
             <span className='password-reset feedback'>Password and Confirm Password must be Equal</span>
             <br />
