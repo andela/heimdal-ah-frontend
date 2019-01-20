@@ -40,7 +40,16 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|gif|png|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
-        loader: 'file-loader?name=images/[name].[ext]',
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 8000,
+            name: 'images/[hash]-[name].[ext]',
+          },
+        },
+        {
+          loader: 'file-loader?name=images/[name].[ext]',
+        }],
       },
     ],
   },
