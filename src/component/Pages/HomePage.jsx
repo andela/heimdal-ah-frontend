@@ -1,7 +1,7 @@
 import React from 'react';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/buttons/Button';
-import AriticleCard2 from '../ui/cards/ArticleCard2';
+import BookmarksCards from '../ui/cards/ArticleCard2';
 import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
 
 
@@ -12,8 +12,14 @@ const HomePage = () => (
     </h2>
     <div>
       <div className='col-md-4'>
-        <AriticleCard2 />
+        <BookmarksCards />
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />

@@ -1,66 +1,68 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Glow from '../buttons/glow/Glow.jsx';
 import './Cards.scss';
 import Rating from '../Rating/Rating';
 
 const ArticleCard2 = (props) => {
-  const {
-    ArticleTitle,
-    Article,
-    ArticleImage,
-    userImage,
-    username,
-    updatedTime,
-  } = props;
+  const articleText = props.article.length > 100 ? `${props.article.substring(0, 100).trim()}...` : props.article;
+  const userName = props.username.length > 12 ? `${props.username.substring(0, 12).trim()}...` : props.username;
   return (
-    <div className="article-Card-2" style={{ border: '0rem' }}>
-      <h5 className="card-title">{ArticleTitle}</h5>
-      <img className="card-img-top" src={ArticleImage} alt="Card" />
-      <div className="card-body">
-        <br />
-        <p className="card-text">{Article}</p>
-        <span><img className="user-image" src={userImage} alt="user" /></span>
-        <p className="col-8 col-md-8 user-name">{username}</p>
-        <i className="far fa-clock updated-time" style={{}}>{ updatedTime }</i>
-        <div className='row'>
-          <div className='col-md-3'>
-            <Glow active handleGlow={() => {}} />
+    <Fragment>
+      <div className="article-Card-2">
+        <h5 className="card-title">{props.articleTitle.substring(0, 30)}</h5>
+        <img className="card-img-top mb-4" src={props.articleImage} alt="Card" />
+        <div className="card-body">
+          <p className="card-text">{articleText}</p>
+          <div className='row'>
+            <div className='col-md-8 mb-3'>
+              <span><img className="user-image" width='30' src={props.userImage} alt="user" /></span>
+              <span className="col-8 col-md-7 user-name">{userName}</span>
+            </div>
+            <div className='col-md-4 mb-3 mt-2'>
+              <i className="far fa-clock updated-time float-right">{ props.updatedTime }</i>
+            </div>
           </div>
-          <div className='col-md-6 text-center ratings'>
-            <Rating />
-          </div>
-          <div className='col-md-3'>
-            <i className="far fa-comment-alt comment"> 10</i>
+          <div className='row'>
+            <div className='col-md-3'>
+              <Glow active handleGlow={() => {}} />
+            </div>
+            <div className='col-md-6 text-center ratings'>
+              <Rating />
+            </div>
+            <div className='col-md-3'>
+              <i className="far fa-comment-alt comment"> 10</i>
+            </div>
           </div>
         </div>
+        <hr />
       </div>
-    </div>
+    </Fragment>
   );
 };
-const article = 'low as a natural lead-in to additional content. This content is a little bit longer.';
+const article = 'low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.';
 const image = 'https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg';
-const userName = 'Peter Debby';
+const userName = 'Peter Debbyy';
 const articleTitle = 'Lorem ipsum dolor';
 const articleImage = 'https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg';
 
 ArticleCard2.defaultProps = {
-  ArticleTitle: articleTitle,
-  Article: article,
+  articleTitle,
+  article,
   userImage: image,
-  ArticleImage: articleImage,
+  articleImage,
   username: userName,
   updatedTime: ' 5 days ago',
 };
 
 
 ArticleCard2.propTypes = {
-  ArticleTitle: PropTypes.string,
-  Article: PropTypes.string,
+  articleTitle: PropTypes.string,
+  article: PropTypes.string,
   userImage: PropTypes.string,
   username: PropTypes.string,
   updatedTime: PropTypes.string,
-  ArticleImage: PropTypes.string,
+  articleImage: PropTypes.string,
 };
 
 export default ArticleCard2;

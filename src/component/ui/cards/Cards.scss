@@ -19,11 +19,11 @@ $ovo: 'Ovo', serif;
     height: 280px;
     border: 1px solid rgba(77, 56, 56, 0.1);
     padding-left: 12px;
-    .text {
-      line-height: 100%;
+    position: relative;
+
+  .text {
       font-family: $ovo;
-      font-size: 20px;
-      padding-left: 20px;
+      font-size: 20px
     };
     .header{  
       h1{
@@ -33,11 +33,13 @@ $ovo: 'Ovo', serif;
         display: inline-block;
         padding-top: 10px;
         padding-left: 10px;
+        margin-left: -10px;
       };
       .bookmark-logo {
         width: 55px;
         height: 59px;
-        margin-top: -20px;
+        padding: 0px;
+        margin: -7px 0 0 0;
       }; 
     };
     .username {
@@ -47,7 +49,6 @@ $ovo: 'Ovo', serif;
     };
     .user-section{
       .glow-text {
-        padding-top: 500px;
         color: $btn-most;
         font-family: $ovo; 
       };
@@ -64,6 +65,7 @@ $ovo: 'Ovo', serif;
 .article-Card-2 {
   width: 300px;
   font-family: $cardo;
+  border: '0rem';
   .card-text {
     font-size: 14px;
     color: black; 
@@ -79,7 +81,7 @@ $ovo: 'Ovo', serif;
     display: 'inline-block'
   };
   .card-body {
-    padding: '0rem'
+    padding: 0px
   }
   .user-image {
     width: 22px;
@@ -124,15 +126,7 @@ $ovo: 'Ovo', serif;
   };
 };
 
-.LargeCards {
-  font-family: $ovo;
-  .user-image{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-bottom: 5px;
-  };
-};
+
 
 .fs-13 { 
   font-size: 13px
@@ -160,4 +154,3 @@ $ovo: 'Ovo', serif;
 .p-t-5 {
   padding-top: 10px
 };
-
