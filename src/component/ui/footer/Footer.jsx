@@ -5,12 +5,12 @@ import 'font-awesome/css/font-awesome.min.css';
 import './footer.scss';
 
 const Footer = () => (
-  <footer className="page-footer font-small indigo footerWrapper">
+  <footer className="page-footer font-small indigo footer-wrapper">
     <div className="container text-center text-md-left">
       <div className='row'>
         <div className='col-md-6'>
           <form className='input-group '>
-            <input className='mt-4 footerTextField' placeholder='Email Address ' />
+            <input className='mt-4 footer-text-field' placeholder='Email Address ' />
             <input type="submit" value='Subscribe' className=" submitbtn footerBtn btn btn-outline-secondary mt-4 ml-4 br-5" />
 
           </form>

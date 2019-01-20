@@ -31,7 +31,7 @@ ShallowWrapper {
                 className="input-group "
               >
                 <input
-                  className="mt-4 footerTextField"
+                  className="mt-4 footer-text-field"
                   placeholder="Email Address "
                 />
                 <input
@@ -238,7 +238,7 @@ ShallowWrapper {
           Inc. All rights reserved.
         </div>,
       ],
-      "className": "page-footer font-small indigo footerWrapper",
+      "className": "page-footer font-small indigo footer-wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -258,7 +258,7 @@ ShallowWrapper {
                   className="input-group "
                 >
                   <input
-                    className="mt-4 footerTextField"
+                    className="mt-4 footer-text-field"
                     placeholder="Email Address "
                   />
                   <input
@@ -472,7 +472,7 @@ ShallowWrapper {
                     className="input-group "
                   >
                     <input
-                      className="mt-4 footerTextField"
+                      className="mt-4 footer-text-field"
                       placeholder="Email Address "
                     />
                     <input
@@ -537,7 +537,7 @@ ShallowWrapper {
                     className="input-group "
                   >
                     <input
-                      className="mt-4 footerTextField"
+                      className="mt-4 footer-text-field"
                       placeholder="Email Address "
                     />
                     <input
@@ -556,7 +556,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       <input
-                        className="mt-4 footerTextField"
+                        className="mt-4 footer-text-field"
                         placeholder="Email Address "
                       />,
                       <input
@@ -574,7 +574,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "className": "mt-4 footerTextField",
+                        "className": "mt-4 footer-text-field",
                         "placeholder": "Email Address ",
                       },
                       "ref": null,
@@ -1730,7 +1730,7 @@ ShallowWrapper {
                   className="input-group "
                 >
                   <input
-                    className="mt-4 footerTextField"
+                    className="mt-4 footer-text-field"
                     placeholder="Email Address "
                   />
                   <input
@@ -1937,7 +1937,7 @@ ShallowWrapper {
             Inc. All rights reserved.
           </div>,
         ],
-        "className": "page-footer font-small indigo footerWrapper",
+        "className": "page-footer font-small indigo footer-wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -1957,7 +1957,7 @@ ShallowWrapper {
                     className="input-group "
                   >
                     <input
-                      className="mt-4 footerTextField"
+                      className="mt-4 footer-text-field"
                       placeholder="Email Address "
                     />
                     <input
@@ -2171,7 +2171,7 @@ ShallowWrapper {
                       className="input-group "
                     >
                       <input
-                        className="mt-4 footerTextField"
+                        className="mt-4 footer-text-field"
                         placeholder="Email Address "
                       />
                       <input
@@ -2236,7 +2236,7 @@ ShallowWrapper {
                       className="input-group "
                     >
                       <input
-                        className="mt-4 footerTextField"
+                        className="mt-4 footer-text-field"
                         placeholder="Email Address "
                       />
                       <input
@@ -2255,7 +2255,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": Array [
                         <input
-                          className="mt-4 footerTextField"
+                          className="mt-4 footer-text-field"
                           placeholder="Email Address "
                         />,
                         <input
@@ -2273,7 +2273,7 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "className": "mt-4 footerTextField",
+                          "className": "mt-4 footer-text-field",
                           "placeholder": "Email Address ",
                         },
                         "ref": null,

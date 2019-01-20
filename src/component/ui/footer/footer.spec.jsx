@@ -14,7 +14,7 @@ describe('grid layout classname test', () => {
   it('should test for the grid classnames', () => {
     const wrapper = shallow(<Footer />);
     expect(wrapper.find('footer').length).toBe(1);
-    expect(wrapper.find('footer').hasClass('footerWrapper')).toBe(true);
+    expect(wrapper.find('footer').hasClass('footer-wrapper')).toBe(true);
     expect(wrapper.find('div').at(2).hasClass('col-md-6')).toBe(true);
   });
 });
