@@ -1,13 +1,9 @@
-import { HIDE_MODAL } from './actionTypes';
+import { HIDE_MODAL, SHOW_MODAL } from './actionTypes';
 
-export const hideModal = () => dispatch => dispatch({
+export const hideModal = () => ({
   type: HIDE_MODAL,
 });
 
 export const showModal = () => dispatch => dispatch({
-  type: HIDE_MODAL,
+  type: SHOW_MODAL,
 });
-
-export const removeModal = () => (dispatch) => {
-  dispatch(hideModal());
-};

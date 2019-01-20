@@ -1,9 +1,10 @@
 import {
   HIDE_MODAL,
+  SHOW_MODAL,
 } from '../actions/actionTypes';
 
 const initialState = {
-  display: true,
+  display: false,
 };
 
 export default (state = initialState, action) => {
@@ -11,7 +12,12 @@ export default (state = initialState, action) => {
     case HIDE_MODAL:
       return {
         ...state,
-        display: action.display,
+        display: false,
+      };
+    case SHOW_MODAL:
+      return {
+        ...state,
+        display: true,
       };
     default: return state;
   }
