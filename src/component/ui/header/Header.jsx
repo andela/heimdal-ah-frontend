@@ -20,7 +20,7 @@ const Header = (props) => {
           <ul className="navbar-nav mr-auto">
             <NavItems />
           </ul>
-          {!isValidated ? <ActiveUser /> : <HeaderButton />}
+          {isValidated ? <ActiveUser /> : <HeaderButton />}
           <SearchForm />
         </div>
       </nav>

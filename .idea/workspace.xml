@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29aac0fc-a622-4c50-bd80-27e5d649f2b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/UI/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/UI/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/UI/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/UI/Header/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/UI/Header/Header.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/UI/Header/Header.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/UI/NavItems/NavItems.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/UI/NavItems/NavItems.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/UI/logo/Logo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/UI/logo/Logo.scss" afterDir="false" />
-    </list>
+    <list default="true" id="29aac0fc-a622-4c50-bd80-27e5d649f2b5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/component/ui/header/Header.jsx">
           <provider selected="true" editor-type-id="text-editor" />
@@ -52,6 +44,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,7 +89,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,19 +124,20 @@
       <option name="presentableId" value="Default" />
       <updated>1547716517456</updated>
       <workItem from="1547716518977" duration="4213000" />
+      <workItem from="1547814012199" duration="353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4213000" />
+    <option name="totallyTimeSpent" value="4566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15736766" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1595136" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -158,7 +151,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="3" visible="true" weight="0.24749643" />
+      <window_info active="true" anchor="right" id="Terminal" order="3" visible="true" weight="0.24749643" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
