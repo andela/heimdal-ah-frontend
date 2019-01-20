@@ -1,16 +1,16 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import toJson from 'enzyme-to-json';
-import ModalH from './ModalH';
+import RootModal from './RootModal';
 
-describe('Render <ModalH />', () => {
-  it('it should render ModalH component', () => {
-    const container = shallow(<ModalH />);
+describe('Render <RootModal />', () => {
+  it('it should render RootModal component', () => {
+    const container = shallow(<RootModal />);
     expect(container.length).toBe(1);
   });
 
   it('should match the snapshot', () => {
-    const tree = shallow(<ModalH />);
+    const tree = shallow(<RootModal />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 });

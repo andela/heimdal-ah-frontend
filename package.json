@@ -17,7 +17,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-plugin-transform-class-properties": "^6.24.1",
     "express": "^4.16.4",
     "font-awesome": "^4.7.0",
     "logger": "0.0.1",
@@ -44,6 +43,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^2.0.0",
     "enzyme": "^3.8.0",
