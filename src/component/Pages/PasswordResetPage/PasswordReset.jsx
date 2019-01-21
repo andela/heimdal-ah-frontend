@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { toastr } from 'react-redux-toastr';
 import PropTypes from 'prop-types';
 import Button from '../../ui/Buttons/Button';
+import Header from '../../ui/header/Header';
+import Footer from '../../ui/footer/Footer';
 import './PasswordReset.scss';
 import resetPassword from '../../../actions/PasswordReset/resetPasswordActions';
 
@@ -18,9 +20,9 @@ class PasswordReset extends Component {
   }
 
   onHandleSubmit(e) {
+    toastr.success('Loading...', 'Loading, please be patient');
     const { email } = this.state;
     e.preventDefault();
-    toastr.success('Loading...', 'Loading, please be patient');
     // eslint-disable-next-line react/destructuring-assignment
     this.props.resetPassword(email);
   }
@@ -32,9 +34,7 @@ class PasswordReset extends Component {
       <Fragment>
         {status === 'SUCCESS' && toastr.success('Email Sent', 'An Email has been sent to you, please click on the link to reset your password')}
         {status === 'FAILED' && toastr.warning('Invalid Credentials', 'User not Found')}
-        <div className='password-reset header'>
-          Our Header
-        </div>
+        <Header isValidated={false} />
         <div className='password-reset body'>
           <p>Reset Your Password</p>
           <form onSubmit={e => this.onHandleSubmit(e)}>
@@ -46,9 +46,7 @@ class PasswordReset extends Component {
           </form>
         </div>
         <br />
-        <div className='password-reset footer'>
-          Our Footer
-        </div>
+        <Footer />
       </Fragment>
     );
   }

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the logo should create a snapshot of the logo 1`] = `
+<Link
+  replace={false}
+  to="/"
+>
+  <img
+    alt="heimdal-logo"
+    className="logo"
+    src="/src/images/logo.png"
+  />
+</Link>
+`;
