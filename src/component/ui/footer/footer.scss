@@ -1,0 +1,37 @@
+@import "../../../styles/variables";
+@import url("https://fonts.googleapis.com/css?family=Cardo");
+
+.footer-wrapper {
+  background: $heimdal-footer-background;
+  color: $heimdal-text-color;
+  font-family: "Cardo";
+  a {
+    color: $heimdal-text-color;
+  }
+  :hover {
+    color: $heimdal-link-hover;
+  }
+  .footer-btn {
+    color: $heimdal-text-color;
+    border: solid 1px;
+    border-radius: 10px;
+    padding-right: 50px;
+  }
+  .footer-text-field {
+    background: $heimdal-textfield-background;
+    color: $heimdal-text-color;
+    border: none;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 40px;
+  }
+  ::placeholder {
+    color: $heimdal-text-color;
+  }
+  i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+  }
+}
