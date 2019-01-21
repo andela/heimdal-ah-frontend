@@ -1,0 +1,20 @@
+$primary-color: #606e86;
+
+.nav-item {
+  font-size: 1.2em;
+  margin-left: 50px;
+}
+
+.nav-link {
+  color: $primary-color !important;
+  margin-left: 80px;
+}
+
+.active::after {
+  border-bottom: 2px solid $primary-color;
+  content: "";
+  display: block; 
+  float: right;
+  margin: 0 auto; 
+  width: 50%;
+}
