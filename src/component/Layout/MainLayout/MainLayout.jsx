@@ -2,7 +2,6 @@ import React from 'react';
 import PropsTypes from 'prop-types';
 import Header from '../../ui/header/Header';
 import Footer from '../../ui/footer/Footer';
-import './MainLayout.scss';
 
 /**
  * @description It wraps its children with a layout style
