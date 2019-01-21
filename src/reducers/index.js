@@ -1,7 +1,7 @@
-import ResetPassword from './PasswordReset/ResetPasswordReducer';
-import UpdatePassword from './PasswordReset/UpdatePasswordReducer';
+import resetPassword from './PasswordReset/resetPasswordReducer';
+import updatePassword from './PasswordReset/updatePasswordReducer';
 
 export {
-  ResetPassword,
-  UpdatePassword,
+  resetPassword,
+  updatePassword,
 };

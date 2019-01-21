@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Button from '../../ui/Buttons/Button';
 import './PasswordReset.scss';
-import UpdatePassword from '../../../actions/PasswordReset/UpdatePasswordActions';
+import updatePassword from '../../../actions/PasswordReset/updatePasswordActions';
 
 class PasswordUpdate extends Component {
   state = {
@@ -79,4 +79,4 @@ const mapStateToProps = state => ({
 });
 
 
-export default connect(mapStateToProps, { UpdatePassword })(PasswordUpdate);
+export default connect(mapStateToProps, { updatePassword })(PasswordUpdate);

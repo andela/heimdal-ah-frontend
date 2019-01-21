@@ -1,6 +1,6 @@
 /* eslint-disable no-dupe-keys */
 /* eslint-disable no-undef */
-import UpdatePassword from './UpdatePasswordReducer';
+import updatePassword from './updatePasswordReducer';
 
 describe('ResetPassword Reducers Test Suite', () => {
   it('returns status ERROR when an error occurs during sending a user email', () => {
@@ -8,7 +8,7 @@ describe('ResetPassword Reducers Test Suite', () => {
       payload: '',
       status: '',
     };
-    const state = UpdatePassword(initialState,
+    const state = updatePassword(initialState,
       {
         type: 'UPDATE_PASSWORD_ERROR',
         payload: 'Server error',
@@ -24,7 +24,7 @@ describe('ResetPassword Reducers Test Suite', () => {
       payload: '',
       status: '',
     };
-    const state = UpdatePassword(initialState,
+    const state = updatePassword(initialState,
       {
         type: 'UPDATE_PASSWORD_FAILED',
         payload: 'user not avalaible',
@@ -40,7 +40,7 @@ describe('ResetPassword Reducers Test Suite', () => {
       payload: '',
       status: '',
     };
-    const state = UpdatePassword(initialState,
+    const state = updatePassword(initialState,
       {
         type: 'UPDATE_PASSWORD_SUCCESS',
         payload: 'password update was successful',
@@ -56,7 +56,7 @@ describe('ResetPassword Reducers Test Suite', () => {
       payload: '',
       status: '',
     };
-    const state = UpdatePassword(initialState,
+    const state = updatePassword(initialState,
       {
         type: '',
         payload: '',
@@ -68,7 +68,7 @@ describe('ResetPassword Reducers Test Suite', () => {
   });
 
   it('should return the initial state', () => {
-    expect(UpdatePassword(undefined, {})).toEqual({
+    expect(updatePassword(undefined, {})).toEqual({
       payload: '',
       status: '',
     });

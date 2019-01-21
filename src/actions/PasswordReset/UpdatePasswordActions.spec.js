@@ -3,7 +3,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import moxios from 'moxios';
-import UpdatePassword from './UpdatePasswordActions';
+import updatePassword from './updatePasswordActions';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -36,7 +36,7 @@ describe('UpdatePassword Actions Test Suite', () => {
           payload: 'password update was successful',
         }];
 
-      store.dispatch(UpdatePassword(token, newPassword)).then(() => {
+      store.dispatch(updatePassword(token, newPassword)).then(() => {
         expect(store.getActions()).toEqual(expected);
       });
     });
@@ -54,7 +54,7 @@ describe('UpdatePassword Actions Test Suite', () => {
           payload: 'Server error',
         }];
 
-      store.dispatch(UpdatePassword(token, newPassword)).then(() => {
+      store.dispatch(updatePassword(token, newPassword)).then(() => {
         expect(store.getActions()).toEqual(expected);
       });
     });

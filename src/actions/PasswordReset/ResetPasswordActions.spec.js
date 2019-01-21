@@ -3,7 +3,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import moxios from 'moxios';
-import ResetPassword from './ResetPasswordActions';
+import resetPassword from './resetPasswordActions';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -33,7 +33,7 @@ describe('ResetPassword Actions Test Suite', () => {
           payload: 'Email was sent successfully',
         }];
 
-      store.dispatch(ResetPassword(userEmail.email)).then(() => {
+      store.dispatch(resetPassword(userEmail.email)).then(() => {
         expect(store.getActions()).toEqual(expected);
       });
     });
@@ -51,7 +51,7 @@ describe('ResetPassword Actions Test Suite', () => {
           payload: 'Server error',
         }];
 
-      store.dispatch(ResetPassword(userEmail.email)).then(() => {
+      store.dispatch(resetPassword(userEmail.email)).then(() => {
         expect(store.getActions()).toEqual(expected);
       });
     });

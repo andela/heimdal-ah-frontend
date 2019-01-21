@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import { ResetPassword, UpdatePassword } from './index';
+import { resetPassword, updatePassword } from './index';
 
 const rootReducer = combineReducers({
-  resetpassword: ResetPassword,
-  updatepassword: UpdatePassword,
+  resetpassword: resetPassword,
+  updatepassword: updatePassword,
 });
 
 export default rootReducer;

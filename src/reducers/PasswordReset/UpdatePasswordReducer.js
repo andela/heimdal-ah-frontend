@@ -1,9 +1,5 @@
 import {
-  START_LOADING,
-  STOP_LOADING,
-  UPDATE_PASSWORD_SUCCESS,
-  UPDATE_PASSWORD_FAILED,
-  UPDATE_PASSWORD_ERROR,
+  ACTIONS,
 } from '../../actions/actionTypes';
 
 const initialState = {
@@ -13,35 +9,35 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case START_LOADING:
+    case ACTIONS.START_LOADING:
       return ({
         ...state,
         payload: action.payload,
         status: 'LOADING',
       });
 
-    case STOP_LOADING:
+    case ACTIONS.STOP_LOADING:
       return ({
         ...state,
         payload: action.payload,
         status: 'LOADING_FINISHED',
       });
 
-    case UPDATE_PASSWORD_FAILED:
+    case ACTIONS.UPDATE_PASSWORD_FAILED:
       return ({
         ...state,
         payload: action.payload,
         status: 'FAILED',
       });
 
-    case UPDATE_PASSWORD_SUCCESS:
+    case ACTIONS.UPDATE_PASSWORD_SUCCESS:
       return ({
         ...state,
         payload: action.payload,
         status: 'SUCCESS',
       });
 
-    case UPDATE_PASSWORD_ERROR:
+    case ACTIONS.UPDATE_PASSWORD_ERROR:
       return ({
         ...state,
         payload: action.payload,

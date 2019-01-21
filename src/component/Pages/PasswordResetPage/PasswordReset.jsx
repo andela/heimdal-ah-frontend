@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Button from '../../ui/Buttons/Button';
 import './PasswordReset.scss';
-import ResetPassword from '../../../actions/PasswordReset/ResetPasswordActions';
+import resetPassword from '../../../actions/PasswordReset/resetPasswordActions';
 
 class PasswordReset extends Component {
   state = {
@@ -22,7 +22,7 @@ class PasswordReset extends Component {
     const { email } = this.state;
     e.preventDefault();
     // eslint-disable-next-line react/destructuring-assignment
-    this.props.ResetPassword(email);
+    this.props.resetPassword(email);
   }
 
   render() {
@@ -61,11 +61,11 @@ class PasswordReset extends Component {
 
 PasswordReset.propTypes = {
   status: PropTypes.string.isRequired,
-  ResetPassword: PropTypes.func.isRequired,
+  resetPassword: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
   status: state.resetpassword.status,
 });
 
-export default connect(mapStateToProps, { ResetPassword })(PasswordReset);
+export default connect(mapStateToProps, { resetPassword })(PasswordReset);
