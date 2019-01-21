@@ -29,8 +29,7 @@ describe('UpdatePassword Actions Test Suite', () => {
         response: 'password update was successful',
       });
 
-      const expected = [{ type: 'START_LOADING', payload: 'Loading...' },
-        { type: 'STOP_LOADING', payload: 'Loading Finished' },
+      const expected = [
         {
           type: 'UPDATE_PASSWORD_SUCCESS',
           payload: 'password update was successful',
@@ -47,8 +46,7 @@ describe('UpdatePassword Actions Test Suite', () => {
         response: 'Server error',
       });
 
-      const expected = [{ type: 'START_LOADING', payload: 'Loading...' },
-        { type: 'STOP_LOADING', payload: 'Loading Finished' },
+      const expected = [
         {
           type: 'UPDATE_PASSWORD_ERROR',
           payload: 'Server error',

@@ -1,6 +1,7 @@
 import React, { Fragment, Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { toastr } from 'react-redux-toastr';
 import PropTypes from 'prop-types';
 import Button from '../../ui/Buttons/Button';
 import './PasswordReset.scss';
@@ -23,8 +24,9 @@ class PasswordUpdate extends Component {
     e.preventDefault();
     const token = new URLSearchParams(window.location.search).get('token');
     if (password === confirmpassword) {
+      toastr.success('Loading...', 'Loading please be patient');
       // eslint-disable-next-line react/destructuring-assignment
-      this.props.UpdatePassword(token, { password, confirmpassword });
+      this.props.updatePassword(token, { password, confirmpassword });
     } else {
       document.querySelector('.feedback').style.display = 'block';
     }
@@ -33,11 +35,6 @@ class PasswordUpdate extends Component {
   render() {
     const { password, confirmpassword } = this.state;
     const { status } = this.props;
-    if (status === 'LOADING') {
-      document.querySelector('.password-reset button').innerHTML = 'Loading...';
-    } else if (status === 'LOADING_FINISHED') {
-      document.querySelector('.password-reset button').innerHTML = 'Reset';
-    }
     return (
       <Fragment>
         {status === 'SUCCESS' && <Redirect to='/login' />}
@@ -47,7 +44,7 @@ class PasswordUpdate extends Component {
         </div>
         <div className='password-reset body'>
           <p>Enter Your New Password</p>
-          {status === 'ERROR' && <span>Server error</span>}
+          {status === 'ERROR' && toastr.warning('Error', 'Server Error')}
           <form onSubmit={e => this.onHandleSubmit(e)}>
             <input type='text' className='password-reset input-reset-password' name='password' value={password} placeholder='Password' onChange={e => this.onHandleChange(e)} required />
             <br />
@@ -68,15 +65,13 @@ class PasswordUpdate extends Component {
   }
 }
 
-
 PasswordUpdate.propTypes = {
   status: PropTypes.string.isRequired,
-  UpdatePassword: PropTypes.func.isRequired,
+  updatePassword: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
   status: state.updatepassword.status,
 });
-
 
 export default connect(mapStateToProps, { updatePassword })(PasswordUpdate);

@@ -26,8 +26,7 @@ describe('ResetPassword Actions Test Suite', () => {
         response: 'Email was sent successfully',
       });
 
-      const expected = [{ type: 'START_LOADING', payload: 'Loading...' },
-        { type: 'STOP_LOADING', payload: 'Loading Finished' },
+      const expected = [
         {
           type: 'RESET_PASSWORD_SUCCESS',
           payload: 'Email was sent successfully',
@@ -44,8 +43,7 @@ describe('ResetPassword Actions Test Suite', () => {
         response: 'Server error',
       });
 
-      const expected = [{ type: 'START_LOADING', payload: 'Loading...' },
-        { type: 'STOP_LOADING', payload: 'Loading Finished' },
+      const expected = [
         {
           type: 'RESET_PASSWORD_ERROR',
           payload: 'Server error',
