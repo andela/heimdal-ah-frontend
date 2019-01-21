@@ -11,7 +11,7 @@ const Footer = () => (
         <div className='col-md-6'>
           <form className='input-group '>
             <input className='mt-4 footer-text-field' placeholder='Email Address ' />
-            <input type="submit" value='Subscribe' className=" submitbtn footerBtn btn btn-outline-secondary mt-4 ml-4 br-5" />
+            <input type="submit" value='Subscribe' className=" submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5" />
 
           </form>
         </div>
