@@ -4,9 +4,10 @@ exports[`<ArticleCard1 /> should render the Article card coreectly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ArticleCard1
-    article="Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur"
+    article="Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur"
     articleImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
     articleTitle="Lorem ipsum dolor"
+    commentCount=" 10"
     updatedTime="5 mins read"
     userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
     username="Henry"
@@ -25,7 +26,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": <div
-        className="col-md-12 high articleCard1"
+        className="col-md-12 high article-card1"
       >
         <div
           className="card"
@@ -187,7 +188,7 @@ ShallowWrapper {
             </div>
           </div>
         </div>,
-        "className": "col-md-12 high articleCard1",
+        "className": "col-md-12 high article-card1",
       },
       "ref": null,
       "rendered": Object {
@@ -701,7 +702,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <div
-          className="col-md-12 high articleCard1"
+          className="col-md-12 high article-card1"
         >
           <div
             className="card"
@@ -863,7 +864,7 @@ ShallowWrapper {
               </div>
             </div>
           </div>,
-          "className": "col-md-12 high articleCard1",
+          "className": "col-md-12 high article-card1",
         },
         "ref": null,
         "rendered": Object {
@@ -1398,6 +1399,7 @@ ShallowWrapper {
     article="low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer."
     articleImage="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
     articleTitle="Lorem ipsum dolor"
+    commentCount=" 10"
     updatedTime=" 5 days ago"
     userImage="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
     username="Peter Debbyy"
@@ -1416,7 +1418,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": <div
-        className="article-Card-2"
+        className="article-card-2"
       >
         <h5
           className="card-title"
@@ -1584,7 +1586,7 @@ ShallowWrapper {
           </div>,
           <hr />,
         ],
-        "className": "article-Card-2",
+        "className": "article-card-2",
       },
       "ref": null,
       "rendered": Array [
@@ -1973,7 +1975,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <div
-          className="article-Card-2"
+          className="article-card-2"
         >
           <h5
             className="card-title"
@@ -2141,7 +2143,7 @@ ShallowWrapper {
             </div>,
             <hr />,
           ],
-          "className": "article-Card-2",
+          "className": "article-card-2",
         },
         "ref": null,
         "rendered": Array [
@@ -2573,7 +2575,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
         className="col-md-12"
       >
         <div
-          className="bookmarksCards "
+          className="bookmarks-cards "
         >
           <div
             className="col-md-12"
@@ -2652,7 +2654,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
       "nodeType": "host",
       "props": Object {
         "children": <div
-          className="bookmarksCards "
+          className="bookmarks-cards "
         >
           <div
             className="col-md-12"
@@ -2799,7 +2801,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
               </div>
             </div>,
           ],
-          "className": "bookmarksCards ",
+          "className": "bookmarks-cards ",
         },
         "ref": null,
         "rendered": Array [
@@ -3102,7 +3104,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis",
           className="col-md-12"
         >
           <div
-            className="bookmarksCards "
+            className="bookmarks-cards "
           >
             <div
               className="col-md-12"
@@ -3181,7 +3183,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
         "nodeType": "host",
         "props": Object {
           "children": <div
-            className="bookmarksCards "
+            className="bookmarks-cards "
           >
             <div
               className="col-md-12"
@@ -3328,7 +3330,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                 </div>
               </div>,
             ],
-            "className": "bookmarksCards ",
+            "className": "bookmarks-cards ",
           },
           "ref": null,
           "rendered": Array [
