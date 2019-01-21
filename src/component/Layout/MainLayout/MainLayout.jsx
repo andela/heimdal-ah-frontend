@@ -1,5 +1,7 @@
 import React from 'react';
 import PropsTypes from 'prop-types';
+import Header from '../../ui/header/Header';
+import Footer from '../../ui/footer/Footer';
 import './MainLayout.scss';
 
 /**
@@ -8,8 +10,10 @@ import './MainLayout.scss';
  * @returns {object} the component
  */
 const MainLayout = ({ children }) => (
-  <div className="p-5 content">
+  <div>
+    <Header isValidated={false} />
     {children}
+    <Footer />
   </div>
 );
 
