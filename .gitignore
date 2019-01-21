@@ -66,4 +66,5 @@ dist/
 .github/
 package-lock.json/
 coverage
+.vscode
 

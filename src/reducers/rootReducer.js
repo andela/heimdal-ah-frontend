@@ -1,9 +1,8 @@
 import { combineReducers } from 'redux';
 import modal from './modal';
+import authReducer from './authReducer';
 
-const appReducer = combineReducers({ modal });
-
-// const initialState = appReducer({}, {});
+const appReducer = combineReducers({ modal, auth: authReducer });
 
 const rootReducer = (state, action) => appReducer(state, action);
 
