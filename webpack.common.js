@@ -29,11 +29,7 @@ module.exports = {
         use: [{ loader: 'babel-loader' }],
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.s(a|c)ss$/,
+        test: /\.s?(a|c)ss$/,
         use: [{
           loader: 'style-loader',
         }, {
@@ -43,10 +39,8 @@ module.exports = {
         }],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader',
-        ],
+        test: /\.(jpe?g|gif|png|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+        loader: 'file-loader?name=images/[name].[ext]',
       },
     ],
   },
