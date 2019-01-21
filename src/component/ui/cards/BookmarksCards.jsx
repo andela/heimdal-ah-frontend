@@ -7,7 +7,7 @@ import Glow from '../buttons/glow/Glow.jsx';
 const BookmarksCards = props => (
   <Fragment>
     <div className='col-md-12'>
-      <div className={`bookmarksCards ${props.moreClass}`}>
+      <div className={`bookmarks-cards ${props.moreClass}`}>
         <div className='col-md-12'>
           <div className='header'>
             <h1 className="col-md-11">{ props.articleTitle.substring(0, 30) }</h1>

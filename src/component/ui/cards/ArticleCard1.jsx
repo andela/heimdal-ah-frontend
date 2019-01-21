@@ -2,13 +2,15 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import './Cards.scss';
 import Glow from '../buttons/glow/Glow.jsx';
+import { textTrimmer } from '../../../../helper/cardsHelper';
+
 
 const ArticleCard1 = (props) => {
-  const articleText = props.article.length > 100 ? `${props.article.substring(0, 100).trim()}...` : props.article;
-  const userName = props.username.length > 12 ? `${props.username.substring(0, 12).trim()}...` : props.username;
+  const articleText = textTrimmer(props.article, 100);
+  const userName = textTrimmer(props.username, 12);
   return (
     <Fragment>
-      <div className="col-md-12 high articleCard1">
+      <div className="col-md-12 high article-card1">
         <div className="card">
           <div className='row'>
             <div className='col-md-5 m-r-0'>
@@ -24,7 +26,7 @@ const ArticleCard1 = (props) => {
                     <span className="user-name">{ userName }</span>
                   </span>
                   <span className='col-md-4 text-right'>
-                    <i className="far fa-comment-alt comment text-right"> 10</i>
+                    <i className="far fa-comment-alt comment text-right">{props.commentCount}</i>
                   </span>
                 </div>
                 <div className='col-md-12'>
@@ -40,15 +42,17 @@ const ArticleCard1 = (props) => {
   );
 };
 
-const article = 'Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur';
+const article = 'Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur';
 const articleImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE';
 const userName = 'Henry';
 const userImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE';
 const title = 'Lorem ipsum dolor';
+const commentCount = ' 10';
 
 ArticleCard1.defaultProps = {
   articleTitle: title,
   article,
+  commentCount,
   userImage,
   articleImage,
   username: userName,
@@ -63,6 +67,7 @@ ArticleCard1.propTypes = {
   userImage: PropTypes.string,
   username: PropTypes.string,
   updatedTime: PropTypes.string,
+  commentCount: PropTypes.string,
 };
 
 export default ArticleCard1;

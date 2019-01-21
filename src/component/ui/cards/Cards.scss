@@ -14,7 +14,7 @@ $ovo: 'Ovo', serif;
   box-sizing: border-box;
   background-color: #F9F9F9;
 }
-.bookmarksCards {
+.bookmarks-cards {
     width: 700px;
     height: 280px;
     border: 1px solid rgba(77, 56, 56, 0.1);
@@ -25,6 +25,7 @@ $ovo: 'Ovo', serif;
       font-family: $ovo;
       font-size: 20px
     };
+
     .header{  
       h1{
         font-family: $cardo;
@@ -62,7 +63,7 @@ $ovo: 'Ovo', serif;
     };   
 };
 
-.article-Card-2 {
+.article-card-2 {
   width: 300px;
   font-family: $cardo;
   border: '0rem';
@@ -73,84 +74,96 @@ $ovo: 'Ovo', serif;
   .comment {
     font-size: 15px;
     padding-left: 15px;
-    margin-top: 12px 
-  }
+    margin-top: 12px;
+  };
   .user-name {
     font-size: 15px;
     padding-left: 10px;
     display: 'inline-block'
   };
   .card-body {
-    padding: 0px
-  }
+    padding: 0px;
+  };
+
   .user-image {
     width: 22px;
     height: 22px;
     border-radius: 50%;
     font-weight: 200;
   };
+
   .updated-time {
-    font-size: 14px;
-    color: black;   
+    color: #000000; 
+    font-size: 14px;  
   };
   .ratings {
     margin-top: 10px;
   };
 };
 
-.articleCard1 {
+.article-card1 {
   font-family: $ovo;
+
   .card-text {
+    color: #000000;
     font-size: 12px;
-    color: black;
-    font-weight: lighter 
+    font-weight: lighter;
   };
+
   .card-title {
     font-weight: 1000;
   };
+
   .user-image {
-    width: 20px;
-    height: 20px;
     border-radius: 50%;
-    margin-bottom: 10px;
     font-weight: 200;
+    height: 20px;
+    margin-bottom: 10px;
     margin-top: 10px;
+    width: 20px;
   };
+
   .comment {
     font-size: 13px;
-    padding-left: 30px; 
+    padding-left: 30px;
   };
+
   .user-name {
     font-size: 10px;
     padding-left: 10px;
   };
 };
 
-
-
 .fs-13 { 
-  font-size: 13px
+  font-size: 13px;
 };
+
 .card {
-  position: relative;
   border: 0;
+  position: relative;
 };
+
 .card-buttom {
+  bottom: 0px;
   position: absolute;
-  bottom: 0px
 };
+
 .high {
-  max-height: 80px
+  max-height: 80px;
 };
+
 .m-r-0 {
-  margin-right: -5px
+  margin-right: -5px;
 };
+
 .m-t-10 {
-  margin-top: 10px
+  margin-top: 10px;
 };
+
 .m-r-15 {
-  margin-right: 15px
+  margin-right: 15px;
 };
+
 .p-t-5 {
-  padding-top: 10px
+  padding-top: 10px;
 };

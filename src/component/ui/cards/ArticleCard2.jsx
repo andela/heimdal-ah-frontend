@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import Glow from '../buttons/glow/Glow.jsx';
 import './Cards.scss';
 import Rating from '../Rating/Rating';
+import { textTrimmer } from '../../../../helper/cardsHelper';
 
 const ArticleCard2 = (props) => {
-  const articleText = props.article.length > 100 ? `${props.article.substring(0, 100).trim()}...` : props.article;
-  const userName = props.username.length > 12 ? `${props.username.substring(0, 12).trim()}...` : props.username;
+  const articleText = textTrimmer(props.article, 100);
+  const userName = textTrimmer(props.username, 12);
   return (
     <Fragment>
-      <div className="article-Card-2">
+      <div className="article-card-2">
         <h5 className="card-title">{props.articleTitle.substring(0, 30)}</h5>
         <img className="card-img-top mb-4" src={props.articleImage} alt="Card" />
         <div className="card-body">
@@ -31,7 +32,7 @@ const ArticleCard2 = (props) => {
               <Rating />
             </div>
             <div className='col-md-3'>
-              <i className="far fa-comment-alt comment"> 10</i>
+              <i className="far fa-comment-alt comment">{props.commentCount}</i>
             </div>
           </div>
         </div>
@@ -45,12 +46,14 @@ const image = 'https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762
 const userName = 'Peter Debbyy';
 const articleTitle = 'Lorem ipsum dolor';
 const articleImage = 'https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg';
+const commentCount = ' 10';
 
 ArticleCard2.defaultProps = {
   articleTitle,
   article,
   userImage: image,
   articleImage,
+  commentCount,
   username: userName,
   updatedTime: ' 5 days ago',
 };
@@ -63,6 +66,7 @@ ArticleCard2.propTypes = {
   username: PropTypes.string,
   updatedTime: PropTypes.string,
   articleImage: PropTypes.string,
+  commentCount: PropTypes.string,
 };
 
 export default ArticleCard2;

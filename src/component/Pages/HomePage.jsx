@@ -1,7 +1,7 @@
 import React from 'react';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/buttons/Button';
-import BookmarksCards from '../ui/cards/ArticleCard2';
+import BookmarksCards from '../ui/cards/ArticleCard1';
 import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
 
 
