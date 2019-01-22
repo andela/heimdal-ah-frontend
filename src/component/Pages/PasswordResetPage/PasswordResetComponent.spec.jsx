@@ -1,12 +1,12 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import PasswordReset from './PasswordReset';
+import PasswordResetPresentation from './PasswordResetPresentation';
 import UpdatePassword from './UpdatePassword';
 
 describe('Password Reset Component Test Suite', () => {
   describe('<PasswordReset />', () => {
     it('should render the PasswordReset component', () => {
-      const wrapper = shallow(<PasswordReset />);
+      const wrapper = shallow(<PasswordResetPresentation />);
       expect(wrapper.length).toBe(1);
       expect(wrapper).toMatchSnapshot();
     });

@@ -1,10 +1,7 @@
-import React, { Fragment, Component } from 'react';
+import { Component } from 'react';
 import { connect } from 'react-redux';
-import { toastr } from 'react-redux-toastr';
+import { toastr as feedback } from 'react-redux-toastr';
 import PropTypes from 'prop-types';
-import Button from '../../ui/Buttons/Button';
-import Header from '../../ui/header/Header';
-import Footer from '../../ui/footer/Footer';
 import './PasswordReset.scss';
 import resetPassword from '../../../actions/PasswordReset/resetPasswordActions';
 
@@ -15,8 +12,13 @@ import resetPassword from '../../../actions/PasswordReset/resetPasswordActions';
  * @returns {component} Component
  */
 class PasswordReset extends Component {
-  state = {
-    email: '',
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+    };
+    this.onHandleChange = this.onHandleChange.bind(this);
+    this.onHandleSubmit = this.onHandleSubmit.bind(this);
   }
 
   /**
@@ -36,11 +38,11 @@ class PasswordReset extends Component {
  * @returns {component} null
  */
   onHandleSubmit(e) {
-    toastr.success('Loading...', 'Loading, please be patient');
+    feedback.success('Loading...', 'Loading, please be patient');
     const { email } = this.state;
     e.preventDefault();
     // eslint-disable-next-line react/destructuring-assignment
-    this.props.resetPassword(email);
+    this.props.actions(resetPassword(email));
   }
 
   /**
@@ -50,35 +52,27 @@ class PasswordReset extends Component {
   render() {
     const { email } = this.state;
     const { status } = this.props;
-    return (
-      <Fragment>
-        {status === 'SUCCESS' && toastr.success('Email Sent', 'An Email has been sent to you, please click on the link to reset your password')}
-        {status === 'FAILED' && toastr.warning('Invalid Credentials', 'User not Found')}
-        <Header isValidated={false} />
-        <div className='password-reset body'>
-          <p>Reset Your Password</p>
-          <form onSubmit={e => this.onHandleSubmit(e)}>
-            <input type='email' className='password-reset input-reset-password' name='email' value={email} placeholder='Enter your Email' onChange={e => this.onHandleChange(e)} required />
-            <br />
-            {status === 'ERROR' && toastr.warning('Email Not Sent', 'Server Error')}
-            <br />
-            <Button type='login2' label='Reset' Class='password-reset button' ref={this.button} />
-          </form>
-        </div>
-        <br />
-        <Footer />
-      </Fragment>
-    );
+    return this.props.children({
+      email,
+      status,
+      state: this.state,
+      onHandleSubmit: this.onHandleSubmit,
+      onHandleChange: this.onHandleChange,
+    });
   }
 }
 
 PasswordReset.propTypes = {
   status: PropTypes.string.isRequired,
-  resetPassword: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
   status: state.resetpassword.status,
 });
 
-export default connect(mapStateToProps, { resetPassword })(PasswordReset);
+
+const mapDispatchToProps = dispatch => ({
+  actions: action => dispatch(action),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(PasswordReset);

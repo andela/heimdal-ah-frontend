@@ -2,7 +2,7 @@ import Axios from 'axios';
 import {
   ACTIONS,
 } from '../actionTypes';
-import ActionResponse from '../ActionResponse';
+import ActionResponse from '../actionResponse';
 
 const resetPassword = userEmail => dispatch => Axios.post(`${process.env.BASE_URL_PROD}/api/v1/password/forgot`, {
   email: userEmail,

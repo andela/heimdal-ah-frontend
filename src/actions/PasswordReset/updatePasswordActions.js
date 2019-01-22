@@ -2,7 +2,7 @@ import Axios from 'axios';
 import {
   ACTIONS,
 } from '../actionTypes';
-import ActionResponse from '../ActionResponse';
+import ActionResponse from '../actionResponse';
 
 const updatePassword = (token, newPassword) => dispatch => Axios.put(`${process.env.BASE_URL_PROD}/api/v1/password/reset/${token}`, {
   password: newPassword.password,
