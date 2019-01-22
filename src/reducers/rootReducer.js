@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import modal from './modal';
 import authReducer from './authReducer';
+import errorsReducer from './errorsReducer';
 
-const appReducer = combineReducers({ modal, auth: authReducer });
+const appReducer = combineReducers({ auth: authReducer, errors: errorsReducer });
 
 const rootReducer = (state, action) => appReducer(state, action);
 

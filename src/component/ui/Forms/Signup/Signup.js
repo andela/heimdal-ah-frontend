@@ -1,11 +1,13 @@
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
-// import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import './Signup.scss';
-import { signupUser } from '../../../../actions/authActions';
+
 import FormInput from '../../InputElements/FormInput';
+import { setErrors, removeAnError, clearErrors } from '../../../../actions/errorActions';
+import { signupUser } from '../../../../actions/authActions';
 import { validateSignup } from '../../../../helpers/validateInputs';
+import './Signup.scss';
 
 class Signup extends Component {
   state = {
@@ -17,13 +19,19 @@ class Signup extends Component {
     isLoading: false,
   };
 
+  componentWillReceiveProps(nextProps) {
+    return nextProps.errors && this.setState({ errors: nextProps.errors });
+  }
+
   onChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
-    // this.setState({ errors: event.target.value });
-    // this.setState(prevState => ({ errors: { ...prevState.errors } }));
+    if (this.state.errors[event.target.name]) {
+      const { action } = this.props;
+      action.removeAnError(event.target.name);
+    }
   };
 
-  onSubmit = (event) => {
+  handleSignup = (event) => {
     event.preventDefault();
     this.setState({ isLoading: true });
 
@@ -42,23 +50,27 @@ class Signup extends Component {
 
     if (errors) {
       this.setState({ isLoading: false });
-      return this.setState(prevState => ({ ...prevState, errors: errors.errors }));
+
+      const { action } = this.props;
+      return action.setErrors(errors.errors);
     }
-    this.setState({ errors: {}, isLoading: false });
-    const { signupUser: dispatchSignup, history } = this.props;
-    return dispatchSignup(signupData, history);
+
+    const { action, history } = this.props;
+    action.clearErrors();
+    this.setState({ isLoading: false });
+    return action.signupUser(signupData, history);
   };
 
   render() {
     const {
       email, username, password, passwordConfirmation, errors, isLoading,
     } = this.state;
-    console.log(this.state);
+
     return (
-      <div className="row heimdal-form">
+      <div className="heimdal-form">
         <h1 className="form-title font-cardo text-center">Become an Heimdal Demonym</h1>
-        <form className="heimdal-form" onSubmit={this.onSubmit} noValidate>
-          <div className="col-md-10 col-md-offset-1 font-cardo ph-30">
+        <form className="heimdal-form" onSubmit={this.handleSignup} noValidate>
+          <div className="font-cardo ph-30">
             <FormInput
               name="username"
               value={username}
@@ -95,12 +107,14 @@ class Signup extends Component {
               onChange={this.onChange}
               errors={errors}
             />
-            <br />
             <div className="row">
-              <div className={`col-md-12 text-center ${isLoading ? '' : 'hidden'}`}>
+              <div className={`col-md-12 text-center ${isLoading ? '' : 'd-none'}`}>
                 <i className="fa fa-spin fa-spinner" />
               </div>
-              <div className="col-md-8 text-left m-b-10">
+              <div className="col-md-12 text-danger text-center">
+                {errors.mainError && <span className="">{errors.mainError}</span>}
+              </div>
+              <div className="col-md-8 text-left mb-10">
                 <span className="text-muted p-t-10">
                   Already have an account?
                   {' '}
@@ -126,7 +140,19 @@ const mapStateToProps = state => ({
   errors: state.errors,
 });
 
+const mapDispatchToProps = dispatch => ({
+  action: bindActionCreators(
+    {
+      signupUser,
+      removeAnError,
+      setErrors,
+      clearErrors,
+    },
+    dispatch,
+  ),
+});
+
 export default connect(
   mapStateToProps,
-  { signupUser },
+  mapDispatchToProps,
 )(withRouter(Signup));

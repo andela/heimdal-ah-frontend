@@ -1,25 +1,18 @@
 import React from 'react';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/buttons/Button';
-import RootModal from '../ui/Modals/RootModal';
 import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
 import Signup from '../ui/Forms/Signup/Signup';
 
 const HomePage = () => (
   <div>
     <h2 className="lead mt-5">Welcome to the Home page...</h2>
-    <RootModal title="Report" modalType="Report" classname="">
-      <h2>Child component</h2>
-    </RootModal>
     <br />
     <br />
     <br />
     <br />
-    <RootModal title="" modalType="" classname="">
-      <Signup />
-    </RootModal>
     <div className="container">
-      <div className="col-md-7">
+      <div className="row">
         <Signup />
       </div>
       <Rating className="fa fa-star" ratings={2.5} />
