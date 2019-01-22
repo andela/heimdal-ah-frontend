@@ -63,21 +63,14 @@ const ArticleCardVertical = props => (
   </Fragment>
 );
 
-const article = 'Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur';
-const articleImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE';
-const userName = 'Henry Henry Henry Henry';
-const userImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE';
-const title = 'Lorem ipsum dolor';
-const commentCount = ' 10';
-
 ArticleCardVertical.defaultProps = {
-  articleTitle: title,
-  article,
-  commentCount,
-  userImage,
-  articleImage,
-  username: userName,
-  updatedTime: '5 mins',
+  articleTitle: '',
+  article: '',
+  commentCount: '',
+  userImage: '',
+  articleImage: '',
+  username: '',
+  updatedTime: '',
 };
 
 

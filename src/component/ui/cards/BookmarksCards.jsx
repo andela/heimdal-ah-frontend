@@ -35,21 +35,13 @@ const BookmarksCards = props => (
   </Fragment>
 );
 
-
-const article = `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.`;
-const image = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE';
-const userName = 'pato azu';
-const articleTitle = 'Lorem ipsum dolor sit amet,';
-
 BookmarksCards.defaultProps = {
-  articleTitle,
-  article,
-  userImage: image,
-  username: userName,
+  articleTitle: '',
+  article: '',
+  userImage: '',
+  username: '',
   moreClass: '',
-  glowCount: '0',
+  glowCount: '',
 };
 
 

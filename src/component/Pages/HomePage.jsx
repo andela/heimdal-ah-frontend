@@ -13,7 +13,7 @@ const HomePage = () => (
     </h2>
     <div className="row">
       <div className='col-md-6'>
-        <ArticleCardVertical />
+        <ArticleCardVertical articleTitle='Title' />
       </div>
     </div>
     <div>

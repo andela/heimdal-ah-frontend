@@ -4,14 +4,13 @@ exports[`<ArticleCardHorizontal /> should render the Article card coreectly 1`] 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ArticleCardHorizontal
-    article="low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer."
-    articleImage="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
-    articleTitle="Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor"
-    commentCount=" 10"
-    updatedTime=" 5 days ago"
-    userImage="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
-    username="Peter Debbyy"
+    article=""
+    articleImage=""
+    articleTitle=""
+    commentCount=""
+    updatedTime=""
+    userImage=""
+    username=""
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -32,12 +31,12 @@ longerlow as a natural lead-in to additional content. This content is a little b
         <h5
           className="card-title"
         >
-          Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+          
         </h5>
         <img
           alt="Card"
           className="card-img-top mb-4"
-          src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+          src=""
         />
         <div
           className="card-body"
@@ -48,8 +47,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
             <p
               className="card-text"
             >
-              low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+              
             </p>
           </div>
           <div
@@ -62,14 +60,14 @@ longerlow as a natural lead-in to additional content. This content is a little b
                 <img
                   alt="user"
                   className="user-image"
-                  src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                  src=""
                   width="30"
                 />
               </span>
               <span
                 className="col-8 col-md-7 user-name"
               >
-                Peter Debbyy
+                
               </span>
             </div>
             <div
@@ -78,7 +76,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
               <i
                 className="far fa-clock updated-time float-right"
               >
-                 5 days ago
+                
               </i>
             </div>
           </div>
@@ -106,7 +104,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
               <i
                 className="far fa-comment-alt comment"
               >
-                 10
+                
               </i>
             </div>
           </div>
@@ -124,12 +122,12 @@ longerlow as a natural lead-in to additional content. This content is a little b
           <h5
             className="card-title"
           >
-            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+            
           </h5>,
           <img
             alt="Card"
             className="card-img-top mb-4"
-            src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+            src=""
           />,
           <div
             className="card-body"
@@ -140,8 +138,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
               <p
                 className="card-text"
               >
-                low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                
               </p>
             </div>
             <div
@@ -154,14 +151,14 @@ longerlow as a natural lead-in to additional content. This content is a little b
                   <img
                     alt="user"
                     className="user-image"
-                    src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                    src=""
                     width="30"
                   />
                 </span>
                 <span
                   className="col-8 col-md-7 user-name"
                 >
-                  Peter Debbyy
+                  
                 </span>
               </div>
               <div
@@ -170,7 +167,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                 <i
                   className="far fa-clock updated-time float-right"
                 >
-                   5 days ago
+                  
                 </i>
               </div>
             </div>
@@ -198,7 +195,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                 <i
                   className="far fa-comment-alt comment"
                 >
-                   10
+                  
                 </i>
               </div>
             </div>
@@ -214,11 +211,11 @@ longerlow as a natural lead-in to additional content. This content is a little b
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+            "children": "",
             "className": "card-title",
           },
           "ref": null,
-          "rendered": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+          "rendered": "",
           "type": "h5",
         },
         Object {
@@ -228,7 +225,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
           "props": Object {
             "alt": "Card",
             "className": "card-img-top mb-4",
-            "src": "https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg",
+            "src": "",
           },
           "ref": null,
           "rendered": null,
@@ -246,8 +243,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                 <p
                   className="card-text"
                 >
-                  low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                  
                 </p>
               </div>,
               <div
@@ -260,14 +256,14 @@ longerlow as a natural lead-in to additional content. This content is a little b
                     <img
                       alt="user"
                       className="user-image"
-                      src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                      src=""
                       width="30"
                     />
                   </span>
                   <span
                     className="col-8 col-md-7 user-name"
                   >
-                    Peter Debbyy
+                    
                   </span>
                 </div>
                 <div
@@ -276,7 +272,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                   <i
                     className="far fa-clock updated-time float-right"
                   >
-                     5 days ago
+                    
                   </i>
                 </div>
               </div>,
@@ -304,7 +300,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                   <i
                     className="far fa-comment-alt comment"
                   >
-                     10
+                    
                   </i>
                 </div>
               </div>,
@@ -321,8 +317,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                 "children": <p
                   className="card-text"
                 >
-                  low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                  
                 </p>,
                 "className": "flex-text-content mb-3",
               },
@@ -332,13 +327,11 @@ longerlow as a natural lead-in to additional content. This content is a little b
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.",
+                  "children": "",
                   "className": "card-text",
                 },
                 "ref": null,
-                "rendered": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.",
+                "rendered": "",
                 "type": "p",
               },
               "type": "div",
@@ -356,14 +349,14 @@ longerlow as a natural lead-in to additional content. This content is a little b
                       <img
                         alt="user"
                         className="user-image"
-                        src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                        src=""
                         width="30"
                       />
                     </span>
                     <span
                       className="col-8 col-md-7 user-name"
                     >
-                      Peter Debbyy
+                      
                     </span>
                   </div>,
                   <div
@@ -372,7 +365,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                     <i
                       className="far fa-clock updated-time float-right"
                     >
-                       5 days ago
+                      
                     </i>
                   </div>,
                 ],
@@ -390,14 +383,14 @@ longerlow as a natural lead-in to additional content. This content is a little b
                         <img
                           alt="user"
                           className="user-image"
-                          src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                          src=""
                           width="30"
                         />
                       </span>,
                       <span
                         className="col-8 col-md-7 user-name"
                       >
-                        Peter Debbyy
+                        
                       </span>,
                     ],
                     "className": "col-md-8 mb-3",
@@ -412,7 +405,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                         "children": <img
                           alt="user"
                           className="user-image"
-                          src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                          src=""
                           width="30"
                         />,
                       },
@@ -424,7 +417,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                         "props": Object {
                           "alt": "user",
                           "className": "user-image",
-                          "src": "https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg",
+                          "src": "",
                           "width": "30",
                         },
                         "ref": null,
@@ -438,11 +431,11 @@ longerlow as a natural lead-in to additional content. This content is a little b
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": "Peter Debbyy",
+                        "children": "",
                         "className": "col-8 col-md-7 user-name",
                       },
                       "ref": null,
-                      "rendered": "Peter Debbyy",
+                      "rendered": "",
                       "type": "span",
                     },
                   ],
@@ -456,7 +449,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                     "children": <i
                       className="far fa-clock updated-time float-right"
                     >
-                       5 days ago
+                      
                     </i>,
                     "className": "col-md-4 mb-3 mt-2",
                   },
@@ -466,11 +459,11 @@ longerlow as a natural lead-in to additional content. This content is a little b
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": " 5 days ago",
+                      "children": "",
                       "className": "far fa-clock updated-time float-right",
                     },
                     "ref": null,
-                    "rendered": " 5 days ago",
+                    "rendered": "",
                     "type": "i",
                   },
                   "type": "div",
@@ -505,7 +498,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                     <i
                       className="far fa-comment-alt comment"
                     >
-                       10
+                      
                     </i>
                   </div>,
                 ],
@@ -571,7 +564,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                     "children": <i
                       className="far fa-comment-alt comment"
                     >
-                       10
+                      
                     </i>,
                     "className": "col-md-3",
                   },
@@ -581,11 +574,11 @@ longerlow as a natural lead-in to additional content. This content is a little b
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": " 10",
+                      "children": "",
                       "className": "far fa-comment-alt comment",
                     },
                     "ref": null,
-                    "rendered": " 10",
+                    "rendered": "",
                     "type": "i",
                   },
                   "type": "div",
@@ -622,12 +615,12 @@ longerlow as a natural lead-in to additional content. This content is a little b
           <h5
             className="card-title"
           >
-            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+            
           </h5>
           <img
             alt="Card"
             className="card-img-top mb-4"
-            src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+            src=""
           />
           <div
             className="card-body"
@@ -638,8 +631,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
               <p
                 className="card-text"
               >
-                low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                
               </p>
             </div>
             <div
@@ -652,14 +644,14 @@ longerlow as a natural lead-in to additional content. This content is a little b
                   <img
                     alt="user"
                     className="user-image"
-                    src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                    src=""
                     width="30"
                   />
                 </span>
                 <span
                   className="col-8 col-md-7 user-name"
                 >
-                  Peter Debbyy
+                  
                 </span>
               </div>
               <div
@@ -668,7 +660,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                 <i
                   className="far fa-clock updated-time float-right"
                 >
-                   5 days ago
+                  
                 </i>
               </div>
             </div>
@@ -696,7 +688,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                 <i
                   className="far fa-comment-alt comment"
                 >
-                   10
+                  
                 </i>
               </div>
             </div>
@@ -714,12 +706,12 @@ longerlow as a natural lead-in to additional content. This content is a little b
             <h5
               className="card-title"
             >
-              Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+              
             </h5>,
             <img
               alt="Card"
               className="card-img-top mb-4"
-              src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+              src=""
             />,
             <div
               className="card-body"
@@ -730,8 +722,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                 <p
                   className="card-text"
                 >
-                  low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                  
                 </p>
               </div>
               <div
@@ -744,14 +735,14 @@ longerlow as a natural lead-in to additional content. This content is a little b
                     <img
                       alt="user"
                       className="user-image"
-                      src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                      src=""
                       width="30"
                     />
                   </span>
                   <span
                     className="col-8 col-md-7 user-name"
                   >
-                    Peter Debbyy
+                    
                   </span>
                 </div>
                 <div
@@ -760,7 +751,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                   <i
                     className="far fa-clock updated-time float-right"
                   >
-                     5 days ago
+                    
                   </i>
                 </div>
               </div>
@@ -788,7 +779,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                   <i
                     className="far fa-comment-alt comment"
                   >
-                     10
+                    
                   </i>
                 </div>
               </div>
@@ -804,11 +795,11 @@ longerlow as a natural lead-in to additional content. This content is a little b
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+              "children": "",
               "className": "card-title",
             },
             "ref": null,
-            "rendered": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
+            "rendered": "",
             "type": "h5",
           },
           Object {
@@ -818,7 +809,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
             "props": Object {
               "alt": "Card",
               "className": "card-img-top mb-4",
-              "src": "https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg",
+              "src": "",
             },
             "ref": null,
             "rendered": null,
@@ -836,8 +827,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                   <p
                     className="card-text"
                   >
-                    low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                    
                   </p>
                 </div>,
                 <div
@@ -850,14 +840,14 @@ longerlow as a natural lead-in to additional content. This content is a little b
                       <img
                         alt="user"
                         className="user-image"
-                        src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                        src=""
                         width="30"
                       />
                     </span>
                     <span
                       className="col-8 col-md-7 user-name"
                     >
-                      Peter Debbyy
+                      
                     </span>
                   </div>
                   <div
@@ -866,7 +856,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                     <i
                       className="far fa-clock updated-time float-right"
                     >
-                       5 days ago
+                      
                     </i>
                   </div>
                 </div>,
@@ -894,7 +884,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                     <i
                       className="far fa-comment-alt comment"
                     >
-                       10
+                      
                     </i>
                   </div>
                 </div>,
@@ -911,8 +901,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                   "children": <p
                     className="card-text"
                   >
-                    low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                    
                   </p>,
                   "className": "flex-text-content mb-3",
                 },
@@ -922,13 +911,11 @@ longerlow as a natural lead-in to additional content. This content is a little b
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.",
+                    "children": "",
                     "className": "card-text",
                   },
                   "ref": null,
-                  "rendered": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
-longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.",
+                  "rendered": "",
                   "type": "p",
                 },
                 "type": "div",
@@ -946,14 +933,14 @@ longerlow as a natural lead-in to additional content. This content is a little b
                         <img
                           alt="user"
                           className="user-image"
-                          src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                          src=""
                           width="30"
                         />
                       </span>
                       <span
                         className="col-8 col-md-7 user-name"
                       >
-                        Peter Debbyy
+                        
                       </span>
                     </div>,
                     <div
@@ -962,7 +949,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                       <i
                         className="far fa-clock updated-time float-right"
                       >
-                         5 days ago
+                        
                       </i>
                     </div>,
                   ],
@@ -980,14 +967,14 @@ longerlow as a natural lead-in to additional content. This content is a little b
                           <img
                             alt="user"
                             className="user-image"
-                            src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                            src=""
                             width="30"
                           />
                         </span>,
                         <span
                           className="col-8 col-md-7 user-name"
                         >
-                          Peter Debbyy
+                          
                         </span>,
                       ],
                       "className": "col-md-8 mb-3",
@@ -1002,7 +989,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                           "children": <img
                             alt="user"
                             className="user-image"
-                            src="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
+                            src=""
                             width="30"
                           />,
                         },
@@ -1014,7 +1001,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                           "props": Object {
                             "alt": "user",
                             "className": "user-image",
-                            "src": "https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg",
+                            "src": "",
                             "width": "30",
                           },
                           "ref": null,
@@ -1028,11 +1015,11 @@ longerlow as a natural lead-in to additional content. This content is a little b
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": "Peter Debbyy",
+                          "children": "",
                           "className": "col-8 col-md-7 user-name",
                         },
                         "ref": null,
-                        "rendered": "Peter Debbyy",
+                        "rendered": "",
                         "type": "span",
                       },
                     ],
@@ -1046,7 +1033,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                       "children": <i
                         className="far fa-clock updated-time float-right"
                       >
-                         5 days ago
+                        
                       </i>,
                       "className": "col-md-4 mb-3 mt-2",
                     },
@@ -1056,11 +1043,11 @@ longerlow as a natural lead-in to additional content. This content is a little b
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": " 5 days ago",
+                        "children": "",
                         "className": "far fa-clock updated-time float-right",
                       },
                       "ref": null,
-                      "rendered": " 5 days ago",
+                      "rendered": "",
                       "type": "i",
                     },
                     "type": "div",
@@ -1095,7 +1082,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                       <i
                         className="far fa-comment-alt comment"
                       >
-                         10
+                        
                       </i>
                     </div>,
                   ],
@@ -1161,7 +1148,7 @@ longerlow as a natural lead-in to additional content. This content is a little b
                       "children": <i
                         className="far fa-comment-alt comment"
                       >
-                         10
+                        
                       </i>,
                       "className": "col-md-3",
                     },
@@ -1171,11 +1158,11 @@ longerlow as a natural lead-in to additional content. This content is a little b
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": " 10",
+                        "children": "",
                         "className": "far fa-comment-alt comment",
                       },
                       "ref": null,
-                      "rendered": " 10",
+                      "rendered": "",
                       "type": "i",
                     },
                     "type": "div",
@@ -1225,13 +1212,13 @@ exports[`<ArticleCardVertical /> should render the Article card coreectly 1`] = 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ArticleCardVertical
-    article="Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur"
-    articleImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-    articleTitle="Lorem ipsum dolor"
-    commentCount=" 10"
-    updatedTime="5 mins"
-    userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-    username="Henry Henry Henry Henry"
+    article=""
+    articleImage=""
+    articleTitle=""
+    commentCount=""
+    updatedTime=""
+    userImage=""
+    username=""
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -1264,7 +1251,7 @@ ShallowWrapper {
                 <img
                   alt=""
                   className="img-fluid"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  src=""
                 />
               </div>
             </div>
@@ -1279,12 +1266,12 @@ ShallowWrapper {
                 className="col-md-12 mb-0 pb-0"
               >
                 <h5>
-                  Lorem ipsum dolor
+                  
                 </h5>
                 <div
                   className="card-text"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                  
                 </div>
               </div>
               <div
@@ -1301,12 +1288,12 @@ ShallowWrapper {
                         <img
                           alt="User"
                           className="img-fluid rounded-circle"
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                          src=""
                         />
                         <span
                           className="ml-1 user-name-text"
                         >
-                          Henry Henry Henry Henry
+                          
                         </span>
                       </a>
                     </li>
@@ -1321,7 +1308,7 @@ ShallowWrapper {
                         <i
                           className="far fa-comment-alt comment"
                         >
-                           10
+                          
                         </i>
                       </a>
                     </li>
@@ -1345,7 +1332,7 @@ ShallowWrapper {
                     className="time-text"
                   >
                     <i>
-                      5 mins
+                      
                     </i>
                   </span>
                 </div>
@@ -1376,7 +1363,7 @@ ShallowWrapper {
                 <img
                   alt=""
                   className="img-fluid"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  src=""
                 />
               </div>
             </div>
@@ -1391,12 +1378,12 @@ ShallowWrapper {
                 className="col-md-12 mb-0 pb-0"
               >
                 <h5>
-                  Lorem ipsum dolor
+                  
                 </h5>
                 <div
                   className="card-text"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                  
                 </div>
               </div>
               <div
@@ -1413,12 +1400,12 @@ ShallowWrapper {
                         <img
                           alt="User"
                           className="img-fluid rounded-circle"
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                          src=""
                         />
                         <span
                           className="ml-1 user-name-text"
                         >
-                          Henry Henry Henry Henry
+                          
                         </span>
                       </a>
                     </li>
@@ -1433,7 +1420,7 @@ ShallowWrapper {
                         <i
                           className="far fa-comment-alt comment"
                         >
-                           10
+                          
                         </i>
                       </a>
                     </li>
@@ -1457,7 +1444,7 @@ ShallowWrapper {
                     className="time-text"
                   >
                     <i>
-                      5 mins
+                      
                     </i>
                   </span>
                 </div>
@@ -1486,7 +1473,7 @@ ShallowWrapper {
                   <img
                     alt=""
                     className="img-fluid"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    src=""
                   />
                 </div>
               </div>
@@ -1501,12 +1488,12 @@ ShallowWrapper {
                   className="col-md-12 mb-0 pb-0"
                 >
                   <h5>
-                    Lorem ipsum dolor
+                    
                   </h5>
                   <div
                     className="card-text"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                    
                   </div>
                 </div>
                 <div
@@ -1523,12 +1510,12 @@ ShallowWrapper {
                           <img
                             alt="User"
                             className="img-fluid rounded-circle"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                            src=""
                           />
                           <span
                             className="ml-1 user-name-text"
                           >
-                            Henry Henry Henry Henry
+                            
                           </span>
                         </a>
                       </li>
@@ -1543,7 +1530,7 @@ ShallowWrapper {
                           <i
                             className="far fa-comment-alt comment"
                           >
-                             10
+                            
                           </i>
                         </a>
                       </li>
@@ -1567,7 +1554,7 @@ ShallowWrapper {
                       className="time-text"
                     >
                       <i>
-                        5 mins
+                        
                       </i>
                     </span>
                   </div>
@@ -1593,7 +1580,7 @@ ShallowWrapper {
                   <img
                     alt=""
                     className="img-fluid"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    src=""
                   />
                 </div>
               </div>,
@@ -1611,7 +1598,7 @@ ShallowWrapper {
                   <img
                     alt=""
                     className="img-fluid"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    src=""
                   />
                 </div>,
                 "className": "cardbox-heading",
@@ -1625,7 +1612,7 @@ ShallowWrapper {
                   "children": <img
                     alt=""
                     className="img-fluid"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    src=""
                   />,
                   "className": "cardbox-item",
                 },
@@ -1637,7 +1624,7 @@ ShallowWrapper {
                   "props": Object {
                     "alt": "",
                     "className": "img-fluid",
-                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                    "src": "",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1661,12 +1648,12 @@ ShallowWrapper {
                   className="col-md-12 mb-0 pb-0"
                 >
                   <h5>
-                    Lorem ipsum dolor
+                    
                   </h5>
                   <div
                     className="card-text"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                    
                   </div>
                 </div>
                 <div
@@ -1683,12 +1670,12 @@ ShallowWrapper {
                           <img
                             alt="User"
                             className="img-fluid rounded-circle"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                            src=""
                           />
                           <span
                             className="ml-1 user-name-text"
                           >
-                            Henry Henry Henry Henry
+                            
                           </span>
                         </a>
                       </li>
@@ -1703,7 +1690,7 @@ ShallowWrapper {
                           <i
                             className="far fa-comment-alt comment"
                           >
-                             10
+                            
                           </i>
                         </a>
                       </li>
@@ -1727,7 +1714,7 @@ ShallowWrapper {
                       className="time-text"
                     >
                       <i>
-                        5 mins
+                        
                       </i>
                     </span>
                   </div>
@@ -1746,12 +1733,12 @@ ShallowWrapper {
                     className="col-md-12 mb-0 pb-0"
                   >
                     <h5>
-                      Lorem ipsum dolor
+                      
                     </h5>
                     <div
                       className="card-text"
                     >
-                      Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                      
                     </div>
                   </div>,
                   <div
@@ -1768,12 +1755,12 @@ ShallowWrapper {
                             <img
                               alt="User"
                               className="img-fluid rounded-circle"
-                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                              src=""
                             />
                             <span
                               className="ml-1 user-name-text"
                             >
-                              Henry Henry Henry Henry
+                              
                             </span>
                           </a>
                         </li>
@@ -1788,7 +1775,7 @@ ShallowWrapper {
                             <i
                               className="far fa-comment-alt comment"
                             >
-                               10
+                              
                             </i>
                           </a>
                         </li>
@@ -1812,7 +1799,7 @@ ShallowWrapper {
                         className="time-text"
                       >
                         <i>
-                          5 mins
+                          
                         </i>
                       </span>
                     </div>
@@ -1829,12 +1816,12 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       <h5>
-                        Lorem ipsum dolor
+                        
                       </h5>,
                       <div
                         className="card-text"
                       >
-                        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                        
                       </div>,
                     ],
                     "className": "col-md-12 mb-0 pb-0",
@@ -1846,10 +1833,10 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": "Lorem ipsum dolor",
+                        "children": "",
                       },
                       "ref": null,
-                      "rendered": "Lorem ipsum dolor",
+                      "rendered": "",
                       "type": "h5",
                     },
                     Object {
@@ -1857,11 +1844,11 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
+                        "children": "",
                         "className": "card-text",
                       },
                       "ref": null,
-                      "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
+                      "rendered": "",
                       "type": "div",
                     },
                   ],
@@ -1883,12 +1870,12 @@ ShallowWrapper {
                             <img
                               alt="User"
                               className="img-fluid rounded-circle"
-                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                              src=""
                             />
                             <span
                               className="ml-1 user-name-text"
                             >
-                              Henry Henry Henry Henry
+                              
                             </span>
                           </a>
                         </li>
@@ -1903,7 +1890,7 @@ ShallowWrapper {
                             <i
                               className="far fa-comment-alt comment"
                             >
-                               10
+                              
                             </i>
                           </a>
                         </li>
@@ -1927,7 +1914,7 @@ ShallowWrapper {
                         className="time-text"
                       >
                         <i>
-                          5 mins
+                          
                         </i>
                       </span>
                     </div>,
@@ -1948,12 +1935,12 @@ ShallowWrapper {
                               <img
                                 alt="User"
                                 className="img-fluid rounded-circle"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                src=""
                               />
                               <span
                                 className="ml-1 user-name-text"
                               >
-                                Henry Henry Henry Henry
+                                
                               </span>
                             </a>
                           </li>
@@ -1968,7 +1955,7 @@ ShallowWrapper {
                               <i
                                 className="far fa-comment-alt comment"
                               >
-                                 10
+                                
                               </i>
                             </a>
                           </li>
@@ -1992,7 +1979,7 @@ ShallowWrapper {
                           className="time-text"
                         >
                           <i>
-                            5 mins
+                            
                           </i>
                         </span>,
                       ],
@@ -2012,12 +1999,12 @@ ShallowWrapper {
                               <img
                                 alt="User"
                                 className="img-fluid rounded-circle"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                src=""
                               />
                               <span
                                 className="ml-1 user-name-text"
                               >
-                                Henry Henry Henry Henry
+                                
                               </span>
                             </a>
                           </li>,
@@ -2034,12 +2021,12 @@ ShallowWrapper {
                               <img
                                 alt="User"
                                 className="img-fluid rounded-circle"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                src=""
                               />
                               <span
                                 className="ml-1 user-name-text"
                               >
-                                Henry Henry Henry Henry
+                                
                               </span>
                             </a>,
                           },
@@ -2053,12 +2040,12 @@ ShallowWrapper {
                                 <img
                                   alt="User"
                                   className="img-fluid rounded-circle"
-                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                  src=""
                                 />,
                                 <span
                                   className="ml-1 user-name-text"
                                 >
-                                  Henry Henry Henry Henry
+                                  
                                 </span>,
                               ],
                               "href": "/",
@@ -2072,7 +2059,7 @@ ShallowWrapper {
                                 "props": Object {
                                   "alt": "User",
                                   "className": "img-fluid rounded-circle",
-                                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                                  "src": "",
                                 },
                                 "ref": null,
                                 "rendered": null,
@@ -2083,11 +2070,11 @@ ShallowWrapper {
                                 "key": undefined,
                                 "nodeType": "host",
                                 "props": Object {
-                                  "children": "Henry Henry Henry Henry",
+                                  "children": "",
                                   "className": "ml-1 user-name-text",
                                 },
                                 "ref": null,
-                                "rendered": "Henry Henry Henry Henry",
+                                "rendered": "",
                                 "type": "span",
                               },
                             ],
@@ -2109,7 +2096,7 @@ ShallowWrapper {
                               <i
                                 className="far fa-comment-alt comment"
                               >
-                                 10
+                                
                               </i>
                             </a>
                           </li>,
@@ -2127,7 +2114,7 @@ ShallowWrapper {
                               <i
                                 className="far fa-comment-alt comment"
                               >
-                                 10
+                                
                               </i>
                             </a>,
                           },
@@ -2140,7 +2127,7 @@ ShallowWrapper {
                               "children": <i
                                 className="far fa-comment-alt comment"
                               >
-                                 10
+                                
                               </i>,
                               "href": "/",
                             },
@@ -2150,11 +2137,11 @@ ShallowWrapper {
                               "key": undefined,
                               "nodeType": "host",
                               "props": Object {
-                                "children": " 10",
+                                "children": "",
                                 "className": "far fa-comment-alt comment",
                               },
                               "ref": null,
-                              "rendered": " 10",
+                              "rendered": "",
                               "type": "i",
                             },
                             "type": "a",
@@ -2233,7 +2220,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": <i>
-                            5 mins
+                            
                           </i>,
                           "className": "time-text",
                         },
@@ -2243,10 +2230,10 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": "5 mins",
+                            "children": "",
                           },
                           "ref": null,
-                          "rendered": "5 mins",
+                          "rendered": "",
                           "type": "i",
                         },
                         "type": "span",
@@ -2292,7 +2279,7 @@ ShallowWrapper {
                   <img
                     alt=""
                     className="img-fluid"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    src=""
                   />
                 </div>
               </div>
@@ -2307,12 +2294,12 @@ ShallowWrapper {
                   className="col-md-12 mb-0 pb-0"
                 >
                   <h5>
-                    Lorem ipsum dolor
+                    
                   </h5>
                   <div
                     className="card-text"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                    
                   </div>
                 </div>
                 <div
@@ -2329,12 +2316,12 @@ ShallowWrapper {
                           <img
                             alt="User"
                             className="img-fluid rounded-circle"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                            src=""
                           />
                           <span
                             className="ml-1 user-name-text"
                           >
-                            Henry Henry Henry Henry
+                            
                           </span>
                         </a>
                       </li>
@@ -2349,7 +2336,7 @@ ShallowWrapper {
                           <i
                             className="far fa-comment-alt comment"
                           >
-                             10
+                            
                           </i>
                         </a>
                       </li>
@@ -2373,7 +2360,7 @@ ShallowWrapper {
                       className="time-text"
                     >
                       <i>
-                        5 mins
+                        
                       </i>
                     </span>
                   </div>
@@ -2404,7 +2391,7 @@ ShallowWrapper {
                   <img
                     alt=""
                     className="img-fluid"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    src=""
                   />
                 </div>
               </div>
@@ -2419,12 +2406,12 @@ ShallowWrapper {
                   className="col-md-12 mb-0 pb-0"
                 >
                   <h5>
-                    Lorem ipsum dolor
+                    
                   </h5>
                   <div
                     className="card-text"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                    
                   </div>
                 </div>
                 <div
@@ -2441,12 +2428,12 @@ ShallowWrapper {
                           <img
                             alt="User"
                             className="img-fluid rounded-circle"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                            src=""
                           />
                           <span
                             className="ml-1 user-name-text"
                           >
-                            Henry Henry Henry Henry
+                            
                           </span>
                         </a>
                       </li>
@@ -2461,7 +2448,7 @@ ShallowWrapper {
                           <i
                             className="far fa-comment-alt comment"
                           >
-                             10
+                            
                           </i>
                         </a>
                       </li>
@@ -2485,7 +2472,7 @@ ShallowWrapper {
                       className="time-text"
                     >
                       <i>
-                        5 mins
+                        
                       </i>
                     </span>
                   </div>
@@ -2514,7 +2501,7 @@ ShallowWrapper {
                     <img
                       alt=""
                       className="img-fluid"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      src=""
                     />
                   </div>
                 </div>
@@ -2529,12 +2516,12 @@ ShallowWrapper {
                     className="col-md-12 mb-0 pb-0"
                   >
                     <h5>
-                      Lorem ipsum dolor
+                      
                     </h5>
                     <div
                       className="card-text"
                     >
-                      Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                      
                     </div>
                   </div>
                   <div
@@ -2551,12 +2538,12 @@ ShallowWrapper {
                             <img
                               alt="User"
                               className="img-fluid rounded-circle"
-                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                              src=""
                             />
                             <span
                               className="ml-1 user-name-text"
                             >
-                              Henry Henry Henry Henry
+                              
                             </span>
                           </a>
                         </li>
@@ -2571,7 +2558,7 @@ ShallowWrapper {
                             <i
                               className="far fa-comment-alt comment"
                             >
-                               10
+                              
                             </i>
                           </a>
                         </li>
@@ -2595,7 +2582,7 @@ ShallowWrapper {
                         className="time-text"
                       >
                         <i>
-                          5 mins
+                          
                         </i>
                       </span>
                     </div>
@@ -2621,7 +2608,7 @@ ShallowWrapper {
                     <img
                       alt=""
                       className="img-fluid"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      src=""
                     />
                   </div>
                 </div>,
@@ -2639,7 +2626,7 @@ ShallowWrapper {
                     <img
                       alt=""
                       className="img-fluid"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      src=""
                     />
                   </div>,
                   "className": "cardbox-heading",
@@ -2653,7 +2640,7 @@ ShallowWrapper {
                     "children": <img
                       alt=""
                       className="img-fluid"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      src=""
                     />,
                     "className": "cardbox-item",
                   },
@@ -2665,7 +2652,7 @@ ShallowWrapper {
                     "props": Object {
                       "alt": "",
                       "className": "img-fluid",
-                      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                      "src": "",
                     },
                     "ref": null,
                     "rendered": null,
@@ -2689,12 +2676,12 @@ ShallowWrapper {
                     className="col-md-12 mb-0 pb-0"
                   >
                     <h5>
-                      Lorem ipsum dolor
+                      
                     </h5>
                     <div
                       className="card-text"
                     >
-                      Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                      
                     </div>
                   </div>
                   <div
@@ -2711,12 +2698,12 @@ ShallowWrapper {
                             <img
                               alt="User"
                               className="img-fluid rounded-circle"
-                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                              src=""
                             />
                             <span
                               className="ml-1 user-name-text"
                             >
-                              Henry Henry Henry Henry
+                              
                             </span>
                           </a>
                         </li>
@@ -2731,7 +2718,7 @@ ShallowWrapper {
                             <i
                               className="far fa-comment-alt comment"
                             >
-                               10
+                              
                             </i>
                           </a>
                         </li>
@@ -2755,7 +2742,7 @@ ShallowWrapper {
                         className="time-text"
                       >
                         <i>
-                          5 mins
+                          
                         </i>
                       </span>
                     </div>
@@ -2774,12 +2761,12 @@ ShallowWrapper {
                       className="col-md-12 mb-0 pb-0"
                     >
                       <h5>
-                        Lorem ipsum dolor
+                        
                       </h5>
                       <div
                         className="card-text"
                       >
-                        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                        
                       </div>
                     </div>,
                     <div
@@ -2796,12 +2783,12 @@ ShallowWrapper {
                               <img
                                 alt="User"
                                 className="img-fluid rounded-circle"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                src=""
                               />
                               <span
                                 className="ml-1 user-name-text"
                               >
-                                Henry Henry Henry Henry
+                                
                               </span>
                             </a>
                           </li>
@@ -2816,7 +2803,7 @@ ShallowWrapper {
                               <i
                                 className="far fa-comment-alt comment"
                               >
-                                 10
+                                
                               </i>
                             </a>
                           </li>
@@ -2840,7 +2827,7 @@ ShallowWrapper {
                           className="time-text"
                         >
                           <i>
-                            5 mins
+                            
                           </i>
                         </span>
                       </div>
@@ -2857,12 +2844,12 @@ ShallowWrapper {
                     "props": Object {
                       "children": Array [
                         <h5>
-                          Lorem ipsum dolor
+                          
                         </h5>,
                         <div
                           className="card-text"
                         >
-                          Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                          
                         </div>,
                       ],
                       "className": "col-md-12 mb-0 pb-0",
@@ -2874,10 +2861,10 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": "Lorem ipsum dolor",
+                          "children": "",
                         },
                         "ref": null,
-                        "rendered": "Lorem ipsum dolor",
+                        "rendered": "",
                         "type": "h5",
                       },
                       Object {
@@ -2885,11 +2872,11 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
+                          "children": "",
                           "className": "card-text",
                         },
                         "ref": null,
-                        "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
+                        "rendered": "",
                         "type": "div",
                       },
                     ],
@@ -2911,12 +2898,12 @@ ShallowWrapper {
                               <img
                                 alt="User"
                                 className="img-fluid rounded-circle"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                src=""
                               />
                               <span
                                 className="ml-1 user-name-text"
                               >
-                                Henry Henry Henry Henry
+                                
                               </span>
                             </a>
                           </li>
@@ -2931,7 +2918,7 @@ ShallowWrapper {
                               <i
                                 className="far fa-comment-alt comment"
                               >
-                                 10
+                                
                               </i>
                             </a>
                           </li>
@@ -2955,7 +2942,7 @@ ShallowWrapper {
                           className="time-text"
                         >
                           <i>
-                            5 mins
+                            
                           </i>
                         </span>
                       </div>,
@@ -2976,12 +2963,12 @@ ShallowWrapper {
                                 <img
                                   alt="User"
                                   className="img-fluid rounded-circle"
-                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                  src=""
                                 />
                                 <span
                                   className="ml-1 user-name-text"
                                 >
-                                  Henry Henry Henry Henry
+                                  
                                 </span>
                               </a>
                             </li>
@@ -2996,7 +2983,7 @@ ShallowWrapper {
                                 <i
                                   className="far fa-comment-alt comment"
                                 >
-                                   10
+                                  
                                 </i>
                               </a>
                             </li>
@@ -3020,7 +3007,7 @@ ShallowWrapper {
                             className="time-text"
                           >
                             <i>
-                              5 mins
+                              
                             </i>
                           </span>,
                         ],
@@ -3040,12 +3027,12 @@ ShallowWrapper {
                                 <img
                                   alt="User"
                                   className="img-fluid rounded-circle"
-                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                  src=""
                                 />
                                 <span
                                   className="ml-1 user-name-text"
                                 >
-                                  Henry Henry Henry Henry
+                                  
                                 </span>
                               </a>
                             </li>,
@@ -3062,12 +3049,12 @@ ShallowWrapper {
                                 <img
                                   alt="User"
                                   className="img-fluid rounded-circle"
-                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                  src=""
                                 />
                                 <span
                                   className="ml-1 user-name-text"
                                 >
-                                  Henry Henry Henry Henry
+                                  
                                 </span>
                               </a>,
                             },
@@ -3081,12 +3068,12 @@ ShallowWrapper {
                                   <img
                                     alt="User"
                                     className="img-fluid rounded-circle"
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                    src=""
                                   />,
                                   <span
                                     className="ml-1 user-name-text"
                                   >
-                                    Henry Henry Henry Henry
+                                    
                                   </span>,
                                 ],
                                 "href": "/",
@@ -3100,7 +3087,7 @@ ShallowWrapper {
                                   "props": Object {
                                     "alt": "User",
                                     "className": "img-fluid rounded-circle",
-                                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                                    "src": "",
                                   },
                                   "ref": null,
                                   "rendered": null,
@@ -3111,11 +3098,11 @@ ShallowWrapper {
                                   "key": undefined,
                                   "nodeType": "host",
                                   "props": Object {
-                                    "children": "Henry Henry Henry Henry",
+                                    "children": "",
                                     "className": "ml-1 user-name-text",
                                   },
                                   "ref": null,
-                                  "rendered": "Henry Henry Henry Henry",
+                                  "rendered": "",
                                   "type": "span",
                                 },
                               ],
@@ -3137,7 +3124,7 @@ ShallowWrapper {
                                 <i
                                   className="far fa-comment-alt comment"
                                 >
-                                   10
+                                  
                                 </i>
                               </a>
                             </li>,
@@ -3155,7 +3142,7 @@ ShallowWrapper {
                                 <i
                                   className="far fa-comment-alt comment"
                                 >
-                                   10
+                                  
                                 </i>
                               </a>,
                             },
@@ -3168,7 +3155,7 @@ ShallowWrapper {
                                 "children": <i
                                   className="far fa-comment-alt comment"
                                 >
-                                   10
+                                  
                                 </i>,
                                 "href": "/",
                               },
@@ -3178,11 +3165,11 @@ ShallowWrapper {
                                 "key": undefined,
                                 "nodeType": "host",
                                 "props": Object {
-                                  "children": " 10",
+                                  "children": "",
                                   "className": "far fa-comment-alt comment",
                                 },
                                 "ref": null,
-                                "rendered": " 10",
+                                "rendered": "",
                                 "type": "i",
                               },
                               "type": "a",
@@ -3261,7 +3248,7 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": <i>
-                              5 mins
+                              
                             </i>,
                             "className": "time-text",
                           },
@@ -3271,10 +3258,10 @@ ShallowWrapper {
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "5 mins",
+                              "children": "",
                             },
                             "ref": null,
-                            "rendered": "5 mins",
+                            "rendered": "",
                             "type": "i",
                           },
                           "type": "span",
@@ -3321,14 +3308,12 @@ exports[`<BookmarksCards /> should render the Article card coreectly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <BookmarksCards
-    article="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis."
-    articleTitle="Lorem ipsum dolor sit amet,"
-    glowCount="0"
+    article=""
+    articleTitle=""
+    glowCount=""
     moreClass=""
-    userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-    username="pato azu"
+    userImage=""
+    username=""
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -3358,7 +3343,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
               <h1
                 className="col-md-11 card-title"
               >
-                Lorem ipsum dolor sit amet,
+                
               </h1>
               <img
                 alt="bookmark-logo"
@@ -3373,9 +3358,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
             <p
               className="text-content"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+              
             </p>
           </div>
           <br />
@@ -3389,7 +3372,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 <img
                   alt="user"
                   className="user-image"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  src=""
                 />
               </span>
               <p
@@ -3400,7 +3383,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   }
                 }
               >
-                pato azu
+                
               </p>
               <span>
                 <Glow
@@ -3412,7 +3395,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
               <span
                 className="glow-text"
               >
-                0
+                
               </span>
             </div>
           </div>
@@ -3437,7 +3420,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
               <h1
                 className="col-md-11 card-title"
               >
-                Lorem ipsum dolor sit amet,
+                
               </h1>
               <img
                 alt="bookmark-logo"
@@ -3452,9 +3435,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
             <p
               className="text-content"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+              
             </p>
           </div>
           <br />
@@ -3468,7 +3449,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 <img
                   alt="user"
                   className="user-image"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  src=""
                 />
               </span>
               <p
@@ -3479,7 +3460,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   }
                 }
               >
-                pato azu
+                
               </p>
               <span>
                 <Glow
@@ -3491,7 +3472,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
               <span
                 className="glow-text"
               >
-                0
+                
               </span>
             </div>
           </div>
@@ -3514,7 +3495,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 <h1
                   className="col-md-11 card-title"
                 >
-                  Lorem ipsum dolor sit amet,
+                  
                 </h1>
                 <img
                   alt="bookmark-logo"
@@ -3529,9 +3510,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
               <p
                 className="text-content"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+                
               </p>
             </div>,
             <br />,
@@ -3545,7 +3524,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   <img
                     alt="user"
                     className="user-image"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    src=""
                   />
                 </span>
                 <p
@@ -3556,7 +3535,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     }
                   }
                 >
-                  pato azu
+                  
                 </p>
                 <span>
                   <Glow
@@ -3568,7 +3547,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 <span
                   className="glow-text"
                 >
-                  0
+                  
                 </span>
               </div>
             </div>,
@@ -3588,7 +3567,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 <h1
                   className="col-md-11 card-title"
                 >
-                  Lorem ipsum dolor sit amet,
+                  
                 </h1>
                 <img
                   alt="bookmark-logo"
@@ -3608,7 +3587,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   <h1
                     className="col-md-11 card-title"
                   >
-                    Lorem ipsum dolor sit amet,
+                    
                   </h1>,
                   <img
                     alt="bookmark-logo"
@@ -3625,11 +3604,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Lorem ipsum dolor sit amet,",
+                    "children": "",
                     "className": "col-md-11 card-title",
                   },
                   "ref": null,
-                  "rendered": "Lorem ipsum dolor sit amet,",
+                  "rendered": "",
                   "type": "h1",
                 },
                 Object {
@@ -3658,9 +3637,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
               "children": <p
                 className="text-content"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+                
               </p>,
               "className": "col-md-12",
             },
@@ -3670,15 +3647,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
+                "children": "",
                 "className": "text-content",
               },
               "ref": null,
-              "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
+              "rendered": "",
               "type": "p",
             },
             "type": "div",
@@ -3704,7 +3677,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   <img
                     alt="user"
                     className="user-image"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    src=""
                   />
                 </span>
                 <p
@@ -3715,7 +3688,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     }
                   }
                 >
-                  pato azu
+                  
                 </p>
                 <span>
                   <Glow
@@ -3727,7 +3700,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 <span
                   className="glow-text"
                 >
-                  0
+                  
                 </span>
               </div>,
               "className": "user-section ml-10 card-bottom",
@@ -3743,7 +3716,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     <img
                       alt="user"
                       className="user-image"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      src=""
                     />
                   </span>,
                   <p
@@ -3754,7 +3727,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                       }
                     }
                   >
-                    pato azu
+                    
                   </p>,
                   <span>
                     <Glow
@@ -3766,7 +3739,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   <span
                     className="glow-text"
                   >
-                    0
+                    
                   </span>,
                 ],
                 "className": "col-md-12",
@@ -3781,7 +3754,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     "children": <img
                       alt="user"
                       className="user-image"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      src=""
                     />,
                   },
                   "ref": null,
@@ -3792,7 +3765,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     "props": Object {
                       "alt": "user",
                       "className": "user-image",
-                      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                      "src": "",
                     },
                     "ref": null,
                     "rendered": null,
@@ -3805,14 +3778,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "pato azu",
+                    "children": "",
                     "className": "col-8 col-md-9 username",
                     "style": Object {
                       "display": "inline-block",
                     },
                   },
                   "ref": null,
-                  "rendered": "pato azu",
+                  "rendered": "",
                   "type": "p",
                 },
                 Object {
@@ -3847,11 +3820,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "0",
+                    "children": "",
                     "className": "glow-text",
                   },
                   "ref": null,
-                  "rendered": "0",
+                  "rendered": "",
                   "type": "span",
                 },
               ],
@@ -3887,7 +3860,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 <h1
                   className="col-md-11 card-title"
                 >
-                  Lorem ipsum dolor sit amet,
+                  
                 </h1>
                 <img
                   alt="bookmark-logo"
@@ -3902,9 +3875,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
               <p
                 className="text-content"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+                
               </p>
             </div>
             <br />
@@ -3918,7 +3889,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   <img
                     alt="user"
                     className="user-image"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    src=""
                   />
                 </span>
                 <p
@@ -3929,7 +3900,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     }
                   }
                 >
-                  pato azu
+                  
                 </p>
                 <span>
                   <Glow
@@ -3941,7 +3912,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 <span
                   className="glow-text"
                 >
-                  0
+                  
                 </span>
               </div>
             </div>
@@ -3966,7 +3937,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 <h1
                   className="col-md-11 card-title"
                 >
-                  Lorem ipsum dolor sit amet,
+                  
                 </h1>
                 <img
                   alt="bookmark-logo"
@@ -3981,9 +3952,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
               <p
                 className="text-content"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+                
               </p>
             </div>
             <br />
@@ -3997,7 +3966,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   <img
                     alt="user"
                     className="user-image"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    src=""
                   />
                 </span>
                 <p
@@ -4008,7 +3977,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     }
                   }
                 >
-                  pato azu
+                  
                 </p>
                 <span>
                   <Glow
@@ -4020,7 +3989,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 <span
                   className="glow-text"
                 >
-                  0
+                  
                 </span>
               </div>
             </div>
@@ -4043,7 +4012,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   <h1
                     className="col-md-11 card-title"
                   >
-                    Lorem ipsum dolor sit amet,
+                    
                   </h1>
                   <img
                     alt="bookmark-logo"
@@ -4058,9 +4027,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 <p
                   className="text-content"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+                  
                 </p>
               </div>,
               <br />,
@@ -4074,7 +4041,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     <img
                       alt="user"
                       className="user-image"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      src=""
                     />
                   </span>
                   <p
@@ -4085,7 +4052,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                       }
                     }
                   >
-                    pato azu
+                    
                   </p>
                   <span>
                     <Glow
@@ -4097,7 +4064,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   <span
                     className="glow-text"
                   >
-                    0
+                    
                   </span>
                 </div>
               </div>,
@@ -4117,7 +4084,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   <h1
                     className="col-md-11 card-title"
                   >
-                    Lorem ipsum dolor sit amet,
+                    
                   </h1>
                   <img
                     alt="bookmark-logo"
@@ -4137,7 +4104,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     <h1
                       className="col-md-11 card-title"
                     >
-                      Lorem ipsum dolor sit amet,
+                      
                     </h1>,
                     <img
                       alt="bookmark-logo"
@@ -4154,11 +4121,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Lorem ipsum dolor sit amet,",
+                      "children": "",
                       "className": "col-md-11 card-title",
                     },
                     "ref": null,
-                    "rendered": "Lorem ipsum dolor sit amet,",
+                    "rendered": "",
                     "type": "h1",
                   },
                   Object {
@@ -4187,9 +4154,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 "children": <p
                   className="text-content"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
+                  
                 </p>,
                 "className": "col-md-12",
               },
@@ -4199,15 +4164,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
+                  "children": "",
                   "className": "text-content",
                 },
                 "ref": null,
-                "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
+                "rendered": "",
                 "type": "p",
               },
               "type": "div",
@@ -4233,7 +4194,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     <img
                       alt="user"
                       className="user-image"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      src=""
                     />
                   </span>
                   <p
@@ -4244,7 +4205,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                       }
                     }
                   >
-                    pato azu
+                    
                   </p>
                   <span>
                     <Glow
@@ -4256,7 +4217,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                   <span
                     className="glow-text"
                   >
-                    0
+                    
                   </span>
                 </div>,
                 "className": "user-section ml-10 card-bottom",
@@ -4272,7 +4233,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                       <img
                         alt="user"
                         className="user-image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                        src=""
                       />
                     </span>,
                     <p
@@ -4283,7 +4244,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                         }
                       }
                     >
-                      pato azu
+                      
                     </p>,
                     <span>
                       <Glow
@@ -4295,7 +4256,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     <span
                       className="glow-text"
                     >
-                      0
+                      
                     </span>,
                   ],
                   "className": "col-md-12",
@@ -4310,7 +4271,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                       "children": <img
                         alt="user"
                         className="user-image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                        src=""
                       />,
                     },
                     "ref": null,
@@ -4321,7 +4282,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                       "props": Object {
                         "alt": "user",
                         "className": "user-image",
-                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                        "src": "",
                       },
                       "ref": null,
                       "rendered": null,
@@ -4334,14 +4295,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "pato azu",
+                      "children": "",
                       "className": "col-8 col-md-9 username",
                       "style": Object {
                         "display": "inline-block",
                       },
                     },
                     "ref": null,
-                    "rendered": "pato azu",
+                    "rendered": "",
                     "type": "p",
                   },
                   Object {
@@ -4376,11 +4337,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "0",
+                      "children": "",
                       "className": "glow-text",
                     },
                     "ref": null,
-                    "rendered": "0",
+                    "rendered": "",
                     "type": "span",
                   },
                 ],
