@@ -9,18 +9,34 @@ import Button from '../../ui/Buttons/Button';
 import './PasswordReset.scss';
 import updatePassword from '../../../actions/PasswordReset/updatePasswordActions';
 
+/**
+ * @description - Helps a user updates his password
+ * @param {props} status - the status returned from dispatching actions
+ * @param {props} updatePassword - the action been dispatched
+ * @returns {component} Component
+ */
 class PasswordUpdate extends Component {
   state = {
     password: '',
     confirmpassword: '',
   }
 
+  /**
+ * @description - Handles the form input change
+ * @param {event} e - the event passed to the method
+ * @returns {component} updated state
+ */
   onHandleChange(e) {
     this.setState({
       [e.target.name]: e.target.value,
     });
   }
 
+  /**
+ * @description - Handles the form submit by calling updatePassword action
+ * @param {event} e - the event passed to the method
+ * @returns {component} null
+ */
   onHandleSubmit(e) {
     const { password, confirmpassword } = this.state;
     e.preventDefault();
@@ -30,10 +46,14 @@ class PasswordUpdate extends Component {
       // eslint-disable-next-line react/destructuring-assignment
       this.props.updatePassword(token, { password, confirmpassword });
     } else {
-      document.querySelector('.feedback').style.display = 'block';
+      toastr.warning('Password', 'Password and Confirm passsword must be the same');
     }
   }
 
+  /**
+ * @description - Handles the rendering of the component
+ * @returns {component} the rendered component
+ */
   render() {
     const { password, confirmpassword } = this.state;
     const { status } = this.props;
@@ -51,15 +71,11 @@ class PasswordUpdate extends Component {
             <br />
             <input type='text' className='password-reset input-reset-password' name='confirmpassword' value={confirmpassword} placeholder='Confirm Password' onChange={e => this.onHandleChange(e)} required />
             <br />
-            <span className='password-reset feedback'>Password and Confirm Password must be Equal</span>
             <br />
             <Button type='login2' label='Update' Class='password-reset button' />
           </form>
         </div>
         <br />
-        <div className='password-reset footer'>
-          Our Footer
-        </div>
         <Footer />
       </Fragment>
     );

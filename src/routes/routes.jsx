@@ -6,7 +6,7 @@ import Homepage from '../component/Pages/HomePage.jsx';
 import { PasswordReset, UpdatePassword } from '../component/Pages/PasswordResetPage';
 
 const Routes = () => (
-  <div className='container'>
+  <div>
     <Switch>
       <Route exact path='/' component={Homepage} />
       <Route exact path='/login' component={LoginPage} />
