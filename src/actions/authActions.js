@@ -35,7 +35,10 @@ export const signupUser = (signupData = {}, history) => (dispatch) => {
       //   payload: [...data.errors],
       // });
     })
-    .catch(() => {
+    .catch((errors) => {
+      console.log('=============', errors, '=============');
+      console.log('=============', errors.response.data, '=============');
+
       // dispatch({
       //   type: SET_ERRORS,
       //   payload: [{ msg: 'A network error occured tried again' }],

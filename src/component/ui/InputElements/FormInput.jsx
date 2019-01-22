@@ -10,7 +10,7 @@ const FormInput = props => (
       placeholder={props.placeholder}
       onChange={props.onChange}
     />
-    {props.errors.name && <em>{props.errors.name}</em>}
+    <em className="text-danger h5">{props.errors && props.errors[props.name]}</em>
   </div>
 );
 
