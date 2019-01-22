@@ -5,7 +5,7 @@ import LoginPage from '../component/Pages/LoginPage.jsx';
 import HomePage from '../component/Pages/HomePage';
 
 const Routes = () => (
-  <div className='container'>
+  <div>
     <Switch>
       <Route exact path='/' component={HomePage} />
       <Route exact path='/login' component={LoginPage} />

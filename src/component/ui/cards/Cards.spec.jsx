@@ -1,22 +1,36 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import { shallow } from 'enzyme';
-import ArticleCard1 from './ArticleCard1';
-import ArticleCard2 from './ArticleCard2';
+import ArticleCardVertical from './ArticleCardVertical';
+import ArticleCardHorizontal from './ArticleCardHorizontal';
 import BookmarksCards from './BookmarksCards';
 
 
-describe('<ArticleCard1 />', () => {
+describe('<ArticleCardVertical />', () => {
   it('should render the Article card coreectly', () => {
-    const wrapper = shallow(<ArticleCard1 />);
+    const wrapper = shallow(<ArticleCardVertical />);
     expect(wrapper).toMatchSnapshot();
   });
 });
 
-describe('<ArticleCard2 />', () => {
+describe('Render <ArticleCardVertical />', () => {
+  it('it should render RootModal component', () => {
+    const container = shallow(<ArticleCardVertical />);
+    expect(container.length).toBe(1);
+  });
+});
+
+describe('<ArticleCardHorizontal />', () => {
   it('should render the Article card coreectly', () => {
-    const wrapper = shallow(<ArticleCard2 />);
+    const wrapper = shallow(<ArticleCardHorizontal />);
     expect(wrapper).toMatchSnapshot();
+  });
+});
+
+describe('Render <ArticleCardHorizontal />', () => {
+  it('it should render RootModal component', () => {
+    const container = shallow(<ArticleCardHorizontal />);
+    expect(container.length).toBe(1);
   });
 });
 
@@ -24,5 +38,12 @@ describe('<BookmarksCards />', () => {
   it('should render the Article card coreectly', () => {
     const wrapper = shallow(<BookmarksCards />);
     expect(wrapper).toMatchSnapshot();
+  });
+});
+
+describe('Render <BookmarksCards />', () => {
+  it('it should render RootModal component', () => {
+    const container = shallow(<BookmarksCards />);
+    expect(container.length).toBe(1);
   });
 });

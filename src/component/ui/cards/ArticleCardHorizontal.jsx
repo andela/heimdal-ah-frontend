@@ -1,20 +1,22 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Glow from '../buttons/glow/Glow.jsx';
-import './Cards.scss';
+import './articleCardHorizontal.scss';
 import Rating from '../Rating/Rating';
 import { textTrimmer } from '../../../../helper/cardsHelper';
 
-const ArticleCard2 = (props) => {
-  const articleText = textTrimmer(props.article, 100);
+const ArticleCardHorizontal = (props) => {
+  // const articleText = textTrimmer(props.article, 100);
   const userName = textTrimmer(props.username, 12);
   return (
     <Fragment>
-      <div className="article-card-2">
-        <h5 className="card-title">{props.articleTitle.substring(0, 30)}</h5>
+      <div className="article-card-horizontal">
+        <h5 className="card-title">{props.articleTitle}</h5>
         <img className="card-img-top mb-4" src={props.articleImage} alt="Card" />
         <div className="card-body">
-          <p className="card-text">{articleText}</p>
+          <div className="flex-text-content mb-3">
+            <p className="card-text">{props.article}</p>
+          </div>
           <div className='row'>
             <div className='col-md-8 mb-3'>
               <span><img className="user-image" width='30' src={props.userImage} alt="user" /></span>
@@ -41,14 +43,15 @@ const ArticleCard2 = (props) => {
     </Fragment>
   );
 };
-const article = 'low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.';
+const article = `low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.`;
 const image = 'https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg';
 const userName = 'Peter Debbyy';
-const articleTitle = 'Lorem ipsum dolor';
+const articleTitle = 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor';
 const articleImage = 'https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg';
 const commentCount = ' 10';
 
-ArticleCard2.defaultProps = {
+ArticleCardHorizontal.defaultProps = {
   articleTitle,
   article,
   userImage: image,
@@ -59,7 +62,7 @@ ArticleCard2.defaultProps = {
 };
 
 
-ArticleCard2.propTypes = {
+ArticleCardHorizontal.propTypes = {
   articleTitle: PropTypes.string,
   article: PropTypes.string,
   userImage: PropTypes.string,
@@ -69,4 +72,4 @@ ArticleCard2.propTypes = {
   commentCount: PropTypes.string,
 };
 
-export default ArticleCard2;
+export default ArticleCardHorizontal;

@@ -1,1404 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ArticleCard1 /> should render the Article card coreectly 1`] = `
+exports[`<ArticleCardHorizontal /> should render the Article card coreectly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ArticleCard1
-    article="Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur"
-    articleImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-    articleTitle="Lorem ipsum dolor"
-    commentCount=" 10"
-    updatedTime="5 mins read"
-    userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-    username="Henry"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "children": <div
-        className="col-md-12 high article-card1"
-      >
-        <div
-          className="card"
-        >
-          <div
-            className="row"
-          >
-            <div
-              className="col-md-5 m-r-0"
-            >
-              <img
-                alt="Card cap"
-                className=""
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                width="120"
-              />
-            </div>
-            <div
-              className="col-md-7"
-            >
-              <h6
-                className="card-title"
-              >
-                Lorem ipsum dolor
-              </h6>
-              <p
-                className="card-text fs-13 "
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...
-              </p>
-              <div
-                className="row card-buttom"
-              >
-                <div
-                  className="text-right"
-                >
-                  <span
-                    className="col-md-8"
-                  >
-                    <img
-                      alt="user"
-                      className="user-image"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                    />
-                    <span
-                      className="user-name"
-                    >
-                      Henry
-                    </span>
-                  </span>
-                  <span
-                    className="col-md-4 text-right"
-                  >
-                    <i
-                      className="far fa-comment-alt comment text-right"
-                    >
-                       10
-                    </i>
-                  </span>
-                </div>
-                <div
-                  className="col-md-12"
-                >
-                  <Glow
-                    active={true}
-                    handleGlow={[Function]}
-                  />
-                  <span
-                    className="float-right fs-13 m-t-10 m-r-15"
-                  >
-                    5 mins read
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div
-          className="card"
-        >
-          <div
-            className="row"
-          >
-            <div
-              className="col-md-5 m-r-0"
-            >
-              <img
-                alt="Card cap"
-                className=""
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                width="120"
-              />
-            </div>
-            <div
-              className="col-md-7"
-            >
-              <h6
-                className="card-title"
-              >
-                Lorem ipsum dolor
-              </h6>
-              <p
-                className="card-text fs-13 "
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...
-              </p>
-              <div
-                className="row card-buttom"
-              >
-                <div
-                  className="text-right"
-                >
-                  <span
-                    className="col-md-8"
-                  >
-                    <img
-                      alt="user"
-                      className="user-image"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                    />
-                    <span
-                      className="user-name"
-                    >
-                      Henry
-                    </span>
-                  </span>
-                  <span
-                    className="col-md-4 text-right"
-                  >
-                    <i
-                      className="far fa-comment-alt comment text-right"
-                    >
-                       10
-                    </i>
-                  </span>
-                </div>
-                <div
-                  className="col-md-12"
-                >
-                  <Glow
-                    active={true}
-                    handleGlow={[Function]}
-                  />
-                  <span
-                    className="float-right fs-13 m-t-10 m-r-15"
-                  >
-                    5 mins read
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>,
-        "className": "col-md-12 high article-card1",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <div
-            className="row"
-          >
-            <div
-              className="col-md-5 m-r-0"
-            >
-              <img
-                alt="Card cap"
-                className=""
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                width="120"
-              />
-            </div>
-            <div
-              className="col-md-7"
-            >
-              <h6
-                className="card-title"
-              >
-                Lorem ipsum dolor
-              </h6>
-              <p
-                className="card-text fs-13 "
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...
-              </p>
-              <div
-                className="row card-buttom"
-              >
-                <div
-                  className="text-right"
-                >
-                  <span
-                    className="col-md-8"
-                  >
-                    <img
-                      alt="user"
-                      className="user-image"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                    />
-                    <span
-                      className="user-name"
-                    >
-                      Henry
-                    </span>
-                  </span>
-                  <span
-                    className="col-md-4 text-right"
-                  >
-                    <i
-                      className="far fa-comment-alt comment text-right"
-                    >
-                       10
-                    </i>
-                  </span>
-                </div>
-                <div
-                  className="col-md-12"
-                >
-                  <Glow
-                    active={true}
-                    handleGlow={[Function]}
-                  />
-                  <span
-                    className="float-right fs-13 m-t-10 m-r-15"
-                  >
-                    5 mins read
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>,
-          "className": "card",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <div
-                className="col-md-5 m-r-0"
-              >
-                <img
-                  alt="Card cap"
-                  className=""
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                  width="120"
-                />
-              </div>,
-              <div
-                className="col-md-7"
-              >
-                <h6
-                  className="card-title"
-                >
-                  Lorem ipsum dolor
-                </h6>
-                <p
-                  className="card-text fs-13 "
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...
-                </p>
-                <div
-                  className="row card-buttom"
-                >
-                  <div
-                    className="text-right"
-                  >
-                    <span
-                      className="col-md-8"
-                    >
-                      <img
-                        alt="user"
-                        className="user-image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                      />
-                      <span
-                        className="user-name"
-                      >
-                        Henry
-                      </span>
-                    </span>
-                    <span
-                      className="col-md-4 text-right"
-                    >
-                      <i
-                        className="far fa-comment-alt comment text-right"
-                      >
-                         10
-                      </i>
-                    </span>
-                  </div>
-                  <div
-                    className="col-md-12"
-                  >
-                    <Glow
-                      active={true}
-                      handleGlow={[Function]}
-                    />
-                    <span
-                      className="float-right fs-13 m-t-10 m-r-15"
-                    >
-                      5 mins read
-                    </span>
-                  </div>
-                </div>
-              </div>,
-            ],
-            "className": "row",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <img
-                  alt="Card cap"
-                  className=""
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                  width="120"
-                />,
-                "className": "col-md-5 m-r-0",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "alt": "Card cap",
-                  "className": "",
-                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
-                  "width": "120",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "img",
-              },
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <h6
-                    className="card-title"
-                  >
-                    Lorem ipsum dolor
-                  </h6>,
-                  <p
-                    className="card-text fs-13 "
-                  >
-                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...
-                  </p>,
-                  <div
-                    className="row card-buttom"
-                  >
-                    <div
-                      className="text-right"
-                    >
-                      <span
-                        className="col-md-8"
-                      >
-                        <img
-                          alt="user"
-                          className="user-image"
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                        />
-                        <span
-                          className="user-name"
-                        >
-                          Henry
-                        </span>
-                      </span>
-                      <span
-                        className="col-md-4 text-right"
-                      >
-                        <i
-                          className="far fa-comment-alt comment text-right"
-                        >
-                           10
-                        </i>
-                      </span>
-                    </div>
-                    <div
-                      className="col-md-12"
-                    >
-                      <Glow
-                        active={true}
-                        handleGlow={[Function]}
-                      />
-                      <span
-                        className="float-right fs-13 m-t-10 m-r-15"
-                      >
-                        5 mins read
-                      </span>
-                    </div>
-                  </div>,
-                ],
-                "className": "col-md-7",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Lorem ipsum dolor",
-                    "className": "card-title",
-                  },
-                  "ref": null,
-                  "rendered": "Lorem ipsum dolor",
-                  "type": "h6",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...",
-                    "className": "card-text fs-13 ",
-                  },
-                  "ref": null,
-                  "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...",
-                  "type": "p",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <div
-                        className="text-right"
-                      >
-                        <span
-                          className="col-md-8"
-                        >
-                          <img
-                            alt="user"
-                            className="user-image"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                          />
-                          <span
-                            className="user-name"
-                          >
-                            Henry
-                          </span>
-                        </span>
-                        <span
-                          className="col-md-4 text-right"
-                        >
-                          <i
-                            className="far fa-comment-alt comment text-right"
-                          >
-                             10
-                          </i>
-                        </span>
-                      </div>,
-                      <div
-                        className="col-md-12"
-                      >
-                        <Glow
-                          active={true}
-                          handleGlow={[Function]}
-                        />
-                        <span
-                          className="float-right fs-13 m-t-10 m-r-15"
-                        >
-                          5 mins read
-                        </span>
-                      </div>,
-                    ],
-                    "className": "row card-buttom",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          <span
-                            className="col-md-8"
-                          >
-                            <img
-                              alt="user"
-                              className="user-image"
-                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                            />
-                            <span
-                              className="user-name"
-                            >
-                              Henry
-                            </span>
-                          </span>,
-                          <span
-                            className="col-md-4 text-right"
-                          >
-                            <i
-                              className="far fa-comment-alt comment text-right"
-                            >
-                               10
-                            </i>
-                          </span>,
-                        ],
-                        "className": "text-right",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": Array [
-                              <img
-                                alt="user"
-                                className="user-image"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                              />,
-                              <span
-                                className="user-name"
-                              >
-                                Henry
-                              </span>,
-                            ],
-                            "className": "col-md-8",
-                          },
-                          "ref": null,
-                          "rendered": Array [
-                            Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "host",
-                              "props": Object {
-                                "alt": "user",
-                                "className": "user-image",
-                                "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
-                              },
-                              "ref": null,
-                              "rendered": null,
-                              "type": "img",
-                            },
-                            Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "host",
-                              "props": Object {
-                                "children": "Henry",
-                                "className": "user-name",
-                              },
-                              "ref": null,
-                              "rendered": "Henry",
-                              "type": "span",
-                            },
-                          ],
-                          "type": "span",
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": <i
-                              className="far fa-comment-alt comment text-right"
-                            >
-                               10
-                            </i>,
-                            "className": "col-md-4 text-right",
-                          },
-                          "ref": null,
-                          "rendered": Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": " 10",
-                              "className": "far fa-comment-alt comment text-right",
-                            },
-                            "ref": null,
-                            "rendered": " 10",
-                            "type": "i",
-                          },
-                          "type": "span",
-                        },
-                      ],
-                      "type": "div",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          <Glow
-                            active={true}
-                            handleGlow={[Function]}
-                          />,
-                          <span
-                            className="float-right fs-13 m-t-10 m-r-15"
-                          >
-                            5 mins read
-                          </span>,
-                        ],
-                        "className": "col-md-12",
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "function",
-                          "props": Object {
-                            "active": true,
-                            "handleGlow": [Function],
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": [Function],
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": "5 mins read",
-                            "className": "float-right fs-13 m-t-10 m-r-15",
-                          },
-                          "ref": null,
-                          "rendered": "5 mins read",
-                          "type": "span",
-                        },
-                      ],
-                      "type": "div",
-                    },
-                  ],
-                  "type": "div",
-                },
-              ],
-              "type": "div",
-            },
-          ],
-          "type": "div",
-        },
-        "type": "div",
-      },
-      "type": "div",
-    },
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": <div
-          className="col-md-12 high article-card1"
-        >
-          <div
-            className="card"
-          >
-            <div
-              className="row"
-            >
-              <div
-                className="col-md-5 m-r-0"
-              >
-                <img
-                  alt="Card cap"
-                  className=""
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                  width="120"
-                />
-              </div>
-              <div
-                className="col-md-7"
-              >
-                <h6
-                  className="card-title"
-                >
-                  Lorem ipsum dolor
-                </h6>
-                <p
-                  className="card-text fs-13 "
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...
-                </p>
-                <div
-                  className="row card-buttom"
-                >
-                  <div
-                    className="text-right"
-                  >
-                    <span
-                      className="col-md-8"
-                    >
-                      <img
-                        alt="user"
-                        className="user-image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                      />
-                      <span
-                        className="user-name"
-                      >
-                        Henry
-                      </span>
-                    </span>
-                    <span
-                      className="col-md-4 text-right"
-                    >
-                      <i
-                        className="far fa-comment-alt comment text-right"
-                      >
-                         10
-                      </i>
-                    </span>
-                  </div>
-                  <div
-                    className="col-md-12"
-                  >
-                    <Glow
-                      active={true}
-                      handleGlow={[Function]}
-                    />
-                    <span
-                      className="float-right fs-13 m-t-10 m-r-15"
-                    >
-                      5 mins read
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <div
-            className="card"
-          >
-            <div
-              className="row"
-            >
-              <div
-                className="col-md-5 m-r-0"
-              >
-                <img
-                  alt="Card cap"
-                  className=""
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                  width="120"
-                />
-              </div>
-              <div
-                className="col-md-7"
-              >
-                <h6
-                  className="card-title"
-                >
-                  Lorem ipsum dolor
-                </h6>
-                <p
-                  className="card-text fs-13 "
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...
-                </p>
-                <div
-                  className="row card-buttom"
-                >
-                  <div
-                    className="text-right"
-                  >
-                    <span
-                      className="col-md-8"
-                    >
-                      <img
-                        alt="user"
-                        className="user-image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                      />
-                      <span
-                        className="user-name"
-                      >
-                        Henry
-                      </span>
-                    </span>
-                    <span
-                      className="col-md-4 text-right"
-                    >
-                      <i
-                        className="far fa-comment-alt comment text-right"
-                      >
-                         10
-                      </i>
-                    </span>
-                  </div>
-                  <div
-                    className="col-md-12"
-                  >
-                    <Glow
-                      active={true}
-                      handleGlow={[Function]}
-                    />
-                    <span
-                      className="float-right fs-13 m-t-10 m-r-15"
-                    >
-                      5 mins read
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>,
-          "className": "col-md-12 high article-card1",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <div
-              className="row"
-            >
-              <div
-                className="col-md-5 m-r-0"
-              >
-                <img
-                  alt="Card cap"
-                  className=""
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                  width="120"
-                />
-              </div>
-              <div
-                className="col-md-7"
-              >
-                <h6
-                  className="card-title"
-                >
-                  Lorem ipsum dolor
-                </h6>
-                <p
-                  className="card-text fs-13 "
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...
-                </p>
-                <div
-                  className="row card-buttom"
-                >
-                  <div
-                    className="text-right"
-                  >
-                    <span
-                      className="col-md-8"
-                    >
-                      <img
-                        alt="user"
-                        className="user-image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                      />
-                      <span
-                        className="user-name"
-                      >
-                        Henry
-                      </span>
-                    </span>
-                    <span
-                      className="col-md-4 text-right"
-                    >
-                      <i
-                        className="far fa-comment-alt comment text-right"
-                      >
-                         10
-                      </i>
-                    </span>
-                  </div>
-                  <div
-                    className="col-md-12"
-                  >
-                    <Glow
-                      active={true}
-                      handleGlow={[Function]}
-                    />
-                    <span
-                      className="float-right fs-13 m-t-10 m-r-15"
-                    >
-                      5 mins read
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>,
-            "className": "card",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <div
-                  className="col-md-5 m-r-0"
-                >
-                  <img
-                    alt="Card cap"
-                    className=""
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                    width="120"
-                  />
-                </div>,
-                <div
-                  className="col-md-7"
-                >
-                  <h6
-                    className="card-title"
-                  >
-                    Lorem ipsum dolor
-                  </h6>
-                  <p
-                    className="card-text fs-13 "
-                  >
-                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...
-                  </p>
-                  <div
-                    className="row card-buttom"
-                  >
-                    <div
-                      className="text-right"
-                    >
-                      <span
-                        className="col-md-8"
-                      >
-                        <img
-                          alt="user"
-                          className="user-image"
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                        />
-                        <span
-                          className="user-name"
-                        >
-                          Henry
-                        </span>
-                      </span>
-                      <span
-                        className="col-md-4 text-right"
-                      >
-                        <i
-                          className="far fa-comment-alt comment text-right"
-                        >
-                           10
-                        </i>
-                      </span>
-                    </div>
-                    <div
-                      className="col-md-12"
-                    >
-                      <Glow
-                        active={true}
-                        handleGlow={[Function]}
-                      />
-                      <span
-                        className="float-right fs-13 m-t-10 m-r-15"
-                      >
-                        5 mins read
-                      </span>
-                    </div>
-                  </div>
-                </div>,
-              ],
-              "className": "row",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <img
-                    alt="Card cap"
-                    className=""
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                    width="120"
-                  />,
-                  "className": "col-md-5 m-r-0",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "alt": "Card cap",
-                    "className": "",
-                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
-                    "width": "120",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-                "type": "div",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <h6
-                      className="card-title"
-                    >
-                      Lorem ipsum dolor
-                    </h6>,
-                    <p
-                      className="card-text fs-13 "
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...
-                    </p>,
-                    <div
-                      className="row card-buttom"
-                    >
-                      <div
-                        className="text-right"
-                      >
-                        <span
-                          className="col-md-8"
-                        >
-                          <img
-                            alt="user"
-                            className="user-image"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                          />
-                          <span
-                            className="user-name"
-                          >
-                            Henry
-                          </span>
-                        </span>
-                        <span
-                          className="col-md-4 text-right"
-                        >
-                          <i
-                            className="far fa-comment-alt comment text-right"
-                          >
-                             10
-                          </i>
-                        </span>
-                      </div>
-                      <div
-                        className="col-md-12"
-                      >
-                        <Glow
-                          active={true}
-                          handleGlow={[Function]}
-                        />
-                        <span
-                          className="float-right fs-13 m-t-10 m-r-15"
-                        >
-                          5 mins read
-                        </span>
-                      </div>
-                    </div>,
-                  ],
-                  "className": "col-md-7",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Lorem ipsum dolor",
-                      "className": "card-title",
-                    },
-                    "ref": null,
-                    "rendered": "Lorem ipsum dolor",
-                    "type": "h6",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...",
-                      "className": "card-text fs-13 ",
-                    },
-                    "ref": null,
-                    "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicin...",
-                    "type": "p",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <div
-                          className="text-right"
-                        >
-                          <span
-                            className="col-md-8"
-                          >
-                            <img
-                              alt="user"
-                              className="user-image"
-                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                            />
-                            <span
-                              className="user-name"
-                            >
-                              Henry
-                            </span>
-                          </span>
-                          <span
-                            className="col-md-4 text-right"
-                          >
-                            <i
-                              className="far fa-comment-alt comment text-right"
-                            >
-                               10
-                            </i>
-                          </span>
-                        </div>,
-                        <div
-                          className="col-md-12"
-                        >
-                          <Glow
-                            active={true}
-                            handleGlow={[Function]}
-                          />
-                          <span
-                            className="float-right fs-13 m-t-10 m-r-15"
-                          >
-                            5 mins read
-                          </span>
-                        </div>,
-                      ],
-                      "className": "row card-buttom",
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": Array [
-                            <span
-                              className="col-md-8"
-                            >
-                              <img
-                                alt="user"
-                                className="user-image"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                              />
-                              <span
-                                className="user-name"
-                              >
-                                Henry
-                              </span>
-                            </span>,
-                            <span
-                              className="col-md-4 text-right"
-                            >
-                              <i
-                                className="far fa-comment-alt comment text-right"
-                              >
-                                 10
-                              </i>
-                            </span>,
-                          ],
-                          "className": "text-right",
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": Array [
-                                <img
-                                  alt="user"
-                                  className="user-image"
-                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                                />,
-                                <span
-                                  className="user-name"
-                                >
-                                  Henry
-                                </span>,
-                              ],
-                              "className": "col-md-8",
-                            },
-                            "ref": null,
-                            "rendered": Array [
-                              Object {
-                                "instance": null,
-                                "key": undefined,
-                                "nodeType": "host",
-                                "props": Object {
-                                  "alt": "user",
-                                  "className": "user-image",
-                                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
-                                },
-                                "ref": null,
-                                "rendered": null,
-                                "type": "img",
-                              },
-                              Object {
-                                "instance": null,
-                                "key": undefined,
-                                "nodeType": "host",
-                                "props": Object {
-                                  "children": "Henry",
-                                  "className": "user-name",
-                                },
-                                "ref": null,
-                                "rendered": "Henry",
-                                "type": "span",
-                              },
-                            ],
-                            "type": "span",
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": <i
-                                className="far fa-comment-alt comment text-right"
-                              >
-                                 10
-                              </i>,
-                              "className": "col-md-4 text-right",
-                            },
-                            "ref": null,
-                            "rendered": Object {
-                              "instance": null,
-                              "key": undefined,
-                              "nodeType": "host",
-                              "props": Object {
-                                "children": " 10",
-                                "className": "far fa-comment-alt comment text-right",
-                              },
-                              "ref": null,
-                              "rendered": " 10",
-                              "type": "i",
-                            },
-                            "type": "span",
-                          },
-                        ],
-                        "type": "div",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": Array [
-                            <Glow
-                              active={true}
-                              handleGlow={[Function]}
-                            />,
-                            <span
-                              className="float-right fs-13 m-t-10 m-r-15"
-                            >
-                              5 mins read
-                            </span>,
-                          ],
-                          "className": "col-md-12",
-                        },
-                        "ref": null,
-                        "rendered": Array [
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "function",
-                            "props": Object {
-                              "active": true,
-                              "handleGlow": [Function],
-                            },
-                            "ref": null,
-                            "rendered": null,
-                            "type": [Function],
-                          },
-                          Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": "5 mins read",
-                              "className": "float-right fs-13 m-t-10 m-r-15",
-                            },
-                            "ref": null,
-                            "rendered": "5 mins read",
-                            "type": "span",
-                          },
-                        ],
-                        "type": "div",
-                      },
-                    ],
-                    "type": "div",
-                  },
-                ],
-                "type": "div",
-              },
-            ],
-            "type": "div",
-          },
-          "type": "div",
-        },
-        "type": "div",
-      },
-      "type": Symbol(react.fragment),
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
-`;
-
-exports[`<ArticleCard2 /> should render the Article card coreectly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ArticleCard2
-    article="low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer."
+  Symbol(enzyme.__unrendered__): <ArticleCardHorizontal
+    article="low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer."
     articleImage="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
-    articleTitle="Lorem ipsum dolor"
+    articleTitle="Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor"
     commentCount=" 10"
     updatedTime=" 5 days ago"
     userImage="https://i.pinimg.com/originals/37/6f/6c/376f6cc74753e92bd2d39a762b4e2c9f.jpg"
@@ -1418,12 +27,12 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": <div
-        className="article-card-2"
+        className="article-card-horizontal"
       >
         <h5
           className="card-title"
         >
-          Lorem ipsum dolor
+          Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
         </h5>
         <img
           alt="Card"
@@ -1433,11 +42,16 @@ ShallowWrapper {
         <div
           className="card-body"
         >
-          <p
-            className="card-text"
+          <div
+            className="flex-text-content mb-3"
           >
-            low as a natural lead-in to additional content. This content is a little bit longerlow as a natural...
-          </p>
+            <p
+              className="card-text"
+            >
+              low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+            </p>
+          </div>
           <div
             className="row"
           >
@@ -1510,7 +124,7 @@ ShallowWrapper {
           <h5
             className="card-title"
           >
-            Lorem ipsum dolor
+            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
           </h5>,
           <img
             alt="Card"
@@ -1520,11 +134,16 @@ ShallowWrapper {
           <div
             className="card-body"
           >
-            <p
-              className="card-text"
+            <div
+              className="flex-text-content mb-3"
             >
-              low as a natural lead-in to additional content. This content is a little bit longerlow as a natural...
-            </p>
+              <p
+                className="card-text"
+              >
+                low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+              </p>
+            </div>
             <div
               className="row"
             >
@@ -1586,7 +205,7 @@ ShallowWrapper {
           </div>,
           <hr />,
         ],
-        "className": "article-card-2",
+        "className": "article-card-horizontal",
       },
       "ref": null,
       "rendered": Array [
@@ -1595,11 +214,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Lorem ipsum dolor",
+            "children": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
             "className": "card-title",
           },
           "ref": null,
-          "rendered": "Lorem ipsum dolor",
+          "rendered": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
           "type": "h5",
         },
         Object {
@@ -1621,11 +240,16 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <p
-                className="card-text"
+              <div
+                className="flex-text-content mb-3"
               >
-                low as a natural lead-in to additional content. This content is a little bit longerlow as a natural...
-              </p>,
+                <p
+                  className="card-text"
+                >
+                  low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                </p>
+              </div>,
               <div
                 className="row"
               >
@@ -1694,12 +318,30 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural...",
-                "className": "card-text",
+                "children": <p
+                  className="card-text"
+                >
+                  low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                </p>,
+                "className": "flex-text-content mb-3",
               },
               "ref": null,
-              "rendered": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural...",
-              "type": "p",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.",
+                  "className": "card-text",
+                },
+                "ref": null,
+                "rendered": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.",
+                "type": "p",
+              },
+              "type": "div",
             },
             Object {
               "instance": null,
@@ -1975,12 +617,12 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <div
-          className="article-card-2"
+          className="article-card-horizontal"
         >
           <h5
             className="card-title"
           >
-            Lorem ipsum dolor
+            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
           </h5>
           <img
             alt="Card"
@@ -1990,11 +632,16 @@ ShallowWrapper {
           <div
             className="card-body"
           >
-            <p
-              className="card-text"
+            <div
+              className="flex-text-content mb-3"
             >
-              low as a natural lead-in to additional content. This content is a little bit longerlow as a natural...
-            </p>
+              <p
+                className="card-text"
+              >
+                low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+              </p>
+            </div>
             <div
               className="row"
             >
@@ -2067,7 +714,7 @@ ShallowWrapper {
             <h5
               className="card-title"
             >
-              Lorem ipsum dolor
+              Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
             </h5>,
             <img
               alt="Card"
@@ -2077,11 +724,16 @@ ShallowWrapper {
             <div
               className="card-body"
             >
-              <p
-                className="card-text"
+              <div
+                className="flex-text-content mb-3"
               >
-                low as a natural lead-in to additional content. This content is a little bit longerlow as a natural...
-              </p>
+                <p
+                  className="card-text"
+                >
+                  low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                </p>
+              </div>
               <div
                 className="row"
               >
@@ -2143,7 +795,7 @@ ShallowWrapper {
             </div>,
             <hr />,
           ],
-          "className": "article-card-2",
+          "className": "article-card-horizontal",
         },
         "ref": null,
         "rendered": Array [
@@ -2152,11 +804,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Lorem ipsum dolor",
+              "children": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
               "className": "card-title",
             },
             "ref": null,
-            "rendered": "Lorem ipsum dolor",
+            "rendered": "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor",
             "type": "h5",
           },
           Object {
@@ -2178,11 +830,16 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <p
-                  className="card-text"
+                <div
+                  className="flex-text-content mb-3"
                 >
-                  low as a natural lead-in to additional content. This content is a little bit longerlow as a natural...
-                </p>,
+                  <p
+                    className="card-text"
+                  >
+                    low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                  </p>
+                </div>,
                 <div
                   className="row"
                 >
@@ -2251,12 +908,30 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural...",
-                  "className": "card-text",
+                  "children": <p
+                    className="card-text"
+                  >
+                    low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.
+                  </p>,
+                  "className": "flex-text-content mb-3",
                 },
                 "ref": null,
-                "rendered": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural...",
-                "type": "p",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.",
+                    "className": "card-text",
+                  },
+                  "ref": null,
+                  "rendered": "low as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit 
+longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longerlow as a natural lead-in to additional content. This content is a little bit longer.",
+                  "type": "p",
+                },
+                "type": "div",
               },
               Object {
                 "instance": null,
@@ -2546,6 +1221,2102 @@ ShallowWrapper {
 }
 `;
 
+exports[`<ArticleCardVertical /> should render the Article card coreectly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleCardVertical
+    article="Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur"
+    articleImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+    articleTitle="Lorem ipsum dolor"
+    commentCount=" 10"
+    updatedTime="5 mins"
+    userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+    username="Henry Henry Henry Henry"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="cardbox shadow-sm bg-white"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-5 pr-0"
+          >
+            <div
+              className="cardbox-heading"
+            >
+              <div
+                className="cardbox-item"
+              >
+                <img
+                  alt=""
+                  className="img-fluid"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-md-7 ml-0 pl-0"
+          >
+            <div
+              className="cardbox-heading"
+            >
+              <div
+                className="col-md-12 mb-0 pb-0"
+              >
+                <h5>
+                  Lorem ipsum dolor
+                </h5>
+                <div
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                </div>
+              </div>
+              <div
+                className="cardbox-base mt-0 mb-0"
+              >
+                <div
+                  className="mt-0 mb-0 pb-0"
+                >
+                  <ul>
+                    <li>
+                      <a
+                        href="/"
+                      >
+                        <img
+                          alt="User"
+                          className="img-fluid rounded-circle"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                        />
+                        <span
+                          className="ml-1 user-name-text"
+                        >
+                          Henry Henry Henry Henry
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul
+                    className="float-right"
+                  >
+                    <li>
+                      <a
+                        href="/"
+                      >
+                        <i
+                          className="far fa-comment-alt comment"
+                        >
+                           10
+                        </i>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <Glow
+                        active={true}
+                        handleGlow={[Function]}
+                      />
+                    </li>
+                  </ul>
+                  <span
+                    className="text-center"
+                  >
+                    <Rating
+                      ratings={0}
+                    />
+                  </span>
+                  <span
+                    className="time-text"
+                  >
+                    <i>
+                      5 mins
+                    </i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="row"
+        >
+          <div
+            className="col-md-5 pr-0"
+          >
+            <div
+              className="cardbox-heading"
+            >
+              <div
+                className="cardbox-item"
+              >
+                <img
+                  alt=""
+                  className="img-fluid"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-md-7 ml-0 pl-0"
+          >
+            <div
+              className="cardbox-heading"
+            >
+              <div
+                className="col-md-12 mb-0 pb-0"
+              >
+                <h5>
+                  Lorem ipsum dolor
+                </h5>
+                <div
+                  className="card-text"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                </div>
+              </div>
+              <div
+                className="cardbox-base mt-0 mb-0"
+              >
+                <div
+                  className="mt-0 mb-0 pb-0"
+                >
+                  <ul>
+                    <li>
+                      <a
+                        href="/"
+                      >
+                        <img
+                          alt="User"
+                          className="img-fluid rounded-circle"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                        />
+                        <span
+                          className="ml-1 user-name-text"
+                        >
+                          Henry Henry Henry Henry
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul
+                    className="float-right"
+                  >
+                    <li>
+                      <a
+                        href="/"
+                      >
+                        <i
+                          className="far fa-comment-alt comment"
+                        >
+                           10
+                        </i>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <Glow
+                        active={true}
+                        handleGlow={[Function]}
+                      />
+                    </li>
+                  </ul>
+                  <span
+                    className="text-center"
+                  >
+                    <Rating
+                      ratings={0}
+                    />
+                  </span>
+                  <span
+                    className="time-text"
+                  >
+                    <i>
+                      5 mins
+                    </i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>,
+        "className": "cardbox shadow-sm bg-white",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="col-md-5 pr-0"
+            >
+              <div
+                className="cardbox-heading"
+              >
+                <div
+                  className="cardbox-item"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  />
+                </div>
+              </div>
+            </div>,
+            <div
+              className="col-md-7 ml-0 pl-0"
+            >
+              <div
+                className="cardbox-heading"
+              >
+                <div
+                  className="col-md-12 mb-0 pb-0"
+                >
+                  <h5>
+                    Lorem ipsum dolor
+                  </h5>
+                  <div
+                    className="card-text"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                  </div>
+                </div>
+                <div
+                  className="cardbox-base mt-0 mb-0"
+                >
+                  <div
+                    className="mt-0 mb-0 pb-0"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          href="/"
+                        >
+                          <img
+                            alt="User"
+                            className="img-fluid rounded-circle"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                          />
+                          <span
+                            className="ml-1 user-name-text"
+                          >
+                            Henry Henry Henry Henry
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul
+                      className="float-right"
+                    >
+                      <li>
+                        <a
+                          href="/"
+                        >
+                          <i
+                            className="far fa-comment-alt comment"
+                          >
+                             10
+                          </i>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <Glow
+                          active={true}
+                          handleGlow={[Function]}
+                        />
+                      </li>
+                    </ul>
+                    <span
+                      className="text-center"
+                    >
+                      <Rating
+                        ratings={0}
+                      />
+                    </span>
+                    <span
+                      className="time-text"
+                    >
+                      <i>
+                        5 mins
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="cardbox-heading"
+              >
+                <div
+                  className="cardbox-item"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  />
+                </div>
+              </div>,
+              "className": "col-md-5 pr-0",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="cardbox-item"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  />
+                </div>,
+                "className": "cardbox-heading",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt=""
+                    className="img-fluid"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  />,
+                  "className": "cardbox-item",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "",
+                    "className": "img-fluid",
+                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "div",
+              },
+              "type": "div",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="cardbox-heading"
+              >
+                <div
+                  className="col-md-12 mb-0 pb-0"
+                >
+                  <h5>
+                    Lorem ipsum dolor
+                  </h5>
+                  <div
+                    className="card-text"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                  </div>
+                </div>
+                <div
+                  className="cardbox-base mt-0 mb-0"
+                >
+                  <div
+                    className="mt-0 mb-0 pb-0"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          href="/"
+                        >
+                          <img
+                            alt="User"
+                            className="img-fluid rounded-circle"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                          />
+                          <span
+                            className="ml-1 user-name-text"
+                          >
+                            Henry Henry Henry Henry
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul
+                      className="float-right"
+                    >
+                      <li>
+                        <a
+                          href="/"
+                        >
+                          <i
+                            className="far fa-comment-alt comment"
+                          >
+                             10
+                          </i>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <Glow
+                          active={true}
+                          handleGlow={[Function]}
+                        />
+                      </li>
+                    </ul>
+                    <span
+                      className="text-center"
+                    >
+                      <Rating
+                        ratings={0}
+                      />
+                    </span>
+                    <span
+                      className="time-text"
+                    >
+                      <i>
+                        5 mins
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>,
+              "className": "col-md-7 ml-0 pl-0",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="col-md-12 mb-0 pb-0"
+                  >
+                    <h5>
+                      Lorem ipsum dolor
+                    </h5>
+                    <div
+                      className="card-text"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                    </div>
+                  </div>,
+                  <div
+                    className="cardbox-base mt-0 mb-0"
+                  >
+                    <div
+                      className="mt-0 mb-0 pb-0"
+                    >
+                      <ul>
+                        <li>
+                          <a
+                            href="/"
+                          >
+                            <img
+                              alt="User"
+                              className="img-fluid rounded-circle"
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                            />
+                            <span
+                              className="ml-1 user-name-text"
+                            >
+                              Henry Henry Henry Henry
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul
+                        className="float-right"
+                      >
+                        <li>
+                          <a
+                            href="/"
+                          >
+                            <i
+                              className="far fa-comment-alt comment"
+                            >
+                               10
+                            </i>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <Glow
+                            active={true}
+                            handleGlow={[Function]}
+                          />
+                        </li>
+                      </ul>
+                      <span
+                        className="text-center"
+                      >
+                        <Rating
+                          ratings={0}
+                        />
+                      </span>
+                      <span
+                        className="time-text"
+                      >
+                        <i>
+                          5 mins
+                        </i>
+                      </span>
+                    </div>
+                  </div>,
+                ],
+                "className": "cardbox-heading",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h5>
+                        Lorem ipsum dolor
+                      </h5>,
+                      <div
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                      </div>,
+                    ],
+                    "className": "col-md-12 mb-0 pb-0",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Lorem ipsum dolor",
+                      },
+                      "ref": null,
+                      "rendered": "Lorem ipsum dolor",
+                      "type": "h5",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
+                        "className": "card-text",
+                      },
+                      "ref": null,
+                      "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <div
+                      className="mt-0 mb-0 pb-0"
+                    >
+                      <ul>
+                        <li>
+                          <a
+                            href="/"
+                          >
+                            <img
+                              alt="User"
+                              className="img-fluid rounded-circle"
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                            />
+                            <span
+                              className="ml-1 user-name-text"
+                            >
+                              Henry Henry Henry Henry
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul
+                        className="float-right"
+                      >
+                        <li>
+                          <a
+                            href="/"
+                          >
+                            <i
+                              className="far fa-comment-alt comment"
+                            >
+                               10
+                            </i>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <Glow
+                            active={true}
+                            handleGlow={[Function]}
+                          />
+                        </li>
+                      </ul>
+                      <span
+                        className="text-center"
+                      >
+                        <Rating
+                          ratings={0}
+                        />
+                      </span>
+                      <span
+                        className="time-text"
+                      >
+                        <i>
+                          5 mins
+                        </i>
+                      </span>
+                    </div>,
+                    "className": "cardbox-base mt-0 mb-0",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <ul>
+                          <li>
+                            <a
+                              href="/"
+                            >
+                              <img
+                                alt="User"
+                                className="img-fluid rounded-circle"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                              />
+                              <span
+                                className="ml-1 user-name-text"
+                              >
+                                Henry Henry Henry Henry
+                              </span>
+                            </a>
+                          </li>
+                        </ul>,
+                        <ul
+                          className="float-right"
+                        >
+                          <li>
+                            <a
+                              href="/"
+                            >
+                              <i
+                                className="far fa-comment-alt comment"
+                              >
+                                 10
+                              </i>
+                            </a>
+                          </li>
+                        </ul>,
+                        <ul>
+                          <li>
+                            <Glow
+                              active={true}
+                              handleGlow={[Function]}
+                            />
+                          </li>
+                        </ul>,
+                        <span
+                          className="text-center"
+                        >
+                          <Rating
+                            ratings={0}
+                          />
+                        </span>,
+                        <span
+                          className="time-text"
+                        >
+                          <i>
+                            5 mins
+                          </i>
+                        </span>,
+                      ],
+                      "className": "mt-0 mb-0 pb-0",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <li>
+                            <a
+                              href="/"
+                            >
+                              <img
+                                alt="User"
+                                className="img-fluid rounded-circle"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                              />
+                              <span
+                                className="ml-1 user-name-text"
+                              >
+                                Henry Henry Henry Henry
+                              </span>
+                            </a>
+                          </li>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <a
+                              href="/"
+                            >
+                              <img
+                                alt="User"
+                                className="img-fluid rounded-circle"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                              />
+                              <span
+                                className="ml-1 user-name-text"
+                              >
+                                Henry Henry Henry Henry
+                              </span>
+                            </a>,
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": Array [
+                                <img
+                                  alt="User"
+                                  className="img-fluid rounded-circle"
+                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                />,
+                                <span
+                                  className="ml-1 user-name-text"
+                                >
+                                  Henry Henry Henry Henry
+                                </span>,
+                              ],
+                              "href": "/",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "alt": "User",
+                                  "className": "img-fluid rounded-circle",
+                                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "img",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "Henry Henry Henry Henry",
+                                  "className": "ml-1 user-name-text",
+                                },
+                                "ref": null,
+                                "rendered": "Henry Henry Henry Henry",
+                                "type": "span",
+                              },
+                            ],
+                            "type": "a",
+                          },
+                          "type": "li",
+                        },
+                        "type": "ul",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <li>
+                            <a
+                              href="/"
+                            >
+                              <i
+                                className="far fa-comment-alt comment"
+                              >
+                                 10
+                              </i>
+                            </a>
+                          </li>,
+                          "className": "float-right",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <a
+                              href="/"
+                            >
+                              <i
+                                className="far fa-comment-alt comment"
+                              >
+                                 10
+                              </i>
+                            </a>,
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <i
+                                className="far fa-comment-alt comment"
+                              >
+                                 10
+                              </i>,
+                              "href": "/",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": " 10",
+                                "className": "far fa-comment-alt comment",
+                              },
+                              "ref": null,
+                              "rendered": " 10",
+                              "type": "i",
+                            },
+                            "type": "a",
+                          },
+                          "type": "li",
+                        },
+                        "type": "ul",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <li>
+                            <Glow
+                              active={true}
+                              handleGlow={[Function]}
+                            />
+                          </li>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Glow
+                              active={true}
+                              handleGlow={[Function]}
+                            />,
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "active": true,
+                              "handleGlow": [Function],
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "li",
+                        },
+                        "type": "ul",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Rating
+                            ratings={0}
+                          />,
+                          "className": "text-center",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "ratings": 0,
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <i>
+                            5 mins
+                          </i>,
+                          "className": "time-text",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "5 mins",
+                          },
+                          "ref": null,
+                          "rendered": "5 mins",
+                          "type": "i",
+                        },
+                        "type": "span",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="cardbox shadow-sm bg-white"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-md-5 pr-0"
+            >
+              <div
+                className="cardbox-heading"
+              >
+                <div
+                  className="cardbox-item"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-md-7 ml-0 pl-0"
+            >
+              <div
+                className="cardbox-heading"
+              >
+                <div
+                  className="col-md-12 mb-0 pb-0"
+                >
+                  <h5>
+                    Lorem ipsum dolor
+                  </h5>
+                  <div
+                    className="card-text"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                  </div>
+                </div>
+                <div
+                  className="cardbox-base mt-0 mb-0"
+                >
+                  <div
+                    className="mt-0 mb-0 pb-0"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          href="/"
+                        >
+                          <img
+                            alt="User"
+                            className="img-fluid rounded-circle"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                          />
+                          <span
+                            className="ml-1 user-name-text"
+                          >
+                            Henry Henry Henry Henry
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul
+                      className="float-right"
+                    >
+                      <li>
+                        <a
+                          href="/"
+                        >
+                          <i
+                            className="far fa-comment-alt comment"
+                          >
+                             10
+                          </i>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <Glow
+                          active={true}
+                          handleGlow={[Function]}
+                        />
+                      </li>
+                    </ul>
+                    <span
+                      className="text-center"
+                    >
+                      <Rating
+                        ratings={0}
+                      />
+                    </span>
+                    <span
+                      className="time-text"
+                    >
+                      <i>
+                        5 mins
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="row"
+          >
+            <div
+              className="col-md-5 pr-0"
+            >
+              <div
+                className="cardbox-heading"
+              >
+                <div
+                  className="cardbox-item"
+                >
+                  <img
+                    alt=""
+                    className="img-fluid"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-md-7 ml-0 pl-0"
+            >
+              <div
+                className="cardbox-heading"
+              >
+                <div
+                  className="col-md-12 mb-0 pb-0"
+                >
+                  <h5>
+                    Lorem ipsum dolor
+                  </h5>
+                  <div
+                    className="card-text"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                  </div>
+                </div>
+                <div
+                  className="cardbox-base mt-0 mb-0"
+                >
+                  <div
+                    className="mt-0 mb-0 pb-0"
+                  >
+                    <ul>
+                      <li>
+                        <a
+                          href="/"
+                        >
+                          <img
+                            alt="User"
+                            className="img-fluid rounded-circle"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                          />
+                          <span
+                            className="ml-1 user-name-text"
+                          >
+                            Henry Henry Henry Henry
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul
+                      className="float-right"
+                    >
+                      <li>
+                        <a
+                          href="/"
+                        >
+                          <i
+                            className="far fa-comment-alt comment"
+                          >
+                             10
+                          </i>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <Glow
+                          active={true}
+                          handleGlow={[Function]}
+                        />
+                      </li>
+                    </ul>
+                    <span
+                      className="text-center"
+                    >
+                      <Rating
+                        ratings={0}
+                      />
+                    </span>
+                    <span
+                      className="time-text"
+                    >
+                      <i>
+                        5 mins
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>,
+          "className": "cardbox shadow-sm bg-white",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col-md-5 pr-0"
+              >
+                <div
+                  className="cardbox-heading"
+                >
+                  <div
+                    className="cardbox-item"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    />
+                  </div>
+                </div>
+              </div>,
+              <div
+                className="col-md-7 ml-0 pl-0"
+              >
+                <div
+                  className="cardbox-heading"
+                >
+                  <div
+                    className="col-md-12 mb-0 pb-0"
+                  >
+                    <h5>
+                      Lorem ipsum dolor
+                    </h5>
+                    <div
+                      className="card-text"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                    </div>
+                  </div>
+                  <div
+                    className="cardbox-base mt-0 mb-0"
+                  >
+                    <div
+                      className="mt-0 mb-0 pb-0"
+                    >
+                      <ul>
+                        <li>
+                          <a
+                            href="/"
+                          >
+                            <img
+                              alt="User"
+                              className="img-fluid rounded-circle"
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                            />
+                            <span
+                              className="ml-1 user-name-text"
+                            >
+                              Henry Henry Henry Henry
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul
+                        className="float-right"
+                      >
+                        <li>
+                          <a
+                            href="/"
+                          >
+                            <i
+                              className="far fa-comment-alt comment"
+                            >
+                               10
+                            </i>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <Glow
+                            active={true}
+                            handleGlow={[Function]}
+                          />
+                        </li>
+                      </ul>
+                      <span
+                        className="text-center"
+                      >
+                        <Rating
+                          ratings={0}
+                        />
+                      </span>
+                      <span
+                        className="time-text"
+                      >
+                        <i>
+                          5 mins
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="cardbox-heading"
+                >
+                  <div
+                    className="cardbox-item"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    />
+                  </div>
+                </div>,
+                "className": "col-md-5 pr-0",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="cardbox-item"
+                  >
+                    <img
+                      alt=""
+                      className="img-fluid"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    />
+                  </div>,
+                  "className": "cardbox-heading",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt=""
+                      className="img-fluid"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    />,
+                    "className": "cardbox-item",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "",
+                      "className": "img-fluid",
+                      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "div",
+                },
+                "type": "div",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <div
+                  className="cardbox-heading"
+                >
+                  <div
+                    className="col-md-12 mb-0 pb-0"
+                  >
+                    <h5>
+                      Lorem ipsum dolor
+                    </h5>
+                    <div
+                      className="card-text"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                    </div>
+                  </div>
+                  <div
+                    className="cardbox-base mt-0 mb-0"
+                  >
+                    <div
+                      className="mt-0 mb-0 pb-0"
+                    >
+                      <ul>
+                        <li>
+                          <a
+                            href="/"
+                          >
+                            <img
+                              alt="User"
+                              className="img-fluid rounded-circle"
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                            />
+                            <span
+                              className="ml-1 user-name-text"
+                            >
+                              Henry Henry Henry Henry
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul
+                        className="float-right"
+                      >
+                        <li>
+                          <a
+                            href="/"
+                          >
+                            <i
+                              className="far fa-comment-alt comment"
+                            >
+                               10
+                            </i>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <Glow
+                            active={true}
+                            handleGlow={[Function]}
+                          />
+                        </li>
+                      </ul>
+                      <span
+                        className="text-center"
+                      >
+                        <Rating
+                          ratings={0}
+                        />
+                      </span>
+                      <span
+                        className="time-text"
+                      >
+                        <i>
+                          5 mins
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>,
+                "className": "col-md-7 ml-0 pl-0",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="col-md-12 mb-0 pb-0"
+                    >
+                      <h5>
+                        Lorem ipsum dolor
+                      </h5>
+                      <div
+                        className="card-text"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                      </div>
+                    </div>,
+                    <div
+                      className="cardbox-base mt-0 mb-0"
+                    >
+                      <div
+                        className="mt-0 mb-0 pb-0"
+                      >
+                        <ul>
+                          <li>
+                            <a
+                              href="/"
+                            >
+                              <img
+                                alt="User"
+                                className="img-fluid rounded-circle"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                              />
+                              <span
+                                className="ml-1 user-name-text"
+                              >
+                                Henry Henry Henry Henry
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul
+                          className="float-right"
+                        >
+                          <li>
+                            <a
+                              href="/"
+                            >
+                              <i
+                                className="far fa-comment-alt comment"
+                              >
+                                 10
+                              </i>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul>
+                          <li>
+                            <Glow
+                              active={true}
+                              handleGlow={[Function]}
+                            />
+                          </li>
+                        </ul>
+                        <span
+                          className="text-center"
+                        >
+                          <Rating
+                            ratings={0}
+                          />
+                        </span>
+                        <span
+                          className="time-text"
+                        >
+                          <i>
+                            5 mins
+                          </i>
+                        </span>
+                      </div>
+                    </div>,
+                  ],
+                  "className": "cardbox-heading",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <h5>
+                          Lorem ipsum dolor
+                        </h5>,
+                        <div
+                          className="card-text"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                        </div>,
+                      ],
+                      "className": "col-md-12 mb-0 pb-0",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Lorem ipsum dolor",
+                        },
+                        "ref": null,
+                        "rendered": "Lorem ipsum dolor",
+                        "type": "h5",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
+                          "className": "card-text",
+                        },
+                        "ref": null,
+                        "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <div
+                        className="mt-0 mb-0 pb-0"
+                      >
+                        <ul>
+                          <li>
+                            <a
+                              href="/"
+                            >
+                              <img
+                                alt="User"
+                                className="img-fluid rounded-circle"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                              />
+                              <span
+                                className="ml-1 user-name-text"
+                              >
+                                Henry Henry Henry Henry
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul
+                          className="float-right"
+                        >
+                          <li>
+                            <a
+                              href="/"
+                            >
+                              <i
+                                className="far fa-comment-alt comment"
+                              >
+                                 10
+                              </i>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul>
+                          <li>
+                            <Glow
+                              active={true}
+                              handleGlow={[Function]}
+                            />
+                          </li>
+                        </ul>
+                        <span
+                          className="text-center"
+                        >
+                          <Rating
+                            ratings={0}
+                          />
+                        </span>
+                        <span
+                          className="time-text"
+                        >
+                          <i>
+                            5 mins
+                          </i>
+                        </span>
+                      </div>,
+                      "className": "cardbox-base mt-0 mb-0",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <ul>
+                            <li>
+                              <a
+                                href="/"
+                              >
+                                <img
+                                  alt="User"
+                                  className="img-fluid rounded-circle"
+                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                />
+                                <span
+                                  className="ml-1 user-name-text"
+                                >
+                                  Henry Henry Henry Henry
+                                </span>
+                              </a>
+                            </li>
+                          </ul>,
+                          <ul
+                            className="float-right"
+                          >
+                            <li>
+                              <a
+                                href="/"
+                              >
+                                <i
+                                  className="far fa-comment-alt comment"
+                                >
+                                   10
+                                </i>
+                              </a>
+                            </li>
+                          </ul>,
+                          <ul>
+                            <li>
+                              <Glow
+                                active={true}
+                                handleGlow={[Function]}
+                              />
+                            </li>
+                          </ul>,
+                          <span
+                            className="text-center"
+                          >
+                            <Rating
+                              ratings={0}
+                            />
+                          </span>,
+                          <span
+                            className="time-text"
+                          >
+                            <i>
+                              5 mins
+                            </i>
+                          </span>,
+                        ],
+                        "className": "mt-0 mb-0 pb-0",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <li>
+                              <a
+                                href="/"
+                              >
+                                <img
+                                  alt="User"
+                                  className="img-fluid rounded-circle"
+                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                />
+                                <span
+                                  className="ml-1 user-name-text"
+                                >
+                                  Henry Henry Henry Henry
+                                </span>
+                              </a>
+                            </li>,
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <a
+                                href="/"
+                              >
+                                <img
+                                  alt="User"
+                                  className="img-fluid rounded-circle"
+                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                />
+                                <span
+                                  className="ml-1 user-name-text"
+                                >
+                                  Henry Henry Henry Henry
+                                </span>
+                              </a>,
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": Array [
+                                  <img
+                                    alt="User"
+                                    className="img-fluid rounded-circle"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                                  />,
+                                  <span
+                                    className="ml-1 user-name-text"
+                                  >
+                                    Henry Henry Henry Henry
+                                  </span>,
+                                ],
+                                "href": "/",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "alt": "User",
+                                    "className": "img-fluid rounded-circle",
+                                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                                  },
+                                  "ref": null,
+                                  "rendered": null,
+                                  "type": "img",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": "Henry Henry Henry Henry",
+                                    "className": "ml-1 user-name-text",
+                                  },
+                                  "ref": null,
+                                  "rendered": "Henry Henry Henry Henry",
+                                  "type": "span",
+                                },
+                              ],
+                              "type": "a",
+                            },
+                            "type": "li",
+                          },
+                          "type": "ul",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <li>
+                              <a
+                                href="/"
+                              >
+                                <i
+                                  className="far fa-comment-alt comment"
+                                >
+                                   10
+                                </i>
+                              </a>
+                            </li>,
+                            "className": "float-right",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <a
+                                href="/"
+                              >
+                                <i
+                                  className="far fa-comment-alt comment"
+                                >
+                                   10
+                                </i>
+                              </a>,
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <i
+                                  className="far fa-comment-alt comment"
+                                >
+                                   10
+                                </i>,
+                                "href": "/",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": " 10",
+                                  "className": "far fa-comment-alt comment",
+                                },
+                                "ref": null,
+                                "rendered": " 10",
+                                "type": "i",
+                              },
+                              "type": "a",
+                            },
+                            "type": "li",
+                          },
+                          "type": "ul",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <li>
+                              <Glow
+                                active={true}
+                                handleGlow={[Function]}
+                              />
+                            </li>,
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <Glow
+                                active={true}
+                                handleGlow={[Function]}
+                              />,
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "active": true,
+                                "handleGlow": [Function],
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                            "type": "li",
+                          },
+                          "type": "ul",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Rating
+                              ratings={0}
+                            />,
+                            "className": "text-center",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "ratings": 0,
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <i>
+                              5 mins
+                            </i>,
+                            "className": "time-text",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "5 mins",
+                            },
+                            "ref": null,
+                            "rendered": "5 mins",
+                            "type": "i",
+                          },
+                          "type": "span",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
 exports[`<BookmarksCards /> should render the Article card coreectly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
@@ -2554,6 +3325,7 @@ ShallowWrapper {
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
 error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis."
     articleTitle="Lorem ipsum dolor sit amet,"
+    glowCount="0"
     moreClass=""
     userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
     username="pato azu"
@@ -2584,14 +3356,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
               className="header"
             >
               <h1
-                className="col-md-11"
+                className="col-md-11 card-title"
               >
                 Lorem ipsum dolor sit amet,
               </h1>
               <img
                 alt="bookmark-logo"
                 className="bookmark-logo col-md-1"
-                src="/src/images/livello42.svg"
+                src="/src/images/bookmark.svg"
               />
             </div>
           </div>
@@ -2599,11 +3371,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, fa
             className="col-md-12"
           >
             <p
-              className="text"
+              className="text-content"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
             </p>
           </div>
           <br />
@@ -2640,7 +3412,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
               <span
                 className="glow-text"
               >
-                5000
+                0
               </span>
             </div>
           </div>
@@ -2663,14 +3435,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
               className="header"
             >
               <h1
-                className="col-md-11"
+                className="col-md-11 card-title"
               >
                 Lorem ipsum dolor sit amet,
               </h1>
               <img
                 alt="bookmark-logo"
                 className="bookmark-logo col-md-1"
-                src="/src/images/livello42.svg"
+                src="/src/images/bookmark.svg"
               />
             </div>
           </div>
@@ -2678,11 +3450,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
             className="col-md-12"
           >
             <p
-              className="text"
+              className="text-content"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
             </p>
           </div>
           <br />
@@ -2719,7 +3491,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
               <span
                 className="glow-text"
               >
-                5000
+                0
               </span>
             </div>
           </div>
@@ -2740,14 +3512,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                 className="header"
               >
                 <h1
-                  className="col-md-11"
+                  className="col-md-11 card-title"
                 >
                   Lorem ipsum dolor sit amet,
                 </h1>
                 <img
                   alt="bookmark-logo"
                   className="bookmark-logo col-md-1"
-                  src="/src/images/livello42.svg"
+                  src="/src/images/bookmark.svg"
                 />
               </div>
             </div>,
@@ -2755,11 +3527,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
               className="col-md-12"
             >
               <p
-                className="text"
+                className="text-content"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
               </p>
             </div>,
             <br />,
@@ -2796,7 +3568,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                 <span
                   className="glow-text"
                 >
-                  5000
+                  0
                 </span>
               </div>
             </div>,
@@ -2814,14 +3586,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                 className="header"
               >
                 <h1
-                  className="col-md-11"
+                  className="col-md-11 card-title"
                 >
                   Lorem ipsum dolor sit amet,
                 </h1>
                 <img
                   alt="bookmark-logo"
                   className="bookmark-logo col-md-1"
-                  src="/src/images/livello42.svg"
+                  src="/src/images/bookmark.svg"
                 />
               </div>,
               "className": "col-md-12",
@@ -2834,14 +3606,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
               "props": Object {
                 "children": Array [
                   <h1
-                    className="col-md-11"
+                    className="col-md-11 card-title"
                   >
                     Lorem ipsum dolor sit amet,
                   </h1>,
                   <img
                     alt="bookmark-logo"
                     className="bookmark-logo col-md-1"
-                    src="/src/images/livello42.svg"
+                    src="/src/images/bookmark.svg"
                   />,
                 ],
                 "className": "header",
@@ -2854,7 +3626,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                   "nodeType": "host",
                   "props": Object {
                     "children": "Lorem ipsum dolor sit amet,",
-                    "className": "col-md-11",
+                    "className": "col-md-11 card-title",
                   },
                   "ref": null,
                   "rendered": "Lorem ipsum dolor sit amet,",
@@ -2867,7 +3639,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                   "props": Object {
                     "alt": "bookmark-logo",
                     "className": "bookmark-logo col-md-1",
-                    "src": "/src/images/livello42.svg",
+                    "src": "/src/images/bookmark.svg",
                   },
                   "ref": null,
                   "rendered": null,
@@ -2884,11 +3656,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
             "nodeType": "host",
             "props": Object {
               "children": <p
-                className="text"
+                className="text-content"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
               </p>,
               "className": "col-md-12",
             },
@@ -2900,13 +3672,13 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
               "props": Object {
                 "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis",
-                "className": "text",
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
+                "className": "text-content",
               },
               "ref": null,
               "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis",
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
               "type": "p",
             },
             "type": "div",
@@ -2955,7 +3727,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis",
                 <span
                   className="glow-text"
                 >
-                  5000
+                  0
                 </span>
               </div>,
               "className": "user-section ml-10 card-bottom",
@@ -2994,7 +3766,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis",
                   <span
                     className="glow-text"
                   >
-                    5000
+                    0
                   </span>,
                 ],
                 "className": "col-md-12",
@@ -3075,11 +3847,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis",
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "5000",
+                    "children": "0",
                     "className": "glow-text",
                   },
                   "ref": null,
-                  "rendered": "5000",
+                  "rendered": "0",
                   "type": "span",
                 },
               ],
@@ -3113,14 +3885,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis",
                 className="header"
               >
                 <h1
-                  className="col-md-11"
+                  className="col-md-11 card-title"
                 >
                   Lorem ipsum dolor sit amet,
                 </h1>
                 <img
                   alt="bookmark-logo"
                   className="bookmark-logo col-md-1"
-                  src="/src/images/livello42.svg"
+                  src="/src/images/bookmark.svg"
                 />
               </div>
             </div>
@@ -3128,11 +3900,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis",
               className="col-md-12"
             >
               <p
-                className="text"
+                className="text-content"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
               </p>
             </div>
             <br />
@@ -3169,7 +3941,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                 <span
                   className="glow-text"
                 >
-                  5000
+                  0
                 </span>
               </div>
             </div>
@@ -3192,14 +3964,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                 className="header"
               >
                 <h1
-                  className="col-md-11"
+                  className="col-md-11 card-title"
                 >
                   Lorem ipsum dolor sit amet,
                 </h1>
                 <img
                   alt="bookmark-logo"
                   className="bookmark-logo col-md-1"
-                  src="/src/images/livello42.svg"
+                  src="/src/images/bookmark.svg"
                 />
               </div>
             </div>
@@ -3207,11 +3979,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
               className="col-md-12"
             >
               <p
-                className="text"
+                className="text-content"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
               </p>
             </div>
             <br />
@@ -3248,7 +4020,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                 <span
                   className="glow-text"
                 >
-                  5000
+                  0
                 </span>
               </div>
             </div>
@@ -3269,14 +4041,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                   className="header"
                 >
                   <h1
-                    className="col-md-11"
+                    className="col-md-11 card-title"
                   >
                     Lorem ipsum dolor sit amet,
                   </h1>
                   <img
                     alt="bookmark-logo"
                     className="bookmark-logo col-md-1"
-                    src="/src/images/livello42.svg"
+                    src="/src/images/bookmark.svg"
                   />
                 </div>
               </div>,
@@ -3284,11 +4056,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                 className="col-md-12"
               >
                 <p
-                  className="text"
+                  className="text-content"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
                 </p>
               </div>,
               <br />,
@@ -3325,7 +4097,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                   <span
                     className="glow-text"
                   >
-                    5000
+                    0
                   </span>
                 </div>
               </div>,
@@ -3343,14 +4115,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                   className="header"
                 >
                   <h1
-                    className="col-md-11"
+                    className="col-md-11 card-title"
                   >
                     Lorem ipsum dolor sit amet,
                   </h1>
                   <img
                     alt="bookmark-logo"
                     className="bookmark-logo col-md-1"
-                    src="/src/images/livello42.svg"
+                    src="/src/images/bookmark.svg"
                   />
                 </div>,
                 "className": "col-md-12",
@@ -3363,14 +4135,14 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                 "props": Object {
                   "children": Array [
                     <h1
-                      className="col-md-11"
+                      className="col-md-11 card-title"
                     >
                       Lorem ipsum dolor sit amet,
                     </h1>,
                     <img
                       alt="bookmark-logo"
                       className="bookmark-logo col-md-1"
-                      src="/src/images/livello42.svg"
+                      src="/src/images/bookmark.svg"
                     />,
                   ],
                   "className": "header",
@@ -3383,7 +4155,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                     "nodeType": "host",
                     "props": Object {
                       "children": "Lorem ipsum dolor sit amet,",
-                      "className": "col-md-11",
+                      "className": "col-md-11 card-title",
                     },
                     "ref": null,
                     "rendered": "Lorem ipsum dolor sit amet,",
@@ -3396,7 +4168,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                     "props": Object {
                       "alt": "bookmark-logo",
                       "className": "bookmark-logo col-md-1",
-                      "src": "/src/images/livello42.svg",
+                      "src": "/src/images/bookmark.svg",
                     },
                     "ref": null,
                     "rendered": null,
@@ -3413,11 +4185,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
               "nodeType": "host",
               "props": Object {
                 "children": <p
-                  className="text"
+                  className="text-content"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.
                 </p>,
                 "className": "col-md-12",
               },
@@ -3429,13 +4201,13 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis
                 "props": Object {
                   "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis",
-                  "className": "text",
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
+                  "className": "text-content",
                 },
                 "ref": null,
                 "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Est delectus sit nemo aperiam esse. Harum perspiciatis asperiores atque aliquid,
-error quo sapiente numquam aspernaturreiciendis saepe corporis",
+error quo sapiente numquam aspernaturreiciendis saepe corporis fugit. Cumque, facilis.",
                 "type": "p",
               },
               "type": "div",
@@ -3484,7 +4256,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis",
                   <span
                     className="glow-text"
                   >
-                    5000
+                    0
                   </span>
                 </div>,
                 "className": "user-section ml-10 card-bottom",
@@ -3523,7 +4295,7 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis",
                     <span
                       className="glow-text"
                     >
-                      5000
+                      0
                     </span>,
                   ],
                   "className": "col-md-12",
@@ -3604,11 +4376,11 @@ error quo sapiente numquam aspernaturreiciendis saepe corporis",
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "5000",
+                      "children": "0",
                       "className": "glow-text",
                     },
                     "ref": null,
-                    "rendered": "5000",
+                    "rendered": "0",
                     "type": "span",
                   },
                 ],
