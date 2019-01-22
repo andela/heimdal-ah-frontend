@@ -110,3 +110,12 @@ const HomePage = () => (
 );
 
 export default HomePage;
+
+// const HomePage = (props) => {
+//   console.log(props.match)
+//   return (
+//     <div>dfkjnfgsknsdsdfsfsf</div>
+//   );
+// };
+
+// export default HomePage;
