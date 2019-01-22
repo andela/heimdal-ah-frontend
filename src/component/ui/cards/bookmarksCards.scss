@@ -1,66 +1,67 @@
 
 .bookmarks-cards {
-    font-family: 'Ovo', serif;
-    box-sizing: border-box;
-    background-color: #F9F9F9;
-    width: 700px;
-    height: 280px;
-    border: 1px solid rgba(77, 56, 56, 0.1);
-    padding-left: 12px;
-    position: relative;
+  font-family: 'Ovo', serif;
+  box-sizing: border-box;
+  background-color: #F9F9F9;
+  width: 700px;
+  height: 280px;
+  border: 1px solid rgba(77, 56, 56, 0.1);
+  padding-left: 12px;
+  position: relative;
 
   .text {
-      font-family: 'Ovo', serif;
-      font-size: 20px;
-      display: block; /* or inline-block */
-      text-overflow: ellipsis;
-      word-wrap: break-word;
-      overflow: hidden;
-      max-height: 3.7em;
-    };
+    font-family: 'Ovo', serif;
+    font-size: 20px;
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.7em;
+  };
 
-    .header{  
-      h1{
-        font-family: 'Cardo', serif;
-        font-size: 30px;
-        font-weight: bolder;
-        display: inline-block;
-        padding-top: 10px;
-        padding-left: 10px;
-        margin-left: -10px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 30ch;
-      };
-      .bookmark-logo {
-        width: 55px;
-        height: 59px;
-        padding-left: 0px;
-        margin-top: -50px;
-        margin-left: 100px;
-      }; 
-    };
-    .username {
+  .header{  
+    h1{
       font-family: 'Cardo', serif;
       font-size: 30px;
-      color: #606e86;
+      font-weight: bolder;
+      display: inline-block;
+      padding-top: 10px;
+      padding-left: 10px;
+      margin-left: -10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 30ch;
     };
-    .user-section{
-      .glow-text {
-        color: #606e86;
-        font-family: 'Ovo', serif; 
-      };
-      .user-image {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-        font-weight: 200;
-      }
-    };   
+    .bookmark-logo {
+      width: 55px;
+      height: 59px;
+      padding-left: 0px;
+      margin-top: -50px;
+      margin-left: 100px;
+    }; 
+  };
+
+  .username {
+    font-family: 'Cardo', serif;
+    font-size: 30px;
+    color: #606e86;
+  };
+
+  .user-section{
+    .glow-text {
+      color: #606e86;
+      font-family: 'Ovo', serif; 
+    };
+    .user-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      font-weight: 200;
+    }
+  };   
 };
-// article
 
 .fs-13 { 
   font-size: 13px;
