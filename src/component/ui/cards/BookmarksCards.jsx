@@ -4,6 +4,10 @@ import './bookmarksCards.scss';
 import Glow from '../buttons/glow/Glow.jsx';
 
 
+/** @description booksmarks Cards for Article
+   * @return {object} props
+   * @public
+   */
 const BookmarksCards = props => (
   <Fragment>
     <div className='col-md-12'>

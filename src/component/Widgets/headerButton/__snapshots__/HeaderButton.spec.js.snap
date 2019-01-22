@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the Header Button should create a snapshot of the logo 1`] = `
+<div
+  className="header-button-group"
+>
+  <Button
+    Class=""
+    className="header-button"
+    label="Signup"
+    onClick={[Function]}
+    type="signup"
+  />
+  <Button
+    Class=""
+    label="Login"
+    onClick={[Function]}
+    type="login"
+  />
+</div>
+`;

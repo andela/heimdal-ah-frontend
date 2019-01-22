@@ -5,6 +5,10 @@ import './articleCardHorizontal.scss';
 import Rating from '../Rating/Rating';
 import { textTrimmer } from '../../../../helper/cardsHelper';
 
+/** @description horizontal Cards for Article
+   * @return {object} props
+   * @public
+   */
 const ArticleCardHorizontal = (props) => {
   // const articleText = textTrimmer(props.article, 100);
   const userName = textTrimmer(props.username, 12);

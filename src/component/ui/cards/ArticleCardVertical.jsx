@@ -4,7 +4,10 @@ import './articleCardVertical.scss';
 import Glow from '../buttons/glow/Glow.jsx';
 import Rating from '../Rating/Rating';
 
-
+/** @description vertical Cards for Article
+   * @return {object} props
+   * @public
+   */
 const ArticleCardVertical = props => (
   <Fragment>
     <div className="cardbox shadow-sm bg-white">
