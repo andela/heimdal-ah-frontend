@@ -2,15 +2,17 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import LoginPage from '../component/Pages/LoginPage.jsx';
-import HomePage from '../component/Pages/HomePage';
+import NotFound from '../component/Pages/NotFound.jsx';
+import MainLayout from '../component/Layout/MainLayout/MainLayout';
+
 
 const Routes = () => (
-  <div>
+  <MainLayout>
     <Switch>
-      <Route exact path='/' component={HomePage} />
+      <Route exact path='/' component={LoginPage} />
       <Route exact path='/login' component={LoginPage} />
+      <Route component={NotFound} />
     </Switch>
-  </div>
+  </MainLayout>
 );
-
 export default Routes;

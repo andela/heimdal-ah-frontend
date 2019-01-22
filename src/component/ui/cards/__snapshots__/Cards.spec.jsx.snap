@@ -4,13 +4,13 @@ exports[`<ArticleCardHorizontal /> should render the Article card coreectly 1`] 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ArticleCardHorizontal
-    article=""
-    articleImage=""
-    articleTitle=""
-    commentCount=""
-    updatedTime=""
-    userImage=""
-    username=""
+    article="Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur"
+    articleImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+    articleTitle="Lorem ipsum dolor"
+    commentCount=" 10"
+    updatedTime="5 mins"
+    userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+    username="Henry Henry Henry Henry"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -31,12 +31,12 @@ ShallowWrapper {
         <h5
           className="card-title"
         >
-          
+          Lorem ipsum dolor
         </h5>
         <img
           alt="Card"
           className="card-img-top mb-4"
-          src=""
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
         />
         <div
           className="card-body"
@@ -47,7 +47,7 @@ ShallowWrapper {
             <p
               className="card-text"
             >
-              
+              Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
             </p>
           </div>
           <div
@@ -60,14 +60,14 @@ ShallowWrapper {
                 <img
                   alt="user"
                   className="user-image"
-                  src=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   width="30"
                 />
               </span>
               <span
                 className="col-8 col-md-7 user-name"
               >
-                
+                Henry Henry...
               </span>
             </div>
             <div
@@ -76,7 +76,7 @@ ShallowWrapper {
               <i
                 className="far fa-clock updated-time float-right"
               >
-                
+                5 mins
               </i>
             </div>
           </div>
@@ -104,7 +104,7 @@ ShallowWrapper {
               <i
                 className="far fa-comment-alt comment"
               >
-                
+                 10
               </i>
             </div>
           </div>
@@ -122,12 +122,12 @@ ShallowWrapper {
           <h5
             className="card-title"
           >
-            
+            Lorem ipsum dolor
           </h5>,
           <img
             alt="Card"
             className="card-img-top mb-4"
-            src=""
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
           />,
           <div
             className="card-body"
@@ -138,7 +138,7 @@ ShallowWrapper {
               <p
                 className="card-text"
               >
-                
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
               </p>
             </div>
             <div
@@ -151,14 +151,14 @@ ShallowWrapper {
                   <img
                     alt="user"
                     className="user-image"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     width="30"
                   />
                 </span>
                 <span
                   className="col-8 col-md-7 user-name"
                 >
-                  
+                  Henry Henry...
                 </span>
               </div>
               <div
@@ -167,7 +167,7 @@ ShallowWrapper {
                 <i
                   className="far fa-clock updated-time float-right"
                 >
-                  
+                  5 mins
                 </i>
               </div>
             </div>
@@ -195,7 +195,7 @@ ShallowWrapper {
                 <i
                   className="far fa-comment-alt comment"
                 >
-                  
+                   10
                 </i>
               </div>
             </div>
@@ -211,11 +211,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "",
+            "children": "Lorem ipsum dolor",
             "className": "card-title",
           },
           "ref": null,
-          "rendered": "",
+          "rendered": "Lorem ipsum dolor",
           "type": "h5",
         },
         Object {
@@ -225,7 +225,7 @@ ShallowWrapper {
           "props": Object {
             "alt": "Card",
             "className": "card-img-top mb-4",
-            "src": "",
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
           },
           "ref": null,
           "rendered": null,
@@ -243,7 +243,7 @@ ShallowWrapper {
                 <p
                   className="card-text"
                 >
-                  
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                 </p>
               </div>,
               <div
@@ -256,14 +256,14 @@ ShallowWrapper {
                     <img
                       alt="user"
                       className="user-image"
-                      src=""
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                       width="30"
                     />
                   </span>
                   <span
                     className="col-8 col-md-7 user-name"
                   >
-                    
+                    Henry Henry...
                   </span>
                 </div>
                 <div
@@ -272,7 +272,7 @@ ShallowWrapper {
                   <i
                     className="far fa-clock updated-time float-right"
                   >
-                    
+                    5 mins
                   </i>
                 </div>
               </div>,
@@ -300,7 +300,7 @@ ShallowWrapper {
                   <i
                     className="far fa-comment-alt comment"
                   >
-                    
+                     10
                   </i>
                 </div>
               </div>,
@@ -317,7 +317,7 @@ ShallowWrapper {
                 "children": <p
                   className="card-text"
                 >
-                  
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                 </p>,
                 "className": "flex-text-content mb-3",
               },
@@ -327,11 +327,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
                   "className": "card-text",
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
                 "type": "p",
               },
               "type": "div",
@@ -349,14 +349,14 @@ ShallowWrapper {
                       <img
                         alt="user"
                         className="user-image"
-                        src=""
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                         width="30"
                       />
                     </span>
                     <span
                       className="col-8 col-md-7 user-name"
                     >
-                      
+                      Henry Henry...
                     </span>
                   </div>,
                   <div
@@ -365,7 +365,7 @@ ShallowWrapper {
                     <i
                       className="far fa-clock updated-time float-right"
                     >
-                      
+                      5 mins
                     </i>
                   </div>,
                 ],
@@ -383,14 +383,14 @@ ShallowWrapper {
                         <img
                           alt="user"
                           className="user-image"
-                          src=""
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                           width="30"
                         />
                       </span>,
                       <span
                         className="col-8 col-md-7 user-name"
                       >
-                        
+                        Henry Henry...
                       </span>,
                     ],
                     "className": "col-md-8 mb-3",
@@ -405,7 +405,7 @@ ShallowWrapper {
                         "children": <img
                           alt="user"
                           className="user-image"
-                          src=""
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                           width="30"
                         />,
                       },
@@ -417,7 +417,7 @@ ShallowWrapper {
                         "props": Object {
                           "alt": "user",
                           "className": "user-image",
-                          "src": "",
+                          "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
                           "width": "30",
                         },
                         "ref": null,
@@ -431,11 +431,11 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": "",
+                        "children": "Henry Henry...",
                         "className": "col-8 col-md-7 user-name",
                       },
                       "ref": null,
-                      "rendered": "",
+                      "rendered": "Henry Henry...",
                       "type": "span",
                     },
                   ],
@@ -449,7 +449,7 @@ ShallowWrapper {
                     "children": <i
                       className="far fa-clock updated-time float-right"
                     >
-                      
+                      5 mins
                     </i>,
                     "className": "col-md-4 mb-3 mt-2",
                   },
@@ -459,11 +459,11 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "",
+                      "children": "5 mins",
                       "className": "far fa-clock updated-time float-right",
                     },
                     "ref": null,
-                    "rendered": "",
+                    "rendered": "5 mins",
                     "type": "i",
                   },
                   "type": "div",
@@ -498,7 +498,7 @@ ShallowWrapper {
                     <i
                       className="far fa-comment-alt comment"
                     >
-                      
+                       10
                     </i>
                   </div>,
                 ],
@@ -564,7 +564,7 @@ ShallowWrapper {
                     "children": <i
                       className="far fa-comment-alt comment"
                     >
-                      
+                       10
                     </i>,
                     "className": "col-md-3",
                   },
@@ -574,11 +574,11 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "",
+                      "children": " 10",
                       "className": "far fa-comment-alt comment",
                     },
                     "ref": null,
-                    "rendered": "",
+                    "rendered": " 10",
                     "type": "i",
                   },
                   "type": "div",
@@ -615,12 +615,12 @@ ShallowWrapper {
           <h5
             className="card-title"
           >
-            
+            Lorem ipsum dolor
           </h5>
           <img
             alt="Card"
             className="card-img-top mb-4"
-            src=""
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
           />
           <div
             className="card-body"
@@ -631,7 +631,7 @@ ShallowWrapper {
               <p
                 className="card-text"
               >
-                
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
               </p>
             </div>
             <div
@@ -644,14 +644,14 @@ ShallowWrapper {
                   <img
                     alt="user"
                     className="user-image"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     width="30"
                   />
                 </span>
                 <span
                   className="col-8 col-md-7 user-name"
                 >
-                  
+                  Henry Henry...
                 </span>
               </div>
               <div
@@ -660,7 +660,7 @@ ShallowWrapper {
                 <i
                   className="far fa-clock updated-time float-right"
                 >
-                  
+                  5 mins
                 </i>
               </div>
             </div>
@@ -688,7 +688,7 @@ ShallowWrapper {
                 <i
                   className="far fa-comment-alt comment"
                 >
-                  
+                   10
                 </i>
               </div>
             </div>
@@ -706,12 +706,12 @@ ShallowWrapper {
             <h5
               className="card-title"
             >
-              
+              Lorem ipsum dolor
             </h5>,
             <img
               alt="Card"
               className="card-img-top mb-4"
-              src=""
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
             />,
             <div
               className="card-body"
@@ -722,7 +722,7 @@ ShallowWrapper {
                 <p
                   className="card-text"
                 >
-                  
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                 </p>
               </div>
               <div
@@ -735,14 +735,14 @@ ShallowWrapper {
                     <img
                       alt="user"
                       className="user-image"
-                      src=""
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                       width="30"
                     />
                   </span>
                   <span
                     className="col-8 col-md-7 user-name"
                   >
-                    
+                    Henry Henry...
                   </span>
                 </div>
                 <div
@@ -751,7 +751,7 @@ ShallowWrapper {
                   <i
                     className="far fa-clock updated-time float-right"
                   >
-                    
+                    5 mins
                   </i>
                 </div>
               </div>
@@ -779,7 +779,7 @@ ShallowWrapper {
                   <i
                     className="far fa-comment-alt comment"
                   >
-                    
+                     10
                   </i>
                 </div>
               </div>
@@ -795,11 +795,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "",
+              "children": "Lorem ipsum dolor",
               "className": "card-title",
             },
             "ref": null,
-            "rendered": "",
+            "rendered": "Lorem ipsum dolor",
             "type": "h5",
           },
           Object {
@@ -809,7 +809,7 @@ ShallowWrapper {
             "props": Object {
               "alt": "Card",
               "className": "card-img-top mb-4",
-              "src": "",
+              "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
             },
             "ref": null,
             "rendered": null,
@@ -827,7 +827,7 @@ ShallowWrapper {
                   <p
                     className="card-text"
                   >
-                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                   </p>
                 </div>,
                 <div
@@ -840,14 +840,14 @@ ShallowWrapper {
                       <img
                         alt="user"
                         className="user-image"
-                        src=""
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                         width="30"
                       />
                     </span>
                     <span
                       className="col-8 col-md-7 user-name"
                     >
-                      
+                      Henry Henry...
                     </span>
                   </div>
                   <div
@@ -856,7 +856,7 @@ ShallowWrapper {
                     <i
                       className="far fa-clock updated-time float-right"
                     >
-                      
+                      5 mins
                     </i>
                   </div>
                 </div>,
@@ -884,7 +884,7 @@ ShallowWrapper {
                     <i
                       className="far fa-comment-alt comment"
                     >
-                      
+                       10
                     </i>
                   </div>
                 </div>,
@@ -901,7 +901,7 @@ ShallowWrapper {
                   "children": <p
                     className="card-text"
                   >
-                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                   </p>,
                   "className": "flex-text-content mb-3",
                 },
@@ -911,11 +911,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
                     "className": "card-text",
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
                   "type": "p",
                 },
                 "type": "div",
@@ -933,14 +933,14 @@ ShallowWrapper {
                         <img
                           alt="user"
                           className="user-image"
-                          src=""
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                           width="30"
                         />
                       </span>
                       <span
                         className="col-8 col-md-7 user-name"
                       >
-                        
+                        Henry Henry...
                       </span>
                     </div>,
                     <div
@@ -949,7 +949,7 @@ ShallowWrapper {
                       <i
                         className="far fa-clock updated-time float-right"
                       >
-                        
+                        5 mins
                       </i>
                     </div>,
                   ],
@@ -967,14 +967,14 @@ ShallowWrapper {
                           <img
                             alt="user"
                             className="user-image"
-                            src=""
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                             width="30"
                           />
                         </span>,
                         <span
                           className="col-8 col-md-7 user-name"
                         >
-                          
+                          Henry Henry...
                         </span>,
                       ],
                       "className": "col-md-8 mb-3",
@@ -989,7 +989,7 @@ ShallowWrapper {
                           "children": <img
                             alt="user"
                             className="user-image"
-                            src=""
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                             width="30"
                           />,
                         },
@@ -1001,7 +1001,7 @@ ShallowWrapper {
                           "props": Object {
                             "alt": "user",
                             "className": "user-image",
-                            "src": "",
+                            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
                             "width": "30",
                           },
                           "ref": null,
@@ -1015,11 +1015,11 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": "",
+                          "children": "Henry Henry...",
                           "className": "col-8 col-md-7 user-name",
                         },
                         "ref": null,
-                        "rendered": "",
+                        "rendered": "Henry Henry...",
                         "type": "span",
                       },
                     ],
@@ -1033,7 +1033,7 @@ ShallowWrapper {
                       "children": <i
                         className="far fa-clock updated-time float-right"
                       >
-                        
+                        5 mins
                       </i>,
                       "className": "col-md-4 mb-3 mt-2",
                     },
@@ -1043,11 +1043,11 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": "",
+                        "children": "5 mins",
                         "className": "far fa-clock updated-time float-right",
                       },
                       "ref": null,
-                      "rendered": "",
+                      "rendered": "5 mins",
                       "type": "i",
                     },
                     "type": "div",
@@ -1082,7 +1082,7 @@ ShallowWrapper {
                       <i
                         className="far fa-comment-alt comment"
                       >
-                        
+                         10
                       </i>
                     </div>,
                   ],
@@ -1148,7 +1148,7 @@ ShallowWrapper {
                       "children": <i
                         className="far fa-comment-alt comment"
                       >
-                        
+                         10
                       </i>,
                       "className": "col-md-3",
                     },
@@ -1158,11 +1158,11 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": "",
+                        "children": " 10",
                         "className": "far fa-comment-alt comment",
                       },
                       "ref": null,
-                      "rendered": "",
+                      "rendered": " 10",
                       "type": "i",
                     },
                     "type": "div",
@@ -1212,13 +1212,13 @@ exports[`<ArticleCardVertical /> should render the Article card coreectly 1`] = 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ArticleCardVertical
-    article=""
-    articleImage=""
-    articleTitle=""
-    commentCount=""
-    updatedTime=""
-    userImage=""
-    username=""
+    article="Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur"
+    articleImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+    articleTitle="Lorem ipsum dolor"
+    commentCount=" 10"
+    updatedTime="5 mins"
+    userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+    username="Henry Henry Henry Henry"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -1251,7 +1251,7 @@ ShallowWrapper {
                 <img
                   alt=""
                   className="img-fluid"
-                  src=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                 />
               </div>
             </div>
@@ -1266,12 +1266,12 @@ ShallowWrapper {
                 className="col-md-12 mb-0 pb-0"
               >
                 <h5>
-                  
+                  Lorem ipsum dolor
                 </h5>
                 <div
                   className="card-text"
                 >
-                  
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                 </div>
               </div>
               <div
@@ -1288,12 +1288,12 @@ ShallowWrapper {
                         <img
                           alt="User"
                           className="img-fluid rounded-circle"
-                          src=""
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                         />
                         <span
                           className="ml-1 user-name-text"
                         >
-                          
+                          Henry Henry Henry Henry
                         </span>
                       </a>
                     </li>
@@ -1308,7 +1308,7 @@ ShallowWrapper {
                         <i
                           className="far fa-comment-alt comment"
                         >
-                          
+                           10
                         </i>
                       </a>
                     </li>
@@ -1332,7 +1332,7 @@ ShallowWrapper {
                     className="time-text"
                   >
                     <i>
-                      
+                      5 mins
                     </i>
                   </span>
                 </div>
@@ -1363,7 +1363,7 @@ ShallowWrapper {
                 <img
                   alt=""
                   className="img-fluid"
-                  src=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                 />
               </div>
             </div>
@@ -1378,12 +1378,12 @@ ShallowWrapper {
                 className="col-md-12 mb-0 pb-0"
               >
                 <h5>
-                  
+                  Lorem ipsum dolor
                 </h5>
                 <div
                   className="card-text"
                 >
-                  
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                 </div>
               </div>
               <div
@@ -1400,12 +1400,12 @@ ShallowWrapper {
                         <img
                           alt="User"
                           className="img-fluid rounded-circle"
-                          src=""
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                         />
                         <span
                           className="ml-1 user-name-text"
                         >
-                          
+                          Henry Henry Henry Henry
                         </span>
                       </a>
                     </li>
@@ -1420,7 +1420,7 @@ ShallowWrapper {
                         <i
                           className="far fa-comment-alt comment"
                         >
-                          
+                           10
                         </i>
                       </a>
                     </li>
@@ -1444,7 +1444,7 @@ ShallowWrapper {
                     className="time-text"
                   >
                     <i>
-                      
+                      5 mins
                     </i>
                   </span>
                 </div>
@@ -1473,7 +1473,7 @@ ShallowWrapper {
                   <img
                     alt=""
                     className="img-fluid"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />
                 </div>
               </div>
@@ -1488,12 +1488,12 @@ ShallowWrapper {
                   className="col-md-12 mb-0 pb-0"
                 >
                   <h5>
-                    
+                    Lorem ipsum dolor
                   </h5>
                   <div
                     className="card-text"
                   >
-                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                   </div>
                 </div>
                 <div
@@ -1510,12 +1510,12 @@ ShallowWrapper {
                           <img
                             alt="User"
                             className="img-fluid rounded-circle"
-                            src=""
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                           />
                           <span
                             className="ml-1 user-name-text"
                           >
-                            
+                            Henry Henry Henry Henry
                           </span>
                         </a>
                       </li>
@@ -1530,7 +1530,7 @@ ShallowWrapper {
                           <i
                             className="far fa-comment-alt comment"
                           >
-                            
+                             10
                           </i>
                         </a>
                       </li>
@@ -1554,7 +1554,7 @@ ShallowWrapper {
                       className="time-text"
                     >
                       <i>
-                        
+                        5 mins
                       </i>
                     </span>
                   </div>
@@ -1580,7 +1580,7 @@ ShallowWrapper {
                   <img
                     alt=""
                     className="img-fluid"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />
                 </div>
               </div>,
@@ -1598,7 +1598,7 @@ ShallowWrapper {
                   <img
                     alt=""
                     className="img-fluid"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />
                 </div>,
                 "className": "cardbox-heading",
@@ -1612,7 +1612,7 @@ ShallowWrapper {
                   "children": <img
                     alt=""
                     className="img-fluid"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />,
                   "className": "cardbox-item",
                 },
@@ -1624,7 +1624,7 @@ ShallowWrapper {
                   "props": Object {
                     "alt": "",
                     "className": "img-fluid",
-                    "src": "",
+                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1648,12 +1648,12 @@ ShallowWrapper {
                   className="col-md-12 mb-0 pb-0"
                 >
                   <h5>
-                    
+                    Lorem ipsum dolor
                   </h5>
                   <div
                     className="card-text"
                   >
-                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                   </div>
                 </div>
                 <div
@@ -1670,12 +1670,12 @@ ShallowWrapper {
                           <img
                             alt="User"
                             className="img-fluid rounded-circle"
-                            src=""
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                           />
                           <span
                             className="ml-1 user-name-text"
                           >
-                            
+                            Henry Henry Henry Henry
                           </span>
                         </a>
                       </li>
@@ -1690,7 +1690,7 @@ ShallowWrapper {
                           <i
                             className="far fa-comment-alt comment"
                           >
-                            
+                             10
                           </i>
                         </a>
                       </li>
@@ -1714,7 +1714,7 @@ ShallowWrapper {
                       className="time-text"
                     >
                       <i>
-                        
+                        5 mins
                       </i>
                     </span>
                   </div>
@@ -1733,12 +1733,12 @@ ShallowWrapper {
                     className="col-md-12 mb-0 pb-0"
                   >
                     <h5>
-                      
+                      Lorem ipsum dolor
                     </h5>
                     <div
                       className="card-text"
                     >
-                      
+                      Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                     </div>
                   </div>,
                   <div
@@ -1755,12 +1755,12 @@ ShallowWrapper {
                             <img
                               alt="User"
                               className="img-fluid rounded-circle"
-                              src=""
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                             />
                             <span
                               className="ml-1 user-name-text"
                             >
-                              
+                              Henry Henry Henry Henry
                             </span>
                           </a>
                         </li>
@@ -1775,7 +1775,7 @@ ShallowWrapper {
                             <i
                               className="far fa-comment-alt comment"
                             >
-                              
+                               10
                             </i>
                           </a>
                         </li>
@@ -1799,7 +1799,7 @@ ShallowWrapper {
                         className="time-text"
                       >
                         <i>
-                          
+                          5 mins
                         </i>
                       </span>
                     </div>
@@ -1816,12 +1816,12 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       <h5>
-                        
+                        Lorem ipsum dolor
                       </h5>,
                       <div
                         className="card-text"
                       >
-                        
+                        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                       </div>,
                     ],
                     "className": "col-md-12 mb-0 pb-0",
@@ -1833,10 +1833,10 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": "",
+                        "children": "Lorem ipsum dolor",
                       },
                       "ref": null,
-                      "rendered": "",
+                      "rendered": "Lorem ipsum dolor",
                       "type": "h5",
                     },
                     Object {
@@ -1844,11 +1844,11 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": "",
+                        "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
                         "className": "card-text",
                       },
                       "ref": null,
-                      "rendered": "",
+                      "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
                       "type": "div",
                     },
                   ],
@@ -1870,12 +1870,12 @@ ShallowWrapper {
                             <img
                               alt="User"
                               className="img-fluid rounded-circle"
-                              src=""
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                             />
                             <span
                               className="ml-1 user-name-text"
                             >
-                              
+                              Henry Henry Henry Henry
                             </span>
                           </a>
                         </li>
@@ -1890,7 +1890,7 @@ ShallowWrapper {
                             <i
                               className="far fa-comment-alt comment"
                             >
-                              
+                               10
                             </i>
                           </a>
                         </li>
@@ -1914,7 +1914,7 @@ ShallowWrapper {
                         className="time-text"
                       >
                         <i>
-                          
+                          5 mins
                         </i>
                       </span>
                     </div>,
@@ -1935,12 +1935,12 @@ ShallowWrapper {
                               <img
                                 alt="User"
                                 className="img-fluid rounded-circle"
-                                src=""
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                               />
                               <span
                                 className="ml-1 user-name-text"
                               >
-                                
+                                Henry Henry Henry Henry
                               </span>
                             </a>
                           </li>
@@ -1955,7 +1955,7 @@ ShallowWrapper {
                               <i
                                 className="far fa-comment-alt comment"
                               >
-                                
+                                 10
                               </i>
                             </a>
                           </li>
@@ -1979,7 +1979,7 @@ ShallowWrapper {
                           className="time-text"
                         >
                           <i>
-                            
+                            5 mins
                           </i>
                         </span>,
                       ],
@@ -1999,12 +1999,12 @@ ShallowWrapper {
                               <img
                                 alt="User"
                                 className="img-fluid rounded-circle"
-                                src=""
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                               />
                               <span
                                 className="ml-1 user-name-text"
                               >
-                                
+                                Henry Henry Henry Henry
                               </span>
                             </a>
                           </li>,
@@ -2021,12 +2021,12 @@ ShallowWrapper {
                               <img
                                 alt="User"
                                 className="img-fluid rounded-circle"
-                                src=""
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                               />
                               <span
                                 className="ml-1 user-name-text"
                               >
-                                
+                                Henry Henry Henry Henry
                               </span>
                             </a>,
                           },
@@ -2040,12 +2040,12 @@ ShallowWrapper {
                                 <img
                                   alt="User"
                                   className="img-fluid rounded-circle"
-                                  src=""
+                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                                 />,
                                 <span
                                   className="ml-1 user-name-text"
                                 >
-                                  
+                                  Henry Henry Henry Henry
                                 </span>,
                               ],
                               "href": "/",
@@ -2059,7 +2059,7 @@ ShallowWrapper {
                                 "props": Object {
                                   "alt": "User",
                                   "className": "img-fluid rounded-circle",
-                                  "src": "",
+                                  "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
                                 },
                                 "ref": null,
                                 "rendered": null,
@@ -2070,11 +2070,11 @@ ShallowWrapper {
                                 "key": undefined,
                                 "nodeType": "host",
                                 "props": Object {
-                                  "children": "",
+                                  "children": "Henry Henry Henry Henry",
                                   "className": "ml-1 user-name-text",
                                 },
                                 "ref": null,
-                                "rendered": "",
+                                "rendered": "Henry Henry Henry Henry",
                                 "type": "span",
                               },
                             ],
@@ -2096,7 +2096,7 @@ ShallowWrapper {
                               <i
                                 className="far fa-comment-alt comment"
                               >
-                                
+                                 10
                               </i>
                             </a>
                           </li>,
@@ -2114,7 +2114,7 @@ ShallowWrapper {
                               <i
                                 className="far fa-comment-alt comment"
                               >
-                                
+                                 10
                               </i>
                             </a>,
                           },
@@ -2127,7 +2127,7 @@ ShallowWrapper {
                               "children": <i
                                 className="far fa-comment-alt comment"
                               >
-                                
+                                 10
                               </i>,
                               "href": "/",
                             },
@@ -2137,11 +2137,11 @@ ShallowWrapper {
                               "key": undefined,
                               "nodeType": "host",
                               "props": Object {
-                                "children": "",
+                                "children": " 10",
                                 "className": "far fa-comment-alt comment",
                               },
                               "ref": null,
-                              "rendered": "",
+                              "rendered": " 10",
                               "type": "i",
                             },
                             "type": "a",
@@ -2220,7 +2220,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": <i>
-                            
+                            5 mins
                           </i>,
                           "className": "time-text",
                         },
@@ -2230,10 +2230,10 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": "",
+                            "children": "5 mins",
                           },
                           "ref": null,
-                          "rendered": "",
+                          "rendered": "5 mins",
                           "type": "i",
                         },
                         "type": "span",
@@ -2279,7 +2279,7 @@ ShallowWrapper {
                   <img
                     alt=""
                     className="img-fluid"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />
                 </div>
               </div>
@@ -2294,12 +2294,12 @@ ShallowWrapper {
                   className="col-md-12 mb-0 pb-0"
                 >
                   <h5>
-                    
+                    Lorem ipsum dolor
                   </h5>
                   <div
                     className="card-text"
                   >
-                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                   </div>
                 </div>
                 <div
@@ -2316,12 +2316,12 @@ ShallowWrapper {
                           <img
                             alt="User"
                             className="img-fluid rounded-circle"
-                            src=""
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                           />
                           <span
                             className="ml-1 user-name-text"
                           >
-                            
+                            Henry Henry Henry Henry
                           </span>
                         </a>
                       </li>
@@ -2336,7 +2336,7 @@ ShallowWrapper {
                           <i
                             className="far fa-comment-alt comment"
                           >
-                            
+                             10
                           </i>
                         </a>
                       </li>
@@ -2360,7 +2360,7 @@ ShallowWrapper {
                       className="time-text"
                     >
                       <i>
-                        
+                        5 mins
                       </i>
                     </span>
                   </div>
@@ -2391,7 +2391,7 @@ ShallowWrapper {
                   <img
                     alt=""
                     className="img-fluid"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />
                 </div>
               </div>
@@ -2406,12 +2406,12 @@ ShallowWrapper {
                   className="col-md-12 mb-0 pb-0"
                 >
                   <h5>
-                    
+                    Lorem ipsum dolor
                   </h5>
                   <div
                     className="card-text"
                   >
-                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                   </div>
                 </div>
                 <div
@@ -2428,12 +2428,12 @@ ShallowWrapper {
                           <img
                             alt="User"
                             className="img-fluid rounded-circle"
-                            src=""
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                           />
                           <span
                             className="ml-1 user-name-text"
                           >
-                            
+                            Henry Henry Henry Henry
                           </span>
                         </a>
                       </li>
@@ -2448,7 +2448,7 @@ ShallowWrapper {
                           <i
                             className="far fa-comment-alt comment"
                           >
-                            
+                             10
                           </i>
                         </a>
                       </li>
@@ -2472,7 +2472,7 @@ ShallowWrapper {
                       className="time-text"
                     >
                       <i>
-                        
+                        5 mins
                       </i>
                     </span>
                   </div>
@@ -2501,7 +2501,7 @@ ShallowWrapper {
                     <img
                       alt=""
                       className="img-fluid"
-                      src=""
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     />
                   </div>
                 </div>
@@ -2516,12 +2516,12 @@ ShallowWrapper {
                     className="col-md-12 mb-0 pb-0"
                   >
                     <h5>
-                      
+                      Lorem ipsum dolor
                     </h5>
                     <div
                       className="card-text"
                     >
-                      
+                      Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                     </div>
                   </div>
                   <div
@@ -2538,12 +2538,12 @@ ShallowWrapper {
                             <img
                               alt="User"
                               className="img-fluid rounded-circle"
-                              src=""
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                             />
                             <span
                               className="ml-1 user-name-text"
                             >
-                              
+                              Henry Henry Henry Henry
                             </span>
                           </a>
                         </li>
@@ -2558,7 +2558,7 @@ ShallowWrapper {
                             <i
                               className="far fa-comment-alt comment"
                             >
-                              
+                               10
                             </i>
                           </a>
                         </li>
@@ -2582,7 +2582,7 @@ ShallowWrapper {
                         className="time-text"
                       >
                         <i>
-                          
+                          5 mins
                         </i>
                       </span>
                     </div>
@@ -2608,7 +2608,7 @@ ShallowWrapper {
                     <img
                       alt=""
                       className="img-fluid"
-                      src=""
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     />
                   </div>
                 </div>,
@@ -2626,7 +2626,7 @@ ShallowWrapper {
                     <img
                       alt=""
                       className="img-fluid"
-                      src=""
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     />
                   </div>,
                   "className": "cardbox-heading",
@@ -2640,7 +2640,7 @@ ShallowWrapper {
                     "children": <img
                       alt=""
                       className="img-fluid"
-                      src=""
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     />,
                     "className": "cardbox-item",
                   },
@@ -2652,7 +2652,7 @@ ShallowWrapper {
                     "props": Object {
                       "alt": "",
                       "className": "img-fluid",
-                      "src": "",
+                      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
                     },
                     "ref": null,
                     "rendered": null,
@@ -2676,12 +2676,12 @@ ShallowWrapper {
                     className="col-md-12 mb-0 pb-0"
                   >
                     <h5>
-                      
+                      Lorem ipsum dolor
                     </h5>
                     <div
                       className="card-text"
                     >
-                      
+                      Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                     </div>
                   </div>
                   <div
@@ -2698,12 +2698,12 @@ ShallowWrapper {
                             <img
                               alt="User"
                               className="img-fluid rounded-circle"
-                              src=""
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                             />
                             <span
                               className="ml-1 user-name-text"
                             >
-                              
+                              Henry Henry Henry Henry
                             </span>
                           </a>
                         </li>
@@ -2718,7 +2718,7 @@ ShallowWrapper {
                             <i
                               className="far fa-comment-alt comment"
                             >
-                              
+                               10
                             </i>
                           </a>
                         </li>
@@ -2742,7 +2742,7 @@ ShallowWrapper {
                         className="time-text"
                       >
                         <i>
-                          
+                          5 mins
                         </i>
                       </span>
                     </div>
@@ -2761,12 +2761,12 @@ ShallowWrapper {
                       className="col-md-12 mb-0 pb-0"
                     >
                       <h5>
-                        
+                        Lorem ipsum dolor
                       </h5>
                       <div
                         className="card-text"
                       >
-                        
+                        Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                       </div>
                     </div>,
                     <div
@@ -2783,12 +2783,12 @@ ShallowWrapper {
                               <img
                                 alt="User"
                                 className="img-fluid rounded-circle"
-                                src=""
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                               />
                               <span
                                 className="ml-1 user-name-text"
                               >
-                                
+                                Henry Henry Henry Henry
                               </span>
                             </a>
                           </li>
@@ -2803,7 +2803,7 @@ ShallowWrapper {
                               <i
                                 className="far fa-comment-alt comment"
                               >
-                                
+                                 10
                               </i>
                             </a>
                           </li>
@@ -2827,7 +2827,7 @@ ShallowWrapper {
                           className="time-text"
                         >
                           <i>
-                            
+                            5 mins
                           </i>
                         </span>
                       </div>
@@ -2844,12 +2844,12 @@ ShallowWrapper {
                     "props": Object {
                       "children": Array [
                         <h5>
-                          
+                          Lorem ipsum dolor
                         </h5>,
                         <div
                           className="card-text"
                         >
-                          
+                          Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                         </div>,
                       ],
                       "className": "col-md-12 mb-0 pb-0",
@@ -2861,10 +2861,10 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": "",
+                          "children": "Lorem ipsum dolor",
                         },
                         "ref": null,
-                        "rendered": "",
+                        "rendered": "Lorem ipsum dolor",
                         "type": "h5",
                       },
                       Object {
@@ -2872,11 +2872,11 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": "",
+                          "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
                           "className": "card-text",
                         },
                         "ref": null,
-                        "rendered": "",
+                        "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
                         "type": "div",
                       },
                     ],
@@ -2898,12 +2898,12 @@ ShallowWrapper {
                               <img
                                 alt="User"
                                 className="img-fluid rounded-circle"
-                                src=""
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                               />
                               <span
                                 className="ml-1 user-name-text"
                               >
-                                
+                                Henry Henry Henry Henry
                               </span>
                             </a>
                           </li>
@@ -2918,7 +2918,7 @@ ShallowWrapper {
                               <i
                                 className="far fa-comment-alt comment"
                               >
-                                
+                                 10
                               </i>
                             </a>
                           </li>
@@ -2942,7 +2942,7 @@ ShallowWrapper {
                           className="time-text"
                         >
                           <i>
-                            
+                            5 mins
                           </i>
                         </span>
                       </div>,
@@ -2963,12 +2963,12 @@ ShallowWrapper {
                                 <img
                                   alt="User"
                                   className="img-fluid rounded-circle"
-                                  src=""
+                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                                 />
                                 <span
                                   className="ml-1 user-name-text"
                                 >
-                                  
+                                  Henry Henry Henry Henry
                                 </span>
                               </a>
                             </li>
@@ -2983,7 +2983,7 @@ ShallowWrapper {
                                 <i
                                   className="far fa-comment-alt comment"
                                 >
-                                  
+                                   10
                                 </i>
                               </a>
                             </li>
@@ -3007,7 +3007,7 @@ ShallowWrapper {
                             className="time-text"
                           >
                             <i>
-                              
+                              5 mins
                             </i>
                           </span>,
                         ],
@@ -3027,12 +3027,12 @@ ShallowWrapper {
                                 <img
                                   alt="User"
                                   className="img-fluid rounded-circle"
-                                  src=""
+                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                                 />
                                 <span
                                   className="ml-1 user-name-text"
                                 >
-                                  
+                                  Henry Henry Henry Henry
                                 </span>
                               </a>
                             </li>,
@@ -3049,12 +3049,12 @@ ShallowWrapper {
                                 <img
                                   alt="User"
                                   className="img-fluid rounded-circle"
-                                  src=""
+                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                                 />
                                 <span
                                   className="ml-1 user-name-text"
                                 >
-                                  
+                                  Henry Henry Henry Henry
                                 </span>
                               </a>,
                             },
@@ -3068,12 +3068,12 @@ ShallowWrapper {
                                   <img
                                     alt="User"
                                     className="img-fluid rounded-circle"
-                                    src=""
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                                   />,
                                   <span
                                     className="ml-1 user-name-text"
                                   >
-                                    
+                                    Henry Henry Henry Henry
                                   </span>,
                                 ],
                                 "href": "/",
@@ -3087,7 +3087,7 @@ ShallowWrapper {
                                   "props": Object {
                                     "alt": "User",
                                     "className": "img-fluid rounded-circle",
-                                    "src": "",
+                                    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
                                   },
                                   "ref": null,
                                   "rendered": null,
@@ -3098,11 +3098,11 @@ ShallowWrapper {
                                   "key": undefined,
                                   "nodeType": "host",
                                   "props": Object {
-                                    "children": "",
+                                    "children": "Henry Henry Henry Henry",
                                     "className": "ml-1 user-name-text",
                                   },
                                   "ref": null,
-                                  "rendered": "",
+                                  "rendered": "Henry Henry Henry Henry",
                                   "type": "span",
                                 },
                               ],
@@ -3124,7 +3124,7 @@ ShallowWrapper {
                                 <i
                                   className="far fa-comment-alt comment"
                                 >
-                                  
+                                   10
                                 </i>
                               </a>
                             </li>,
@@ -3142,7 +3142,7 @@ ShallowWrapper {
                                 <i
                                   className="far fa-comment-alt comment"
                                 >
-                                  
+                                   10
                                 </i>
                               </a>,
                             },
@@ -3155,7 +3155,7 @@ ShallowWrapper {
                                 "children": <i
                                   className="far fa-comment-alt comment"
                                 >
-                                  
+                                   10
                                 </i>,
                                 "href": "/",
                               },
@@ -3165,11 +3165,11 @@ ShallowWrapper {
                                 "key": undefined,
                                 "nodeType": "host",
                                 "props": Object {
-                                  "children": "",
+                                  "children": " 10",
                                   "className": "far fa-comment-alt comment",
                                 },
                                 "ref": null,
-                                "rendered": "",
+                                "rendered": " 10",
                                 "type": "i",
                               },
                               "type": "a",
@@ -3248,7 +3248,7 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": <i>
-                              
+                              5 mins
                             </i>,
                             "className": "time-text",
                           },
@@ -3258,10 +3258,10 @@ ShallowWrapper {
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "",
+                              "children": "5 mins",
                             },
                             "ref": null,
-                            "rendered": "",
+                            "rendered": "5 mins",
                             "type": "i",
                           },
                           "type": "span",
@@ -3308,12 +3308,15 @@ exports[`<BookmarksCards /> should render the Article card coreectly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <BookmarksCards
-    article=""
-    articleTitle=""
+    article="Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur"
+    articleImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+    articleTitle="Lorem ipsum dolor"
+    commentCount=" 10"
     glowCount=""
     moreClass=""
-    userImage=""
-    username=""
+    updatedTime="5 mins"
+    userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+    username="Henry Henry Henry Henry"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -3343,7 +3346,7 @@ ShallowWrapper {
               <h1
                 className="col-md-11 card-title"
               >
-                
+                Lorem ipsum dolor
               </h1>
               <img
                 alt="bookmark-logo"
@@ -3358,7 +3361,7 @@ ShallowWrapper {
             <p
               className="text-content"
             >
-              
+              Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
             </p>
           </div>
           <br />
@@ -3372,7 +3375,7 @@ ShallowWrapper {
                 <img
                   alt="user"
                   className="user-image"
-                  src=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                 />
               </span>
               <p
@@ -3383,7 +3386,7 @@ ShallowWrapper {
                   }
                 }
               >
-                
+                Henry Henry Henry Henry
               </p>
               <span>
                 <Glow
@@ -3420,7 +3423,7 @@ ShallowWrapper {
               <h1
                 className="col-md-11 card-title"
               >
-                
+                Lorem ipsum dolor
               </h1>
               <img
                 alt="bookmark-logo"
@@ -3435,7 +3438,7 @@ ShallowWrapper {
             <p
               className="text-content"
             >
-              
+              Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
             </p>
           </div>
           <br />
@@ -3449,7 +3452,7 @@ ShallowWrapper {
                 <img
                   alt="user"
                   className="user-image"
-                  src=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                 />
               </span>
               <p
@@ -3460,7 +3463,7 @@ ShallowWrapper {
                   }
                 }
               >
-                
+                Henry Henry Henry Henry
               </p>
               <span>
                 <Glow
@@ -3495,7 +3498,7 @@ ShallowWrapper {
                 <h1
                   className="col-md-11 card-title"
                 >
-                  
+                  Lorem ipsum dolor
                 </h1>
                 <img
                   alt="bookmark-logo"
@@ -3510,7 +3513,7 @@ ShallowWrapper {
               <p
                 className="text-content"
               >
-                
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
               </p>
             </div>,
             <br />,
@@ -3524,7 +3527,7 @@ ShallowWrapper {
                   <img
                     alt="user"
                     className="user-image"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />
                 </span>
                 <p
@@ -3535,7 +3538,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  
+                  Henry Henry Henry Henry
                 </p>
                 <span>
                   <Glow
@@ -3567,7 +3570,7 @@ ShallowWrapper {
                 <h1
                   className="col-md-11 card-title"
                 >
-                  
+                  Lorem ipsum dolor
                 </h1>
                 <img
                   alt="bookmark-logo"
@@ -3587,7 +3590,7 @@ ShallowWrapper {
                   <h1
                     className="col-md-11 card-title"
                   >
-                    
+                    Lorem ipsum dolor
                   </h1>,
                   <img
                     alt="bookmark-logo"
@@ -3604,11 +3607,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": "Lorem ipsum dolor",
                     "className": "col-md-11 card-title",
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": "Lorem ipsum dolor",
                   "type": "h1",
                 },
                 Object {
@@ -3637,7 +3640,7 @@ ShallowWrapper {
               "children": <p
                 className="text-content"
               >
-                
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
               </p>,
               "className": "col-md-12",
             },
@@ -3647,11 +3650,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "",
+                "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
                 "className": "text-content",
               },
               "ref": null,
-              "rendered": "",
+              "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
               "type": "p",
             },
             "type": "div",
@@ -3677,7 +3680,7 @@ ShallowWrapper {
                   <img
                     alt="user"
                     className="user-image"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />
                 </span>
                 <p
@@ -3688,7 +3691,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  
+                  Henry Henry Henry Henry
                 </p>
                 <span>
                   <Glow
@@ -3716,7 +3719,7 @@ ShallowWrapper {
                     <img
                       alt="user"
                       className="user-image"
-                      src=""
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     />
                   </span>,
                   <p
@@ -3727,7 +3730,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    
+                    Henry Henry Henry Henry
                   </p>,
                   <span>
                     <Glow
@@ -3754,7 +3757,7 @@ ShallowWrapper {
                     "children": <img
                       alt="user"
                       className="user-image"
-                      src=""
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     />,
                   },
                   "ref": null,
@@ -3765,7 +3768,7 @@ ShallowWrapper {
                     "props": Object {
                       "alt": "user",
                       "className": "user-image",
-                      "src": "",
+                      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
                     },
                     "ref": null,
                     "rendered": null,
@@ -3778,14 +3781,14 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "",
+                    "children": "Henry Henry Henry Henry",
                     "className": "col-8 col-md-9 username",
                     "style": Object {
                       "display": "inline-block",
                     },
                   },
                   "ref": null,
-                  "rendered": "",
+                  "rendered": "Henry Henry Henry Henry",
                   "type": "p",
                 },
                 Object {
@@ -3860,7 +3863,7 @@ ShallowWrapper {
                 <h1
                   className="col-md-11 card-title"
                 >
-                  
+                  Lorem ipsum dolor
                 </h1>
                 <img
                   alt="bookmark-logo"
@@ -3875,7 +3878,7 @@ ShallowWrapper {
               <p
                 className="text-content"
               >
-                
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
               </p>
             </div>
             <br />
@@ -3889,7 +3892,7 @@ ShallowWrapper {
                   <img
                     alt="user"
                     className="user-image"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />
                 </span>
                 <p
@@ -3900,7 +3903,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  
+                  Henry Henry Henry Henry
                 </p>
                 <span>
                   <Glow
@@ -3937,7 +3940,7 @@ ShallowWrapper {
                 <h1
                   className="col-md-11 card-title"
                 >
-                  
+                  Lorem ipsum dolor
                 </h1>
                 <img
                   alt="bookmark-logo"
@@ -3952,7 +3955,7 @@ ShallowWrapper {
               <p
                 className="text-content"
               >
-                
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
               </p>
             </div>
             <br />
@@ -3966,7 +3969,7 @@ ShallowWrapper {
                   <img
                     alt="user"
                     className="user-image"
-                    src=""
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />
                 </span>
                 <p
@@ -3977,7 +3980,7 @@ ShallowWrapper {
                     }
                   }
                 >
-                  
+                  Henry Henry Henry Henry
                 </p>
                 <span>
                   <Glow
@@ -4012,7 +4015,7 @@ ShallowWrapper {
                   <h1
                     className="col-md-11 card-title"
                   >
-                    
+                    Lorem ipsum dolor
                   </h1>
                   <img
                     alt="bookmark-logo"
@@ -4027,7 +4030,7 @@ ShallowWrapper {
                 <p
                   className="text-content"
                 >
-                  
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                 </p>
               </div>,
               <br />,
@@ -4041,7 +4044,7 @@ ShallowWrapper {
                     <img
                       alt="user"
                       className="user-image"
-                      src=""
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     />
                   </span>
                   <p
@@ -4052,7 +4055,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    
+                    Henry Henry Henry Henry
                   </p>
                   <span>
                     <Glow
@@ -4084,7 +4087,7 @@ ShallowWrapper {
                   <h1
                     className="col-md-11 card-title"
                   >
-                    
+                    Lorem ipsum dolor
                   </h1>
                   <img
                     alt="bookmark-logo"
@@ -4104,7 +4107,7 @@ ShallowWrapper {
                     <h1
                       className="col-md-11 card-title"
                     >
-                      
+                      Lorem ipsum dolor
                     </h1>,
                     <img
                       alt="bookmark-logo"
@@ -4121,11 +4124,11 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "",
+                      "children": "Lorem ipsum dolor",
                       "className": "col-md-11 card-title",
                     },
                     "ref": null,
-                    "rendered": "",
+                    "rendered": "Lorem ipsum dolor",
                     "type": "h1",
                   },
                   Object {
@@ -4154,7 +4157,7 @@ ShallowWrapper {
                 "children": <p
                   className="text-content"
                 >
-                  
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
                 </p>,
                 "className": "col-md-12",
               },
@@ -4164,11 +4167,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "",
+                  "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
                   "className": "text-content",
                 },
                 "ref": null,
-                "rendered": "",
+                "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
                 "type": "p",
               },
               "type": "div",
@@ -4194,7 +4197,7 @@ ShallowWrapper {
                     <img
                       alt="user"
                       className="user-image"
-                      src=""
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     />
                   </span>
                   <p
@@ -4205,7 +4208,7 @@ ShallowWrapper {
                       }
                     }
                   >
-                    
+                    Henry Henry Henry Henry
                   </p>
                   <span>
                     <Glow
@@ -4233,7 +4236,7 @@ ShallowWrapper {
                       <img
                         alt="user"
                         className="user-image"
-                        src=""
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                       />
                     </span>,
                     <p
@@ -4244,7 +4247,7 @@ ShallowWrapper {
                         }
                       }
                     >
-                      
+                      Henry Henry Henry Henry
                     </p>,
                     <span>
                       <Glow
@@ -4271,7 +4274,7 @@ ShallowWrapper {
                       "children": <img
                         alt="user"
                         className="user-image"
-                        src=""
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                       />,
                     },
                     "ref": null,
@@ -4282,7 +4285,7 @@ ShallowWrapper {
                       "props": Object {
                         "alt": "user",
                         "className": "user-image",
-                        "src": "",
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
                       },
                       "ref": null,
                       "rendered": null,
@@ -4295,14 +4298,14 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "",
+                      "children": "Henry Henry Henry Henry",
                       "className": "col-8 col-md-9 username",
                       "style": Object {
                         "display": "inline-block",
                       },
                     },
                     "ref": null,
-                    "rendered": "",
+                    "rendered": "Henry Henry Henry Henry",
                     "type": "p",
                   },
                   Object {
