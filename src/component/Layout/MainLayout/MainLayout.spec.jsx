@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import { shallow } from 'enzyme';
 import MainLayout from './MainLayout';
 import Header from '../../ui/header/Header';
 import Footer from '../../ui/footer/Footer';
