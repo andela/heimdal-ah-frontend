@@ -3,6 +3,8 @@ import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { toastr } from 'react-redux-toastr';
 import PropTypes from 'prop-types';
+import Header from '../../ui/header/Header';
+import Footer from '../../ui/footer/Footer';
 import Button from '../../ui/Buttons/Button';
 import './PasswordReset.scss';
 import updatePassword from '../../../actions/PasswordReset/updatePasswordActions';
@@ -39,9 +41,7 @@ class PasswordUpdate extends Component {
       <Fragment>
         {status === 'SUCCESS' && <Redirect to='/login' />}
         {status === 'FAILED' && <Redirect to='/resetpassword' />}
-        <div className='password-reset header'>
-          Our Header
-        </div>
+        <Header isValidated={false} />
         <div className='password-reset body'>
           <p>Enter Your New Password</p>
           {status === 'ERROR' && toastr.warning('Error', 'Server Error')}
@@ -60,6 +60,7 @@ class PasswordUpdate extends Component {
         <div className='password-reset footer'>
           Our Footer
         </div>
+        <Footer />
       </Fragment>
     );
   }
