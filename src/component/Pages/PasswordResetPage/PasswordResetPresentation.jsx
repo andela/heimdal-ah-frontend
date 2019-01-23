@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
 import Button from '../../ui/Buttons/Button';
-import Header from '../../ui/header/Header';
-import Footer from '../../ui/footer/Footer';
 import Alert from '../../ui/Alert/Alert';
 import './PasswordReset.scss';
 // eslint-disable-next-line import/no-named-as-default
@@ -14,7 +12,6 @@ const PasswordResetPresentation = () => (
           <Fragment>
             {data.status === 'SUCCESS' && <Alert type='success' title='Email Sent' message='An Email has been sent to you, please click on the link to reset your password' />}
             {data.status === 'FAILED' && <Alert type='warning' title='Invalid Credentials' message='User not Found' />}
-            <Header isValidated={false} />
             <div className='password-reset body'>
               <p>Reset Your Password</p>
               <form onSubmit={e => data.onHandleSubmit(e)}>
@@ -26,7 +23,6 @@ const PasswordResetPresentation = () => (
               </form>
             </div>
             <br />
-            <Footer />
           </Fragment>
         )
     }

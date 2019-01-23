@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react';
 import { Redirect } from 'react-router-dom';
 import Button from '../../ui/Buttons/Button';
-import Header from '../../ui/header/Header';
-import Footer from '../../ui/footer/Footer';
 import Alert from '../../ui/Alert/Alert';
 import './PasswordReset.scss';
 // eslint-disable-next-line import/no-named-as-default
@@ -15,7 +13,6 @@ const UpdatePasswordPresentation = () => (
           <Fragment>
             {data.status === 'SUCCESS' && <Redirect to='/login' />}
             {data.status === 'FAILED' && <Redirect to='/resetpassword' />}
-            <Header isValidated={false} />
             <div className='password-reset body'>
               <p>Enter Your New Password</p>
               {data.status === 'ERROR' && <Alert type='warning' title='Email not sent' message='Server Error' />}
@@ -30,7 +27,6 @@ const UpdatePasswordPresentation = () => (
               </form>
             </div>
             <br />
-            <Footer />
           </Fragment>
         )
     }
