@@ -1,7 +1,5 @@
 import jwtDecode from 'jwt-decode';
-import {
-  SET_CURRENT_USER,
-} from './actionTypes';
+import { SET_CURRENT_USER } from './actionTypes';
 import setAuthToken from '../utils/setAuthToken';
 
 export const setCurrentUser = decoded => ({
