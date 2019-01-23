@@ -1,6 +1,6 @@
 import React from 'react';
 import AuthContainer from '../../../container/AuthContainer';
-import LoginForm from '../../ui/forms/LoginForm';
+import LoginForm from '../../ui/Forms/LoginForm';
 
 const Login = () => (
   <div>

@@ -3,7 +3,7 @@ import { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import login from '../actions/auth/login';
-import validateLogin from '../validations/authValidations';
+import validateLoginInput from '../validations/authValidations';
 
 class AuthContainer extends Component {
   state = {
@@ -12,37 +12,36 @@ class AuthContainer extends Component {
     errors: {},
   };
 
-  onChange = (e) => {
+  onChange = (event) => {
     const { errors } = this.state;
-    if (errors[e.target.name]) {
-      const allErrors = { ...errors };
-      delete allErrors[e.target.name];
+    if (errors[event.target.name]) {
+      const newErrors = { ...errors };
+      delete newErrors[event.target.name];
       this.setState({
-        [e.target.name]: e.target.value,
-        errors,
+        [event.target.name]: event.target.value,
+        errors: newErrors,
       });
     } else {
       this.setState({
-        [e.target.name]: e.target.value,
+        [event.target.name]: event.target.value,
       });
     }
   };
 
   onLoginSubmit = (e) => {
-    const { action } = this.props;
+    const { actions } = this.props;
     e.preventDefault();
     if (this.isValid()) {
       this.setState({ errors: {} });
-      action.signinUser(this.state);
+      actions.login(this.state);
     }
   };
 
   isValid = () => {
-    const { errors, isValid } = validateLogin(this.state);
+    const { errors, isValid } = validateLoginInput(this.state);
     if (!isValid) {
       this.setState({ errors, password: '' });
     }
-
     return isValid;
   }
 
@@ -65,9 +64,9 @@ const mapStateToProps = state => ({
 });
 
 const matchDispatchToProps = dispatch => ({
-  action: bindActionCreators(
+  actions: bindActionCreators(
     {
-      signinUser: login,
+      login,
     },
     dispatch,
   ),

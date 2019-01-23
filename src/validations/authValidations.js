@@ -1,7 +1,7 @@
 import Validator from 'validatorjs';
 
-const validateLogin = (inputs) => {
-  const { email, password } = inputs;
+const validateLoginInput = (input) => {
+  const { email, password } = input;
 
   const data = {
     email,
@@ -9,7 +9,7 @@ const validateLogin = (inputs) => {
   };
 
   const rules = {
-    email: 'required',
+    email: 'required|email',
     password: 'required',
   };
 
@@ -19,7 +19,7 @@ const validateLogin = (inputs) => {
 
   if (validation.passes()) {
     return {
-      isValid: false,
+      isValid: true,
     };
   }
 
@@ -30,4 +30,5 @@ const validateLogin = (inputs) => {
     errors,
   };
 };
-export default validateLogin;
+
+export default validateLoginInput;

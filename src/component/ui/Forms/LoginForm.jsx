@@ -3,13 +3,22 @@ import { Link, Redirect } from 'react-router-dom';
 
 const LoginForm = (props) => {
   const {
-    auth, email, password, onChange, onLoginSubmit,
+    auth, email, errors, error, password, onChange, onLoginSubmit,
   } = props;
   if (auth) {
-    return <Redirect to="/menu" />;
+    return <Redirect to="/" />;
   }
   return (
     <div className='loginForm'>
+      {
+        (error && error.message) ? (
+          <div className="alert alert-danger">
+            <strong>Info!</strong>
+            {' '}
+            {error.message}
+          </div>
+        ) : ''
+      }
       <h2>Heimdal</h2>
       <form>
         <div className='form-group'>
@@ -24,6 +33,7 @@ const LoginForm = (props) => {
             required
           />
         </div>
+        <p id="error-message">{errors.email}</p>
         <div className='form-group'>
           <input
             className='form-control'
@@ -36,13 +46,7 @@ const LoginForm = (props) => {
             required
           />
         </div>
-        <div className='checkbox'>
-          <label htmlFor='checkbox'>
-            <input type='checkbox' id='checkbox' />
-            {' '}
-            Remember me
-          </label>
-        </div>
+        <p id="error-message">{errors.password}</p>
         <button type="submit" className='btn btn-primary' onClick={onLoginSubmit}>Login </button>
         <h5>
           Already Registered?

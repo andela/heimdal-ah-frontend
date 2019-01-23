@@ -26,11 +26,12 @@ const logIn = data => dispatch => axios.post('https://heimdal-ah-staging.herokua
   (res) => {
     const { token } = res.data.data;
     // const { message } = res.data;
+    localStorage.setItem('token', token);
     dispatch(setCurrent(jwt.decode(token)));
     return true;
   },
 ).catch((error) => {
-  console.log('=========', error);
-  dispatch(setCurrentUserError(error.response));
+  // console.log('error', error.response.data.errors);
+  dispatch(setCurrentUserError(error.response.data));
 });
 export default logIn;
