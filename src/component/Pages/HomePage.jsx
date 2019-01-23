@@ -22,6 +22,7 @@ const HomePage = () => (
       <br />
       <br />
       <br />
+      <br />
       <a href={`${process.env.BASE_URL_PROD}/auth/google`}>
         <Button type="google" label="Login with Google" />
       </a>
