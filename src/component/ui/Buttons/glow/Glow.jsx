@@ -7,7 +7,7 @@ const Glow = (props) => {
 
   return (
     <i
-      className={`glow-btn ${active ? 'glow-on' : 'glow-off'}`}
+      className={`glow-btn  ${active ? 'glow-on' : 'glow-off'}`}
       role="button"
       tabIndex={0}
       onClick={handleGlow}
