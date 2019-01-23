@@ -4,7 +4,7 @@ import { range } from 'lodash';
 import './Rating.scss';
 
 const Rating = props => (
-  <div className="rate">
+  <span className="rate">
     {
       range(1, 6).map(value => (
         <i
@@ -13,7 +13,7 @@ const Rating = props => (
         />
       ))
     }
-  </div>
+  </span>
 );
 
 Rating.getClassNames = (value, ratings) => (

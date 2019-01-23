@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../ui/header/Header.jsx';
+import Footer from '../ui/footer/Footer.jsx';
 
 class Layout extends Component {
   state = {
@@ -13,6 +14,7 @@ class Layout extends Component {
       <div>
         <Header isValidated={isAuthenticated} />
         {children}
+        <Footer />
       </div>
     );
   }
