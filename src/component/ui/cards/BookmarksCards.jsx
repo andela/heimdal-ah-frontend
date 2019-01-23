@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import './bookmarksCards.scss';
-import Glow from '../buttons/glow/Glow.jsx';
+import Glow from '../Buttons/glow/Glow.jsx';
 
 
 /** @description booksmarks Cards for Article
