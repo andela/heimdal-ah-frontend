@@ -1,9 +1,9 @@
 import jwtDecode from 'jwt-decode';
-import { SET_CURRENT_USER } from '../actionTypes';
+import { ACTIONS } from '../actionTypes';
 import instance from '../../config/http';
 
 export const setCurrentUser = decoded => ({
-  type: SET_CURRENT_USER,
+  type: ACTIONS.SET_CURRENT_USER,
   payload: decoded,
 });
 
