@@ -8,11 +8,11 @@ module.exports = {
   clearMocks: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: [
-    '!src/**/*.{js,jsx}',
-    '!public/*.{js}',
-    '!src/index.jsx',
-  ],
+  // collectCoverageFrom: [
+  //   '!src/**/*.{js,jsx}',
+  //   '!public/*.{js}',
+  //   '!src/index.jsx',
+  // ],
 
   collectCoverage: true,
 
@@ -20,11 +20,7 @@ module.exports = {
   coverageDirectory: 'coverage-jest',
 
   // A list of reporter names that Jest uses when writing coverage reports
-  coverageReporters: [
-    'html',
-    'text',
-    'lcov',
-  ],
+  coverageReporters: ['html', 'text', 'lcov'],
 
   // An array of file extensions your modules use
   moduleFileExtensions: ['js', 'json', 'jsx'],
@@ -56,5 +52,4 @@ module.exports = {
 
   // Indicates whether each individual test should be reported during the run
   verbose: false,
-
 };

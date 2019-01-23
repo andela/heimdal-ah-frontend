@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import FormInput from '../../InputElements/FormInput';
 import LoadingSpinner from '../../loadingSpinners/LoadingSpinner';
+import MainError from '../../errors/MainError';
 
 /**
  * @description It wraps its children with a layout style
@@ -63,9 +64,7 @@ const SignupForm = (props) => {
           />
           <div className="row">
             <LoadingSpinner isLoading={isLoading} />
-            <div className="col-md-12 text-danger text-center">
-              {errors.mainError && <span className="">{errors.mainError}</span>}
-            </div>
+            <MainError errors={errors} />
             <div className="col-md-8 text-left mb-10">
               <span className="text-muted p-t-10">
                 Already have an account?
