@@ -1,14 +1,23 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import React, { Component } from 'react';
 
-import FormInput from '../../InputElements/FormInput';
 import { setErrors, removeAnError, clearErrors } from '../../../../actions/errorActions';
 import { signupUser } from '../../../../actions/authActions';
 import { validateSignup } from '../../../../helpers/validateInputs';
 import './Signup.scss';
+import SignupForm from './SignupForm';
 
+/**
+ * @description - This class enables new users to Signup on the platform
+ * @param {func} setErrors  - A dispatchable errorAction to set errors in state
+ * @param {func} removeAnError  - A dispatchable errorAction to clear one error from state
+ * @param {func} clearErrors  - A dispatchable errorAction to clear the error state
+ * @param {func} signupUser  - A dispatchable authAction to enable signup
+ * @param {object} SignupForm  - A Form component that takes in props
+ * @returns {object} The rendered Component
+ */
 class Signup extends Component {
   state = {
     username: '',
@@ -47,92 +56,20 @@ class Signup extends Component {
     };
 
     const errors = validateSignup(signupData);
+    const { action, history } = this.props;
 
     if (errors) {
       this.setState({ isLoading: false });
-
-      const { action } = this.props;
       return action.setErrors(errors.errors);
     }
 
-    const { action, history } = this.props;
     action.clearErrors();
     this.setState({ isLoading: false });
     return action.signupUser(signupData, history);
   };
 
   render() {
-    const {
-      email, username, password, passwordConfirmation, errors, isLoading,
-    } = this.state;
-
-    return (
-      <div className="heimdal-form">
-        <h1 className="form-title font-cardo text-center">Become an Heimdal Demonym</h1>
-        <form className="heimdal-form" onSubmit={this.handleSignup} noValidate>
-          <div className="font-cardo ph-30">
-            <FormInput
-              name="username"
-              value={username}
-              type="text"
-              classname="form-control"
-              placeholder="Username"
-              onChange={this.onChange}
-              errors={errors}
-            />
-            <FormInput
-              name="email"
-              value={email}
-              type="email"
-              classname="form-control"
-              placeholder="Email Address"
-              onChange={this.onChange}
-              errors={errors}
-            />
-            <FormInput
-              name="password"
-              value={password}
-              type="password"
-              classname="form-control"
-              placeholder="Password"
-              onChange={this.onChange}
-              errors={errors}
-            />
-            <FormInput
-              name="passwordConfirmation"
-              value={passwordConfirmation}
-              type="password"
-              classname="form-control"
-              placeholder="Confirm Password"
-              onChange={this.onChange}
-              errors={errors}
-            />
-            <div className="row">
-              <div className={`col-md-12 text-center ${isLoading ? '' : 'd-none'}`}>
-                <i className="fa fa-spin fa-spinner" />
-              </div>
-              <div className="col-md-12 text-danger text-center">
-                {errors.mainError && <span className="">{errors.mainError}</span>}
-              </div>
-              <div className="col-md-8 text-left mb-10">
-                <span className="text-muted p-t-10">
-                  Already have an account?
-                  {' '}
-                  <Link to="/" className="link">
-                    Log in here
-                  </Link>
-                </span>
-              </div>
-              <div className="col-md-4 text-right">
-                <button type="submit" className="btn signup-btn" disabled={isLoading}>
-                  Sign Up
-                </button>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    );
+    return <SignupForm {...this.state} onChange={this.onChange} handleSignup={this.handleSignup} />;
   }
 }
 

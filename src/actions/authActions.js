@@ -2,16 +2,15 @@ import axios from 'axios';
 import JWT from 'jsonwebtoken';
 import { signupEndpoint } from '../apiEndpoints';
 import { SET_ERRORS, SET_AUTH_USER } from './actionTypes';
+import errorResponse from '../utils/errorResponse';
+import configureLocalStorage from '../utils/configureLocalStorage';
 
 export const setAuthUser = (token) => {
   const decodedToken = JWT.decode(token);
   const { id: userId, username } = decodedToken;
 
-  // SetLocalStorageUser
-  localStorage.setItem('isAuthenticated', true);
-  localStorage.setItem('token', token);
-  localStorage.setItem('userId', userId);
-  localStorage.setItem('username', username);
+  configureLocalStorage.setAuthUser(token);
+  // remember to set axios auth token here
 
   return {
     type: SET_AUTH_USER,
@@ -41,26 +40,18 @@ export const signupUser = (signupData = {}, history) => (dispatch) => {
       });
     })
     .catch((errors = {}) => {
+      console.log('=============', errors, '=============');
       console.log('=============', errors.response, '=============');
-      const { response } = errors;
 
-      if (response.status === 400) {
-        return dispatch({
-          type: SET_ERRORS,
-          payload: response.data.errors,
-        });
-      }
-      if (response.status === 409) {
-        return dispatch({
-          type: SET_ERRORS,
-          payload: { mainError: response.data.message },
-        });
-      }
-      if (response.status === 500) {
-        return dispatch({
-          type: SET_ERRORS,
-          payload: { mainError: 'An error occured, please try again in a moment' },
-        });
-      }
+      const { response = {}, request } = errors;
+
+      const data = {
+        dispatch,
+        request,
+        response,
+        errors,
+        SET_ERRORS,
+      };
+      return errorResponse(data);
     });
 };
