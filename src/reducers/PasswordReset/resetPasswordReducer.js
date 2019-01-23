@@ -9,6 +9,13 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case ACTIONS.RESET_PASSWORD_STATE:
+      return ({
+        ...state,
+        payload: '',
+        status: '',
+      });
+
     case ACTIONS.RESET_PASSWORD_FAILED:
       return ({
         ...state,
