@@ -15,8 +15,10 @@ class SocialAuth extends Component {
   componentDidMount() {
     const { location, history } = this.props;
     const { token } = queryString.parse(location.search);
-    this.props.autheticateUser(token);
-    history.push('/');
+    if (token) {
+      this.props.autheticateUser(token);
+      history.push('/');
+    }
   }
 
   /**
