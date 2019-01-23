@@ -1,10 +1,12 @@
 import {
   HIDE_MODAL,
   SHOW_MODAL,
+  TOGGLE_MODAL,
 } from '../actions/actionTypes';
 
 const initialState = {
   display: false,
+  type: null,
 };
 
 export default (state = initialState, action) => {
@@ -18,6 +20,13 @@ export default (state = initialState, action) => {
       return {
         ...state,
         display: true,
+      };
+
+    case TOGGLE_MODAL:
+      return {
+        ...state,
+        display: !state.display,
+        type: action.type,
       };
     default: return state;
   }

@@ -1,16 +1,13 @@
 import React from 'react';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/buttons/Button';
-import RootModal from '../ui/Modals/RootModal';
 import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
-
 
 const HomePage = () => (
   <div>
     <h2 className='lead mt-5'>
   Welcome to the Home page...
     </h2>
-    <RootModal title='Report' modalType='Report' classname=''><h2>Child component</h2></RootModal>
     <div>
       <Rating className='fa fa-star' ratings={2.5} />
       <Button type='signup' label='Signup' />

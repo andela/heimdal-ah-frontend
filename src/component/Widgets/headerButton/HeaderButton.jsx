@@ -1,10 +1,14 @@
 import React from 'react';
-import Button from '../../ui/buttons/Button';
+import TriggerModal from '../../ui/Modal/TriggerModal';
 
 const HeaderButton = () => (
   <div className='header-button-group'>
-    <Button className="header-button" type='signup' label='Signup' />
-    <Button type='login' label='Login' />
+    <TriggerModal type='signup' label='Signup'>
+      Sign up
+    </TriggerModal>
+    <TriggerModal type='signup' label='Login'>
+      signin Form
+    </TriggerModal>
   </div>
 );
 
