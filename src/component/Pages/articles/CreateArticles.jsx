@@ -4,67 +4,94 @@ import Editor from 'react-medium-editor';
 import './CreateArticle.scss';
 // import { Editor, EditorState, convertToRaw } from 'draft-js';
 
-import articleActions from '../../../actions/createArticleActions';
+import articleActions from '../../../actions/articleActions/createArticleActions';
 
 class CreateArticle extends React.Component {
-    state = {
+  constructor(props) {
+    super(props);
+    this.state = {
       title: '',
       text: '',
     };
+    this.handleChange = this.handleChange.bind(this);
+    this.onHandleSubmit = this.onHandleSubmit.bind(this);
+  }
 
-    handleChange(text, medium) {
-      this.setState({ text });
-    }
-    // onChange = (editorState, event) => this.setState({ [name]: event.target.value });
+  onHandleSubmit(e) {
+    const { title, text } = this.state;
+    const articleDetails = {
+      title,
+      text,
+      description: title.substring(0, 100),
+    };
+    e.preventDefault();
+    this.props.actions();
+  }
 
-    // onChange2 = (body) => {
-    //   // const contentState = body.getCurrentContent();
-    //   // const articleBody = convertToRaw(contentState);
-    //   // const { blocks } = articleBody;
-    //   // const value = blocks[0].text;
-    //   // console.log(value);
-    //   console.log(body, '==================');
-    //   this.setState({ body });
-    //   this.setState({ rawTitle: value });
-    // };
-
-    // // onChange = title => this.setState({ title });
-    // onChange = (title) => {
-    //   const contentState = title.getCurrentContent();
-    //   console.log(convertToRaw(contentState));
-    //   const articleTitle = convertToRaw(contentState);
-    //   const { blocks } = articleTitle;
-    //   const value = JSON.stringify(blocks[0].text);
-    //   console.log(value);
-    //   this.setState({ title });
-    //   this.setState({ rawBody: value });
-    // }
-
-    // article(e) {
-    //   console.log(this.state.body);
-    //   e.preventDefault();
-    //   const articleDetails = {
-    //     title: this.state.rawTitle,
-    //     body: this.state.rawBody,
-    //   };
-    //   console.log(articleDetails);
-    //   this.props.articleActions(articleDetails);
-    // }
+  handleChange(text) {
+    console.log(text);
+    this.setState({ text });
+  }
 
 
-    render() {
-      return (
-        <Fragment>
-          <input />
-          <Editor
-            tag="pre"
-            text={this.state.text}
-            onChange={this.handleChange}
-            options={{ toolbar: { buttons: ['bold', 'italic', 'underline'] } }}
-          />
-        </Fragment>
-      );
-    }
+  // onChange = (editorState, event) => this.setState({ [name]: event.target.value });
+
+  // onChange2 = (body) => {
+  //   // const contentState = body.getCurrentContent();
+  //   // const articleBody = convertToRaw(contentState);
+  //   // const { blocks } = articleBody;
+  //   // const value = blocks[0].text;
+  //   // console.log(value);
+  //   console.log(body, '==================');
+  //   this.setState({ body });
+  //   this.setState({ rawTitle: value });
+  // };
+
+  // // onChange = title => this.setState({ title });
+  // onChange = (title) => {
+  //   const contentState = title.getCurrentContent();
+  //   console.log(convertToRaw(contentState));
+  //   const articleTitle = convertToRaw(contentState);
+  //   const { blocks } = articleTitle;
+  //   const value = JSON.stringify(blocks[0].text);
+  //   console.log(value);
+  //   this.setState({ title });
+  //   this.setState({ rawBody: value });
+  // }
+
+  // article(e) {
+  //   console.log(this.state.body);
+  //   e.preventDefault();
+  //   const articleDetails = {
+  //     title: this.state.rawTitle,
+  //     body: this.state.rawBody,
+  //   };
+  //   console.log(articleDetails);
+  //   this.props.articleActions(articleDetails);
+  // }
+
+
+  render() {
+    return (
+      <Fragment>
+        <Editor
+          placeholder="type your article"
+          tag="pre"
+          text={this.state.title}
+          onChange={this.handleChange}
+          options={{ toolbar: { buttons: ['bold', 'italic', 'underline'] } }}
+        />
+        <br />
+        <Editor
+          placeholder="type your article"
+          tag="pre"
+          text={this.state.text}
+          onChange={this.handleChange}
+          options={{ toolbar: { buttons: ['bold', 'italic', 'underline'] } }}
+        />
+      </Fragment>
+    );
+  }
 }
 
 const mapStateToprops = state => ({
@@ -72,7 +99,7 @@ const mapStateToprops = state => ({
   body: state.body,
 });
 
-export default connect(null, { articleActions })(CreateArticle);
+export default connect(mapStateToprops, { articleActions })(CreateArticle);
 
 
 // class Signup extends Component {

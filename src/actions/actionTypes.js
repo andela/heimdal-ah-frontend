@@ -1,9 +1,6 @@
-const NEW_ACTION = '';
-const NEW_ARTICLE = 'NEW_ARTICLE';
-const NEW_ARTICLE_ERROR = 'NEW_ARTICLE_ERROR';
+import keyMirror from 'keymirror';
 
-export {
-  NEW_ARTICLE,
-  NEW_ACTION,
-  NEW_ARTICLE_ERROR,
-};
+export const ACTIONS = keyMirror({
+  NEW_ARTICLE: null,
+  NEW_ARTICLE_ERROR: null,
+});

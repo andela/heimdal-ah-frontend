@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { NEW_ARTICLE, NEW_ARTICLE_ERROR } from './actionTypes';
+import actions from '../actionTypes';
 
 
 const articleActions = userDetails => (dispatch) => {
@@ -18,7 +18,7 @@ const articleActions = userDetails => (dispatch) => {
     .then((data) => {
       if (data.status === 200) {
         dispatch({
-          type: NEW_ARTICLE,
+          type: actions.NEW_ARTICLE,
           payload: data,
         });
         // const token = response.data.data.token;
@@ -27,7 +27,7 @@ const articleActions = userDetails => (dispatch) => {
     }).catch((error) => {
       console.log(error.response.data);
       dispatch({
-        type: NEW_ARTICLE_ERROR,
+        type: actions.NEW_ARTICLE_ERROR,
         payload: error.response.data,
       });
     });
