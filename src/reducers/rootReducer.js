@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
-import modal from './modal';
 
-const appReducer = combineReducers({ modal });
+const appReducer = combineReducers({});
 
 // const initialState = appReducer({}, {});
 

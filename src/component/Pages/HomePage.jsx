@@ -1,14 +1,30 @@
 import React from 'react';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/buttons/Button';
+// import BookmarksCards from '../ui/cards/cards';
 import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
+import ArticleCardVertical from '../ui/cards/BookmarksCards';
 
 const HomePage = () => (
   <div>
     <h2 className='lead mt-5'>
   Welcome to the Home page...
     </h2>
+    <div className="row">
+      <div className='col-md-6'>
+        <ArticleCardVertical articleTitle='Title' />
+      </div>
+    </div>
     <div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Rating className='fa fa-star' ratings={2.5} />
       <Button type='signup' label='Signup' />
       <br />
