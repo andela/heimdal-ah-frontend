@@ -11,7 +11,7 @@ import resetPassword from '../../../actions/PasswordReset/resetPasswordActions';
  * @param {props} resetPassword - the action been dispatched
  * @returns {component} Component
  */
-class PasswordReset extends Component {
+export class PasswordReset extends Component {
   constructor(props) {
     super(props);
     this.state = {

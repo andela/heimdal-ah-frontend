@@ -1,10 +1,10 @@
-import Axios from 'axios';
+import instance from '../../config/http';
 import {
   ACTIONS,
 } from '../actionTypes';
 import ActionResponse from '../actionResponse';
 
-const updatePassword = (token, newPassword) => dispatch => Axios.put(`${process.env.BASE_URL_PROD}/api/v1/password/reset/${token}`, {
+const updatePassword = (token, newPassword) => dispatch => instance.put(`/password/reset/${token}`, {
   password: newPassword.password,
   confirmPassword: newPassword.confirmpassword,
 }).then((response) => {

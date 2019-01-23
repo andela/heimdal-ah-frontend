@@ -4,6 +4,7 @@ import Header from '../../ui/header/Header';
 import Footer from '../../ui/footer/Footer';
 import Alert from '../../ui/Alert/Alert';
 import './PasswordReset.scss';
+// eslint-disable-next-line import/no-named-as-default
 import PasswordReset from './PasswordReset';
 
 const PasswordResetPresentation = () => (

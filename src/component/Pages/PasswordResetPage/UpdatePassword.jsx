@@ -11,7 +11,7 @@ import updatePassword from '../../../actions/PasswordReset/updatePasswordActions
  * @param {props} updatePassword - the action been dispatched
  * @returns {component} Component
  */
-class PasswordUpdate extends Component {
+export class PasswordUpdate extends Component {
   constructor(props) {
     super(props);
     this.state = {
