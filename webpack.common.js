@@ -2,6 +2,8 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
+
 const path = require('path');
 
 const miniCssPlugin = new MiniCssExtractPlugin({
@@ -51,6 +53,7 @@ module.exports = {
     maxAssetSize: 512000,
   },
   plugins: [
+    new Dotenv(),
     miniCssPlugin,
     new HtmlWebPackPlugin({
       template: './src/index.html',

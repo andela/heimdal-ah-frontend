@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import queryString from 'query-string';
 import PropTypes from 'prop-types';
 
-import { autheticateUser } from '../../../../actions/socialAuth';
+import { autheticateUser } from '../../../actions/SocialAuthActions/socialAuth';
 
 /**
      * the social authentication component
@@ -20,11 +20,11 @@ class SocialAuth extends Component {
   }
 
   /**
-         * Renders the component.
-         *
-         * @memberof app.components.SocialAuth
-         * @return {string} - HTML markup for the component
-         */
+     * Renders the component.
+     *
+     * @memberof app.components.SocialAuth
+     * @return {string} - HTML markup for the component
+   */
   render() {
     return (
       <Fragment />

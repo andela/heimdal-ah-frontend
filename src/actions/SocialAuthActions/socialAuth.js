@@ -1,6 +1,6 @@
 import jwtDecode from 'jwt-decode';
-import { SET_CURRENT_USER } from './actionTypes';
-import setAuthToken from '../utils/setAuthToken';
+import { SET_CURRENT_USER } from '../actionTypes';
+import instance from '../../config/http';
 
 export const setCurrentUser = decoded => ({
   type: SET_CURRENT_USER,
@@ -9,7 +9,7 @@ export const setCurrentUser = decoded => ({
 
 export const autheticateUser = token => (dispatch) => {
   localStorage.setItem('access-token', token);
-  setAuthToken(token);
+  instance(token);
   const decoded = jwtDecode(token);
   dispatch(setCurrentUser(decoded));
 };
