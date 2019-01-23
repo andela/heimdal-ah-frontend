@@ -55,7 +55,6 @@ module.exports = {
     maxAssetSize: 512000,
   },
   plugins: [
-    new Dotenv(),
     new webpack.DefinePlugin({
       'process.env.BASE_URL_PROD': JSON.stringify(process.env.BASE_URL_PROD),
     }),
