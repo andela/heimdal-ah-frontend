@@ -27,12 +27,10 @@ export const signupUser = (signupData = {}, history) => (dispatch) => {
   axios
     .post(signupEndpoint, signupData)
     .then((response) => {
-      console.log('=============', response, '=============');
       if (response.status === 201) {
         const { token } = response.data;
-        alert(token);
-        return dispatch(setAuthUser(token));
-        // return history.push('/users/foods');
+        dispatch(setAuthUser(token));
+        return history.push('/');
       }
       return dispatch({
         type: SET_ERRORS,
@@ -40,9 +38,6 @@ export const signupUser = (signupData = {}, history) => (dispatch) => {
       });
     })
     .catch((errors = {}) => {
-      console.log('=============', errors, '=============');
-      console.log('=============', errors.response, '=============');
-
       const { response = {}, request } = errors;
 
       const data = {

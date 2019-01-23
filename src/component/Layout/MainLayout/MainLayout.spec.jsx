@@ -1,17 +1,17 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import MainLayout from './MainLayout';
+import { MainLayout } from './MainLayout';
 import Header from '../../ui/header/Header';
 import Footer from '../../ui/footer/Footer';
 
 describe('The Layout Component Test Suite', () => {
   let wrapper;
   beforeAll(() => {
-    wrapper = shallow((
+    wrapper = shallow(
       <MainLayout>
-        <div className='test' />
-      </MainLayout>
-    ));
+        <div className="test" />
+      </MainLayout>,
+    );
   });
 
   it('should render <MainLayout /> Component', () => {
@@ -28,7 +28,7 @@ describe('The Layout Component Test Suite', () => {
   });
 
   it('should render children exactly once', () => {
-    expect(wrapper.contains(<div className='test' />)).toEqual(true);
+    expect(wrapper.contains(<div className="test" />)).toEqual(true);
     expect(wrapper.find('.test')).toHaveLength(1);
   });
 });

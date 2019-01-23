@@ -11,16 +11,16 @@ import HeaderButton from '../../Widgets/headerButton/HeaderButton';
  * @param {boolean} isValidated should be a boolean
  */
 const Header = (props) => {
-  const { isValidated } = props;
+  const { isAuthenticated } = props;
   return (
-    <header className='header'>
+    <header className="header">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Logo />
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <NavItems />
           </ul>
-          {isValidated ? <ActiveUser /> : <HeaderButton />}
+          {isAuthenticated ? <ActiveUser /> : <HeaderButton />}
           <SearchForm />
         </div>
       </nav>
@@ -29,7 +29,7 @@ const Header = (props) => {
 };
 
 Header.propTypes = {
-  isValidated: PropTypes.bool.isRequired,
+  isAuthenticated: PropTypes.bool.isRequired,
 };
 
 export default Header;

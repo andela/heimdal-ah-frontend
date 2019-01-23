@@ -4,8 +4,10 @@ import { Provider } from 'react-redux';
 import 'font-awesome/css/font-awesome.min.css';
 import configureStore from './store/configureStore';
 import App from './App.jsx';
+import setStoreDefaults from './utils/setStoreDefaults';
 
 const store = configureStore();
+setStoreDefaults(store);
 
 render(
   <Provider store={store}>

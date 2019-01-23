@@ -1,7 +1,7 @@
 import React from 'react';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/buttons/Button';
-import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
+import Glow from '../ui/buttons/glow/Glow';
 import Signup from '../ui/Forms/Signup/Signup';
 
 const HomePage = () => (
@@ -13,6 +13,7 @@ const HomePage = () => (
     <br />
     <div className="container">
       <div className="row">
+        <Glow active />
         <Signup />
       </div>
       <Rating className="fa fa-star" ratings={2.5} />
@@ -95,9 +96,6 @@ const HomePage = () => (
         <br />
         <Button type="publish" label="Publish" />
       </div>
-    </div>
-    <div>
-      <DemoArticleCoponentWithGlowState />
     </div>
   </div>
 );
