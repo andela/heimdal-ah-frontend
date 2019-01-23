@@ -1,6 +1,7 @@
 import React from 'react';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/buttons/Button';
+import NewArticles from './articles/CreateArticles';
 import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
 
 
@@ -9,6 +10,10 @@ const HomePage = () => (
     <h2 className='lead mt-5'>
       Welcome to the Home page...
       <div>
+        <NewArticles />
+        <br />
+        <br />
+        <br />
         <Rating className='fa fa-star' ratings={2.5} />
         <Button type='signup' label='Signup' />
         <br />

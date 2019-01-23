@@ -1,1 +1,9 @@
-export const NEW_ACTION = '';
+const NEW_ACTION = '';
+const NEW_ARTICLE = 'NEW_ARTICLE';
+const NEW_ARTICLE_ERROR = 'NEW_ARTICLE_ERROR';
+
+export {
+  NEW_ARTICLE,
+  NEW_ACTION,
+  NEW_ARTICLE_ERROR,
+};
