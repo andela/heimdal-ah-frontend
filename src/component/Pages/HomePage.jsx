@@ -1,10 +1,8 @@
 import React, { Fragment } from 'react';
-import dotenv from 'dotenv';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/buttons/Button';
 import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
 
-dotenv.config();
 
 const HomePage = () => (
   <div>

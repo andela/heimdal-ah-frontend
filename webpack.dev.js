@@ -1,4 +1,3 @@
-
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
@@ -9,8 +8,5 @@ module.exports = merge(common, {
     port: 3000,
     open: true,
     historyApiFallback: true,
-  },
-  node: {
-    fs: 'empty',
   },
 });
