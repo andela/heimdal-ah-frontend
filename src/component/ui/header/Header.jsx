@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Header.scss';
 import NavItems from '../navItems/NavItems';
-import ActiveUser from '../../Widgets/activeuser/ActiveUser';
+import ActiveUser from '../Widgets/activeuser/ActiveUser';
 import Logo from '../logo/Logo';
-import SearchForm from '../../Widgets/searchForm/SearchForm';
-import HeaderButton from '../../Widgets/headerButton/HeaderButton';
+import SearchForm from '../Widgets/searchForm/SearchForm';
+import HeaderButton from '../Widgets/headerButton/HeaderButton';
 
 /**
  * @param {boolean} isValidated should be a boolean
