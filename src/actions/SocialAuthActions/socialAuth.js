@@ -1,6 +1,5 @@
 import jwtDecode from 'jwt-decode';
 import { ACTIONS } from '../actionTypes';
-import instance from '../../config/http';
 import setToken from '../../config/setToken';
 
 export const setCurrentUser = decoded => ({
@@ -13,11 +12,4 @@ export const autheticateUser = token => (dispatch) => {
   const decoded = jwtDecode(token);
   setToken(token);
   dispatch(setCurrentUser(decoded));
-};
-
-export const checkAxios = () => {
-  instance.get(`${process.env.BASE_URL_PROD}/users/followers`)
-    .then((data) => {
-      console.log(data.data);
-    });
 };
