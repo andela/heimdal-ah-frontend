@@ -6,6 +6,6 @@ import Adapter from 'enzyme-adapter-react-16';
 global.shallow = shallow;
 global.render = render;
 global.mount = mount;
-global.mount = React;
+global.React = React;
 
 Enzyme.configure({ adapter: new Adapter() });

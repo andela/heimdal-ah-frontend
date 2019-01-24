@@ -3,7 +3,7 @@ import {
   Modal, ModalHeader, ModalBody,
 } from 'reactstrap';
 import './TriggerModal.scss';
-import Button from '../buttons/Button';
+import Button from '../Buttons/Button';
 
 
 class TriggerModal extends Component {
