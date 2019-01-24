@@ -965,3 +965,969 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`The Signup Component Test Suite should render the SignupFrom component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SignupForm />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="form-title font-cardo text-center"
+        >
+          Become an Heimdal Demonym
+        </h1>,
+        <form
+          className="heimdal-form"
+          noValidate={true}
+        >
+          <div
+            className="font-cardo ph-30"
+          >
+            <FormInput
+              classname="form-control"
+              name="username"
+              placeholder="Username"
+              type="text"
+            />
+            <FormInput
+              classname="form-control"
+              name="email"
+              placeholder="Email Address"
+              type="email"
+            />
+            <FormInput
+              classname="form-control"
+              name="password"
+              placeholder="Password"
+              type="password"
+            />
+            <FormInput
+              classname="form-control"
+              name="passwordConfirmation"
+              placeholder="Confirm Password"
+              type="password"
+            />
+            <div
+              className="row"
+            >
+              <LoadingSpinner />
+              <MainError />
+              <div
+                className="col-md-8 text-left mb-10"
+              >
+                <span
+                  className="text-muted p-t-10"
+                >
+                  Already have an account?
+                   
+                  <Link
+                    className="link"
+                    replace={false}
+                    to="/"
+                  >
+                    Log in here
+                  </Link>
+                </span>
+              </div>
+              <div
+                className="col-md-4 text-right"
+              >
+                <button
+                  className="btn signup-btn"
+                  type="submit"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>,
+      ],
+      "className": "heimdal-signup-form",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Become an Heimdal Demonym",
+          "className": "form-title font-cardo text-center",
+        },
+        "ref": null,
+        "rendered": "Become an Heimdal Demonym",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="font-cardo ph-30"
+          >
+            <FormInput
+              classname="form-control"
+              name="username"
+              placeholder="Username"
+              type="text"
+            />
+            <FormInput
+              classname="form-control"
+              name="email"
+              placeholder="Email Address"
+              type="email"
+            />
+            <FormInput
+              classname="form-control"
+              name="password"
+              placeholder="Password"
+              type="password"
+            />
+            <FormInput
+              classname="form-control"
+              name="passwordConfirmation"
+              placeholder="Confirm Password"
+              type="password"
+            />
+            <div
+              className="row"
+            >
+              <LoadingSpinner />
+              <MainError />
+              <div
+                className="col-md-8 text-left mb-10"
+              >
+                <span
+                  className="text-muted p-t-10"
+                >
+                  Already have an account?
+                   
+                  <Link
+                    className="link"
+                    replace={false}
+                    to="/"
+                  >
+                    Log in here
+                  </Link>
+                </span>
+              </div>
+              <div
+                className="col-md-4 text-right"
+              >
+                <button
+                  className="btn signup-btn"
+                  type="submit"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>,
+          "className": "heimdal-form",
+          "noValidate": true,
+          "onSubmit": undefined,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <FormInput
+                classname="form-control"
+                name="username"
+                placeholder="Username"
+                type="text"
+              />,
+              <FormInput
+                classname="form-control"
+                name="email"
+                placeholder="Email Address"
+                type="email"
+              />,
+              <FormInput
+                classname="form-control"
+                name="password"
+                placeholder="Password"
+                type="password"
+              />,
+              <FormInput
+                classname="form-control"
+                name="passwordConfirmation"
+                placeholder="Confirm Password"
+                type="password"
+              />,
+              <div
+                className="row"
+              >
+                <LoadingSpinner />
+                <MainError />
+                <div
+                  className="col-md-8 text-left mb-10"
+                >
+                  <span
+                    className="text-muted p-t-10"
+                  >
+                    Already have an account?
+                     
+                    <Link
+                      className="link"
+                      replace={false}
+                      to="/"
+                    >
+                      Log in here
+                    </Link>
+                  </span>
+                </div>
+                <div
+                  className="col-md-4 text-right"
+                >
+                  <button
+                    className="btn signup-btn"
+                    type="submit"
+                  >
+                    Sign Up
+                  </button>
+                </div>
+              </div>,
+            ],
+            "className": "font-cardo ph-30",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "classname": "form-control",
+                "errors": undefined,
+                "name": "username",
+                "onChange": undefined,
+                "placeholder": "Username",
+                "type": "text",
+                "value": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "classname": "form-control",
+                "errors": undefined,
+                "name": "email",
+                "onChange": undefined,
+                "placeholder": "Email Address",
+                "type": "email",
+                "value": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "classname": "form-control",
+                "errors": undefined,
+                "name": "password",
+                "onChange": undefined,
+                "placeholder": "Password",
+                "type": "password",
+                "value": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "classname": "form-control",
+                "errors": undefined,
+                "name": "passwordConfirmation",
+                "onChange": undefined,
+                "placeholder": "Confirm Password",
+                "type": "password",
+                "value": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <LoadingSpinner />,
+                  <MainError />,
+                  <div
+                    className="col-md-8 text-left mb-10"
+                  >
+                    <span
+                      className="text-muted p-t-10"
+                    >
+                      Already have an account?
+                       
+                      <Link
+                        className="link"
+                        replace={false}
+                        to="/"
+                      >
+                        Log in here
+                      </Link>
+                    </span>
+                  </div>,
+                  <div
+                    className="col-md-4 text-right"
+                  >
+                    <button
+                      className="btn signup-btn"
+                      type="submit"
+                    >
+                      Sign Up
+                    </button>
+                  </div>,
+                ],
+                "className": "row",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "isLoading": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "errors": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <span
+                      className="text-muted p-t-10"
+                    >
+                      Already have an account?
+                       
+                      <Link
+                        className="link"
+                        replace={false}
+                        to="/"
+                      >
+                        Log in here
+                      </Link>
+                    </span>,
+                    "className": "col-md-8 text-left mb-10",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Already have an account?",
+                        " ",
+                        <Link
+                          className="link"
+                          replace={false}
+                          to="/"
+                        >
+                          Log in here
+                        </Link>,
+                      ],
+                      "className": "text-muted p-t-10",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Already have an account?",
+                      " ",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Log in here",
+                          "className": "link",
+                          "replace": false,
+                          "to": "/",
+                        },
+                        "ref": null,
+                        "rendered": "Log in here",
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "span",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <button
+                      className="btn signup-btn"
+                      type="submit"
+                    >
+                      Sign Up
+                    </button>,
+                    "className": "col-md-4 text-right",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sign Up",
+                      "className": "btn signup-btn",
+                      "disabled": undefined,
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "rendered": "Sign Up",
+                    "type": "button",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="form-title font-cardo text-center"
+          >
+            Become an Heimdal Demonym
+          </h1>,
+          <form
+            className="heimdal-form"
+            noValidate={true}
+          >
+            <div
+              className="font-cardo ph-30"
+            >
+              <FormInput
+                classname="form-control"
+                name="username"
+                placeholder="Username"
+                type="text"
+              />
+              <FormInput
+                classname="form-control"
+                name="email"
+                placeholder="Email Address"
+                type="email"
+              />
+              <FormInput
+                classname="form-control"
+                name="password"
+                placeholder="Password"
+                type="password"
+              />
+              <FormInput
+                classname="form-control"
+                name="passwordConfirmation"
+                placeholder="Confirm Password"
+                type="password"
+              />
+              <div
+                className="row"
+              >
+                <LoadingSpinner />
+                <MainError />
+                <div
+                  className="col-md-8 text-left mb-10"
+                >
+                  <span
+                    className="text-muted p-t-10"
+                  >
+                    Already have an account?
+                     
+                    <Link
+                      className="link"
+                      replace={false}
+                      to="/"
+                    >
+                      Log in here
+                    </Link>
+                  </span>
+                </div>
+                <div
+                  className="col-md-4 text-right"
+                >
+                  <button
+                    className="btn signup-btn"
+                    type="submit"
+                  >
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>,
+        ],
+        "className": "heimdal-signup-form",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Become an Heimdal Demonym",
+            "className": "form-title font-cardo text-center",
+          },
+          "ref": null,
+          "rendered": "Become an Heimdal Demonym",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="font-cardo ph-30"
+            >
+              <FormInput
+                classname="form-control"
+                name="username"
+                placeholder="Username"
+                type="text"
+              />
+              <FormInput
+                classname="form-control"
+                name="email"
+                placeholder="Email Address"
+                type="email"
+              />
+              <FormInput
+                classname="form-control"
+                name="password"
+                placeholder="Password"
+                type="password"
+              />
+              <FormInput
+                classname="form-control"
+                name="passwordConfirmation"
+                placeholder="Confirm Password"
+                type="password"
+              />
+              <div
+                className="row"
+              >
+                <LoadingSpinner />
+                <MainError />
+                <div
+                  className="col-md-8 text-left mb-10"
+                >
+                  <span
+                    className="text-muted p-t-10"
+                  >
+                    Already have an account?
+                     
+                    <Link
+                      className="link"
+                      replace={false}
+                      to="/"
+                    >
+                      Log in here
+                    </Link>
+                  </span>
+                </div>
+                <div
+                  className="col-md-4 text-right"
+                >
+                  <button
+                    className="btn signup-btn"
+                    type="submit"
+                  >
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+            </div>,
+            "className": "heimdal-form",
+            "noValidate": true,
+            "onSubmit": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FormInput
+                  classname="form-control"
+                  name="username"
+                  placeholder="Username"
+                  type="text"
+                />,
+                <FormInput
+                  classname="form-control"
+                  name="email"
+                  placeholder="Email Address"
+                  type="email"
+                />,
+                <FormInput
+                  classname="form-control"
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                />,
+                <FormInput
+                  classname="form-control"
+                  name="passwordConfirmation"
+                  placeholder="Confirm Password"
+                  type="password"
+                />,
+                <div
+                  className="row"
+                >
+                  <LoadingSpinner />
+                  <MainError />
+                  <div
+                    className="col-md-8 text-left mb-10"
+                  >
+                    <span
+                      className="text-muted p-t-10"
+                    >
+                      Already have an account?
+                       
+                      <Link
+                        className="link"
+                        replace={false}
+                        to="/"
+                      >
+                        Log in here
+                      </Link>
+                    </span>
+                  </div>
+                  <div
+                    className="col-md-4 text-right"
+                  >
+                    <button
+                      className="btn signup-btn"
+                      type="submit"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                </div>,
+              ],
+              "className": "font-cardo ph-30",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "classname": "form-control",
+                  "errors": undefined,
+                  "name": "username",
+                  "onChange": undefined,
+                  "placeholder": "Username",
+                  "type": "text",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "classname": "form-control",
+                  "errors": undefined,
+                  "name": "email",
+                  "onChange": undefined,
+                  "placeholder": "Email Address",
+                  "type": "email",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "classname": "form-control",
+                  "errors": undefined,
+                  "name": "password",
+                  "onChange": undefined,
+                  "placeholder": "Password",
+                  "type": "password",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "classname": "form-control",
+                  "errors": undefined,
+                  "name": "passwordConfirmation",
+                  "onChange": undefined,
+                  "placeholder": "Confirm Password",
+                  "type": "password",
+                  "value": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <LoadingSpinner />,
+                    <MainError />,
+                    <div
+                      className="col-md-8 text-left mb-10"
+                    >
+                      <span
+                        className="text-muted p-t-10"
+                      >
+                        Already have an account?
+                         
+                        <Link
+                          className="link"
+                          replace={false}
+                          to="/"
+                        >
+                          Log in here
+                        </Link>
+                      </span>
+                    </div>,
+                    <div
+                      className="col-md-4 text-right"
+                    >
+                      <button
+                        className="btn signup-btn"
+                        type="submit"
+                      >
+                        Sign Up
+                      </button>
+                    </div>,
+                  ],
+                  "className": "row",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "isLoading": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "errors": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <span
+                        className="text-muted p-t-10"
+                      >
+                        Already have an account?
+                         
+                        <Link
+                          className="link"
+                          replace={false}
+                          to="/"
+                        >
+                          Log in here
+                        </Link>
+                      </span>,
+                      "className": "col-md-8 text-left mb-10",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Already have an account?",
+                          " ",
+                          <Link
+                            className="link"
+                            replace={false}
+                            to="/"
+                          >
+                            Log in here
+                          </Link>,
+                        ],
+                        "className": "text-muted p-t-10",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Already have an account?",
+                        " ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Log in here",
+                            "className": "link",
+                            "replace": false,
+                            "to": "/",
+                          },
+                          "ref": null,
+                          "rendered": "Log in here",
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "span",
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <button
+                        className="btn signup-btn"
+                        type="submit"
+                      >
+                        Sign Up
+                      </button>,
+                      "className": "col-md-4 text-right",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sign Up",
+                        "className": "btn signup-btn",
+                        "disabled": undefined,
+                        "type": "submit",
+                      },
+                      "ref": null,
+                      "rendered": "Sign Up",
+                      "type": "button",
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

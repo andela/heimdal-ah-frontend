@@ -26,6 +26,26 @@
     "no-extraneous-dependencies": 0,
     "react/destructuring-assignment": ["always", { "ignoreClassFields": true }],
     "react/no-array-index-key": 0,
-    "react/prop-types": 0
+    "react/prop-types": 0,
+
+    "require-jsdoc": [
+      1,
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": false,
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": false,
+          "FunctionExpression": false
+        }
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"]
+      }
+    ]
   }
 }

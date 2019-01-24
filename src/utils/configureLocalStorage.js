@@ -1,12 +1,12 @@
 const configureLocalStorage = {
   setAuthUser(token) {
     localStorage.setItem('isAuthenticated', true);
-    localStorage.setItem('token', token);
+    localStorage.setItem('access-token', token);
   },
 
   removeAuthUser() {
     localStorage.removeItem('isAuthenticated');
-    localStorage.removeItem('token');
+    localStorage.removeItem('access-token');
   },
 };
 

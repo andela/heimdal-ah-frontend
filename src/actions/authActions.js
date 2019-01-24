@@ -1,9 +1,10 @@
-import axios from 'axios';
+// import axios from 'axios';
 import JWT from 'jsonwebtoken';
 import { signupEndpoint } from '../apiEndpoints';
 import { SET_ERRORS, SET_AUTH_USER } from './actionTypes';
 import errorResponse from '../utils/errorResponse';
 import configureLocalStorage from '../utils/configureLocalStorage';
+import axiosInstance, { setToken } from '../utils/axiosInstance';
 
 export const setAuthUser = (token) => {
   const decodedToken = JWT.decode(token);
@@ -11,6 +12,7 @@ export const setAuthUser = (token) => {
 
   configureLocalStorage.setAuthUser(token);
   // remember to set axios auth token here
+  setToken(token);
 
   return {
     type: SET_AUTH_USER,
@@ -24,18 +26,12 @@ export const setAuthUser = (token) => {
 };
 
 export const signupUser = (signupData = {}, history) => (dispatch) => {
-  axios
+  axiosInstance
     .post(signupEndpoint, signupData)
     .then((response) => {
-      if (response.status === 201) {
-        const { token } = response.data;
-        dispatch(setAuthUser(token));
-        return history.push('/');
-      }
-      return dispatch({
-        type: SET_ERRORS,
-        payload: 'An error occured try again',
-      });
+      const { token } = response.data;
+      dispatch(setAuthUser(token));
+      return history.push('/');
     })
     .catch((errors = {}) => {
       const { response = {}, request } = errors;

@@ -5,7 +5,7 @@ import FormInput from '../../InputElements/FormInput';
 import LoadingSpinner from '../../loadingSpinners/LoadingSpinner';
 import MainError from '../../errors/MainError';
 
-describe('The Layout Component Test Suite', () => {
+describe('The Signup Component Test Suite', () => {
   it('should render the SignupFrom component', () => {
     const wrapper = shallow(<SignupForm />);
     expect(wrapper).toMatchSnapshot();
