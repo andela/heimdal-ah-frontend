@@ -46,24 +46,24 @@ class CreateArticle extends React.Component {
         {status === 'FAILURE' && <Alert type='warning' title='all fields should be filled' message='Error : Article was not posted' />}
         <div className='container'>
           <br />
-          <Editor
-            placeholder="type your article"
-            tag="pre"
-            text={this.state.title}
-            onChange={this.titleHandleChange}
-            options={{ toolbar: { buttons: ['bold', 'italic', 'underline'] } }}
-          />
-          <Editor
-            placeholder="type your article"
-            tag="pre"
-            text={this.state.body}
-            onChange={this.articleHandleChange}
-            options={{
-              toolbar: {
-                buttons: ['bold', 'italic', 'underline', 'h2', 'h3', 'quote'],
-              },
-            }}
-          />
+          <div className='create-articles __text'>
+            <Editor
+              tag="pre"
+              data-placeholder='Amaze us with your story....'
+              text={this.state.title}
+              onChange={this.titleHandleChange}
+              options={{ toolbar: { buttons: ['bold', 'italic', 'underline', 'anchor', 'h2', 'h3', 'quote', 'html', 'strikethrough', 'subscript', 'superscript'] } }}
+            />
+          </div>
+          <div className='create-articles __text'>
+            <Editor
+              tag="pre"
+              data-placeholder='Amaze us with your story....'
+              text={this.state.body}
+              onChange={this.articleHandleChange}
+              options={{ toolbar: { buttons: ['bold', 'italic', 'underline', 'anchor', 'h2', 'h3', 'quote', 'html', 'strikethrough', 'subscript', 'superscript'] } }}
+            />
+          </div>
           <br />
           <button type='submit' onClick={e => this.onHandleSubmit(e)}>Post</button>
         </div>

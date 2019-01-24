@@ -1,4 +1,26 @@
-.public-DraftEditorPlaceholder-inner {
-    position: absolute;
-    color: #aaaaaa;
+.create-articles{
+  * {
+      box-sizing: border-box;
   }
+  &.__button {
+      float: right;
+      font-size: 20px;
+      height: 2.5em;
+      margin: 2% 7% 0 0;
+      width: 11%;
+  }
+
+  &.__text {
+      font-size: 2em;
+      margin: 1% 0 15% 0;
+      padding: 0 25%;
+
+  overflow-x: auto;
+  }
+
+  &.__title {
+      font-size: 3em;
+      margin-top: 11%;
+      padding: 0 25%;
+  }
+}
