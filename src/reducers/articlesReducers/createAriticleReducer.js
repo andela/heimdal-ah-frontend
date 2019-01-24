@@ -1,4 +1,4 @@
-import actions from '../../actions/actionTypes';
+import ACTIONS from '../../actions/actionTypes';
 
 const intialState = {
   title: '',
@@ -7,16 +7,22 @@ const intialState = {
 
 export default (state = intialState, action) => {
   switch (action.type) {
-    case actions.NEW_ARTICLE:
+    case ACTIONS.CREATE_ARTICLE:
       return {
+        ...state,
         title: action.payload.title,
         body: action.payload.body,
+        status: 'SUCCESS',
+        payload: action.payload,
       };
 
-    case actions.NEW_ARTICLE_ERROR: {
+    case ACTIONS.CREATE_ARTICLE_ERROR: {
       return {
+        ...state,
         title: null,
         body: null,
+        status: 'FAILED',
+        payload: action.payload,
       };
     }
     default:

@@ -1,36 +1,38 @@
 import axios from 'axios';
-import actions from '../actionTypes';
+import ACTIONS from '../actionTypes';
+import ActionResponse from '../actionResponse';
 
 
-const articleActions = userDetails => (dispatch) => {
+const articleActions = articleDetails => (dispatch) => {
   const {
     title,
     body,
-  } = userDetails;
+    description,
+  } = articleDetails;
 
-  return axios.post('https://fast-food-fast-food.herokuapp.com/api/v1/auth/signup', {
+  console.log(body, '==================');
+
+  return axios.post('https://heimdal-ah-staging.herokuapp.com/api/v1/articles', {
     title,
     body,
+    description,
+  }, {
     headers: {
-      'access-token': '',
+      'access-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoiam9obiIsInJvbGVJZCI6MiwiaWF0IjoxNTQ4MzA2NTM5LCJleHAiOjE1NDgzOTI5Mzl9.y12-awPcMxiOaNR2W8YCAcbwUmwf7PdCsMLuhXkGRIU',
     },
-  })
-    .then((data) => {
-      if (data.status === 200) {
-        dispatch({
-          type: actions.NEW_ARTICLE,
-          payload: data,
-        });
-        // const token = response.data.data.token;
-        // setAccessToken(token);
-      }
-    }).catch((error) => {
-      console.log(error.response.data);
-      dispatch({
-        type: actions.NEW_ARTICLE_ERROR,
-        payload: error.response.data,
-      });
-    });
+  }).then((data) => {
+    const payload = { message: 'Article successfully created', data };
+    if (data.status === 201) {
+      dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE, payload));
+    }
+  }).catch((error) => {
+    if (error.response.status === 400) {
+      dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, { message: 'No Field Should Be Left Empty', status: 400 }));
+    }
+    if (error.response.status === 500) {
+      dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, { message: 'Sever Error', status: 500 }));
+    }
+  });
 };
 
 export default articleActions;
