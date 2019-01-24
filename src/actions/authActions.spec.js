@@ -49,9 +49,6 @@ describe('The authActions Test Suite', () => {
       },
     };
 
-    store.dispatch(setAuthUser(token)).then(() => {
-      expect(store.getActions()).toEqual(expected);
-    });
     expect(store.dispatch(setAuthUser(token))).toEqual(expected);
   });
 });
