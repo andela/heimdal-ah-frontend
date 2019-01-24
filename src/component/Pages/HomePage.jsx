@@ -1,93 +1,101 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Rating from '../ui/Rating/Rating';
-import Button from '../ui/buttons/Button';
-import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
-
+import Button from '../ui/Buttons/Button';
+import { DemoArticleCoponentWithGlowState } from '../ui/Buttons/glow/DemoArticleCoponentWithGlowState';
+// import ArticleCardVertical from '../ui/cards/BookmarksCards';
 
 const HomePage = () => (
   <div>
-    <h2 className='lead mt-5'>
+    <Fragment>
+      <br />
+      <br />
+      <br />
+      <a href={`${process.env.BASE_URL_PROD}/auth/facebook`}>
+        <Button type="facebook" label="Login with Facebook" />
+      </a>
+      <br />
+      <br />
+      <br />
+      <a href={`${process.env.BASE_URL_PROD}/auth_twitter/twitter`}><Button type="twitter" label="Login with Twitter" /></a>
+      <br />
+      <br />
+      <br />
+      <br />
+      <a href={`${process.env.BASE_URL_PROD}/auth/google`}>
+        <Button type="google" label="Login with Google" />
+      </a>
+      <br />
+      <br />
+      <br />
+    </Fragment>
+
+    <h2 className="lead mt-5">
       Welcome to the Home page...
       <div>
-        <Rating className='fa fa-star' ratings={2.5} />
-        <Button type='signup' label='Signup' />
+        <Rating className="fa fa-star" ratings={2.5} />
+        <Button type="signup" label="Signup" />
         <br />
         <br />
         <br />
-        <Button type='login' label='Login' />
+        <Button type="login" label="Login" />
         <br />
         <br />
         <br />
-        <Button type='login2' label='Login' />
+        <Button type="login2" label="Login" />
         <br />
         <br />
         <br />
-        <Button type='signup2' label='Sign Up' />
+        <Button type="signup2" label="Sign Up" />
         <br />
         <br />
         <br />
-        <Button type='follow' label='Follow' />
+        <Button type="follow" label="Follow" />
         <br />
         <br />
         <br />
-        <Button type='tag' label='Technology' />
+        <Button type="tag" label="Technology" />
         <br />
         <br />
         <br />
-        <Button type='report' label='Report Article' />
+        <Button type="report" label="Report Article" />
         <br />
         <br />
         <br />
-        <Button type='notifications' label='load older...' />
+        <Button type="notifications" label="load older..." />
         <br />
         <br />
         <br />
-        <Button type='article' label='Post Article' />
+        <Button type="article" label="Post Article" />
         <br />
         <br />
         <br />
-        <Button type='save-profile' label='Save Profile' />
+        <Button type="save-profile" label="Save Profile" />
         <br />
         <br />
         <br />
-        <Button type='cancel' label='Cancel' />
+        <Button type="cancel" label="Cancel" />
         <br />
         <br />
         <br />
-        <Button type='reply' label='Add Reply' />
+        <Button type="reply" label="Add Reply" />
         <br />
         <br />
         <br />
-        <Button type='comment' label='Add Comment' />
+        <Button type="comment" label="Add Comment" />
         <br />
         <br />
         <br />
-        <Button type='stories' label='All Stories' />
-        <br />
-        <br />
-        <br />
-        <Button type='facebook' label='Login with Facebook' />
-        <br />
-        <br />
-        <br />
-        <Button type='twitter' label='Login with Twitter' />
-        <br />
-        <br />
-        <br />
-        <Button type='google' label='Login with Google' />
-        <br />
-        <br />
-        <br />
+        <Button type="stories" label="All Stories" />
         <div style={{ background: '#606E86', height: '40vh', padding: '1em' }}>
-          <Button type='subscribe' label='Subscribe' />
+          <Button type="subscribe" label="Subscribe" />
           <br />
           <br />
           <br />
-          <Button type='edit-profile' label='Edit' />
+          <Button type="edit-profile" label="Edit" />
           <br />
           <br />
           <br />
-          <Button type='publish' label='Publish' />
+          <Button type="publish" label="Publish" />
         </div>
       </div>
       <div>
@@ -98,12 +106,3 @@ const HomePage = () => (
 );
 
 export default HomePage;
-
-// const HomePage = (props) => {
-//   console.log(props.match)
-//   return (
-//     <div>dfkjnfgsknsdsdfsfsf</div>
-//   );
-// };
-
-// export default HomePage;

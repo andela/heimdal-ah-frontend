@@ -10,7 +10,6 @@ describe('<Header />', () => {
 
   it('should test the children of the header', () => {
     const wrapper = shallow(<Header />);
-    const children = wrapper.find('nav');
-    expect(children.length).toBe(1);
+    expect(wrapper).toMatchSnapshot();
   });
 });

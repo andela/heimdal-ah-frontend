@@ -1,4 +1,14 @@
+import keyMirror from 'keymirror';
+
 export const NEW_ACTION = '';
-export const FOLLOW_USER = 'FOLLOW_USER';
-export const UNFOLLOW_USER = 'UNFOLLOW_USER';
-export const GET_ALL_FOLLOWERS = 'GET_ALL_FOLLOWERS';
+
+export const ACTIONS = keyMirror({
+  RESET_PASSWORD_STATE: null,
+  RESET_PASSWORD_SUCCESS: null,
+  RESET_PASSWORD_FAILED: null,
+  RESET_PASSWORD_ERROR: null,
+  UPDATE_PASSWORD_SUCCESS: null,
+  UPDATE_PASSWORD_FAILED: null,
+  UPDATE_PASSWORD_ERROR: null,
+  SET_CURRENT_USER: null,
+});

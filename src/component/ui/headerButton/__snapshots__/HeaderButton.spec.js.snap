@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the Header Button should create a snapshot of the logo 1`] = `
+<div
+  className="header-button-group"
+>
+  <TriggerModal
+    label="Signup"
+    type="signup"
+  >
+    Sign up
+  </TriggerModal>
+  <TriggerModal
+    label="Login"
+    type="signup"
+  >
+    signin Form
+  </TriggerModal>
+</div>
+`;

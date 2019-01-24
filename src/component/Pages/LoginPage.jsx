@@ -2,7 +2,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Button from '../ui/buttons/Button.jsx';
+import Button from '../ui/Buttons/Button.jsx';
 
 class LoginPage extends Component {
   render() {
