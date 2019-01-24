@@ -1,8 +1,8 @@
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Header.scss';
 import { connect } from 'react-redux';
+import './Header.scss';
 import NavItems from '../navItems/NavItems';
 import ActiveUser from '../activeuser/ActiveUser';
 import Logo from '../logo/Logo';

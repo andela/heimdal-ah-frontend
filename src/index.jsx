@@ -5,7 +5,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import jwtDecode from 'jwt-decode';
 import configureStore from './store/configureStore';
 import App from './App.jsx';
-import instance from './config/http';
 import { setCurrentUser } from './actions/SocialAuthActions/socialAuth';
 
 const store = configureStore();
