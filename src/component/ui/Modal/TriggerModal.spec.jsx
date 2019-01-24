@@ -1,16 +1,16 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import toJson from 'enzyme-to-json';
-import TriggerModal from './TriggerModal';
+import ModalButton from './Index';
 
-describe('Render <TriggerModal />', () => {
-  it('it should render TriggerModal component', () => {
-    const container = shallow(<TriggerModal />);
+describe('Render <ModalButton />', () => {
+  it('it should render ModalButton component', () => {
+    const container = shallow(<ModalButton />);
     expect(container.length).toBe(1);
   });
 
   it('should match the snapshot', () => {
-    const tree = shallow(<TriggerModal />);
+    const tree = shallow(<ModalButton />);
     expect(toJson(tree)).toMatchSnapshot();
   });
 });
