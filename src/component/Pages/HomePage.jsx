@@ -101,15 +101,17 @@ const HomePage = () => (
         <br />
         <br />
         <br />
-        <Button type='edit-profile' label='Edit' />
         <br />
         <br />
         <br />
-        <Button type='publish' label='Publish' />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <DemoArticleCoponentWithGlowState />
       </div>
-    </div>
-    <div>
-      <DemoArticleCoponentWithGlowState />
     </div>
   </div>
 );
