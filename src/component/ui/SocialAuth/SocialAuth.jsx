@@ -38,8 +38,4 @@ SocialAuth.propTypes = {
   autheticateUser: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => ({
-  auth: state.auth,
-});
-
-export default connect(mapStateToProps, { autheticateUser })(SocialAuth);
+export default connect(null, { autheticateUser })(SocialAuth);
