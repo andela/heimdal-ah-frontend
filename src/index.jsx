@@ -13,7 +13,7 @@ const store = configureStore();
 const token = localStorage.getItem('access-token');
 if (token) {
   // set auth token
-  instance(token);
+  // instance(token);
   // decode token and get user info and expiration
   const decoded = jwtDecode(token);
   // set user using the setCurrentUser
