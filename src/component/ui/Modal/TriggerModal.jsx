@@ -1,10 +1,7 @@
 import React, { Fragment, Component } from 'react';
-import {
-  Modal, ModalHeader, ModalBody,
-} from 'reactstrap';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import './TriggerModal.scss';
 import Button from '../Buttons/Button';
-
 
 class TriggerModal extends Component {
   state = {
@@ -26,7 +23,11 @@ class TriggerModal extends Component {
           label={this.props.label}
           onClick={this.toggle}
         />
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+        <Modal
+          isOpen={this.state.modal}
+          toggle={this.toggle}
+          className={this.props.className}
+        >
           <ModalHeader toggle={this.toggle} />
           <ModalBody>{this.props.children}</ModalBody>
         </Modal>
