@@ -5,13 +5,11 @@ import LoadingSpinner from '../../loadingSpinner/LoadingSpinner';
 import './Signin.scss';
 
 /**
- * @description - Heimdal Authors Haven Button Component
+ * @description - Heimdal Authors Haven Signin Component
  * @param {props} auth - the authentication state of the current user
- * @param {props} email - email valu
- * @param {props} eerrors - the title of the button
- * @param {props} error - the type of the button(signin,signup,login,follow,tag,login2,signup2,
- * subscribe,publish,report,notifications,article,save-profile,cancel,edit-profile,reply,comment,
- * stories,facebook,twitter,google)
+ * @param {props} email - email value from
+ * @param {props} errors - errors validations
+ * @param {props} error - error validation from backend
  * @returns {component} form
  */
 const SigninForm = (props) => {
