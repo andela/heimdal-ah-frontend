@@ -1,6 +1,6 @@
 import keyMirror from 'keymirror';
 
-const ACTIONS = keyMirror({
+export const ACTIONS = keyMirror({
   RESET_PASSWORD_STATE: null,
   RESET_PASSWORD_SUCCESS: null,
   RESET_PASSWORD_FAILED: null,
@@ -11,6 +11,3 @@ const ACTIONS = keyMirror({
   CREATE_ARTICLE: null,
   CREATE_ARTICLE_ERROR: null,
 });
-
-
-export default ACTIONS;

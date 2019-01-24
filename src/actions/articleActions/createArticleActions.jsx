@@ -1,5 +1,5 @@
 import axios from 'axios';
-import ACTIONS from '../actionTypes';
+import { ACTIONS } from '../actionTypes';
 import ActionResponse from '../actionResponse';
 
 
@@ -10,7 +10,6 @@ const articleActions = articleDetails => (dispatch) => {
     description,
   } = articleDetails;
 
-  console.log(body, '==================');
 
   return axios.post('https://heimdal-ah-staging.herokuapp.com/api/v1/articles', {
     title,
@@ -28,8 +27,7 @@ const articleActions = articleDetails => (dispatch) => {
   }).catch((error) => {
     if (error.response.status === 400) {
       dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, { message: 'No Field Should Be Left Empty', status: 400 }));
-    }
-    if (error.response.status === 500) {
+    } else if (error.response.status === 500) {
       dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, { message: 'Sever Error', status: 500 }));
     }
   });

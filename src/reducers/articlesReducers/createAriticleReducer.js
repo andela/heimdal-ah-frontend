@@ -1,4 +1,4 @@
-import ACTIONS from '../../actions/actionTypes';
+import { ACTIONS } from '../../actions/actionTypes';
 
 const intialState = {
   title: '',
@@ -21,10 +21,19 @@ export default (state = intialState, action) => {
         ...state,
         title: null,
         body: null,
-        status: 'FAILED',
+        status: 'FAILURE',
         payload: action.payload,
       };
     }
+
+    case ACTIONS.CREATE_ARTICLE_ERROR_AUTH:
+      return {
+        ...state,
+        title: null,
+        body: null,
+        status: 'AUTH_ERROR',
+        payload: action.payload,
+      };
     default:
       return state;
   }

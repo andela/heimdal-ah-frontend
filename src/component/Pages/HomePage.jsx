@@ -1,7 +1,7 @@
 import React from 'react';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/buttons/Button';
-import NewArticles from './articles/CreateArticles';
+import NewArticles from './articles/createArticle/CreateArticles';
 import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
 import ArticleCardVertical from '../ui/cards/BookmarksCards';
 
@@ -21,6 +21,7 @@ const HomePage = () => (
       <br />
       <br />
       <br />
+      <NewArticles />
       <br />
       <br />
       <br />

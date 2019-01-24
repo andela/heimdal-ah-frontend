@@ -8,11 +8,11 @@ module.exports = {
   clearMocks: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: [
-    '!src/**/*.{js,jsx}',
-    '!public/*.{js}',
-    '!src/index.jsx',
-  ],
+  // collectCoverageFrom: [
+  //   '!src/**/*.{js,jsx}',
+  //   '!public/*.{js}',
+  //   '!src/index.jsx',
+  // ],
 
   collectCoverage: true,
 
