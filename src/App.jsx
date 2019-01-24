@@ -12,7 +12,6 @@ export class App extends Component {
   componentDidMount() {
     const { actions } = this.props;
     actions.getAllFollowers();
-    console.log(actions);
   }
 
   render() {
