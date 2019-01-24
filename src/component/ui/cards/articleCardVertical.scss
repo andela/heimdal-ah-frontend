@@ -1,0 +1,105 @@
+
+.cardbox {
+    font-family: 'Ovo', serif;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 0px !important;
+    .cardbox .float-right a:hover{
+        background: #f4f4f4 !important;	
+      };
+    
+      .cardbox .cardbox-item {
+        position: relative;
+        display: block;
+      };
+
+      .img-responsive{
+        display: block;
+        max-width: 100%;
+        height: auto;
+      };
+
+      .cardbox-base ul{
+        margin: 0px 0px 10px 15px!important; 
+        padding: 10px !important;
+        font-size: 0px;	
+        display: inline-block;
+      };
+
+      .cardbox-base li {
+        list-style: none;
+        margin: 0px 0px 0px -8px !important;
+        padding: 0px 0px 0px 0px !important;
+        display: inline-block;
+      };
+
+      .time-text {
+        font-size: 12px;
+        padding: 0 0 0 50px;
+      };
+
+      .user-name-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+        max-width: 19ch;
+      };
+     
+      .cardbox-base li a{
+        margin: 0px !important;
+        padding: 0px !important;
+      };
+
+      .cardbox-base li a i{
+        position: relative;
+        top: 4px; 
+        font-size: 16px;
+        color: #8d8d8d;
+      };
+
+      .cardbox-base li a span{
+        font-family: 'Rokkitt', serif;
+        font-size: 14px;
+        color: #8d8d8d;
+        margin-left: 20px;
+        position: relative;
+        top: 5px; 
+      };
+
+      .cardbox-base li a em{
+        font-family: 'Rokkitt', serif;
+        font-size: 14px;
+        color: #8d8d8d;
+        position: relative;
+        top: 3px; 
+      };
+
+      .cardbox-base li a img{
+        width: 25px;
+        height: 25px;
+        margin: 0px !important;
+        border: 2px solid #fff;
+      };
+
+      .author a{
+        font-family: 'Rokkitt', serif;
+        font-size: 16px;
+        color: #00C4CF;
+      };
+
+      .author p{
+        font-family: 'Rokkitt', serif;
+        font-size: 16px;
+        color: #8d8d8d;
+      };
+
+      .card-text {
+        font-size: 13px;
+        color: #000000;
+        font-weight: lighter;
+        text-overflow: ellipsis;
+        max-height: 60px;
+        overflow: hidden;
+      };
+  };

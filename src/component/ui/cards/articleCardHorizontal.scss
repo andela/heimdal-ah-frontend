@@ -1,0 +1,52 @@
+.article-card-horizontal {
+    width: 300px;
+    font-family: 'Cardo', serif;;
+    border: '0rem';
+    .flex-text-content {
+      display: block; /* or inline-block */
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      overflow: hidden;
+      max-height: 3.7em;
+    }
+    .card-text {
+      font-size: 14px;
+      color: black;
+    };
+    .card-title {
+      font-weight: 1000;
+
+    };
+    .comment {
+      font-size: 15px;
+      padding-left: 15px;
+      margin-top: 12px;
+    };
+    .user-name {
+      font-size: 15px;
+      padding-left: 10px;
+      display: 'inline-block';
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 10ch;
+    };
+    .card-body {
+      padding: 0px;
+    };
+  
+    .user-image {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      font-weight: 200;
+    };
+  
+    .updated-time {
+      color: #000000; 
+      font-size: 14px;  
+    };
+
+    .ratings {
+      margin-top: 10px;
+    };
+  };

@@ -1,0 +1,291 @@
+@import "../../../styles/variables";
+
+$default-color: #00b4fa;
+$btn-google: #f13921;
+$btn-facebook: #2a59a1;
+$btn-most: #606e86;
+$shadow: rgba(77, 56, 56, 0.3);
+$shadow2: rgba(107, 105, 105, 0.2);
+$shadow3: rgba(107, 105, 105, 0.8);
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  transform: translateY(3px);
+}
+
+.button {
+  * {
+    box-sizing: border-box;
+  }
+
+  &.btn-signup {
+    color: $white-color;
+    background: $btn-most;
+    padding: 8px 20px;
+    border: 1px solid $white-color;
+    border-radius: 5rem;
+    font-size: 1em;
+    margin: 7px;
+    margin-right: 20px;
+    margin-top: -2px;
+  }
+
+  &.btn-login {
+    color: $white-color;
+    background: $btn-most;
+    padding: 8px 20px;
+    border: 1px solid $white-color;
+    border-radius: 5rem;
+    font-size: 1em;
+    margin: 7px;
+    margin-right: 20px;
+    margin-top: -2px;
+  }
+
+  &.btn-follow {
+    background: $default-color;
+    box-shadow: 2.5px 3.5px $shadow3;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 1em;
+    font-weight: bold;
+    height: 2em;
+    padding: 5px 20px;
+    width: 12.2%;
+  }
+
+  &.btn-tag {
+    background: $btn-most;
+    border-radius: 0.3em;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $ovo;
+    font-size: 0.7em;
+    height: 2.7em;
+    width: 12%;
+  }
+
+  &.btn-login2 {
+    background: $btn-most;
+    border-radius: 0.3em;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $ovo;
+    font-size: 0.7em;
+    height: 2.7em;
+    width: 12%;
+  }
+
+  &.btn-signup2 {
+    background: $btn-most;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $ovo;
+    font-size: 0.7em;
+    padding: 0;
+    height: 2.7em;
+    width: 12%;
+    border-radius: 0.3em;
+  }
+
+  &.btn-subscribe {
+    background: transparent;
+    border: 1px solid $white-color;
+    border-radius: 0.8em;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $reem-kufi;
+    font-size: 0.7em;
+    height: 32.85;
+    padding: 5px 20px;
+    width: 99.22;
+  }
+
+  &.btn-publish {
+    background: $white-color;
+    border: 1px solid $white-color;
+    color: $btn-most;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 1em;
+    font-weight: bold;
+    height: 32.85;
+    padding: 5px 20px;
+    width: 12%;
+  }
+
+  &.btn-report {
+    background: $btn-google;
+    border-radius: 1em;
+    box-shadow: 1px 2.5px $shadow2;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 1em;
+    height: 2.9em;
+    padding: 1px;
+    width: 15%;
+  }
+
+  &.btn-notifications {
+    background: $btn-most;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 1em;
+    height: 2.7em;
+    padding: 0.5em;
+    width: 13%;
+  }
+
+  &.btn-article {
+    background: $btn-most;
+    border-radius: 15em;
+    box-shadow: 1px 1.5px $shadow;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 1em;
+    height: 2em;
+    padding: 1px;
+    width: 14%;
+  }
+
+  &.btn-profile {
+    background: $btn-most;
+    border-radius: 0.5em;
+    box-shadow: 3px 3px $shadow;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 1em;
+    height: 2.8em;
+    width: 13.5%;
+  }
+
+  &.btn-save-profile {
+    background: $btn-most;
+    border-radius: 0.5em;
+    box-shadow: 3px 3px $shadow;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 1em;
+    height: 2.8em;
+    width: 13.5%;
+  }
+
+  &.btn-cancel {
+    background: $btn-most;
+    border-radius: 0.5em;
+    box-shadow: 3px 3px $shadow;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 1em;
+    height: 2.8em;
+    width: 13.5%;
+  }
+
+  &.btn-edit-profile {
+    background: $white-color;
+    box-shadow: 2.5px 4.5px $shadow;
+    color: $btn-most;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 1em;
+    font-weight: bold;
+    height: 2em;
+    padding: 5px 20px;
+    width: 12.2%;
+  }
+
+  &.btn-reply {
+    background: $btn-most;
+    border-radius: 0.5em;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 0.9em;
+    height: 2.5em;
+    width: 15%;
+  }
+
+  &.btn-comment {
+    background: $btn-most;
+    border-radius: 0.5em;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 0.9em;
+    height: 2.5em;
+    width: 15%;
+  }
+
+  &.btn-stories {
+    background: $btn-most;
+    border-radius: 0.5em;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 0.9em;
+    height: 2.5em;
+    width: 15%;
+  }
+
+  &.btn-twitter {
+    background: $default-color;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 2em;
+    padding: 5px 20px;
+    width: 28%;
+  }
+
+  &.btn-facebook {
+    background: $btn-facebook;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 2em;
+    padding: 5px 20px;
+    width: 28%;
+  }
+
+  &.btn-google {
+    background: $btn-google;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 2em;
+    padding: 5px 20px;
+    width: 28%;
+  }
+
+  &.btn-default {
+    background: $default-color;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $cardo;
+    font-size: 1em;
+    font-weight: bold;
+    height: 2.5em;
+    padding: 5px 20px;
+    width: 30%;
+  }
+}
