@@ -15,7 +15,7 @@ export default (state = initialState, action) => {
         isAuthenticated: !isEmpty(action.user),
         user: action.user,
       };
-    case ACTIONS.SET_CURRENT_USER_ERROR:
+    case ACTIONS.SET_CURRENT_USER_FAIL:
       return {
         ...state,
         isAuthenticated: false,

@@ -2,7 +2,7 @@ import keyMirror from 'keymirror';
 
 export const ACTIONS = keyMirror({
   SET_CURRENT_USER: null,
-  SET_CURRENT_USER_ERROR: null,
+  SET_CURRENT_USER_FAIL: null,
   REMOVE_CURRENT_USER: null,
   RESET_PASSWORD_STATE: null,
   RESET_PASSWORD_SUCCESS: null,

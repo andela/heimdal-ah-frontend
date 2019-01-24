@@ -57,8 +57,8 @@ const SigninForm = (props) => {
             </div>
             <div className="col-md-8 text-left mb-10">
               <span className="text-muted p-t-10">
-                Don't have an account?
                 {' '}
+                Don't have an account?
                 <Link to="/signup" className="link">
                 Sign up here
                 </Link>
