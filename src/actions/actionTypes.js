@@ -1,3 +1,14 @@
-export const SET_CURRENT_USER = 'SET_CURRENT_USER';
-export const SET_CURRENT_USER_ERROR = 'SET_CURRENT_USER_ERROR';
-export const LOG_OUT = 'LOG_OUT';
+import keyMirror from 'keymirror';
+
+export const ACTIONS = keyMirror({
+  SET_CURRENT_USER: null,
+  SET_CURRENT_USER_ERROR: null,
+  REMOVE_CURRENT_USER: null,
+  RESET_PASSWORD_STATE: null,
+  RESET_PASSWORD_SUCCESS: null,
+  RESET_PASSWORD_FAILED: null,
+  RESET_PASSWORD_ERROR: null,
+  UPDATE_PASSWORD_SUCCESS: null,
+  UPDATE_PASSWORD_FAILED: null,
+  UPDATE_PASSWORD_ERROR: null,
+});

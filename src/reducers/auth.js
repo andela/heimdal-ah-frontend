@@ -1,9 +1,5 @@
 import isEmpty from 'is-empty';
-import {
-  SET_CURRENT_USER,
-  SET_CURRENT_USER_ERROR,
-  LOG_OUT,
-} from '../actions/actionTypes';
+import { ACTIONS } from '../actions/actionTypes';
 
 const initialState = {
   isAuthenticated: false,
@@ -13,13 +9,13 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SET_CURRENT_USER:
+    case ACTIONS.SET_CURRENT_USER:
       return {
         ...state,
         isAuthenticated: !isEmpty(action.user),
         user: action.user,
       };
-    case SET_CURRENT_USER_ERROR:
+    case ACTIONS.SET_CURRENT_USER_ERROR:
       return {
         ...state,
         isAuthenticated: false,
@@ -27,7 +23,7 @@ export default (state = initialState, action) => {
         error: action.error,
       };
 
-    case LOG_OUT:
+    case ACTIONS.REMOVE_CURRENT_USER:
       return {
         ...state,
         ...initialState,

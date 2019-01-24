@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import './articleCardVertical.scss';
-import Glow from '../buttons/glow/Glow.jsx';
+import Glow from '../Buttons/glow/Glow.jsx';
 import Rating from '../Rating/Rating';
 
 /** @description vertical Cards for Article
