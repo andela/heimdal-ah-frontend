@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import Editor from 'react-medium-editor';
-import Button from '../../../ui/buttons/Button';
+import Button from '../../../ui/Buttons/Button';
 import './UpdateArticles.scss';
 import updateArticles from '../../../../actions/articleActions/updateArticlesActions';
 

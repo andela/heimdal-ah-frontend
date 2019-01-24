@@ -1,4 +1,4 @@
-import actions from '../../actions/actionTypes';
+import { ACTIONS } from '../../actions/actionTypes';
 
 const intialState = {
   title: '',
@@ -7,13 +7,13 @@ const intialState = {
 
 export default (state = intialState, action) => {
   switch (action.type) {
-    case actions.NEW_ARTICLE:
+    case ACTIONS.NEW_ARTICLE:
       return {
         title: action.payload.title,
         body: action.payload.body,
       };
 
-    case actions.NEW_ARTICLE_ERROR: {
+    case ACTIONS.NEW_ARTICLE_ERROR: {
       return {
         title: null,
         body: null,

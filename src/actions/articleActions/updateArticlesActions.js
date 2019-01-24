@@ -1,5 +1,5 @@
 import axios from 'axios';
-import ACTIONS from '../actionTypes';
+import { ACTIONS } from '../actionTypes';
 
 
 const updateArticle = (title, body) => (dispatch) => {
