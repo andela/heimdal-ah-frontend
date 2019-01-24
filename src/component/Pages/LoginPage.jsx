@@ -3,15 +3,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Button from '../ui/buttons/Button.jsx';
-import { getAllProfile } from '../../actions/getProfileAction';
 
 class LoginPage extends Component {
-  componentDidMount() {
-    console.log(this.props);
-    const { getAllProfile } = this.props;
-    getAllProfile();
-  }
-
   render() {
     return (
       <div>
@@ -30,4 +23,4 @@ const mapStateToProps = state => ({
   profile: state.profile,
 });
 
-export default connect(mapStateToProps, { getAllProfile })(LoginPage);
+export default connect(mapStateToProps)(LoginPage);
