@@ -12,26 +12,15 @@ export const setCurrentUserError = error => ({
   error,
 });
 
-// const logIn = data => dispatch => (axios.post('https://heimdal-ah-staging.herokuapp.com/api/v1/auth/login', data).then((res) => {
-//   const { token } = res.data.data;
-//   // const { message } = res.data;
-//   localStorage.setItem('token', token);
-//   dispatch(setCurrent(jwt.decode(token)));
-//   return true;
-// }).catch((error) => {
-//   dispatch(setCurrentUserError(error.response.message));
-// }));
-
 const logIn = data => dispatch => axios.post('https://heimdal-ah-staging.herokuapp.com/api/v1/auth/login', data).then(
   (res) => {
-    const { token } = res.data.data;
+    const { token } = res.data;
     // const { message } = res.data;
     localStorage.setItem('token', token);
     dispatch(setCurrent(jwt.decode(token)));
     return true;
   },
 ).catch((error) => {
-  // console.log('error', error.response.data.errors);
   dispatch(setCurrentUserError(error.response.data));
 });
 export default logIn;

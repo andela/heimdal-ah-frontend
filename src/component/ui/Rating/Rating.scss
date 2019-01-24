@@ -1,23 +1,22 @@
 $star-default: #ffd15c;
 
 .rate {
-  .rate:hover i {
-    color: $star-default;
-  }
-  
+
   .fa {
     color: $star-default;
-    font-size: 35px;
+    font-size: 18px;
   }
   
-   .star {
+  .rate .star {
     overflow: hidden;
     position: relative;
   }
   
+  .rate:hover i {
+    color: $star-default;
+  }
   
-  
-  .star:hover ~ i {
+  .rate .star:hover ~ i {
     color: $star-default;
   }
 }

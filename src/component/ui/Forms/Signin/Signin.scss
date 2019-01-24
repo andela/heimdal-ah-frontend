@@ -1,0 +1,39 @@
+.font-cardo {
+  font-family: Cardo !important;
+}
+
+.link {
+  color: #000000;
+  text-decoration-line: underline;
+}
+
+.btn,
+.btn:focus,
+.btn:hover {
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #606e86;
+  color: #ffffff;
+  border: 0;
+  outline: none;
+  border-radius: 3px;
+}
+
+.form-control {
+  border-color: #606e86;
+  border-radius: 3px;
+  padding: 20px 15px;
+  color: #000000;
+}
+
+.form-title {
+  color: #606e86;
+  // margin-bottom: 35px;
+}
+.form-control::placeholder {
+  color: #606e86;
+}
+.ph-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}

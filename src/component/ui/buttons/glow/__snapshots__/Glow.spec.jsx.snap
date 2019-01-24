@@ -20,7 +20,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "className": "glow-btn glow-off",
+      "className": "glow-btn  glow-off",
       "onClick": [Function],
       "onKeyPress": [Function],
       "role": "button",
@@ -36,7 +36,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "className": "glow-btn glow-off",
+        "className": "glow-btn  glow-off",
         "onClick": [Function],
         "onKeyPress": [Function],
         "role": "button",

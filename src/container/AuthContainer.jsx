@@ -10,6 +10,7 @@ class AuthContainer extends Component {
     email: '',
     password: '',
     errors: {},
+    isLoading: false,
   };
 
   onChange = (event) => {
@@ -31,6 +32,7 @@ class AuthContainer extends Component {
   onLoginSubmit = (e) => {
     const { actions } = this.props;
     e.preventDefault();
+    this.setState({ isLoading: false });
     if (this.isValid()) {
       this.setState({ errors: {} });
       actions.login(this.state);
@@ -39,7 +41,7 @@ class AuthContainer extends Component {
 
   isValid = () => {
     const { errors, isValid } = validateLoginInput(this.state);
-    if (!isValid) {
+    if (errors) {
       this.setState({ errors, password: '' });
     }
     return isValid;

@@ -1,11 +1,11 @@
 import React from 'react';
 import AuthContainer from '../../container/AuthContainer';
-import LoginForm from '../ui/forms/LoginForm';
+import SignInForm from '../ui/Forms/Signin/SignInForm';
 
 const LoginPage = () => (
   <div>
     <AuthContainer>
-      {data => <LoginForm {...data} />}
+      {data => <SignInForm {...data} />}
     </AuthContainer>
   </div>
 );

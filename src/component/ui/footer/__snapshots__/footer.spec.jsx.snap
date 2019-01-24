@@ -1,0 +1,3431 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Snapshot Test should render the footer page correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Footer />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="container text-center text-md-left"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-md-6"
+            >
+              <form
+                className="input-group "
+              >
+                <input
+                  className="mt-4 footer-text-field"
+                  placeholder="Email Address "
+                />
+                <input
+                  className=" submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5"
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+            <div
+              className="col-md-6 mt-4"
+            >
+              <ul
+                className="list-unstyled list-inline text-center"
+              >
+                <li
+                  className="list-inline-item"
+                >
+                  <a
+                    className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                  >
+                    <i
+                      className="fa fa-facebook-f"
+                    />
+                  </a>
+                </li>
+                <li
+                  className="list-inline-item"
+                >
+                  <a
+                    className="btn-floating mx-1"
+                  >
+                    <i
+                      className="fa fa-instagram fa-2x mr-5"
+                    />
+                  </a>
+                </li>
+                <li
+                  className="list-inline-item"
+                >
+                  <a
+                    className="btn-floating btn-tw mx-1"
+                  >
+                    <i
+                      className="fa fa-twitter fa-2x"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="col-md-6 mx-auto mt-5"
+            >
+              Hiemdal is a community,
+              <br />
+              a place to geek out about all forms
+              <br />
+              of literature with other enthusiastic people.
+            </div>
+            <hr
+              className="clearfix w-100 d-md-none"
+            />
+            <div
+              className="col-md-2 mx-auto mt-5"
+            >
+              <ul
+                className="list-unstyled"
+              >
+                <li>
+                  <Link
+                    replace={false}
+                    to="/top-articles"
+                  >
+                    Top articles 
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    replace={false}
+                    to="/editors-pick"
+                  >
+                    Ediitor’s pick
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    replace={false}
+                    to="/writers-arena"
+                  >
+                    Writers’ Arena  
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    replace={false}
+                    to="/featured"
+                  >
+                    Featured 
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    replace={false}
+                    to="/categories"
+                  >
+                    Categories 
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <hr
+              className="clearfix w-100 d-md-none"
+            />
+            <div
+              className="col-md-2 mx-auto mt-5"
+            >
+              <ul
+                className="list-unstyled"
+              >
+                <li>
+                  <Link
+                    replace={false}
+                    to="/about-us"
+                  >
+                    About us
+                  </Link>
+                </li>
+                <br />
+                <li>
+                  <Link
+                    replace={false}
+                    to="/company"
+                  >
+                    Company
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    replace={false}
+                    to="terms-of-use"
+                  >
+                    Terms of use
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    replace={false}
+                    to="privacy-policy"
+                  >
+                    Privacy policies
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <hr
+              className="clearfix w-100 d-md-none"
+            />
+            <div
+              className="col-md-2 mx-auto"
+            >
+              <ul
+                className="list-unstyled mt-5"
+              >
+                <li>
+                  <Link
+                    replace={false}
+                    to="need-help"
+                  >
+                    Need help?
+                  </Link>
+                </li>
+                <br />
+                <li>
+                  <Link
+                    replace={false}
+                    to="contact-us"
+                  >
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    replace={false}
+                    to="knopwledge-base"
+                  >
+                    Knowledge Base
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>,
+        <div
+          className="footer-copyright text-center py-3"
+        >
+          @heimdal
+           
+          2019
+           
+          Inc. All rights reserved.
+        </div>,
+      ],
+      "className": "page-footer font-small indigo footer-wrapper",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="row"
+            >
+              <div
+                className="col-md-6"
+              >
+                <form
+                  className="input-group "
+                >
+                  <input
+                    className="mt-4 footer-text-field"
+                    placeholder="Email Address "
+                  />
+                  <input
+                    className=" submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5"
+                    type="submit"
+                    value="Subscribe"
+                  />
+                </form>
+              </div>
+              <div
+                className="col-md-6 mt-4"
+              >
+                <ul
+                  className="list-unstyled list-inline text-center"
+                >
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                    >
+                      <i
+                        className="fa fa-facebook-f"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="btn-floating mx-1"
+                    >
+                      <i
+                        className="fa fa-instagram fa-2x mr-5"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="btn-floating btn-tw mx-1"
+                    >
+                      <i
+                        className="fa fa-twitter fa-2x"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>,
+            <div
+              className="row"
+            >
+              <div
+                className="col-md-6 mx-auto mt-5"
+              >
+                Hiemdal is a community,
+                <br />
+                a place to geek out about all forms
+                <br />
+                of literature with other enthusiastic people.
+              </div>
+              <hr
+                className="clearfix w-100 d-md-none"
+              />
+              <div
+                className="col-md-2 mx-auto mt-5"
+              >
+                <ul
+                  className="list-unstyled"
+                >
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/top-articles"
+                    >
+                      Top articles 
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/editors-pick"
+                    >
+                      Ediitor’s pick
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/writers-arena"
+                    >
+                      Writers’ Arena  
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/featured"
+                    >
+                      Featured 
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/categories"
+                    >
+                      Categories 
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <hr
+                className="clearfix w-100 d-md-none"
+              />
+              <div
+                className="col-md-2 mx-auto mt-5"
+              >
+                <ul
+                  className="list-unstyled"
+                >
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/about-us"
+                    >
+                      About us
+                    </Link>
+                  </li>
+                  <br />
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/company"
+                    >
+                      Company
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="terms-of-use"
+                    >
+                      Terms of use
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="privacy-policy"
+                    >
+                      Privacy policies
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <hr
+                className="clearfix w-100 d-md-none"
+              />
+              <div
+                className="col-md-2 mx-auto"
+              >
+                <ul
+                  className="list-unstyled mt-5"
+                >
+                  <li>
+                    <Link
+                      replace={false}
+                      to="need-help"
+                    >
+                      Need help?
+                    </Link>
+                  </li>
+                  <br />
+                  <li>
+                    <Link
+                      replace={false}
+                      to="contact-us"
+                    >
+                      Contact Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="knopwledge-base"
+                    >
+                      Knowledge Base
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>,
+          ],
+          "className": "container text-center text-md-left",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="col-md-6"
+                >
+                  <form
+                    className="input-group "
+                  >
+                    <input
+                      className="mt-4 footer-text-field"
+                      placeholder="Email Address "
+                    />
+                    <input
+                      className=" submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5"
+                      type="submit"
+                      value="Subscribe"
+                    />
+                  </form>
+                </div>,
+                <div
+                  className="col-md-6 mt-4"
+                >
+                  <ul
+                    className="list-unstyled list-inline text-center"
+                  >
+                    <li
+                      className="list-inline-item"
+                    >
+                      <a
+                        className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                      >
+                        <i
+                          className="fa fa-facebook-f"
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="list-inline-item"
+                    >
+                      <a
+                        className="btn-floating mx-1"
+                      >
+                        <i
+                          className="fa fa-instagram fa-2x mr-5"
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="list-inline-item"
+                    >
+                      <a
+                        className="btn-floating btn-tw mx-1"
+                      >
+                        <i
+                          className="fa fa-twitter fa-2x"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>,
+              ],
+              "className": "row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <form
+                    className="input-group "
+                  >
+                    <input
+                      className="mt-4 footer-text-field"
+                      placeholder="Email Address "
+                    />
+                    <input
+                      className=" submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5"
+                      type="submit"
+                      value="Subscribe"
+                    />
+                  </form>,
+                  "className": "col-md-6",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <input
+                        className="mt-4 footer-text-field"
+                        placeholder="Email Address "
+                      />,
+                      <input
+                        className=" submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5"
+                        type="submit"
+                        value="Subscribe"
+                      />,
+                    ],
+                    "className": "input-group ",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "mt-4 footer-text-field",
+                        "placeholder": "Email Address ",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": " submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5",
+                        "type": "submit",
+                        "value": "Subscribe",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "form",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <ul
+                    className="list-unstyled list-inline text-center"
+                  >
+                    <li
+                      className="list-inline-item"
+                    >
+                      <a
+                        className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                      >
+                        <i
+                          className="fa fa-facebook-f"
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="list-inline-item"
+                    >
+                      <a
+                        className="btn-floating mx-1"
+                      >
+                        <i
+                          className="fa fa-instagram fa-2x mr-5"
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="list-inline-item"
+                    >
+                      <a
+                        className="btn-floating btn-tw mx-1"
+                      >
+                        <i
+                          className="fa fa-twitter fa-2x"
+                        />
+                      </a>
+                    </li>
+                  </ul>,
+                  "className": "col-md-6 mt-4",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li
+                        className="list-inline-item"
+                      >
+                        <a
+                          className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                        >
+                          <i
+                            className="fa fa-facebook-f"
+                          />
+                        </a>
+                      </li>,
+                      <li
+                        className="list-inline-item"
+                      >
+                        <a
+                          className="btn-floating mx-1"
+                        >
+                          <i
+                            className="fa fa-instagram fa-2x mr-5"
+                          />
+                        </a>
+                      </li>,
+                      <li
+                        className="list-inline-item"
+                      >
+                        <a
+                          className="btn-floating btn-tw mx-1"
+                        >
+                          <i
+                            className="fa fa-twitter fa-2x"
+                          />
+                        </a>
+                      </li>,
+                    ],
+                    "className": "list-unstyled list-inline text-center",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <a
+                          className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                        >
+                          <i
+                            className="fa fa-facebook-f"
+                          />
+                        </a>,
+                        "className": "list-inline-item",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <i
+                            className="fa fa-facebook-f"
+                          />,
+                          "className": "btn-floating btn-fb mx-1 fa-2x mr-5",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fa fa-facebook-f",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "i",
+                        },
+                        "type": "a",
+                      },
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <a
+                          className="btn-floating mx-1"
+                        >
+                          <i
+                            className="fa fa-instagram fa-2x mr-5"
+                          />
+                        </a>,
+                        "className": "list-inline-item",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <i
+                            className="fa fa-instagram fa-2x mr-5"
+                          />,
+                          "className": "btn-floating mx-1",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fa fa-instagram fa-2x mr-5",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "i",
+                        },
+                        "type": "a",
+                      },
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <a
+                          className="btn-floating btn-tw mx-1"
+                        >
+                          <i
+                            className="fa fa-twitter fa-2x"
+                          />
+                        </a>,
+                        "className": "list-inline-item",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <i
+                            className="fa fa-twitter fa-2x"
+                          />,
+                          "className": "btn-floating btn-tw mx-1",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "className": "fa fa-twitter fa-2x",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "i",
+                        },
+                        "type": "a",
+                      },
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="col-md-6 mx-auto mt-5"
+                >
+                  Hiemdal is a community,
+                  <br />
+                  a place to geek out about all forms
+                  <br />
+                  of literature with other enthusiastic people.
+                </div>,
+                <hr
+                  className="clearfix w-100 d-md-none"
+                />,
+                <div
+                  className="col-md-2 mx-auto mt-5"
+                >
+                  <ul
+                    className="list-unstyled"
+                  >
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/top-articles"
+                      >
+                        Top articles 
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/editors-pick"
+                      >
+                        Ediitor’s pick
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/writers-arena"
+                      >
+                        Writers’ Arena  
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/featured"
+                      >
+                        Featured 
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/categories"
+                      >
+                        Categories 
+                      </Link>
+                    </li>
+                  </ul>
+                </div>,
+                <hr
+                  className="clearfix w-100 d-md-none"
+                />,
+                <div
+                  className="col-md-2 mx-auto mt-5"
+                >
+                  <ul
+                    className="list-unstyled"
+                  >
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/about-us"
+                      >
+                        About us
+                      </Link>
+                    </li>
+                    <br />
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/company"
+                      >
+                        Company
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="terms-of-use"
+                      >
+                        Terms of use
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="privacy-policy"
+                      >
+                        Privacy policies
+                      </Link>
+                    </li>
+                  </ul>
+                </div>,
+                <hr
+                  className="clearfix w-100 d-md-none"
+                />,
+                <div
+                  className="col-md-2 mx-auto"
+                >
+                  <ul
+                    className="list-unstyled mt-5"
+                  >
+                    <li>
+                      <Link
+                        replace={false}
+                        to="need-help"
+                      >
+                        Need help?
+                      </Link>
+                    </li>
+                    <br />
+                    <li>
+                      <Link
+                        replace={false}
+                        to="contact-us"
+                      >
+                        Contact Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="knopwledge-base"
+                      >
+                        Knowledge Base
+                      </Link>
+                    </li>
+                  </ul>
+                </div>,
+              ],
+              "className": "row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Hiemdal is a community,",
+                    <br />,
+                    "a place to geek out about all forms",
+                    <br />,
+                    "of literature with other enthusiastic people.",
+                  ],
+                  "className": "col-md-6 mx-auto mt-5",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Hiemdal is a community,",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  "a place to geek out about all forms",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "br",
+                  },
+                  "of literature with other enthusiastic people.",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "clearfix w-100 d-md-none",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "hr",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <ul
+                    className="list-unstyled"
+                  >
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/top-articles"
+                      >
+                        Top articles 
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/editors-pick"
+                      >
+                        Ediitor’s pick
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/writers-arena"
+                      >
+                        Writers’ Arena  
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/featured"
+                      >
+                        Featured 
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/categories"
+                      >
+                        Categories 
+                      </Link>
+                    </li>
+                  </ul>,
+                  "className": "col-md-2 mx-auto mt-5",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/top-articles"
+                        >
+                          Top articles 
+                        </Link>
+                      </li>,
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/editors-pick"
+                        >
+                          Ediitor’s pick
+                        </Link>
+                      </li>,
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/writers-arena"
+                        >
+                          Writers’ Arena  
+                        </Link>
+                      </li>,
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/featured"
+                        >
+                          Featured 
+                        </Link>
+                      </li>,
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/categories"
+                        >
+                          Categories 
+                        </Link>
+                      </li>,
+                    ],
+                    "className": "list-unstyled",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="/top-articles"
+                        >
+                          Top articles 
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Top articles ",
+                          "replace": false,
+                          "to": "/top-articles",
+                        },
+                        "ref": null,
+                        "rendered": "Top articles ",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="/editors-pick"
+                        >
+                          Ediitor’s pick
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Ediitor’s pick",
+                          "replace": false,
+                          "to": "/editors-pick",
+                        },
+                        "ref": null,
+                        "rendered": "Ediitor’s pick",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="/writers-arena"
+                        >
+                          Writers’ Arena  
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Writers’ Arena  ",
+                          "replace": false,
+                          "to": "/writers-arena",
+                        },
+                        "ref": null,
+                        "rendered": "Writers’ Arena  ",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="/featured"
+                        >
+                          Featured 
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Featured ",
+                          "replace": false,
+                          "to": "/featured",
+                        },
+                        "ref": null,
+                        "rendered": "Featured ",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="/categories"
+                        >
+                          Categories 
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Categories ",
+                          "replace": false,
+                          "to": "/categories",
+                        },
+                        "ref": null,
+                        "rendered": "Categories ",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "clearfix w-100 d-md-none",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "hr",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <ul
+                    className="list-unstyled"
+                  >
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/about-us"
+                      >
+                        About us
+                      </Link>
+                    </li>
+                    <br />
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/company"
+                      >
+                        Company
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="terms-of-use"
+                      >
+                        Terms of use
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="privacy-policy"
+                      >
+                        Privacy policies
+                      </Link>
+                    </li>
+                  </ul>,
+                  "className": "col-md-2 mx-auto mt-5",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/about-us"
+                        >
+                          About us
+                        </Link>
+                      </li>,
+                      <br />,
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/company"
+                        >
+                          Company
+                        </Link>
+                      </li>,
+                      <li>
+                        <Link
+                          replace={false}
+                          to="terms-of-use"
+                        >
+                          Terms of use
+                        </Link>
+                      </li>,
+                      <li>
+                        <Link
+                          replace={false}
+                          to="privacy-policy"
+                        >
+                          Privacy policies
+                        </Link>
+                      </li>,
+                    ],
+                    "className": "list-unstyled",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="/about-us"
+                        >
+                          About us
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "About us",
+                          "replace": false,
+                          "to": "/about-us",
+                        },
+                        "ref": null,
+                        "rendered": "About us",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "br",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="/company"
+                        >
+                          Company
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Company",
+                          "replace": false,
+                          "to": "/company",
+                        },
+                        "ref": null,
+                        "rendered": "Company",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="terms-of-use"
+                        >
+                          Terms of use
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Terms of use",
+                          "replace": false,
+                          "to": "terms-of-use",
+                        },
+                        "ref": null,
+                        "rendered": "Terms of use",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="privacy-policy"
+                        >
+                          Privacy policies
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Privacy policies",
+                          "replace": false,
+                          "to": "privacy-policy",
+                        },
+                        "ref": null,
+                        "rendered": "Privacy policies",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "clearfix w-100 d-md-none",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "hr",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <ul
+                    className="list-unstyled mt-5"
+                  >
+                    <li>
+                      <Link
+                        replace={false}
+                        to="need-help"
+                      >
+                        Need help?
+                      </Link>
+                    </li>
+                    <br />
+                    <li>
+                      <Link
+                        replace={false}
+                        to="contact-us"
+                      >
+                        Contact Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="knopwledge-base"
+                      >
+                        Knowledge Base
+                      </Link>
+                    </li>
+                  </ul>,
+                  "className": "col-md-2 mx-auto",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li>
+                        <Link
+                          replace={false}
+                          to="need-help"
+                        >
+                          Need help?
+                        </Link>
+                      </li>,
+                      <br />,
+                      <li>
+                        <Link
+                          replace={false}
+                          to="contact-us"
+                        >
+                          Contact Us
+                        </Link>
+                      </li>,
+                      <li>
+                        <Link
+                          replace={false}
+                          to="knopwledge-base"
+                        >
+                          Knowledge Base
+                        </Link>
+                      </li>,
+                    ],
+                    "className": "list-unstyled mt-5",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="need-help"
+                        >
+                          Need help?
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Need help?",
+                          "replace": false,
+                          "to": "need-help",
+                        },
+                        "ref": null,
+                        "rendered": "Need help?",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "br",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="contact-us"
+                        >
+                          Contact Us
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Contact Us",
+                          "replace": false,
+                          "to": "contact-us",
+                        },
+                        "ref": null,
+                        "rendered": "Contact Us",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Link
+                          replace={false}
+                          to="knopwledge-base"
+                        >
+                          Knowledge Base
+                        </Link>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Knowledge Base",
+                          "replace": false,
+                          "to": "knopwledge-base",
+                        },
+                        "ref": null,
+                        "rendered": "Knowledge Base",
+                        "type": [Function],
+                      },
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "@heimdal",
+            " ",
+            2019,
+            " ",
+            "Inc. All rights reserved.",
+          ],
+          "className": "footer-copyright text-center py-3",
+        },
+        "ref": null,
+        "rendered": Array [
+          "@heimdal",
+          " ",
+          2019,
+          " ",
+          "Inc. All rights reserved.",
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "footer",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="container text-center text-md-left"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-md-6"
+              >
+                <form
+                  className="input-group "
+                >
+                  <input
+                    className="mt-4 footer-text-field"
+                    placeholder="Email Address "
+                  />
+                  <input
+                    className=" submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5"
+                    type="submit"
+                    value="Subscribe"
+                  />
+                </form>
+              </div>
+              <div
+                className="col-md-6 mt-4"
+              >
+                <ul
+                  className="list-unstyled list-inline text-center"
+                >
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                    >
+                      <i
+                        className="fa fa-facebook-f"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="btn-floating mx-1"
+                    >
+                      <i
+                        className="fa fa-instagram fa-2x mr-5"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    className="list-inline-item"
+                  >
+                    <a
+                      className="btn-floating btn-tw mx-1"
+                    >
+                      <i
+                        className="fa fa-twitter fa-2x"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              className="row"
+            >
+              <div
+                className="col-md-6 mx-auto mt-5"
+              >
+                Hiemdal is a community,
+                <br />
+                a place to geek out about all forms
+                <br />
+                of literature with other enthusiastic people.
+              </div>
+              <hr
+                className="clearfix w-100 d-md-none"
+              />
+              <div
+                className="col-md-2 mx-auto mt-5"
+              >
+                <ul
+                  className="list-unstyled"
+                >
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/top-articles"
+                    >
+                      Top articles 
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/editors-pick"
+                    >
+                      Ediitor’s pick
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/writers-arena"
+                    >
+                      Writers’ Arena  
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/featured"
+                    >
+                      Featured 
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/categories"
+                    >
+                      Categories 
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <hr
+                className="clearfix w-100 d-md-none"
+              />
+              <div
+                className="col-md-2 mx-auto mt-5"
+              >
+                <ul
+                  className="list-unstyled"
+                >
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/about-us"
+                    >
+                      About us
+                    </Link>
+                  </li>
+                  <br />
+                  <li>
+                    <Link
+                      replace={false}
+                      to="/company"
+                    >
+                      Company
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="terms-of-use"
+                    >
+                      Terms of use
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="privacy-policy"
+                    >
+                      Privacy policies
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <hr
+                className="clearfix w-100 d-md-none"
+              />
+              <div
+                className="col-md-2 mx-auto"
+              >
+                <ul
+                  className="list-unstyled mt-5"
+                >
+                  <li>
+                    <Link
+                      replace={false}
+                      to="need-help"
+                    >
+                      Need help?
+                    </Link>
+                  </li>
+                  <br />
+                  <li>
+                    <Link
+                      replace={false}
+                      to="contact-us"
+                    >
+                      Contact Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      replace={false}
+                      to="knopwledge-base"
+                    >
+                      Knowledge Base
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>,
+          <div
+            className="footer-copyright text-center py-3"
+          >
+            @heimdal
+             
+            2019
+             
+            Inc. All rights reserved.
+          </div>,
+        ],
+        "className": "page-footer font-small indigo footer-wrapper",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="row"
+              >
+                <div
+                  className="col-md-6"
+                >
+                  <form
+                    className="input-group "
+                  >
+                    <input
+                      className="mt-4 footer-text-field"
+                      placeholder="Email Address "
+                    />
+                    <input
+                      className=" submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5"
+                      type="submit"
+                      value="Subscribe"
+                    />
+                  </form>
+                </div>
+                <div
+                  className="col-md-6 mt-4"
+                >
+                  <ul
+                    className="list-unstyled list-inline text-center"
+                  >
+                    <li
+                      className="list-inline-item"
+                    >
+                      <a
+                        className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                      >
+                        <i
+                          className="fa fa-facebook-f"
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="list-inline-item"
+                    >
+                      <a
+                        className="btn-floating mx-1"
+                      >
+                        <i
+                          className="fa fa-instagram fa-2x mr-5"
+                        />
+                      </a>
+                    </li>
+                    <li
+                      className="list-inline-item"
+                    >
+                      <a
+                        className="btn-floating btn-tw mx-1"
+                      >
+                        <i
+                          className="fa fa-twitter fa-2x"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>,
+              <div
+                className="row"
+              >
+                <div
+                  className="col-md-6 mx-auto mt-5"
+                >
+                  Hiemdal is a community,
+                  <br />
+                  a place to geek out about all forms
+                  <br />
+                  of literature with other enthusiastic people.
+                </div>
+                <hr
+                  className="clearfix w-100 d-md-none"
+                />
+                <div
+                  className="col-md-2 mx-auto mt-5"
+                >
+                  <ul
+                    className="list-unstyled"
+                  >
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/top-articles"
+                      >
+                        Top articles 
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/editors-pick"
+                      >
+                        Ediitor’s pick
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/writers-arena"
+                      >
+                        Writers’ Arena  
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/featured"
+                      >
+                        Featured 
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/categories"
+                      >
+                        Categories 
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <hr
+                  className="clearfix w-100 d-md-none"
+                />
+                <div
+                  className="col-md-2 mx-auto mt-5"
+                >
+                  <ul
+                    className="list-unstyled"
+                  >
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/about-us"
+                      >
+                        About us
+                      </Link>
+                    </li>
+                    <br />
+                    <li>
+                      <Link
+                        replace={false}
+                        to="/company"
+                      >
+                        Company
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="terms-of-use"
+                      >
+                        Terms of use
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="privacy-policy"
+                      >
+                        Privacy policies
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <hr
+                  className="clearfix w-100 d-md-none"
+                />
+                <div
+                  className="col-md-2 mx-auto"
+                >
+                  <ul
+                    className="list-unstyled mt-5"
+                  >
+                    <li>
+                      <Link
+                        replace={false}
+                        to="need-help"
+                      >
+                        Need help?
+                      </Link>
+                    </li>
+                    <br />
+                    <li>
+                      <Link
+                        replace={false}
+                        to="contact-us"
+                      >
+                        Contact Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        replace={false}
+                        to="knopwledge-base"
+                      >
+                        Knowledge Base
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>,
+            ],
+            "className": "container text-center text-md-left",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="col-md-6"
+                  >
+                    <form
+                      className="input-group "
+                    >
+                      <input
+                        className="mt-4 footer-text-field"
+                        placeholder="Email Address "
+                      />
+                      <input
+                        className=" submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5"
+                        type="submit"
+                        value="Subscribe"
+                      />
+                    </form>
+                  </div>,
+                  <div
+                    className="col-md-6 mt-4"
+                  >
+                    <ul
+                      className="list-unstyled list-inline text-center"
+                    >
+                      <li
+                        className="list-inline-item"
+                      >
+                        <a
+                          className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                        >
+                          <i
+                            className="fa fa-facebook-f"
+                          />
+                        </a>
+                      </li>
+                      <li
+                        className="list-inline-item"
+                      >
+                        <a
+                          className="btn-floating mx-1"
+                        >
+                          <i
+                            className="fa fa-instagram fa-2x mr-5"
+                          />
+                        </a>
+                      </li>
+                      <li
+                        className="list-inline-item"
+                      >
+                        <a
+                          className="btn-floating btn-tw mx-1"
+                        >
+                          <i
+                            className="fa fa-twitter fa-2x"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>,
+                ],
+                "className": "row",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <form
+                      className="input-group "
+                    >
+                      <input
+                        className="mt-4 footer-text-field"
+                        placeholder="Email Address "
+                      />
+                      <input
+                        className=" submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5"
+                        type="submit"
+                        value="Subscribe"
+                      />
+                    </form>,
+                    "className": "col-md-6",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <input
+                          className="mt-4 footer-text-field"
+                          placeholder="Email Address "
+                        />,
+                        <input
+                          className=" submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5"
+                          type="submit"
+                          value="Subscribe"
+                        />,
+                      ],
+                      "className": "input-group ",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "mt-4 footer-text-field",
+                          "placeholder": "Email Address ",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": " submitbtn footer-btn btn btn-outline-secondary mt-4 ml-4 br-5",
+                          "type": "submit",
+                          "value": "Subscribe",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                    ],
+                    "type": "form",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <ul
+                      className="list-unstyled list-inline text-center"
+                    >
+                      <li
+                        className="list-inline-item"
+                      >
+                        <a
+                          className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                        >
+                          <i
+                            className="fa fa-facebook-f"
+                          />
+                        </a>
+                      </li>
+                      <li
+                        className="list-inline-item"
+                      >
+                        <a
+                          className="btn-floating mx-1"
+                        >
+                          <i
+                            className="fa fa-instagram fa-2x mr-5"
+                          />
+                        </a>
+                      </li>
+                      <li
+                        className="list-inline-item"
+                      >
+                        <a
+                          className="btn-floating btn-tw mx-1"
+                        >
+                          <i
+                            className="fa fa-twitter fa-2x"
+                          />
+                        </a>
+                      </li>
+                    </ul>,
+                    "className": "col-md-6 mt-4",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <li
+                          className="list-inline-item"
+                        >
+                          <a
+                            className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                          >
+                            <i
+                              className="fa fa-facebook-f"
+                            />
+                          </a>
+                        </li>,
+                        <li
+                          className="list-inline-item"
+                        >
+                          <a
+                            className="btn-floating mx-1"
+                          >
+                            <i
+                              className="fa fa-instagram fa-2x mr-5"
+                            />
+                          </a>
+                        </li>,
+                        <li
+                          className="list-inline-item"
+                        >
+                          <a
+                            className="btn-floating btn-tw mx-1"
+                          >
+                            <i
+                              className="fa fa-twitter fa-2x"
+                            />
+                          </a>
+                        </li>,
+                      ],
+                      "className": "list-unstyled list-inline text-center",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <a
+                            className="btn-floating btn-fb mx-1 fa-2x mr-5"
+                          >
+                            <i
+                              className="fa fa-facebook-f"
+                            />
+                          </a>,
+                          "className": "list-inline-item",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <i
+                              className="fa fa-facebook-f"
+                            />,
+                            "className": "btn-floating btn-fb mx-1 fa-2x mr-5",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "fa fa-facebook-f",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "i",
+                          },
+                          "type": "a",
+                        },
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <a
+                            className="btn-floating mx-1"
+                          >
+                            <i
+                              className="fa fa-instagram fa-2x mr-5"
+                            />
+                          </a>,
+                          "className": "list-inline-item",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <i
+                              className="fa fa-instagram fa-2x mr-5"
+                            />,
+                            "className": "btn-floating mx-1",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "fa fa-instagram fa-2x mr-5",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "i",
+                          },
+                          "type": "a",
+                        },
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <a
+                            className="btn-floating btn-tw mx-1"
+                          >
+                            <i
+                              className="fa fa-twitter fa-2x"
+                            />
+                          </a>,
+                          "className": "list-inline-item",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <i
+                              className="fa fa-twitter fa-2x"
+                            />,
+                            "className": "btn-floating btn-tw mx-1",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "fa fa-twitter fa-2x",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "i",
+                          },
+                          "type": "a",
+                        },
+                        "type": "li",
+                      },
+                    ],
+                    "type": "ul",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="col-md-6 mx-auto mt-5"
+                  >
+                    Hiemdal is a community,
+                    <br />
+                    a place to geek out about all forms
+                    <br />
+                    of literature with other enthusiastic people.
+                  </div>,
+                  <hr
+                    className="clearfix w-100 d-md-none"
+                  />,
+                  <div
+                    className="col-md-2 mx-auto mt-5"
+                  >
+                    <ul
+                      className="list-unstyled"
+                    >
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/top-articles"
+                        >
+                          Top articles 
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/editors-pick"
+                        >
+                          Ediitor’s pick
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/writers-arena"
+                        >
+                          Writers’ Arena  
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/featured"
+                        >
+                          Featured 
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/categories"
+                        >
+                          Categories 
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>,
+                  <hr
+                    className="clearfix w-100 d-md-none"
+                  />,
+                  <div
+                    className="col-md-2 mx-auto mt-5"
+                  >
+                    <ul
+                      className="list-unstyled"
+                    >
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/about-us"
+                        >
+                          About us
+                        </Link>
+                      </li>
+                      <br />
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/company"
+                        >
+                          Company
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="terms-of-use"
+                        >
+                          Terms of use
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="privacy-policy"
+                        >
+                          Privacy policies
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>,
+                  <hr
+                    className="clearfix w-100 d-md-none"
+                  />,
+                  <div
+                    className="col-md-2 mx-auto"
+                  >
+                    <ul
+                      className="list-unstyled mt-5"
+                    >
+                      <li>
+                        <Link
+                          replace={false}
+                          to="need-help"
+                        >
+                          Need help?
+                        </Link>
+                      </li>
+                      <br />
+                      <li>
+                        <Link
+                          replace={false}
+                          to="contact-us"
+                        >
+                          Contact Us
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="knopwledge-base"
+                        >
+                          Knowledge Base
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>,
+                ],
+                "className": "row",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Hiemdal is a community,",
+                      <br />,
+                      "a place to geek out about all forms",
+                      <br />,
+                      "of literature with other enthusiastic people.",
+                    ],
+                    "className": "col-md-6 mx-auto mt-5",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Hiemdal is a community,",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "br",
+                    },
+                    "a place to geek out about all forms",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {},
+                      "ref": null,
+                      "rendered": null,
+                      "type": "br",
+                    },
+                    "of literature with other enthusiastic people.",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "clearfix w-100 d-md-none",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "hr",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <ul
+                      className="list-unstyled"
+                    >
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/top-articles"
+                        >
+                          Top articles 
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/editors-pick"
+                        >
+                          Ediitor’s pick
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/writers-arena"
+                        >
+                          Writers’ Arena  
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/featured"
+                        >
+                          Featured 
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/categories"
+                        >
+                          Categories 
+                        </Link>
+                      </li>
+                    </ul>,
+                    "className": "col-md-2 mx-auto mt-5",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <li>
+                          <Link
+                            replace={false}
+                            to="/top-articles"
+                          >
+                            Top articles 
+                          </Link>
+                        </li>,
+                        <li>
+                          <Link
+                            replace={false}
+                            to="/editors-pick"
+                          >
+                            Ediitor’s pick
+                          </Link>
+                        </li>,
+                        <li>
+                          <Link
+                            replace={false}
+                            to="/writers-arena"
+                          >
+                            Writers’ Arena  
+                          </Link>
+                        </li>,
+                        <li>
+                          <Link
+                            replace={false}
+                            to="/featured"
+                          >
+                            Featured 
+                          </Link>
+                        </li>,
+                        <li>
+                          <Link
+                            replace={false}
+                            to="/categories"
+                          >
+                            Categories 
+                          </Link>
+                        </li>,
+                      ],
+                      "className": "list-unstyled",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="/top-articles"
+                          >
+                            Top articles 
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Top articles ",
+                            "replace": false,
+                            "to": "/top-articles",
+                          },
+                          "ref": null,
+                          "rendered": "Top articles ",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="/editors-pick"
+                          >
+                            Ediitor’s pick
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Ediitor’s pick",
+                            "replace": false,
+                            "to": "/editors-pick",
+                          },
+                          "ref": null,
+                          "rendered": "Ediitor’s pick",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="/writers-arena"
+                          >
+                            Writers’ Arena  
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Writers’ Arena  ",
+                            "replace": false,
+                            "to": "/writers-arena",
+                          },
+                          "ref": null,
+                          "rendered": "Writers’ Arena  ",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="/featured"
+                          >
+                            Featured 
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Featured ",
+                            "replace": false,
+                            "to": "/featured",
+                          },
+                          "ref": null,
+                          "rendered": "Featured ",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="/categories"
+                          >
+                            Categories 
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Categories ",
+                            "replace": false,
+                            "to": "/categories",
+                          },
+                          "ref": null,
+                          "rendered": "Categories ",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                    ],
+                    "type": "ul",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "clearfix w-100 d-md-none",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "hr",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <ul
+                      className="list-unstyled"
+                    >
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/about-us"
+                        >
+                          About us
+                        </Link>
+                      </li>
+                      <br />
+                      <li>
+                        <Link
+                          replace={false}
+                          to="/company"
+                        >
+                          Company
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="terms-of-use"
+                        >
+                          Terms of use
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="privacy-policy"
+                        >
+                          Privacy policies
+                        </Link>
+                      </li>
+                    </ul>,
+                    "className": "col-md-2 mx-auto mt-5",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <li>
+                          <Link
+                            replace={false}
+                            to="/about-us"
+                          >
+                            About us
+                          </Link>
+                        </li>,
+                        <br />,
+                        <li>
+                          <Link
+                            replace={false}
+                            to="/company"
+                          >
+                            Company
+                          </Link>
+                        </li>,
+                        <li>
+                          <Link
+                            replace={false}
+                            to="terms-of-use"
+                          >
+                            Terms of use
+                          </Link>
+                        </li>,
+                        <li>
+                          <Link
+                            replace={false}
+                            to="privacy-policy"
+                          >
+                            Privacy policies
+                          </Link>
+                        </li>,
+                      ],
+                      "className": "list-unstyled",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="/about-us"
+                          >
+                            About us
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "About us",
+                            "replace": false,
+                            "to": "/about-us",
+                          },
+                          "ref": null,
+                          "rendered": "About us",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="/company"
+                          >
+                            Company
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Company",
+                            "replace": false,
+                            "to": "/company",
+                          },
+                          "ref": null,
+                          "rendered": "Company",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="terms-of-use"
+                          >
+                            Terms of use
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Terms of use",
+                            "replace": false,
+                            "to": "terms-of-use",
+                          },
+                          "ref": null,
+                          "rendered": "Terms of use",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="privacy-policy"
+                          >
+                            Privacy policies
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Privacy policies",
+                            "replace": false,
+                            "to": "privacy-policy",
+                          },
+                          "ref": null,
+                          "rendered": "Privacy policies",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                    ],
+                    "type": "ul",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "clearfix w-100 d-md-none",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "hr",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <ul
+                      className="list-unstyled mt-5"
+                    >
+                      <li>
+                        <Link
+                          replace={false}
+                          to="need-help"
+                        >
+                          Need help?
+                        </Link>
+                      </li>
+                      <br />
+                      <li>
+                        <Link
+                          replace={false}
+                          to="contact-us"
+                        >
+                          Contact Us
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          replace={false}
+                          to="knopwledge-base"
+                        >
+                          Knowledge Base
+                        </Link>
+                      </li>
+                    </ul>,
+                    "className": "col-md-2 mx-auto",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <li>
+                          <Link
+                            replace={false}
+                            to="need-help"
+                          >
+                            Need help?
+                          </Link>
+                        </li>,
+                        <br />,
+                        <li>
+                          <Link
+                            replace={false}
+                            to="contact-us"
+                          >
+                            Contact Us
+                          </Link>
+                        </li>,
+                        <li>
+                          <Link
+                            replace={false}
+                            to="knopwledge-base"
+                          >
+                            Knowledge Base
+                          </Link>
+                        </li>,
+                      ],
+                      "className": "list-unstyled mt-5",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="need-help"
+                          >
+                            Need help?
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Need help?",
+                            "replace": false,
+                            "to": "need-help",
+                          },
+                          "ref": null,
+                          "rendered": "Need help?",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="contact-us"
+                          >
+                            Contact Us
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Contact Us",
+                            "replace": false,
+                            "to": "contact-us",
+                          },
+                          "ref": null,
+                          "rendered": "Contact Us",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Link
+                            replace={false}
+                            to="knopwledge-base"
+                          >
+                            Knowledge Base
+                          </Link>,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": "Knowledge Base",
+                            "replace": false,
+                            "to": "knopwledge-base",
+                          },
+                          "ref": null,
+                          "rendered": "Knowledge Base",
+                          "type": [Function],
+                        },
+                        "type": "li",
+                      },
+                    ],
+                    "type": "ul",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "@heimdal",
+              " ",
+              2019,
+              " ",
+              "Inc. All rights reserved.",
+            ],
+            "className": "footer-copyright text-center py-3",
+          },
+          "ref": null,
+          "rendered": Array [
+            "@heimdal",
+            " ",
+            2019,
+            " ",
+            "Inc. All rights reserved.",
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "footer",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
