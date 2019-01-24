@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../ui/Buttons/Button';
+import Button from '../Buttons/Button';
 
 const HeaderButton = () => (
   <div className='header-button-group'>
