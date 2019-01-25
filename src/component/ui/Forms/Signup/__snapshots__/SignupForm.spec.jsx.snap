@@ -87,7 +87,7 @@ ShallowWrapper {
                   Already have an account?
                    
                   <Link
-                    className="link"
+                    className="link pt-2"
                     replace={false}
                     to="/"
                   >
@@ -99,7 +99,7 @@ ShallowWrapper {
                 className="col-md-4 text-right"
               >
                 <button
-                  className="btn signup-btn"
+                  className="btn btn-default ph-25"
                   type="submit"
                 >
                   Sign Up
@@ -110,24 +110,24 @@ ShallowWrapper {
         </form>,
         <br />,
         <div
-          className="col-md-12 text-center"
+          className="text-center"
         >
           <a
-            className="btn btn-block btn-primary"
+            className="btn btn-block btn-facebook"
             href="undefined/auth/facebook"
           >
             Login with Facebook
           </a>
           <br />
           <a
-            className="btn btn-block btn-info"
+            className="btn btn-block btn-twitter"
             href="undefined/auth_twitter/twitter"
           >
             Login with twitter
           </a>
           <br />
           <a
-            className="btn btn-block btn-danger"
+            className="btn btn-block btn-google"
             href="undefined/auth/google"
           >
             Login With Google
@@ -208,7 +208,7 @@ ShallowWrapper {
                   Already have an account?
                    
                   <Link
-                    className="link"
+                    className="link pt-2"
                     replace={false}
                     to="/"
                   >
@@ -220,7 +220,7 @@ ShallowWrapper {
                 className="col-md-4 text-right"
               >
                 <button
-                  className="btn signup-btn"
+                  className="btn btn-default ph-25"
                   type="submit"
                 >
                   Sign Up
@@ -289,7 +289,7 @@ ShallowWrapper {
                     Already have an account?
                      
                     <Link
-                      className="link"
+                      className="link pt-2"
                       replace={false}
                       to="/"
                     >
@@ -301,7 +301,7 @@ ShallowWrapper {
                   className="col-md-4 text-right"
                 >
                   <button
-                    className="btn signup-btn"
+                    className="btn btn-default ph-25"
                     type="submit"
                   >
                     Sign Up
@@ -402,7 +402,7 @@ ShallowWrapper {
                       Already have an account?
                        
                       <Link
-                        className="link"
+                        className="link pt-2"
                         replace={false}
                         to="/"
                       >
@@ -414,7 +414,7 @@ ShallowWrapper {
                     className="col-md-4 text-right"
                   >
                     <button
-                      className="btn signup-btn"
+                      className="btn btn-default ph-25"
                       type="submit"
                     >
                       Sign Up
@@ -458,7 +458,7 @@ ShallowWrapper {
                       Already have an account?
                        
                       <Link
-                        className="link"
+                        className="link pt-2"
                         replace={false}
                         to="/"
                       >
@@ -477,7 +477,7 @@ ShallowWrapper {
                         "Already have an account?",
                         " ",
                         <Link
-                          className="link"
+                          className="link pt-2"
                           replace={false}
                           to="/"
                         >
@@ -496,7 +496,7 @@ ShallowWrapper {
                         "nodeType": "class",
                         "props": Object {
                           "children": "Log in here",
-                          "className": "link",
+                          "className": "link pt-2",
                           "replace": false,
                           "to": "/",
                         },
@@ -515,7 +515,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": <button
-                      className="btn signup-btn"
+                      className="btn btn-default ph-25"
                       type="submit"
                     >
                       Sign Up
@@ -529,7 +529,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "Sign Up",
-                      "className": "btn signup-btn",
+                      "className": "btn btn-default ph-25",
                       "type": "submit",
                     },
                     "ref": null,
@@ -562,27 +562,27 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <a
-              className="btn btn-block btn-primary"
+              className="btn btn-block btn-facebook"
               href="undefined/auth/facebook"
             >
               Login with Facebook
             </a>,
             <br />,
             <a
-              className="btn btn-block btn-info"
+              className="btn btn-block btn-twitter"
               href="undefined/auth_twitter/twitter"
             >
               Login with twitter
             </a>,
             <br />,
             <a
-              className="btn btn-block btn-danger"
+              className="btn btn-block btn-google"
               href="undefined/auth/google"
             >
               Login With Google
             </a>,
           ],
-          "className": "col-md-12 text-center",
+          "className": "text-center",
         },
         "ref": null,
         "rendered": Array [
@@ -592,7 +592,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Login with Facebook",
-              "className": "btn btn-block btn-primary",
+              "className": "btn btn-block btn-facebook",
               "href": "undefined/auth/facebook",
             },
             "ref": null,
@@ -614,7 +614,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Login with twitter",
-              "className": "btn btn-block btn-info",
+              "className": "btn btn-block btn-twitter",
               "href": "undefined/auth_twitter/twitter",
             },
             "ref": null,
@@ -636,7 +636,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Login With Google",
-              "className": "btn btn-block btn-danger",
+              "className": "btn btn-block btn-google",
               "href": "undefined/auth/google",
             },
             "ref": null,
@@ -718,7 +718,7 @@ ShallowWrapper {
                     Already have an account?
                      
                     <Link
-                      className="link"
+                      className="link pt-2"
                       replace={false}
                       to="/"
                     >
@@ -730,7 +730,7 @@ ShallowWrapper {
                   className="col-md-4 text-right"
                 >
                   <button
-                    className="btn signup-btn"
+                    className="btn btn-default ph-25"
                     type="submit"
                   >
                     Sign Up
@@ -741,24 +741,24 @@ ShallowWrapper {
           </form>,
           <br />,
           <div
-            className="col-md-12 text-center"
+            className="text-center"
           >
             <a
-              className="btn btn-block btn-primary"
+              className="btn btn-block btn-facebook"
               href="undefined/auth/facebook"
             >
               Login with Facebook
             </a>
             <br />
             <a
-              className="btn btn-block btn-info"
+              className="btn btn-block btn-twitter"
               href="undefined/auth_twitter/twitter"
             >
               Login with twitter
             </a>
             <br />
             <a
-              className="btn btn-block btn-danger"
+              className="btn btn-block btn-google"
               href="undefined/auth/google"
             >
               Login With Google
@@ -839,7 +839,7 @@ ShallowWrapper {
                     Already have an account?
                      
                     <Link
-                      className="link"
+                      className="link pt-2"
                       replace={false}
                       to="/"
                     >
@@ -851,7 +851,7 @@ ShallowWrapper {
                   className="col-md-4 text-right"
                 >
                   <button
-                    className="btn signup-btn"
+                    className="btn btn-default ph-25"
                     type="submit"
                   >
                     Sign Up
@@ -920,7 +920,7 @@ ShallowWrapper {
                       Already have an account?
                        
                       <Link
-                        className="link"
+                        className="link pt-2"
                         replace={false}
                         to="/"
                       >
@@ -932,7 +932,7 @@ ShallowWrapper {
                     className="col-md-4 text-right"
                   >
                     <button
-                      className="btn signup-btn"
+                      className="btn btn-default ph-25"
                       type="submit"
                     >
                       Sign Up
@@ -1033,7 +1033,7 @@ ShallowWrapper {
                         Already have an account?
                          
                         <Link
-                          className="link"
+                          className="link pt-2"
                           replace={false}
                           to="/"
                         >
@@ -1045,7 +1045,7 @@ ShallowWrapper {
                       className="col-md-4 text-right"
                     >
                       <button
-                        className="btn signup-btn"
+                        className="btn btn-default ph-25"
                         type="submit"
                       >
                         Sign Up
@@ -1089,7 +1089,7 @@ ShallowWrapper {
                         Already have an account?
                          
                         <Link
-                          className="link"
+                          className="link pt-2"
                           replace={false}
                           to="/"
                         >
@@ -1108,7 +1108,7 @@ ShallowWrapper {
                           "Already have an account?",
                           " ",
                           <Link
-                            className="link"
+                            className="link pt-2"
                             replace={false}
                             to="/"
                           >
@@ -1127,7 +1127,7 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "children": "Log in here",
-                            "className": "link",
+                            "className": "link pt-2",
                             "replace": false,
                             "to": "/",
                           },
@@ -1146,7 +1146,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <button
-                        className="btn signup-btn"
+                        className="btn btn-default ph-25"
                         type="submit"
                       >
                         Sign Up
@@ -1160,7 +1160,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": "Sign Up",
-                        "className": "btn signup-btn",
+                        "className": "btn btn-default ph-25",
                         "type": "submit",
                       },
                       "ref": null,
@@ -1193,27 +1193,27 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <a
-                className="btn btn-block btn-primary"
+                className="btn btn-block btn-facebook"
                 href="undefined/auth/facebook"
               >
                 Login with Facebook
               </a>,
               <br />,
               <a
-                className="btn btn-block btn-info"
+                className="btn btn-block btn-twitter"
                 href="undefined/auth_twitter/twitter"
               >
                 Login with twitter
               </a>,
               <br />,
               <a
-                className="btn btn-block btn-danger"
+                className="btn btn-block btn-google"
                 href="undefined/auth/google"
               >
                 Login With Google
               </a>,
             ],
-            "className": "col-md-12 text-center",
+            "className": "text-center",
           },
           "ref": null,
           "rendered": Array [
@@ -1223,7 +1223,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Login with Facebook",
-                "className": "btn btn-block btn-primary",
+                "className": "btn btn-block btn-facebook",
                 "href": "undefined/auth/facebook",
               },
               "ref": null,
@@ -1245,7 +1245,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Login with twitter",
-                "className": "btn btn-block btn-info",
+                "className": "btn btn-block btn-twitter",
                 "href": "undefined/auth_twitter/twitter",
               },
               "ref": null,
@@ -1267,7 +1267,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Login With Google",
-                "className": "btn btn-block btn-danger",
+                "className": "btn btn-block btn-google",
                 "href": "undefined/auth/google",
               },
               "ref": null,
