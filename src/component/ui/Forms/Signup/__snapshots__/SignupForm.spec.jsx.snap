@@ -3,7 +3,14 @@
 exports[`The Signup Component Test Suite should render the SignupFrom component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SignupForm />,
+  Symbol(enzyme.__unrendered__): <SignupForm
+    email=""
+    errors={Object {}}
+    isLoading={false}
+    password=""
+    passwordConfirmation=""
+    username=""
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -32,33 +39,45 @@ ShallowWrapper {
           >
             <FormInput
               classname="form-control"
+              errors={Object {}}
               name="username"
               placeholder="Username"
               type="text"
+              value=""
             />
             <FormInput
               classname="form-control"
+              errors={Object {}}
               name="email"
               placeholder="Email Address"
               type="email"
+              value=""
             />
             <FormInput
               classname="form-control"
+              errors={Object {}}
               name="password"
               placeholder="Password"
               type="password"
+              value=""
             />
             <FormInput
               classname="form-control"
+              errors={Object {}}
               name="passwordConfirmation"
               placeholder="Confirm Password"
               type="password"
+              value=""
             />
             <div
               className="row"
             >
-              <LoadingSpinner />
-              <MainError />
+              <LoadingSpinner
+                isLoading={false}
+              />
+              <MainError
+                errors={Object {}}
+              />
               <div
                 className="col-md-8 text-left mb-10"
               >
@@ -141,33 +160,45 @@ ShallowWrapper {
           >
             <FormInput
               classname="form-control"
+              errors={Object {}}
               name="username"
               placeholder="Username"
               type="text"
+              value=""
             />
             <FormInput
               classname="form-control"
+              errors={Object {}}
               name="email"
               placeholder="Email Address"
               type="email"
+              value=""
             />
             <FormInput
               classname="form-control"
+              errors={Object {}}
               name="password"
               placeholder="Password"
               type="password"
+              value=""
             />
             <FormInput
               classname="form-control"
+              errors={Object {}}
               name="passwordConfirmation"
               placeholder="Confirm Password"
               type="password"
+              value=""
             />
             <div
               className="row"
             >
-              <LoadingSpinner />
-              <MainError />
+              <LoadingSpinner
+                isLoading={false}
+              />
+              <MainError
+                errors={Object {}}
+              />
               <div
                 className="col-md-8 text-left mb-10"
               >
@@ -210,33 +241,45 @@ ShallowWrapper {
             "children": Array [
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="username"
                 placeholder="Username"
                 type="text"
+                value=""
               />,
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="email"
                 placeholder="Email Address"
                 type="email"
+                value=""
               />,
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="password"
                 placeholder="Password"
                 type="password"
+                value=""
               />,
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="passwordConfirmation"
                 placeholder="Confirm Password"
                 type="password"
+                value=""
               />,
               <div
                 className="row"
               >
-                <LoadingSpinner />
-                <MainError />
+                <LoadingSpinner
+                  isLoading={false}
+                />
+                <MainError
+                  errors={Object {}}
+                />
                 <div
                   className="col-md-8 text-left mb-10"
                 >
@@ -276,12 +319,12 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "classname": "form-control",
-                "errors": undefined,
+                "errors": Object {},
                 "name": "username",
                 "onChange": undefined,
                 "placeholder": "Username",
                 "type": "text",
-                "value": undefined,
+                "value": "",
               },
               "ref": null,
               "rendered": null,
@@ -293,12 +336,12 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "classname": "form-control",
-                "errors": undefined,
+                "errors": Object {},
                 "name": "email",
                 "onChange": undefined,
                 "placeholder": "Email Address",
                 "type": "email",
-                "value": undefined,
+                "value": "",
               },
               "ref": null,
               "rendered": null,
@@ -310,12 +353,12 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "classname": "form-control",
-                "errors": undefined,
+                "errors": Object {},
                 "name": "password",
                 "onChange": undefined,
                 "placeholder": "Password",
                 "type": "password",
-                "value": undefined,
+                "value": "",
               },
               "ref": null,
               "rendered": null,
@@ -327,12 +370,12 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "classname": "form-control",
-                "errors": undefined,
+                "errors": Object {},
                 "name": "passwordConfirmation",
                 "onChange": undefined,
                 "placeholder": "Confirm Password",
                 "type": "password",
-                "value": undefined,
+                "value": "",
               },
               "ref": null,
               "rendered": null,
@@ -344,8 +387,12 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <LoadingSpinner />,
-                  <MainError />,
+                  <LoadingSpinner
+                    isLoading={false}
+                  />,
+                  <MainError
+                    errors={Object {}}
+                  />,
                   <div
                     className="col-md-8 text-left mb-10"
                   >
@@ -383,7 +430,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "isLoading": undefined,
+                    "isLoading": false,
                   },
                   "ref": null,
                   "rendered": null,
@@ -394,7 +441,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
-                    "errors": undefined,
+                    "errors": Object {},
                   },
                   "ref": null,
                   "rendered": null,
@@ -623,33 +670,45 @@ ShallowWrapper {
             >
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="username"
                 placeholder="Username"
                 type="text"
+                value=""
               />
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="email"
                 placeholder="Email Address"
                 type="email"
+                value=""
               />
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="password"
                 placeholder="Password"
                 type="password"
+                value=""
               />
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="passwordConfirmation"
                 placeholder="Confirm Password"
                 type="password"
+                value=""
               />
               <div
                 className="row"
               >
-                <LoadingSpinner />
-                <MainError />
+                <LoadingSpinner
+                  isLoading={false}
+                />
+                <MainError
+                  errors={Object {}}
+                />
                 <div
                   className="col-md-8 text-left mb-10"
                 >
@@ -732,33 +791,45 @@ ShallowWrapper {
             >
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="username"
                 placeholder="Username"
                 type="text"
+                value=""
               />
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="email"
                 placeholder="Email Address"
                 type="email"
+                value=""
               />
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="password"
                 placeholder="Password"
                 type="password"
+                value=""
               />
               <FormInput
                 classname="form-control"
+                errors={Object {}}
                 name="passwordConfirmation"
                 placeholder="Confirm Password"
                 type="password"
+                value=""
               />
               <div
                 className="row"
               >
-                <LoadingSpinner />
-                <MainError />
+                <LoadingSpinner
+                  isLoading={false}
+                />
+                <MainError
+                  errors={Object {}}
+                />
                 <div
                   className="col-md-8 text-left mb-10"
                 >
@@ -801,33 +872,45 @@ ShallowWrapper {
               "children": Array [
                 <FormInput
                   classname="form-control"
+                  errors={Object {}}
                   name="username"
                   placeholder="Username"
                   type="text"
+                  value=""
                 />,
                 <FormInput
                   classname="form-control"
+                  errors={Object {}}
                   name="email"
                   placeholder="Email Address"
                   type="email"
+                  value=""
                 />,
                 <FormInput
                   classname="form-control"
+                  errors={Object {}}
                   name="password"
                   placeholder="Password"
                   type="password"
+                  value=""
                 />,
                 <FormInput
                   classname="form-control"
+                  errors={Object {}}
                   name="passwordConfirmation"
                   placeholder="Confirm Password"
                   type="password"
+                  value=""
                 />,
                 <div
                   className="row"
                 >
-                  <LoadingSpinner />
-                  <MainError />
+                  <LoadingSpinner
+                    isLoading={false}
+                  />
+                  <MainError
+                    errors={Object {}}
+                  />
                   <div
                     className="col-md-8 text-left mb-10"
                   >
@@ -867,12 +950,12 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "classname": "form-control",
-                  "errors": undefined,
+                  "errors": Object {},
                   "name": "username",
                   "onChange": undefined,
                   "placeholder": "Username",
                   "type": "text",
-                  "value": undefined,
+                  "value": "",
                 },
                 "ref": null,
                 "rendered": null,
@@ -884,12 +967,12 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "classname": "form-control",
-                  "errors": undefined,
+                  "errors": Object {},
                   "name": "email",
                   "onChange": undefined,
                   "placeholder": "Email Address",
                   "type": "email",
-                  "value": undefined,
+                  "value": "",
                 },
                 "ref": null,
                 "rendered": null,
@@ -901,12 +984,12 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "classname": "form-control",
-                  "errors": undefined,
+                  "errors": Object {},
                   "name": "password",
                   "onChange": undefined,
                   "placeholder": "Password",
                   "type": "password",
-                  "value": undefined,
+                  "value": "",
                 },
                 "ref": null,
                 "rendered": null,
@@ -918,12 +1001,12 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "classname": "form-control",
-                  "errors": undefined,
+                  "errors": Object {},
                   "name": "passwordConfirmation",
                   "onChange": undefined,
                   "placeholder": "Confirm Password",
                   "type": "password",
-                  "value": undefined,
+                  "value": "",
                 },
                 "ref": null,
                 "rendered": null,
@@ -935,8 +1018,12 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <LoadingSpinner />,
-                    <MainError />,
+                    <LoadingSpinner
+                      isLoading={false}
+                    />,
+                    <MainError
+                      errors={Object {}}
+                    />,
                     <div
                       className="col-md-8 text-left mb-10"
                     >
@@ -974,7 +1061,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "function",
                     "props": Object {
-                      "isLoading": undefined,
+                      "isLoading": false,
                     },
                     "ref": null,
                     "rendered": null,
@@ -985,7 +1072,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "function",
                     "props": Object {
-                      "errors": undefined,
+                      "errors": Object {},
                     },
                     "ref": null,
                     "rendered": null,
