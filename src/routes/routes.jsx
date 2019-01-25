@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import ReduxToastr from 'react-redux-toastr';
 import LoginPage from '../component/Pages/LoginPage.jsx';
@@ -11,15 +11,17 @@ import UpdateArticles from '../component/Pages/articles/UpdateArticles/UpdateArt
 
 const Routes = () => (
   <MainLayout>
-    <Switch>
-      <Route exact path='/' component={HomePage} />
-      <Route exact path='/login' component={LoginPage} />
-      <Route exact path='/updatearticle' component={UpdateArticles} />
-      <Route exact path='/resetpassword' component={PasswordResetPresentation} />
-      <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
-      <Route component={NotFound} />
-    </Switch>
-    <ReduxToastr />
+    <Fragment>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/login' component={LoginPage} />
+        <Route exact path='/articles/update' component={UpdateArticles} />
+        <Route exact path='/resetpassword' component={PasswordResetPresentation} />
+        <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
+        <Route component={NotFound} />
+      </Switch>
+      <ReduxToastr />
+    </Fragment>
   </MainLayout>
 );
 

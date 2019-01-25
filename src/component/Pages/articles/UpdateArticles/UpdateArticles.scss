@@ -1,7 +1,6 @@
+@import '../../../../styles//variables.scss';
+
 .update-articles{
-    * {
-        box-sizing: border-box;
-    }
     &.__button {
         float: right;
         font-size: 20px;
@@ -11,18 +10,25 @@
     }
 
     &.__text {
-        font-size: 2em;
+        font-size: 1.5em;
         margin: 1% 0 15% 0;
-        padding: 0 25%;
-
-    overflow-x: auto;
+        padding: 0 10%;
+        text-align: justify;
     }
 
     &.__title {
         font-size: 3em;
+        font-weight: bold;
         margin-top: 11%;
-        padding: 0 25%;
+        padding: 0 10%;
+        text-align: justify;
     }
+}
+
+.medium-editor-element {
+    font-family: $font-family__cardo;
+    padding-bottom: 2%;
+    white-space: normal;
 }
 
 .medium-editor-element:focus {
