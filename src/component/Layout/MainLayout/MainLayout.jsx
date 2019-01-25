@@ -11,7 +11,7 @@ import Footer from '../../ui/footer/Footer';
  */
 export const MainLayout = ({ children, auth = {} }) => (
   <Fragment>
-    <Header isAuthenticated={auth.isAuthenticated} />
+    <Header isAuthenticated={auth.isAuthenticated} username={auth.user.user.username} />
     <main role="main" className="pt-5">
       <div className="container-fluid">{children}</div>
     </main>
