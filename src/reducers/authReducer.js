@@ -1,14 +1,18 @@
-import { SET_AUTH_USER } from '../actions/actionTypes';
+import { ACTIONS } from '../actions/actionTypes';
+import isEmpty from '../utils/isEmpty';
 
 const authDefaultState = {
   isAuthenticated: false,
+  user: {},
 };
 
 const authReducer = (state = authDefaultState, action) => {
   switch (action.type) {
-    case SET_AUTH_USER:
+    case ACTIONS.SET_AUTH_USER:
       return {
-        ...action.payload,
+        ...state,
+        isAuthenticated: !isEmpty(action.payload),
+        user: { ...action.payload },
       };
 
     default:

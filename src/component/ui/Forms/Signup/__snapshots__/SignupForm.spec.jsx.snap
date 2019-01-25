@@ -89,6 +89,31 @@ ShallowWrapper {
             </div>
           </div>
         </form>,
+        <br />,
+        <div
+          className="col-md-12 text-center"
+        >
+          <a
+            className="btn btn-block btn-primary"
+            href="undefined/auth/facebook"
+          >
+            Login with Facebook
+          </a>
+          <br />
+          <a
+            className="btn btn-block btn-info"
+            href="undefined/auth_twitter/twitter"
+          >
+            Login with twitter
+          </a>
+          <br />
+          <a
+            className="btn btn-block btn-danger"
+            href="undefined/auth/google"
+          >
+            Login With Google
+          </a>
+        </div>,
       ],
       "className": "heimdal-signup-form",
     },
@@ -458,7 +483,6 @@ ShallowWrapper {
                     "props": Object {
                       "children": "Sign Up",
                       "className": "btn signup-btn",
-                      "disabled": undefined,
                       "type": "submit",
                     },
                     "ref": null,
@@ -474,6 +498,106 @@ ShallowWrapper {
           "type": "div",
         },
         "type": "form",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <a
+              className="btn btn-block btn-primary"
+              href="undefined/auth/facebook"
+            >
+              Login with Facebook
+            </a>,
+            <br />,
+            <a
+              className="btn btn-block btn-info"
+              href="undefined/auth_twitter/twitter"
+            >
+              Login with twitter
+            </a>,
+            <br />,
+            <a
+              className="btn btn-block btn-danger"
+              href="undefined/auth/google"
+            >
+              Login With Google
+            </a>,
+          ],
+          "className": "col-md-12 text-center",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Login with Facebook",
+              "className": "btn btn-block btn-primary",
+              "href": "undefined/auth/facebook",
+            },
+            "ref": null,
+            "rendered": "Login with Facebook",
+            "type": "a",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Login with twitter",
+              "className": "btn btn-block btn-info",
+              "href": "undefined/auth_twitter/twitter",
+            },
+            "ref": null,
+            "rendered": "Login with twitter",
+            "type": "a",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Login With Google",
+              "className": "btn btn-block btn-danger",
+              "href": "undefined/auth/google",
+            },
+            "ref": null,
+            "rendered": "Login With Google",
+            "type": "a",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -556,6 +680,31 @@ ShallowWrapper {
               </div>
             </div>
           </form>,
+          <br />,
+          <div
+            className="col-md-12 text-center"
+          >
+            <a
+              className="btn btn-block btn-primary"
+              href="undefined/auth/facebook"
+            >
+              Login with Facebook
+            </a>
+            <br />
+            <a
+              className="btn btn-block btn-info"
+              href="undefined/auth_twitter/twitter"
+            >
+              Login with twitter
+            </a>
+            <br />
+            <a
+              className="btn btn-block btn-danger"
+              href="undefined/auth/google"
+            >
+              Login With Google
+            </a>
+          </div>,
         ],
         "className": "heimdal-signup-form",
       },
@@ -925,7 +1074,6 @@ ShallowWrapper {
                       "props": Object {
                         "children": "Sign Up",
                         "className": "btn signup-btn",
-                        "disabled": undefined,
                         "type": "submit",
                       },
                       "ref": null,
@@ -941,6 +1089,106 @@ ShallowWrapper {
             "type": "div",
           },
           "type": "form",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <a
+                className="btn btn-block btn-primary"
+                href="undefined/auth/facebook"
+              >
+                Login with Facebook
+              </a>,
+              <br />,
+              <a
+                className="btn btn-block btn-info"
+                href="undefined/auth_twitter/twitter"
+              >
+                Login with twitter
+              </a>,
+              <br />,
+              <a
+                className="btn btn-block btn-danger"
+                href="undefined/auth/google"
+              >
+                Login With Google
+              </a>,
+            ],
+            "className": "col-md-12 text-center",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Login with Facebook",
+                "className": "btn btn-block btn-primary",
+                "href": "undefined/auth/facebook",
+              },
+              "ref": null,
+              "rendered": "Login with Facebook",
+              "type": "a",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Login with twitter",
+                "className": "btn btn-block btn-info",
+                "href": "undefined/auth_twitter/twitter",
+              },
+              "ref": null,
+              "rendered": "Login with twitter",
+              "type": "a",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Login With Google",
+                "className": "btn btn-block btn-danger",
+                "href": "undefined/auth/google",
+              },
+              "ref": null,
+              "rendered": "Login With Google",
+              "type": "a",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",

@@ -1,15 +1,15 @@
-import { SET_ERRORS, CLEAR_ERRORS, REMOVE_AN_ERROR } from './actionTypes';
+import { ACTIONS } from './actionTypes';
 
 export const setErrors = (payload = {}) => ({
-  type: SET_ERRORS,
+  type: ACTIONS.SET_ERRORS,
   payload,
 });
 
 export const clearErrors = () => ({
-  type: CLEAR_ERRORS,
+  type: ACTIONS.CLEAR_ERRORS,
 });
 
 export const removeAnError = errorName => ({
-  type: REMOVE_AN_ERROR,
+  type: ACTIONS.REMOVE_AN_ERROR,
   errorName,
 });

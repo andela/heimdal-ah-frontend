@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import FormInput from '../../InputElements/FormInput';
 import LoadingSpinner from '../../loadingSpinners/LoadingSpinner';
 import MainError from '../../errors/MainError';
@@ -75,15 +76,44 @@ const SignupForm = (props) => {
               </span>
             </div>
             <div className="col-md-4 text-right">
-              <button type="submit" className="btn signup-btn" disabled={isLoading}>
+              <button type="submit" className="btn signup-btn">
                 Sign Up
               </button>
             </div>
           </div>
         </div>
       </form>
+      <br />
+      <div className="col-md-12 text-center">
+        <a
+          href={`${process.env.BASE_URL_PROD}/auth/facebook`}
+          className="btn btn-block btn-primary"
+        >
+          Login with Facebook
+        </a>
+        <br />
+        <a
+          href={`${process.env.BASE_URL_PROD}/auth_twitter/twitter`}
+          className="btn btn-block btn-info"
+        >
+          Login with twitter
+        </a>
+        <br />
+        <a href={`${process.env.BASE_URL_PROD}/auth/google`} className="btn btn-block btn-danger">
+          Login With Google
+        </a>
+      </div>
     </div>
   );
+};
+
+SignupForm.propTypes = {
+  username: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  password: PropTypes.string.isRequired,
+  passwordConfirmation: PropTypes.string.isRequired,
+  errors: PropTypes.array.isRequired,
+  isLoading: PropTypes.bool.isRequired,
 };
 
 export default SignupForm;

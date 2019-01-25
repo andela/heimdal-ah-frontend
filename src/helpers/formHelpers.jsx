@@ -1,4 +1,4 @@
-import React from 'react';
-import FormInput from '../component/ui/InputElements/FormInput';
+// import React from 'react';
+// import FormInput from '../component/ui/InputElements/FormInput';
 
-export const insertInput = props => <FormInput {...props} />;
+// export const insertInput = props => <FormInput {...props} />;
