@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React from 'react';
-// import connectedSignup, { Signup } from './Signup';
+import connectedSignup, { Signup } from './Signup';
 import SignupForm from './SignupForm';
 
 // import { setErrors, removeAnError, clearErrors } from '../../../../actions/errorActions';
