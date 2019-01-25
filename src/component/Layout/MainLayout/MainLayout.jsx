@@ -10,7 +10,7 @@ import Footer from '../../ui/footer/Footer';
  */
 const MainLayout = ({ children }) => (
   <div>
-    <Header isValidated={false} />
+    <Header />
     {children}
     <Footer />
   </div>

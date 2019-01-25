@@ -2,7 +2,10 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 const path = require('path');
+const webpack = require('webpack');
+require('dotenv').config();
 
 const miniCssPlugin = new MiniCssExtractPlugin({
   filename: '[name].[hash].css',
@@ -40,7 +43,10 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|gif|png|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
-        loader: 'file-loader?name=images/[name].[ext]',
+        use: [
+          {
+            loader: 'file-loader?name=images/[name].[ext]',
+          }],
       },
     ],
   },
@@ -51,6 +57,9 @@ module.exports = {
     maxAssetSize: 512000,
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.BASE_URL_PROD': JSON.stringify(process.env.BASE_URL_PROD),
+    }),
     miniCssPlugin,
     new HtmlWebPackPlugin({
       template: './src/index.html',
