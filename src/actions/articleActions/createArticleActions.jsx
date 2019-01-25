@@ -1,41 +1,39 @@
-import axios from 'axios';
+import instance from '../../config/http';
 import { ACTIONS } from '../actionTypes';
 import ActionResponse from '../actionResponse';
 
 
-const articleActions = articleDetails => (dispatch) => {
-  const {
-    title,
-    body,
-    description,
-  } = articleDetails;
+// function
+// change naming conventions ---- createAction
+// front end validation for title for content and description
+// validation for specific validations
+// client route articles/create
 
-
-  return axios.post('https://heimdal-ah-staging.herokuapp.com/api/v1/articles', {
-    title,
-    body,
-    description,
-  }, {
-    headers: {
-      'access-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoiam9obiIsInJvbGVJZCI6MiwiaWF0IjoxNTQ4MzA2NTM5LCJleHAiOjE1NDgzOTI5Mzl9.y12-awPcMxiOaNR2W8YCAcbwUmwf7PdCsMLuhXkGRIU',
-    },
-  }).then((data) => {
-    const payload = {
-      message: 'Article successfully created', title, body, status: 201,
-    };
-    if (data.status === 201) {
-      dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE, payload));
-      dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE, ''));
-    }
-  }).catch((error) => {
-    if (error.response.status === 400) {
-      dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, { message: 'No Field Should Be Left Empty', status: 400 }));
-      dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, ''));
-    } else if (error.response.status === 500) {
-      dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, { message: 'Sever Error', status: 500 }));
-      dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, ''));
-    }
-  });
-};
-
-export default articleActions;
+/**
+ * @description - createActions for new article
+ * @param {props} status - post request
+ * @returns {component} Component
+ */
+export function createArticleAction(articleDetails) {
+  // eslint-disable-next-line func-names
+  return function (dispatch) {
+    instance.post('https://heimdal-ah-staging.herokuapp.com/api/v1/articles', { ...articleDetails })
+      .then((response) => {
+        const payload = {
+          message: 'Article successfully created', status: 201,
+        };
+        if (response.status === 201) {
+          dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE, payload));
+          dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_STATE, null));
+        }
+      }).catch((error) => {
+        if (error.response.status === 400) {
+          dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, { message: 'No Field Should Be Left Empty', status: 400 }));
+          dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_STATE, ''));
+        } else if (error.response.status === 500) {
+          dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, { message: 'Sever Error', status: 500 }));
+          dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_STATE, ''));
+        }
+      });
+  };
+}

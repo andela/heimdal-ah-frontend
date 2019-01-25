@@ -10,6 +10,7 @@ export const ACTIONS = keyMirror({
   UPDATE_PASSWORD_ERROR: null,
   CREATE_ARTICLE: null,
   CREATE_ARTICLE_ERROR: null,
+  CREATE_ARTICLE_STATE: null,
   UPDATE_ARTICLE_SUCCESS: null,
   UPDATE_ARTICLE_ERROR: null,
 });

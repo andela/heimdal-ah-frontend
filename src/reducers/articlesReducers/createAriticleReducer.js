@@ -25,6 +25,16 @@ export default (state = intialState, action) => {
         payload: action.payload,
       };
     }
+
+    case ACTIONS.CREATE_ARTICLE_STATE: {
+      return {
+        ...state,
+        title: null,
+        body: null,
+        status: '',
+        payload: action.payload,
+      };
+    }
     default:
       return state;
   }
