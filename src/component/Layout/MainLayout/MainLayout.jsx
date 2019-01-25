@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropsTypes from 'prop-types';
 import Header from '../../ui/header/Header';
 import Footer from '../../ui/footer/Footer';
@@ -10,11 +10,13 @@ import Footer from '../../ui/footer/Footer';
  * @returns {object} the component
  */
 export const MainLayout = ({ children, auth = {} }) => (
-  <div>
+  <Fragment>
     <Header isAuthenticated={auth.isAuthenticated} />
-    {children}
+    <main role="main" className="pt-5">
+      <div className="container-fluid">{children}</div>
+    </main>
     <Footer />
-  </div>
+  </Fragment>
 );
 
 MainLayout.propTypes = {

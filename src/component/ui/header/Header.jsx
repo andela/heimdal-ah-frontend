@@ -13,16 +13,12 @@ import HeaderButton from '../headerButton/HeaderButton';
  * @param {boolean} isAuthenticated should be a boolean
  */
 const Header = (props) => {
-  // <<<<<<< HEAD
   const { isAuthenticated } = props;
-  // =======
-  // const { isAuthenticated } = props.auth;
-  // >>>>>>> develop
   return (
     <header className="header">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Logo />
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav mr-auto">
             <NavItems />
           </ul>
@@ -35,11 +31,7 @@ const Header = (props) => {
 };
 
 Header.propTypes = {
-  // <<<<<<< HEAD
   isAuthenticated: PropTypes.bool.isRequired,
-  // =======
-  //   auth: PropTypes.object.isRequired,
-  // >>>>>>> develop
 };
 
 const mapStateToProps = state => ({
