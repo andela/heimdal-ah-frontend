@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { getAllFollowers } from './actions/Follow/UserFollowAction';
+import { getAllFollowers } from './actions/Follow/userFollowAction';
 import Routes from './routes/routes';
 import 'font-awesome/css/font-awesome.min.css';
 import './styles/global.scss';

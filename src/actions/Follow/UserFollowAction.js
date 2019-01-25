@@ -8,7 +8,7 @@ import ActionResponse from '../actionResponse';
  */
 export function getAllFollowers() {
   return function (dispatch) {
-    instance.get('/users/followers')
+    return instance.get('/users/followers')
       .then((response) => {
         dispatch(ActionResponse(ACTIONS.GET_ALL_FOLLOWERS, response.data));
       }).catch((error) => {
@@ -23,7 +23,7 @@ export function getAllFollowers() {
  */
 export function followUser(followedId) {
   return function (dispatch) {
-    instance.post(`/users/${followedId}/follow`)
+    return instance.post(`/users/${followedId}/follow`)
       .then((response) => {
         dispatch(ActionResponse(ACTIONS.FOLLOW_USER, {
           message: response.data.message, followedId,
@@ -38,7 +38,7 @@ export function followUser(followedId) {
  */
 export function unfollowUser(followedId) {
   return function (dispatch) {
-    instance.post(`/users/${followedId}/unfollow`)
+    return instance.post(`/users/${followedId}/unfollow`)
       .then((response) => {
         dispatch(ActionResponse(ACTIONS.UNFOLLOW_USER, {
           message: response.data.message, followedId,

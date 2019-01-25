@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import FollowButton from '../component/ui/Buttons/Button.jsx';
-import { getAllFollowers, followUser, unfollowUser } from '../actions/Follow/UserFollowAction';
+import { getAllFollowers, followUser, unfollowUser } from '../actions/Follow/userFollowAction';
 
 /**
  * Follow user class
@@ -15,11 +15,13 @@ import { getAllFollowers, followUser, unfollowUser } from '../actions/Follow/Use
 class FollowUser extends Component {
   constructor() {
     super();
+
     this.onClick = this.onClick.bind(this);
   }
 
   componentDidMount() {
     const { getAllFollowers } = this.props.actions;
+
     getAllFollowers();
   }
 
@@ -30,6 +32,7 @@ class FollowUser extends Component {
     const { match, followers } = this.props;
     const { params } = match;
     const followerId = parseInt(params.userId, 10);
+
     if (followers.includes(followerId)) {
       unfollowUser(followerId);
     } else {
@@ -41,6 +44,7 @@ class FollowUser extends Component {
     const { followers, match } = this.props;
     const { params } = match;
     const followerId = parseInt(params.userId, 10);
+
     return (
       <FollowButton
         type='follow'
