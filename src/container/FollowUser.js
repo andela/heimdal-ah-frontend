@@ -68,5 +68,4 @@ const mapStateToProps = state => ({
     : [],
 });
 
-export default withRouter(connect(mapStateToProps,
-  matchDispatchToProps)(FollowUser));
+export default withRouter(connect(mapStateToProps, matchDispatchToProps)(FollowUser));

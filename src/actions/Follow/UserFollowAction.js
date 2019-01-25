@@ -42,7 +42,7 @@ export function unfollowUser(followedId) {
       .then((response) => {
         dispatch(ActionResponse(ACTIONS.UNFOLLOW_USER, {
           message: response.data.message, followedId,
-        }))
+        }));
       });
   };
 }
