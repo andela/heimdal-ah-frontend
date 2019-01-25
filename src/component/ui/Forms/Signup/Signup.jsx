@@ -59,12 +59,11 @@ export class Signup extends Component {
     const { action, history } = this.props;
 
     if (errors) {
-      // this.setState({ isLoading: false });
+      this.setState({ isLoading: false });
       return action.setErrors(errors.errors);
     }
 
     action.clearErrors();
-    // this.setState({ isLoading: false });
     return action.signupUser(signupData, history);
   };
 
@@ -72,7 +71,6 @@ export class Signup extends Component {
     return <SignupForm {...this.state} onChange={this.onChange} handleSignup={this.handleSignup} />;
   }
 }
-
 
 const mapStateToProps = state => ({
   errors: state.errors,

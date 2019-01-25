@@ -1,11 +1,7 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import connectedSignup, { Signup } from './Signup';
+import { Signup } from './Signup';
 import SignupForm from './SignupForm';
-
-// import { setErrors, removeAnError, clearErrors } from '../../../../actions/errorActions';
-
-// import { signupUser } from '../../../../actions/authActions';
 
 describe('The Signup Component Test Suite', () => {
   const wrapper = shallow(<Signup />);
@@ -55,15 +51,4 @@ describe('The Signup Component Test Suite', () => {
     expect(wrapper.state().passwordConfirmation).toEqual('123123qwe');
     expect(wrapper.instance().state.passwordConfirmation).toEqual(event.target.value);
   });
-
-  // it('should handle submit events', () => {
-  //   expect(wrapper.state()).toEqual({ ...wrapper.state() });
-  //   // const signupData = { ...wrapper.state() };
-  //   const event = { preventDefault: () => {} };
-
-  // wrapper.instance().handleSignup(event);
-  // expect(
-  //   sinon.stub(jest.fn(wrapper.instance().props.actions(setErrors()))),
-  // ).not.toHaveBeenCalled();
-  // });
 });

@@ -71,13 +71,13 @@ const SignupForm = (props) => {
               <span className="text-muted p-t-10">
                 Already have an account?
                 {' '}
-                <Link to="/" className="link">
+                <Link to="/" className="link pt-2">
                   Log in here
                 </Link>
               </span>
             </div>
             <div className="col-md-4 text-right">
-              <button type="submit" className="btn signup-btn">
+              <button type="submit" className="btn btn-default ph-25">
                 Sign Up
               </button>
             </div>
@@ -88,19 +88,19 @@ const SignupForm = (props) => {
       <div className="text-center">
         <a
           href={`${process.env.BASE_URL_PROD}/auth/facebook`}
-          className="btn btn-block btn-primary"
+          className="btn btn-block btn-facebook"
         >
           Login with Facebook
         </a>
         <br />
         <a
           href={`${process.env.BASE_URL_PROD}/auth_twitter/twitter`}
-          className="btn btn-block btn-info"
+          className="btn btn-block btn-twitter"
         >
           Login with twitter
         </a>
         <br />
-        <a href={`${process.env.BASE_URL_PROD}/auth/google`} className="btn btn-block btn-danger">
+        <a href={`${process.env.BASE_URL_PROD}/auth/google`} className="btn btn-block btn-google">
           Login With Google
         </a>
       </div>
