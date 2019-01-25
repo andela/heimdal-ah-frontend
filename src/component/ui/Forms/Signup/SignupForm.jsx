@@ -107,13 +107,24 @@ const SignupForm = (props) => {
   );
 };
 
+SignupForm.defaultProps = {
+  username: '',
+  email: '',
+  password: '',
+  passwordConfirmation: '',
+  errors: {},
+  isLoading: false,
+};
+
 SignupForm.propTypes = {
-  username: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
-  password: PropTypes.string.isRequired,
-  passwordConfirmation: PropTypes.string.isRequired,
-  errors: PropTypes.array.isRequired,
-  isLoading: PropTypes.bool.isRequired,
+  username: PropTypes.string,
+  email: PropTypes.string,
+  password: PropTypes.string,
+  passwordConfirmation: PropTypes.string,
+  errors: PropTypes.array,
+  isLoading: PropTypes.bool,
+  handleSignup: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default SignupForm;
