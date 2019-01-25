@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Style.scss';
+import './ButtonStyle.scss';
 /**
  * @description - Heimdal Authors Haven Button Component
  * @param {props} Class - the class of the button(bootstrap or custom)

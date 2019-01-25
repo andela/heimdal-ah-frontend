@@ -1,34 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Rating from '../ui/Rating/Rating';
-import Button from '../ui/buttons/Button';
+import Button from '../ui/Buttons/Button';
 
 const HomePage = () => (
   <div>
-    <Fragment>
-      <br />
-      <br />
-      <br />
-      <a href={`${process.env.BASE_URL_PROD}/auth/facebook`}>
-        <Button type="facebook" label="Login with Facebook" />
-      </a>
-      <br />
-      <br />
-      <br />
-      <a href={`${process.env.BASE_URL_PROD}/auth_twitter/twitter`}>
-        <Button type="twitter" label="Login with Twitter" />
-      </a>
-      <br />
-      <br />
-      <br />
-      <br />
-      <a href={`${process.env.BASE_URL_PROD}/auth/google`}>
-        <Button type="google" label="Login with Google" />
-      </a>
-      <br />
-      <br />
-      <br />
-    </Fragment>
-
     <h2 className="lead mt-5">
       Welcome to the Home page...
       <div>
