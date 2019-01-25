@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { autheticateUser } from './socialAuth';
+import { authenticateUser } from './socialAuth';
 
 const middlewares = [thunk];
 const mockStore = configureStore(middlewares);
@@ -26,7 +26,7 @@ describe('select_actions', () => {
         type: 'SET_AUTH_USER',
       },
     ];
-    store.dispatch(autheticateUser(token));
+    store.dispatch(authenticateUser(token));
     expect(store.getActions()).toEqual(expectedActions);
   });
 });
