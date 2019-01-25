@@ -1,8 +1,8 @@
 import React from 'react';
 import Rating from '../ui/Rating/Rating';
-import Button from '../ui/buttons/Button';
+import Button from '../ui/Buttons/Button';
 import NewArticles from './articles/createArticle/CreateArticles';
-import { DemoArticleCoponentWithGlowState } from '../ui/buttons/glow/DemoArticleCoponentWithGlowState';
+import { DemoArticleCoponentWithGlowState } from '../ui/Buttons/glow/DemoArticleCoponentWithGlowState';
 import ArticleCardVertical from '../ui/cards/BookmarksCards';
 
 

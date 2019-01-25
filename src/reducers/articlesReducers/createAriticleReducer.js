@@ -25,15 +25,6 @@ export default (state = intialState, action) => {
         payload: action.payload,
       };
     }
-
-    case ACTIONS.CREATE_ARTICLE_ERROR_AUTH:
-      return {
-        ...state,
-        title: null,
-        body: null,
-        status: 'AUTH_ERROR',
-        payload: action.payload,
-      };
     default:
       return state;
   }
