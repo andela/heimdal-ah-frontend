@@ -27,9 +27,7 @@ export function followUser(followedId) {
       .then((response) => {
         dispatch(ActionResponse(ACTIONS.FOLLOW_USER, {
           message: response.data.message, followedId,
-        })).catch((error) => {
-          dispatch(ActionResponse(ACTIONS.FOLLOW_USER, 'Server error', error));
-        });
+        }));
       });
   };
 }
@@ -44,9 +42,7 @@ export function unfollowUser(followedId) {
       .then((response) => {
         dispatch(ActionResponse(ACTIONS.UNFOLLOW_USER, {
           message: response.data.message, followedId,
-        })).catch((error) => {
-          dispatch(ActionResponse(ACTIONS.FOLLOW_USER, 'Server error', error));
-        });
+        }))
       });
   };
 }
