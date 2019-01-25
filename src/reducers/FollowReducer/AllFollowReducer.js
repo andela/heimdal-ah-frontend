@@ -1,4 +1,4 @@
-import { FOLLOW_USER, GET_ALL_FOLLOWERS, UNFOLLOW_USER } from '../actions/actionTypes';
+import { ACTIONS } from '../../actions/actionTypes';
 
 const initialState = {
   message: '',
@@ -7,18 +7,20 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case GET_ALL_FOLLOWERS:
+    case ACTIONS.GET_ALL_FOLLOWERS:
       return {
         ...state,
         followers: action.payload,
       };
-    case FOLLOW_USER:
+    case ACTIONS.FOLLOW_USER:
       return {
+        ...state,
         message: action.payload.message,
         followers: { data: [...state.followers.data, { followedId: action.payload.followedId }] },
       };
-    case UNFOLLOW_USER:
+    case ACTIONS.UNFOLLOW_USER:
       return {
+        ...state,
         message: action.payload.message,
         followers: {
           data: state.followers.data

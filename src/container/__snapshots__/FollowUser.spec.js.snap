@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer Snapshot Test should render the footer page correctly 1`] = `
+exports[`Followbutton Snapshot Test should render the follow button correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <withRouter(Connect(FollowUser)) />,

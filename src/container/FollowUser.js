@@ -5,9 +5,13 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
-import FollowButton from '../component/ui/buttons/Button.jsx';
-import { getAllFollowers, followUser, unfollowUser } from '../actions/followAction';
+import FollowButton from '../component/ui/Buttons/Button.jsx';
+import { getAllFollowers, followUser, unfollowUser } from '../actions/Follow/UserFollowAction';
 
+/**
+ * Follow user class
+ * @returns followUser class object
+ */
 class FollowUser extends Component {
   constructor() {
     super();
@@ -26,20 +30,17 @@ class FollowUser extends Component {
     const { match, followers } = this.props;
     const { params } = match;
     const followerId = parseInt(params.userId, 10);
-
     if (followers.includes(followerId)) {
       unfollowUser(followerId);
     } else {
       followUser(followerId);
     }
-    // followers.includes(followerId) ? unfollowUser() : followUser();
   }
 
   render() {
     const { followers, match } = this.props;
     const { params } = match;
     const followerId = parseInt(params.userId, 10);
-    // window.localStorage.setItem('followerId', followerId);
     return (
       <FollowButton
         type='follow'
@@ -62,8 +63,8 @@ const matchDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = state => ({
-  followers: state.followUser.followers.data
-    ? state.followUser.followers.data.map(user => user.followedId)
+  followers: state.followers.followers.data
+    ? state.followers.followers.data.map(user => user.followedId)
     : [],
 });
 

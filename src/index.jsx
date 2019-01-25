@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.min.css';
 import jwtDecode from 'jwt-decode';
 import configureStore from './store/configureStore';
-import { App } from './App.jsx';
+import App from './App.jsx';
 import { setCurrentUser } from './actions/SocialAuthActions/socialAuth';
 import setToken from './config/setToken';
 

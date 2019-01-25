@@ -1,22 +1,10 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import toJson from 'enzyme-to-json';
-import { App } from './App';
+import Routes from './routes/routes';
 
 describe('Testing the App', () => {
-  const props = {
-    actions: {
-      getAllFollowers: jest.fn(),
-    },
-  };
   it('should render the Routes', () => {
-    const wrapper = shallow(<App {...props} />);
-    const routes = wrapper.find('Routes');
-    expect(routes.length).toBe(1);
-  });
-
-  it('should match the snapshot', () => {
-    const tree = shallow(<App {...props} />);
-    expect(toJson(tree)).toMatchSnapshot();
+    const wrapper = shallow(<Routes />);
+    expect(wrapper.length).toBe(1);
   });
 });
