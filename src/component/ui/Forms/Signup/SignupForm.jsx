@@ -85,7 +85,7 @@ const SignupForm = (props) => {
         </div>
       </form>
       <br />
-      <div className="col-md-12 text-center">
+      <div className="text-center">
         <a
           href={`${process.env.BASE_URL_PROD}/auth/facebook`}
           className="btn btn-block btn-primary"
