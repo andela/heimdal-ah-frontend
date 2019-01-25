@@ -1,17 +1,19 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import './Header.scss';
 import NavItems from '../navItems/NavItems';
-import ActiveUser from '../../Widgets/activeuser/ActiveUser';
+import ActiveUser from '../activeuser/ActiveUser';
 import Logo from '../logo/Logo';
-import SearchForm from '../../Widgets/searchForm/SearchForm';
-import HeaderButton from '../../Widgets/headerButton/HeaderButton';
+import SearchForm from '../searchForm/SearchForm';
+import HeaderButton from '../headerButton/HeaderButton';
 
 /**
- * @param {boolean} isValidated should be a boolean
+ * @param {boolean} isAuthenticated should be a boolean
  */
 const Header = (props) => {
-  const { isValidated } = props;
+  const { isAuthenticated } = props.auth;
   return (
     <header className='header'>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,7 +22,7 @@ const Header = (props) => {
           <ul className="navbar-nav mr-auto">
             <NavItems />
           </ul>
-          {isValidated ? <ActiveUser /> : <HeaderButton />}
+          {isAuthenticated ? <ActiveUser /> : <HeaderButton />}
           <SearchForm />
         </div>
       </nav>
@@ -29,7 +31,11 @@ const Header = (props) => {
 };
 
 Header.propTypes = {
-  isValidated: PropTypes.bool.isRequired,
+  auth: PropTypes.object.isRequired,
 };
 
-export default Header;
+const mapStateToProps = state => ({
+  auth: state.auth,
+});
+
+export default connect(mapStateToProps, {})(Header);
