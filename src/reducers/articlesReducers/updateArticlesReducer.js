@@ -16,13 +16,6 @@ export default (state = initialState, action) => {
         status: '',
       });
 
-    case ACTIONS.UPDATE_ARTICLES_FAILED:
-      return ({
-        ...state,
-        payload: action.payload,
-        status: 'FAILED',
-      });
-
     case ACTIONS.UPDATE_ARTICLES_SUCCESS:
       return ({
         ...state,

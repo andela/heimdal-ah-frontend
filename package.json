@@ -46,7 +46,7 @@
     "redux-devtools-extension": "^2.13.7",
     "redux-thunk": "^2.3.0",
     "slate": "^0.44.9",
-    "slate-react": "^0.21.15",
+    "slate-react": "^0.21.15"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",

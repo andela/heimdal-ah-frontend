@@ -5,7 +5,7 @@
         float: right;
         font-size: 20px;
         height: 2.5em;
-        margin: 2% 7% 0 0;
+        margin: 2% 10.5% 0 0;
         width: 11%;
     }
 
@@ -33,4 +33,29 @@
 
 .medium-editor-element:focus {
     outline: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .update-articles{
+        &.__button {
+            width: 25%;
+        }
+    }
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .update-articles{
+        &.__button {
+            width: 38%;
+        }
+
+        &.__text {
+            font-size: 1.2em;
+        }
+
+        &.__title {
+            font-size: 1.7em;
+            margin-top: 30%;
+        }
+    }
 }
