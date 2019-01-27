@@ -64,9 +64,9 @@ const ReadSingleArticle = () => (
       <div className='line' />
     </div>
     <div className='tag-buttons'>
-      <button> hello </button>
-      <button> hello </button>
-      <button> hello </button>
+      <button type='submit'> hello </button>
+      <button type='submit'> hello </button>
+      <button type='submit'> hello </button>
     </div>
   </Fragment>
 );

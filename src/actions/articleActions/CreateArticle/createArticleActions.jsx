@@ -1,6 +1,6 @@
-import instance from '../../config/http';
-import { ACTIONS } from '../actionTypes';
-import ActionResponse from '../actionResponse';
+import instance from '../../../config/http';
+import { ACTIONS } from '../../actionTypes';
+import ActionResponse from '../../actionResponse';
 
 
 // function

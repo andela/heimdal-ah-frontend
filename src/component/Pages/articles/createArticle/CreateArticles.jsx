@@ -7,7 +7,7 @@ import Alert from '../../../ui/Alert/Alert';
 import Button from '../../../ui/Buttons/Button';
 import checkArticleDetails from '../../../../utils/createArticle';
 import './CreateArticle.scss';
-import { createArticleAction } from '../../../../actions/articleActions/createArticleActions';
+import { createArticleAction } from '../../../../actions/articleActions/CreateArticle/createArticleActions';
 
 /**
  * @description - CreateArticle Class
@@ -67,8 +67,8 @@ class CreateArticle extends React.Component {
   /**
  * @description - articleHandleChange for body state method
  */
-  descriptionHandleChange(title) {
-    this.setState({ title });
+  descriptionHandleChange(description) {
+    this.setState({ description });
   }
 
 

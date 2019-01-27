@@ -13,6 +13,11 @@ module.exports = {
   //   '!public/*.{js}',
   //   '!src/index.jsx',
   // ],
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx}',
+    '!public/*.{js}',
+    '!src/index.jsx',
+  ],
 
   collectCoverage: true,
 
