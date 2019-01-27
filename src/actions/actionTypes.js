@@ -1,7 +1,5 @@
 import keyMirror from 'keymirror';
 
-export const NEW_ACTION = '';
-
 export const ACTIONS = keyMirror({
   RESET_PASSWORD_STATE: null,
   RESET_PASSWORD_SUCCESS: null,
@@ -11,4 +9,9 @@ export const ACTIONS = keyMirror({
   UPDATE_PASSWORD_FAILED: null,
   UPDATE_PASSWORD_ERROR: null,
   SET_CURRENT_USER: null,
+  ARTICLES_RATING_SUCCESS: null,
+  ARTICLES_RATING_ERROR: null,
+  RESET_ARTICLES_RATING_STATE: null,
+  GET_ARTICLES_RATING_SUCCESS: null,
+  GET_ARTICLES_RATING_ERROR: null,
 });
