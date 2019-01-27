@@ -1,6 +1,10 @@
 import React from 'react';
 import FollowButton from '../../container/FollowUser';
 
+/**
+ *
+ * @param {object} props
+ */
 const Profile = props => (
   <div>
     <br />
