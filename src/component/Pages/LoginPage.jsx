@@ -4,6 +4,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Button from '../ui/Buttons/Button.jsx';
 
+/**
+ * Loginpage Component
+ * @returns jsx object
+ */
 class LoginPage extends Component {
   render() {
     return (

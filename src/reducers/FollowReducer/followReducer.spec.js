@@ -7,11 +7,14 @@ describe('Follow reducer test suit', () => {
       message: '',
       followers: {},
     };
+
     const state = followReducer(initialState,
+
       {
         type: 'GET_ALL_FOLLOWERS',
         payload: {},
       });
+
     expect(state).toEqual({
       message: '',
       followers: {},
@@ -25,19 +28,23 @@ describe('Follow reducer test suit', () => {
         data: [],
       },
     };
+
     const state = followReducer(initialState,
+
       {
         type: 'FOLLOW_USER',
         payload: {
           data: [initialState.followers.data],
           message: 'successfully followed user',
         },
+
       });
     expect(state).toEqual({
       message: 'successfully followed user',
       followers: {
         data: [...state.followers.data],
       },
+
     });
   });
 
@@ -48,6 +55,7 @@ describe('Follow reducer test suit', () => {
         data: [],
       },
     };
+
     const state = followReducer(initialState,
       {
         type: 'UNFOLLOW_USER',
@@ -56,10 +64,13 @@ describe('Follow reducer test suit', () => {
           message: 'successfully unfollowed user',
         },
       });
+
     expect(state).toEqual({
+
       message: 'successfully unfollowed user',
       followers: {
         data: [...state.followers.data],
+
       },
     });
   });
