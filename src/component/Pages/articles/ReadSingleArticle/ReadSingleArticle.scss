@@ -1,0 +1,55 @@
+.article-header {
+  text-align: center;
+  background: chocolate;
+  padding-right: 10%;
+  padding-left: 10%;
+  height: 300px;
+  h1{
+    padding-top: 5%;
+    font-size: 30px;
+  }
+}
+.bookmark-row {
+  display:grid;
+  grid-template-columns: 80% 20%;
+  grid-gap: 1em;
+  height:150px;
+  .bookmark-logo {
+    width: 25px;
+  }
+}
+.body{
+  display:grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 1em;
+  .article-section {
+    background-color: rgb(249, 249, 253);
+    padding: 5%;
+    padding: 20px
+  }  
+  .user-section {
+    background-color: brown;
+    padding: 5%;
+  }
+  .glow {
+    text-align: end;
+  }
+  .ratings {
+    text-align: center;
+  }
+  .line {
+   height: 0.8px;
+   background-color: #000000;
+   margin-left: 20px;
+  }
+  .bottom-details {
+    display:grid;
+    grid-template-columns: 30% 40% 30%;
+    padding-left: 20px;
+  }
+}
+.tag-buttons {
+  padding: 10px;
+  margin-top: 3%;
+  padding-left: 20px;
+}
