@@ -11,7 +11,8 @@
     "test:watch": "nyc jest --coverage --watchAll",
     "coverage": "npm run coveralls:coverage",
     "coveralls:coverage": "nyc report --reporter=lcov",
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint:fix": "eslint --fix ./ --ext .js --color"
   },
   "keywords": [],
   "author": "",
