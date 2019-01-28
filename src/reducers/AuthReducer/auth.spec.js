@@ -21,24 +21,23 @@ describe('select_reducer', () => {
 
   it('should set user if user is succesfully stored', () => {
     const initialState = {
-      isAuthenticated: true,
+      isAuthenticated: false,
       user: {},
       error: {},
     };
 
-    const state = auth(initialState,
-      {
-        type: ACTIONS.SET_CURRENT_USER,
-        isAuthenticated: true,
-        user: {
-          userId: 1,
-          email: 'email',
-          username: 'wale',
-          image: 'https://hardwaremassive.com/s…cture.jpg',
-          roleId: 1,
-        },
-        error: {},
-      });
+    const state = auth(initialState, {
+      type: ACTIONS.SET_CURRENT_USER,
+      isAuthenticated: true,
+      user: {
+        userId: 1,
+        email: 'email',
+        username: 'wale',
+        image: 'https://hardwaremassive.com/s…cture.jpg',
+        roleId: 1,
+      },
+      error: {},
+    });
     expect(state).toEqual({
       isAuthenticated: true,
       user: {
@@ -69,13 +68,12 @@ describe('select_reducer', () => {
       error: {},
     };
 
-    const state = auth(initialState,
-      {
-        type: ACTIONS.SET_CURRENT_USER_FAIL,
-        isAuthenticated: false,
-        user: {},
-        error: { message: 'Login unsuccessful' },
-      });
+    const state = auth(initialState, {
+      type: ACTIONS.SET_CURRENT_USER_FAIL,
+      isAuthenticated: false,
+      user: {},
+      error: { message: 'Login unsuccessful' },
+    });
     expect(state).toEqual({
       isAuthenticated: false,
       user: {},
