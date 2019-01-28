@@ -15,4 +15,6 @@ export const ACTIONS = keyMirror({
   SET_ERRORS: null,
   CLEAR_ERRORS: null,
   REMOVE_AN_ERROR: null,
+
+  FLASH_SUCCESS_MSG: null,
 });
