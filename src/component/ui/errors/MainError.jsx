@@ -9,9 +9,13 @@ const MainError = ({ errors }) => (
         login in here below.
       </span>
     ) : (
-      <span className="">An error occured, please try again in a moment</span>
+      <span className="">{errors.mainError && errors.mainError}</span>
     )}
   </div>
 );
+
+MainError.defaultProps = {
+  errors: {},
+};
 
 export default MainError;
