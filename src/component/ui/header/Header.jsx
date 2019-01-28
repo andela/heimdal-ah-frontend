@@ -16,7 +16,7 @@ const Header = ({ auth }) => {
   const { isAuthenticated, user } = auth;
   return (
     <header className="header">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <Logo />
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav mr-auto">
