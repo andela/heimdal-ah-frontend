@@ -1,4 +1,6 @@
 /* eslint-disable react/forbid-prop-types */
+import { connect } from 'react-redux';
+import PropsTypes from 'prop-types';
 import React from 'react';
 import './Header.scss';
 import NavItems from '../navItems/NavItems';
@@ -10,8 +12,8 @@ import HeaderButton from '../headerButton/HeaderButton';
 /**
  * @param {boolean} isAuthenticated should be a boolean
  */
-const Header = (props) => {
-  const { isAuthenticated, user } = props;
+const Header = ({ auth }) => {
+  const { isAuthenticated, user } = auth;
   return (
     <header className="header">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,4 +30,15 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+Header.propTypes = {
+  auth: PropsTypes.object,
+};
+
+Header.defaultProps = {
+  auth: {},
+};
+
+const mapStateToProps = state => ({
+  auth: state.auth,
+});
+export default connect(mapStateToProps)(Header);

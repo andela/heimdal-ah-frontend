@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import { MainLayout } from './MainLayout';
+import MainLayout from './MainLayout';
 import Header from '../../ui/header/Header';
 import Footer from '../../ui/footer/Footer';
 
