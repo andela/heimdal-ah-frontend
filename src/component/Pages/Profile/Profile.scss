@@ -1,0 +1,142 @@
+$profile-header-color: #606E86;
+$white: #fff;
+
+.profile {
+  background-color: #f9f9f9;
+  overflow: hidden;
+
+  .profile-header {
+    background-color: $profile-header-color;  
+    padding: 50px 65px; 
+    color: $white;
+    border: 1px solid #000000;
+    font-family: Cardo;
+    font-size: 18px;
+
+    .profile-image-loading {
+      @media (max-width: 574px) {
+        height: 230px;
+      }
+    }
+
+    .profile-info-loading {
+      max-height: 90%;
+
+      @media (max-width: 1000px) {
+        height: 100%;
+      }
+
+      @media (max-width: 574px) {
+        height: 160px;
+      }
+    }
+
+    @media (max-width: 410px) {
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+
+    @media (max-width: 350px) {
+      padding-left: 7%;
+      padding-right: 7%;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    .profile-image {
+      overflow: hidden;
+    }
+
+    img {
+      width: 240px;
+    }
+
+    span {
+      display: inline-block;
+    }
+    
+    span:not(:first-child) {
+      padding-left: 15px;
+    }
+
+    span:not(:last-child) {
+      padding-right: 15px;
+      border-right: 1px solid $white;
+    }
+
+    .dist {
+      display: flex;
+      align-items: baseline;
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn-edit-profile, .btn-follow {
+      width: 100px;
+    }
+  }
+
+  .biography {
+    padding: 45px 65px 25px;
+    font-family: Ovo;
+    font-size: 18px;
+    font-weight: 400;
+
+    @media (max-width: 560px) {
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+
+    .biography-label {
+      display: inline-block;
+      border-bottom: 2px solid black;
+      text-transform: uppercase;
+      font-family: Cardo;
+      font-weight: bolder;
+    }
+
+  }
+
+  .publications {
+    font-family: Cardo;
+    padding: 25px 65px 25px;
+
+    @media (max-width: 882px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (max-width: 560px) {
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .publication-cards {
+      display: grid;
+      grid-gap: 50px;
+      grid-template-columns: repeat(3, minmax(220px, 1fr));
+      padding: 50px 0;
+      justify-content: space-between;
+
+      @media (max-width: 850px) {
+        grid-template-columns: repeat(2, minmax(220px, 350px));
+      }
+
+      @media (max-width: 560px) {
+        display: block;
+      }
+    }
+
+    .no-publication {
+      font-size: 18px;
+    }
+  }
+}
