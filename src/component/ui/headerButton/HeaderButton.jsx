@@ -1,10 +1,15 @@
 import React from 'react';
-import Button from '../buttons/Button';
+import ModalButton from '../Modal/Index';
+import SignupContent from '../Forms/Signup/Signup';
 
 const HeaderButton = () => (
-  <div className='header-button-group'>
-    <Button className="header-button" type='signup' label='Signup' />
-    <Button type='login' label='Login' />
+  <div className="header-button-group">
+    <ModalButton type="signup" label="Signup">
+      <SignupContent />
+    </ModalButton>
+    <ModalButton type="signup" label="Login">
+      signin Form
+    </ModalButton>
   </div>
 );
 
