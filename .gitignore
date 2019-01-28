@@ -59,6 +59,7 @@ typings/
 .env
 
 node_modules/
+.DS_Store
 .DS_Store/
 coverage-jest/
 dist/
@@ -66,4 +67,6 @@ dist/
 .github/
 package-lock.json/
 coverage
+.vscode
 .idea/
+package-lock.json

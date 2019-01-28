@@ -1,6 +1,5 @@
+// import instance from './http';
 
-import instance from './http';
+// const setToken = (token) => { instance.defaults.headers.common['access-token'] = token; };
 
-const setToken = (token) => { instance.defaults.headers.common['access-token'] = token; };
-
-export default setToken;
+// export default setToken;
