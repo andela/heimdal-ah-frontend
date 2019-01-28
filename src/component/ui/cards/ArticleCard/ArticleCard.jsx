@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import moment from 'moment';
 import TimeAgo from 'javascript-time-ago';
 import english from 'javascript-time-ago/locale/en';
-import Glow from '../../buttons/glow/Glow';
+import Glow from '../../Buttons/glow/Glow';
 import Rating from '../../Rating/Rating';
 import './articleCard.scss';
 
