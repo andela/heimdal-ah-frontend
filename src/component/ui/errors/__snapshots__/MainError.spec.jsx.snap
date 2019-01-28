@@ -3,7 +3,9 @@
 exports[`The MainError Component Test Suite should render the MainError component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MainError />,
+  Symbol(enzyme.__unrendered__): <MainError
+    errors={Object {}}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,9 +21,7 @@ ShallowWrapper {
     "props": Object {
       "children": <span
         className=""
-      >
-        An error occured, please try again in a moment
-      </span>,
+      />,
       "className": "col-md-12 text-danger text-center",
     },
     "ref": null,
@@ -30,11 +30,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "An error occured, please try again in a moment",
+        "children": undefined,
         "className": "",
       },
       "ref": null,
-      "rendered": "An error occured, please try again in a moment",
+      "rendered": null,
       "type": "span",
     },
     "type": "div",
@@ -47,9 +47,7 @@ ShallowWrapper {
       "props": Object {
         "children": <span
           className=""
-        >
-          An error occured, please try again in a moment
-        </span>,
+        />,
         "className": "col-md-12 text-danger text-center",
       },
       "ref": null,
@@ -58,11 +56,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "An error occured, please try again in a moment",
+          "children": undefined,
           "className": "",
         },
         "ref": null,
-        "rendered": "An error occured, please try again in a moment",
+        "rendered": null,
         "type": "span",
       },
       "type": "div",
