@@ -14,17 +14,15 @@ describe('The authActions Test Suite', () => {
   });
 
   it('should setup setAuthUser action object', () => {
-    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJpYXQiOjE1NDgyNDYzNjAsImV4cCI6MTU0ODMzMjc2MH0.m9A_UvEKno7FfcqSKUqJa7Pm-sRou47xMJYWACCjYWI';
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3LCJ1c2VybmFtZSI6ImhlbnBlcmkyIiwiZW1haWwiOiJoZW5wZXJpQGdtYWlsLmNvbSIsImltYWdlIjpudWxsLCJyb2xlSWQiOjIsImlhdCI6MTU0ODY0OTA4MiwiZXhwIjoxNTQ4NzM1NDgyfQ.3mk8seBymr0-3nCGENwQ3L0OdTN12gJ7y1hugOE1wsg';
     const action = setAuthUser(token);
 
     expect(action).toEqual({
       type: 'SET_AUTH_USER',
       payload: {
-        user: {
-          userId: 14,
-          username: undefined,
-          roleId: undefined,
-        },
+        userId: 17,
+        username: 'henperi2',
+        roleId: 2,
       },
     });
   });

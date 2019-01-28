@@ -4,10 +4,10 @@ const FormInput = (props = {}) => {
   const {
     errors = {}, name, username, type, classname, placeholder, onChange,
   } = props;
-  // console.log(errors);
   return (
     <div className="form-group">
       <input
+        autoComplete="off"
         name={name}
         value={username}
         type={type}

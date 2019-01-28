@@ -122,7 +122,7 @@ SignupForm.propTypes = {
   email: PropTypes.string,
   password: PropTypes.string,
   passwordConfirmation: PropTypes.string,
-  errors: PropTypes.array,
+  errors: PropTypes.object,
   isLoading: PropTypes.bool,
   handleSignup: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,

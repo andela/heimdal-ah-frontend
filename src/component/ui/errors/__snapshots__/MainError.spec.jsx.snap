@@ -17,11 +17,26 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": undefined,
+      "children": <span
+        className=""
+      >
+        An error occured, please try again in a moment
+      </span>,
       "className": "col-md-12 text-danger text-center",
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "An error occured, please try again in a moment",
+        "className": "",
+      },
+      "ref": null,
+      "rendered": "An error occured, please try again in a moment",
+      "type": "span",
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -30,11 +45,26 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": undefined,
+        "children": <span
+          className=""
+        >
+          An error occured, please try again in a moment
+        </span>,
         "className": "col-md-12 text-danger text-center",
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "An error occured, please try again in a moment",
+          "className": "",
+        },
+        "ref": null,
+        "rendered": "An error occured, please try again in a moment",
+        "type": "span",
+      },
       "type": "div",
     },
   ],

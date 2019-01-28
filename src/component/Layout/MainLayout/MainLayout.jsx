@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import { connect } from 'react-redux';
 import React, { Fragment } from 'react';
 import PropsTypes from 'prop-types';
@@ -11,7 +12,7 @@ import Footer from '../../ui/footer/Footer';
  */
 export const MainLayout = ({ children, auth = {} }) => (
   <Fragment>
-    <Header isAuthenticated={auth.isAuthenticated} />
+    <Header isAuthenticated={auth.isAuthenticated} user={auth.user} />
     <main role="main" className="pt-5">
       <div className="container-fluid">{children}</div>
     </main>
@@ -21,6 +22,7 @@ export const MainLayout = ({ children, auth = {} }) => (
 
 MainLayout.propTypes = {
   children: PropsTypes.element.isRequired,
+  auth: PropsTypes.object.isRequired,
 };
 
 const mapStateToProps = state => ({

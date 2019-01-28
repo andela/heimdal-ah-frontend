@@ -33,7 +33,7 @@ const errorResponse = ({
   return dispatch(
     setErrors({
       mainError:
-          'Something went wrong, please try again. If you continue to see this message, please send email us at help@heimdal.com',
+        'Something went wrong, please try again. If you continue to see this message, please send email us at help@heimdal.com',
     }),
   );
 };

@@ -18,7 +18,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <input />,
+        <input
+          autoComplete="off"
+        />,
         undefined,
         undefined,
       ],
@@ -31,6 +33,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "autoComplete": "off",
           "className": undefined,
           "name": undefined,
           "onChange": undefined,
@@ -54,7 +57,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <input />,
+          <input
+            autoComplete="off"
+          />,
           undefined,
           undefined,
         ],
@@ -67,6 +72,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "autoComplete": "off",
             "className": undefined,
             "name": undefined,
             "onChange": undefined,

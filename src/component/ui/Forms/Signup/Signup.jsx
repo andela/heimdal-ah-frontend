@@ -35,8 +35,8 @@ export class Signup extends Component {
   onChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
     if (this.state.errors[event.target.name]) {
-      const { action } = this.props;
-      action.removeAnError(event.target.name);
+      const { actions } = this.props;
+      actions.removeAnError(event.target.name);
     }
   };
 
@@ -56,15 +56,15 @@ export class Signup extends Component {
     };
 
     const errors = validateSignup(signupData);
-    const { action, history } = this.props;
+    const { actions, history } = this.props;
 
     if (errors) {
       this.setState({ isLoading: false });
-      return action.setErrors(errors.errors);
+      return actions.setErrors(errors.errors);
     }
 
-    action.clearErrors();
-    return action.signupUser(signupData, history);
+    actions.clearErrors();
+    return actions.signupUser(signupData, history);
   };
 
   render() {
@@ -77,7 +77,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  action: bindActionCreators(
+  actions: bindActionCreators(
     {
       signupUser,
       removeAnError,

@@ -16,9 +16,7 @@ export const setAuthUser = (token) => {
 
   return {
     type: ACTIONS.SET_AUTH_USER,
-    payload: {
-      user: { userId, username, roleId },
-    },
+    payload: { userId, username, roleId },
   };
 };
 
