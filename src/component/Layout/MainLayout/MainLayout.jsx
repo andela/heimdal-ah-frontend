@@ -12,7 +12,7 @@ import Footer from '../../ui/footer/Footer';
 const MainLayout = ({ children }) => (
   <Fragment>
     <Header />
-    <main className="pt-5">
+    <main className="pt-5 pb-5">
       <div className="container-fluid">{children}</div>
     </main>
     <Footer />

@@ -2,9 +2,9 @@ import React from 'react';
 import ArticleCardHorizontal from '../ui/cards/ArticleCardHorizontal';
 
 const HomePage = () => (
-  <div className="mt-5 d-none">
-    <h2 className="text-center d-none">Featured</h2>
-    <div className="row d-none">
+  <div className="mt-5">
+    <h2 className="text-center">Featured</h2>
+    <div className="row">
       <div className="col-md-3">
         <ArticleCardHorizontal
           articleTitle="An article Title"
