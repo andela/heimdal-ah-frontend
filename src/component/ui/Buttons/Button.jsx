@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './ButtonStyles.scss';
+import './ButtonStyle.scss';
 /**
  * @description - Heimdal Authors Haven Button Component
  * @param {props} Class - the class of the button(bootstrap or custom)
@@ -13,16 +13,21 @@ import './ButtonStyles.scss';
  */
 const Button = (props) => {
   const {
-    Class,
-    onClick,
-    label,
-    type,
+    Class, onClick, label, type,
   } = props;
 
   if (type) {
-    return (<button type='submit' className={`button btn-${type}  ${Class}`} onClick={onClick}>{label}</button>);
+    return (
+      <button type="submit" className={`button btn-${type}  ${Class}`} onClick={onClick}>
+        {label}
+      </button>
+    );
   }
-  return (<button type='button' className={`button btn-${type}`} onClick={onClick}>{label}</button>);
+  return (
+    <button type="button" className={`button btn-${type}`} onClick={onClick}>
+      {label}
+    </button>
+  );
 };
 
 Button.defaultProps = {
@@ -36,8 +41,30 @@ Button.propTypes = {
   Class: PropTypes.string,
   onClick: PropTypes.func,
   label: PropTypes.string,
-  type: PropTypes.oneOf(['signin', 'signup', 'login', 'follow', 'tag', 'login2', 'signup2', 'subscribe', 'publish', 'report',
-    'notifications', 'article', 'save-profile', 'cancel', 'edit-profile', 'reply', 'comment', 'stories', 'facebook', 'twitter', 'google', 'default']),
+  type: PropTypes.oneOf([
+    'signin',
+    'signup',
+    'login',
+    'follow',
+    'tag',
+    'login2',
+    'signup2',
+    'subscribe',
+    'publish',
+    'report',
+    'notifications',
+    'article',
+    'save-profile',
+    'cancel',
+    'edit-profile',
+    'reply',
+    'comment',
+    'stories',
+    'facebook',
+    'twitter',
+    'google',
+    'default',
+  ]),
 };
 
 export default Button;

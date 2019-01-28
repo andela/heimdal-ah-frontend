@@ -1,7 +1,6 @@
 import jwt from 'jsonwebtoken';
 import { ACTIONS } from '../actionTypes';
-import instance from '../../config/http';
-import setToken from '../../config/setToken';
+import instance, { setToken } from '../../config/http';
 
 
 export const setCurrent = user => ({
@@ -12,6 +11,10 @@ export const setCurrent = user => ({
 export const setCurrentUserError = error => ({
   type: ACTIONS.SET_CURRENT_USER_FAIL,
   error,
+});
+
+export const removeErrorMsg = () => ({
+  type: ACTIONS.REMOVE_CURRENT_USER_ERROR,
 });
 
 const logIn = payload => dispatch => instance.post('/auth/login', payload)

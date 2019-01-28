@@ -5,6 +5,7 @@ export const ACTIONS = keyMirror({
   CLOSE_MODAL: null,
   SET_CURRENT_USER: null,
   SET_CURRENT_USER_FAIL: null,
+  REMOVE_CURRENT_USER_ERROR: null,
   LOGOUT_USER: null,
   RESET_PASSWORD_STATE: null,
   RESET_PASSWORD_SUCCESS: null,
@@ -13,4 +14,8 @@ export const ACTIONS = keyMirror({
   UPDATE_PASSWORD_SUCCESS: null,
   UPDATE_PASSWORD_FAILED: null,
   UPDATE_PASSWORD_ERROR: null,
+  SET_AUTH_USER: null,
+  SET_ERRORS: null,
+  CLEAR_ERRORS: null,
+  REMOVE_AN_ERROR: null,
 });

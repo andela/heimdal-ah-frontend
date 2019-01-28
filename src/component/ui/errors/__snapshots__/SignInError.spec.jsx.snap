@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Signup Component Test Suite should match the snapshot 1`] = `
+exports[`The SignIn Component Test Suite should match the snapshot 1`] = `
 <div
   className="col-md-12 text-danger text-center"
 />

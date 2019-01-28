@@ -8,7 +8,7 @@ exports[`testing the Header Button should create a snapshot of the logo 1`] = `
     label="Signup"
     type="signup"
   >
-    Sign up
+    <Connect(withRouter(Signup)) />
   </TriggerModal>
   <TriggerModal
     label="Login"

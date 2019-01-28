@@ -1,56 +1,59 @@
 @import "../../../../styles/global.scss";
 
-.font-cardo {
-  font-family: Cardo;
-}
+.heimdal-signin-form {
 
-.link {
-  // padding-top: 5px;
-  display: inline-block;
-  color: $black !important;
-  padding-bottom: 0.3px;
-  border-bottom: 0.4px solid $black;
-}
-
-.link:hover {
-  text-decoration: none;
-}
-
-.ph-25 {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.pv-30 {
-  padding-top: 30px;
-  padding-top: 30px;
-}
-
-.btn-google {
-  background-color: $bg-google-red;
-}
-.btn-facebook {
-  background-color: $bg-facebook-blue;
-}
-.btn-twitter {
-  background-color: $bg-twitter-blue;
-}
-
-.form-control {
-  border-color: $bg-default;
-  border-radius: 3px;
-  padding: 20px 15px;
-  color: $black;
-}
-
-.form-title {
-  color: $bg-default;
-}
-
-.form-control::placeholder {
-  color: $bg-default;
-}
-
-.ph-15 {
-  padding-left: 15px;
-  padding-right: 15px;
+  .font-cardo {
+    font-family: Cardo;
+  }
+  
+  .link {
+    // padding-top: 5px;
+    display: inline-block;
+    color: $black !important;
+    padding-bottom: 0.3px;
+    border-bottom: 0.4px solid $black;
+  }
+  
+  .link:hover {
+    text-decoration: none;
+  }
+  
+  .ph-25 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .pv-30 {
+    padding-top: 30px;
+    padding-top: 30px;
+  }
+  
+  .btn-google {
+    background-color: $bg-google-red;
+  }
+  .btn-facebook {
+    background-color: $bg-facebook-blue;
+  }
+  .btn-twitter {
+    background-color: $bg-twitter-blue;
+  }
+  
+  .form-control {
+    border-color: $bg-default;
+    border-radius: 3px;
+    padding: 20px 15px;
+    color: $black;
+  }
+  
+  .form-title {
+    color: $bg-default;
+  }
+  
+  .form-control::placeholder {
+    color: $bg-default;
+  }
+  
+  .ph-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

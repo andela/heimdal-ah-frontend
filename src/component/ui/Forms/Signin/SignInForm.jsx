@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FormGroup, Label, Input } from 'reactstrap';
 import FormInput from '../../InputElements/FormInput';
-import LoadingSpinner from '../../loadingSpinner/LoadingSpinner';
-import handleError from '../../errors/signupError';
+import LoadingSpinner from '../../loadingSpinners/LoadingSpinner';
+import SignInError from '../../errors/SignInError';
 import './Signin.scss';
 
 /**
@@ -26,7 +26,7 @@ const SigninForm = (props) => {
   } = props;
 
   return (
-    <div className="heimdal-signup-form">
+    <div className="heimdal-signin-form">
       <h1 className="form-title font-cardo text-center">Welcome back</h1>
       <form className="heimdal-form" onSubmit={onLoginSubmit} noValidate>
         <div className="font-cardo ph-30">
@@ -65,6 +65,7 @@ const SigninForm = (props) => {
               <Link to='/'>Forgot password?</Link>
             </div>
           </div>
+          <SignInError error={error} />
           <div className="row">
             <LoadingSpinner isLoading={isLoading} />
             <div className="col-md-8 text-left mb-10">
@@ -76,7 +77,6 @@ const SigninForm = (props) => {
                 </Link>
               </span>
             </div>
-            <handleError error={error} />
             <div className="col-md-4 text-right">
               <button type="submit" className="btn btn-default ph-25">
               Sign In
@@ -98,7 +98,7 @@ const SigninForm = (props) => {
           href={`${process.env.BASE_URL_PROD}/auth_twitter/twitter`}
           className="btn btn-block btn-twitter"
         >
-        Login with twitter
+        Login with Twitter
         </a>
         <br />
         <a href={`${process.env.BASE_URL_PROD}/auth/google`} className="btn btn-block btn-google">

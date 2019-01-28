@@ -53,4 +53,21 @@ describe('Login Action', () => {
       });
     done();
   });
+
+  it('creates SET_CURRENT_USER_FAIL when login is not successful', (done) => {
+    moxios.stubRequest(`${process.env.BASE_URL_PROD}/auth/login`, {
+      status: 400,
+      response: 'Login unsuccessful',
+    });
+
+    const expected = [{
+      type: ACTIONS.REMOVE_CURRENT_USER_ERROR,
+      error: '',
+    }];
+    store.dispatch(login(loginData))
+      .then(() => {
+        expect(store.getActions()).toEqual(expected);
+      });
+    done();
+  });
 });

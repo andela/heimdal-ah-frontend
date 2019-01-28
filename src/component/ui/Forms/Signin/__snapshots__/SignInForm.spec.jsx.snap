@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Signup Component Test Suite should match the snapshot 1`] = `
+exports[`The Signin Component Test Suite should match the snapshot 1`] = `
 <div
-  className="heimdal-signup-form"
+  className="heimdal-signin-form"
 >
   <h1
     className="form-title font-cardo text-center"
@@ -72,6 +72,7 @@ exports[`The Signup Component Test Suite should match the snapshot 1`] = `
           </Link>
         </div>
       </div>
+      <SignInError />
       <div
         className="row"
       >
@@ -82,18 +83,17 @@ exports[`The Signup Component Test Suite should match the snapshot 1`] = `
           <span
             className="text-muted p-t-10"
           >
-            Don't have an account?
+            Dont have an account?
              
-            <TriggerModal
-              label="signup"
-              modalType="btn-link"
-              type="btn-link"
+            <Link
+              className="link pt-2"
+              replace={false}
+              to="/"
             >
-              Sign up
-            </TriggerModal>
+              Signup here
+            </Link>
           </span>
         </div>
-        <handleError />
         <div
           className="col-md-4 text-right"
         >
@@ -122,7 +122,7 @@ exports[`The Signup Component Test Suite should match the snapshot 1`] = `
       className="btn btn-block btn-twitter"
       href="undefined/auth_twitter/twitter"
     >
-      Login with twitter
+      Login with Twitter
     </a>
     <br />
     <a
