@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-shadow */
 /* eslint-disable react/prefer-stateless-function */
