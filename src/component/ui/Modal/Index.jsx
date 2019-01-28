@@ -28,7 +28,7 @@ class TriggerModal extends Component {
     return (
       <Fragment>
         <Button
-          className="header-button"
+          className={this.props.btnClass}
           type={this.props.type}
           label={this.props.label}
           onClick={this.toggle}

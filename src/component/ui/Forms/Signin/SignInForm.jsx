@@ -69,7 +69,7 @@ const SigninForm = (props) => {
             <LoadingSpinner isLoading={isLoading} />
             <div className="col-md-8 text-left mb-10">
               <span className="text-muted p-t-10">
-              Don't have an account?
+              Dont have an account?
                 {' '}
                 <Link to="/" className="link pt-2">
                 Signup here

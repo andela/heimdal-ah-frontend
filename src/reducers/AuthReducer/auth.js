@@ -1,8 +1,10 @@
 import isEmpty from 'is-empty';
-import { ACTIONS } from '../actions/actionTypes';
+import { ACTIONS } from '../../actions/actionTypes';
 
 const initialState = {
-  modal: true,
+  isAuthenticated: false,
+  user: {},
+  error: {},
 };
 
 export default (state = initialState, action) => {

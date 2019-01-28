@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { reducer as toastrReducer } from 'react-redux-toastr';
 import socialAuthReducer from './SocialAuthReducer/socialAuthReducer';
 import { resetPassword, updatePassword } from './index';
-import authReducer from './auth';
+import authReducer from './AuthReducer/auth';
 
 const rootReducer = combineReducers({
   resetpassword: resetPassword,
