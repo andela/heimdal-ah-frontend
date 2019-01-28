@@ -1,0 +1,35 @@
+@import '../../../styles/variables.scss';
+
+.search-articles {
+    table {
+        border-collapse: collapse;
+        background-color: $white-color;
+        width: 30%;
+        color: $search-articles__tr--bg-color;
+        font-weight: bold;
+        font-size: 17px;
+        font-family: $font-family__cardo;
+    }
+    
+    td, th {
+        padding: 10px 10px 10px 30px;
+    }
+    
+    a {
+        color: $heimdal-textfield-background;
+    }
+    
+    a:hover {
+        opacity: 0.5;
+        text-decoration: none;
+    }
+    
+    tr:nth-child(even) {
+        color: $white-color;
+        background-color: $search-articles__tr--bg-color;
+    }
+    
+    tr:nth-child(even) a {
+        color: $white-color;
+    }
+}

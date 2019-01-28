@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/Buttons/Button';
 import { DemoArticleCoponentWithGlowState } from '../ui/Buttons/glow/DemoArticleCoponentWithGlowState';
+import SearchArticles from '../ui/searchForm/SearchArticles';
 // import ArticleCardVertical from '../ui/cards/BookmarksCards';
 
 const HomePage = () => (
@@ -28,10 +29,13 @@ const HomePage = () => (
       <br />
       <br />
     </Fragment>
-
+    <SearchArticles />
     <h2 className="lead mt-5">
       Welcome to the Home page...
       <div>
+        <br />
+        <br />
+        <br />
         <Rating className="fa fa-star" ratings={2.5} />
         <Button type="signup" label="Signup" />
         <br />
