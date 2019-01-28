@@ -1,7 +1,7 @@
 import React from 'react';
 import { range } from 'lodash';
-import './profile.scss';
-import Button from '../../ui/buttons/Button';
+import './Profile.scss';
+import Button from '../../ui/Buttons/Button';
 import ArticleCard from '../../ui/cards/ArticleCard/ArticleCard';
 import ProfileContainer from '../../../container/Profile/ProfileContainer';
 import ArticleLoader from '../../ui/ContentLoaders/ArticleLoader';
