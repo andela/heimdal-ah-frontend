@@ -2,7 +2,6 @@ import jwt from 'jsonwebtoken';
 import { ACTIONS } from '../actionTypes';
 import instance, { setToken } from '../../config/http';
 
-
 export const setCurrent = user => ({
   type: ACTIONS.SET_CURRENT_USER,
   user,
@@ -17,16 +16,16 @@ export const removeErrorMsg = () => ({
   type: ACTIONS.REMOVE_CURRENT_USER_ERROR,
 });
 
-const logIn = payload => dispatch => instance.post('/auth/login', payload)
-  .then(
-    (response) => {
-      const { token } = response.data;
-      localStorage.setItem('access-token', token);
-      setToken(token);
-      const decoded = jwt.decode(token);
-      dispatch(setCurrent(decoded));
-    },
-  ).catch((error) => {
+const logIn = payload => dispatch => instance
+  .post('/auth/login', payload)
+  .then((response) => {
+    const { token } = response.data;
+    localStorage.setItem('access-token', token);
+    setToken(token);
+    const decoded = jwt.decode(token);
+    dispatch(setCurrent(decoded));
+  })
+  .catch((error) => {
     const { data } = error.response;
     dispatch(setCurrentUserError(data));
   });
