@@ -1,43 +1,56 @@
+@import "../../../../styles/global.scss";
+
 .font-cardo {
-  font-family: Cardo !important;
+  font-family: Cardo;
 }
 
 .link {
-  color: #000000;
-  text-decoration-line: underline;
+  // padding-top: 5px;
+  display: inline-block;
+  color: $black !important;
+  padding-bottom: 0.3px;
+  border-bottom: 0.4px solid $black;
 }
 
-.btn,
-.btn:focus,
-.btn:hover {
-  padding-left: 35px;
-  padding-right: 35px;
-  background-color: #606e86;
-  color: #ffffff;
-  border: 0;
-  outline: none;
-  border-radius: 3px;
+.link:hover {
+  text-decoration: none;
+}
+
+.ph-25 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.pv-30 {
+  padding-top: 30px;
+  padding-top: 30px;
+}
+
+.btn-google {
+  background-color: $bg-google-red;
+}
+.btn-facebook {
+  background-color: $bg-facebook-blue;
+}
+.btn-twitter {
+  background-color: $bg-twitter-blue;
 }
 
 .form-control {
-  border-color: #606e86;
+  border-color: $bg-default;
   border-radius: 3px;
   padding: 20px 15px;
-  color: #000000;
+  color: $black;
 }
 
 .form-title {
-  color: #606e86;
-  // margin-bottom: 35px;
-}
-.form-control::placeholder {
-  color: #606e86;
-}
-.ph-30 {
-  padding-left: 30px;
-  padding-right: 30px;
+  color: $bg-default;
 }
 
-.remember-me {
-  
+.form-control::placeholder {
+  color: $bg-default;
+}
+
+.ph-15 {
+  padding-left: 15px;
+  padding-right: 15px;
 }

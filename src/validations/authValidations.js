@@ -10,7 +10,7 @@ const validateLoginInput = (input) => {
 
   const rules = {
     email: 'required|email',
-    password: 'required',
+    password: 'required|alpha_num',
   };
 
   const validation = new Validator(data, rules);

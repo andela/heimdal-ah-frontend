@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { FormGroup, Label, Input } from 'reactstrap';
 import FormInput from '../../InputElements/FormInput';
 import LoadingSpinner from '../../loadingSpinner/LoadingSpinner';
+import handleError from '../../errors/signupError';
 import './Signin.scss';
 
 /**
@@ -14,7 +16,6 @@ import './Signin.scss';
  */
 const SigninForm = (props) => {
   const {
-    auth,
     email,
     errors,
     error,
@@ -24,9 +25,6 @@ const SigninForm = (props) => {
     onLoginSubmit,
   } = props;
 
-  if (auth) {
-    return <Redirect to="/" />;
-  }
   return (
     <div className="heimdal-signup-form">
       <h1 className="form-title font-cardo text-center">Welcome back</h1>
@@ -50,28 +48,63 @@ const SigninForm = (props) => {
             onChange={onChange}
             errors={errors}
           />
+          <div className="d-flex justify-content-between mb-3">
+            <div className="p-2">
+              {' '}
+              <FormGroup check>
+                <Label check>
+                  <Input type="checkbox" />
+                  {' '}
+                  Remember me
+                </Label>
+              </FormGroup>
+
+            </div>
+            <div className="p-2">
+              {' '}
+              <Link to='/'>Forgot password?</Link>
+            </div>
+          </div>
           <div className="row">
             <LoadingSpinner isLoading={isLoading} />
-            <div className="col-md-12 text-danger text-center">
-              {errors.mainError && <span className="">{errors.mainError}</span>}
-            </div>
             <div className="col-md-8 text-left mb-10">
               <span className="text-muted p-t-10">
+              Don't have an account?
                 {' '}
-                Don't have an account?
-                <Link to="/signup" className="link">
-                Sign up here
+                <Link to="/" className="link pt-2">
+                Signup here
                 </Link>
               </span>
             </div>
+            <handleError error={error} />
             <div className="col-md-4 text-right">
-              <button type="submit" className="btn signup-btn" disabled={isLoading}>
-              Sign Up
+              <button type="submit" className="btn btn-default ph-25">
+              Sign In
               </button>
             </div>
           </div>
         </div>
       </form>
+      <br />
+      <div className="text-center">
+        <a
+          href={`${process.env.BASE_URL_PROD}/auth/facebook`}
+          className="btn btn-block btn-facebook"
+        >
+        Login with Facebook
+        </a>
+        <br />
+        <a
+          href={`${process.env.BASE_URL_PROD}/auth_twitter/twitter`}
+          className="btn btn-block btn-twitter"
+        >
+        Login with twitter
+        </a>
+        <br />
+        <a href={`${process.env.BASE_URL_PROD}/auth/google`} className="btn btn-block btn-google">
+        Login With Google
+        </a>
+      </div>
     </div>
   );
 };

@@ -2,9 +2,16 @@ import { Component } from 'react';
 // import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import login from '../actions/auth/login';
+import signin from '../actions/auth/signin';
 import validateLoginInput from '../validations/authValidations';
 
+/**
+ * @description - Helps a user resets his password
+ * @param {props} auth - auth details received from the backend
+ * @param {props} error - error received
+ * @param {props} signin - sign action
+ * @returns {component} Component
+ */
 class AuthContainer extends Component {
   state = {
     email: '',
@@ -35,7 +42,7 @@ class AuthContainer extends Component {
     this.setState({ isLoading: false });
     if (this.isValid()) {
       this.setState({ errors: {} });
-      actions.login(this.state);
+      actions.signin(this.state);
     }
   };
 
@@ -68,7 +75,7 @@ const mapStateToProps = state => ({
 const matchDispatchToProps = dispatch => ({
   actions: bindActionCreators(
     {
-      login,
+      signin,
     },
     dispatch,
   ),

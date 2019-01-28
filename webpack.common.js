@@ -2,6 +2,7 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 const path = require('path');
 const webpack = require('webpack');
 require('dotenv').config();
@@ -42,7 +43,10 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|gif|png|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
-        loader: 'file-loader?name=images/[name].[ext]',
+        use: [
+          {
+            loader: 'file-loader?name=images/[name].[ext]',
+          }],
       },
     ],
   },
