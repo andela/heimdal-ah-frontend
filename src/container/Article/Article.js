@@ -18,11 +18,11 @@ class Article extends Component {
   }
 
    getUserArticles = articles => (
-     <div className="col-md-10 offset-md-1">
-     <div className='row publication-cards container-fluid'>
-        { articles
-          ? articles.map(article => <div className='col-md-4'><ArticleCard key={article.id} {...article} /></div>)
-          : <p className="no-publication">No publications yet</p>
+     <div className="col-md-10 offset-md-1 mt-2">
+       <div className='row publication-cards container-fluid'>
+         { articles
+           ? articles.map(article => <div className='col-md-4' key={article.id}><ArticleCard key={article.id} {...article} /></div>)
+           : <p className="no-publication">No publications yet</p>
             }
        </div>
      </div>
@@ -31,7 +31,7 @@ class Article extends Component {
    render() {
      return (
        <div>
-          {this.getUserArticles(this.props.articles.rows)}
+         {this.getUserArticles(this.props.articles.rows)}
        </div>
      );
    }

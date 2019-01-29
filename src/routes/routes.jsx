@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
-// import ReduxToastr from 'react-redux-toastr';
+import ReduxToastr from 'react-redux-toastr';
 import LoginPage from '../component/Pages/LoginPage';
 import NotFound from '../component/Pages/NotFound.jsx';
 import MainLayout from '../component/Layout/MainLayout/MainLayout';
@@ -16,19 +16,21 @@ import ProtectedRoute from './ProtectedRoute';
 
 const Routes = () => (
   <MainLayout>
-    <Switch>
-      <Route exact path='/' component={HomePage} />
-      <Route exact path='/social-auth' component={SocialAuth} />
-      <Route exact path='/login' component={LoginPage} />
-      <ProtectedRoute exact path='/profile/edit' component={ProfileEdit} />
-      <ProtectedRoute exact path='/profile/:username?' component={Profile} />
-      <Route exact path='/resetpassword' component={PasswordResetPresentation} />
-      <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
-      <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
-      <Route exact path='/articles' component={Articles} />
-      <Route component={NotFound} />
-    </Switch>
-    {/* <ReduxToastr /> */}
+    <Fragment>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/social-auth' component={SocialAuth} />
+        <Route exact path='/login' component={LoginPage} />
+        <ProtectedRoute exact path='/profile/edit' component={ProfileEdit} />
+        <ProtectedRoute exact path='/profile/:username?' component={Profile} />
+        <Route exact path='/resetpassword' component={PasswordResetPresentation} />
+        <Route exact path='/reset-password' component={PasswordResetPresentation} />
+        <Route exact path='/update-password' component={UpdatePasswordPresentation} />
+        <Route exact path='/all-stories' component={Articles} />
+        <Route component={NotFound} />
+      </Switch>
+      <ReduxToastr />
+    </Fragment>
   </MainLayout>
 );
 

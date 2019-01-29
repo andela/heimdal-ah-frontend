@@ -7,6 +7,7 @@ import ArticleList from '../../../container/Article/Article';
 export default function ArticleListPage() {
   return (
     <div>
+      <h2 className='mx-auto text-center mb-5'> All Stories</h2>
       <ArticleList />
     </div>
   );

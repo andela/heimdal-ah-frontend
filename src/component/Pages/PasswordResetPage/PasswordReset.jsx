@@ -56,6 +56,7 @@ export class PasswordReset extends Component {
       email,
       status,
       state: this.state,
+      emailField: this.emailField,
       onHandleSubmit: this.onHandleSubmit,
       onHandleChange: this.onHandleChange,
     });
