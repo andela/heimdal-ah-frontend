@@ -10,6 +10,7 @@ import PasswordResetPresentation from '../component/Pages/PasswordResetPage/Pass
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
 import ProfileEdit from '../component/Pages/ProfileEdit/ProfileEdit';
 import Profile from '../component/Pages/Profile/Profile';
+import Articles from '../component/Pages/Article/ArticleListPage';
 import ProtectedRoute from './ProtectedRoute';
 
 
@@ -23,6 +24,8 @@ const Routes = () => (
       <ProtectedRoute exact path='/profile/:username?' component={Profile} />
       <Route exact path='/resetpassword' component={PasswordResetPresentation} />
       <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
+      <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
+      <Route exact path='/articles' component={Articles} />
       <Route component={NotFound} />
     </Switch>
     {/* <ReduxToastr /> */}

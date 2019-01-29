@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Redirect } from 'react-router-dom';
-import Button from '../../ui/buttons/Button';
+import Button from '../../ui/Buttons/Button';
 import Alert from '../../ui/Alert/Alert';
 import './PasswordReset.scss';
 // eslint-disable-next-line import/no-named-as-default

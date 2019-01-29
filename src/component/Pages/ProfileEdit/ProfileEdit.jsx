@@ -1,7 +1,7 @@
 import React from 'react';
 import Textarea from 'react-textarea-autosize';
 import './ProfileEdit.scss';
-import Button from '../../ui/buttons/Button';
+import Button from '../../ui/Buttons/Button';
 import ProfileEditContainer from '../../../container/ProfileEdit/ProfileEditContainer';
 
 function ProfileEdit() {

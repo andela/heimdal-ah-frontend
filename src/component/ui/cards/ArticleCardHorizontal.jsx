@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import Glow from '../buttons/glow/Glow.jsx';
+import Glow from '../Buttons/glow/Glow.jsx';
 import './articleCardHorizontal.scss';
 import Rating from '../Rating/Rating';
 import { textTrimmer } from '../../../../helper/cardsHelper';

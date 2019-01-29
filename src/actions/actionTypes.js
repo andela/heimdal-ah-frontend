@@ -17,4 +17,5 @@ export const ACTIONS = keyMirror({
   SET_ERRORS: null,
   CLEAR_ERRORS: null,
   REMOVE_AN_ERROR: null,
+  GET_ALL_ARTICLES: null,
 });
