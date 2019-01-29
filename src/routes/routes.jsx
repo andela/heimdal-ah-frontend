@@ -10,7 +10,6 @@ import PasswordResetPresentation from '../component/Pages/PasswordResetPage/Pass
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
 import SingleArticlePage from '../component/Pages/SingleArticlePage/SingleArticlePage';
 
-
 const Routes = () => (
   <MainLayout>
     <Fragment>
@@ -18,9 +17,9 @@ const Routes = () => (
         <Route exact path='/' component={HomePage} />
         <Route exact path='/social-auth' component={SocialAuth} />
         <Route exact path='/login' component={LoginPage} />
-        <Route exact path='/resetpassword' component={PasswordResetPresentation} />
-        <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
         <Route exact path='/articles/:identifier' component={SingleArticlePage} />
+        <Route exact path='/reset-password' component={PasswordResetPresentation} />
+        <Route exact path='/update-password' component={UpdatePasswordPresentation} />
         <Route component={NotFound} />
       </Switch>
       <ReduxToastr />

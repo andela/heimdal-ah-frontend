@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`authReducer should return default state if no action is specified 1`] = `
+Object {
+  "isAuthenticated": false,
+  "user": Object {},
+}
+`;
+
+exports[`authReducer should update the auth sate when a payload is sent and action type is defined 1`] = `
+Object {
+  "isAuthenticated": true,
+  "user": Object {
+    "userId": 5,
+  },
+}
+`;
