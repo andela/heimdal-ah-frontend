@@ -12,7 +12,6 @@ import Button from '../Buttons/Button';
  * @param {function} toggle - the function to be performed when the modal is triggered
  * @returns {fragment} Modal fragment
  */
-
 class TriggerModal extends Component {
   state = {
     display: false,

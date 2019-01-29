@@ -14,8 +14,8 @@ const Routes = () => (
     <Switch>
       <Route exact path='/' component={HomePage} />
       <Route exact path='/social-auth' component={SocialAuth} />
-      <Route exact path='/resetpassword' component={PasswordResetPresentation} />
-      <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
+      <Route exact path='/reset-password' component={PasswordResetPresentation} />
+      <Route exact path='/update-password' component={UpdatePasswordPresentation} />
       <Route component={NotFound} />
     </Switch>
     <ReduxToastr />

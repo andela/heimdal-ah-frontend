@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 import { ACTIONS } from '../actionTypes';
 import instance, { setToken } from '../../config/http';
 
-export const setCurrent = user => ({
+export const setCurrentUser = user => ({
   type: ACTIONS.SET_CURRENT_USER,
   user,
 });
@@ -23,7 +23,7 @@ const logIn = payload => dispatch => instance
     localStorage.setItem('access-token', token);
     setToken(token);
     const decoded = jwt.decode(token);
-    dispatch(setCurrent(decoded));
+    dispatch(setCurrentUser(decoded));
   })
   .catch((error) => {
     const { data } = error.response;
