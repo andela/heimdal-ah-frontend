@@ -6,10 +6,8 @@ import ArticleList from '../../../container/Article/Article';
  */
 export default function ArticleListPage() {
   return (
-    <div className='row'>
-      <div className='col-md-4'>
-        <ArticleList />
-      </div>
+    <div>
+      <ArticleList />
     </div>
   );
 }
