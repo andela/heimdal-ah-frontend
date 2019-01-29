@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 
 import { setErrors, removeAnError, clearErrors } from '../../../../actions/errorActions';
+import { toggleLoader } from '../../../../actions/loaderActions';
 import LoadingSpinner from '../../loadingSpinners/LoadingSpinner';
 import MainError from '../../errors/MainError';
 import { validateReport } from '../../../../helpers/validateInputs';
@@ -22,15 +23,16 @@ class ReportArticle extends Component {
     context: '',
     reportType: 'spam',
     errors: {},
-    isLoading: false,
   };
+
+  componentWillReceiveProps(nextProps) {
+    return nextProps.errors && this.setState({ errors: nextProps.errors });
+  }
 
   onChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
-    // alert(event.target.name);
 
     if (this.state.errors[event.target.name]) {
-      // alert(this.state.errors[event.target.name]);
       const { actions } = this.props;
       actions.removeAnError(event.target.name);
     }
@@ -38,35 +40,29 @@ class ReportArticle extends Component {
 
   handleArticleReport = (event) => {
     event.preventDefault();
-    this.setState({ isLoading: true });
+    const { actions, history } = this.props;
+    actions.toggleLoader();
 
     const { context, reportType } = this.state;
-
     const reportData = { context, reportType };
-    // console.log(reportData);
-
     const errors = validateReport(reportData);
-    const { actions, history } = this.props;
 
     if (errors) {
-      // this.setState({ isLoading: false });
-      // console.log(errors);
-
+      actions.toggleLoader();
       return actions.setErrors(errors);
     }
-    // submit reportData here.
-    reportData.articleId = 5;
+
+    reportData.articleId = this.props.articleId;
     actions.clearErrors();
     return actions.reportArticle(reportData, history);
-    // this.setState({ isLoading: false });
   };
 
   render() {
-    const { errors = {} } = this.props;
-    const { isLoading } = this.state;
+    const { errors = {}, isLoading } = this.props;
 
-    // console.log(this.props);
-    // console.log(errors);
+    // console.log('=======================');
+    // console.log(this.props.isLoading);
+    // console.log('=======================');
     return (
       <div className="heimdal-report-form">
         <h1 className="form-title font-cardo text-center">Report this article</h1>
@@ -111,7 +107,7 @@ class ReportArticle extends Component {
               <MainError errors={errors} />
               <div className="col-md-12 text-right">
                 <button type="submit" className="btn btn-danger ph-25">
-                  Report
+                  Submit Report
                 </button>
               </div>
             </div>
@@ -122,20 +118,21 @@ class ReportArticle extends Component {
   }
 }
 
-// ReportArticle.defaultProps = {
-//   context: '',
-//   reportType: '',
-//   errors: {},
-//   isLoading: false,
-// };
+ReportArticle.defaultProps = {
+  context: '',
+  articleId: 5,
+  reportType: '',
+  errors: {},
+  isLoading: false,
+};
 
-// ReportArticle.propTypes = {
-//   context: PropTypes.string,
-//   reportType: PropTypes.string,
-// };
+ReportArticle.propTypes = {
+  // articleId: PropTypes.number.isRequired,
+};
 
 const mapStateToProps = state => ({
   errors: state.errors,
+  isLoading: state.loader.isLoading,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -145,6 +142,7 @@ const mapDispatchToProps = dispatch => ({
       setErrors,
       clearErrors,
       reportArticle,
+      toggleLoader,
     },
     dispatch,
   ),

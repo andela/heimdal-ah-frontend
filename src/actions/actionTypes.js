@@ -17,4 +17,8 @@ export const ACTIONS = keyMirror({
   REMOVE_AN_ERROR: null,
 
   FLASH_SUCCESS_MSG: null,
+
+  TOGGLE_LOADER: null,
+
+  TOGGLE_MODAL: null,
 });

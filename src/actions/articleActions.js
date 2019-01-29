@@ -2,22 +2,23 @@
 import { ACTIONS } from './actionTypes';
 import errorResponse from '../utils/errorResponse';
 import axiosInstance from '../utils/axiosInstance';
+import { toggleLoader } from './loaderActions';
+import { toggleModal } from './modalActions';
 
 export const flashToasterMsg = msg => ({
   type: ACTIONS.FLASH_SUCCESS_MSG,
   payload: msg,
 });
 
-export const reportArticle = (reportData = {}, history) => (dispatch) => {
+export const reportArticle = (reportData = {}) => (dispatch) => {
   const { articleId } = reportData;
-  console.log(axiosInstance.defaults.headers.common);
   axiosInstance
     .post(`/articles/${articleId}/reports`, reportData)
     .then(() => {
       const msg = 'You have succesfully reported an article';
       dispatch(flashToasterMsg(msg));
-
-      // return history.push(`/articles/${articleId}`);
+      dispatch(toggleLoader());
+      return dispatch(toggleModal());
     })
     .catch((errors = {}) => {
       console.log(errors);
@@ -32,6 +33,8 @@ export const reportArticle = (reportData = {}, history) => (dispatch) => {
         response,
         errors,
       };
+      dispatch(toggleLoader());
+      dispatch(toggleModal());
       return errorResponse(data);
     });
 };

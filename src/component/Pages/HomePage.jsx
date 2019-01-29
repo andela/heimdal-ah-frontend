@@ -1,13 +1,16 @@
 import React from 'react';
 import ArticleCardHorizontal from '../ui/cards/ArticleCardHorizontal';
 import ReportArticle from '../ui/Forms/ReportArticle/Index';
+import ModalButton from '../ui/Modal/Index';
 
 const HomePage = () => (
   <div className="mt-5">
     <h2 className="text-center">Featured</h2>
     <div className="row">
       <div className="col-md-12">
-        <ReportArticle />
+        <ModalButton>
+          <ReportArticle />
+        </ModalButton>
       </div>
       <div className="col-md-3">
         <ArticleCardHorizontal

@@ -12,7 +12,6 @@ import Button from '../Buttons/Button';
  * @param {function} toggle - the function to be performed when the modal is triggered
  * @returns {fragment} Modal fragment
  */
-
 class TriggerModal extends Component {
   state = {
     display: false,
@@ -33,11 +32,7 @@ class TriggerModal extends Component {
           label={this.props.label}
           onClick={this.toggle}
         />
-        <Modal
-          isOpen={this.state.display}
-          toggle={this.toggle}
-          className={this.props.className}
-        >
+        <Modal isOpen={this.state.display} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle} />
           <ModalBody>{this.props.children}</ModalBody>
         </Modal>
