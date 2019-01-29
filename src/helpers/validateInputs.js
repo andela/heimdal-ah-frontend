@@ -34,18 +34,26 @@ export const validateLogin = (input) => {
 
   const validation = new Validator(data, rules);
 
-  const isValid = false;
+  // const isValid = false;
+
+  // if (validation.passes()) {
+  //   return {
+  //     isValid: true,
+  //   };
+  // }
+
+  // const errors = validation.errors.all();
+
+  // return {
+  //   isValid,
+  //   errors,
+  // };
 
   if (validation.passes()) {
-    return {
-      isValid: true,
-    };
+    return null;
   }
 
-  const errors = validation.errors.all();
-
   return {
-    isValid,
-    errors,
+    errors: validation.errors.all(),
   };
 };

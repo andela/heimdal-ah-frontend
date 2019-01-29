@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import signin, { removeErrorMsg } from '../actions/auth/signin';
 // import validateLoginInput from '../validations/authValidations';
 import { validateLogin } from '../helpers/validateInputs';
+import { removeAnError, setErrors, clearErrors } from '../actions/errorActions';
 
 /**
  * @description - Helps a user resets his password
@@ -11,7 +12,7 @@ import { validateLogin } from '../helpers/validateInputs';
  * @param {props} signin - sign action
  * @returns {component} Component
  */
-export class AuthContainer extends Component {
+class AuthContainer extends Component {
   state = {
     email: '',
     password: '',
@@ -19,27 +20,23 @@ export class AuthContainer extends Component {
     isLoading: false,
   };
 
+
+  componentWillReceiveProps(nextProps) {
+    return nextProps.errors && this.setState({ errors: nextProps.errors });
+  }
+
   /**
  * @description - form onChange event
 * @param {props} event - event recieved
  */
   onChange = (event) => {
-    const { errors } = this.state;
     const { actions } = this.props;
+    this.setState({ [event.target.name]: event.target.value });
     actions(removeErrorMsg());
-    if (errors[event.target.name]) {
-      const newErrors = { ...errors };
-      delete newErrors[event.target.name];
-      this.setState({
-        [event.target.name]: event.target.value,
-        errors: newErrors,
-      });
-    } else {
-      this.setState({
-        [event.target.name]: event.target.value,
-      });
+    if (this.state.errors[event.target.name]) {
+      actions(removeAnError(event.target.name));
     }
-  };
+  }
 
   /**
  * @description - form onLoginSubmit event
@@ -49,26 +46,17 @@ export class AuthContainer extends Component {
     const { actions } = this.props;
     e.preventDefault();
     this.setState({ isLoading: true });
-    if (this.isValid()) {
-      this.setState({ errors: {} });
-      actions(signin(this.state));
+    const errors = validateLogin(this.state);
+    if (errors) {
+      this.setState({ isLoading: false });
+      return actions(setErrors(errors.errors));
     }
+
+    actions(clearErrors());
+    return actions(signin(this.state));
   };
 
-  /**
- * @description - error check
- */
-  isValid = () => {
-    const { errors, isValid } = validateLogin(this.state);
-    if (errors) {
-      this.setState({ errors, password: '' });
-    }
-    return isValid;
-  }
 
-  /**
- * @description - AuthContainer
- */
   sendProps = () => ({
     ...this.props,
     ...this.state,
@@ -81,10 +69,10 @@ export class AuthContainer extends Component {
   }
 }
 
-
 const mapStateToProps = state => ({
   auth: state.auth.isAuthenticated,
   error: state.auth.error,
+  errors: state.errors,
 });
 
 const matchDispatchToProps = dispatch => ({
