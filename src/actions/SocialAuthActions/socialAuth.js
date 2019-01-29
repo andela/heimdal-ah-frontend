@@ -7,6 +7,7 @@ export const setCurrentUser = decoded => ({
   payload: decoded,
 });
 
+
 export const autheticateUser = token => (dispatch) => {
   localStorage.setItem('access-token', token);
   const decoded = jwtDecode(token);
