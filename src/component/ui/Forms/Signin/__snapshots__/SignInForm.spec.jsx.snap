@@ -64,12 +64,11 @@ exports[`The Signin Component Test Suite should match the snapshot 1`] = `
           className="p-2"
         >
            
-          <Link
-            replace={false}
-            to="/"
+          <a
+            href="undefined/reset-password"
           >
             Forgot password?
-          </Link>
+          </a>
         </div>
       </div>
       <SignInError />

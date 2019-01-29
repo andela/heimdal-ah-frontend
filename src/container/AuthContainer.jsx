@@ -12,7 +12,7 @@ import { removeAnError, setErrors, clearErrors } from '../actions/errorActions';
  * @param {props} signin - sign action
  * @returns {component} Component
  */
-class AuthContainer extends Component {
+export class AuthContainer extends Component {
   state = {
     email: '',
     password: '',
@@ -56,7 +56,10 @@ class AuthContainer extends Component {
     return actions(signin(this.state));
   };
 
-
+  /**
+ * @description - send props function
+ * @param {returns} e - props
+ */
   sendProps = () => ({
     ...this.props,
     ...this.state,
