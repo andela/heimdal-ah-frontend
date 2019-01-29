@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import ReduxToastr from 'react-redux-toastr';
 import NotFound from '../component/Pages/NotFound.jsx';
@@ -11,14 +11,16 @@ import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/Upd
 
 const Routes = () => (
   <MainLayout>
-    <Switch>
-      <Route exact path='/' component={HomePage} />
-      <Route exact path='/social-auth' component={SocialAuth} />
-      <Route exact path='/reset-password' component={PasswordResetPresentation} />
-      <Route exact path='/update-password' component={UpdatePasswordPresentation} />
-      <Route component={NotFound} />
-    </Switch>
-    <ReduxToastr />
+    <Fragment>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/social-auth' component={SocialAuth} />
+        <Route exact path='/reset-password' component={PasswordResetPresentation} />
+        <Route exact path='/update-password' component={UpdatePasswordPresentation} />
+        <Route component={NotFound} />
+      </Switch>
+      <ReduxToastr />
+    </Fragment>
   </MainLayout>
 );
 
