@@ -62,7 +62,11 @@ const SigninForm = (props) => {
             </div>
             <div className="p-2">
               {' '}
-              <Link to='/'>Forgot password?</Link>
+              <a
+                href={`${process.env.BASE_URL_PROD}/reset-password`}
+              >
+                Forgot password?
+              </a>
             </div>
           </div>
           <SignInError error={error} />
