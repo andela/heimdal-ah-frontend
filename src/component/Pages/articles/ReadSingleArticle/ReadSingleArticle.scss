@@ -57,10 +57,13 @@
       .follow-btn {
         background-color:#153771;
         color: white;
+        display: none;
+        align-self: center;
       };
-      // .edit-btn {
-      //   display: block;
-      // };
+      .edit-btn {
+        align-self: center;
+        display: none;
+      };
       .user-profile {
         text-align: center;
         color: #6a7384;

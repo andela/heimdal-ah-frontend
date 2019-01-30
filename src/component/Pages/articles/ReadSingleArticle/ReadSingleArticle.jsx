@@ -1,13 +1,14 @@
 /* eslint-disable max-len */
 import React, { Component, Fragment } from 'react';
 import { bindActionCreators } from 'redux';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
 import './ReadSingleArticle.scss';
-import setToken from '../../../../config/setToken';
+// import setToken from '../../../../config/setToken';
 import getArticleById from '../../../../actions/articleActions/getArticlesByIdActions';
 import decodeToken from '../../../../utils/decodeToken';
 import ReadSingleArticlePresentation from './ReadSingleArticlePresentation';
-import ReadSingleArticleError from './ReadSingleArticleError';
 
 
 /**
@@ -40,10 +41,8 @@ export class ReadSingleArticle extends Component {
  * * @description  - decode gets the user token from local storage
  */
   componentDidMount() {
-    const token = localStorage.getItem('access-token');
     const { slug } = this.props.match.params;
     this.props.actions.getArticleById(slug);
-    setToken(token);
   }
 
   /**
@@ -72,7 +71,7 @@ export class ReadSingleArticle extends Component {
 
     return (
       <Fragment>
-        { status === 'ERROR' ? <ReadSingleArticleError />
+        { status === 'ERROR' ? <Redirect to={`/articles/${slug}`} />
           : (
             <Fragment>
               <ReadSingleArticlePresentation
@@ -93,6 +92,15 @@ export class ReadSingleArticle extends Component {
     );
   }
 }
+
+ReadSingleArticlePresentation.defaultProps = {
+  username: '@username',
+};
+
+
+ReadSingleArticlePresentation.propTypes = {
+  username: PropTypes.string,
+};
 
 const mapStateToprops = state => ({
   singleArticle: state.getArticlesById.payload,

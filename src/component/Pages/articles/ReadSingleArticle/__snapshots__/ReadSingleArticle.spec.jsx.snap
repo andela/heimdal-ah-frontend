@@ -30,9 +30,65 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": Array [
-        undefined,
-        <React.Fragment>
+      "children": <React.Fragment>
+        <ReadSingleArticlePresentation
+          articleId=""
+          author={false}
+          body=""
+          likesCount={0}
+          slug="hello"
+          title=""
+          username="@username"
+        />
+      </React.Fragment>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <ReadSingleArticlePresentation
+          articleId=""
+          author={false}
+          body=""
+          likesCount={0}
+          slug="hello"
+          title=""
+          username="@username"
+        />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "articleId": "",
+          "author": false,
+          "body": "",
+          "likesCount": 0,
+          "slug": "hello",
+          "time": undefined,
+          "title": "",
+          "userImage": undefined,
+          "username": "@username",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": Symbol(react.fragment),
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <React.Fragment>
           <ReadSingleArticlePresentation
             articleId=""
             author={false}
@@ -40,14 +96,12 @@ ShallowWrapper {
             likesCount={0}
             slug="hello"
             title=""
+            username="@username"
           />
         </React.Fragment>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      undefined,
-      Object {
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
@@ -59,6 +113,7 @@ ShallowWrapper {
             likesCount={0}
             slug="hello"
             title=""
+            username="@username"
           />,
         },
         "ref": null,
@@ -75,7 +130,7 @@ ShallowWrapper {
             "time": undefined,
             "title": "",
             "userImage": undefined,
-            "username": undefined,
+            "username": "@username",
           },
           "ref": null,
           "rendered": null,
@@ -83,69 +138,6 @@ ShallowWrapper {
         },
         "type": Symbol(react.fragment),
       },
-    ],
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          undefined,
-          <React.Fragment>
-            <ReadSingleArticlePresentation
-              articleId=""
-              author={false}
-              body=""
-              likesCount={0}
-              slug="hello"
-              title=""
-            />
-          </React.Fragment>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        undefined,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": <ReadSingleArticlePresentation
-              articleId=""
-              author={false}
-              body=""
-              likesCount={0}
-              slug="hello"
-              title=""
-            />,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "articleId": "",
-              "author": false,
-              "body": "",
-              "likesCount": 0,
-              "slug": "hello",
-              "time": undefined,
-              "title": "",
-              "userImage": undefined,
-              "username": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": Symbol(react.fragment),
-        },
-      ],
       "type": Symbol(react.fragment),
     },
   ],
@@ -172,7 +164,9 @@ ShallowWrapper {
 exports[`Single Article Component Test Suite <ReadSingleArticlePresentation /> should render the ReadSingleArticlePresentation component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ReadSingleArticlePresentation />,
+  Symbol(enzyme.__unrendered__): <ReadSingleArticlePresentation
+    username="@username"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -189,9 +183,8 @@ ShallowWrapper {
       "children": Array [
         <Redirect
           push={false}
-          to="/undefined/articles/undefined"
+          to="/@username/articles/undefined"
         />,
-        6,
         <div
           className="single-article-wrapper"
         >
@@ -238,6 +231,7 @@ ShallowWrapper {
                 >
                   <Glow
                     active={true}
+                    handleGlow={[Function]}
                   />
                   <span
                     className="likesCount"
@@ -260,7 +254,9 @@ ShallowWrapper {
                 />
                 <br />
                 <br />
-                <h2 />
+                <h2>
+                  @username
+                </h2>
                 <br />
                 <h4>
                   just now
@@ -404,13 +400,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "push": false,
-          "to": "/undefined/articles/undefined",
+          "to": "/@username/articles/undefined",
         },
         "ref": null,
         "rendered": null,
         "type": [Function],
       },
-      6,
       Object {
         "instance": null,
         "key": undefined,
@@ -460,6 +455,7 @@ ShallowWrapper {
                   >
                     <Glow
                       active={true}
+                      handleGlow={[Function]}
                     />
                     <span
                       className="likesCount"
@@ -482,7 +478,9 @@ ShallowWrapper {
                   />
                   <br />
                   <br />
-                  <h2 />
+                  <h2>
+                    @username
+                  </h2>
                   <br />
                   <h4>
                     just now
@@ -729,6 +727,7 @@ ShallowWrapper {
                     >
                       <Glow
                         active={true}
+                        handleGlow={[Function]}
                       />
                       <span
                         className="likesCount"
@@ -751,7 +750,9 @@ ShallowWrapper {
                     />
                     <br />
                     <br />
-                    <h2 />
+                    <h2>
+                      @username
+                    </h2>
                     <br />
                     <h4>
                       just now
@@ -915,6 +916,7 @@ ShallowWrapper {
                       >
                         <Glow
                           active={true}
+                          handleGlow={[Function]}
                         />
                         <span
                           className="likesCount"
@@ -953,6 +955,7 @@ ShallowWrapper {
                         >
                           <Glow
                             active={true}
+                            handleGlow={[Function]}
                           />
                           <span
                             className="likesCount"
@@ -1018,6 +1021,7 @@ ShallowWrapper {
                           "children": Array [
                             <Glow
                               active={true}
+                              handleGlow={[Function]}
                             />,
                             <span
                               className="likesCount"
@@ -1033,6 +1037,7 @@ ShallowWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "active": true,
+                              "handleGlow": [Function],
                             },
                             "ref": null,
                             "rendered": null,
@@ -1085,7 +1090,9 @@ ShallowWrapper {
                       />
                       <br />
                       <br />
-                      <h2 />
+                      <h2>
+                        @username
+                      </h2>
                       <br />
                       <h4>
                         just now
@@ -1231,7 +1238,9 @@ ShallowWrapper {
                         />,
                         <br />,
                         <br />,
-                        <h2 />,
+                        <h2>
+                          @username
+                        </h2>,
                         <br />,
                         <h4>
                           just now
@@ -1306,10 +1315,10 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": undefined,
+                          "children": "@username",
                         },
                         "ref": null,
-                        "rendered": null,
+                        "rendered": "@username",
                         "type": "h2",
                       },
                       Object {
@@ -1354,9 +1363,7 @@ ShallowWrapper {
                           </button>,
                           "href": "http://heimdal-frontend.herokuapp.com/articles/update?id=undefined",
                         },
-                        "ref": Object {
-                          "current": null,
-                        },
+                        "ref": null,
                         "rendered": Object {
                           "instance": null,
                           "key": undefined,
@@ -1366,7 +1373,9 @@ ShallowWrapper {
                             "className": "btn edit-btn btn-secondary",
                             "type": "submit",
                           },
-                          "ref": null,
+                          "ref": Object {
+                            "current": null,
+                          },
                           "rendered": "edit",
                           "type": "button",
                         },
@@ -1983,9 +1992,8 @@ ShallowWrapper {
         "children": Array [
           <Redirect
             push={false}
-            to="/undefined/articles/undefined"
+            to="/@username/articles/undefined"
           />,
-          6,
           <div
             className="single-article-wrapper"
           >
@@ -2032,6 +2040,7 @@ ShallowWrapper {
                   >
                     <Glow
                       active={true}
+                      handleGlow={[Function]}
                     />
                     <span
                       className="likesCount"
@@ -2054,7 +2063,9 @@ ShallowWrapper {
                   />
                   <br />
                   <br />
-                  <h2 />
+                  <h2>
+                    @username
+                  </h2>
                   <br />
                   <h4>
                     just now
@@ -2198,13 +2209,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "push": false,
-            "to": "/undefined/articles/undefined",
+            "to": "/@username/articles/undefined",
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
-        6,
         Object {
           "instance": null,
           "key": undefined,
@@ -2254,6 +2264,7 @@ ShallowWrapper {
                     >
                       <Glow
                         active={true}
+                        handleGlow={[Function]}
                       />
                       <span
                         className="likesCount"
@@ -2276,7 +2287,9 @@ ShallowWrapper {
                     />
                     <br />
                     <br />
-                    <h2 />
+                    <h2>
+                      @username
+                    </h2>
                     <br />
                     <h4>
                       just now
@@ -2523,6 +2536,7 @@ ShallowWrapper {
                       >
                         <Glow
                           active={true}
+                          handleGlow={[Function]}
                         />
                         <span
                           className="likesCount"
@@ -2545,7 +2559,9 @@ ShallowWrapper {
                       />
                       <br />
                       <br />
-                      <h2 />
+                      <h2>
+                        @username
+                      </h2>
                       <br />
                       <h4>
                         just now
@@ -2709,6 +2725,7 @@ ShallowWrapper {
                         >
                           <Glow
                             active={true}
+                            handleGlow={[Function]}
                           />
                           <span
                             className="likesCount"
@@ -2747,6 +2764,7 @@ ShallowWrapper {
                           >
                             <Glow
                               active={true}
+                              handleGlow={[Function]}
                             />
                             <span
                               className="likesCount"
@@ -2812,6 +2830,7 @@ ShallowWrapper {
                             "children": Array [
                               <Glow
                                 active={true}
+                                handleGlow={[Function]}
                               />,
                               <span
                                 className="likesCount"
@@ -2827,6 +2846,7 @@ ShallowWrapper {
                               "nodeType": "function",
                               "props": Object {
                                 "active": true,
+                                "handleGlow": [Function],
                               },
                               "ref": null,
                               "rendered": null,
@@ -2879,7 +2899,9 @@ ShallowWrapper {
                         />
                         <br />
                         <br />
-                        <h2 />
+                        <h2>
+                          @username
+                        </h2>
                         <br />
                         <h4>
                           just now
@@ -3025,7 +3047,9 @@ ShallowWrapper {
                           />,
                           <br />,
                           <br />,
-                          <h2 />,
+                          <h2>
+                            @username
+                          </h2>,
                           <br />,
                           <h4>
                             just now
@@ -3100,10 +3124,10 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": undefined,
+                            "children": "@username",
                           },
                           "ref": null,
-                          "rendered": null,
+                          "rendered": "@username",
                           "type": "h2",
                         },
                         Object {
@@ -3148,9 +3172,7 @@ ShallowWrapper {
                             </button>,
                             "href": "http://heimdal-frontend.herokuapp.com/articles/update?id=undefined",
                           },
-                          "ref": Object {
-                            "current": null,
-                          },
+                          "ref": null,
                           "rendered": Object {
                             "instance": null,
                             "key": undefined,
@@ -3160,7 +3182,9 @@ ShallowWrapper {
                               "className": "btn edit-btn btn-secondary",
                               "type": "submit",
                             },
-                            "ref": null,
+                            "ref": Object {
+                              "current": null,
+                            },
                             "rendered": "edit",
                             "type": "button",
                           },
@@ -3823,7 +3847,7 @@ ShallowWrapper {
           </a>
         </div>,
       ],
-      "className": "container",
+      "className": "container ReadSingleArticleError",
     },
     "ref": null,
     "rendered": Array [
@@ -3929,7 +3953,7 @@ ShallowWrapper {
             </a>
           </div>,
         ],
-        "className": "container",
+        "className": "container ReadSingleArticleError",
       },
       "ref": null,
       "rendered": Array [

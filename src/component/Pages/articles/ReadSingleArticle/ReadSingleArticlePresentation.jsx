@@ -32,14 +32,12 @@ class ReadSingleArticlePresentation extends Component {
  * @description - render single article page
  */
   render() {
+    setTimeout(() => {
+      return this.props.author ? this.editButton.current.style.display = 'inline' : !this.props.author ? this.followButton.current.style.display = 'inline' : null;
+    }, 2000);
     return (
       <Fragment>
         <Redirect to={`/${this.props.username}/articles/${this.props.slug}`} />
-        {
-            setTimeout(() => {
-              return this.props.author ? this.followButton.current.style.display = 'none' : !this.props.author ? this.editButton.current.style.display = 'none' : null;
-            }, 2000)
-        }
         <div className="single-article-wrapper">
           <div className='article-header'>
             <h1>
@@ -63,7 +61,7 @@ class ReadSingleArticlePresentation extends Component {
                   <span>Rated by:</span>
                 </div>
                 <div className='glow'>
-                  <Glow active />
+                  <Glow active handleGlow={() => {}} />
                   <span className='likesCount'>{ this.props.likesCount }</span>
                 </div>
               </div>
@@ -78,7 +76,7 @@ class ReadSingleArticlePresentation extends Component {
                 <br />
                 <h4>{ timeAgo.format(moment(this.props.time).valueOf()) }</h4>
                 <br />
-                <a ref={this.editButton} href={`http://heimdal-frontend.herokuapp.com/articles/update?id=${this.props.articleId}`}><button className="btn edit-btn btn-secondary" type="submit">edit</button></a>
+                <a href={`http://heimdal-frontend.herokuapp.com/articles/update?id=${this.props.articleId}`}><button className="btn edit-btn btn-secondary" ref={this.editButton} type="submit">edit</button></a>
                 <button className="btn follow-btn" ref={this.followButton} type="submit">follow</button>
                 <br />
                 <br />
