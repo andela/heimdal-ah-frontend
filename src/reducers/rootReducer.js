@@ -1,20 +1,22 @@
 import { combineReducers } from 'redux';
 import { reducer as toastrReducer } from 'react-redux-toastr';
-import socialAuthReducer from './SocialAuthReducer/socialAuthReducer';
 import {
   resetPassword,
   updatePassword,
   articleRating,
   getarticleRating,
 } from './index';
+import authReducer from './AuthReducer/auth';
+import errorsReducer from './errorsReducer';
 
 const rootReducer = combineReducers({
   resetpassword: resetPassword,
-  auth: socialAuthReducer,
   updatepassword: updatePassword,
   toastr: toastrReducer,
   articlerating: articleRating,
   getarticlerating: getarticleRating,
+  errors: errorsReducer,
+  auth: authReducer,
 });
 
 export default rootReducer;
