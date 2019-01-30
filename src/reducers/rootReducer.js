@@ -1,13 +1,11 @@
 import { combineReducers } from 'redux';
-// <<<<<<< HEAD
-// import authReducer from './authReducer';
-// import errorsReducer from './errorsReducer';
-
-// const appReducer = combineReducers({ auth: authReducer, errors: errorsReducer });
-
-// =======
 import { reducer as toastrReducer } from 'react-redux-toastr';
-import { resetPassword, updatePassword } from './index';
+import {
+  resetPassword,
+  updatePassword,
+  articleRating,
+  getarticleRating,
+} from './index';
 import authReducer from './AuthReducer/auth';
 import errorsReducer from './errorsReducer';
 
@@ -15,6 +13,8 @@ const rootReducer = combineReducers({
   resetpassword: resetPassword,
   updatepassword: updatePassword,
   toastr: toastrReducer,
+  articlerating: articleRating,
+  getarticlerating: getarticleRating,
   errors: errorsReducer,
   auth: authReducer,
 });

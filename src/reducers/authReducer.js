@@ -14,7 +14,25 @@ const authReducer = (state = authDefaultState, action) => {
         isAuthenticated: !isEmpty(action.payload),
         user: { ...action.payload },
       };
+    case ACTIONS.SET_CURRENT_USER_FAIL:
+      return {
+        ...state,
+        isAuthenticated: false,
+        user: {},
+        error: action.error,
+      };
 
+    case ACTIONS.REMOVE_CURRENT_USER_ERROR:
+      return {
+        ...state,
+        error: {},
+      };
+
+    case ACTIONS.LOGOUT_USER:
+      return {
+        ...state,
+        ...authDefaultState,
+      };
     default:
       return state;
   }
