@@ -13,7 +13,7 @@ export const ACTIONS = keyMirror({
   GET_PROFILE: null,
   GET_ARTICLES_BY_AUTHOR: null,
   SET_AUTH_USER: null,
-
+  SET_LOADER: null,
   SET_ERRORS: null,
   CLEAR_ERRORS: null,
   REMOVE_AN_ERROR: null,

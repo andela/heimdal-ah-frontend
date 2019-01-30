@@ -11,10 +11,16 @@ import ActionResponse from '../actionResponse';
  */
 export function getArticles() {
   return function (dispatch) {
+    dispatch({
+      type: ACTIONS.SET_LOADER,
+    });
     return instance.get('/articles')
       .then((response) => {
         const { articles } = response.data;
         dispatch(ActionResponse(ACTIONS.GET_ALL_ARTICLES, articles));
+        dispatch({
+          type: ACTIONS.SET_LOADER,
+        });
       }).catch((error) => {
         dispatch(ActionResponse(ACTIONS.GET_ALL_ARTICLES, 'Server error', error));
       });

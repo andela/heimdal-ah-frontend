@@ -4,13 +4,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { getArticles } from '../../actions/ArticleActions/article';
+import { getArticles } from '../../actions/ArticleActions/articles';
 import ArticleCard from '../../component/ui/cards/ArticleCard/ArticleCard';
+import LoadingSpinner from '../../component/ui/loadingSpinners/LoadingSpinner';
 
 /**
  * article class
  */
-class Article extends Component {
+export class Article extends Component {
   componentDidMount() {
     const { getArticles } = this.props.actions;
 
@@ -29,6 +30,10 @@ class Article extends Component {
    );
 
    render() {
+     const { isLoading } = this.props;
+     if (isLoading) {
+       return <LoadingSpinner />;
+     }
      return (
        <div>
          {this.getUserArticles(this.props.articles.rows)}
