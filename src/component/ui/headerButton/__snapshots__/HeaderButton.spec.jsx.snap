@@ -14,7 +14,9 @@ exports[`testing the Header Button should create a snapshot of the logo 1`] = `
     label="Login"
     type="signup"
   >
-    signin Form
+    <Connect(AuthContainer)>
+      <Component />
+    </Connect(AuthContainer)>
   </TriggerModal>
 </div>
 `;
