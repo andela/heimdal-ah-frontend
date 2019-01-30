@@ -2,18 +2,23 @@
 /* eslint-disable no-nested-ternary */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { debounce } from 'lodash';
 import searchArticleByAuthor from '../../../actions/SearchArticles/searchArticlesByAuthorActions';
 import searchArticleByTitle from '../../../actions/SearchArticles/searchArticlesByTitleActions';
 import searchArticleByTags from '../../../actions/SearchArticles/earchArticlesByTagsActions';
 import './SearchArticles.scss';
-// import Alert from '../Alert/Alert';
 
 /**
-* @description - Helps a user rate an article
-* @param {props} status - the status returned from dispatching articleRating action
-* @param {props} star - the star rating given by a user to the article
-* @param {props} getratingstatus - the status returned from dispatching getArticleRating action
-* @param {props} ratings - average rating for the article
+* @description - Helps search for an artile
+* @param {props}  articlesByAuthorStatus - the status returned from dispatching
+searchArticleByAuthor action
+* @param {props}  searchArticleByTitle - the status returned from dispatching
+searchArticleByTitle action
+* @param {props}  searchArticleByTags - the status returned from dispatching
+searchArticleByTags action
+* @param {props} articlesByAuthor - the article returned based on author parameter
+* @param {props} articlesByTitle - the article returned based on title parameter
+* @param {props} articlesByTags - the article returned based on tag parameter
 * @returns {component} Component
 */
 export class SearchArticles extends Component {
@@ -30,45 +35,37 @@ export class SearchArticles extends Component {
   }
 
   /**
-* @description - Handles the initial component mounting and calls getArticleRating action
-*/
-  // componentDidMount() {
-  //   const articleId = localStorage.getItem('articleId');
-  //   this.props.actions(getArticleRating(Number(articleId)));
-  // }
+ * @description - Handles the form change event by calling search actions
+ * @param {event} e - the event passed to the method
+ * @returns {component} null
+ */
+  onHandleChange(e) {
+    const stateChanged = new Promise((resolve) => {
+      resolve(this.setState({
+        [e.target.name]: e.target.value,
+      }));
+    });
+    stateChanged.then(() => {
+      this.props.actions(debounce(searchArticleByAuthor(this.state.query || new URLSearchParams(window.location.search).get('query'), this.props.field, this.props.size), 500));
+      this.props.actions(debounce(searchArticleByTitle(this.state.query || new URLSearchParams(window.location.search).get('query'), this.props.field, this.props.size), 500));
+      this.props.actions(debounce(searchArticleByTags(this.state.query || new URLSearchParams(window.location.search).get('query'), this.props.field, this.props.size), 500));
+    });
+  }
 
   /**
-* @description - Handles the submission of the rating by calling articleRating action
-* @param {number} stars - the star rating of the article, supplied by user
-*/
-  // onHandleSubmit(stars) {
-  //   // Might change based on where the article id is  gotten from
-  //   const articleId = localStorage.getItem('articleId');
-  //   // eslint-disable-next-line react/destructuring-assignment
-  //   this.props.actions(articleRating(stars, articleId));
-  // }
-
-  onHandleChange(e) {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
-    setTimeout(() => {
-      if (this.state.query !== null) {
-        this.props.actions(searchArticleByAuthor(this.state.query));
-        this.props.actions(searchArticleByTitle(this.state.query));
-        this.props.actions(searchArticleByTags(this.state.query));
-      }
-    }, 1);
-    // this.props.actions(getArticlesByAuthoor(query));
-    // this.props.actions(getArticlesByTags(query));
-  }
-
+ * @description - Handles the key press event by calling toggling the input field
+ */
   onKeyPress() {
-    this.setState({ displayInput: true });
+    const { displayInput } = this.state;
+    this.setState({ displayInput: !displayInput });
   }
 
+  /**
+ * @description - Handles the click event by calling toggling the input field
+ */
   onButtonClick() {
-    this.setState({ displayInput: true });
+    const { displayInput } = this.state;
+    this.setState({ displayInput: !displayInput });
   }
 
   /**
@@ -79,35 +76,38 @@ export class SearchArticles extends Component {
     const { displayInput, query } = this.state;
     const {
       articlesByAuthorStatus,
-      articlesByAuthor,
-      articlesByTitle,
       articlesByTitleStatus,
       articlesByTagsStatus,
+      articlesByAuthor,
+      articlesByTitle,
       articlesByTags,
+      realTime,
     } = this.props;
     return this.props.children({
-      displayInput,
-      query,
-      onKeypress: this.onKeyPress,
+      onHandleChange: this.onHandleChange,
       onButtonClick: this.onButtonClick,
-      state: this.state,
+      onKeypress: this.onKeyPress,
       articlesByAuthorStatus,
-      articlesByAuthor,
-      articlesByTitle,
       articlesByTitleStatus,
       articlesByTagsStatus,
+      state: this.state,
+      articlesByAuthor,
+      articlesByTitle,
       articlesByTags,
-      onHandleChange: this.onHandleChange,
+      displayInput,
+      realTime,
+      query,
+      
     });
   }
 }
 
 const mapStateToProps = state => ({
   articlesByAuthorStatus: state.searcharticlesbyauthor.status,
-  articlesByAuthor: state.searcharticlesbyauthor.payload,
-  articlesByTitle: state.searcharticlesbytitle.payload,
   articlesByTitleStatus: state.searcharticlesbytitle.status,
   articlesByTagsStatus: state.searcharticlesbytags.status,
+  articlesByAuthor: state.searcharticlesbyauthor.payload,
+  articlesByTitle: state.searcharticlesbytitle.payload,
   articlesByTags: state.searcharticlesbytags.payload,
 });
 

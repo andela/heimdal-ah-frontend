@@ -12,7 +12,7 @@ window.document.addEventListener('click', () => {
 });
 
 const SearchArticlesPresentation = () => (
-  <SearchArticles>
+  <SearchArticles field={0} size={6}>
     {
       data => (
         <Fragment>
@@ -40,28 +40,17 @@ const SearchArticlesPresentation = () => (
           {data.articlesByAuthorStatus === 'SUCCESS' ? (
             <div className='search-articles'>
               <br />
-              <table>
-                <tbody>
-                  <tr>
-                    <th>
+              <table className='search-articles'>
+                <tbody className='search-articles'>
+                  <tr className='search-articles'>
+                    <th className='search-articles'>
                       Articles
                     </th>
                   </tr>
-                  {/* <tr>
-                    <th>
-                      Title
-                    </th>
-                    <th>
-                      Author
-                    </th>
-                    <th>
-                      Tags
-                    </th>
-                  </tr> */}
                   {data.articlesByAuthor.map(article => (
                     <tr className='search-articles' key={sum += 1}>
                       <td>
-                        <a href={`https://heimdal-frontend.herokuapp.com/${article.user.profile.username}/${article.slug}`}>{article.title}</a>
+                        <a href={`https://heimdal-frontend.herokuapp.com/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
                         <br />
                         <span>{article.user.profile.username}</span>
                       </td>
@@ -71,7 +60,7 @@ const SearchArticlesPresentation = () => (
                     </tr>
                   ))
                   }
-                  {data.articlesByAuthor.length > 6 ? (
+                  {data.articlesByAuthor.length > 5 ? (
                     <td>
                       {<a href={`/search?query=${data.query}`}>View More</a>}
                     </td>
@@ -83,24 +72,13 @@ const SearchArticlesPresentation = () => (
           ) : data.articlesByTitleStatus === 'SUCCESS' ? (
             <div className='search-articles'>
               <br />
-              <table>
-                <tbody>
-                  <tr>
-                    <th>
+              <table className='search-articles'>
+                <tbody className='search-articles'>
+                  <tr className='search-articles'>
+                    <th className='search-articles'>
                       Articles
                     </th>
                   </tr>
-                  {/* <tr>
-                    <th>
-                      Title
-                    </th>
-                    <th>
-                      Author
-                    </th>
-                    <th>
-                      Tags
-                    </th>
-                  </tr> */}
                   {data.articlesByTitle.map(article => (
                     <tr className='search-articles' key={sum += 1}>
                       <td>
@@ -111,7 +89,7 @@ const SearchArticlesPresentation = () => (
                     </tr>
                   ))
                   }
-                  {data.articlesByTitle.length > 6 ? (
+                  {data.articlesByTitle.length > 5 ? (
                     <td>
                       {<a href={`/search?query=${data.query}`}>View More</a>}
                     </td>
@@ -123,24 +101,13 @@ const SearchArticlesPresentation = () => (
           ) : data.articlesByTagsStatus === 'SUCCESS' ? (
             <div className='search-articles'>
               <br />
-              <table>
-                <tbody>
-                  <tr>
-                    <th>
+              <table className='search-articles'>
+                <tbody className='search-articles'>
+                  <tr className='search-articles'>
+                    <th className='search-articles'>
                       Articles
                     </th>
                   </tr>
-                  {/* <tr>
-                    <th>
-                      Title
-                    </th>
-                    <th>
-                      Author
-                    </th>
-                    <th>
-                      Tags
-                    </th>
-                  </tr> */}
                   {data.articlesByTags.map(article => (
                     <tr className='search-articles' key={sum += 1}>
                       <td>
@@ -148,16 +115,10 @@ const SearchArticlesPresentation = () => (
                         <br />
                         <span>{article.article.user.profile.username}</span>
                       </td>
-                      {/* <td>
-                        Joshua
-                      </td>
-                      <td>
-                        {article.tag.tagName}
-                      </td> */}
                     </tr>
                   ))
                   }
-                  {data.articlesByTags.length > 6 ? (
+                  {data.articlesByTags.length > 5 ? (
                     <td>
                       {<a href={`/search?query=${data.query}`}>View More</a>}
                     </td>
