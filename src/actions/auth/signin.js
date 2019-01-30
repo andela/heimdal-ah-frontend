@@ -3,7 +3,7 @@ import { ACTIONS } from '../actionTypes';
 import instance, { setToken } from '../../config/http';
 
 export const setCurrentUser = user => ({
-  type: ACTIONS.SET_CURRENT_USER,
+  type: ACTIONS.SET_AUTH_USER,
   user,
 });
 
