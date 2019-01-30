@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import { reducer as toastrReducer } from 'react-redux-toastr';
 import { resetPassword, updatePassword, profile } from './index';
-import authReducer from './authReducer';
+import authReducer from './AuthReducer/auth';
 import errorsReducer from './errorsReducer';
 import articleReducer from './Articles/articleReducer';
 
