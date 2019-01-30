@@ -2,13 +2,6 @@ import instance from '../../../config/http';
 import { ACTIONS } from '../../actionTypes';
 import ActionResponse from '../../actionResponse';
 
-
-// function
-// change naming conventions ---- createAction
-// front end validation for title for content and description
-// validation for specific validations
-// client route articles/create
-
 /**
  * @description - createActions for new article
  * @param {props} status - post request

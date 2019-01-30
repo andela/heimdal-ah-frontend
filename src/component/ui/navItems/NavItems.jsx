@@ -28,7 +28,7 @@ const NavItems = () => {
     <div key={i}>
       {item.isActive
         ? (
-          <li key={i} className='nav-item active'>
+          <li key={i} className='nav-item' activeClassName="active">
             <Link className={item.linkClass} to={item.link}>
               {item.text}
             </Link>

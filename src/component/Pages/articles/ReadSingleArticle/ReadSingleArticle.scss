@@ -1,55 +1,106 @@
-.article-header {
-  text-align: center;
-  background: chocolate;
-  padding-right: 10%;
-  padding-left: 10%;
-  height: 300px;
-  h1{
-    padding-top: 5%;
-    font-size: 30px;
-  }
-}
-.bookmark-row {
-  display:grid;
-  grid-template-columns: 80% 20%;
-  grid-gap: 1em;
-  height:150px;
-  .bookmark-logo {
-    width: 25px;
-  }
-}
-.body{
-  display:grid;
-  grid-template-columns: 70% 30%;
-  grid-gap: 1em;
-  .article-section {
-    background-color: rgb(249, 249, 253);
-    padding: 5%;
-    padding: 20px
-  }  
-  .user-section {
-    background-color: brown;
-    padding: 5%;
-  }
-  .glow {
-    text-align: end;
-  }
-  .ratings {
+@import '../../../../styles/variables.scss';
+@import '../../../../styles/global.scss';
+
+.single-article-wrapper{
+  background-color: whitesmoke;
+  .article-header {
     text-align: center;
+    background: #6a7390;
+    font-family: "Cardo", serif;
+    padding-right: 10%;
+    padding-left: 10%;
+    height: 200px;
+    color: white;
+    h1{
+      padding-top: 5%;
+      font-size: 40px;
+    }
   }
-  .line {
-   height: 0.8px;
-   background-color: #000000;
-   margin-left: 20px;
-  }
-  .bottom-details {
+  .bookmark-row {
     display:grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 73% 27%;
+    grid-gap: 1em;
+    height:150px;
+    .bookmark-logo {
+      width: 25px;
+    }
+  }
+  .body-section{
+    display:grid;
+    grid-template-columns: 75% 20%;
+    text-align: justify;
+    grid-gap: 1.5em;
+    padding: 0 5%;
+    font-family: "Ovo", serif;
+    .article-section {
+      background-color: whitesmoke;
+      padding: 0px 20px;
+      font-size: 20px;
+      color: #3e4653;
+      line-height: 2;
+      .bottom-details {
+        display:grid;
+        grid-template-columns: 30% 40% 30%;
+        margin-top:20%;
+        .likesCount {
+          margin-bottom: 2px;
+        }
+      }
+    }  
+    .user-section {
+      background-color: whitesmoke;
+      border: 0.5px solid #C4C4C4;
+      padding: 5%;
+      display: grid;
+      grid-template-rows: 35% 25% 30%;
+      height: 1400px;
+      .follow-btn {
+        background-color:#153771;
+        color: white;
+      };
+      // .edit-btn {
+      //   display: block;
+      // };
+      .user-profile {
+        text-align: center;
+        color: #6a7384;
+
+      }
+      .user-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-top: 10px;
+      }
+      .social-media {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 60px;
+        .facebook {
+          color: #3b5998;
+        }
+        .twitter {
+          color: #1DA1F2;
+        }
+      }
+    }
+    .glow {
+      text-align: end;
+    }
+    .ratings {
+      text-align: center;
+    }
+    .line {
+    height: 0.8px;
+    background-color: #6a7384;
+    }
+  }
+  .tag-buttons {
+    padding: 10px;
+    margin-top: 3%;
     padding-left: 20px;
   }
 }
-.tag-buttons {
-  padding: 10px;
-  margin-top: 3%;
-  padding-left: 20px;
+.ReadSingleArticleError {
+  height: 600px;
 }

@@ -1,0 +1,4034 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Single Article Component Test Suite <ReadSingleArticle /> should render the ReadSingleArticle component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ReadSingleArticle
+    actions={
+      Object {
+        "getArticleById": [Function],
+      }
+    }
+    match={
+      Object {
+        "params": Object {
+          "slug": "hello",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <React.Fragment>
+          <ReadSingleArticlePresentation
+            articleId=""
+            author={false}
+            body=""
+            likesCount={0}
+            slug="hello"
+            title=""
+          />
+        </React.Fragment>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <ReadSingleArticlePresentation
+            articleId=""
+            author={false}
+            body=""
+            likesCount={0}
+            slug="hello"
+            title=""
+          />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "articleId": "",
+            "author": false,
+            "body": "",
+            "likesCount": 0,
+            "slug": "hello",
+            "time": undefined,
+            "title": "",
+            "userImage": undefined,
+            "username": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": Symbol(react.fragment),
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <React.Fragment>
+            <ReadSingleArticlePresentation
+              articleId=""
+              author={false}
+              body=""
+              likesCount={0}
+              slug="hello"
+              title=""
+            />
+          </React.Fragment>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <ReadSingleArticlePresentation
+              articleId=""
+              author={false}
+              body=""
+              likesCount={0}
+              slug="hello"
+              title=""
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "articleId": "",
+              "author": false,
+              "body": "",
+              "likesCount": 0,
+              "slug": "hello",
+              "time": undefined,
+              "title": "",
+              "userImage": undefined,
+              "username": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": Symbol(react.fragment),
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Single Article Component Test Suite <ReadSingleArticlePresentation /> should render the ReadSingleArticlePresentation component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ReadSingleArticlePresentation />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Redirect
+          push={false}
+          to="/undefined/articles/undefined"
+        />,
+        6,
+        <div
+          className="single-article-wrapper"
+        >
+          <div
+            className="article-header"
+          >
+            <h1 />
+          </div>
+          <div
+            className="bookmark-row"
+          >
+            <div />
+            <div>
+              <img
+                alt="bookmark-logo"
+                className="bookmark-logo"
+                src="/src/images/bookmark.svg"
+              />
+            </div>
+          </div>
+          <div
+            className="body-section"
+          >
+            <div
+              className="article-section"
+            >
+              <div
+                className="bottom-details"
+              >
+                <div>
+                  <Rating
+                    ratings={0}
+                  />
+                </div>
+                <div
+                  className="ratings"
+                >
+                  <span>
+                    Rated by:
+                  </span>
+                </div>
+                <div
+                  className="glow"
+                >
+                  <Glow
+                    active={true}
+                  />
+                  <span
+                    className="likesCount"
+                  />
+                </div>
+              </div>
+              <div
+                className="line"
+              />
+            </div>
+            <div
+              className="user-section"
+            >
+              <div
+                className="user-profile"
+              >
+                <img
+                  alt="user"
+                  className="user-image"
+                />
+                <br />
+                <br />
+                <h2 />
+                <br />
+                <h4>
+                  just now
+                </h4>
+                <br />
+                <a
+                  href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                >
+                  <button
+                    className="btn edit-btn btn-secondary"
+                    type="submit"
+                  >
+                    edit
+                  </button>
+                </a>
+                <button
+                  className="btn follow-btn"
+                  type="submit"
+                >
+                  follow
+                </button>
+                <br />
+                <br />
+                <div
+                  className="social-media"
+                >
+                  <i
+                    className="fab fa-4x fa-facebook-square facebook"
+                  />
+                  <i
+                    className="fab fa-4x fa-twitter-square twitter"
+                  />
+                </div>
+              </div>
+              <div>
+                <hr />
+                <h5>
+                  tags
+                </h5>
+                <div
+                  className="tag-buttons"
+                >
+                  <div
+                    className="radio"
+                  >
+                    <input
+                      checked={true}
+                      name="optradio"
+                      type="radio"
+                    />
+                  </div>
+                  <div
+                    className="radio"
+                  >
+                    <input
+                      name="optradio"
+                      type="radio"
+                    />
+                  </div>
+                  <div
+                    className="radio disabled"
+                  >
+                    <input
+                      disabled={true}
+                      name="optradio"
+                      type="radio"
+                    />
+                  </div>
+                  <div
+                    className="radio"
+                  >
+                    <input
+                      checked={true}
+                      name="optradio"
+                      type="radio"
+                    />
+                  </div>
+                  <div
+                    className="radio"
+                  >
+                    <input
+                      name="optradio"
+                      type="radio"
+                    />
+                  </div>
+                  <div
+                    className="radio disabled"
+                  >
+                    <input
+                      disabled={true}
+                      name="optradio"
+                      type="radio"
+                    />
+                  </div>
+                  <div
+                    className="radio"
+                  >
+                    <input
+                      checked={true}
+                      name="optradio"
+                      type="radio"
+                    />
+                  </div>
+                  <div
+                    className="radio"
+                  >
+                    <input
+                      name="optradio"
+                      type="radio"
+                    />
+                  </div>
+                  <div
+                    className="radio disabled"
+                  >
+                    <input
+                      disabled={true}
+                      name="optradio"
+                      type="radio"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <hr />
+                <h5>
+                  Recent articles
+                </h5>
+              </div>
+            </div>
+            <div />
+            <br />
+          </div>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "push": false,
+          "to": "/undefined/articles/undefined",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      6,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="article-header"
+            >
+              <h1 />
+            </div>,
+            <div
+              className="bookmark-row"
+            >
+              <div />
+              <div>
+                <img
+                  alt="bookmark-logo"
+                  className="bookmark-logo"
+                  src="/src/images/bookmark.svg"
+                />
+              </div>
+            </div>,
+            <div
+              className="body-section"
+            >
+              <div
+                className="article-section"
+              >
+                <div
+                  className="bottom-details"
+                >
+                  <div>
+                    <Rating
+                      ratings={0}
+                    />
+                  </div>
+                  <div
+                    className="ratings"
+                  >
+                    <span>
+                      Rated by:
+                    </span>
+                  </div>
+                  <div
+                    className="glow"
+                  >
+                    <Glow
+                      active={true}
+                    />
+                    <span
+                      className="likesCount"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="line"
+                />
+              </div>
+              <div
+                className="user-section"
+              >
+                <div
+                  className="user-profile"
+                >
+                  <img
+                    alt="user"
+                    className="user-image"
+                  />
+                  <br />
+                  <br />
+                  <h2 />
+                  <br />
+                  <h4>
+                    just now
+                  </h4>
+                  <br />
+                  <a
+                    href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                  >
+                    <button
+                      className="btn edit-btn btn-secondary"
+                      type="submit"
+                    >
+                      edit
+                    </button>
+                  </a>
+                  <button
+                    className="btn follow-btn"
+                    type="submit"
+                  >
+                    follow
+                  </button>
+                  <br />
+                  <br />
+                  <div
+                    className="social-media"
+                  >
+                    <i
+                      className="fab fa-4x fa-facebook-square facebook"
+                    />
+                    <i
+                      className="fab fa-4x fa-twitter-square twitter"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <hr />
+                  <h5>
+                    tags
+                  </h5>
+                  <div
+                    className="tag-buttons"
+                  >
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        checked={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio disabled"
+                    >
+                      <input
+                        disabled={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        checked={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio disabled"
+                    >
+                      <input
+                        disabled={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        checked={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio disabled"
+                    >
+                      <input
+                        disabled={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <hr />
+                  <h5>
+                    Recent articles
+                  </h5>
+                </div>
+              </div>
+              <div />
+              <br />
+            </div>,
+          ],
+          "className": "single-article-wrapper",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h1 />,
+              "className": "article-header",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "h1",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div />,
+                <div>
+                  <img
+                    alt="bookmark-logo"
+                    className="bookmark-logo"
+                    src="/src/images/bookmark.svg"
+                  />
+                </div>,
+              ],
+              "className": "bookmark-row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt="bookmark-logo"
+                    className="bookmark-logo"
+                    src="/src/images/bookmark.svg"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "bookmark-logo",
+                    "className": "bookmark-logo",
+                    "src": "/src/images/bookmark.svg",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="article-section"
+                >
+                  <div
+                    className="bottom-details"
+                  >
+                    <div>
+                      <Rating
+                        ratings={0}
+                      />
+                    </div>
+                    <div
+                      className="ratings"
+                    >
+                      <span>
+                        Rated by:
+                      </span>
+                    </div>
+                    <div
+                      className="glow"
+                    >
+                      <Glow
+                        active={true}
+                      />
+                      <span
+                        className="likesCount"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="line"
+                  />
+                </div>,
+                <div
+                  className="user-section"
+                >
+                  <div
+                    className="user-profile"
+                  >
+                    <img
+                      alt="user"
+                      className="user-image"
+                    />
+                    <br />
+                    <br />
+                    <h2 />
+                    <br />
+                    <h4>
+                      just now
+                    </h4>
+                    <br />
+                    <a
+                      href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                    >
+                      <button
+                        className="btn edit-btn btn-secondary"
+                        type="submit"
+                      >
+                        edit
+                      </button>
+                    </a>
+                    <button
+                      className="btn follow-btn"
+                      type="submit"
+                    >
+                      follow
+                    </button>
+                    <br />
+                    <br />
+                    <div
+                      className="social-media"
+                    >
+                      <i
+                        className="fab fa-4x fa-facebook-square facebook"
+                      />
+                      <i
+                        className="fab fa-4x fa-twitter-square twitter"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <hr />
+                    <h5>
+                      tags
+                    </h5>
+                    <div
+                      className="tag-buttons"
+                    >
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          checked={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio disabled"
+                      >
+                        <input
+                          disabled={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          checked={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio disabled"
+                      >
+                        <input
+                          disabled={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          checked={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio disabled"
+                      >
+                        <input
+                          disabled={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <hr />
+                    <h5>
+                      Recent articles
+                    </h5>
+                  </div>
+                </div>,
+                <div />,
+                <br />,
+              ],
+              "className": "body-section",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    undefined,
+                    <div
+                      className="bottom-details"
+                    >
+                      <div>
+                        <Rating
+                          ratings={0}
+                        />
+                      </div>
+                      <div
+                        className="ratings"
+                      >
+                        <span>
+                          Rated by:
+                        </span>
+                      </div>
+                      <div
+                        className="glow"
+                      >
+                        <Glow
+                          active={true}
+                        />
+                        <span
+                          className="likesCount"
+                        />
+                      </div>
+                    </div>,
+                    <div
+                      className="line"
+                    />,
+                  ],
+                  "className": "article-section",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <div>
+                          <Rating
+                            ratings={0}
+                          />
+                        </div>,
+                        <div
+                          className="ratings"
+                        >
+                          <span>
+                            Rated by:
+                          </span>
+                        </div>,
+                        <div
+                          className="glow"
+                        >
+                          <Glow
+                            active={true}
+                          />
+                          <span
+                            className="likesCount"
+                          />
+                        </div>,
+                      ],
+                      "className": "bottom-details",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Rating
+                            ratings={0}
+                          />,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "ratings": 0,
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <span>
+                            Rated by:
+                          </span>,
+                          "className": "ratings",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Rated by:",
+                          },
+                          "ref": null,
+                          "rendered": "Rated by:",
+                          "type": "span",
+                        },
+                        "type": "div",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <Glow
+                              active={true}
+                            />,
+                            <span
+                              className="likesCount"
+                            />,
+                          ],
+                          "className": "glow",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "active": true,
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": undefined,
+                              "className": "likesCount",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "span",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "line",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="user-profile"
+                    >
+                      <img
+                        alt="user"
+                        className="user-image"
+                      />
+                      <br />
+                      <br />
+                      <h2 />
+                      <br />
+                      <h4>
+                        just now
+                      </h4>
+                      <br />
+                      <a
+                        href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                      >
+                        <button
+                          className="btn edit-btn btn-secondary"
+                          type="submit"
+                        >
+                          edit
+                        </button>
+                      </a>
+                      <button
+                        className="btn follow-btn"
+                        type="submit"
+                      >
+                        follow
+                      </button>
+                      <br />
+                      <br />
+                      <div
+                        className="social-media"
+                      >
+                        <i
+                          className="fab fa-4x fa-facebook-square facebook"
+                        />
+                        <i
+                          className="fab fa-4x fa-twitter-square twitter"
+                        />
+                      </div>
+                    </div>,
+                    <div>
+                      <hr />
+                      <h5>
+                        tags
+                      </h5>
+                      <div
+                        className="tag-buttons"
+                      >
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            checked={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio disabled"
+                        >
+                          <input
+                            disabled={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            checked={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio disabled"
+                        >
+                          <input
+                            disabled={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            checked={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio disabled"
+                        >
+                          <input
+                            disabled={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                      </div>
+                    </div>,
+                    <div>
+                      <hr />
+                      <h5>
+                        Recent articles
+                      </h5>
+                    </div>,
+                  ],
+                  "className": "user-section",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <img
+                          alt="user"
+                          className="user-image"
+                        />,
+                        <br />,
+                        <br />,
+                        <h2 />,
+                        <br />,
+                        <h4>
+                          just now
+                        </h4>,
+                        <br />,
+                        <a
+                          href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                        >
+                          <button
+                            className="btn edit-btn btn-secondary"
+                            type="submit"
+                          >
+                            edit
+                          </button>
+                        </a>,
+                        <button
+                          className="btn follow-btn"
+                          type="submit"
+                        >
+                          follow
+                        </button>,
+                        <br />,
+                        <br />,
+                        <div
+                          className="social-media"
+                        >
+                          <i
+                            className="fab fa-4x fa-facebook-square facebook"
+                          />
+                          <i
+                            className="fab fa-4x fa-twitter-square twitter"
+                          />
+                        </div>,
+                      ],
+                      "className": "user-profile",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "user",
+                          "className": "user-image",
+                          "src": undefined,
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": undefined,
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "h2",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "just now",
+                        },
+                        "ref": null,
+                        "rendered": "just now",
+                        "type": "h4",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <button
+                            className="btn edit-btn btn-secondary"
+                            type="submit"
+                          >
+                            edit
+                          </button>,
+                          "href": "http://heimdal-frontend.herokuapp.com/articles/update?id=undefined",
+                        },
+                        "ref": Object {
+                          "current": null,
+                        },
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "edit",
+                            "className": "btn edit-btn btn-secondary",
+                            "type": "submit",
+                          },
+                          "ref": null,
+                          "rendered": "edit",
+                          "type": "button",
+                        },
+                        "type": "a",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "follow",
+                          "className": "btn follow-btn",
+                          "type": "submit",
+                        },
+                        "ref": Object {
+                          "current": null,
+                        },
+                        "rendered": "follow",
+                        "type": "button",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "br",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <i
+                              className="fab fa-4x fa-facebook-square facebook"
+                            />,
+                            <i
+                              className="fab fa-4x fa-twitter-square twitter"
+                            />,
+                          ],
+                          "className": "social-media",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "fab fa-4x fa-facebook-square facebook",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "i",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "className": "fab fa-4x fa-twitter-square twitter",
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": "i",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <hr />,
+                        <h5>
+                          tags
+                        </h5>,
+                        <div
+                          className="tag-buttons"
+                        >
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              checked={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio disabled"
+                          >
+                            <input
+                              disabled={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              checked={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio disabled"
+                          >
+                            <input
+                              disabled={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              checked={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio disabled"
+                          >
+                            <input
+                              disabled={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                        </div>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "hr",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "tags",
+                        },
+                        "ref": null,
+                        "rendered": "tags",
+                        "type": "h5",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                checked={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>,
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>,
+                            <div
+                              className="radio disabled"
+                            >
+                              <input
+                                disabled={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>,
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                checked={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>,
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>,
+                            <div
+                              className="radio disabled"
+                            >
+                              <input
+                                disabled={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>,
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                checked={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>,
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>,
+                            <div
+                              className="radio disabled"
+                            >
+                              <input
+                                disabled={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>,
+                          ],
+                          "className": "tag-buttons",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <input
+                                checked={true}
+                                name="optradio"
+                                type="radio"
+                              />,
+                              "className": "radio",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "checked": true,
+                                "name": "optradio",
+                                "type": "radio",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <input
+                                name="optradio"
+                                type="radio"
+                              />,
+                              "className": "radio",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "name": "optradio",
+                                "type": "radio",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <input
+                                disabled={true}
+                                name="optradio"
+                                type="radio"
+                              />,
+                              "className": "radio disabled",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "disabled": true,
+                                "name": "optradio",
+                                "type": "radio",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <input
+                                checked={true}
+                                name="optradio"
+                                type="radio"
+                              />,
+                              "className": "radio",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "checked": true,
+                                "name": "optradio",
+                                "type": "radio",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <input
+                                name="optradio"
+                                type="radio"
+                              />,
+                              "className": "radio",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "name": "optradio",
+                                "type": "radio",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <input
+                                disabled={true}
+                                name="optradio"
+                                type="radio"
+                              />,
+                              "className": "radio disabled",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "disabled": true,
+                                "name": "optradio",
+                                "type": "radio",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <input
+                                checked={true}
+                                name="optradio"
+                                type="radio"
+                              />,
+                              "className": "radio",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "checked": true,
+                                "name": "optradio",
+                                "type": "radio",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <input
+                                name="optradio"
+                                type="radio"
+                              />,
+                              "className": "radio",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "name": "optradio",
+                                "type": "radio",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": "div",
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": <input
+                                disabled={true}
+                                name="optradio"
+                                type="radio"
+                              />,
+                              "className": "radio disabled",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "disabled": true,
+                                "name": "optradio",
+                                "type": "radio",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "input",
+                            },
+                            "type": "div",
+                          },
+                        ],
+                        "type": "div",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <hr />,
+                        <h5>
+                          Recent articles
+                        </h5>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {},
+                        "ref": null,
+                        "rendered": null,
+                        "type": "hr",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Recent articles",
+                        },
+                        "ref": null,
+                        "rendered": "Recent articles",
+                        "type": "h5",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Redirect
+            push={false}
+            to="/undefined/articles/undefined"
+          />,
+          6,
+          <div
+            className="single-article-wrapper"
+          >
+            <div
+              className="article-header"
+            >
+              <h1 />
+            </div>
+            <div
+              className="bookmark-row"
+            >
+              <div />
+              <div>
+                <img
+                  alt="bookmark-logo"
+                  className="bookmark-logo"
+                  src="/src/images/bookmark.svg"
+                />
+              </div>
+            </div>
+            <div
+              className="body-section"
+            >
+              <div
+                className="article-section"
+              >
+                <div
+                  className="bottom-details"
+                >
+                  <div>
+                    <Rating
+                      ratings={0}
+                    />
+                  </div>
+                  <div
+                    className="ratings"
+                  >
+                    <span>
+                      Rated by:
+                    </span>
+                  </div>
+                  <div
+                    className="glow"
+                  >
+                    <Glow
+                      active={true}
+                    />
+                    <span
+                      className="likesCount"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="line"
+                />
+              </div>
+              <div
+                className="user-section"
+              >
+                <div
+                  className="user-profile"
+                >
+                  <img
+                    alt="user"
+                    className="user-image"
+                  />
+                  <br />
+                  <br />
+                  <h2 />
+                  <br />
+                  <h4>
+                    just now
+                  </h4>
+                  <br />
+                  <a
+                    href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                  >
+                    <button
+                      className="btn edit-btn btn-secondary"
+                      type="submit"
+                    >
+                      edit
+                    </button>
+                  </a>
+                  <button
+                    className="btn follow-btn"
+                    type="submit"
+                  >
+                    follow
+                  </button>
+                  <br />
+                  <br />
+                  <div
+                    className="social-media"
+                  >
+                    <i
+                      className="fab fa-4x fa-facebook-square facebook"
+                    />
+                    <i
+                      className="fab fa-4x fa-twitter-square twitter"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <hr />
+                  <h5>
+                    tags
+                  </h5>
+                  <div
+                    className="tag-buttons"
+                  >
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        checked={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio disabled"
+                    >
+                      <input
+                        disabled={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        checked={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio disabled"
+                    >
+                      <input
+                        disabled={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        checked={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio"
+                    >
+                      <input
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                    <div
+                      className="radio disabled"
+                    >
+                      <input
+                        disabled={true}
+                        name="optradio"
+                        type="radio"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <hr />
+                  <h5>
+                    Recent articles
+                  </h5>
+                </div>
+              </div>
+              <div />
+              <br />
+            </div>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "push": false,
+            "to": "/undefined/articles/undefined",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        6,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="article-header"
+              >
+                <h1 />
+              </div>,
+              <div
+                className="bookmark-row"
+              >
+                <div />
+                <div>
+                  <img
+                    alt="bookmark-logo"
+                    className="bookmark-logo"
+                    src="/src/images/bookmark.svg"
+                  />
+                </div>
+              </div>,
+              <div
+                className="body-section"
+              >
+                <div
+                  className="article-section"
+                >
+                  <div
+                    className="bottom-details"
+                  >
+                    <div>
+                      <Rating
+                        ratings={0}
+                      />
+                    </div>
+                    <div
+                      className="ratings"
+                    >
+                      <span>
+                        Rated by:
+                      </span>
+                    </div>
+                    <div
+                      className="glow"
+                    >
+                      <Glow
+                        active={true}
+                      />
+                      <span
+                        className="likesCount"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="line"
+                  />
+                </div>
+                <div
+                  className="user-section"
+                >
+                  <div
+                    className="user-profile"
+                  >
+                    <img
+                      alt="user"
+                      className="user-image"
+                    />
+                    <br />
+                    <br />
+                    <h2 />
+                    <br />
+                    <h4>
+                      just now
+                    </h4>
+                    <br />
+                    <a
+                      href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                    >
+                      <button
+                        className="btn edit-btn btn-secondary"
+                        type="submit"
+                      >
+                        edit
+                      </button>
+                    </a>
+                    <button
+                      className="btn follow-btn"
+                      type="submit"
+                    >
+                      follow
+                    </button>
+                    <br />
+                    <br />
+                    <div
+                      className="social-media"
+                    >
+                      <i
+                        className="fab fa-4x fa-facebook-square facebook"
+                      />
+                      <i
+                        className="fab fa-4x fa-twitter-square twitter"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <hr />
+                    <h5>
+                      tags
+                    </h5>
+                    <div
+                      className="tag-buttons"
+                    >
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          checked={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio disabled"
+                      >
+                        <input
+                          disabled={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          checked={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio disabled"
+                      >
+                        <input
+                          disabled={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          checked={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio"
+                      >
+                        <input
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                      <div
+                        className="radio disabled"
+                      >
+                        <input
+                          disabled={true}
+                          name="optradio"
+                          type="radio"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <hr />
+                    <h5>
+                      Recent articles
+                    </h5>
+                  </div>
+                </div>
+                <div />
+                <br />
+              </div>,
+            ],
+            "className": "single-article-wrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <h1 />,
+                "className": "article-header",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "h1",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div />,
+                  <div>
+                    <img
+                      alt="bookmark-logo"
+                      className="bookmark-logo"
+                      src="/src/images/bookmark.svg"
+                    />
+                  </div>,
+                ],
+                "className": "bookmark-row",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="bookmark-logo"
+                      className="bookmark-logo"
+                      src="/src/images/bookmark.svg"
+                    />,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "bookmark-logo",
+                      "className": "bookmark-logo",
+                      "src": "/src/images/bookmark.svg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="article-section"
+                  >
+                    <div
+                      className="bottom-details"
+                    >
+                      <div>
+                        <Rating
+                          ratings={0}
+                        />
+                      </div>
+                      <div
+                        className="ratings"
+                      >
+                        <span>
+                          Rated by:
+                        </span>
+                      </div>
+                      <div
+                        className="glow"
+                      >
+                        <Glow
+                          active={true}
+                        />
+                        <span
+                          className="likesCount"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className="line"
+                    />
+                  </div>,
+                  <div
+                    className="user-section"
+                  >
+                    <div
+                      className="user-profile"
+                    >
+                      <img
+                        alt="user"
+                        className="user-image"
+                      />
+                      <br />
+                      <br />
+                      <h2 />
+                      <br />
+                      <h4>
+                        just now
+                      </h4>
+                      <br />
+                      <a
+                        href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                      >
+                        <button
+                          className="btn edit-btn btn-secondary"
+                          type="submit"
+                        >
+                          edit
+                        </button>
+                      </a>
+                      <button
+                        className="btn follow-btn"
+                        type="submit"
+                      >
+                        follow
+                      </button>
+                      <br />
+                      <br />
+                      <div
+                        className="social-media"
+                      >
+                        <i
+                          className="fab fa-4x fa-facebook-square facebook"
+                        />
+                        <i
+                          className="fab fa-4x fa-twitter-square twitter"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <hr />
+                      <h5>
+                        tags
+                      </h5>
+                      <div
+                        className="tag-buttons"
+                      >
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            checked={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio disabled"
+                        >
+                          <input
+                            disabled={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            checked={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio disabled"
+                        >
+                          <input
+                            disabled={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            checked={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio"
+                        >
+                          <input
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                        <div
+                          className="radio disabled"
+                        >
+                          <input
+                            disabled={true}
+                            name="optradio"
+                            type="radio"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <hr />
+                      <h5>
+                        Recent articles
+                      </h5>
+                    </div>
+                  </div>,
+                  <div />,
+                  <br />,
+                ],
+                "className": "body-section",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      undefined,
+                      <div
+                        className="bottom-details"
+                      >
+                        <div>
+                          <Rating
+                            ratings={0}
+                          />
+                        </div>
+                        <div
+                          className="ratings"
+                        >
+                          <span>
+                            Rated by:
+                          </span>
+                        </div>
+                        <div
+                          className="glow"
+                        >
+                          <Glow
+                            active={true}
+                          />
+                          <span
+                            className="likesCount"
+                          />
+                        </div>
+                      </div>,
+                      <div
+                        className="line"
+                      />,
+                    ],
+                    "className": "article-section",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <div>
+                            <Rating
+                              ratings={0}
+                            />
+                          </div>,
+                          <div
+                            className="ratings"
+                          >
+                            <span>
+                              Rated by:
+                            </span>
+                          </div>,
+                          <div
+                            className="glow"
+                          >
+                            <Glow
+                              active={true}
+                            />
+                            <span
+                              className="likesCount"
+                            />
+                          </div>,
+                        ],
+                        "className": "bottom-details",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <Rating
+                              ratings={0}
+                            />,
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "ratings": 0,
+                            },
+                            "ref": null,
+                            "rendered": null,
+                            "type": [Function],
+                          },
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <span>
+                              Rated by:
+                            </span>,
+                            "className": "ratings",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Rated by:",
+                            },
+                            "ref": null,
+                            "rendered": "Rated by:",
+                            "type": "span",
+                          },
+                          "type": "div",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <Glow
+                                active={true}
+                              />,
+                              <span
+                                className="likesCount"
+                              />,
+                            ],
+                            "className": "glow",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "function",
+                              "props": Object {
+                                "active": true,
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": undefined,
+                                "className": "likesCount",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "span",
+                            },
+                          ],
+                          "type": "div",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "line",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="user-profile"
+                      >
+                        <img
+                          alt="user"
+                          className="user-image"
+                        />
+                        <br />
+                        <br />
+                        <h2 />
+                        <br />
+                        <h4>
+                          just now
+                        </h4>
+                        <br />
+                        <a
+                          href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                        >
+                          <button
+                            className="btn edit-btn btn-secondary"
+                            type="submit"
+                          >
+                            edit
+                          </button>
+                        </a>
+                        <button
+                          className="btn follow-btn"
+                          type="submit"
+                        >
+                          follow
+                        </button>
+                        <br />
+                        <br />
+                        <div
+                          className="social-media"
+                        >
+                          <i
+                            className="fab fa-4x fa-facebook-square facebook"
+                          />
+                          <i
+                            className="fab fa-4x fa-twitter-square twitter"
+                          />
+                        </div>
+                      </div>,
+                      <div>
+                        <hr />
+                        <h5>
+                          tags
+                        </h5>
+                        <div
+                          className="tag-buttons"
+                        >
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              checked={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio disabled"
+                          >
+                            <input
+                              disabled={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              checked={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio disabled"
+                          >
+                            <input
+                              disabled={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              checked={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio"
+                          >
+                            <input
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                          <div
+                            className="radio disabled"
+                          >
+                            <input
+                              disabled={true}
+                              name="optradio"
+                              type="radio"
+                            />
+                          </div>
+                        </div>
+                      </div>,
+                      <div>
+                        <hr />
+                        <h5>
+                          Recent articles
+                        </h5>
+                      </div>,
+                    ],
+                    "className": "user-section",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <img
+                            alt="user"
+                            className="user-image"
+                          />,
+                          <br />,
+                          <br />,
+                          <h2 />,
+                          <br />,
+                          <h4>
+                            just now
+                          </h4>,
+                          <br />,
+                          <a
+                            href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                          >
+                            <button
+                              className="btn edit-btn btn-secondary"
+                              type="submit"
+                            >
+                              edit
+                            </button>
+                          </a>,
+                          <button
+                            className="btn follow-btn"
+                            type="submit"
+                          >
+                            follow
+                          </button>,
+                          <br />,
+                          <br />,
+                          <div
+                            className="social-media"
+                          >
+                            <i
+                              className="fab fa-4x fa-facebook-square facebook"
+                            />
+                            <i
+                              className="fab fa-4x fa-twitter-square twitter"
+                            />
+                          </div>,
+                        ],
+                        "className": "user-profile",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "user",
+                            "className": "user-image",
+                            "src": undefined,
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": undefined,
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "h2",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "just now",
+                          },
+                          "ref": null,
+                          "rendered": "just now",
+                          "type": "h4",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": <button
+                              className="btn edit-btn btn-secondary"
+                              type="submit"
+                            >
+                              edit
+                            </button>,
+                            "href": "http://heimdal-frontend.herokuapp.com/articles/update?id=undefined",
+                          },
+                          "ref": Object {
+                            "current": null,
+                          },
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "edit",
+                              "className": "btn edit-btn btn-secondary",
+                              "type": "submit",
+                            },
+                            "ref": null,
+                            "rendered": "edit",
+                            "type": "button",
+                          },
+                          "type": "a",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "follow",
+                            "className": "btn follow-btn",
+                            "type": "submit",
+                          },
+                          "ref": Object {
+                            "current": null,
+                          },
+                          "rendered": "follow",
+                          "type": "button",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "br",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <i
+                                className="fab fa-4x fa-facebook-square facebook"
+                              />,
+                              <i
+                                className="fab fa-4x fa-twitter-square twitter"
+                              />,
+                            ],
+                            "className": "social-media",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "fab fa-4x fa-facebook-square facebook",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "i",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "className": "fab fa-4x fa-twitter-square twitter",
+                              },
+                              "ref": null,
+                              "rendered": null,
+                              "type": "i",
+                            },
+                          ],
+                          "type": "div",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <hr />,
+                          <h5>
+                            tags
+                          </h5>,
+                          <div
+                            className="tag-buttons"
+                          >
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                checked={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>
+                            <div
+                              className="radio disabled"
+                            >
+                              <input
+                                disabled={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                checked={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>
+                            <div
+                              className="radio disabled"
+                            >
+                              <input
+                                disabled={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                checked={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>
+                            <div
+                              className="radio"
+                            >
+                              <input
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>
+                            <div
+                              className="radio disabled"
+                            >
+                              <input
+                                disabled={true}
+                                name="optradio"
+                                type="radio"
+                              />
+                            </div>
+                          </div>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "hr",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "tags",
+                          },
+                          "ref": null,
+                          "rendered": "tags",
+                          "type": "h5",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": Array [
+                              <div
+                                className="radio"
+                              >
+                                <input
+                                  checked={true}
+                                  name="optradio"
+                                  type="radio"
+                                />
+                              </div>,
+                              <div
+                                className="radio"
+                              >
+                                <input
+                                  name="optradio"
+                                  type="radio"
+                                />
+                              </div>,
+                              <div
+                                className="radio disabled"
+                              >
+                                <input
+                                  disabled={true}
+                                  name="optradio"
+                                  type="radio"
+                                />
+                              </div>,
+                              <div
+                                className="radio"
+                              >
+                                <input
+                                  checked={true}
+                                  name="optradio"
+                                  type="radio"
+                                />
+                              </div>,
+                              <div
+                                className="radio"
+                              >
+                                <input
+                                  name="optradio"
+                                  type="radio"
+                                />
+                              </div>,
+                              <div
+                                className="radio disabled"
+                              >
+                                <input
+                                  disabled={true}
+                                  name="optradio"
+                                  type="radio"
+                                />
+                              </div>,
+                              <div
+                                className="radio"
+                              >
+                                <input
+                                  checked={true}
+                                  name="optradio"
+                                  type="radio"
+                                />
+                              </div>,
+                              <div
+                                className="radio"
+                              >
+                                <input
+                                  name="optradio"
+                                  type="radio"
+                                />
+                              </div>,
+                              <div
+                                className="radio disabled"
+                              >
+                                <input
+                                  disabled={true}
+                                  name="optradio"
+                                  type="radio"
+                                />
+                              </div>,
+                            ],
+                            "className": "tag-buttons",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <input
+                                  checked={true}
+                                  name="optradio"
+                                  type="radio"
+                                />,
+                                "className": "radio",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "checked": true,
+                                  "name": "optradio",
+                                  "type": "radio",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "input",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <input
+                                  name="optradio"
+                                  type="radio"
+                                />,
+                                "className": "radio",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "name": "optradio",
+                                  "type": "radio",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "input",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <input
+                                  disabled={true}
+                                  name="optradio"
+                                  type="radio"
+                                />,
+                                "className": "radio disabled",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "disabled": true,
+                                  "name": "optradio",
+                                  "type": "radio",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "input",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <input
+                                  checked={true}
+                                  name="optradio"
+                                  type="radio"
+                                />,
+                                "className": "radio",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "checked": true,
+                                  "name": "optradio",
+                                  "type": "radio",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "input",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <input
+                                  name="optradio"
+                                  type="radio"
+                                />,
+                                "className": "radio",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "name": "optradio",
+                                  "type": "radio",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "input",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <input
+                                  disabled={true}
+                                  name="optradio"
+                                  type="radio"
+                                />,
+                                "className": "radio disabled",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "disabled": true,
+                                  "name": "optradio",
+                                  "type": "radio",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "input",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <input
+                                  checked={true}
+                                  name="optradio"
+                                  type="radio"
+                                />,
+                                "className": "radio",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "checked": true,
+                                  "name": "optradio",
+                                  "type": "radio",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "input",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <input
+                                  name="optradio"
+                                  type="radio"
+                                />,
+                                "className": "radio",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "name": "optradio",
+                                  "type": "radio",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "input",
+                              },
+                              "type": "div",
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": <input
+                                  disabled={true}
+                                  name="optradio"
+                                  type="radio"
+                                />,
+                                "className": "radio disabled",
+                              },
+                              "ref": null,
+                              "rendered": Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "disabled": true,
+                                  "name": "optradio",
+                                  "type": "radio",
+                                },
+                                "ref": null,
+                                "rendered": null,
+                                "type": "input",
+                              },
+                              "type": "div",
+                            },
+                          ],
+                          "type": "div",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <hr />,
+                          <h5>
+                            Recent articles
+                          </h5>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {},
+                          "ref": null,
+                          "rendered": null,
+                          "type": "hr",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Recent articles",
+                          },
+                          "ref": null,
+                          "rendered": "Recent articles",
+                          "type": "h5",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "br",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Single Article Component Test Suite <ReadSingleArticlePresentationError /> should render the ReadSingleArticleError component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ReadSingleArticleError />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3>
+          Sorry This Article
+          <br />
+          Does Not Exist
+        </h3>,
+        <br />,
+        <div>
+          <a
+            to="/"
+          >
+            <div>
+              ..go back Home....
+            </div>
+          </a>
+        </div>,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Sorry This Article",
+            <br />,
+            "Does Not Exist",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Sorry This Article",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "br",
+          },
+          "Does Not Exist",
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <a
+            to="/"
+          >
+            <div>
+              ..go back Home....
+            </div>
+          </a>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div>
+              ..go back Home....
+            </div>,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "..go back Home....",
+            },
+            "ref": null,
+            "rendered": "..go back Home....",
+            "type": "div",
+          },
+          "type": "a",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Sorry This Article
+            <br />
+            Does Not Exist
+          </h3>,
+          <br />,
+          <div>
+            <a
+              to="/"
+            >
+              <div>
+                ..go back Home....
+              </div>
+            </a>
+          </div>,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Sorry This Article",
+              <br />,
+              "Does Not Exist",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Sorry This Article",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "Does Not Exist",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <a
+              to="/"
+            >
+              <div>
+                ..go back Home....
+              </div>
+            </a>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div>
+                ..go back Home....
+              </div>,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "..go back Home....",
+              },
+              "ref": null,
+              "rendered": "..go back Home....",
+              "type": "div",
+            },
+            "type": "a",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

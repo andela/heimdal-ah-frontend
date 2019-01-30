@@ -10,7 +10,11 @@ import './CreateArticle.scss';
 import { createArticleAction } from '../../../../actions/articleActions/CreateArticle/createArticleActions';
 
 /**
- * @description - CreateArticle Class
+ * @description - Creates article for a user
+ * @param {props} updateArticlesStatus - the status returned from dispatching updateArticles action
+ * @param {props} title - the article title
+ * @param {props} body - the article body
+ * @param {props} discription- description of article
  */
 class CreateArticle extends React.Component {
   constructor(props) {
@@ -32,11 +36,11 @@ class CreateArticle extends React.Component {
  */
   onHandleSubmit(e) {
     e.preventDefault();
-    const { title, body } = this.state;
+    const { title, body, description } = this.state;
     const articleDetails = {
       title,
       body,
-      description: body.substring(0, 100),
+      description: description || body.substring(0, 100),
     };
 
     const isEmpty = checkArticleDetails(articleDetails);
@@ -81,12 +85,11 @@ class CreateArticle extends React.Component {
     const { status } = this.props;
     const { alert } = this.state;
 
-
     return (
       <Fragment>
         {status === 'SUCCESS' && <Alert type='success' title='Article was posted' message='your Article was published successfully' /> && <Redirect to='/' />}
         {alert === 'FAILURE' && <Alert type='warning' title='All fields should be filled' message='Error : Article was not posted' />}
-        {status === 'FAILURE' && <Alert type='success' title='Article was posted' message='server error' />}
+        {status === 'FAILURE' && <Alert type='success' title='user should be logged in' message='sever error' /> && <Redirect to='/login' />}
         <Button type='article' label='Post Article' Class='update-articles __button' onClick={e => this.onHandleSubmit(e)} />
         <div className='container'>
           <br />
@@ -130,7 +133,7 @@ const mapStateToprops = state => ({
   status: state.createArticleReducer.status,
 });
 
-const matchDispatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(
     {
       createArticleAction,
@@ -140,4 +143,4 @@ const matchDispatchToProps = dispatch => ({
 });
 
 
-export default connect(mapStateToprops, matchDispatchToProps)(CreateArticle);
+export default connect(mapStateToprops, mapDispatchToProps)(CreateArticle);
