@@ -15,14 +15,12 @@ export const reportArticle = (reportData = {}, toggleModal, flashMessage) => (di
         dispatch(() => {
           toggleModal();
           return {
-            type: 'ACTIONS.TOGGLE_MODAL',
+            type: ACTIONS.TOGGLE_MODAL,
           };
         });
       }, 200);
     })
     .catch((errors = {}) => {
-      console.log(errors);
-      console.log(errors.response);
       const { response = {}, request } = errors;
 
       const data = {

@@ -19,4 +19,5 @@ export const ACTIONS = keyMirror({
   FLASH_SUCCESS_MSG: null,
 
   TOGGLE_LOADER: null,
+  TOGGLE_MODAL: null,
 });
