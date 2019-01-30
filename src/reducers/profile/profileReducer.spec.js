@@ -23,11 +23,10 @@ describe('Profile Reducer Test Suite', () => {
   };
 
   it('should return new state containing profile', () => {
-    const state = profileReducer(initialState,
-      {
-        type: 'GET_PROFILE',
-        profile,
-      });
+    const state = profileReducer(initialState, {
+      type: 'GET_PROFILE',
+      profile,
+    });
     expect(state).toEqual({
       articles: {},
       error: '',
@@ -36,11 +35,10 @@ describe('Profile Reducer Test Suite', () => {
   });
 
   it('should return new state containing error', () => {
-    const state = profileReducer(initialState,
-      {
-        type: 'GETTING_PROFILE_ERROR',
-        error: 'Something went wrong',
-      });
+    const state = profileReducer(initialState, {
+      type: 'GETTING_PROFILE_ERROR',
+      error: 'Something went wrong',
+    });
     expect(state).toEqual({
       articles: {},
       error: 'Something went wrong',
@@ -49,11 +47,10 @@ describe('Profile Reducer Test Suite', () => {
   });
 
   it('should return new state containing articles', () => {
-    const state = profileReducer(initialState,
-      {
-        type: 'GET_ARTICLES_BY_AUTHOR',
-        articles,
-      });
+    const state = profileReducer(initialState, {
+      type: 'GET_ARTICLES_BY_AUTHOR',
+      articles,
+    });
     expect(state).toEqual({
       articles,
       error: '',
