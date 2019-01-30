@@ -1,7 +1,7 @@
+/* eslint-disable react/no-access-state-in-setstate */
 /* eslint-disable no-nested-ternary */
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { FormControl } from 'react-bootstrap';
 import searchArticleByAuthor from '../../../actions/SearchArticles/searchArticlesByAuthorActions';
 import searchArticleByTitle from '../../../actions/SearchArticles/searchArticlesByTitleActions';
 import searchArticleByTags from '../../../actions/SearchArticles/earchArticlesByTagsActions';
@@ -16,13 +16,17 @@ import './SearchArticles.scss';
 * @param {props} ratings - average rating for the article
 * @returns {component} Component
 */
-class SearchArticles extends Component {
+export class SearchArticles extends Component {
   constructor(props) {
     super(props);
     this.state = {
       displayInput: false,
       query: null,
     };
+    this.onHandleChange = this.onHandleChange.bind(this);
+    this.onKeyPress = this.onKeyPress.bind(this);
+    this.onButtonClick = this.onButtonClick.bind(this);
+    this.searchPopUp = React.createRef();
   }
 
   /**
@@ -49,12 +53,22 @@ class SearchArticles extends Component {
       [e.target.name]: e.target.value,
     });
     setTimeout(() => {
-      this.props.actions(searchArticleByAuthor(this.state.query));
-      this.props.actions(searchArticleByTitle(this.state.query));
-      this.props.actions(searchArticleByTags(this.state.query));
+      if (this.state.query !== null) {
+        this.props.actions(searchArticleByAuthor(this.state.query));
+        this.props.actions(searchArticleByTitle(this.state.query));
+        this.props.actions(searchArticleByTags(this.state.query));
+      }
     }, 1);
     // this.props.actions(getArticlesByAuthoor(query));
     // this.props.actions(getArticlesByTags(query));
+  }
+
+  onKeyPress() {
+    this.setState({ displayInput: true });
+  }
+
+  onButtonClick() {
+    this.setState({ displayInput: true });
   }
 
   /**
@@ -62,126 +76,29 @@ class SearchArticles extends Component {
 * @returns {component} the rendered component
 */
   render() {
-    const { displayInput } = this.state;
-    return (
-      <Fragment>
-        <form className="header-form form-inline my-2 my-lg-0">
-          <div className={displayInput ? '' : 'header-input'}>
-            <FormControl
-              className='form-control mr-sm-2'
-              placeholder='Search....'
-              name='query'
-              value={this.state.query}
-              onChange={e => this.onHandleChange(e)}
-            />
-          </div>
-          <div
-            role="searchbox"
-            onKeyPress={() => this.setState({ displayInput: !displayInput })}
-            onClick={() => this.setState({ displayInput: !displayInput })}
-            className='search_icon'
-            tabIndex="-1"
-          >
-            <i className="fas fa-search" />
-          </div>
-        </form>
-        {this.props.articlesByAuthorStatus === 'SUCCESS' ? (
-          <div className='search-articles'>
-            <br />
-            <table>
-              <tbody>
-                <tr>
-                  <th>
-                    Title
-                  </th>
-                  <th>
-                    Author
-                  </th>
-                  <th>
-                    Tags
-                  </th>
-                </tr>
-                {this.props.articlesByAuthor.map(article => (
-                  <tr className='search-articles' key={article.id}>
-                    <td>
-                      <a href={`https://heimdal-frontend.herokuapp.com/${article.user.profile.username}/${article.slug}`}>{article.title}</a>
-                    </td>
-                    <td>
-                      {article.user.profile.username}
-                    </td>
-                  </tr>
-                ))
-                }
-              </tbody>
-            </table>
-          </div>
-        ) : this.props.articlesByTitleStatus === 'SUCCESS' ? (
-          <div className='search-articles'>
-            <br />
-            <table>
-              <tbody>
-                <tr>
-                  <th>
-                    Title
-                  </th>
-                  <th>
-                    Author
-                  </th>
-                  <th>
-                    Tags
-                  </th>
-                </tr>
-                {this.props.articlesByTitle.map(article => (
-                  <tr className='search-articles' key={article.id}>
-                    <td>
-                      <a href={`https://heimdal-frontend.herokuapp.com/articles/${article.slug}`}>{article.title}</a>
-                    </td>
-                    <td>
-                      Joshua
-                    </td>
-                  </tr>
-                ))
-                }
-              </tbody>
-            </table>
-          </div>
-        ) : this.props.articlesByTagsStatus === 'SUCCESS' ? (
-          <div className='search-articles'>
-            <br />
-            <table>
-              <tbody>
-                <tr>
-                  <th>
-                    Title
-                  </th>
-                  <th>
-                    Author
-                  </th>
-                  <th>
-                    Tags
-                  </th>
-                </tr>
-                {this.props.articlesByTags.map(article => (
-                  <tr className='search-articles' key={article.id}>
-                    <td>
-                      <a href={`https://heimdal-frontend.herokuapp.com/articles/${article.article.slug}`}>{article.article.title}</a>
-                    </td>
-                    <td>
-                      Joshua
-                    </td>
-                    <td>
-                      {article.tag.tagName}
-                    </td>
-                  </tr>
-                ))
-                }
-              </tbody>
-            </table>
-          </div>
-        ) : ''
-        }
-      </Fragment>
-    );
+    const { displayInput, query } = this.state;
+    const {
+      articlesByAuthorStatus,
+      articlesByAuthor,
+      articlesByTitle,
+      articlesByTitleStatus,
+      articlesByTagsStatus,
+      articlesByTags,
+    } = this.props;
+    return this.props.children({
+      displayInput,
+      query,
+      onKeypress: this.onKeyPress,
+      onButtonClick: this.onButtonClick,
+      state: this.state,
+      articlesByAuthorStatus,
+      articlesByAuthor,
+      articlesByTitle,
+      articlesByTitleStatus,
+      articlesByTagsStatus,
+      articlesByTags,
+      onHandleChange: this.onHandleChange,
+    });
   }
 }
 

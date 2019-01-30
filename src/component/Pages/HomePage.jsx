@@ -1,13 +1,15 @@
+/* eslint-disable import/no-named-as-default */
 import React, { Fragment } from 'react';
 import Rating from '../ui/Rating/Rating';
 import Button from '../ui/Buttons/Button';
 import { DemoArticleCoponentWithGlowState } from '../ui/Buttons/glow/DemoArticleCoponentWithGlowState';
-import SearchArticles from '../ui/searchForm/SearchArticles';
+// import SearchArticles from '../ui/searchForm/SearchArticles';
 // import ArticleCardVertical from '../ui/cards/BookmarksCards';
 
 const HomePage = () => (
-  <div>
-    <Fragment>
+
+  <Fragment>
+    <div>
       <br />
       <br />
       <br />
@@ -28,85 +30,85 @@ const HomePage = () => (
       <br />
       <br />
       <br />
-    </Fragment>
-    <SearchArticles />
-    <h2 className="lead mt-5">
-      Welcome to the Home page...
-      <div>
-        <br />
-        <br />
-        <br />
-        <Rating className="fa fa-star" ratings={2.5} />
-        <Button type="signup" label="Signup" />
-        <br />
-        <br />
-        <br />
-        <Button type="login" label="Login" />
-        <br />
-        <br />
-        <br />
-        <Button type="login2" label="Login" />
-        <br />
-        <br />
-        <br />
-        <Button type="signup2" label="Sign Up" />
-        <br />
-        <br />
-        <br />
-        <Button type="follow" label="Follow" />
-        <br />
-        <br />
-        <br />
-        <Button type="tag" label="Technology" />
-        <br />
-        <br />
-        <br />
-        <Button type="report" label="Report Article" />
-        <br />
-        <br />
-        <br />
-        <Button type="notifications" label="load older..." />
-        <br />
-        <br />
-        <br />
-        <Button type="article" label="Post Article" />
-        <br />
-        <br />
-        <br />
-        <Button type="save-profile" label="Save Profile" />
-        <br />
-        <br />
-        <br />
-        <Button type="cancel" label="Cancel" />
-        <br />
-        <br />
-        <br />
-        <Button type="reply" label="Add Reply" />
-        <br />
-        <br />
-        <br />
-        <Button type="comment" label="Add Comment" />
-        <br />
-        <br />
-        <br />
-        <Button type="stories" label="All Stories" />
-        <div style={{ background: '#606E86', height: '40vh', padding: '1em' }}>
-          <Button type="subscribe" label="Subscribe" />
+      <h2 className="lead mt-5">
+        Welcome to the Home page...
+        <div>
           <br />
           <br />
           <br />
-          <Button type="edit-profile" label="Edit" />
+          <Rating className="fa fa-star" ratings={2.5} />
+          <Button type="signup" label="Signup" />
           <br />
           <br />
           <br />
-          <Button type="publish" label="Publish" />
+          <Button type="login" label="Login" />
+          <br />
+          <br />
+          <br />
+          <Button type="login2" label="Login" />
+          <br />
+          <br />
+          <br />
+          <Button type="signup2" label="Sign Up" />
+          <br />
+          <br />
+          <br />
+          <Button type="follow" label="Follow" />
+          <br />
+          <br />
+          <br />
+          <Button type="tag" label="Technology" />
+          <br />
+          <br />
+          <br />
+          <Button type="report" label="Report Article" />
+          <br />
+          <br />
+          <br />
+          <Button type="notifications" label="load older..." />
+          <br />
+          <br />
+          <br />
+          <Button type="article" label="Post Article" />
+          <br />
+          <br />
+          <br />
+          <Button type="save-profile" label="Save Profile" />
+          <br />
+          <br />
+          <br />
+          <Button type="cancel" label="Cancel" />
+          <br />
+          <br />
+          <br />
+          <Button type="reply" label="Add Reply" />
+          <br />
+          <br />
+          <br />
+          <Button type="comment" label="Add Comment" />
+          <br />
+          <br />
+          <br />
+          <Button type="stories" label="All Stories" />
+          <div style={{ background: '#606E86', height: '40vh', padding: '1em' }}>
+            <Button type="subscribe" label="Subscribe" />
+            <br />
+            <br />
+            <br />
+            <Button type="edit-profile" label="Edit" />
+            <br />
+            <br />
+            <br />
+            <Button type="publish" label="Publish" />
+          </div>
         </div>
-      </div>
-      <div>
-        <DemoArticleCoponentWithGlowState />
-      </div>
-    </h2>
-  </div>
+        <div>
+          <DemoArticleCoponentWithGlowState />
+        </div>
+      </h2>
+
+    </div>
+  </Fragment>
 );
 
 export default HomePage;

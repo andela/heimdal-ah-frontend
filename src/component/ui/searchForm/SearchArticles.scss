@@ -6,9 +6,15 @@
         background-color: $white-color;
         width: 30%;
         color: $search-articles__tr--bg-color;
-        font-weight: bold;
+        // font-weight: bold;
         font-size: 17px;
-        font-family: $font-family__cardo;
+        font-family: 'Roboto, sans-serif';
+        position: absolute;
+        right: 4.5%;
+        top: 3.6em;
+        // border: 1px solid black;
+        z-index: 2;
+        box-shadow: 2px 2px 6px rgb(136, 134, 134);
     }
     
     td, th {
@@ -24,12 +30,12 @@
         text-decoration: none;
     }
     
-    tr:nth-child(even) {
-        color: $white-color;
-        background-color: $search-articles__tr--bg-color;
-    }
+    // tr:nth-child(even) {
+    //     color: $white-color;
+    //     background-color: $search-articles__tr--bg-color;
+    // }
     
-    tr:nth-child(even) a {
-        color: $white-color;
-    }
+    // tr:nth-child(even) a {
+    //     color: $white-color;
+    // }
 }

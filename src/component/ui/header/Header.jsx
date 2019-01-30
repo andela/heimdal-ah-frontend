@@ -6,8 +6,9 @@ import './Header.scss';
 import NavItems from '../navItems/NavItems';
 import ActiveUser from '../activeuser/ActiveUser';
 import Logo from '../logo/Logo';
-import SearchForm from '../searchForm/SearchForm';
+// import SearchForm from '../searchForm/SearchForm';
 import HeaderButton from '../headerButton/HeaderButton';
+import SearchArticlesPresentation from '../searchForm/SearchArticlesPresentation';
 
 /**
  * @param {boolean} isAuthenticated should be a boolean
@@ -23,7 +24,8 @@ const Header = (props) => {
             <NavItems />
           </ul>
           {isAuthenticated ? <ActiveUser /> : <HeaderButton />}
-          <SearchForm />
+          {/* <SearchForm /> */}
+          <SearchArticlesPresentation />
         </div>
       </nav>
     </header>

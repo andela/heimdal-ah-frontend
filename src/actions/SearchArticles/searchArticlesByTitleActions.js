@@ -4,7 +4,7 @@ import {
 } from '../actionTypes';
 import ActionResponse from '../actionResponse';
 
-const searchArticleByTitle = query => dispatch => instance.get(`/articles_search/title?title=${query}`).then((response) => {
+const searchArticleByTitle = query => dispatch => instance.get(`/articles_search/title?title=${query}&offset=0&size=7`).then((response) => {
   if (response.status === 200) {
     dispatch(ActionResponse(ACTIONS.SEARCH_ARTICLES_BY_TITLE_SUCCESS, response.data.articles.rows));
     // dispatch(ActionResponse(ACTIONS.RESET_SEARCH_ARTICLES_STATE));

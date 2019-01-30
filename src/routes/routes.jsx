@@ -8,6 +8,7 @@ import HomePage from '../component/Pages/HomePage.jsx';
 import SocialAuth from '../component/ui/SocialAuth/SocialAuth';
 import PasswordResetPresentation from '../component/Pages/PasswordResetPage/PasswordResetPresentation';
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
+import searchView from '../component/ui/searchForm/searchView.jsx';
 
 
 const Routes = () => (
@@ -19,6 +20,7 @@ const Routes = () => (
         <Route exact path='/login' component={LoginPage} />
         <Route exact path='/resetpassword' component={PasswordResetPresentation} />
         <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
+        <Route exact path='/search' component={searchView} />
         <Route component={NotFound} />
       </Switch>
       <ReduxToastr />

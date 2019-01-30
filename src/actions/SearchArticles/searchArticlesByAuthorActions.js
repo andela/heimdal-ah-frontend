@@ -4,7 +4,7 @@ import {
 } from '../actionTypes';
 import ActionResponse from '../actionResponse';
 
-const searchArticleByAuthor = query => dispatch => instance.get(`/articles_search/author?author=${query}`).then((response) => {
+const searchArticleByAuthor = query => dispatch => instance.get(`/articles_search/author?author=${query}&offset=0&size=7`).then((response) => {
   if (response.status === 200) {
     dispatch(ActionResponse(ACTIONS.SEARCH_ARTICLES_BY_AUTHOR_SUCCESS,
       response.data.articles.rows));
