@@ -19,6 +19,7 @@ describe('Test article reducer', () => {
       });
     expect(state).toEqual({
       articles: {
+        isLoading: false,
         count: MockData.articles.count,
         rows: MockData.articles.rows,
       },
@@ -39,11 +40,10 @@ describe('Test article reducer', () => {
       });
     expect(state).toEqual({
       articles: {
-        isLoading: false,
+        isLoading: true,
         count: 0,
         rows: [],
       },
-      isLoading: true,
     });
   });
   it('return default state', () => {

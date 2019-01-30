@@ -30,9 +30,9 @@ export class Article extends Component {
    );
 
    render() {
-     const { isLoading } = this.props;
+     const { isLoading } = this.props.articles;
      if (isLoading) {
-       return <LoadingSpinner />;
+       return <LoadingSpinner isLoading={isLoading} />;
      }
      return (
        <div>
