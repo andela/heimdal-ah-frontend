@@ -4,6 +4,7 @@ const FormInput = (props = {}) => {
   const {
     errors = {}, name, username, type, classname, placeholder, onChange,
   } = props;
+
   return (
     <div className="form-group">
       <input
