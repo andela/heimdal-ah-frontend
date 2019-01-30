@@ -34,8 +34,8 @@ export const validateReport = (data) => {
   return { ...validation.errors.all() };
 };
 
-const validateLogin = (inputs) => {
-  const { email, password } = inputs;
+export const validateLogin = (input) => {
+  const { email, password } = input;
 
   const data = {
     email,
@@ -43,26 +43,17 @@ const validateLogin = (inputs) => {
   };
 
   const rules = {
-    email: 'required',
+    email: 'required|email',
     password: 'required',
   };
 
   const validation = new Validator(data, rules);
 
-  const hasErrors = true;
-
   if (validation.passes()) {
-    return {
-      hasErrors: false,
-    };
+    return null;
   }
 
-  const errors = validation.errors.all();
-
   return {
-    hasErrors,
-    errors,
+    errors: validation.errors.all(),
   };
 };
-
-export default validateLogin;
