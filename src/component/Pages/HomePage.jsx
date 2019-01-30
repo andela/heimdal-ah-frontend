@@ -8,7 +8,7 @@ const HomePage = () => (
     <h2 className="text-center">Featured</h2>
     <div className="row">
       <div className="col-md-12">
-        <ModalButton>
+        <ModalButton label="Report" Class="btn-danger">
           <ReportArticle />
         </ModalButton>
       </div>

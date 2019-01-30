@@ -12,6 +12,7 @@ import LoadingSpinner from '../../loadingSpinners/LoadingSpinner';
 import MainError from '../../errors/MainError';
 import { validateReport } from '../../../../helpers/validateInputs';
 import { reportArticle } from '../../../../actions/articleActions';
+import ToasterAlert from '../../Alert/Alert';
 
 /**
  * @description It wraps its children with a layout style
@@ -23,6 +24,7 @@ class ReportArticle extends Component {
     context: '',
     reportType: 'spam',
     errors: {},
+    showAlert: false,
   };
 
   componentWillReceiveProps(nextProps) {
@@ -38,9 +40,17 @@ class ReportArticle extends Component {
     }
   };
 
+  flashMessage = () => {
+    this.setState({ showAlert: true });
+
+    setTimeout(() => {
+      this.setState({ showAlert: false });
+    }, 10);
+  };
+
   handleArticleReport = (event) => {
     event.preventDefault();
-    const { actions, history } = this.props;
+    const { actions, toggle } = this.props;
     actions.toggleLoader();
 
     const { context, reportType } = this.state;
@@ -54,17 +64,21 @@ class ReportArticle extends Component {
 
     reportData.articleId = this.props.articleId;
     actions.clearErrors();
-    return actions.reportArticle(reportData, history);
+    return actions.reportArticle(reportData, toggle, this.flashMessage);
   };
 
   render() {
     const { errors = {}, isLoading } = this.props;
 
-    // console.log('=======================');
-    // console.log(this.props.isLoading);
-    // console.log('=======================');
     return (
       <div className="heimdal-report-form">
+        {this.state.showAlert && (
+          <ToasterAlert
+            type="success"
+            title="Article Reported"
+            message="Your report has been sent successfully"
+          />
+        )}
         <h1 className="form-title font-cardo text-center">Report this article</h1>
         <form className="heimdal-form" onSubmit={this.handleArticleReport} noValidate>
           <div className="font-cardo ph-30">
