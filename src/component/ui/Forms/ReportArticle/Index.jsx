@@ -1,10 +1,8 @@
 /* eslint-disable react/forbid-prop-types */
-
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import { setErrors, removeAnError, clearErrors } from '../../../../actions/errorActions';
 import { toggleLoader } from '../../../../actions/loaderActions';
@@ -45,7 +43,7 @@ class ReportArticle extends Component {
 
     setTimeout(() => {
       this.setState({ showAlert: false });
-    }, 10);
+    }, 100);
   };
 
   handleArticleReport = (event) => {
@@ -62,7 +60,7 @@ class ReportArticle extends Component {
       return actions.setErrors(errors);
     }
 
-    reportData.articleId = this.props.articleId;
+    reportData.articleId = this.props.articleId || 5;
     actions.clearErrors();
     return actions.reportArticle(reportData, toggle, this.flashMessage);
   };
@@ -133,15 +131,15 @@ class ReportArticle extends Component {
 }
 
 ReportArticle.defaultProps = {
-  context: '',
-  articleId: 5,
-  reportType: '',
   errors: {},
   isLoading: false,
 };
 
 ReportArticle.propTypes = {
-  // articleId: PropTypes.number.isRequired,
+  articleId: PropTypes.number.isRequired,
+  isLoading: PropTypes.bool,
+  errors: PropTypes.object,
+  toggle: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({

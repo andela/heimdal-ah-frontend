@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: `${process.env.BASE_URL_PROD}/api/v1` || 'https://heimdal-ah-staging.herokuapp.com/api/v1',
+  baseURL: `${process.env.BASE_URL_PROD}`,
   headers: {
     'Access-Control-Allow-Origin': '*',
   },

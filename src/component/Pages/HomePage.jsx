@@ -9,7 +9,7 @@ const HomePage = () => (
     <div className="row">
       <div className="col-md-12">
         <ModalButton label="Report" Class="btn-danger">
-          <ReportArticle />
+          <ReportArticle articleId={5} />
         </ModalButton>
       </div>
       <div className="col-md-3">

@@ -1,7 +1,6 @@
-// import axios from 'axios';
 import { ACTIONS } from './actionTypes';
 import errorResponse from '../utils/errorResponse';
-import axiosInstance from '../utils/axiosInstance';
+import axiosInstance from '../config/http';
 import { toggleLoader } from './loaderActions';
 
 export const reportArticle = (reportData = {}, toggleModal, flashMessage) => (dispatch) => {

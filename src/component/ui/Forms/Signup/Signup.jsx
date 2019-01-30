@@ -1,13 +1,16 @@
+/* eslint-disable react/forbid-prop-types */
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import { setErrors, removeAnError, clearErrors } from '../../../../actions/errorActions';
 import { signupUser } from '../../../../actions/authActions';
 import { validateSignup } from '../../../../helpers/validateInputs';
 import './Signup.scss';
 import SignupForm from './SignupForm';
+import { toggleLoader } from '../../../../actions/loaderActions';
 
 /**
  * @description - This class enables new users to Signup on the platform
@@ -42,7 +45,8 @@ export class Signup extends Component {
 
   handleSignup = (event) => {
     event.preventDefault();
-    this.setState({ isLoading: true });
+    const { actions, history, toggle: toggleModal } = this.props;
+    actions.toggleLoader();
 
     const {
       username, email, password, passwordConfirmation,
@@ -56,24 +60,43 @@ export class Signup extends Component {
     };
 
     const errors = validateSignup(signupData);
-    const { actions, history } = this.props;
 
     if (errors) {
-      this.setState({ isLoading: false });
+      actions.toggleLoader();
       return actions.setErrors(errors.errors);
     }
 
     actions.clearErrors();
-    return actions.signupUser(signupData, history);
+    return actions.signupUser(signupData, history, toggleModal);
   };
 
   render() {
-    return <SignupForm {...this.state} onChange={this.onChange} handleSignup={this.handleSignup} />;
+    const { isLoading } = this.props;
+    return (
+      <SignupForm
+        {...this.state}
+        isLoading={isLoading}
+        onChange={this.onChange}
+        handleSignup={this.handleSignup}
+      />
+    );
   }
 }
 
+Signup.defaultProps = {
+  errors: {},
+  isLoading: false,
+};
+
+Signup.propTypes = {
+  isLoading: PropTypes.bool,
+  errors: PropTypes.object,
+  toggle: PropTypes.func.isRequired,
+};
+
 const mapStateToProps = state => ({
   errors: state.errors,
+  isLoading: state.loader.isLoading,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -83,6 +106,7 @@ const mapDispatchToProps = dispatch => ({
       removeAnError,
       setErrors,
       clearErrors,
+      toggleLoader,
     },
     dispatch,
   ),

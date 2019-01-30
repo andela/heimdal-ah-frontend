@@ -4,7 +4,7 @@ import { Signup } from './Signup';
 import SignupForm from './SignupForm';
 
 describe('The Signup Component Test Suite', () => {
-  const wrapper = shallow(<Signup />);
+  const wrapper = shallow(<Signup toggle={() => {}} />);
   it('should render the <SignupForm /> Component', () => {
     expect(wrapper.length).toBe(1);
     expect(wrapper).toMatchSnapshot();
