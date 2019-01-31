@@ -33,4 +33,7 @@ export const ACTIONS = keyMirror({
   SET_ERRORS: null,
   CLEAR_ERRORS: null,
   REMOVE_AN_ERROR: null,
+  GETTING_PROFILE_ERROR: null,
+  GET_PROFILE: null,
+  GET_ARTICLES_BY_AUTHOR: null,
 });

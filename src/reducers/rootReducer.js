@@ -11,6 +11,7 @@ import {
   getarticleRating,
 } from './index';
 import errorsReducer from './errorsReducer';
+import profileReducer from './profile/profileReducer';
 
 const rootReducer = combineReducers({
   resetpassword: resetPassword,
@@ -22,6 +23,7 @@ const rootReducer = combineReducers({
   getarticlerating: getarticleRating,
   errors: errorsReducer,
   auth: authReducer,
+  profile: profileReducer,
 });
 
 export default rootReducer;

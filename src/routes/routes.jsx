@@ -8,6 +8,9 @@ import SocialAuth from '../component/ui/SocialAuth/SocialAuth';
 import PasswordResetPresentation from '../component/Pages/PasswordResetPage/PasswordResetPresentation';
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
 import SingleArticlePage from '../component/Pages/SingleArticlePage/SingleArticlePage';
+import Profile from '../component/Pages/Profile/Profile';
+import ProtectedRoute from './ProtectedRoute';
+
 
 const Routes = () => (
   <MainLayout>
@@ -18,6 +21,7 @@ const Routes = () => (
         <Route exact path='/articles/:identifier' component={SingleArticlePage} />
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
         <Route exact path='/update-password' component={UpdatePasswordPresentation} />
+        <ProtectedRoute exact path='/:username' component={Profile} />
         <Route component={NotFound} />
       </Switch>
       <ReduxToastr />
