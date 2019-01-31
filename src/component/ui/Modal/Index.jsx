@@ -36,6 +36,8 @@ class TriggerModal extends Component {
           isOpen={this.state.display}
           toggle={this.toggle}
           className={this.props.className}
+          size={this.props.size}
+          centered
         >
           <ModalHeader toggle={this.toggle} />
           <ModalBody>{this.props.children}</ModalBody>

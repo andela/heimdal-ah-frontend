@@ -63,7 +63,7 @@ const SigninForm = (props) => {
             <div className="p-2">
               {' '}
               <a
-                href={`${process.env.BASE_URL_PROD}/reset-password`}
+                href={`${process.env.BASE_URL_PROD}/api/v1/reset-password`}
               >
                 Forgot password?
               </a>

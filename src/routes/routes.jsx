@@ -7,7 +7,7 @@ import HomePage from '../component/Pages/HomePage.jsx';
 import SocialAuth from '../component/ui/SocialAuth/SocialAuth';
 import PasswordResetPresentation from '../component/Pages/PasswordResetPage/PasswordResetPresentation';
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
-
+import SingleArticlePage from '../component/Pages/SingleArticlePage/SingleArticlePage';
 
 const Routes = () => (
   <MainLayout>
@@ -15,6 +15,7 @@ const Routes = () => (
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/social-auth' component={SocialAuth} />
+        <Route exact path='/articles/:identifier' component={SingleArticlePage} />
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
         <Route exact path='/update-password' component={UpdatePasswordPresentation} />
         <Route component={NotFound} />
