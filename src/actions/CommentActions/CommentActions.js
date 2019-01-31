@@ -67,7 +67,6 @@ export function postArticleComment(identifier, data, imageUrl) {
   };
 }
 
-
 /**
  * Post an Article Comment(s) action using axios and dispatches the data
  * @param {integer} articleId - The article Id
