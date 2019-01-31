@@ -1,10 +1,14 @@
 import axios from 'axios';
 
-const instance = axios.create({
-  baseURL: 'https://heimdal-ah-staging.herokuapp.com/api/v1',
+const axiosInstance = axios.create({
+  baseURL: `${process.env.BASE_URL_PROD}/api/v1` || 'https://heimdal-ah-staging.herokuapp.com/api/v1',
   headers: {
     'Access-Control-Allow-Origin': '*',
   },
 });
 
-export default instance;
+export const setToken = (token) => {
+  axiosInstance.defaults.headers.common['access-token'] = token;
+};
+
+export default axiosInstance;

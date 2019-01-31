@@ -25,11 +25,7 @@ module.exports = {
   coverageDirectory: 'coverage-jest',
 
   // A list of reporter names that Jest uses when writing coverage reports
-  coverageReporters: [
-    'html',
-    'text',
-    'lcov',
-  ],
+  coverageReporters: ['html', 'text', 'lcov'],
 
   // An array of file extensions your modules use
   moduleFileExtensions: ['js', 'json', 'jsx'],
@@ -61,5 +57,4 @@ module.exports = {
 
   // Indicates whether each individual test should be reported during the run
   verbose: false,
-
 };

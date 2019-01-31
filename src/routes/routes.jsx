@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import ReduxToastr from 'react-redux-toastr';
-import LoginPage from '../component/Pages/LoginPage.jsx';
 import NotFound from '../component/Pages/NotFound.jsx';
 import MainLayout from '../component/Layout/MainLayout/MainLayout';
 import CreateArticle from '../component/Pages/articles/createArticle/CreateArticles';
@@ -12,6 +11,7 @@ import PasswordResetPresentation from '../component/Pages/PasswordResetPage/Pass
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
 import UpdateArticlesPresentation from '../component/Pages/articles/UpdateArticles/UpdateArticlesPresentation.jsx';
 import ReadSingleArticleError from '../component/Pages/articles/ReadSingleArticle/ReadSingleArticleError.jsx';
+// import ReadSingleArticlePresentation from '../component/Pages/articles/ReadSingleArticle/ReadSingleArticlePresentation.jsx';
 
 
 const Routes = () => (
@@ -20,13 +20,14 @@ const Routes = () => (
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/social-auth' component={SocialAuth} />
-        <Route exact path='/login' component={LoginPage} />
         <Route exact path='/articles/create' component={CreateArticle} />
         <Route exact path='/:username/articles/:slug' component={SingleArticlePage} />
         <Route exact path='/articles/:slug' component={ReadSingleArticleError} />
         <Route exact path='/articles/update' component={UpdateArticlesPresentation} />
         <Route exact path='/resetpassword' component={PasswordResetPresentation} />
         <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
+        <Route exact path='/reset-password' component={PasswordResetPresentation} />
+        <Route exact path='/update-password' component={UpdatePasswordPresentation} />
         <Route component={NotFound} />
       </Switch>
       <ReduxToastr />

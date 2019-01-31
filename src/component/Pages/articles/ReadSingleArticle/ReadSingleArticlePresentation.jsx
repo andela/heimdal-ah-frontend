@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable arrow-body-style */
 /* eslint-disable no-lone-blocks */
 /* eslint-disable no-unused-expressions */
@@ -8,9 +9,9 @@ import { Redirect } from 'react-router-dom';
 import TimeAgo from 'javascript-time-ago';
 import moment from 'moment';
 import english from 'javascript-time-ago/locale/en';
-import Rating from '../../../ui/Rating/Rating';
 import Glow from '../../../ui/Buttons/glow/Glow';
 import './ReadSingleArticle.scss';
+import ArticlesRating from '../../../ui/Rating/ArticlesRating';
 
 TimeAgo.addLocale(english);
 const timeAgo = new TimeAgo('en-US');
@@ -55,7 +56,7 @@ class ReadSingleArticlePresentation extends Component {
               { this.props.body }
               <div className='bottom-details'>
                 <div>
-                  <Rating />
+                  <ArticlesRating />
                 </div>
                 <div className='ratings'>
                   <span>Rated by:</span>

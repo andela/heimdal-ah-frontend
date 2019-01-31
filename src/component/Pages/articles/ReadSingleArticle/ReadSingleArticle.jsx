@@ -9,6 +9,7 @@ import './ReadSingleArticle.scss';
 import getArticleById from '../../../../actions/articleActions/getArticlesByIdActions';
 import decodeToken from '../../../../utils/decodeToken';
 import ReadSingleArticlePresentation from './ReadSingleArticlePresentation';
+import setArticleId from '../../../../utils/setArticleId';
 
 
 /**
@@ -64,9 +65,10 @@ export class ReadSingleArticle extends Component {
     const likesCount = this.state.singleArticle.likes && this.state.singleArticle.likes.length;
     const { user = {} } = this.state.singleArticle;
     const { profile = {} } = user;
-    localStorage.setItem('articleId', this.state.singleArticle.id);
     const { slug } = this.props.match.params;
     const { status } = this.props;
+
+    setArticleId(this.props.singleArticle.id);
 
 
     return (

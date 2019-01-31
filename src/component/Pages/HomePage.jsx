@@ -1,109 +1,115 @@
-import React, { Fragment } from 'react';
-import Rating from '../ui/Rating/Rating';
-import Button from '../ui/Buttons/Button';
-import NewArticles from './articles/createArticle/CreateArticles';
-import { DemoArticleCoponentWithGlowState } from '../ui/Buttons/glow/DemoArticleCoponentWithGlowState';
-// import ArticleCardVertical from '../ui/cards/BookmarksCards';
+import React from 'react';
+import ArticleCardHorizontal from '../ui/cards/ArticleCardHorizontal';
 
 const HomePage = () => (
-  <div>
-    <Fragment>
-      <br />
-      <br />
-      <br />
-      <a href={`${process.env.BASE_URL_PROD}/auth/facebook`}>
-        <Button type="facebook" label="Login with Facebook" />
-      </a>
-      <br />
-      <br />
-      <br />
-      <a href={`${process.env.BASE_URL_PROD}/auth_twitter/twitter`}><Button type="twitter" label="Login with Twitter" /></a>
-      <br />
-      <br />
-      <br />
-      <br />
-      <a href={`${process.env.BASE_URL_PROD}/auth/google`}>
-        <Button type="google" label="Login with Google" />
-      </a>
-      <br />
-      <br />
-      <br />
-    </Fragment>
-
-    <h2 className="lead mt-5">
-      Welcome to the Home page...
-      <div>
-        <Rating className="fa fa-star" ratings={2.5} />
-        <NewArticles />
-        <Button type="signup" label="Signup" />
-        <br />
-        <br />
-        <br />
-        <Button type="login" label="Login" />
-        <br />
-        <br />
-        <br />
-        <Button type="login2" label="Login" />
-        <br />
-        <br />
-        <br />
-        <Button type="signup2" label="Sign Up" />
-        <br />
-        <br />
-        <br />
-        <Button type="follow" label="Follow" />
-        <br />
-        <br />
-        <br />
-        <Button type="tag" label="Technology" />
-        <br />
-        <br />
-        <br />
-        <Button type="report" label="Report Article" />
-        <br />
-        <br />
-        <br />
-        <Button type="notifications" label="load older..." />
-        <br />
-        <br />
-        <br />
-        <Button type="article" label="Post Article" />
-        <br />
-        <br />
-        <br />
-        <Button type="save-profile" label="Save Profile" />
-        <br />
-        <br />
-        <br />
-        <Button type="cancel" label="Cancel" />
-        <br />
-        <br />
-        <br />
-        <Button type="reply" label="Add Reply" />
-        <br />
-        <br />
-        <br />
-        <Button type="comment" label="Add Comment" />
-        <br />
-        <br />
-        <br />
-        <Button type="stories" label="All Stories" />
-        <div style={{ background: '#606E86', height: '40vh', padding: '1em' }}>
-          <Button type="subscribe" label="Subscribe" />
-          <br />
-          <br />
-          <br />
-          <Button type="edit-profile" label="Edit" />
-          <br />
-          <br />
-          <br />
-          <Button type="publish" label="Publish" />
+  <div className="mt-5">
+    <h2 className="text-center">Featured</h2>
+    <div className="row">
+      <div className="col-md-3">
+        <ArticleCardHorizontal
+          articleTitle="An article Title"
+          articleImage="https://cdn-images-1.medium.com/max/1200/0*pgKJXXvrKJ-b8ztZ.jpg"
+          article="This is the article description"
+          userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3jX0asji2xGa96e7dpfNI30qEiEBOkr14S1XNlCy1B-6JxQ9"
+          username="Henperi"
+          updatedTime="15hrs ago"
+          commentCount="120"
+        />
+      </div>
+      <div className="col-md-3">
+        <ArticleCardHorizontal
+          articleTitle="An article Title"
+          articleImage="https://cdn-images-1.medium.com/max/1200/0*pgKJXXvrKJ-b8ztZ.jpg"
+          article="This is the article description"
+          userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3jX0asji2xGa96e7dpfNI30qEiEBOkr14S1XNlCy1B-6JxQ9"
+          username="Henperi"
+          updatedTime="15hrs ago"
+          commentCount="120"
+        />
+      </div>
+      <div className="col-md-3">
+        <ArticleCardHorizontal
+          articleTitle="An article Title"
+          articleImage="https://cdn-images-1.medium.com/max/1200/0*pgKJXXvrKJ-b8ztZ.jpg"
+          article="This is the article description"
+          userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3jX0asji2xGa96e7dpfNI30qEiEBOkr14S1XNlCy1B-6JxQ9"
+          username="Henperi"
+          updatedTime="15hrs ago"
+          commentCount="120"
+        />
+      </div>
+      <div className="col-md-3">
+        <ArticleCardHorizontal
+          articleTitle="An article Title"
+          articleImage="https://cdn-images-1.medium.com/max/1200/0*pgKJXXvrKJ-b8ztZ.jpg"
+          article="This is the article description"
+          userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3jX0asji2xGa96e7dpfNI30qEiEBOkr14S1XNlCy1B-6JxQ9"
+          username="Henperi"
+          updatedTime="15hrs ago"
+          commentCount="120"
+        />
+      </div>
+    </div>
+    <hr />
+    <div className="row">
+      <div className="col-md-10">
+        <div className="row">
+          <div className="col-md-4">
+            <ArticleCardHorizontal
+              articleTitle="An article Title"
+              articleImage="https://cdn-images-1.medium.com/max/1200/0*pgKJXXvrKJ-b8ztZ.jpg"
+              article="This is the article description"
+              userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3jX0asji2xGa96e7dpfNI30qEiEBOkr14S1XNlCy1B-6JxQ9"
+              username="Henperi"
+              updatedTime="15hrs ago"
+              commentCount="120"
+            />
+          </div>
+          <div className="col-md-4">
+            <ArticleCardHorizontal
+              articleTitle="An article Title"
+              articleImage="https://cdn-images-1.medium.com/max/1200/0*pgKJXXvrKJ-b8ztZ.jpg"
+              article="This is the article description"
+              userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3jX0asji2xGa96e7dpfNI30qEiEBOkr14S1XNlCy1B-6JxQ9"
+              username="Henperi"
+              updatedTime="15hrs ago"
+              commentCount="120"
+            />
+          </div>
+          <div className="col-md-4">
+            <ArticleCardHorizontal
+              articleTitle="An article Title"
+              articleImage="https://cdn-images-1.medium.com/max/1200/0*pgKJXXvrKJ-b8ztZ.jpg"
+              article="This is the article description"
+              userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3jX0asji2xGa96e7dpfNI30qEiEBOkr14S1XNlCy1B-6JxQ9"
+              username="Henperi"
+              updatedTime="15hrs ago"
+              commentCount="120"
+            />
+          </div>
+          <div className="col-md-4">
+            <ArticleCardHorizontal
+              articleTitle="An article Title"
+              articleImage="https://cdn-images-1.medium.com/max/1200/0*pgKJXXvrKJ-b8ztZ.jpg"
+              article="This is the article description"
+              userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3jX0asji2xGa96e7dpfNI30qEiEBOkr14S1XNlCy1B-6JxQ9"
+              username="Henperi"
+              updatedTime="15hrs ago"
+              commentCount="120"
+            />
+          </div>
         </div>
       </div>
-      <div>
-        <DemoArticleCoponentWithGlowState />
+      <div className="col-md-2">
+        <div className="card card-shadow p-2">
+          <h5 className="text-center">Tags</h5>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">Beauty</li>
+            <li className="list-group-item">Technology</li>
+          </ul>
+        </div>
       </div>
-    </h2>
+    </div>
   </div>
 );
 
