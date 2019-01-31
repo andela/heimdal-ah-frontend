@@ -5,13 +5,10 @@ import ActionResponse from '../actionResponse';
 
 const getArticleById = identifier => dispatch => instance.get(`/articles/${identifier}`)
   .then((response) => {
-    console.log(response, '=============');
     if (response.status === 200) {
-      // localStorage.setItem('articleId', response.data.article.id);
       dispatch(ActionResponse(ACTIONS.GET_ARTICLES_BY_ID_SUCCESS, response.data.article));
     }
   }).catch((error) => {
-    console.log(error, '==============');
     dispatch(ActionResponse(ACTIONS.GET_ARTICLES_BY_ID_ERROR, 'Server Error', error));
   });
 export default getArticleById;
