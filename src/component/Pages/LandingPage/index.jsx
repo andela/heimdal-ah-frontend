@@ -9,6 +9,7 @@ import Rating from '../../ui/Rating/Rating';
 import { getArticles } from '../../../actions/homeArticles/articleActions';
 import StanadardCard from './StandardCards';
 import FeaturedCard from './FeaturedCard';
+import ArticleCard from '../../ui/cards/ArticleCard/ArticleCard';
 
 /**
  * @description - This class enables new users to Signup on the platform
@@ -38,15 +39,15 @@ class LandingPage extends Component {
   }
 
   render() {
-    // {
-    //   this.props.home.featuredArticles && console.log(this.props.home.featuredArticles);
-    // }
+    {
+      this.props.home.featuredArticles && console.log(this.props.home.featuredArticles);
+    }
     return (
       <div className="col-md-12 p-5">
         <h2 className="text-center">Featured</h2>
         <div className="row p-3">
           <div className="col-md-3">
-            <StanadardCard />
+            {<StanadardCard {...this.props.home.featuredArticles[0]} />}
           </div>
           <div className="col-md-6 mt-4">
             <div className="row">
@@ -57,9 +58,8 @@ class LandingPage extends Component {
               ))}
             </div>
           </div>
-
           <div className="col-md-3">
-            <StanadardCard />
+            {<StanadardCard {...this.props.home.featuredArticles[5]} />}
           </div>
         </div>
       </div>

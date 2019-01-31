@@ -3,14 +3,18 @@ import { Link } from 'react-router-dom';
 import Glow from '../../ui/Buttons/glow/Glow';
 import Rating from '../../ui/Rating/Rating';
 
-const StanadardCard = () => (
+const StanadardCard = props => (
   <div className="article-card">
     <div className="text-center mb-3">
-      <span className="read-time mt-1">2 mins read</span>
-      {<span className="tag btn btn-sm btn-secondary float-right">Food</span>}
+      <span className="read-time mt-1">{props.readingTime}</span>
+      {props.tags && props.tags.length ? (
+        <span className="tag btn btn-sm btn-secondary float-right">{props.tags[0]}</span>
+      ) : (
+        ''
+      )}
     </div>
     <Link to="/henry/articles/slug" className="card-title-link text-dark">
-      <h5 className="card-title text-center">This is the Title</h5>
+      <h5 className="card-title text-center">{props.title}</h5>
     </Link>
     <div className="card-image-container">
       <img
@@ -19,7 +23,7 @@ const StanadardCard = () => (
         alt="Card"
       />
     </div>
-    <p className="card-text">The article Body</p>
+    <p className="card-text">{props.body}</p>
     <div className="row mb-2">
       <div className="col-6">
         <img
@@ -28,11 +32,14 @@ const StanadardCard = () => (
           alt="user"
         />
         <div className="user-name pl-1">
-          <Link to="/username">username</Link>
+          <Link to="/username">{}</Link>
         </div>
       </div>
       <div className="col-6 mt-2">
-        <i className="far fa-clock updated-time float-right"> 2 days ago</i>
+        <i className="far fa-clock updated-time float-right">
+          {' '}
+          {props.createdAt}
+        </i>
       </div>
     </div>
     <div className="row">
