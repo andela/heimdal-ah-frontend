@@ -9,7 +9,7 @@ import {
   articleRating,
   getarticleRating,
 } from './index';
-import authReducer from './AuthReducer/auth';
+import authReducer from './authReducer';
 import errorsReducer from './errorsReducer';
 import articleReducer from './Article/articleReducer';
 import profileReducer from './profile/profileReducer';

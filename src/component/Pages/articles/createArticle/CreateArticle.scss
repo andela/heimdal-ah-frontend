@@ -1,5 +1,11 @@
 .create-article-container {
   margin-top: 5%;
+  padding: 0 15px;
+
+  .medium-editor-element {
+    white-space: normal;
+    font-family: "Cardo", serif;
+  }
 
   .create-articles {
     * {
@@ -24,10 +30,5 @@
       margin-top: 11%;
       padding: 0 5%;
     }
-  }
-
-  .medium-editor-element {
-    white-space: normal;
-    font-family: "Cardo", serif;
   }
 }

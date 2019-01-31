@@ -38,12 +38,12 @@ class CreateArticle extends React.Component {
     e.preventDefault();
     const { title, body, description } = this.state;
     const articleDetails = {
-      title: title.substring(0, 500),
+      title: title.substring(0, 100),
       body: body.substring(0, 10000),
       description: description || body.substring(0, 100),
     };
 
-    if (body.split('').length > 10000 || title.split('').length > 500 || description.split('').length > 500) {
+    if (body.split('').length > 10000 || title.split('').length > 120 || description.split('').length > 400) {
       this.setState({ alert: 'FAILED' });
       return setInterval(() => {
         this.setState({ alert: '' });
