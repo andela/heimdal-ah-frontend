@@ -11,6 +11,7 @@ import {
 } from './index';
 import authReducer from './AuthReducer/auth';
 import errorsReducer from './errorsReducer';
+import profileReducer from './profile/profileReducer';
 
 const rootReducer = combineReducers({
   createArticleReducer,
@@ -23,6 +24,7 @@ const rootReducer = combineReducers({
   getarticlerating: getarticleRating,
   errors: errorsReducer,
   auth: authReducer,
+  profile: profileReducer,
 });
 
 export default rootReducer;

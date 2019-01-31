@@ -63,7 +63,7 @@ const SigninForm = (props) => {
             <div className="p-2">
               {' '}
               <a
-                href={`${process.env.BASE_URL_PROD}/reset-password`}
+                href='/reset-password'
               >
                 Forgot password?
               </a>
@@ -92,20 +92,20 @@ const SigninForm = (props) => {
       <br />
       <div className="text-center">
         <a
-          href={`${process.env.BASE_URL_PROD}/auth/facebook`}
+          href={`${process.env.BASE_URL_PROD}/api/v1/auth/facebook`}
           className="btn btn-block btn-facebook"
         >
         Login with Facebook
         </a>
         <br />
         <a
-          href={`${process.env.BASE_URL_PROD}/auth_twitter/twitter`}
+          href={`${process.env.BASE_URL_PROD}/api/v1/auth_twitter/twitter`}
           className="btn btn-block btn-twitter"
         >
         Login with Twitter
         </a>
         <br />
-        <a href={`${process.env.BASE_URL_PROD}/auth/google`} className="btn btn-block btn-google">
+        <a href={`${process.env.BASE_URL_PROD}/api/v1/auth/google`} className="btn btn-block btn-google">
         Login With Google
         </a>
       </div>

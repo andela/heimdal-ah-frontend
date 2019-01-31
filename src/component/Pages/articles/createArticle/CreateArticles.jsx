@@ -3,7 +3,6 @@ import { Redirect } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Editor from 'react-medium-editor';
-import PropTypes from 'prop-types';
 import Alert from '../../../ui/Alert/Alert';
 import Button from '../../../ui/Buttons/Button';
 import checkArticleDetails from '../../../../utils/createArticle';

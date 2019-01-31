@@ -11,6 +11,8 @@ import PasswordResetPresentation from '../component/Pages/PasswordResetPage/Pass
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
 import UpdateArticlesPresentation from '../component/Pages/articles/UpdateArticles/UpdateArticlesPresentation.jsx';
 import ReadSingleArticleError from '../component/Pages/articles/ReadSingleArticle/ReadSingleArticleError.jsx';
+import Profile from '../component/Pages/Profile/Profile';
+import ProtectedRoute from './ProtectedRoute';
 
 
 const Routes = () => (
@@ -27,6 +29,9 @@ const Routes = () => (
         <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
         <Route exact path='/update-password' component={UpdatePasswordPresentation} />
+        <Route exact path='/reset-password' component={PasswordResetPresentation} />
+        <Route exact path='/update-password' component={UpdatePasswordPresentation} />
+        <ProtectedRoute exact path='/:username' component={Profile} />
         <Route component={NotFound} />
       </Switch>
       <ReduxToastr />

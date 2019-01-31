@@ -19,6 +19,7 @@ describe('Single Article Component Test Suite', () => {
       const singleArticle = {
         id: 2,
       };
+      // eslint-disable-next-line max-len
       const wrapper = shallow(<ReadSingleArticle match={match} actions={actions} singleArticle={singleArticle} />);
       expect(wrapper.length).toBe(1);
       expect(wrapper).toMatchSnapshot();

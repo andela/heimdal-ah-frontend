@@ -13,16 +13,16 @@ import HeaderButton from '../headerButton/HeaderButton';
  * @param {boolean} isAuthenticated should be a boolean
  */
 const Header = ({ auth }) => {
-  const { isAuthenticated, user } = auth;
+  const { isAuthenticated, user: { username, image } } = auth;
   return (
     <header className="header">
-      <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Logo />
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav mr-auto">
             <NavItems />
           </ul>
-          {isAuthenticated ? <ActiveUser username={user.username} /> : <HeaderButton />}
+          {isAuthenticated ? <ActiveUser username={username} image={image} /> : <HeaderButton />}
           <SearchForm />
         </div>
       </nav>
