@@ -17,10 +17,10 @@ const UpdatePasswordPresentation = () => (
               <p>Enter Your New Password</p>
               {data.status === 'ERROR' && <Alert type='warning' title='Email not sent' message='Server Error' />}
               <form onSubmit={e => data.onHandleSubmit(e)}>
-                <input type='text' className='password-reset input-reset-password' name='password' value={data.password} placeholder='Password' onChange={e => data.onHandleChange(e)} required />
+                <input type='password' className='password-reset input-reset-password' name='password' value={data.password} placeholder='Password' onChange={e => data.onHandleChange(e)} required />
                 <br />
                 <br />
-                <input type='text' className='password-reset input-reset-password' name='confirmpassword' value={data.confirmpassword} placeholder='Confirm Password' onChange={e => data.onHandleChange(e)} required />
+                <input type='password' className='password-reset input-reset-password' name='confirmpassword' value={data.confirmpassword} placeholder='Confirm Password' onChange={e => data.onHandleChange(e)} required />
                 <br />
                 <br />
                 <Button type='login2' label='Update' Class='password-reset button' />

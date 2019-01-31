@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable react/forbid-prop-types */
+import React, { Fragment } from 'react';
 import PropsTypes from 'prop-types';
 import Header from '../../ui/header/Header';
 import Footer from '../../ui/footer/Footer';
@@ -9,11 +10,11 @@ import Footer from '../../ui/footer/Footer';
  * @returns {object} the component
  */
 const MainLayout = ({ children }) => (
-  <div>
+  <Fragment>
     <Header />
     {children}
     <Footer />
-  </div>
+  </Fragment>
 );
 
 MainLayout.propTypes = {

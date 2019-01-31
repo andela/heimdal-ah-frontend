@@ -1,10 +1,14 @@
 import axios from 'axios';
 
-const instance = axios.create({
-  baseURL: `${process.env.BASE_URL_PROD}`,
+const axiosInstance = axios.create({
+  baseURL: `${process.env.BASE_URL_PROD}/api/v1`,
   headers: {
     'Access-Control-Allow-Origin': '*',
   },
 });
 
-export default instance;
+export const setToken = (token) => {
+  axiosInstance.defaults.headers.common['access-token'] = token;
+};
+
+export default axiosInstance;
