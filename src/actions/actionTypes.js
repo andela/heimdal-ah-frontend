@@ -28,4 +28,5 @@ export const ACTIONS = keyMirror({
   REMOVE_AN_ERROR: null,
   GET_ALL_ARTICLES: null,
   GETTING_PROFILE_ERROR: null,
+  GET_ALL_UNPUBLISHED_ARTICLES: null,
 });

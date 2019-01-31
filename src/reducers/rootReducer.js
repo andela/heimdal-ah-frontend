@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import { reducer as toastrReducer } from 'react-redux-toastr';
 import {
-  resetPassword, updatePassword, articleRating, getarticleRating,
+  resetPassword, updatePassword, articleRating, getarticleRating, unPublishedArticle,
 } from './index';
 import authReducer from './authReducer';
 import errorsReducer from './errorsReducer';
@@ -18,6 +18,7 @@ const rootReducer = combineReducers({
   auth: authReducer,
   articles: articleReducer,
   profile: profileReducer,
+  unpublishedarticle: unPublishedArticle,
 });
 
 export default rootReducer;
