@@ -2,6 +2,7 @@
 import { ACTIONS } from '../actionTypes';
 import ActionResponse from '../actionResponse';
 import instance from '../../config/http';
+
 /**
  * Set Loading action which shows before comments are fetched
  * @return {function} retuns the action type
@@ -11,6 +12,7 @@ export function setDataLoading() {
     type: ACTIONS.DATA_LOADING_REPLY,
   };
 }
+
 /**
  * Get an Article Comment(s) action using axios and dispatches the data
  * @param {integer} identifer - The article id
