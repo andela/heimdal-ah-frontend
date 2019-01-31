@@ -18,4 +18,10 @@ $star-default: #ffd15c;
   .rate .star:hover ~ i {
     color: $star-default;
   }
+
+  &.__button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
 }

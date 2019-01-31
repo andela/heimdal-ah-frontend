@@ -115,21 +115,21 @@ ShallowWrapper {
         >
           <a
             className="btn btn-block btn-facebook"
-            href="undefined/auth/facebook"
+            href="undefined/api/v1/auth/facebook"
           >
             Login with Facebook
           </a>
           <br />
           <a
             className="btn btn-block btn-twitter"
-            href="undefined/auth_twitter/twitter"
+            href="undefined/api/v1/auth_twitter/twitter"
           >
             Login with twitter
           </a>
           <br />
           <a
             className="btn btn-block btn-google"
-            href="undefined/auth/google"
+            href="undefined/api/v1/auth/google"
           >
             Login With Google
           </a>
@@ -564,21 +564,21 @@ ShallowWrapper {
           "children": Array [
             <a
               className="btn btn-block btn-facebook"
-              href="undefined/auth/facebook"
+              href="undefined/api/v1/auth/facebook"
             >
               Login with Facebook
             </a>,
             <br />,
             <a
               className="btn btn-block btn-twitter"
-              href="undefined/auth_twitter/twitter"
+              href="undefined/api/v1/auth_twitter/twitter"
             >
               Login with twitter
             </a>,
             <br />,
             <a
               className="btn btn-block btn-google"
-              href="undefined/auth/google"
+              href="undefined/api/v1/auth/google"
             >
               Login With Google
             </a>,
@@ -594,7 +594,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Login with Facebook",
               "className": "btn btn-block btn-facebook",
-              "href": "undefined/auth/facebook",
+              "href": "undefined/api/v1/auth/facebook",
             },
             "ref": null,
             "rendered": "Login with Facebook",
@@ -616,7 +616,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Login with twitter",
               "className": "btn btn-block btn-twitter",
-              "href": "undefined/auth_twitter/twitter",
+              "href": "undefined/api/v1/auth_twitter/twitter",
             },
             "ref": null,
             "rendered": "Login with twitter",
@@ -638,7 +638,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Login With Google",
               "className": "btn btn-block btn-google",
-              "href": "undefined/auth/google",
+              "href": "undefined/api/v1/auth/google",
             },
             "ref": null,
             "rendered": "Login With Google",
@@ -746,21 +746,21 @@ ShallowWrapper {
           >
             <a
               className="btn btn-block btn-facebook"
-              href="undefined/auth/facebook"
+              href="undefined/api/v1/auth/facebook"
             >
               Login with Facebook
             </a>
             <br />
             <a
               className="btn btn-block btn-twitter"
-              href="undefined/auth_twitter/twitter"
+              href="undefined/api/v1/auth_twitter/twitter"
             >
               Login with twitter
             </a>
             <br />
             <a
               className="btn btn-block btn-google"
-              href="undefined/auth/google"
+              href="undefined/api/v1/auth/google"
             >
               Login With Google
             </a>
@@ -1195,21 +1195,21 @@ ShallowWrapper {
             "children": Array [
               <a
                 className="btn btn-block btn-facebook"
-                href="undefined/auth/facebook"
+                href="undefined/api/v1/auth/facebook"
               >
                 Login with Facebook
               </a>,
               <br />,
               <a
                 className="btn btn-block btn-twitter"
-                href="undefined/auth_twitter/twitter"
+                href="undefined/api/v1/auth_twitter/twitter"
               >
                 Login with twitter
               </a>,
               <br />,
               <a
                 className="btn btn-block btn-google"
-                href="undefined/auth/google"
+                href="undefined/api/v1/auth/google"
               >
                 Login With Google
               </a>,
@@ -1225,7 +1225,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Login with Facebook",
                 "className": "btn btn-block btn-facebook",
-                "href": "undefined/auth/facebook",
+                "href": "undefined/api/v1/auth/facebook",
               },
               "ref": null,
               "rendered": "Login with Facebook",
@@ -1247,7 +1247,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Login with twitter",
                 "className": "btn btn-block btn-twitter",
-                "href": "undefined/auth_twitter/twitter",
+                "href": "undefined/api/v1/auth_twitter/twitter",
               },
               "ref": null,
               "rendered": "Login with twitter",
@@ -1269,7 +1269,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Login With Google",
                 "className": "btn btn-block btn-google",
-                "href": "undefined/auth/google",
+                "href": "undefined/api/v1/auth/google",
               },
               "ref": null,
               "rendered": "Login With Google",
