@@ -36,6 +36,7 @@ class ReadSingleArticlePresentation extends Component {
     setTimeout(() => {
       return this.props.author ? this.editButton.current.style.display = 'inline' : !this.props.author ? this.followButton.current.style.display = 'inline' : null;
     }, 2000);
+    const username = `${this.props.username.substring(0, 9)}...`;
     return (
       <Fragment>
         <Redirect to={`/${this.props.username}/articles/${this.props.slug}`} />
@@ -71,7 +72,7 @@ class ReadSingleArticlePresentation extends Component {
                 <img className="user-image" src={this.props.userImage} alt="user" />
                 <br />
                 <br />
-                <a href={`/${this.props.username}`} className="user-link"><h2>{this.props.username}</h2></a>
+                <a href={`/${this.props.username}`} className="user-link"><h2>{username}</h2></a>
                 <br />
                 <h4>{ timeAgo.format(moment(this.props.time).valueOf()) }</h4>
                 <br />
