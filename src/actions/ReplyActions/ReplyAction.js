@@ -19,7 +19,7 @@ export function setDataLoading() {
  * @param {object} response - the data return from after a successful axios request
  * @param {object} error - If there is an error from the request
  * @return {function} dispatches either the response or the error.
- */
+*/
 export function getCommentReplies(commentId) {
   return function (dispatch) {
     dispatch(setDataLoading());
