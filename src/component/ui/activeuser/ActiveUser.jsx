@@ -1,7 +1,7 @@
 import React from 'react';
 import './activeUser.scss';
 
-const ActiveUser = ({ username }) => (
+const ActiveUser = ({ username, image }) => (
   <div className="active_user_logo">
     <div className="dropdown">
       <img
@@ -23,10 +23,10 @@ const ActiveUser = ({ username }) => (
       </div>
     </div>
     <div className="dropdown">
-      <img className="profile-icon" src="/src/images/Group 2.1.png" alt="profile-logo" />
+      <img className="profile-icon" src={image || '/src/images/Group 2.1.png'} alt="profile-logo" />
       <div className="dropdown-content">
         <div className="username">
-@
+          @
           {username}
         </div>
         <div>
@@ -49,7 +49,7 @@ const ActiveUser = ({ username }) => (
         </div>
         <div className="user-settings">
           <div>
-            <a to="/user-profile">Profile</a>
+            <a href={username}>Profile</a>
           </div>
           <div>
             <a to="/logout">Logout</a>

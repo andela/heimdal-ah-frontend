@@ -6,7 +6,7 @@ const ProfileInfoLoader = props => (
     height={20}
     width={90}
     speed={2}
-    primaryColor="#eee"
+    primaryColor="#ccc"
     secondaryColor="#dedede"
     {...props}
   >

@@ -11,7 +11,7 @@ TimeAgo.addLocale(english);
 const timeAgo = new TimeAgo('en-US');
 
 /** @description Card for Articles
-  * @param {object} props
+  * @param {object} props - article
   * @return {object} react component
   */
 const ArticleCard = props => (
@@ -25,12 +25,12 @@ const ArticleCard = props => (
             : ''
         }
       </div>
-      <Link to={`/article/${props.slug}`} className="card-title-link">
+      <Link to={`/${props.user.profile.username}/articles/${props.slug}`} className="card-title-link">
         <h5 className="card-title text-center">{props.title}</h5>
       </Link>
       <div className="card-image-container">
         <img
-          className="card-image img-fluid img-responsive"
+          className="card-image"
           src={props.image || `https://picsum.photos/1200/1300/?image=${Math.trunc(Math.random() * 20)}`}
           alt="Card"
         />
@@ -45,7 +45,7 @@ const ArticleCard = props => (
             alt="user"
           />
           <div className="user-name pl-1">
-            <Link to={`/profile/${props.user.profile.username}`}>{props.user.profile.username}</Link>
+            <Link to={`/${props.user.profile.username}`}>{props.user.profile.username}</Link>
           </div>
         </div>
         <div className='col-6 mt-2'>

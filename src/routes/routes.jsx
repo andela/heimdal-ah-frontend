@@ -25,6 +25,7 @@ const Routes = () => (
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
         <Route exact path='/update-password' component={UpdatePasswordPresentation} />
         <Route exact path='/all-stories' component={Articles} />
+        <ProtectedRoute exact path='/:username' component={Profile} />
         <Route component={NotFound} />
       </Switch>
       <ReduxToastr />

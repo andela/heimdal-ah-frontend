@@ -6,7 +6,7 @@ const ProfilePictureLoader = props => (
     height={25}
     width={25}
     speed={3}
-    primaryColor="#f3f3f3"
+    primaryColor="#ccc"
     secondaryColor="#dedede"
     {...props}
   >
