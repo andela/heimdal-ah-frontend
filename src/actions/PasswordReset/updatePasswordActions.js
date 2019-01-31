@@ -1,7 +1,5 @@
 import instance from '../../config/http';
-import {
-  ACTIONS,
-} from '../actionTypes';
+import { ACTIONS } from '../actionTypes';
 import ActionResponse from '../actionResponse';
 
 const updatePassword = (token, newPassword) => dispatch => instance.put(`/password/reset/${token}`, {

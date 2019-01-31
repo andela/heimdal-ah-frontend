@@ -8,6 +8,7 @@ import axiosInstance, { setToken } from '../utils/axiosInstance';
 
 export const setAuthUser = (token) => {
   const decodedToken = JWT.decode(token);
+  // const { userId, username, roleId } = decodedToken;
 
   configureLocalStorage.setAuthUser(token);
   // remember to set axios auth token here
