@@ -6,16 +6,25 @@ const initialState = {
   status: null,
 };
 
+
+/**
+ * Call the returned function to pass actions to Redux-ORM.
+ *
+ * @global
+ *
+ * @param {ORM} orm - the ORM instance.
+ * @return {Function} reducer that will update the ORM state.
+ */
 export default (state = initialState, action) => {
   switch (action.type) {
-    case ACTIONS.DATA_LOADING:
+    case ACTIONS.DATA_LOADING_REPLY:
       return {
         ...state,
         loading: true,
       };
 
     case ACTIONS.GET_COMMENT_REPLY: {
-      return { ...state, ...action.payload };
+      return { ...state, ...action.payload, loading: false };
     }
 
     case ACTIONS.POST_COMMENT_REPLY: {
@@ -24,6 +33,7 @@ export default (state = initialState, action) => {
       return ({
         ...state,
         [action.payload.commentId]: replies,
+        loading: false,
       });
     }
 
@@ -35,6 +45,7 @@ export default (state = initialState, action) => {
       return ({
         ...state,
         [action.payload.commentId]: replies,
+        loading: false,
       });
     }
 

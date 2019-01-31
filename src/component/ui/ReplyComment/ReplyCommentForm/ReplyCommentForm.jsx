@@ -1,4 +1,6 @@
+/* eslint-disable react/forbid-prop-types */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './ReplyComment.scss';
 import { FormGroup, FormControl } from 'react-bootstrap';
 import { connect } from 'react-redux';
@@ -6,7 +8,17 @@ import Button from '../../Buttons/Button';
 import Alert from '../../Alert/Alert';
 import { postCommentReplies } from '../../../../actions/ReplyActions/ReplyAction';
 
-class ReplyCommentForm extends Component {
+
+/**
+  * renderComponent
+  * @method Class Class based Component
+  * @summary React component for rendering the card components
+  * @param {object}  Replies contains the Replies of a comment
+  * @param {Object} props - React PropTypes
+  * @property {String|Object} className - String className compatible object for styling
+  * @return {Node} React node containing comment form view
+  */
+export class ReplyCommentForm extends Component {
   state = {
     content: '',
     replyError: '',
@@ -17,7 +29,12 @@ class ReplyCommentForm extends Component {
     const { user } = this.props.auth;
     const { commentId } = this.props;
     const { formIsValid, content } = this.state;
-    if (formIsValid) {
+    if (content.length >= 1500) {
+      this.setState({
+        formIsValid: false,
+        replyError: "Can't have more than 1500 characters",
+      });
+    } else if (formIsValid) {
       const data = { content };
       this.props.postCommentReplies(commentId, data, user.image);
       this.setState({
@@ -50,13 +67,20 @@ class ReplyCommentForm extends Component {
     }
   }
 
+
+  /**
+     * Renders the component.
+     *
+     * @memberof app.components.Replies
+     * @return {string} - HTML markup for the component
+   */
   render() {
     const { content, replyError } = this.state;
     return (
       <div>
         <div className='error_msg'>
           {' '}
-          {replyError !== '' && <Alert type='warning' message='Reply content cannot be empty' title='Invalid Credenntials' /> }
+          {replyError !== '' && <Alert type='warning' message={this.state.replyError} title='Invalid Credenntials' /> }
         </div>
         <div className='reply_input'>
           <form className='' onSubmit={this.submitForm}>
@@ -81,6 +105,16 @@ class ReplyCommentForm extends Component {
   }
 }
 
+ReplyCommentForm.propTypes = {
+  auth: PropTypes.object.isRequired,
+};
+/**
+ * @method module:Reactator.ReduxContainerBuilderMapStateToProps
+ *
+ * @param {function} mapStateToProps - function mapping redux state to props
+ *
+ * @return {ReduxContainerBuilder} this builder
+*/
 const mapStateToProps = state => ({
   auth: state.auth,
 });

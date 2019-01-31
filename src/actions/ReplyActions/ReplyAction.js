@@ -6,13 +6,11 @@ import instance from '../../config/http';
  * Set Loading action which shows before comments are fetched
  * @return {function} retuns the action type
  */
-
 export function setDataLoading() {
-  return function () {
-    ActionResponse(ACTIONS.DATA_LOADING);
+  return {
+    type: ACTIONS.DATA_LOADING_REPLY,
   };
 }
-
 /**
  * Get an Article Comment(s) action using axios and dispatches the data
  * @param {integer} identifer - The article id
@@ -20,11 +18,10 @@ export function setDataLoading() {
  * @param {object} error - If there is an error from the request
  * @return {function} dispatches either the response or the error.
  */
-
 export function getCommentReplies(commentId) {
   return function (dispatch) {
     dispatch(setDataLoading());
-    instance
+    return instance
       .get(`/comments/${commentId}/reply`)
       .then((response) => {
         const { commentReplies: replies } = response.data;
@@ -43,12 +40,11 @@ export function getCommentReplies(commentId) {
  * @param {object} error - If there is an error from the request
  * @return {function} dispatches either the response or the error.
  */
-
 export function postCommentReplies(commentId, data, imageUrl) {
   const { content } = data;
   return function (dispatch) {
     dispatch(setDataLoading());
-    instance
+    return instance
       .post(`/comments/${commentId}/reply`, { content })
       .then((response) => {
         const { replies } = response.data;
@@ -57,7 +53,6 @@ export function postCommentReplies(commentId, data, imageUrl) {
         dispatch(ActionResponse(ACTIONS.POST_COMMENT_REPLY, { commentId, reply }));
       })
       .catch((error) => {
-        console.log(error.response);
         if (error.response.status === 400) {
           dispatch(ActionResponse(ACTIONS.GET_ERRORS, error.response));
         }
@@ -73,11 +68,10 @@ export function postCommentReplies(commentId, data, imageUrl) {
  * @param {object} error - If there is an error from the request
  * @return {function} dispatches either the response or the error.
  */
-
 export function deleteCommentReplies(commentId, replyId) {
   return function (dispatch) {
     dispatch(setDataLoading());
-    instance.delete(`/comments/${commentId}/reply/${replyId}`)
+    return instance.delete(`/comments/${commentId}/reply/${replyId}`)
       .then((response) => {
         dispatch(ActionResponse(ACTIONS.ARCHIVE_COMMENT_REPLY,
           { message: response.data, commentId, replyId }));

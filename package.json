@@ -27,7 +27,6 @@
     "font-awesome": "^4.7.0",
     "jest": "^23.6.0",
     "jsonwebtoken": "^8.4.0",
-    "moxios": "^0.4.0",
     "jwt-decode": "^2.2.0",
     "keymirror": "^0.1.1",
     "logger": "0.0.1",
@@ -41,12 +40,13 @@
     "react-redux": "^6.0.0",
     "react-redux-toastr": "^7.4.7",
     "react-router-dom": "^4.3.1",
+    "react-spinners": "^0.5.1",
     "react-test-renderer": "^16.7.0",
     "reactstrap": "^7.1.0",
-    "redux-mock-store": "^1.5.3",
-    "validatorjs": "^3.15.1",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "^2.3.0",
+    "validatorjs": "^3.15.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
@@ -61,6 +61,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.12",
     "@fortawesome/free-brands-svg-icons": "^5.6.3",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "axios-mock-adapter": "^1.16.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",

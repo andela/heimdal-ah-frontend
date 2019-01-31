@@ -1,10 +1,24 @@
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable react/require-default-props */
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
+import PropTypes from 'prop-types';
+import GridLoader from 'react-spinners/GridLoader';
 import { connect } from 'react-redux';
 import DeleteButton from '../../CommentForm/CommentDelete';
 import './ReplyCommentCard.scss';
 
-const ReplyCommentCard = (props) => {
+/**
+  * renderComponent
+  * @method Function Function based Component
+  * @summary React component for rendering the reply card components
+  * @param {object}  replies contains the replies of a comment
+  * @param {Object} props - React PropTypes
+  * @property {String|Object} className - String className compatible object for styling
+  * @return {Node} React node containing replies form view
+  */
+export const ReplyCommentCard = (props) => {
   const { user } = props.auth;
   let replies = props.replies[props.commentId];
   replies = replies || [];
@@ -39,12 +53,54 @@ const ReplyCommentCard = (props) => {
     </section>
   ));
 
-  return <div>{replies || Object.keys(replies).length !== 0 ? renderCard() : <div />}</div>;
+  /**
+     * Renders the component.
+     *
+     * @memberof app.components.Comment
+     * @return {string} - HTML markup for the component
+   */
+  return (
+    <div>
+      <div className='col-md-12 text-center'>
+        { props.loading
+          ? (
+            <div className='sweet-loading'>
+              <GridLoader
+                sizeUnit="px"
+                size={25}
+                color="#123abc"
+                loading={props.loading}
+              />
+            </div>
+          )
+          : ''
+    }
+      </div>
+      <div>
+        {replies || Object.keys(replies).length !== 0 ? renderCard() : <div />}
+      </div>
+
+    </div>
+  );
 };
 
+ReplyCommentCard.propTypes = {
+  auth: PropTypes.object.isRequired,
+  replies: PropTypes.object,
+  loading: PropTypes.bool,
+};
+
+/**
+ * @method module:Reactator.ReduxContainerBuilderMapStateToProps
+ *
+ * @param {function} mapStateToProps - function mapping redux state to props
+ *
+ * @return {ReduxContainerBuilder} this builder
+*/
 const mapStateToProps = state => ({
   auth: state.auth,
   replies: state.replies,
+  loading: state.replies.loading,
 });
 
 export default connect(
