@@ -1,9 +1,9 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './ReplyComment.scss';
 import { FormGroup, FormControl } from 'react-bootstrap';
 import { connect } from 'react-redux';
+import './ReplyComment.scss';
 import Button from '../../Buttons/Button';
 import Alert from '../../Alert/Alert';
 import { postCommentReplies } from '../../../../actions/ReplyActions/ReplyAction';
@@ -22,6 +22,26 @@ export class ReplyCommentForm extends Component {
   state = {
     content: '',
     replyError: '',
+  }
+
+  onChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+      replyError: '',
+    });
+  }
+
+  onBlur = (e) => {
+    if (e.target.value === '') {
+      this.setState({
+        replyError: 'Reply Content cannot be Empty',
+      });
+    } else {
+      this.setState({
+        formIsValid: true,
+        replyError: '',
+      });
+    }
   }
 
   submitForm = (e) => {
@@ -46,27 +66,6 @@ export class ReplyCommentForm extends Component {
       });
     }
   }
-
-  onChange = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-      replyError: '',
-    });
-  }
-
-  onBlur = (e) => {
-    if (e.target.value === '') {
-      this.setState({
-        replyError: 'Reply Content cannot be Empty',
-      });
-    } else {
-      this.setState({
-        formIsValid: true,
-        replyError: '',
-      });
-    }
-  }
-
 
   /**
      * Renders the component.

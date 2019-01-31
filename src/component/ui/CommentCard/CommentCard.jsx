@@ -4,11 +4,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import ClipLoader from 'react-spinners/ClipLoader';
-import './CommentCard.scss';
 import FontAwesome from 'react-fontawesome';
 import { getArticleComment } from '../../../actions/CommentActions/CommentActions';
 import DeleteButton from '../CommentForm/CommentDelete';
 import ReplyComment from '../ReplyComment/ReplyComment';
+import './CommentCard.scss';
 
 /**
   * renderComponent

@@ -3,11 +3,11 @@
 import React, { Component } from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import './CommentForm.scss';
 import { connect } from 'react-redux';
 import Button from '../Buttons/Button';
 import { postArticleComment } from '../../../actions/CommentActions/CommentActions';
 import Alert from '../Alert/Alert';
+import './CommentForm.scss';
 
 /**
   * renderComponent
@@ -25,32 +25,6 @@ export class CommentForm extends Component {
     content: '',
     checkbox: false,
   }
-
-   submitForm = (e) => {
-     e.preventDefault();
-     const { user } = this.props.auth;
-     const { formIsValid, content, checkbox } = this.state;
-     if (content.length >= 1500) {
-       this.setState({
-         formIsValid: false,
-         commentError: "can't have more than 1500 characters",
-       });
-     } else if (formIsValid) {
-       const data = {
-         content,
-         isPrivate: checkbox,
-       };
-
-       this.props.postArticleComment(1, data, user.image);
-       this.setState({
-         content: '',
-       });
-     } else {
-       this.setState({
-         commentError: 'Content cannot be Empty',
-       });
-     }
-   }
 
    onChange = (e) => {
      this.setState({
@@ -78,6 +52,32 @@ export class CommentForm extends Component {
        checkbox: !checkbox,
        commentError: '',
      });
+   }
+
+   submitForm = (e) => {
+     e.preventDefault();
+     const { user } = this.props.auth;
+     const { formIsValid, content, checkbox } = this.state;
+     if (content.length >= 1500) {
+       this.setState({
+         formIsValid: false,
+         commentError: "can't have more than 1500 characters",
+       });
+     } else if (formIsValid) {
+       const data = {
+         content,
+         isPrivate: checkbox,
+       };
+
+       this.props.postArticleComment(1, data, user.image);
+       this.setState({
+         content: '',
+       });
+     } else {
+       this.setState({
+         commentError: 'Content cannot be Empty',
+       });
+     }
    }
 
    /**
