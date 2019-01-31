@@ -9,6 +9,8 @@ import PasswordResetPresentation from '../component/Pages/PasswordResetPage/Pass
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
 import Profile from '../component/Pages/Profile/Profile';
 import ProtectedRoute from './ProtectedRoute';
+import UserDashboardPage from '../component/Pages/UserDashboardPage/UserDashboardPage';
+import Notification from '../component/ui/Notification/Notification';
 
 
 const Routes = () => (
@@ -19,6 +21,10 @@ const Routes = () => (
         <Route exact path='/social-auth' component={SocialAuth} />
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
         <Route exact path='/update-password' component={UpdatePasswordPresentation} />
+        <ProtectedRoute exact path='/dashboard' component={UserDashboardPage} />
+        <UserDashboardPage>
+          <Route exact path='/notification' component={Notification} />
+        </UserDashboardPage>
         <ProtectedRoute exact path='/:username' component={Profile} />
         <Route component={NotFound} />
       </Switch>

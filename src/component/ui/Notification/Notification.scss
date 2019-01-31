@@ -1,0 +1,145 @@
+@import '../../../styles/variables.scss';
+
+$break-small: 640px;
+$break-large: 1200px;
+
+.notification_header {
+  font-family: $font-family__cardo;
+  font-size: 1.9em;
+
+  @media screen and (max-width: $break-small) {
+    font-size: 20px!important;
+  }
+
+  .notification_header_sm {
+    font-size: 20px;
+    color: $password-reset__body--color;
+    margin-top: 30px;
+
+    @media screen and (max-width: $break-small) {
+      font-size: 12px!important;
+    }
+  }
+}
+
+.notification_card {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  margin: 0 auto;
+  font-family: $font-family__cardo;
+  padding: 20px;
+  width: 70%;
+  font-size: 15px;
+
+  @media screen and (max-width: $break-small) {
+    width: 90%;
+    font-size: 12px!important;
+  }
+  @media screen and (min-width: $break-large) {
+    
+  }
+  .notification_card_a {
+    margin-right: -50px;
+  }
+  .notification_section {
+    width: 70%;
+
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+      font-size: 12px!important;
+    }
+  }
+  .notification_card_img {
+    border-radius: 70%;
+    width: 40%;
+    margin-right: -40px;
+  }
+  .notification_card_top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .notification_card_message_type {
+    font-size: 12px;
+    color: grey;
+    margin-left: 30px;
+    justify-content: flex-end;
+  }
+  .notification_card_body {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-weight: 700;
+  }
+  .notification_card_mark_read {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .notification_card_mark_read input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .notification_card_bottom {
+    float: right;
+    font-size: 12px;
+  }
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: $heimdal-border-color;
+  @media screen and (max-width: $break-small) {
+    height: 15px;
+    width: 15px;
+    margin-left: 20px;
+  }
+}
+
+.notification_card_mark_read:hover input ~ .checkmark {
+  background-color: $heimdal-border-color;
+}
+
+.notification_card_mark_read input:checked ~ .checkmark {
+  background-color: $password-reset__body--color;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.notification_card_mark_read input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.notification_card_mark_read .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+  div {
+    clear:both;
+  } 
+}
