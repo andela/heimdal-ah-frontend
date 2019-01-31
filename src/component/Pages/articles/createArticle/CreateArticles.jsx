@@ -91,7 +91,7 @@ class CreateArticle extends React.Component {
         {alert === 'FAILURE' && <Alert type='warning' title='All fields should be filled' message='Error : Article was not posted' />}
         {status === 'FAILURE' && <Alert type='success' title='user should be logged in' message='sever error' /> && <Redirect to='/login' />}
         <Button type='article' label='Post Article' Class='update-articles __button' onClick={e => this.onHandleSubmit(e)} />
-        <div className='container'>
+        <div className='create-article-container'>
           <br />
           <div className='create-articles __title'>
             <Editor

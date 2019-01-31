@@ -16,7 +16,10 @@ describe('Single Article Component Test Suite', () => {
       const actions = {
         getArticleById: () => {},
       };
-      const wrapper = shallow(<ReadSingleArticle match={match} actions={actions} />);
+      const singleArticle = {
+        id: 2,
+      };
+      const wrapper = shallow(<ReadSingleArticle match={match} actions={actions} singleArticle={singleArticle} />);
       expect(wrapper.length).toBe(1);
       expect(wrapper).toMatchSnapshot();
     });

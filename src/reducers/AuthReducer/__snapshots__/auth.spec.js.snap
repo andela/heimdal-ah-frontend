@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`select_reducer renders correctly 1`] = `
+Object {
+  "error": Object {},
+  "isAuthenticated": false,
+  "user": undefined,
+}
+`;
+
+exports[`select_reducer renders correctly 2`] = `
+Object {
+  "error": undefined,
+  "isAuthenticated": false,
+  "user": Object {},
+}
+`;
+
+exports[`select_reducer returns the correct state 1`] = `
+Object {
+  "error": Object {},
+  "isAuthenticated": false,
+  "user": Object {},
+}
+`;
+
+exports[`select_reducer returns the correct state 2`] = `
+Object {
+  "error": Object {},
+  "isAuthenticated": false,
+  "user": Object {},
+}
+`;
