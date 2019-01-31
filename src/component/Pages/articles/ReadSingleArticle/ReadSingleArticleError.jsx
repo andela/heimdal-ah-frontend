@@ -5,14 +5,12 @@ const ReadSingleArticleError = () => (
     <h3>
         Sorry This Article
       <br />
-        Does Not Exist
+      Sorry This Article Does Not Exist
     </h3>
     <br />
-    <div>
-      <a to='/'>
-        <div>..go back Home....</div>
-      </a>
-    </div>
+    <a to='/'>
+      <div>..go back Home....</div>
+    </a>
   </div>
 );
 

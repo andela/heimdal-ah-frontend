@@ -11,7 +11,6 @@ import PasswordResetPresentation from '../component/Pages/PasswordResetPage/Pass
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
 import UpdateArticlesPresentation from '../component/Pages/articles/UpdateArticles/UpdateArticlesPresentation.jsx';
 import ReadSingleArticleError from '../component/Pages/articles/ReadSingleArticle/ReadSingleArticleError.jsx';
-// import ReadSingleArticlePresentation from '../component/Pages/articles/ReadSingleArticle/ReadSingleArticlePresentation.jsx';
 
 
 const Routes = () => (

@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Editor from 'react-medium-editor';
+import PropTypes from 'prop-types';
 import Alert from '../../../ui/Alert/Alert';
 import Button from '../../../ui/Buttons/Button';
 import checkArticleDetails from '../../../../utils/createArticle';
@@ -32,92 +33,152 @@ class CreateArticle extends React.Component {
   }
 
   /**
- * @description - onHandleSubmit method
- */
+   * @description - onHandleSubmit method
+   */
   onHandleSubmit(e) {
     e.preventDefault();
     const { title, body, description } = this.state;
     const articleDetails = {
-      title,
-      body,
+      title: title.substring(0, 500),
+      body: body.substring(0, 10000),
       description: description || body.substring(0, 100),
     };
+
+    if (body.split('').length > 10000 || title.split('').length > 500 || description.split('').length > 500) {
+      this.setState({ alert: 'FAILED' });
+      return setInterval(() => {
+        this.setState({ alert: '' });
+      }, 1000);
+    }
 
     const isEmpty = checkArticleDetails(articleDetails);
     if (!isEmpty) {
       return this.props.actions.createArticleAction(articleDetails);
     }
-    this.setState({ alert: 'FAILURE' });
 
+    this.setState({ alert: 'FAILURE' });
     return setInterval(() => {
       this.setState({ alert: '' });
     }, 1000);
   }
 
   /**
- * @description - articleHandleChange for body state method
- */
+   * @description - articleHandleChange for body state method
+   */
   articleHandleChange(body) {
     this.setState({ body });
   }
 
   /**
- * @description - articleHandleChange for body state method
- */
+   * @description - articleHandleChange for body state method
+   */
   titleHandleChange(title) {
     this.setState({ title });
   }
 
   /**
- * @description - articleHandleChange for body state method
- */
+   * @description - articleHandleChange for body state method
+   */
   descriptionHandleChange(description) {
     this.setState({ description });
   }
 
-
   /**
- * @description - render the editors
- * @param {props} status - the status returned from dispatching actions
- * @returns {component} Component
- */
+   * @description - render the editors
+   * @param {props} status - the status returned from dispatching actions
+   * @returns {component} Component
+   */
   render() {
     const { status } = this.props;
     const { alert } = this.state;
 
     return (
       <Fragment>
-        {status === 'SUCCESS' && <Alert type='success' title='Article was posted' message='your Article was published successfully' /> && <Redirect to='/' />}
-        {alert === 'FAILURE' && <Alert type='warning' title='All fields should be filled' message='Error : Article was not posted' />}
-        {status === 'FAILURE' && <Alert type='success' title='user should be logged in' message='sever error' /> && <Redirect to='/login' />}
-        <Button type='article' label='Post Article' Class='update-articles __button' onClick={e => this.onHandleSubmit(e)} />
-        <div className='create-article-container'>
+        {status === 'SUCCESS' && (<Alert type="success" title="Article was posted" message="your Article was published successfully" />) && <Redirect to={`/@username/articles/${this.props.payload.slug}`} />}
+        {alert === 'FAILURE' && (<Alert type="warning" title="All fields should be filled" message="Error : Article was not posted" />)}
+        {alert === 'FAILED' && (<Alert type="warning" title="Exceeded max Character in text feilds" message="Error : Article was not posted" />)}
+        {status === 'FAILURE' && (<Alert type="success" title="user should be logged in" message="sever error" />) && <Redirect to="/login" />}
+        <Button
+          type="article"
+          label="Post Article"
+          Class="update-articles __button"
+          onClick={e => this.onHandleSubmit(e)}
+        />
+        <div className="create-article-container">
           <br />
-          <div className='create-articles __title'>
+          <div className="create-articles __title">
             <Editor
               tag="pre"
-              data-placeholder='Type your title....'
+              data-placeholder="Type your title...."
               text={this.state.title}
               onChange={this.titleHandleChange}
-              options={{ toolbar: { buttons: ['bold', 'italic', 'underline', 'anchor', 'h2', 'h3', 'quote', 'html', 'strikethrough', 'subscript', 'superscript'] } }}
+              options={{
+                toolbar: {
+                  buttons: [
+                    'bold',
+                    'italic',
+                    'underline',
+                    'anchor',
+                    'h2',
+                    'h3',
+                    'quote',
+                    'html',
+                    'strikethrough',
+                    'subscript',
+                    'superscript',
+                  ],
+                },
+              }}
             />
           </div>
-          <div className='create-articles __text'>
+          <div className="create-articles __text">
             <Editor
               tag="pre"
-              data-placeholder='Type your decription....'
+              data-placeholder="Type your decription...."
               text={this.state.description}
               onChange={this.descriptionHandleChange}
-              options={{ toolbar: { buttons: ['bold', 'italic', 'underline', 'anchor', 'h2', 'h3', 'quote', 'html', 'strikethrough', 'subscript', 'superscript'] } }}
+              options={{
+                toolbar: {
+                  buttons: [
+                    'bold',
+                    'italic',
+                    'underline',
+                    'anchor',
+                    'h2',
+                    'h3',
+                    'quote',
+                    'html',
+                    'strikethrough',
+                    'subscript',
+                    'superscript',
+                  ],
+                },
+              }}
             />
           </div>
-          <div className='create-articles __text'>
+          <div className="create-articles __text">
             <Editor
               tag="pre"
-              data-placeholder='Type your article....'
+              data-placeholder="Type your article...."
               text={this.state.body}
               onChange={this.articleHandleChange}
-              options={{ toolbar: { buttons: ['bold', 'italic', 'underline', 'anchor', 'h2', 'h3', 'quote', 'html', 'strikethrough', 'subscript', 'superscript'] } }}
+              options={{
+                toolbar: {
+                  buttons: [
+                    'bold',
+                    'italic',
+                    'underline',
+                    'anchor',
+                    'h2',
+                    'h3',
+                    'quote',
+                    'html',
+                    'strikethrough',
+                    'subscript',
+                    'superscript',
+                  ],
+                },
+              }}
             />
           </div>
         </div>
@@ -131,6 +192,7 @@ const mapStateToprops = state => ({
   body: state.body,
   description: state.description,
   status: state.createArticleReducer.status,
+  payload: state.createArticleReducer.payload,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -142,5 +204,7 @@ const mapDispatchToProps = dispatch => ({
   ),
 });
 
-
-export default connect(mapStateToprops, mapDispatchToProps)(CreateArticle);
+export default connect(
+  mapStateToprops,
+  mapDispatchToProps,
+)(CreateArticle);

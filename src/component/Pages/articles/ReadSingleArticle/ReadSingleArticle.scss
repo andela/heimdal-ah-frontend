@@ -1,7 +1,7 @@
-@import '../../../../styles/variables.scss';
-@import '../../../../styles/global.scss';
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/global.scss";
 
-.single-article-wrapper{
+.single-article-wrapper {
   background-color: whitesmoke;
   .article-header {
     text-align: center;
@@ -11,23 +11,26 @@
     padding-left: 10%;
     height: 200px;
     color: white;
-    h1{
+
+    h1 {
       margin-top: 30px;
       padding-top: 5%;
       font-size: 40px;
     }
   }
+
   .bookmark-row {
-    display:grid;
+    display: grid;
     grid-template-columns: 73% 27%;
     grid-gap: 1em;
-    height:150px;
+    height: 150px;
     .bookmark-logo {
       width: 25px;
     }
   }
-  .body-section{
-    display:grid;
+
+  .body-section {
+    display: grid;
     grid-template-columns: 75% 20%;
     text-align: justify;
     grid-gap: 1.5em;
@@ -40,42 +43,46 @@
       color: #3e4653;
       line-height: 2;
       .bottom-details {
-        display:grid;
+        display: grid;
         grid-template-columns: 30% 40% 30%;
-        margin-top:20%;
+        margin-top: 20%;
         .likesCount {
           margin-bottom: 2px;
         }
       }
-    }  
+    }
     .user-section {
       background-color: whitesmoke;
-      border: 0.5px solid #C4C4C4;
+      border: 0.5px solid #c4c4c4;
       padding: 5%;
       display: grid;
       grid-template-rows: 35% 25% 30%;
       height: 1400px;
+
       .follow-btn {
-        background-color:#153771;
+        background-color: #153771;
         color: white;
         display: none;
         align-self: center;
-      };
+      }
+
       .edit-btn {
         align-self: center;
         display: none;
-      };
+      }
+
       .user-profile {
         text-align: center;
         color: #6a7384;
-
       }
+
       .user-image {
         width: 100px;
         height: 100px;
         border-radius: 50%;
         margin-top: 10px;
       }
+
       .social-media {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -84,7 +91,7 @@
           color: #3b5998;
         }
         .twitter {
-          color: #1DA1F2;
+          color: #1da1f2;
         }
       }
     }
@@ -95,8 +102,8 @@
       text-align: center;
     }
     .line {
-    height: 0.8px;
-    background-color: #6a7384;
+      height: 0.8px;
+      background-color: #6a7384;
     }
   }
   .tag-buttons {

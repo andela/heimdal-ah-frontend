@@ -13,11 +13,12 @@ export function createArticleAction(articleDetails) {
     instance.post('https://heimdal-ah-staging.herokuapp.com/api/v1/articles', { ...articleDetails })
       .then((response) => {
         const payload = {
-          message: 'Article successfully created', status: 201,
+          message: 'Article successfully created',
+          status: 201,
+          slug: response.data.article.slug,
         };
         if (response.status === 201) {
           dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE, payload));
-          dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_STATE, null));
         }
       }).catch((error) => {
         if (error.response.status === 400) {

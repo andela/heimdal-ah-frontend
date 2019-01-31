@@ -70,7 +70,6 @@ export class ReadSingleArticle extends Component {
 
     setArticleId(this.props.singleArticle.id);
 
-
     return (
       <Fragment>
         { status === 'ERROR' ? <Redirect to={`/articles/${slug}`} />

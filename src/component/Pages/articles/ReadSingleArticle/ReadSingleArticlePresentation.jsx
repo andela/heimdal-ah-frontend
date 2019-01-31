@@ -56,7 +56,7 @@ class ReadSingleArticlePresentation extends Component {
               { this.props.body }
               <div className='bottom-details'>
                 <div>
-                  <ArticlesRating />
+                  {this.props.articleId && <ArticlesRating articleId={this.props.articleId} />}
                 </div>
                 <div className='ratings'>
                   <span>Rated by:</span>
@@ -73,7 +73,7 @@ class ReadSingleArticlePresentation extends Component {
                 <img className="user-image" src={this.props.userImage} alt="user" />
                 <br />
                 <br />
-                <h2>{this.props.username}</h2>
+                <a href={`/${this.props.username}`}><h2>{this.props.username}</h2></a>
                 <br />
                 <h4>{ timeAgo.format(moment(this.props.time).valueOf()) }</h4>
                 <br />
