@@ -9,17 +9,17 @@ import PasswordResetPresentation from '../component/Pages/PasswordResetPage/Pass
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
 import Profile from '../component/Pages/Profile/Profile';
 import ProtectedRoute from './ProtectedRoute';
-
+import LandingPage from '../component/Pages/LandingPage/index.jsx';
 
 const Routes = () => (
   <MainLayout>
     <Fragment>
       <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route exact path='/social-auth' component={SocialAuth} />
-        <Route exact path='/reset-password' component={PasswordResetPresentation} />
-        <Route exact path='/update-password' component={UpdatePasswordPresentation} />
-        <ProtectedRoute exact path='/:username' component={Profile} />
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/social-auth" component={SocialAuth} />
+        <Route exact path="/reset-password" component={PasswordResetPresentation} />
+        <Route exact path="/update-password" component={UpdatePasswordPresentation} />
+        <ProtectedRoute exact path="/:username" component={Profile} />
         <Route component={NotFound} />
       </Switch>
       <ReduxToastr />

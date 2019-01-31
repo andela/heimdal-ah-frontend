@@ -26,4 +26,8 @@ export const ACTIONS = keyMirror({
   GETTING_PROFILE_ERROR: null,
   GET_PROFILE: null,
   GET_ARTICLES_BY_AUTHOR: null,
+
+  SET_FEATURED_ARTICLES: null,
+  SET_MAIN_ARTICLES: null,
+  SET_RECENT_ARTICLES: null,
 });

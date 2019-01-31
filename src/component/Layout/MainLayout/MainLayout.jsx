@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 import PropsTypes from 'prop-types';
 import Header from '../../ui/header/Header';
 import Footer from '../../ui/footer/Footer';
+import './mainLayout.scss';
 
 /**
  * @description It wraps its children with a layout style
@@ -12,7 +13,7 @@ import Footer from '../../ui/footer/Footer';
 const MainLayout = ({ children }) => (
   <Fragment>
     <Header />
-    {children}
+    <main className="main-layout">{children}</main>
     <Footer />
   </Fragment>
 );
