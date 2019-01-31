@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { debounce } from 'lodash';
 import searchArticleByAuthor from '../../../actions/SearchArticles/searchArticlesByAuthorActions';
 import searchArticleByTitle from '../../../actions/SearchArticles/searchArticlesByTitleActions';
-import searchArticleByTags from '../../../actions/SearchArticles/earchArticlesByTagsActions';
+import searchArticleByTags from '../../../actions/SearchArticles/searchArticlesByTagsActions';
 import './SearchArticles.scss';
 
 /**
@@ -46,9 +46,9 @@ export class SearchArticles extends Component {
       }));
     });
     stateChanged.then(() => {
-      this.props.actions(debounce(searchArticleByAuthor(this.state.query || new URLSearchParams(window.location.search).get('query'), this.props.field, this.props.size), 500));
-      this.props.actions(debounce(searchArticleByTitle(this.state.query || new URLSearchParams(window.location.search).get('query'), this.props.field, this.props.size), 500));
-      this.props.actions(debounce(searchArticleByTags(this.state.query || new URLSearchParams(window.location.search).get('query'), this.props.field, this.props.size), 500));
+      this.props.actions(debounce(searchArticleByAuthor(this.state.query || new URLSearchParams(window.location.search).get('query'), this.props.offset, this.props.size), 500));
+      this.props.actions(debounce(searchArticleByTitle(this.state.query || new URLSearchParams(window.location.search).get('query'), this.props.offset, this.props.size), 500));
+      this.props.actions(debounce(searchArticleByTags(this.state.query || new URLSearchParams(window.location.search).get('query'), this.props.offset, this.props.size), 500));
     });
   }
 

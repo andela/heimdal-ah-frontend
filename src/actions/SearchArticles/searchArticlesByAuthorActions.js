@@ -5,14 +5,14 @@ import {
 import ActionResponse from '../actionResponse';
 
 let http;
-const searchArticleByAuthor = (query, field, size) => (dispatch) => {
-  if (field !== null && size !== null) {
-    http = instance.get(`/articles_search/author?author=${query}&offset=${field}&size=${size}`);
+const searchArticleByAuthor = (query, offset, size) => (dispatch) => {
+  if (offset !== undefined && size !== undefined) {
+    http = instance.get(`/articles_search/author?author=${query}&offset=${offset}&size=${size}`);
   } else {
     http = instance.get(`/articles_search/author?author=${query}`);
   }
 
-  http.then((response) => {
+  return http.then((response) => {
     if (response.status === 200) {
       dispatch(ActionResponse(ACTIONS.SEARCH_ARTICLES_BY_AUTHOR_SUCCESS,
         response.data.articles.rows));

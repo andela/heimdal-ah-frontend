@@ -6,13 +6,13 @@ import ActionResponse from '../actionResponse';
 
 let http;
 const searchArticleByTags = (query, offset, size) => (dispatch) => {
-  if (offset && size) {
+  if (offset !== undefined && size !== undefined) {
     http = instance.get(`/articles_search/tag?tag=${query}&offset=${offset}&size=${size}`);
   } else {
     http = instance.get(`/articles_search/tag?tag=${query}`);
   }
 
-  http.then((response) => {
+  return http.then((response) => {
     if (response.status === 200) {
       dispatch(ActionResponse(ACTIONS.SEARCH_ARTICLES_BY_TAGS_SUCCESS,
         response.data.articles.rows));

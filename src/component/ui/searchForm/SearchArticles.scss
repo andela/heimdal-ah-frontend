@@ -40,7 +40,7 @@
 
 .search-articles-full-body {
    &.header-formm {
-    margin: 8% 30% 10% 30%;
+    margin: 4% 30% 2% 30%;
    }
 
     table {
@@ -49,21 +49,26 @@
         box-shadow: 2px 2px 6px rgb(136, 134, 134);
         color: $search-articles__tr--bg-color;
         font-family: 'Roboto, sans-serif';
-        font-size: 30px;
+        font-size: 20px;
         left: 4%;
-        margin-bottom: 25%;
+        margin-bottom: 10%;
         position: relative;
         right: 2%;
         width: 92%;
     }
     
     td, th {
-        padding: 10px 10px 10px 30px;
+        padding: 3px 3px 3px 20px;
         border-bottom: 1px solid rgb(173, 171, 171);
     }
 
     th {
+        background-color: rgb(122, 187, 212);;
         color: $black;
+    }
+
+    td:hover {
+        background-color: rgba(122, 187, 212, 0.2);
     }
     
     a {
