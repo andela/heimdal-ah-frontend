@@ -1,4 +1,6 @@
-import { ACTIONS } from '../../actions/actionTypes';
+import {
+  ACTIONS,
+} from '../../actions/actionTypes';
 
 const initialState = {
   payload: '',
@@ -7,21 +9,21 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case ACTIONS.UPDATE_PASSWORD_FAILED:
+    case ACTIONS.GET_ARTICLES_BY_ID_RESET_STATE:
       return ({
         ...state,
-        payload: action.payload,
-        status: 'FAILED',
+        payload: '',
+        status: '',
       });
 
-    case ACTIONS.UPDATE_PASSWORD_SUCCESS:
+    case ACTIONS.GET_ARTICLES_BY_ID_SUCCESS:
       return ({
         ...state,
         payload: action.payload,
         status: 'SUCCESS',
       });
 
-    case ACTIONS.UPDATE_PASSWORD_ERROR:
+    case ACTIONS.GET_ARTICLES_BY_ID_ERROR:
       return ({
         ...state,
         payload: action.payload,
