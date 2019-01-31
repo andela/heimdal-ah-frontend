@@ -1,13 +1,11 @@
 import { combineReducers } from 'redux';
 import { reducer as toastrReducer } from 'react-redux-toastr';
 import {
-  resetPassword,
-  updatePassword,
-  articleRating,
-  getarticleRating,
+  resetPassword, updatePassword, articleRating, getarticleRating,
 } from './index';
 import authReducer from './authReducer';
 import errorsReducer from './errorsReducer';
+import articleReducer from './Article/articleReducer';
 import profileReducer from './profile/profileReducer';
 
 const rootReducer = combineReducers({
@@ -18,6 +16,7 @@ const rootReducer = combineReducers({
   getarticlerating: getarticleRating,
   errors: errorsReducer,
   auth: authReducer,
+  articles: articleReducer,
   profile: profileReducer,
 });
 
