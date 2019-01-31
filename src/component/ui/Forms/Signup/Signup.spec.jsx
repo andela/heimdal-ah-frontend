@@ -4,7 +4,7 @@ import { Signup } from './Signup';
 import SignupForm from './SignupForm';
 
 describe('The Signup Component Test Suite', () => {
-  const wrapper = shallow(<Signup toggle={() => {}} />);
+  const wrapper = shallow(<Signup toggle={() => {}} actions={() => {}} />);
   it('should render the <SignupForm /> Component', () => {
     expect(wrapper.length).toBe(1);
     expect(wrapper).toMatchSnapshot();
@@ -50,5 +50,19 @@ describe('The Signup Component Test Suite', () => {
     wrapper.instance().onChange(event);
     expect(wrapper.state().passwordConfirmation).toEqual('123123qwe');
     expect(wrapper.instance().state.passwordConfirmation).toEqual(event.target.value);
+  });
+
+  it('should call the handleSignup', () => {
+    const event = { preventDefault: () => {} };
+
+    wrapper.instance().handleSignup(event);
+    // expect(wrapper.state().reportType).toEqual('spam');
+    // expect(
+    //   sinon.stub(jest.fn(wrapper.instance().props.actions(toggleLoader()))),
+    // ).not.toHaveBeenCalled();
+    // expect(
+    //   sinon.stub(jest.fn(wrapper.instance().props.actions(reportArticle()))),
+    // ).toHaveBeenCalled();
+    // expect(wrapper.instance().state.reportType).toEqual(event.target.value);
   });
 });

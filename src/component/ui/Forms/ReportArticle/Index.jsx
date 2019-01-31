@@ -1,5 +1,5 @@
 /* eslint-disable react/forbid-prop-types */
-import { bindActionCreators } from 'redux';
+// import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -17,7 +17,7 @@ import ToasterAlert from '../../Alert/Alert';
  * @param {object} props - react props with children
  * @returns {object} the SignupFrom component
  */
-class ReportArticle extends Component {
+export class ReportArticle extends Component {
   state = {
     context: '',
     reportType: 'spam',
@@ -34,7 +34,7 @@ class ReportArticle extends Component {
 
     if (this.state.errors[event.target.name]) {
       const { actions } = this.props;
-      actions.removeAnError(event.target.name);
+      actions(removeAnError(event.target.name));
     }
   };
 
@@ -49,20 +49,20 @@ class ReportArticle extends Component {
   handleArticleReport = (event) => {
     event.preventDefault();
     const { actions, toggle } = this.props;
-    actions.toggleLoader();
+    actions(toggleLoader());
 
     const { context, reportType } = this.state;
     const reportData = { context, reportType };
     const errors = validateReport(reportData);
 
     if (errors) {
-      actions.toggleLoader();
-      return actions.setErrors(errors);
+      actions(toggleLoader());
+      return actions(setErrors(errors));
     }
 
     reportData.articleId = this.props.articleId || 5;
-    actions.clearErrors();
-    return actions.reportArticle(reportData, toggle, this.flashMessage);
+    actions(clearErrors());
+    return actions(reportArticle(reportData, toggle, this.flashMessage));
   };
 
   render() {
@@ -148,16 +148,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  actions: bindActionCreators(
-    {
-      removeAnError,
-      setErrors,
-      clearErrors,
-      reportArticle,
-      toggleLoader,
-    },
-    dispatch,
-  ),
+  actions: action => dispatch(action),
 });
 
 export default connect(

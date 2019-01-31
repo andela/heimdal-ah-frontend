@@ -39,14 +39,14 @@ export class Signup extends Component {
     this.setState({ [event.target.name]: event.target.value });
     if (this.state.errors[event.target.name]) {
       const { actions } = this.props;
-      actions.removeAnError(event.target.name);
+      actions(removeAnError(event.target.name));
     }
   };
 
   handleSignup = (event) => {
     event.preventDefault();
     const { actions, history, toggle: toggleModal } = this.props;
-    actions.toggleLoader();
+    actions(toggleLoader());
 
     const {
       username, email, password, passwordConfirmation,
@@ -62,12 +62,12 @@ export class Signup extends Component {
     const errors = validateSignup(signupData);
 
     if (errors) {
-      actions.toggleLoader();
-      return actions.setErrors(errors.errors);
+      actions(toggleLoader());
+      return actions(setErrors(errors.errors));
     }
 
-    actions.clearErrors();
-    return actions.signupUser(signupData, history, toggleModal);
+    actions(clearErrors());
+    return actions(signupUser(signupData, history, toggleModal));
   };
 
   render() {
@@ -100,16 +100,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  actions: bindActionCreators(
-    {
-      signupUser,
-      removeAnError,
-      setErrors,
-      clearErrors,
-      toggleLoader,
-    },
-    dispatch,
-  ),
+  actions: action => dispatch(action),
 });
 
 export default connect(
