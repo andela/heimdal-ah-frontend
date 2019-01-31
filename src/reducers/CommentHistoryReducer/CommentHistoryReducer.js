@@ -1,7 +1,7 @@
 import { ACTIONS } from '../../actions/actionTypes';
 
 const initialState = {
-  history: {},
+  commentHistory: [],
 };
 
 
@@ -10,12 +10,13 @@ const commentEditHistoryReducer = (state = initialState, action) => {
     case ACTIONS.GET_COMMENT_EDIT_HISTORY:
       return {
         ...state,
-        history: action.history,
+        commentHistory: action.history,
       };
 
     case ACTIONS.GET_COMMENT_EDIT_HISTORY_FAIL:
       return {
         ...state,
+        ...initialState,
         error: action.error,
       };
     default:

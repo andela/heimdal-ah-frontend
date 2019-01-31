@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
 import { bindActionCreators } from 'redux';
 import {
-  Dropdown, DropdownToggle, DropdownMenu, D
+  Dropdown, DropdownToggle, DropdownMenu,
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -18,25 +18,15 @@ class Ellipse extends Component {
       dropDown: false,
     };
 
-    // componentDidMount() {
-    //   this.fetchCommentEditHistory();
-    // }
-
   toggle = () => {
     this.setState(prevState => ({
       dropDown: !prevState.dropDown,
     }));
   };
 
-  fetchCommentHistory = () => {
-    const { actions, articleId, commentId } = this.props;
-    actions.fetchCommentEditHistory(articleId, commentId);
-  };
-
   render() {
     const { dropDown } = this.state;
-    const { history } = this.props;
-    // console.log('=====', history);
+    const { articleId, commentId } = this.props;
 
     return (
       <Dropdown isOpen={dropDown} toggle={this.toggle} tag="span">
@@ -50,9 +40,12 @@ class Ellipse extends Component {
           <FontAwesome name='menu' className='fas fa-ellipsis-v' onClick={this.toggle} />
         </DropdownToggle>
         <DropdownMenu>
-          <a href='/#'>
-            <ModalButton size='lg' type='signup' label='Edit history'><CommentEditHistory /></ModalButton>
-          </a>
+          <ModalButton type='signup' label='view history' title='Edit History'>
+            <CommentEditHistory
+              articleId={articleId}
+              commentId={commentId}
+            />
+          </ModalButton>
         </DropdownMenu>
       </Dropdown>
 
@@ -61,17 +54,4 @@ class Ellipse extends Component {
 }
 
 
-const mapStateToProps = state => ({
-  history: state.history,
-});
-
-const matchDispatchToProps = dispatch => ({
-  actions: bindActionCreators(
-    {
-      fetchCommentEditHistory,
-    },
-    dispatch,
-  ),
-});
-
-export default connect(mapStateToProps, matchDispatchToProps)(Ellipse);
+export default Ellipse;

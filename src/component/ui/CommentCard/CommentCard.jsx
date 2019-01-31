@@ -7,6 +7,7 @@ import DeleteButton from '../CommentForm/CommentDelete';
 import ReplyComment from '../ReplyComment/ReplyComment';
 import Ellipse from '../Elllipse/Ellipse';
 
+
 /**
   * renderComponent
   * @method
@@ -42,7 +43,7 @@ const CommentCard = (props) => {
               <FontAwesome name='calendar' className='fav_icons' />
               09: 00 am
             </span>
-            <Ellipse articleId={item.articleId} commentId={item.id} />
+            <Ellipse key={item.id} articleId={item.articleId} commentId={item.id} />
             { item.userId === user.userId
               ? <DeleteButton buttonName='comment' commentId={item.id} />
               : <div />

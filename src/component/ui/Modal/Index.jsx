@@ -39,7 +39,11 @@ class TriggerModal extends Component {
           size={this.props.size}
           centered
         >
-          <ModalHeader toggle={this.toggle} />
+          {this.props.title
+            ? <ModalHeader toggle={this.toggle}>{this.props.title}</ModalHeader>
+            : <ModalHeader toggle={this.toggle} />
+
+        }
           <ModalBody>{this.props.children}</ModalBody>
         </Modal>
       </Fragment>

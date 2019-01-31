@@ -1,9 +1,9 @@
-import jwt from 'jsonwebtoken';
 import { ACTIONS } from '../actionTypes';
-import instance, { setToken } from '../../config/http';
+import instance from '../../config/http';
+import { setAuthUser } from '../authActions';
 
 export const setCurrentUser = user => ({
-  type: ACTIONS.SET_CURRENT_USER,
+  type: ACTIONS.SET_AUTH_USER,
   user,
 });
 
@@ -20,10 +20,7 @@ const logIn = payload => dispatch => instance
   .post('/auth/login', payload)
   .then((response) => {
     const { token } = response.data;
-    localStorage.setItem('access-token', token);
-    setToken(token);
-    const decoded = jwt.decode(token);
-    dispatch(setCurrentUser(decoded));
+    dispatch(setAuthUser(token));
   })
   .catch((error) => {
     const { data } = error.response;
