@@ -7,6 +7,7 @@ const getArticleById = identifier => dispatch => instance.get(`/articles/${ident
   .then((response) => {
     console.log(response, '=============');
     if (response.status === 200) {
+      // localStorage.setItem('articleId', response.data.article.id);
       dispatch(ActionResponse(ACTIONS.GET_ARTICLES_BY_ID_SUCCESS, response.data.article));
     }
   }).catch((error) => {
