@@ -96,7 +96,7 @@ class CreateArticle extends React.Component {
         {status === 'SUCCESS' && (<Alert type="success" title="Article was posted" message="your Article was published successfully" />) && <Redirect to={`/@username/articles/${this.props.payload.slug}`} />}
         {alert === 'FAILURE' && (<Alert type="warning" title="All fields should be filled" message="Error : Article was not posted" />)}
         {alert === 'FAILED' && (<Alert type="warning" title="Exceeded max Character in text feilds" message="Error : Article was not posted" />)}
-        {status === 'FAILURE' && (<Alert type="success" title="user should be logged in" message="sever error" />) && <Redirect to="/login" />}
+        {status === 'FAILURE' && (<Alert type="warning" title="user should be logged in" message="please log-in" />)}
         <Button
           type="article"
           label="Post Article"

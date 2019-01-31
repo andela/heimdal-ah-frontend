@@ -21,10 +21,9 @@ export function createArticleAction(articleDetails) {
           dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE, payload));
         }
       }).catch((error) => {
-        if (error.response.status === 400) {
-          dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, { message: 'No Field Should Be Left Empty', status: 400 }));
-          dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_STATE, ''));
-        } else if (error.response.status === 500) {
+        dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, { message: 'No Field Should Be Left Empty', status: 400 }));
+        dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_STATE, ''));
+        if (error.response.status === 500) {
           dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_ERROR, { message: 'Sever Error', status: 500 }));
           dispatch(ActionResponse(ACTIONS.CREATE_ARTICLE_STATE, ''));
         }

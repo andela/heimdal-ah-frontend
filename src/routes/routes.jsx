@@ -12,6 +12,7 @@ import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/Upd
 import UpdateArticlesPresentation from '../component/Pages/articles/UpdateArticles/UpdateArticlesPresentation.jsx';
 import ReadSingleArticleError from '../component/Pages/articles/ReadSingleArticle/ReadSingleArticleError.jsx';
 import Profile from '../component/Pages/Profile/Profile';
+import Articles from '../component/Pages/Article/ArticleListPage';
 import ProtectedRoute from './ProtectedRoute';
 
 
@@ -31,6 +32,7 @@ const Routes = () => (
         <Route exact path='/update-password' component={UpdatePasswordPresentation} />
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
         <Route exact path='/update-password' component={UpdatePasswordPresentation} />
+        <Route exact path='/all-stories' component={Articles} />
         <ProtectedRoute exact path='/:username' component={Profile} />
         <Route component={NotFound} />
       </Switch>

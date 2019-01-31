@@ -58,9 +58,7 @@ class ReadSingleArticlePresentation extends Component {
                 <div>
                   {this.props.articleId && <ArticlesRating articleId={this.props.articleId} />}
                 </div>
-                <div className='ratings'>
-                  <span>Rated by:</span>
-                </div>
+                <div className='ratings' />
                 <div className='glow'>
                   <Glow active handleGlow={() => {}} />
                   <span className='likesCount'>{ this.props.likesCount }</span>
@@ -73,7 +71,7 @@ class ReadSingleArticlePresentation extends Component {
                 <img className="user-image" src={this.props.userImage} alt="user" />
                 <br />
                 <br />
-                <a href={`/${this.props.username}`}><h2>{this.props.username}</h2></a>
+                <a href={`/${this.props.username}`} className="user-link"><h2>{this.props.username}</h2></a>
                 <br />
                 <h4>{ timeAgo.format(moment(this.props.time).valueOf()) }</h4>
                 <br />
