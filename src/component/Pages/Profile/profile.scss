@@ -1,15 +1,14 @@
-$profile-header-color: #606E86;
-$white: #fff;
+@import '../../../styles/variables.scss';
 
 .profile {
-  background-color: #f9f9f9;
+  background-color: $layout-bg-color;
   overflow: hidden;
 
   .profile-header {
     background-color: $profile-header-color;  
     padding: 50px 65px; 
-    color: $white;
-    border: 1px solid #000000;
+    color: $white-color;
+    border: 1px solid $black-color;
     font-family: Cardo;
     font-size: 18px;
 
@@ -41,32 +40,32 @@ $white: #fff;
       padding-right: 7%;
     }
 
-    h3 {
+    .profile-name {
       margin-bottom: 1rem;
     }
 
-    .profile-image {
+    .profile-image-container {
       overflow: hidden;
+      
+      .profile-image {
+        width: 240px;
+      }
     }
-
-    img {
-      width: 240px;
-    }
-
-    span {
+    
+    .profile-addtionals-info {
       display: inline-block;
     }
     
-    span:not(:first-child) {
+    .profile-addtionals-info:not(:first-child) {
       padding-left: 15px;
     }
 
-    span:not(:last-child) {
+    .profile-addtionals-info:not(:last-child) {
       padding-right: 15px;
-      border-right: 1px solid $white;
+      border-right: 1px solid $white-color;
     }
 
-    .dist {
+    .profile-addtionals {
       display: flex;
       align-items: baseline;
       width: 100%;
@@ -91,7 +90,7 @@ $white: #fff;
 
     .biography-label {
       display: inline-block;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid $black-color;
       text-transform: uppercase;
       font-family: Cardo;
       font-weight: bolder;
