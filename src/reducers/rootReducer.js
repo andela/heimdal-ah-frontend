@@ -3,7 +3,13 @@ import { reducer as toastrReducer } from 'react-redux-toastr';
 import getArticlesByIdReducer from './articlesReducers/getArticlesByIdReducer';
 import updateArticlesReducer from './articlesReducers/updateArticlesReducer';
 import {
-  resetPassword, updatePassword, articleRating, getarticleRating, AllFollowReducer, createArticleReducer,
+  resetPassword,
+  updatePassword,
+  articleRating,
+  getarticleRating,
+  AllFollowReducer,
+  createArticleReducer,
+  unPublishedArticle,
 } from './index';
 import authReducer from './authReducer';
 import errorsReducer from './errorsReducer';
@@ -24,6 +30,7 @@ const rootReducer = combineReducers({
   auth: authReducer,
   articles: articleReducer,
   profile: profileReducer,
+  unpublishedarticle: unPublishedArticle,
 });
 
 export default rootReducer;
