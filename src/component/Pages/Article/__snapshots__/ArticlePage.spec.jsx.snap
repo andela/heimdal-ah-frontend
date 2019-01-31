@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Mount Article page should render the article page 1`] = `
-<div
-  className="mb-5"
->
+<div>
   <h2
     className="mx-auto text-center mb-5"
   >
