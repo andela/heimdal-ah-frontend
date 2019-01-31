@@ -14,6 +14,7 @@ export const ACTIONS = keyMirror({
   UPDATE_PASSWORD_SUCCESS: null,
   UPDATE_PASSWORD_FAILED: null,
   UPDATE_PASSWORD_ERROR: null,
+<<<<<<< HEAD
   GET_ARTICLE_COMMENT: null,
   GET_ERRORS: null,
   DATA_LOADING_COMMENT: null,
@@ -25,15 +26,23 @@ export const ACTIONS = keyMirror({
   ARCHIVE_COMMENT_REPLY: null,
   SET_AUTH_USER: null,
   SUCCESS_COMMENT: null,
+=======
+  GET_PROFILE: null,
+  GET_ARTICLES_BY_AUTHOR: null,
+>>>>>>> d0ab6a7fa142b6d6785c716c241b19d797cce65d
   ARTICLES_RATING_SUCCESS: null,
   ARTICLES_RATING_ERROR: null,
   RESET_ARTICLES_RATING_STATE: null,
   GET_ARTICLES_RATING_SUCCESS: null,
   GET_ARTICLES_RATING_ERROR: null,
+<<<<<<< HEAD
+=======
+  SET_AUTH_USER: null,
+  SET_LOADER: null,
+>>>>>>> d0ab6a7fa142b6d6785c716c241b19d797cce65d
   SET_ERRORS: null,
   CLEAR_ERRORS: null,
   REMOVE_AN_ERROR: null,
+  GET_ALL_ARTICLES: null,
   GETTING_PROFILE_ERROR: null,
-  GET_PROFILE: null,
-  GET_ARTICLES_BY_AUTHOR: null,
 });
