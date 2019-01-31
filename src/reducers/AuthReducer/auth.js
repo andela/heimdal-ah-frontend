@@ -1,18 +1,19 @@
-import { ACTIONS } from '../actions/actionTypes';
-import isEmpty from '../utils/isEmpty';
+import isEmpty from 'is-empty';
+import { ACTIONS } from '../../actions/actionTypes';
 
-const authDefaultState = {
+const initialState = {
   isAuthenticated: false,
   user: {},
+  error: {},
 };
 
-const authReducer = (state = authDefaultState, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
-    case ACTIONS.SET_AUTH_USER:
+    case ACTIONS.SET_CURRENT_USER:
       return {
         ...state,
-        isAuthenticated: !isEmpty(action.payload),
-        user: { ...action.payload },
+        isAuthenticated: !isEmpty(action.user),
+        user: action.user,
       };
     case ACTIONS.SET_CURRENT_USER_FAIL:
       return {
@@ -31,11 +32,8 @@ const authReducer = (state = authDefaultState, action) => {
     case ACTIONS.LOGOUT_USER:
       return {
         ...state,
-        ...authDefaultState,
+        ...initialState,
       };
-    default:
-      return state;
+    default: return state;
   }
 };
-
-export default authReducer;
