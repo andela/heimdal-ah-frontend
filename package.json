@@ -32,6 +32,7 @@
     "jwt-decode": "^2.2.0",
     "keymirror": "^0.1.1",
     "logger": "0.0.1",
+    "medium-editor": "^5.23.3",
     "moment": "^2.24.0",
     "moxios": "^0.4.0",
     "prop-types": "^15.6.2",
@@ -42,6 +43,7 @@
     "react-content-loader": "^4.0.0",
     "react-dom": "^16.7.0",
     "react-fontawesome": "^1.6.1",
+    "react-medium-editor": "^1.8.1",
     "react-redux": "^6.0.0",
     "react-redux-toastr": "^7.4.7",
     "react-router-dom": "^4.3.1",
@@ -49,8 +51,11 @@
     "react-test-renderer": "^16.7.0",
     "reactstrap": "^7.1.0",
     "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.7",
     "redux-mock-store": "^1.5.3",
     "redux-thunk": "^2.3.0",
+    "slate": "^0.44.9",
+    "slate-react": "^0.21.15",
     "validatorjs": "^3.15.1"
   },
   "devDependencies": {
