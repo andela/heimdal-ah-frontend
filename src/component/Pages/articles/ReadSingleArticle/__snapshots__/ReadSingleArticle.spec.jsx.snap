@@ -219,9 +219,7 @@ ShallowWrapper {
               <div
                 className="bottom-details"
               >
-                <div>
-                  <Connect(ArticlesRating) />
-                </div>
+                <div />
                 <div
                   className="ratings"
                 >
@@ -257,9 +255,13 @@ ShallowWrapper {
                 />
                 <br />
                 <br />
-                <h2>
-                  @username
-                </h2>
+                <a
+                  href="/@username"
+                >
+                  <h2>
+                    @username
+                  </h2>
+                </a>
                 <br />
                 <h4>
                   just now
@@ -441,9 +443,7 @@ ShallowWrapper {
                 <div
                   className="bottom-details"
                 >
-                  <div>
-                    <Connect(ArticlesRating) />
-                  </div>
+                  <div />
                   <div
                     className="ratings"
                   >
@@ -479,9 +479,13 @@ ShallowWrapper {
                   />
                   <br />
                   <br />
-                  <h2>
-                    @username
-                  </h2>
+                  <a
+                    href="/@username"
+                  >
+                    <h2>
+                      @username
+                    </h2>
+                  </a>
                   <br />
                   <h4>
                     just now
@@ -711,9 +715,7 @@ ShallowWrapper {
                   <div
                     className="bottom-details"
                   >
-                    <div>
-                      <Connect(ArticlesRating) />
-                    </div>
+                    <div />
                     <div
                       className="ratings"
                     >
@@ -749,9 +751,13 @@ ShallowWrapper {
                     />
                     <br />
                     <br />
-                    <h2>
-                      @username
-                    </h2>
+                    <a
+                      href="/@username"
+                    >
+                      <h2>
+                        @username
+                      </h2>
+                    </a>
                     <br />
                     <h4>
                       just now
@@ -898,9 +904,7 @@ ShallowWrapper {
                     <div
                       className="bottom-details"
                     >
-                      <div>
-                        <Connect(ArticlesRating) />
-                      </div>
+                      <div />
                       <div
                         className="ratings"
                       >
@@ -935,9 +939,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": Array [
-                        <div>
-                          <Connect(ArticlesRating) />
-                        </div>,
+                        <div />,
                         <div
                           className="ratings"
                         >
@@ -966,18 +968,10 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": <Connect(ArticlesRating) />,
+                          "children": undefined,
                         },
                         "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "class",
-                          "props": Object {},
-                          "ref": null,
-                          "rendered": null,
-                          "type": [Function],
-                        },
+                        "rendered": null,
                         "type": "div",
                       },
                       Object {
@@ -1081,9 +1075,13 @@ ShallowWrapper {
                       />
                       <br />
                       <br />
-                      <h2>
-                        @username
-                      </h2>
+                      <a
+                        href="/@username"
+                      >
+                        <h2>
+                          @username
+                        </h2>
+                      </a>
                       <br />
                       <h4>
                         just now
@@ -1229,9 +1227,13 @@ ShallowWrapper {
                         />,
                         <br />,
                         <br />,
-                        <h2>
-                          @username
-                        </h2>,
+                        <a
+                          href="/@username"
+                        >
+                          <h2>
+                            @username
+                          </h2>
+                        </a>,
                         <br />,
                         <h4>
                           just now
@@ -1306,11 +1308,24 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": "@username",
+                          "children": <h2>
+                            @username
+                          </h2>,
+                          "href": "/@username",
                         },
                         "ref": null,
-                        "rendered": "@username",
-                        "type": "h2",
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "@username",
+                          },
+                          "ref": null,
+                          "rendered": "@username",
+                          "type": "h2",
+                        },
+                        "type": "a",
                       },
                       Object {
                         "instance": null,
@@ -2014,9 +2029,7 @@ ShallowWrapper {
                 <div
                   className="bottom-details"
                 >
-                  <div>
-                    <Connect(ArticlesRating) />
-                  </div>
+                  <div />
                   <div
                     className="ratings"
                   >
@@ -2052,9 +2065,13 @@ ShallowWrapper {
                   />
                   <br />
                   <br />
-                  <h2>
-                    @username
-                  </h2>
+                  <a
+                    href="/@username"
+                  >
+                    <h2>
+                      @username
+                    </h2>
+                  </a>
                   <br />
                   <h4>
                     just now
@@ -2236,9 +2253,7 @@ ShallowWrapper {
                   <div
                     className="bottom-details"
                   >
-                    <div>
-                      <Connect(ArticlesRating) />
-                    </div>
+                    <div />
                     <div
                       className="ratings"
                     >
@@ -2274,9 +2289,13 @@ ShallowWrapper {
                     />
                     <br />
                     <br />
-                    <h2>
-                      @username
-                    </h2>
+                    <a
+                      href="/@username"
+                    >
+                      <h2>
+                        @username
+                      </h2>
+                    </a>
                     <br />
                     <h4>
                       just now
@@ -2506,9 +2525,7 @@ ShallowWrapper {
                     <div
                       className="bottom-details"
                     >
-                      <div>
-                        <Connect(ArticlesRating) />
-                      </div>
+                      <div />
                       <div
                         className="ratings"
                       >
@@ -2544,9 +2561,13 @@ ShallowWrapper {
                       />
                       <br />
                       <br />
-                      <h2>
-                        @username
-                      </h2>
+                      <a
+                        href="/@username"
+                      >
+                        <h2>
+                          @username
+                        </h2>
+                      </a>
                       <br />
                       <h4>
                         just now
@@ -2693,9 +2714,7 @@ ShallowWrapper {
                       <div
                         className="bottom-details"
                       >
-                        <div>
-                          <Connect(ArticlesRating) />
-                        </div>
+                        <div />
                         <div
                           className="ratings"
                         >
@@ -2730,9 +2749,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": Array [
-                          <div>
-                            <Connect(ArticlesRating) />
-                          </div>,
+                          <div />,
                           <div
                             className="ratings"
                           >
@@ -2761,18 +2778,10 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": <Connect(ArticlesRating) />,
+                            "children": undefined,
                           },
                           "ref": null,
-                          "rendered": Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "class",
-                            "props": Object {},
-                            "ref": null,
-                            "rendered": null,
-                            "type": [Function],
-                          },
+                          "rendered": null,
                           "type": "div",
                         },
                         Object {
@@ -2876,9 +2885,13 @@ ShallowWrapper {
                         />
                         <br />
                         <br />
-                        <h2>
-                          @username
-                        </h2>
+                        <a
+                          href="/@username"
+                        >
+                          <h2>
+                            @username
+                          </h2>
+                        </a>
                         <br />
                         <h4>
                           just now
@@ -3024,9 +3037,13 @@ ShallowWrapper {
                           />,
                           <br />,
                           <br />,
-                          <h2>
-                            @username
-                          </h2>,
+                          <a
+                            href="/@username"
+                          >
+                            <h2>
+                              @username
+                            </h2>
+                          </a>,
                           <br />,
                           <h4>
                             just now
@@ -3101,11 +3118,24 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": "@username",
+                            "children": <h2>
+                              @username
+                            </h2>,
+                            "href": "/@username",
                           },
                           "ref": null,
-                          "rendered": "@username",
-                          "type": "h2",
+                          "rendered": Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "@username",
+                            },
+                            "ref": null,
+                            "rendered": "@username",
+                            "type": "h2",
+                          },
+                          "type": "a",
                         },
                         Object {
                           "instance": null,
@@ -3811,18 +3841,16 @@ ShallowWrapper {
         <h3>
           Sorry This Article
           <br />
-          Does Not Exist
+          Sorry This Article Does Not Exist
         </h3>,
         <br />,
-        <div>
-          <a
-            to="/"
-          >
-            <div>
-              ..go back Home....
-            </div>
-          </a>
-        </div>,
+        <a
+          to="/"
+        >
+          <div>
+            ..go back Home....
+          </div>
+        </a>,
       ],
       "className": "container ReadSingleArticleError",
     },
@@ -3836,7 +3864,7 @@ ShallowWrapper {
           "children": Array [
             "Sorry This Article",
             <br />,
-            "Does Not Exist",
+            "Sorry This Article Does Not Exist",
           ],
         },
         "ref": null,
@@ -3851,7 +3879,7 @@ ShallowWrapper {
             "rendered": null,
             "type": "br",
           },
-          "Does Not Exist",
+          "Sorry This Article Does Not Exist",
         ],
         "type": "h3",
       },
@@ -3869,16 +3897,90 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <a
+          "children": <div>
+            ..go back Home....
+          </div>,
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "..go back Home....",
+          },
+          "ref": null,
+          "rendered": "..go back Home....",
+          "type": "div",
+        },
+        "type": "a",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Sorry This Article
+            <br />
+            Sorry This Article Does Not Exist
+          </h3>,
+          <br />,
+          <a
             to="/"
           >
             <div>
               ..go back Home....
             </div>
           </a>,
+        ],
+        "className": "container ReadSingleArticleError",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Sorry This Article",
+              <br />,
+              "Sorry This Article Does Not Exist",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Sorry This Article",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "Sorry This Article Does Not Exist",
+          ],
+          "type": "h3",
         },
-        "ref": null,
-        "rendered": Object {
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
@@ -3901,114 +4003,6 @@ ShallowWrapper {
             "type": "div",
           },
           "type": "a",
-        },
-        "type": "div",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <h3>
-            Sorry This Article
-            <br />
-            Does Not Exist
-          </h3>,
-          <br />,
-          <div>
-            <a
-              to="/"
-            >
-              <div>
-                ..go back Home....
-              </div>
-            </a>
-          </div>,
-        ],
-        "className": "container ReadSingleArticleError",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Sorry This Article",
-              <br />,
-              "Does Not Exist",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Sorry This Article",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            "Does Not Exist",
-          ],
-          "type": "h3",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": "br",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <a
-              to="/"
-            >
-              <div>
-                ..go back Home....
-              </div>
-            </a>,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div>
-                ..go back Home....
-              </div>,
-              "to": "/",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "..go back Home....",
-              },
-              "ref": null,
-              "rendered": "..go back Home....",
-              "type": "div",
-            },
-            "type": "a",
-          },
-          "type": "div",
         },
       ],
       "type": "div",
