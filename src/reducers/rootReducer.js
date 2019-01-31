@@ -4,6 +4,7 @@ import getArticlesByIdReducer from './articlesReducers/getArticlesByIdReducer';
 import updateArticlesReducer from './articlesReducers/updateArticlesReducer';
 import {
   createArticleReducer,
+  unPublishedArticle,
   resetPassword,
   updatePassword,
   articleRating,
@@ -27,6 +28,7 @@ const rootReducer = combineReducers({
   auth: authReducer,
   articles: articleReducer,
   profile: profileReducer,
+  unpublishedarticle: unPublishedArticle,
 });
 
 export default rootReducer;

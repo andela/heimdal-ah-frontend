@@ -5,6 +5,7 @@ import profile from './profile/profileReducer';
 import articles from './Article/articleReducer';
 import articleRating from './ArticlesRating/articlesRatingReducer';
 import getarticleRating from './ArticlesRating/getArticlesRatingReducer';
+import unPublishedArticle from './Article/unpublishedArticleReducer';
 
 
 export {
@@ -15,4 +16,5 @@ export {
   articles,
   articleRating,
   getarticleRating,
+  unPublishedArticle,
 };
