@@ -222,11 +222,7 @@ ShallowWrapper {
                 <div />
                 <div
                   className="ratings"
-                >
-                  <span>
-                    Rated by:
-                  </span>
-                </div>
+                />
                 <div
                   className="glow"
                 >
@@ -256,6 +252,7 @@ ShallowWrapper {
                 <br />
                 <br />
                 <a
+                  className="user-link"
                   href="/@username"
                 >
                   <h2>
@@ -446,11 +443,7 @@ ShallowWrapper {
                   <div />
                   <div
                     className="ratings"
-                  >
-                    <span>
-                      Rated by:
-                    </span>
-                  </div>
+                  />
                   <div
                     className="glow"
                   >
@@ -480,6 +473,7 @@ ShallowWrapper {
                   <br />
                   <br />
                   <a
+                    className="user-link"
                     href="/@username"
                   >
                     <h2>
@@ -718,11 +712,7 @@ ShallowWrapper {
                     <div />
                     <div
                       className="ratings"
-                    >
-                      <span>
-                        Rated by:
-                      </span>
-                    </div>
+                    />
                     <div
                       className="glow"
                     >
@@ -752,6 +742,7 @@ ShallowWrapper {
                     <br />
                     <br />
                     <a
+                      className="user-link"
                       href="/@username"
                     >
                       <h2>
@@ -907,11 +898,7 @@ ShallowWrapper {
                       <div />
                       <div
                         className="ratings"
-                      >
-                        <span>
-                          Rated by:
-                        </span>
-                      </div>
+                      />
                       <div
                         className="glow"
                       >
@@ -942,11 +929,7 @@ ShallowWrapper {
                         <div />,
                         <div
                           className="ratings"
-                        >
-                          <span>
-                            Rated by:
-                          </span>
-                        </div>,
+                        />,
                         <div
                           className="glow"
                         >
@@ -979,23 +962,10 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": <span>
-                            Rated by:
-                          </span>,
                           "className": "ratings",
                         },
                         "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": "Rated by:",
-                          },
-                          "ref": null,
-                          "rendered": "Rated by:",
-                          "type": "span",
-                        },
+                        "rendered": null,
                         "type": "div",
                       },
                       Object {
@@ -1076,6 +1046,7 @@ ShallowWrapper {
                       <br />
                       <br />
                       <a
+                        className="user-link"
                         href="/@username"
                       >
                         <h2>
@@ -1228,6 +1199,7 @@ ShallowWrapper {
                         <br />,
                         <br />,
                         <a
+                          className="user-link"
                           href="/@username"
                         >
                           <h2>
@@ -1311,6 +1283,7 @@ ShallowWrapper {
                           "children": <h2>
                             @username
                           </h2>,
+                          "className": "user-link",
                           "href": "/@username",
                         },
                         "ref": null,
@@ -2032,11 +2005,7 @@ ShallowWrapper {
                   <div />
                   <div
                     className="ratings"
-                  >
-                    <span>
-                      Rated by:
-                    </span>
-                  </div>
+                  />
                   <div
                     className="glow"
                   >
@@ -2066,6 +2035,7 @@ ShallowWrapper {
                   <br />
                   <br />
                   <a
+                    className="user-link"
                     href="/@username"
                   >
                     <h2>
@@ -2256,11 +2226,7 @@ ShallowWrapper {
                     <div />
                     <div
                       className="ratings"
-                    >
-                      <span>
-                        Rated by:
-                      </span>
-                    </div>
+                    />
                     <div
                       className="glow"
                     >
@@ -2290,6 +2256,7 @@ ShallowWrapper {
                     <br />
                     <br />
                     <a
+                      className="user-link"
                       href="/@username"
                     >
                       <h2>
@@ -2528,11 +2495,7 @@ ShallowWrapper {
                       <div />
                       <div
                         className="ratings"
-                      >
-                        <span>
-                          Rated by:
-                        </span>
-                      </div>
+                      />
                       <div
                         className="glow"
                       >
@@ -2562,6 +2525,7 @@ ShallowWrapper {
                       <br />
                       <br />
                       <a
+                        className="user-link"
                         href="/@username"
                       >
                         <h2>
@@ -2717,11 +2681,7 @@ ShallowWrapper {
                         <div />
                         <div
                           className="ratings"
-                        >
-                          <span>
-                            Rated by:
-                          </span>
-                        </div>
+                        />
                         <div
                           className="glow"
                         >
@@ -2752,11 +2712,7 @@ ShallowWrapper {
                           <div />,
                           <div
                             className="ratings"
-                          >
-                            <span>
-                              Rated by:
-                            </span>
-                          </div>,
+                          />,
                           <div
                             className="glow"
                           >
@@ -2789,23 +2745,10 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": <span>
-                              Rated by:
-                            </span>,
                             "className": "ratings",
                           },
                           "ref": null,
-                          "rendered": Object {
-                            "instance": null,
-                            "key": undefined,
-                            "nodeType": "host",
-                            "props": Object {
-                              "children": "Rated by:",
-                            },
-                            "ref": null,
-                            "rendered": "Rated by:",
-                            "type": "span",
-                          },
+                          "rendered": null,
                           "type": "div",
                         },
                         Object {
@@ -2886,6 +2829,7 @@ ShallowWrapper {
                         <br />
                         <br />
                         <a
+                          className="user-link"
                           href="/@username"
                         >
                           <h2>
@@ -3038,6 +2982,7 @@ ShallowWrapper {
                           <br />,
                           <br />,
                           <a
+                            className="user-link"
                             href="/@username"
                           >
                             <h2>
@@ -3121,6 +3066,7 @@ ShallowWrapper {
                             "children": <h2>
                               @username
                             </h2>,
+                            "className": "user-link",
                             "href": "/@username",
                           },
                           "ref": null,
