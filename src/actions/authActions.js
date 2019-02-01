@@ -9,7 +9,7 @@ import { toggleLoader } from './loaderActions';
 
 export const setAuthUser = (token) => {
   const decodedToken = JWT.decode(token);
-  const { userId, username, roleId } = decodedToken;
+  // const { userId, username, roleId } = decodedToken;
 
   configureLocalStorage.setAuthUser(token);
   // remember to set axios auth token here
@@ -17,7 +17,7 @@ export const setAuthUser = (token) => {
 
   return {
     type: ACTIONS.SET_AUTH_USER,
-    payload: { userId, username, roleId },
+    payload: decodedToken,
   };
 };
 

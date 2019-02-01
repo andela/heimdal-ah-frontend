@@ -1,0 +1,17 @@
+.active_user_logo {
+  .dropdown {
+    .profile-icon {
+      border-radius: 50%;
+      border: solid #606E86 2.5px;
+    }
+
+    .dropdown-content{
+      .username {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 18ch;
+      }
+    }
+  }
+}

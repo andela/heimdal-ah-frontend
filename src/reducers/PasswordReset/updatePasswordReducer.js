@@ -1,6 +1,4 @@
-import {
-  ACTIONS,
-} from '../../actions/actionTypes';
+import { ACTIONS } from '../../actions/actionTypes';
 
 const initialState = {
   payload: '',

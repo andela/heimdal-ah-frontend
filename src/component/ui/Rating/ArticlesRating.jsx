@@ -25,8 +25,8 @@ export class ArticlesRating extends Component {
  * @description - Handles the initial component mounting and calls getArticleRating action
  */
   componentDidMount() {
-    const articleId = localStorage.getItem('articleId');
-    this.props.actions(getArticleRating(Number(articleId)));
+    const { articleId } = this.props;
+    this.props.actions(getArticleRating(articleId));
   }
 
   /**
@@ -35,7 +35,7 @@ export class ArticlesRating extends Component {
  */
   onHandleSubmit(stars) {
     // Might change based on where the article id is  gotten from
-    const articleId = localStorage.getItem('articleId');
+    const { articleId } = this.props;
     // eslint-disable-next-line react/destructuring-assignment
     this.props.actions(articleRating(stars, articleId));
   }
