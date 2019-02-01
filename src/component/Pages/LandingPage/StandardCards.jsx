@@ -19,7 +19,10 @@ const StanadardCard = props => (
         ''
       )}
     </div>
-    <Link to="/henry/articles/slug" className="card-title-link text-dark">
+    <Link
+      to={`/${props.user.profile.username}/articles/${props.slug}`}
+      className="card-title-link text-dark"
+    >
       <h5 className="card-title text-center">{props.title}</h5>
     </Link>
     <div className="card-image-container">
