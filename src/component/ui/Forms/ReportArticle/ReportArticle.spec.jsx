@@ -1,12 +1,9 @@
 /* eslint-disable no-undef */
 import React from 'react';
 // import sinon from 'sinon';
-import { ReportArticle } from '.';
+import { ReportArticle } from './Index';
 import LoadingSpinner from '../../loadingSpinners/LoadingSpinner';
 import MainError from '../../errors/MainError';
-// import { toggleLoader } from '../../../../actions/loaderActions';
-// import { clearErrors } from '../../../../actions/errorActions';
-// import { reportArticle } from '../../../../actions/articleActions';
 
 describe('The ReportArticle Component Test Suite', () => {
   let wrapper;
@@ -57,12 +54,5 @@ describe('The ReportArticle Component Test Suite', () => {
 
     wrapper.instance().handleArticleReport(event);
     expect(wrapper.state().reportType).toEqual('spam');
-    // expect(
-    //   sinon.stub(jest.fn(wrapper.instance().props.actions(toggleLoader()))),
-    // ).not.toHaveBeenCalled();
-    // expect(
-    //   sinon.stub(jest.fn(wrapper.instance().props.actions(reportArticle()))),
-    // ).toHaveBeenCalled();
-    // expect(wrapper.instance().state.reportType).toEqual(event.target.value);
   });
 });
