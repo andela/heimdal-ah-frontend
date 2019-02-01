@@ -19,7 +19,6 @@ import Articles from '../component/Pages/Article/ArticleListPage';
 import ProtectedRoute from './ProtectedRoute';
 import ScrollToTop from './ScrollToTop.jsx';
 
-
 const Routes = () => (
   <MainLayout>
     <ScrollToTop>
@@ -34,11 +33,10 @@ const Routes = () => (
         <Route exact path='/articles/:slug' component={ReadSingleArticleError} />
         <Route exact path='/update-articles' component={UpdateArticlesPresentation} />
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
-        <Route exact path='/update-password' component={UpdatePasswordPresentation} />
-        <Route exact path='/reset-password' component={PasswordResetPresentation} />
         <Route exact path='/all-stories' component={Articles} />
         <ProtectedRoute exact path='/:username' component={Profile} />
-        <ProtectedRoute exact path='/:username/edit' component={ProfileEdit} />
+        <Route exact path="/articles/update" component={UpdateArticlesPresentation} />
+        <ProtectedRoute exact path="/:username/edit" component={ProfileEdit} />
         <Route component={NotFound} />
       </Switch>
       <ReduxToastr />

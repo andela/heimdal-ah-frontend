@@ -69,6 +69,7 @@ export class ReadSingleArticle extends Component {
     const { slug } = this.props.match.params;
     const { status } = this.props;
 
+    setArticleId(this.props.singleArticle.id);
     return (
       <Fragment>
         { status === 'ERROR' ? <Redirect to={`/articles/${slug}`} />
