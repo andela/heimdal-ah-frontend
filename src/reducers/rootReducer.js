@@ -3,8 +3,6 @@ import { reducer as toastrReducer } from 'react-redux-toastr';
 import getArticlesByIdReducer from './articlesReducers/getArticlesByIdReducer';
 import updateArticlesReducer from './articlesReducers/updateArticlesReducer';
 import {
-  createArticleReducer,
-  unPublishedArticle,
   resetPassword,
   updatePassword,
   searchArticlesByAuthorReducer,
@@ -12,6 +10,8 @@ import {
   searchArticlesByTagsReducer,
   articleRating,
   getarticleRating,
+  createArticleReducer,
+  unPublishedArticle,
 } from './index';
 import authReducer from './authReducer';
 import errorsReducer from './errorsReducer';
