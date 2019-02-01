@@ -11,6 +11,8 @@ import english from 'javascript-time-ago/locale/en';
 import { getArticleComment } from '../../../actions/CommentActions/CommentActions';
 import DeleteButton from '../CommentForm/CommentDelete';
 import ReplyComment from '../ReplyComment/ReplyComment';
+import Ellipse from '../Elllipse/Ellipse';
+
 import './CommentCard.scss';
 
 
@@ -48,6 +50,7 @@ export const CommentCard = (props) => {
               <FontAwesome name='clock' className='fav_icons' />
               { timeAgo.format(moment(item.createdAt).valueOf()) }
             </span>
+            <Ellipse key={item.id} articleId={item.articleId} commentId={item.id} />
             { item.userId === user.userId
               ? <DeleteButton buttonName='comment' commentId={item.id} />
               : <div />

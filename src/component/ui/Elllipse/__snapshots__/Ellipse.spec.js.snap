@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The MainError Component Test Suite should render the MainError component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Ellipse />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "active": false,
+      "addonType": false,
+      "children": Array [
+        <DropdownToggle
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="small_text ellipse"
+          color="secondary"
+          data-toggle="dropdown"
+          onClick={[Function]}
+          tag="span"
+        >
+          <FontAwesome
+            className="fas fa-ellipsis-v"
+            name="menu"
+            onClick={[Function]}
+          />
+        </DropdownToggle>,
+        <DropdownMenu
+          flip={true}
+          tag="div"
+        >
+          <TriggerModal
+            label="view history"
+            title="Edit History"
+            type="signup"
+          >
+            <Connect(CommentEditHistory) />
+          </TriggerModal>
+        </DropdownMenu>,
+      ],
+      "direction": "down",
+      "inNavbar": false,
+      "isOpen": false,
+      "nav": false,
+      "setActiveFromChild": false,
+      "tag": "span",
+      "toggle": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "aria-expanded": false,
+          "aria-haspopup": true,
+          "children": <FontAwesome
+            className="fas fa-ellipsis-v"
+            name="menu"
+            onClick={[Function]}
+          />,
+          "className": "small_text ellipse",
+          "color": "secondary",
+          "data-toggle": "dropdown",
+          "onClick": [Function],
+          "tag": "span",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "fas fa-ellipsis-v",
+            "name": "menu",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <TriggerModal
+            label="view history"
+            title="Edit History"
+            type="signup"
+          >
+            <Connect(CommentEditHistory) />
+          </TriggerModal>,
+          "flip": true,
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Connect(CommentEditHistory) />,
+            "label": "view history",
+            "title": "Edit History",
+            "type": "signup",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "articleId": undefined,
+              "commentId": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "active": false,
+        "addonType": false,
+        "children": Array [
+          <DropdownToggle
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="small_text ellipse"
+            color="secondary"
+            data-toggle="dropdown"
+            onClick={[Function]}
+            tag="span"
+          >
+            <FontAwesome
+              className="fas fa-ellipsis-v"
+              name="menu"
+              onClick={[Function]}
+            />
+          </DropdownToggle>,
+          <DropdownMenu
+            flip={true}
+            tag="div"
+          >
+            <TriggerModal
+              label="view history"
+              title="Edit History"
+              type="signup"
+            >
+              <Connect(CommentEditHistory) />
+            </TriggerModal>
+          </DropdownMenu>,
+        ],
+        "direction": "down",
+        "inNavbar": false,
+        "isOpen": false,
+        "nav": false,
+        "setActiveFromChild": false,
+        "tag": "span",
+        "toggle": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "aria-expanded": false,
+            "aria-haspopup": true,
+            "children": <FontAwesome
+              className="fas fa-ellipsis-v"
+              name="menu"
+              onClick={[Function]}
+            />,
+            "className": "small_text ellipse",
+            "color": "secondary",
+            "data-toggle": "dropdown",
+            "onClick": [Function],
+            "tag": "span",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "className": "fas fa-ellipsis-v",
+              "name": "menu",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <TriggerModal
+              label="view history"
+              title="Edit History"
+              type="signup"
+            >
+              <Connect(CommentEditHistory) />
+            </TriggerModal>,
+            "flip": true,
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Connect(CommentEditHistory) />,
+              "label": "view history",
+              "title": "Edit History",
+              "type": "signup",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "articleId": undefined,
+                "commentId": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

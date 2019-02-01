@@ -23,6 +23,7 @@ export const ACTIONS = keyMirror({
   GET_COMMENT_REPLY: null,
   POST_COMMENT_REPLY: null,
   ARCHIVE_COMMENT_REPLY: null,
+  SUCCESS_COMMENT: null,
   SET_AUTH_USER: null,
   SUCCESS_COMMENT: null,
 
@@ -61,6 +62,10 @@ export const ACTIONS = keyMirror({
   SET_LOADER: null,
   SET_ERRORS: null,
   CLEAR_ERRORS: null,
+  GET_COMMENTS: null,
+  GET_COMMENTS_FAIL: null,
+  GET_COMMENT_EDIT_HISTORY: null,
+  GET_COMMENT_EDIT_HISTORY_FAIL: null,
   REMOVE_AN_ERROR: null,
 
   FLASH_SUCCESS_MSG: null,
