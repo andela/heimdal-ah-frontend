@@ -3,14 +3,12 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import moxios from 'moxios';
-// import axiosInstance from '../../utils/axiosInstance';
 import mockData from '../../__mocks__/commentMocks';
 import { getArticleComment, postArticleComment, deleteArticleComment } from './CommentActions';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 const store = mockStore({});
-// const mock = new MockAdapter(axiosInstance, { delayResponse: 500 });
 
 describe('Comment action test', () => {
   beforeEach(() => {
