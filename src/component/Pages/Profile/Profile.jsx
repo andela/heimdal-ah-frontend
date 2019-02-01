@@ -58,7 +58,7 @@ const getUserImage = (profile) => {
  * @param {string} username - logged in user
  * @returns {object} - react component
  */
-const getUserInfo = (profile, onClick, username) => {
+const getUserInfo = (profile, onClick, user) => {
   if (Object.keys(profile).length) {
     return (
       <div>
@@ -79,9 +79,15 @@ const getUserInfo = (profile, onClick, username) => {
           </span>
         </p>
         {
-          profile.username === username
+          profile.username === user.username
             ? <Button label='Edit' type='edit-profile' onClick={onClick} />
-            : <Button label='Follow' type='follow' onClick={onClick} />
+            : (
+              <Button
+                label={profile.followers && profile.followers.some(item => item.followerId === user.userId) ? 'unfollow' : 'follow'}
+                type="follow"
+                onClick={onClick}
+              />
+            )
         }
       </div>
     );

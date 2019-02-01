@@ -7,8 +7,6 @@ import authReducer from './authReducer';
 import getArticlesByIdReducer from './articlesReducers/getArticlesByIdReducer';
 import updateArticlesReducer from './articlesReducers/updateArticlesReducer';
 import {
-  createArticleReducer,
-  unPublishedArticle,
   resetPassword,
   updatePassword,
   searchArticlesByAuthorReducer,
@@ -16,6 +14,8 @@ import {
   searchArticlesByTagsReducer,
   articleRating,
   getarticleRating,
+  createArticleReducer,
+  unPublishedArticle,
 } from './index';
 import errorsReducer from './errorsReducer';
 import articleReducer from './Article/articleReducer';
