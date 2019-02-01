@@ -3,6 +3,7 @@
 exports[`select_reducer is correct 1`] = `
 Object {
   "comments": undefined,
+  "error": "",
   "loading": false,
   "status": false,
 }
@@ -11,6 +12,7 @@ Object {
 exports[`select_reducer returns the correct state 1`] = `
 Object {
   "comments": 1,
+  "error": "",
   "loading": false,
   "status": false,
 }

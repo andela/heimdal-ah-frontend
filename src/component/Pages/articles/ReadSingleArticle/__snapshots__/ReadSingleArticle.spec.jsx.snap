@@ -35,65 +35,8 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": <React.Fragment>
-        <ReadSingleArticlePresentation
-          articleId=""
-          author={false}
-          body=""
-          likesCount={0}
-          slug="hello"
-          title=""
-          username="@username"
-        />
-      </React.Fragment>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": <ReadSingleArticlePresentation
-          articleId=""
-          author={false}
-          body=""
-          likesCount={0}
-          slug="hello"
-          title=""
-          username="@username"
-        />,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "articleId": "",
-          "author": false,
-          "body": "",
-          "likesCount": 0,
-          "slug": "hello",
-          "time": undefined,
-          "title": "",
-          "userImage": undefined,
-          "username": "@username",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": Symbol(react.fragment),
-    },
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": <React.Fragment>
+      "children": Array [
+        <React.Fragment>
           <ReadSingleArticlePresentation
             articleId=""
             author={false}
@@ -104,9 +47,14 @@ ShallowWrapper {
             username="@username"
           />
         </React.Fragment>,
-      },
-      "ref": null,
-      "rendered": Object {
+        <Connect(Comment)
+          articleId={2}
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
@@ -143,6 +91,94 @@ ShallowWrapper {
         },
         "type": Symbol(react.fragment),
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "articleId": 2,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <React.Fragment>
+            <ReadSingleArticlePresentation
+              articleId=""
+              author={false}
+              body=""
+              likesCount={0}
+              slug="hello"
+              title=""
+              username="@username"
+            />
+          </React.Fragment>,
+          <Connect(Comment)
+            articleId={2}
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <ReadSingleArticlePresentation
+              articleId=""
+              author={false}
+              body=""
+              likesCount={0}
+              slug="hello"
+              title=""
+              username="@username"
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "articleId": "",
+              "author": false,
+              "body": "",
+              "likesCount": 0,
+              "slug": "hello",
+              "time": undefined,
+              "title": "",
+              "userImage": undefined,
+              "username": "@username",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": Symbol(react.fragment),
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "articleId": 2,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": Symbol(react.fragment),
     },
   ],
@@ -256,7 +292,7 @@ ShallowWrapper {
                   href="/@username"
                 >
                   <h2>
-                    @username
+                    @username...
                   </h2>
                 </a>
                 <br />
@@ -477,7 +513,7 @@ ShallowWrapper {
                     href="/@username"
                   >
                     <h2>
-                      @username
+                      @username...
                     </h2>
                   </a>
                   <br />
@@ -746,7 +782,7 @@ ShallowWrapper {
                       href="/@username"
                     >
                       <h2>
-                        @username
+                        @username...
                       </h2>
                     </a>
                     <br />
@@ -1050,7 +1086,7 @@ ShallowWrapper {
                         href="/@username"
                       >
                         <h2>
-                          @username
+                          @username...
                         </h2>
                       </a>
                       <br />
@@ -1203,7 +1239,7 @@ ShallowWrapper {
                           href="/@username"
                         >
                           <h2>
-                            @username
+                            @username...
                           </h2>
                         </a>,
                         <br />,
@@ -1281,7 +1317,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": <h2>
-                            @username
+                            @username...
                           </h2>,
                           "className": "user-link",
                           "href": "/@username",
@@ -1292,10 +1328,10 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": "@username",
+                            "children": "@username...",
                           },
                           "ref": null,
-                          "rendered": "@username",
+                          "rendered": "@username...",
                           "type": "h2",
                         },
                         "type": "a",
@@ -2039,7 +2075,7 @@ ShallowWrapper {
                     href="/@username"
                   >
                     <h2>
-                      @username
+                      @username...
                     </h2>
                   </a>
                   <br />
@@ -2260,7 +2296,7 @@ ShallowWrapper {
                       href="/@username"
                     >
                       <h2>
-                        @username
+                        @username...
                       </h2>
                     </a>
                     <br />
@@ -2529,7 +2565,7 @@ ShallowWrapper {
                         href="/@username"
                       >
                         <h2>
-                          @username
+                          @username...
                         </h2>
                       </a>
                       <br />
@@ -2833,7 +2869,7 @@ ShallowWrapper {
                           href="/@username"
                         >
                           <h2>
-                            @username
+                            @username...
                           </h2>
                         </a>
                         <br />
@@ -2986,7 +3022,7 @@ ShallowWrapper {
                             href="/@username"
                           >
                             <h2>
-                              @username
+                              @username...
                             </h2>
                           </a>,
                           <br />,
@@ -3064,7 +3100,7 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": <h2>
-                              @username
+                              @username...
                             </h2>,
                             "className": "user-link",
                             "href": "/@username",
@@ -3075,10 +3111,10 @@ ShallowWrapper {
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "@username",
+                              "children": "@username...",
                             },
                             "ref": null,
-                            "rendered": "@username",
+                            "rendered": "@username...",
                             "type": "h2",
                           },
                           "type": "a",

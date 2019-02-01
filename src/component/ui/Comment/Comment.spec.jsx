@@ -12,12 +12,15 @@ describe('rendering', () => {
     props = {
       getArticleComment: jest.fn(),
       comment: '',
+      user: {
+        isAuthenticated: true,
+      },
     };
   });
 
   it('invokes `componentDidMount` when mounted', () => {
     const spy = jest.spyOn(Comment.prototype, 'componentDidMount');
-    wrapper = shallow(<Comment comment='' getArticleComment={() => {}} />);
+    wrapper = shallow(<Comment {...props} />);
     wrapper.instance().componentDidMount();
     expect(spy).toHaveBeenCalled();
   });

@@ -9,6 +9,8 @@ describe('select_reducer', () => {
     initialState = {
       loading: false,
       status: false,
+      comments: undefined,
+      error: '',
     };
   });
 
@@ -28,8 +30,10 @@ describe('select_reducer', () => {
   });
 
   it('returns the correct state', () => {
-    const action = { type: ACTIONS.GET_ARTICLE_COMMENT, payload: 1 };
-    const expectedState = { comments: 1, loading: false, status: false };
+    const action = { type: ACTIONS.GET_ARTICLE_COMMENT, comments: undefined };
+    const expectedState = {
+      comments: undefined, loading: false, status: false, error: '',
+    };
     expect(CommentReducer(initialState, action)).toEqual(expectedState);
   });
 });
