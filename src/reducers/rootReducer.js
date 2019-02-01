@@ -11,12 +11,16 @@ import {
   unPublishedArticle,
   resetPassword,
   updatePassword,
+  searchArticlesByAuthorReducer,
+  searchArticlesByTitleReducer,
+  searchArticlesByTagsReducer,
   articleRating,
   getarticleRating,
 } from './index';
 import errorsReducer from './errorsReducer';
 import articleReducer from './Article/articleReducer';
 import profileReducer from './profile/profileReducer';
+import loaderReducer from './loaderReducer';
 
 const rootReducer = combineReducers({
   createArticleReducer,
@@ -25,12 +29,16 @@ const rootReducer = combineReducers({
   toastr: toastrReducer,
   comment: CommentReducer,
   replies: ReplyReducer,
+  searcharticlesbyauthor: searchArticlesByAuthorReducer,
+  searcharticlesbytitle: searchArticlesByTitleReducer,
+  searcharticlesbytags: searchArticlesByTagsReducer,
   getArticlesById: getArticlesByIdReducer,
   updateArticles: updateArticlesReducer,
   articlerating: articleRating,
   getarticlerating: getarticleRating,
   errors: errorsReducer,
   auth: authReducer,
+  loader: loaderReducer,
   articles: articleReducer,
   profile: profileReducer,
   unpublishedarticle: unPublishedArticle,

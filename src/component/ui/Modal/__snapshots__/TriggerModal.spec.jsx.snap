@@ -3,10 +3,10 @@
 exports[`Render <ModalButton /> should match the snapshot 1`] = `
 <Fragment>
   <Button
-    Class=""
+    Class="undefined"
     label="Default"
     onClick={[Function]}
-    type="default"
+    type=""
   />
   <Modal
     autoFocus={true}
