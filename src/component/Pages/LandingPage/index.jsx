@@ -6,7 +6,6 @@ import React, { Component } from 'react';
 import { getArticles } from '../../../actions/homeArticles/articleActions';
 import StanadardCard from './StandardCards';
 import FeaturedCard from './FeaturedCard';
-// import ArticleCard from '../../ui/cards/ArticleCard/ArticleCard';
 import RecentCard from './RecentCard';
 import LoadingSpinner from '../../ui/loadingSpinners/LoadingSpinner';
 
