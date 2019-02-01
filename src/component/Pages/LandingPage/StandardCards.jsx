@@ -24,7 +24,7 @@ const StanadardCard = props => (
     </Link>
     <div className="card-image-container">
       <img
-        className="card-image"
+        className="card-image img-fluid"
         src={`https://picsum.photos/1200/1300/?image=${Math.trunc(Math.random() * 20)}`}
         alt="Card"
       />

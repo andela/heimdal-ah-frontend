@@ -21,16 +21,8 @@ import LoadingSpinner from '../../ui/loadingSpinners/LoadingSpinner';
  */
 class LandingPage extends Component {
   state = {
-    // featuredArticles: [],
-    // recentArticles: [],
-    // mainArticles: [],
     // errors: {},
-    // isLoading: false,
   };
-
-  // componentWillReceiveProps(nextProps) {
-  //   return nextProps.errors && this.setState({ errors: nextProps.errors });
-  // }
 
   componentDidMount() {
     const { actions } = this.props;
@@ -39,23 +31,25 @@ class LandingPage extends Component {
 
   render() {
     const { featuredArticles, recentArticles, mainArticles } = this.props.home;
+    const { errors } = this.props;
+
     if (featuredArticles.length > 0) {
       return (
         <div className="col-md-12 p-5">
           {/** Featured Articles Section Start */}
           <h2 className="text-center">Featured</h2>
           <div className="row p-3">
-            <div className="col-md-3">{<StanadardCard {...featuredArticles[0]} />}</div>
-            <div className="col-md-6 mt-4">
+            <div className="col-md-3 col-sm-4">{<StanadardCard {...featuredArticles[0]} />}</div>
+            <div className="col-md-6 col-sm-4 mt-4">
               <div className="row">
                 {featuredArticles.slice(1, 5).map(item => (
-                  <div className="col-md-6 mb-2" key={Math.random()}>
+                  <div className="col-md-6 col-sm-12 mb-2" key={Math.random()}>
                     <FeaturedCard {...item} />
                   </div>
                 ))}
               </div>
             </div>
-            <div className="col-md-3">{<StanadardCard {...featuredArticles[5]} />}</div>
+            <div className="col-md-3 col-sm-4">{<StanadardCard {...featuredArticles[5]} />}</div>
           </div>
           {/** Featured Articles Section Start */}
 
@@ -162,6 +156,13 @@ class LandingPage extends Component {
             ))}
           </div>
           {/** Recent Articles Section End */}
+        </div>
+      );
+    }
+    if (errors && errors.mainError) {
+      return (
+        <div className="col-12 text-center">
+          <h2>{errors.mainError}</h2>
         </div>
       );
     }

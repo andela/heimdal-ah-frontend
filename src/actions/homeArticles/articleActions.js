@@ -1,6 +1,7 @@
 import moment from 'moment';
 import axiosInstance from '../../config/http';
 import { ACTIONS } from '../actionTypes';
+import errorResponse from '../../utils/errorResponse';
 
 export const setFeaturedArticles = (articles) => {
   const featuredArticles = articles.rows
@@ -47,5 +48,13 @@ export const getArticles = () => dispatch => axiosInstance
     dispatch(setMainArticles(articles));
   })
   .catch((errors) => {
-    console.log(errors);
+    const { response = {}, request } = errors;
+
+    const data = {
+      dispatch,
+      request,
+      response,
+      errors,
+    };
+    return errorResponse(data);
   });

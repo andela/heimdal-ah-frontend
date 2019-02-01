@@ -21,7 +21,9 @@ const errorResponse = ({
     );
   }
   if (errors.message) {
-    return dispatch(setErrors());
+    return dispatch(
+      setErrors({ mainError: 'A network error occured, please try again in a moment' }),
+    );
   }
   if (request) {
     return dispatch(
