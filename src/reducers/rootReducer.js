@@ -17,6 +17,7 @@ import authReducer from './authReducer';
 import errorsReducer from './errorsReducer';
 import articleReducer from './Article/articleReducer';
 import profileReducer from './profile/profileReducer';
+import loaderReducer from './loaderReducer';
 
 const rootReducer = combineReducers({
   createArticleReducer,
@@ -32,6 +33,7 @@ const rootReducer = combineReducers({
   getarticlerating: getarticleRating,
   errors: errorsReducer,
   auth: authReducer,
+  loader: loaderReducer,
   articles: articleReducer,
   profile: profileReducer,
   unpublishedarticle: unPublishedArticle,

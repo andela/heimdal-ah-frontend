@@ -1,15 +1,22 @@
 import React from 'react';
 import ArticleCardHorizontal from '../ui/cards/ArticleCardHorizontal';
+import ReportArticle from '../ui/Forms/ReportArticle/Index';
+import ModalButton from '../ui/Modal/Index';
 import ArticleTag from '../ui/Tags/ArticlesTag';
 
 const HomePage = () => (
   <div className="mt-5">
     <h2 className="text-center">Featured</h2>
-    <ArticleTag name='React' />
+    <ArticleTag name="React" />
     <br />
     <br />
     <br />
     <div className="row">
+      <div className="col-md-12">
+        <ModalButton label="Report" Class="btn-danger">
+          <ReportArticle articleId={5} />
+        </ModalButton>
+      </div>
       <div className="col-md-3">
         <ArticleCardHorizontal
           articleTitle="An article Title"
