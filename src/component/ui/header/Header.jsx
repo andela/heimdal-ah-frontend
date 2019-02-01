@@ -23,8 +23,8 @@ const Header = ({ auth }) => {
           <ul className="navbar-nav mr-auto">
             <NavItems />
           </ul>
-          {(window.location.search === '?query=' || window.location.pathname === '/search' || new URLSearchParams(window.location.search).get('query')) ? '' : <SearchArticlesPresentation /> }
           {isAuthenticated ? <ActiveUser username={username} image={image} /> : <HeaderButton />}
+          {(window.location.search === '?query=' || window.location.pathname === '/search' || new URLSearchParams(window.location.search).get('query')) ? '' : <SearchArticlesPresentation /> }
         </div>
       </nav>
     </header>
