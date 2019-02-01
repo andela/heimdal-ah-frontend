@@ -13,9 +13,7 @@ const miniCssPlugin = new MiniCssExtractPlugin({
 });
 
 module.exports = {
-  entry: {
-    main: './src/index.jsx',
-  },
+  entry: ['@babel/polyfill', './src/index.jsx'],
   resolve: {
     extensions: ['.jsx', '.js', '.json'],
   },
@@ -59,6 +57,8 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env.BASE_URL_PROD': JSON.stringify(process.env.BASE_URL_PROD),
+      'process.env.CLOUDINARY_URL': JSON.stringify(process.env.CLOUDINARY_URL),
+      'process.env.CLOUDINARY_UPLOAD_PRESET': JSON.stringify(process.env.CLOUDINARY_UPLOAD_PRESET),
     }),
     miniCssPlugin,
     new HtmlWebPackPlugin({
