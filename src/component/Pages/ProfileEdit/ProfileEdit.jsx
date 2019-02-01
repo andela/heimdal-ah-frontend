@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable jsx-a11y/label-has-for */
 import React from 'react';
 import { toastr as flashToast } from 'react-redux-toastr';
 import Textarea from 'react-textarea-autosize';
