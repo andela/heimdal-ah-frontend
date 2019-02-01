@@ -6,7 +6,9 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <SignupForm
     email=""
     errors={Object {}}
+    handleSignup={[Function]}
     isLoading={false}
+    onChange={[Function]}
     password=""
     passwordConfirmation=""
     username=""
@@ -34,6 +36,7 @@ ShallowWrapper {
         <form
           className="heimdal-form"
           noValidate={true}
+          onSubmit={[Function]}
         >
           <div
             className="font-cardo ph-30"
@@ -42,6 +45,7 @@ ShallowWrapper {
               classname="form-control"
               errors={Object {}}
               name="username"
+              onChange={[Function]}
               placeholder="Username"
               type="text"
               value=""
@@ -50,6 +54,7 @@ ShallowWrapper {
               classname="form-control"
               errors={Object {}}
               name="email"
+              onChange={[Function]}
               placeholder="Email Address"
               type="email"
               value=""
@@ -58,6 +63,7 @@ ShallowWrapper {
               classname="form-control"
               errors={Object {}}
               name="password"
+              onChange={[Function]}
               placeholder="Password"
               type="password"
               value=""
@@ -66,6 +72,7 @@ ShallowWrapper {
               classname="form-control"
               errors={Object {}}
               name="passwordConfirmation"
+              onChange={[Function]}
               placeholder="Confirm Password"
               type="password"
               value=""
@@ -163,6 +170,7 @@ ShallowWrapper {
               classname="form-control"
               errors={Object {}}
               name="username"
+              onChange={[Function]}
               placeholder="Username"
               type="text"
               value=""
@@ -171,6 +179,7 @@ ShallowWrapper {
               classname="form-control"
               errors={Object {}}
               name="email"
+              onChange={[Function]}
               placeholder="Email Address"
               type="email"
               value=""
@@ -179,6 +188,7 @@ ShallowWrapper {
               classname="form-control"
               errors={Object {}}
               name="password"
+              onChange={[Function]}
               placeholder="Password"
               type="password"
               value=""
@@ -187,6 +197,7 @@ ShallowWrapper {
               classname="form-control"
               errors={Object {}}
               name="passwordConfirmation"
+              onChange={[Function]}
               placeholder="Confirm Password"
               type="password"
               value=""
@@ -231,7 +242,7 @@ ShallowWrapper {
           </div>,
           "className": "heimdal-form",
           "noValidate": true,
-          "onSubmit": undefined,
+          "onSubmit": [Function],
         },
         "ref": null,
         "rendered": Object {
@@ -244,6 +255,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="username"
+                onChange={[Function]}
                 placeholder="Username"
                 type="text"
                 value=""
@@ -252,6 +264,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="email"
+                onChange={[Function]}
                 placeholder="Email Address"
                 type="email"
                 value=""
@@ -260,6 +273,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="password"
+                onChange={[Function]}
                 placeholder="Password"
                 type="password"
                 value=""
@@ -268,6 +282,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="passwordConfirmation"
+                onChange={[Function]}
                 placeholder="Confirm Password"
                 type="password"
                 value=""
@@ -322,7 +337,7 @@ ShallowWrapper {
                 "classname": "form-control",
                 "errors": Object {},
                 "name": "username",
-                "onChange": undefined,
+                "onChange": [Function],
                 "placeholder": "Username",
                 "type": "text",
                 "value": "",
@@ -339,7 +354,7 @@ ShallowWrapper {
                 "classname": "form-control",
                 "errors": Object {},
                 "name": "email",
-                "onChange": undefined,
+                "onChange": [Function],
                 "placeholder": "Email Address",
                 "type": "email",
                 "value": "",
@@ -356,7 +371,7 @@ ShallowWrapper {
                 "classname": "form-control",
                 "errors": Object {},
                 "name": "password",
-                "onChange": undefined,
+                "onChange": [Function],
                 "placeholder": "Password",
                 "type": "password",
                 "value": "",
@@ -373,7 +388,7 @@ ShallowWrapper {
                 "classname": "form-control",
                 "errors": Object {},
                 "name": "passwordConfirmation",
-                "onChange": undefined,
+                "onChange": [Function],
                 "placeholder": "Confirm Password",
                 "type": "password",
                 "value": "",
@@ -665,6 +680,7 @@ ShallowWrapper {
           <form
             className="heimdal-form"
             noValidate={true}
+            onSubmit={[Function]}
           >
             <div
               className="font-cardo ph-30"
@@ -673,6 +689,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="username"
+                onChange={[Function]}
                 placeholder="Username"
                 type="text"
                 value=""
@@ -681,6 +698,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="email"
+                onChange={[Function]}
                 placeholder="Email Address"
                 type="email"
                 value=""
@@ -689,6 +707,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="password"
+                onChange={[Function]}
                 placeholder="Password"
                 type="password"
                 value=""
@@ -697,6 +716,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="passwordConfirmation"
+                onChange={[Function]}
                 placeholder="Confirm Password"
                 type="password"
                 value=""
@@ -794,6 +814,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="username"
+                onChange={[Function]}
                 placeholder="Username"
                 type="text"
                 value=""
@@ -802,6 +823,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="email"
+                onChange={[Function]}
                 placeholder="Email Address"
                 type="email"
                 value=""
@@ -810,6 +832,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="password"
+                onChange={[Function]}
                 placeholder="Password"
                 type="password"
                 value=""
@@ -818,6 +841,7 @@ ShallowWrapper {
                 classname="form-control"
                 errors={Object {}}
                 name="passwordConfirmation"
+                onChange={[Function]}
                 placeholder="Confirm Password"
                 type="password"
                 value=""
@@ -862,7 +886,7 @@ ShallowWrapper {
             </div>,
             "className": "heimdal-form",
             "noValidate": true,
-            "onSubmit": undefined,
+            "onSubmit": [Function],
           },
           "ref": null,
           "rendered": Object {
@@ -875,6 +899,7 @@ ShallowWrapper {
                   classname="form-control"
                   errors={Object {}}
                   name="username"
+                  onChange={[Function]}
                   placeholder="Username"
                   type="text"
                   value=""
@@ -883,6 +908,7 @@ ShallowWrapper {
                   classname="form-control"
                   errors={Object {}}
                   name="email"
+                  onChange={[Function]}
                   placeholder="Email Address"
                   type="email"
                   value=""
@@ -891,6 +917,7 @@ ShallowWrapper {
                   classname="form-control"
                   errors={Object {}}
                   name="password"
+                  onChange={[Function]}
                   placeholder="Password"
                   type="password"
                   value=""
@@ -899,6 +926,7 @@ ShallowWrapper {
                   classname="form-control"
                   errors={Object {}}
                   name="passwordConfirmation"
+                  onChange={[Function]}
                   placeholder="Confirm Password"
                   type="password"
                   value=""
@@ -953,7 +981,7 @@ ShallowWrapper {
                   "classname": "form-control",
                   "errors": Object {},
                   "name": "username",
-                  "onChange": undefined,
+                  "onChange": [Function],
                   "placeholder": "Username",
                   "type": "text",
                   "value": "",
@@ -970,7 +998,7 @@ ShallowWrapper {
                   "classname": "form-control",
                   "errors": Object {},
                   "name": "email",
-                  "onChange": undefined,
+                  "onChange": [Function],
                   "placeholder": "Email Address",
                   "type": "email",
                   "value": "",
@@ -987,7 +1015,7 @@ ShallowWrapper {
                   "classname": "form-control",
                   "errors": Object {},
                   "name": "password",
-                  "onChange": undefined,
+                  "onChange": [Function],
                   "placeholder": "Password",
                   "type": "password",
                   "value": "",
@@ -1004,7 +1032,7 @@ ShallowWrapper {
                   "classname": "form-control",
                   "errors": Object {},
                   "name": "passwordConfirmation",
-                  "onChange": undefined,
+                  "onChange": [Function],
                   "placeholder": "Confirm Password",
                   "type": "password",
                   "value": "",
