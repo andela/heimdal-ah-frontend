@@ -6,8 +6,7 @@ export const setFeaturedArticles = (articles) => {
   const featuredArticles = articles.rows
     .sort((item1, item2) => item2.likes.length - item1.likes.length)
     .slice(0, 6);
-  console.log('=====featuredArticles=====');
-  console.log(featuredArticles);
+
   return {
     type: ACTIONS.SET_FEATURED_ARTICLES,
     payload: featuredArticles,
@@ -18,8 +17,6 @@ export const setRecentArticles = (articles) => {
   const recentArticles = articles.rows
     .sort((item1, item2) => moment(item2.likes.createdAt) - moment(item1.likes.createdAt))
     .slice(0, 4);
-  console.log('=====recentArticles=====');
-  console.log(recentArticles);
 
   return {
     type: ACTIONS.SET_RECENT_ARTICLES,
@@ -35,8 +32,6 @@ export const setMainArticles = (articles) => {
   }
   mainArticles = Object.values(mainArticles);
 
-  console.log('=====mainArticles=====');
-  console.log(mainArticles);
   return {
     type: ACTIONS.SET_MAIN_ARTICLES,
     payload: mainArticles,
