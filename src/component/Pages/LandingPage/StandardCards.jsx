@@ -1,14 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Glow from '../../ui/Buttons/glow/Glow';
+import english from 'javascript-time-ago/locale/en';
+import moment from 'moment';
+import TimeAgo from 'javascript-time-ago';
 import Rating from '../../ui/Rating/Rating';
+import Glow from '../../ui/Buttons/glow/Glow';
+
+TimeAgo.addLocale(english);
+const timeAgo = new TimeAgo('en-US');
 
 const StanadardCard = props => (
   <div className="article-card">
     <div className="text-center mb-3">
       <span className="read-time mt-1">{props.readingTime}</span>
       {props.tags && props.tags.length ? (
-        <span className="tag btn btn-sm btn-secondary float-right">{props.tags[0]}</span>
+        <span className="tag btn btn-sm btn-secondary float-right">{props.tags[0].tagName}</span>
       ) : (
         ''
       )}
@@ -32,13 +38,13 @@ const StanadardCard = props => (
           alt="user"
         />
         <div className="user-name pl-1">
-          <Link to="/username">{}</Link>
+          <Link to="/username">{props.user.profile.username}</Link>
         </div>
       </div>
-      <div className="col-6 mt-2">
+      <div className="col-6 mt-2 text-right">
         <i className="far fa-clock updated-time float-right">
           {' '}
-          {props.createdAt}
+          {timeAgo.format(moment(props.createdAt).valueOf())}
         </i>
       </div>
     </div>

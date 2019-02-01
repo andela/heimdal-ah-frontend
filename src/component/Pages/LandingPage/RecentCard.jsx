@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Glow from '../../ui/Buttons/glow/Glow';
 
-const FeaturedCard = props => (
-  <div className="article-card mt-5">
+const RecentCard = props => (
+  <div className="article-card mt-4">
     <div className="row">
       <div className="col-md-5 m-0 pr-0">
-        <div className="card-image-container-2">
+        <div className="card-image-container-2 mb-4">
           <img
-            className="card-image img-fluid"
+            className="card-imageX img-fluid rounded-20"
             src={`https://picsum.photos/1200/1300/?image=${Math.trunc(Math.random() * 20)}`}
             alt="Card"
           />
@@ -41,7 +41,7 @@ const FeaturedCard = props => (
           </div>
         </div>
         <div className="row">
-          <div className="col-6 glow-likes pt-3">
+          <div className="col-6 glow-likes pt-1">
             <Glow active handleGlow={() => {}} />
             <span>{props.likes.length}</span>
           </div>
@@ -55,4 +55,4 @@ const FeaturedCard = props => (
   </div>
 );
 
-export default FeaturedCard;
+export default RecentCard;

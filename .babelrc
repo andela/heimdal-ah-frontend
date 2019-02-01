@@ -1,23 +1,24 @@
 {
   "presets": [
-    ["@babel/preset-env", {
-      "targets": {
-        "browsers": [
-          "> 1% ", 
-          "last 2 versions"
-        ]
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["> 1% ", "last 2 versions"]
+        }
       }
-    }],
+    ],
     "@babel/preset-react"
   ],
   "env": {
     "test": {
-        "presets": ["@babel/preset-env", "@babel/preset-react"]
+      "presets": ["@babel/preset-env", "@babel/preset-react"]
     }
-},
-"plugins": [
-  "@babel/plugin-proposal-class-properties",
-  "@babel/plugin-syntax-dynamic-import",
-  "transform-class-properties"
-],
+  },
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-dynamic-import",
+    "transform-class-properties",
+    "emotion"
+  ]
 }
