@@ -48,6 +48,11 @@ export const ACTIONS = keyMirror({
   SET_ERRORS: null,
   CLEAR_ERRORS: null,
   REMOVE_AN_ERROR: null,
+
+  FLASH_SUCCESS_MSG: null,
+
+  TOGGLE_LOADER: null,
+  TOGGLE_MODAL: null,
   GET_ALL_ARTICLES: null,
   GETTING_PROFILE_ERROR: null,
   GET_ALL_UNPUBLISHED_ARTICLES: null,
