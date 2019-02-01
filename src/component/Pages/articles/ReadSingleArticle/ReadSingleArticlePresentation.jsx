@@ -60,7 +60,7 @@ class ReadSingleArticlePresentation extends Component {
                 </div>
                 <div className='ratings' />
                 <div className='glow'>
-                  <Glow active handleGlow={() => {}} />
+                  <Glow active={this.props.active} handleGlow={this.props.handleGlow} />
                   <span className='likesCount'>{ this.props.likesCount }</span>
                 </div>
               </div>

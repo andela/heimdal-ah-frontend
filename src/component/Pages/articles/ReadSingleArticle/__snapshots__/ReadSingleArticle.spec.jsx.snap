@@ -37,9 +37,11 @@ ShallowWrapper {
     "props": Object {
       "children": <React.Fragment>
         <ReadSingleArticlePresentation
+          active={false}
           articleId=""
           author={false}
           body=""
+          handleGlow={[Function]}
           likesCount={0}
           slug="hello"
           title=""
@@ -54,9 +56,11 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <ReadSingleArticlePresentation
+          active={false}
           articleId=""
           author={false}
           body=""
+          handleGlow={[Function]}
           likesCount={0}
           slug="hello"
           title=""
@@ -69,9 +73,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "active": false,
           "articleId": "",
           "author": false,
           "body": "",
+          "handleGlow": [Function],
           "likesCount": 0,
           "slug": "hello",
           "time": undefined,
@@ -95,9 +101,11 @@ ShallowWrapper {
       "props": Object {
         "children": <React.Fragment>
           <ReadSingleArticlePresentation
+            active={false}
             articleId=""
             author={false}
             body=""
+            handleGlow={[Function]}
             likesCount={0}
             slug="hello"
             title=""
@@ -112,9 +120,11 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": <ReadSingleArticlePresentation
+            active={false}
             articleId=""
             author={false}
             body=""
+            handleGlow={[Function]}
             likesCount={0}
             slug="hello"
             title=""
@@ -127,9 +137,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "active": false,
             "articleId": "",
             "author": false,
             "body": "",
+            "handleGlow": [Function],
             "likesCount": 0,
             "slug": "hello",
             "time": undefined,
@@ -227,8 +239,7 @@ ShallowWrapper {
                   className="glow"
                 >
                   <Glow
-                    active={true}
-                    handleGlow={[Function]}
+                    active={false}
                   />
                   <span
                     className="likesCount"
@@ -448,8 +459,7 @@ ShallowWrapper {
                     className="glow"
                   >
                     <Glow
-                      active={true}
-                      handleGlow={[Function]}
+                      active={false}
                     />
                     <span
                       className="likesCount"
@@ -717,8 +727,7 @@ ShallowWrapper {
                       className="glow"
                     >
                       <Glow
-                        active={true}
-                        handleGlow={[Function]}
+                        active={false}
                       />
                       <span
                         className="likesCount"
@@ -903,8 +912,7 @@ ShallowWrapper {
                         className="glow"
                       >
                         <Glow
-                          active={true}
-                          handleGlow={[Function]}
+                          active={false}
                         />
                         <span
                           className="likesCount"
@@ -934,8 +942,7 @@ ShallowWrapper {
                           className="glow"
                         >
                           <Glow
-                            active={true}
-                            handleGlow={[Function]}
+                            active={false}
                           />
                           <span
                             className="likesCount"
@@ -975,8 +982,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": Array [
                             <Glow
-                              active={true}
-                              handleGlow={[Function]}
+                              active={false}
                             />,
                             <span
                               className="likesCount"
@@ -991,8 +997,8 @@ ShallowWrapper {
                             "key": undefined,
                             "nodeType": "function",
                             "props": Object {
-                              "active": true,
-                              "handleGlow": [Function],
+                              "active": false,
+                              "handleGlow": undefined,
                             },
                             "ref": null,
                             "rendered": null,
@@ -2010,8 +2016,7 @@ ShallowWrapper {
                     className="glow"
                   >
                     <Glow
-                      active={true}
-                      handleGlow={[Function]}
+                      active={false}
                     />
                     <span
                       className="likesCount"
@@ -2231,8 +2236,7 @@ ShallowWrapper {
                       className="glow"
                     >
                       <Glow
-                        active={true}
-                        handleGlow={[Function]}
+                        active={false}
                       />
                       <span
                         className="likesCount"
@@ -2500,8 +2504,7 @@ ShallowWrapper {
                         className="glow"
                       >
                         <Glow
-                          active={true}
-                          handleGlow={[Function]}
+                          active={false}
                         />
                         <span
                           className="likesCount"
@@ -2686,8 +2689,7 @@ ShallowWrapper {
                           className="glow"
                         >
                           <Glow
-                            active={true}
-                            handleGlow={[Function]}
+                            active={false}
                           />
                           <span
                             className="likesCount"
@@ -2717,8 +2719,7 @@ ShallowWrapper {
                             className="glow"
                           >
                             <Glow
-                              active={true}
-                              handleGlow={[Function]}
+                              active={false}
                             />
                             <span
                               className="likesCount"
@@ -2758,8 +2759,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": Array [
                               <Glow
-                                active={true}
-                                handleGlow={[Function]}
+                                active={false}
                               />,
                               <span
                                 className="likesCount"
@@ -2774,8 +2774,8 @@ ShallowWrapper {
                               "key": undefined,
                               "nodeType": "function",
                               "props": Object {
-                                "active": true,
-                                "handleGlow": [Function],
+                                "active": false,
+                                "handleGlow": undefined,
                               },
                               "ref": null,
                               "rendered": null,
