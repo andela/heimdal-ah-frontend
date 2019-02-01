@@ -17,6 +17,7 @@ import authReducer from './authReducer';
 import errorsReducer from './errorsReducer';
 import articleReducer from './Article/articleReducer';
 import profileReducer from './profile/profileReducer';
+import homeReducer from './homeReducer';
 import loaderReducer from './loaderReducer';
 
 const rootReducer = combineReducers({
@@ -36,6 +37,7 @@ const rootReducer = combineReducers({
   loader: loaderReducer,
   articles: articleReducer,
   profile: profileReducer,
+  home: homeReducer,
   unpublishedarticle: unPublishedArticle,
 });
 

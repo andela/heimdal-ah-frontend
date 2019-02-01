@@ -59,5 +59,9 @@ export const ACTIONS = keyMirror({
   TOGGLE_MODAL: null,
   GET_ALL_ARTICLES: null,
   GETTING_PROFILE_ERROR: null,
+
+  SET_FEATURED_ARTICLES: null,
+  SET_MAIN_ARTICLES: null,
+  SET_RECENT_ARTICLES: null,
   GET_ALL_UNPUBLISHED_ARTICLES: null,
 });
