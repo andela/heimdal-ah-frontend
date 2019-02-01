@@ -2,21 +2,14 @@
 /* eslint-disable require-jsdoc */
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
-import { bindActionCreators } from 'redux';
-import {
-  Dropdown, DropdownToggle, DropdownMenu,
-} from 'reactstrap';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import { Dropdown, DropdownToggle, DropdownMenu } from 'reactstrap';
 import ModalButton from '../Modal/Index';
 import CommentEditHistory from '../CommentEditHistory/CommentEditHistory';
-import fetchCommentEditHistory from '../../../actions/CommentEditHistory/CommentEditHistory';
-
 
 class Ellipse extends Component {
-    state = {
-      dropDown: false,
-    };
+  state = {
+    dropDown: false,
+  };
 
   toggle = () => {
     this.setState(prevState => ({
@@ -29,29 +22,28 @@ class Ellipse extends Component {
     const { articleId, commentId } = this.props;
 
     return (
-      <Dropdown isOpen={dropDown} toggle={this.toggle} tag="span">
+      <Dropdown isOpen={dropDown} toggle={this.toggle} tag='span'>
         <DropdownToggle
-          tag="span"
+          tag='span'
           onClick={this.toggle}
-          data-toggle="dropdown"
+          data-toggle='dropdown'
           aria-expanded={dropDown}
           className='small_text ellipse'
         >
-          <FontAwesome name='menu' className='fas fa-ellipsis-v' onClick={this.toggle} />
+          <FontAwesome
+            name='menu'
+            className='fas fa-ellipsis-v'
+            onClick={this.toggle}
+          />
         </DropdownToggle>
         <DropdownMenu>
           <ModalButton type='signup' label='view history' title='Edit History'>
-            <CommentEditHistory
-              articleId={articleId}
-              commentId={commentId}
-            />
+            <CommentEditHistory articleId={articleId} commentId={commentId} />
           </ModalButton>
         </DropdownMenu>
       </Dropdown>
-
     );
   }
 }
-
 
 export default Ellipse;
