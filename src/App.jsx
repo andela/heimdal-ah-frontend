@@ -5,6 +5,9 @@ import Routes from './routes/routes';
 import 'font-awesome/css/font-awesome.min.css';
 import './styles/global.scss';
 
+/**
+ * @description App class
+ */
 class App extends Component {
   render() {
     return (
