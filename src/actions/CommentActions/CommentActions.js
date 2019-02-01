@@ -37,8 +37,8 @@ export function getArticleComment(identifier) {
       .then((response) => {
         const { comment: comments } = response.data;
         dispatch(ActionResponse(ACTIONS.GET_ARTICLE_COMMENT, comments));
-      }).catch(() => {
-        dispatch(ActionResponse(ACTIONS.GET_ERRORS, {}));
+      }).catch((error) => {
+        dispatch(ActionResponse(ACTIONS.GET_ERRORS, error.response));
       });
   };
 }
@@ -62,7 +62,7 @@ export function postArticleComment(identifier, data, imageUrl) {
         dispatch(ActionResponse(ACTIONS.POST_ARTICLE_COMMENT, comment));
         dispatch(successMsg());
       }).catch((error) => {
-        dispatch(ActionResponse(ACTIONS.GET_ERRORS, error.data));
+        dispatch(ActionResponse(ACTIONS.GET_ERRORS, error.response));
       });
   };
 }
@@ -83,7 +83,7 @@ export function deleteArticleComment(articleId, commentId) {
         dispatch(ActionResponse(ACTIONS.ARCHIVE_COMMENT, { message: response.data, commentId }));
         dispatch(successMsg());
       }).catch((error) => {
-        dispatch(ActionResponse(ACTIONS.GET_ERRORS, error.data));
+        dispatch(ActionResponse(ACTIONS.GET_ERRORS, error.response));
       });
   };
 }

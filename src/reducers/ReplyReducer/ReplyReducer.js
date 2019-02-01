@@ -6,7 +6,6 @@ const initialState = {
   status: null,
 };
 
-
 /**
  * Call the returned function to pass actions to Redux-ORM.
  *
@@ -28,13 +27,17 @@ export default (state = initialState, action) => {
     }
 
     case ACTIONS.POST_COMMENT_REPLY: {
-      let replies = state[action.payload.commentId];
-      replies = [action.payload.reply].concat(replies);
-      return ({
+      // let replies = state[action.payload.commentId] || [];
+      // replies = [action.payload.reply].concat(replies);
+
+      return {
         ...state,
-        [action.payload.commentId]: replies,
+        [action.payload.commentId]: [
+          action.payload.reply,
+          ...(state[action.payload.commentId] || []),
+        ],
         loading: false,
-      });
+      };
     }
 
     case ACTIONS.ARCHIVE_COMMENT_REPLY: {
@@ -42,19 +45,20 @@ export default (state = initialState, action) => {
       const { replyId } = action.payload;
       replies = replies.filter(item => item.id !== replyId);
 
-      return ({
+      return {
         ...state,
         [action.payload.commentId]: replies,
         loading: false,
-      });
+      };
     }
 
     case ACTIONS.GET_ERRORS:
-      return ({
+      return {
         ...state,
         replyError: action.payload,
         status: 'Warning',
-      });
+        loading: false,
+      };
 
     default:
       return state;

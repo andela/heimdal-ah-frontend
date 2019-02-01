@@ -22,7 +22,10 @@ import { getArticleComment } from '../../../actions/CommentActions/CommentAction
   */
 export class Comment extends Component {
   componentDidMount() {
-    this.props.getArticleComment(1);
+    const { articleId } = this.props;
+    if (articleId) {
+      this.props.getArticleComment(articleId);
+    }
   }
 
   /**
@@ -32,14 +35,22 @@ export class Comment extends Component {
      * @return {string} - HTML markup for the component
    */
   render() {
+    const { user, articleId } = this.props;
     return (
       <Fragment>
         <div className='comment-header'>
         Comment
         </div>
-        <CommentCard loading={this.props.loading} />
+        { user.isAuthenticated
+          ? (
+
+            <CommentCard loading={this.props.loading} />
+          )
+          : ''
+        }
+
         <div className='comment__form'>
-          <CommentForm />
+          <CommentForm articleId={articleId} />
         </div>
       </Fragment>
     );
@@ -47,7 +58,7 @@ export class Comment extends Component {
 }
 
 Comment.propTypes = {
-  getArticleComment: PropTypes.func.isRequired,
+  getArticleComment: PropTypes.func,
   comment: PropTypes.object.isRequired,
   loading: PropTypes.bool.isRequired,
   status: PropTypes.bool,
@@ -64,6 +75,8 @@ const mapStateToProps = state => ({
   comment: state.comment,
   loading: state.comment.loading,
   status: state.state,
+  user: state.auth,
+  error: state.comment.error,
 });
 
 export default connect(mapStateToProps, { getArticleComment })(Comment);

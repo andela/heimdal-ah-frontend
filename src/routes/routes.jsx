@@ -22,7 +22,6 @@ const Routes = () => (
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/social-auth' component={SocialAuth} />
-        <Route exact path='/articles/:identifier' component={SingleArticlePage} />
         <Route exact path='/articles/create' component={CreateArticle} />
         <Route exact path='/:username/articles/:slug' component={SingleArticlePage} />
         <Route exact path='/articles/:slug' component={ReadSingleArticleError} />

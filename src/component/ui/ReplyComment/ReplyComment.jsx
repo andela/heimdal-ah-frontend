@@ -58,8 +58,19 @@ export class ReplyComment extends Component {
           <div>
             {this.props.replies ? (
               <div>
-                <ReplyCommentCard replies={this.state.replies} commentId={this.props.commentId} />
-                <ReplyCommentForm commentId={this.props.commentId} />
+                {
+                  this.props.commentId
+                  && (
+                  <div>
+                    <ReplyCommentCard
+                      replies={this.props.replies}
+                      commentId={this.props.commentId}
+                    />
+                    <ReplyCommentForm commentId={this.props.commentId} />
+                  </div>
+                  )
+
+                }
               </div>
             ) : (
               <div>No reply found</div>

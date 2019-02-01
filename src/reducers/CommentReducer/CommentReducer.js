@@ -5,6 +5,7 @@ const initialState = {
   comments: [],
   loading: false,
   status: false,
+  error: '',
 };
 
 export default (state = initialState, action) => {
@@ -56,7 +57,8 @@ export default (state = initialState, action) => {
     case ACTIONS.GET_ERRORS:
       return ({
         ...state,
-        payload: action.payload,
+        error: action.payload,
+        loading: false,
       });
 
     default:

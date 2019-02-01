@@ -69,7 +69,7 @@ export class CommentForm extends Component {
          isPrivate: checkbox,
        };
 
-       this.props.postArticleComment(1, data, user.image);
+       this.props.postArticleComment(this.props.articleId, data, user.image);
        this.setState({
          content: '',
        });

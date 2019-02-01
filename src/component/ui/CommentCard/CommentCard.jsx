@@ -5,10 +5,17 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import ClipLoader from 'react-spinners/ClipLoader';
 import FontAwesome from 'react-fontawesome';
+import moment from 'moment';
+import TimeAgo from 'javascript-time-ago';
+import english from 'javascript-time-ago/locale/en';
 import { getArticleComment } from '../../../actions/CommentActions/CommentActions';
 import DeleteButton from '../CommentForm/CommentDelete';
 import ReplyComment from '../ReplyComment/ReplyComment';
 import './CommentCard.scss';
+
+
+TimeAgo.addLocale(english);
+const timeAgo = new TimeAgo('en-US');
 
 /**
   * renderComponent
@@ -39,11 +46,7 @@ export const CommentCard = (props) => {
             <span className='comment-name'>{item.profile.username}</span>
             <span className='comment-date small_text'>
               <FontAwesome name='clock' className='fav_icons' />
-              {item.createdAt}
-            </span>
-            <span className='small_text'>
-              <FontAwesome name='calendar' className='fav_icons' />
-              09: 00 am
+              { timeAgo.format(moment(item.createdAt).valueOf()) }
             </span>
             { item.userId === user.userId
               ? <DeleteButton buttonName='comment' commentId={item.id} />
@@ -91,6 +94,7 @@ export const CommentCard = (props) => {
         )
         : ''
       }
+
       {
       renderCard()
     }
@@ -113,6 +117,7 @@ CommentCard.propTypes = {
 const mapStateToProps = state => ({
   comments: state.comment.comments,
   user: state.auth,
+  error: state.comment.error,
 });
 
 export default connect(mapStateToProps, { getArticleComment })(CommentCard);

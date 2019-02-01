@@ -5,9 +5,16 @@ import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import PropTypes from 'prop-types';
 import GridLoader from 'react-spinners/GridLoader';
+import moment from 'moment';
+import TimeAgo from 'javascript-time-ago';
+import english from 'javascript-time-ago/locale/en';
 import { connect } from 'react-redux';
 import DeleteButton from '../../CommentForm/CommentDelete';
 import './ReplyCommentCard.scss';
+
+
+TimeAgo.addLocale(english);
+const timeAgo = new TimeAgo('en-US');
 
 /**
   * renderComponent
@@ -33,11 +40,9 @@ export const ReplyCommentCard = (props) => {
             <span className="reply-name">{item.profile.username}</span>
             <span className="comment-date small_text">
               <FontAwesome name="clock" className="fav_icons" />
+              { timeAgo.format(moment(item.createdAt).valueOf()) }
             </span>
-            <span className="small_text">
-              <FontAwesome name="calendar" className="fav_icons" />
-                09: 00 am
-            </span>
+
             { item.userId === user.userId
               ? <DeleteButton replyId={item.id} buttonName='reply' commentId={props.commentId} />
               : <div />
