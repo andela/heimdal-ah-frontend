@@ -1,4 +1,31 @@
+@import "./variables.scss";
 $heimdal-footer-background: #606e86;
 $heimdal-text-color: #fff;
 $heimdal-link-hover: whitesmoke;
 $heimdal-textfield-background: #6a7384;
+
+$black: #000;
+$bg-default: #606e86;
+$bg-twitter-blue: #00b4fa;
+$bg-google-red: #f13921;
+$bg-facebook-blue: #2a59a1;
+
+.btn,
+.btn:focus,
+.btn:hover {
+  border: 0;
+  border-radius: 3px;
+  color: #ffffff;
+  outline: none;
+}
+
+.btn-default {
+  background-color: $bg-default;
+}
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #4242427f;
+}

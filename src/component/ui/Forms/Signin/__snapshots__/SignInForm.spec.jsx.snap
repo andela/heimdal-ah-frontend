@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Signin Component Test Suite should match the snapshot 1`] = `
+<div
+  className="heimdal-signin-form"
+>
+  <h1
+    className="form-title font-cardo text-center"
+  >
+    Welcome back
+  </h1>
+  <form
+    className="heimdal-form"
+    noValidate={true}
+  >
+    <div
+      className="font-cardo ph-30"
+    >
+      <FormInput
+        classname="form-control"
+        name="email"
+        placeholder="Email Address"
+        type="email"
+      />
+      <FormInput
+        classname="form-control"
+        name="password"
+        placeholder="Password"
+        type="password"
+      />
+      <div
+        className="d-flex justify-content-between mb-3"
+      >
+        <div
+          className="p-2"
+        >
+           
+          <FormGroup
+            check={true}
+            tag="div"
+          >
+            <Label
+              check={true}
+              tag="label"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+            >
+              <Input
+                type="checkbox"
+              />
+               
+              Remember me
+            </Label>
+          </FormGroup>
+        </div>
+        <div
+          className="p-2"
+        >
+           
+          <a
+            href="/reset-password"
+          >
+            Forgot password?
+          </a>
+        </div>
+      </div>
+      <SignInError />
+      <div
+        className="row"
+      >
+        <LoadingSpinner />
+        <div
+          className="col-md-8 text-left mb-10"
+        >
+          <span
+            className="text-muted p-t-10"
+          >
+            Dont have an account?
+             
+            <Link
+              className="link pt-2"
+              replace={false}
+              to="/"
+            >
+              Signup here
+            </Link>
+          </span>
+        </div>
+        <div
+          className="col-md-4 text-right"
+        >
+          <button
+            className="btn btn-default ph-25"
+            type="submit"
+          >
+            Sign In
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <br />
+  <div
+    className="text-center"
+  >
+    <a
+      className="btn btn-block btn-facebook"
+      href="undefined/api/v1/auth/facebook"
+    >
+      Login with Facebook
+    </a>
+    <br />
+    <a
+      className="btn btn-block btn-twitter"
+      href="undefined/api/v1/auth_twitter/twitter"
+    >
+      Login with Twitter
+    </a>
+    <br />
+    <a
+      className="btn btn-block btn-google"
+      href="undefined/api/v1/auth/google"
+    >
+      Login With Google
+    </a>
+  </div>
+</div>
+`;

@@ -1,7 +1,7 @@
 /* eslint-disable react/forbid-prop-types */
-import React from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import PropsTypes from 'prop-types';
+import React from 'react';
 import './Header.scss';
 import NavItems from '../navItems/NavItems';
 import ActiveUser from '../activeuser/ActiveUser';
@@ -13,19 +13,18 @@ import SearchArticlesPresentation from '../searchForm/searchArticlesPresentation
 /**
  * @param {boolean} isAuthenticated should be a boolean
  */
-const Header = (props) => {
-  const { isAuthenticated } = props.auth;
+const Header = ({ auth }) => {
+  const { isAuthenticated, user: { username, image } } = auth;
   return (
-    <header className='header'>
+    <header className="header">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Logo />
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav mr-auto">
             <NavItems />
           </ul>
-          {isAuthenticated ? <ActiveUser /> : <HeaderButton />}
           {(window.location.search === '?query=' || window.location.pathname === '/search' || new URLSearchParams(window.location.search).get('query')) ? '' : <SearchArticlesPresentation /> }
-
+          {isAuthenticated ? <ActiveUser username={username} image={image} /> : <HeaderButton />}
         </div>
       </nav>
     </header>
@@ -33,11 +32,14 @@ const Header = (props) => {
 };
 
 Header.propTypes = {
-  auth: PropTypes.object.isRequired,
+  auth: PropsTypes.object,
+};
+
+Header.defaultProps = {
+  auth: {},
 };
 
 const mapStateToProps = state => ({
   auth: state.auth,
 });
-
-export default connect(mapStateToProps, {})(Header);
+export default connect(mapStateToProps)(Header);
