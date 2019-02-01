@@ -20,7 +20,6 @@ export class AuthContainer extends Component {
     isLoading: false,
   };
 
-
   componentWillReceiveProps(nextProps) {
     return nextProps.errors && this.setState({ errors: nextProps.errors });
   }
