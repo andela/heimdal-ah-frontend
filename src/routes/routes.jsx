@@ -7,7 +7,6 @@ import CreateArticle from '../component/Pages/articles/createArticle/CreateArtic
 import SingleArticlePage from '../component/Pages/articles/ReadSingleArticle/ReadSingleArticle';
 import HomePage from '../component/Pages/HomePage.jsx';
 import SocialAuth from '../component/ui/SocialAuth/SocialAuth';
-import ProfilePage from '../component/Pages/Profile';
 import PasswordResetPresentation from '../component/Pages/PasswordResetPage/PasswordResetPresentation';
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
 import UpdateArticlesPresentation from '../component/Pages/articles/UpdateArticles/UpdateArticlesPresentation.jsx';

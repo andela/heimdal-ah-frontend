@@ -15,7 +15,6 @@ export const ACTIONS = keyMirror({
   UPDATE_PASSWORD_FAILED: null,
   UPDATE_PASSWORD_ERROR: null,
 
-  SET_CURRENT_USER: null,
   FOLLOW_USER: null,
   UNFOLLOW_USER: null,
   GET_ALL_FOLLOWERS: null,

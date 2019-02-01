@@ -24,6 +24,7 @@ ShallowWrapper {
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -150,9 +151,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,
@@ -174,6 +179,7 @@ ShallowWrapper {
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -256,7 +262,7 @@ ShallowWrapper {
                   href="/@username"
                 >
                   <h2>
-                    @username
+                    @username...
                   </h2>
                 </a>
                 <br />
@@ -477,7 +483,7 @@ ShallowWrapper {
                     href="/@username"
                   >
                     <h2>
-                      @username
+                      @username...
                     </h2>
                   </a>
                   <br />
@@ -746,7 +752,7 @@ ShallowWrapper {
                       href="/@username"
                     >
                       <h2>
-                        @username
+                        @username...
                       </h2>
                     </a>
                     <br />
@@ -1050,7 +1056,7 @@ ShallowWrapper {
                         href="/@username"
                       >
                         <h2>
-                          @username
+                          @username...
                         </h2>
                       </a>
                       <br />
@@ -1203,7 +1209,7 @@ ShallowWrapper {
                           href="/@username"
                         >
                           <h2>
-                            @username
+                            @username...
                           </h2>
                         </a>,
                         <br />,
@@ -1281,7 +1287,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": <h2>
-                            @username
+                            @username...
                           </h2>,
                           "className": "user-link",
                           "href": "/@username",
@@ -1292,10 +1298,10 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": "@username",
+                            "children": "@username...",
                           },
                           "ref": null,
-                          "rendered": "@username",
+                          "rendered": "@username...",
                           "type": "h2",
                         },
                         "type": "a",
@@ -2039,7 +2045,7 @@ ShallowWrapper {
                     href="/@username"
                   >
                     <h2>
-                      @username
+                      @username...
                     </h2>
                   </a>
                   <br />
@@ -2260,7 +2266,7 @@ ShallowWrapper {
                       href="/@username"
                     >
                       <h2>
-                        @username
+                        @username...
                       </h2>
                     </a>
                     <br />
@@ -2529,7 +2535,7 @@ ShallowWrapper {
                         href="/@username"
                       >
                         <h2>
-                          @username
+                          @username...
                         </h2>
                       </a>
                       <br />
@@ -2833,7 +2839,7 @@ ShallowWrapper {
                           href="/@username"
                         >
                           <h2>
-                            @username
+                            @username...
                           </h2>
                         </a>
                         <br />
@@ -2986,7 +2992,7 @@ ShallowWrapper {
                             href="/@username"
                           >
                             <h2>
-                              @username
+                              @username...
                             </h2>
                           </a>,
                           <br />,
@@ -3064,7 +3070,7 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": <h2>
-                              @username
+                              @username...
                             </h2>,
                             "className": "user-link",
                             "href": "/@username",
@@ -3075,10 +3081,10 @@ ShallowWrapper {
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "@username",
+                              "children": "@username...",
                             },
                             "ref": null,
-                            "rendered": "@username",
+                            "rendered": "@username...",
                             "type": "h2",
                           },
                           "type": "a",
@@ -3750,9 +3756,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,
@@ -3772,6 +3782,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <ReadSingleArticleError />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -3958,9 +3969,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,

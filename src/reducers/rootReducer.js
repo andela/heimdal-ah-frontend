@@ -7,7 +7,6 @@ import {
   updatePassword,
   articleRating,
   getarticleRating,
-  AllFollowReducer,
   createArticleReducer,
   unPublishedArticle,
 } from './index';
@@ -21,7 +20,6 @@ const rootReducer = combineReducers({
   resetpassword: resetPassword,
   updatepassword: updatePassword,
   toastr: toastrReducer,
-  followers: AllFollowReducer,
   getArticlesById: getArticlesByIdReducer,
   updateArticles: updateArticlesReducer,
   articlerating: articleRating,
