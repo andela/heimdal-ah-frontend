@@ -1,6 +1,5 @@
 import { ACTIONS } from '../../actions/actionTypes';
 
-
 const initialState = {
   comments: [],
   loading: false,
