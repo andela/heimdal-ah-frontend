@@ -18,11 +18,18 @@ class ProfileContainer extends Component {
 
   handleEditButtonClick = () => this.props.history.push(`${this.props.username}/edit`);
 
-  handleFollowButtonClick = () => console.log('follow button is pressed');
+  handleFollowButtonClick = () => {
+    const { user, profile: { followers, id } } = this.props;
+    if (followers.filter(item => item.followerId === user.userId).length) {
+      this.props.profileActions.unfollowUser(id, user.userId);
+    } else {
+      this.props.profileActions.followUser(id, user.userId);
+    }
+  }
 
   sendProps = () => ({
     error: this.props.error,
-    loggedInUser: this.props.user.username,
+    loggedInUser: this.props.user,
     articles: this.props.articles,
     profile: this.props.profile,
     onClick: this.props.username === this.props.user.username

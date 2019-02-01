@@ -72,40 +72,22 @@ class LandingPage extends Component {
                 <div className="mb-5">
                   <span className="text-center h4">Tags</span>
                   <hr />
-                  <Link to="/a" className="form-check text-dark pb-2">
+                  <Link to="/search?query=react" className="form-check text-dark pb-2">
                     <label htmlFor="beauty" className="form-check-label">
                       <input type="radio" className="form-check-input" name="tag" />
-                      Beauty
+                      React
                     </label>
                   </Link>
-                  <Link to="/a" className="form-check text-dark pb-2">
+                  <Link to="/search?query=angular" className="form-check text-dark pb-2">
                     <label htmlFor="beauty" className="form-check-label">
                       <input type="radio" className="form-check-input" name="tag" />
-                      Beauty
+                      Angular
                     </label>
                   </Link>
-                  <Link to="/a" className="form-check text-dark pb-2">
+                  <Link to="/search?query=node" className="form-check text-dark pb-2">
                     <label htmlFor="beauty" className="form-check-label">
                       <input type="radio" className="form-check-input" name="tag" />
-                      Beauty
-                    </label>
-                  </Link>
-                  <Link to="/a" className="form-check text-dark pb-2">
-                    <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="tag" />
-                      Beauty
-                    </label>
-                  </Link>
-                  <Link to="/a" className="form-check text-dark pb-2">
-                    <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="tag" />
-                      Beauty
-                    </label>
-                  </Link>
-                  <Link to="/a" className="form-check text-dark pb-2">
-                    <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="tag" />
-                      Beauty
+                      Node
                     </label>
                   </Link>
                 </div>
