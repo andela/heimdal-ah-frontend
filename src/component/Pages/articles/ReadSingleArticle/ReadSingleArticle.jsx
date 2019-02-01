@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import './ReadSingleArticle.scss';
 // import setToken from '../../../../config/setToken';
-import getArticleById from '../../../../actions/articleActions/getArticlesByIdActions';
+import getArticleById from '../../../../actions/ArticleActions/getArticlesByIdActions';
 import decodeToken from '../../../../utils/decodeToken';
 import ReadSingleArticlePresentation from './ReadSingleArticlePresentation';
 import setArticleId from '../../../../utils/setArticleId';

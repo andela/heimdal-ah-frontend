@@ -31,13 +31,10 @@ const Routes = () => (
         <Route exact path='/articles/create' component={CreateArticle} />
         <Route exact path='/:username/articles/:slug' component={SingleArticlePage} />
         <Route exact path='/articles/:slug' component={ReadSingleArticleError} />
-        <Route exact path='/articles/update' component={UpdateArticlesPresentation} />
-        <Route exact path='/resetpassword' component={PasswordResetPresentation} />
-        <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
+        <Route exact path='/update-articles' component={UpdateArticlesPresentation} />
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
         <Route exact path='/update-password' component={UpdatePasswordPresentation} />
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
-        <Route exact path='/update-password' component={UpdatePasswordPresentation} />
         <Route exact path='/all-stories' component={Articles} />
         <ProtectedRoute exact path='/:username' component={Profile} />
         <ProtectedRoute exact path='/:username/edit' component={ProfileEdit} />

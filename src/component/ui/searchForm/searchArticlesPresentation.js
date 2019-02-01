@@ -50,7 +50,7 @@ const SearchArticlesPresentation = () => (
                   {data.articlesByAuthor.map(article => (
                     <tr className='search-articles' key={sum += 1}>
                       <td>
-                        <a href={`https://heimdal-frontend.herokuapp.com/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
+                        <a href={`/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
                         <br />
                         <span>{article.user.profile.username}</span>
                       </td>
@@ -82,7 +82,7 @@ const SearchArticlesPresentation = () => (
                   {data.articlesByTitle.map(article => (
                     <tr className='search-articles' key={sum += 1}>
                       <td>
-                        <a href={`https://heimdal-frontend.herokuapp.com/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
+                        <a href={`/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
                         <br />
                         <span>{article.user.profile.username}</span>
                       </td>
@@ -111,7 +111,7 @@ const SearchArticlesPresentation = () => (
                   {data.articlesByTags.map(article => (
                     <tr className='search-articles' key={sum += 1}>
                       <td>
-                        <a href={`https://heimdal-frontend.herokuapp.com/${article.article.user.profile.username}/articles/${article.article.slug}`}>{article.article.title}</a>
+                        <a href={`/${article.article.user.profile.username}/articles/${article.article.slug}`}>{article.article.title}</a>
                         <br />
                         <span>{article.article.user.profile.username}</span>
                       </td>

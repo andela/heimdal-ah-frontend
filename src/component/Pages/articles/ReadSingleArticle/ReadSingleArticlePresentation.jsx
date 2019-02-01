@@ -8,6 +8,7 @@ import React, { Component, Fragment } from 'react';
 import { Redirect } from 'react-router-dom';
 import TimeAgo from 'javascript-time-ago';
 import moment from 'moment';
+import Editor from 'react-medium-editor';
 import english from 'javascript-time-ago/locale/en';
 import Glow from '../../../ui/Buttons/glow/Glow';
 import './ReadSingleArticle.scss';
@@ -42,6 +43,7 @@ class ReadSingleArticlePresentation extends Component {
           : null;
     }, 2000);
     const username = `${this.props.username.substring(0, 9)}...`;
+    const userImage = this.props.userImage || <i className="fas fa-7x fa-user-circle" />;
     return (
       <Fragment>
         <Redirect to={`/${this.props.username}/articles/${this.props.slug}`} />
@@ -57,7 +59,12 @@ class ReadSingleArticlePresentation extends Component {
           </div>
           <div className="body-section">
             <div className="article-section">
-              {this.props.body}
+              {/* <Editor
+              tag="pre"
+              text={this.props.body}
+              contenteditable="false"
+            /> */}
+              <div>{this.props.body}</div>
               <div className="bottom-details">
                 <div>
                   {this.props.articleId && <ArticlesRating articleId={this.props.articleId} />}
@@ -69,7 +76,7 @@ class ReadSingleArticlePresentation extends Component {
                 </div>
               </div>
               <div className="line" />
-              <div className="col-md-12">
+              <div className="col-md-12 pt-5">
                 <ModalButton label="Report Article" Class="btn-danger p-2 ph-25">
                   <ReportArticle articleId={this.props.articleId} />
                 </ModalButton>
@@ -77,17 +84,17 @@ class ReadSingleArticlePresentation extends Component {
             </div>
             <div className="user-section">
               <div className="user-profile">
-                <img className="user-image" src={this.props.userImage} alt="user" />
+                <img className="user-image" src={userImage} alt="user" />
                 <br />
                 <br />
                 <a href={`/${this.props.username}`} className="user-link">
-                  <h2>{username}</h2>
+                  <h4>{username}</h4>
                 </a>
                 <br />
                 <h4>{timeAgo.format(moment(this.props.time).valueOf())}</h4>
                 <br />
                 <a
-                  href={`http://heimdal-frontend.herokuapp.com/articles/update?id=${
+                  href={`/update-articles?id=${
                     this.props.articleId
                   }`}
                 >
