@@ -9,5 +9,5 @@ export default async (imageFile) => {
       body: formData,
     });
     return value.json();
-  } catch (error) { alert('hi'); return error.message; }
+  } catch (error) { return error.message; }
 };

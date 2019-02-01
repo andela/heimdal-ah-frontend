@@ -1,6 +1,10 @@
 import { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
+/**
+ * @description - ScrollToTop Component
+ * @returns {component} Component
+ */
 class ScrollToTop extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {

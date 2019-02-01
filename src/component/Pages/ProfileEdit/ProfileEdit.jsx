@@ -1,7 +1,7 @@
 import React from 'react';
+import { toastr as flashToast } from 'react-redux-toastr';
 import Textarea from 'react-textarea-autosize';
 import './profileEdit.scss';
-import { toastr as flashToast } from 'react-redux-toastr';
 import Button from '../../ui/Buttons/Button';
 import ProfileEditContainer from '../../../container/ProfileEdit/ProfileEditContainer';
 
