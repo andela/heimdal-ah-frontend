@@ -4,11 +4,36 @@ import { Link } from 'react-router-dom';
 // import ArticleCard from '../ui/cards/ArticleCard/ArticleCard';
 import Glow from '../ui/Buttons/glow/Glow';
 import Rating from '../ui/Rating/Rating';
+import ArticleCardHorizontal from '../ui/cards/ArticleCardHorizontal';
+import ReportArticle from '../ui/Forms/ReportArticle/Index';
+import ModalButton from '../ui/Modal/Index';
+import ArticleTag from '../ui/Tags/ArticlesTag';
 
 const HomePage = () => (
   <div className="col-md-12 p-5">
     <h2 className="text-center">Featured</h2>
     <div className="row p-3">
+    <ArticleTag name="React" />
+    <br />
+    <br />
+    <br />
+    <div className="row">
+      <div className="col-md-12">
+        <ModalButton label="Report" Class="btn-danger">
+          <ReportArticle articleId={5} />
+        </ModalButton>
+      </div>
+      <div className="col-md-3">
+        <ArticleCardHorizontal
+          articleTitle="An article Title"
+          articleImage="https://cdn-images-1.medium.com/max/1200/0*pgKJXXvrKJ-b8ztZ.jpg"
+          article="This is the article description"
+          userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3jX0asji2xGa96e7dpfNI30qEiEBOkr14S1XNlCy1B-6JxQ9"
+          username="Henperi"
+          updatedTime="15hrs ago"
+          commentCount="120"
+        />
+      </div>
       <div className="col-md-3">
         <Fragment>
           <div className="article-card">
@@ -1076,6 +1101,7 @@ const HomePage = () => (
         </div>
       </div>
     </div>
+  </div>
   </div>
 );
 

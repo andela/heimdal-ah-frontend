@@ -53,10 +53,10 @@ class LandingPage extends Component {
           </div>
           {/** Featured Articles Section Start */}
 
-          <div className="row p-3 mb-5">
+          <div className="row p-3 mb-5 mt-5">
+            {/** Main Articles Section Start */}
             <div className="col-md-10">
-              {/** Main Articles Section Start */}
-              <div className="row p-5">
+              <div className="row">
                 {mainArticles.map(item => (
                   <div className="col-md-4" key={Math.random()}>
                     <StanadardCard {...item} />
@@ -69,42 +69,42 @@ class LandingPage extends Component {
             {/** Aside Card Section Start */}
             <div className="col-md-2 pt-5">
               <div className="card p-3">
-                <div className="tags mb-5">
+                <div className="mb-5">
                   <span className="text-center h4">Tags</span>
                   <hr />
                   <Link to="/a" className="form-check text-dark pb-2">
                     <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="optradio" />
+                      <input type="radio" className="form-check-input" name="tag" />
                       Beauty
                     </label>
                   </Link>
                   <Link to="/a" className="form-check text-dark pb-2">
                     <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="optradio" />
+                      <input type="radio" className="form-check-input" name="tag" />
                       Beauty
                     </label>
                   </Link>
                   <Link to="/a" className="form-check text-dark pb-2">
                     <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="optradio" />
+                      <input type="radio" className="form-check-input" name="tag" />
                       Beauty
                     </label>
                   </Link>
                   <Link to="/a" className="form-check text-dark pb-2">
                     <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="optradio" />
+                      <input type="radio" className="form-check-input" name="tag" />
                       Beauty
                     </label>
                   </Link>
                   <Link to="/a" className="form-check text-dark pb-2">
                     <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="optradio" />
+                      <input type="radio" className="form-check-input" name="tag" />
                       Beauty
                     </label>
                   </Link>
                   <Link to="/a" className="form-check text-dark pb-2">
                     <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="optradio" />
+                      <input type="radio" className="form-check-input" name="tag" />
                       Beauty
                     </label>
                   </Link>
@@ -116,22 +116,27 @@ class LandingPage extends Component {
                   {recentArticles.map(item => (
                     <Link
                       to={`/${item.user.profile.username}/articles/${item.slug}`}
-                      className="text-dark pb-2 list-group-flush list-group-item"
+                      className="text-dark pb-5"
                       key={Math.random()}
                     >
-                      <div className="row">
-                        <div className="col-md-12">
-                          <img
-                            className="img-fluid rounded-circle"
-                            width="40"
-                            src={`https://picsum.photos/1200/1300/?image=${Math.trunc(
-                              Math.random() * 20,
-                            )}`}
-                            alt="Card"
-                          />
-                          <span className="p-2">{item.title}</span>
+                      <div className="col-md-12 mb-3">
+                        <div className="row">
+                          <div className="col-md-5 mr-0 pl-0 pr-0">
+                            <img
+                              className="img-fluid rounded-circle"
+                              width="40"
+                              src={`https://picsum.photos/1200/1300/?image=${Math.trunc(
+                                Math.random() * 20,
+                              )}`}
+                              alt="Card"
+                            />
+                          </div>
+                          <div className="col-md-7 pl-0 ml-0 p-0 m-0">
+                            <span className="">{item.title}</span>
+                          </div>
                         </div>
                       </div>
+                      <hr />
                     </Link>
                   ))}
                 </div>
@@ -140,7 +145,7 @@ class LandingPage extends Component {
             {/** Aside Card Section End */}
 
             <div className="text-center col-md-12">
-              <Link to="/" className="btn btn-secondary">
+              <Link to="/all-stories" className="btn btn-secondary">
                 All Stories
               </Link>
             </div>

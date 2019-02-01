@@ -22,6 +22,7 @@
   }
 
   .card-title {
+    color: #000000;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -29,6 +30,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 18px;
+  }
+
+  a {
+    color: #000000;
+  }
+
+  a:hover {
+    color: #4242427f;
+  }
+  .card-title:hover {
+    color: #4242427f;
   }
 
   .card-image-container {
