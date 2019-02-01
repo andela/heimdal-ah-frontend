@@ -1,6 +1,9 @@
+@import "../../../../styles/variables.scss";
+
 .article-card {
-  font-family: 'Cardo', serif;;
+  font-family: "Cardo", serif;
   border: 0rem;
+  // background-color: $white-color;
 
   .read-time {
     display: inline-block;
@@ -19,6 +22,7 @@
   }
 
   .card-title {
+    color: #000000;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -26,20 +30,40 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 18px;
-  };
+  }
+
+  a {
+    color: #000000;
+  }
+
+  a:hover {
+    color: #4242427f;
+  }
+  .card-title:hover {
+    color: #4242427f;
+  }
 
   .card-image-container {
-    height: 200px;
+    height: 210px;
     overflow: hidden;
   }
-  
+
+  .card-image-container-2 {
+    height: 170px;
+    overflow: hidden;
+  }
+
   .card-image {
-    height: 200px;
+    height: inherit;
     min-width: 100%;
   }
 
+  .rounded-20 {
+    border-radius: 20px;
+  }
+
   .card-text {
-    margin-top:10px;
+    margin-top: 10px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -47,12 +71,16 @@
     font-size: 13px;
     line-height: 1.3;
     height: 49px;
-  };
+  }
+
+  .card-text-2 {
+    height: 30px;
+  }
 
   .comment {
     font-size: 14px;
     margin-top: 5px;
-  };
+  }
 
   .user-name {
     font-size: 13px;
@@ -60,7 +88,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-top: 6px;
-  };
+  }
 
   .user-image {
     display: inline-block;
@@ -68,14 +96,14 @@
     height: 22px;
     border-radius: 50%;
     font-weight: 200;
-  };
+  }
 
   .updated-time {
-    color: #000000; 
-    font-size: 13px;  
-  };
+    color: #000000;
+    font-size: 13px;
+  }
 
   .glow-likes {
     font-size: 14px;
   }
-};
+}

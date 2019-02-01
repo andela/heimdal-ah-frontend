@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mount Article page should render the article page 1`] = `
+<div
+  className="mb-5"
+>
+  <h2
+    className="mx-auto text-center"
+  >
+     All Stories
+  </h2>
+  <Connect(Article) />
+</div>
+`;

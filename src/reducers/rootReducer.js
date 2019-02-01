@@ -5,15 +5,26 @@ import ReplyReducer from './ReplyReducer/ReplyReducer';
 import authReducer from './authReducer';
 import errorsReducer from './errorsReducer';
 import CommentHistoryReducer from './CommentHistoryReducer/CommentHistoryReducer';
+import getArticlesByIdReducer from './articlesReducers/getArticlesByIdReducer';
+import updateArticlesReducer from './articlesReducers/updateArticlesReducer';
 import {
   resetPassword,
   updatePassword,
+  searchArticlesByAuthorReducer,
+  searchArticlesByTitleReducer,
+  searchArticlesByTagsReducer,
   articleRating,
   getarticleRating,
+  createArticleReducer,
+  unPublishedArticle,
 } from './index';
+import articleReducer from './Article/articleReducer';
 import profileReducer from './profile/profileReducer';
+import homeReducer from './homeReducer';
+import loaderReducer from './loaderReducer';
 
 const rootReducer = combineReducers({
+  createArticleReducer,
   resetpassword: resetPassword,
   updatepassword: updatePassword,
   toastr: toastrReducer,
@@ -24,7 +35,16 @@ const rootReducer = combineReducers({
   commentHistory: CommentHistoryReducer,
   articlerating: articleRating,
   getarticlerating: getarticleRating,
+  searcharticlesbyauthor: searchArticlesByAuthorReducer,
+  searcharticlesbytitle: searchArticlesByTitleReducer,
+  searcharticlesbytags: searchArticlesByTagsReducer,
+  getArticlesById: getArticlesByIdReducer,
+  updateArticles: updateArticlesReducer,
+  loader: loaderReducer,
+  articles: articleReducer,
   profile: profileReducer,
+  home: homeReducer,
+  unpublishedarticle: unPublishedArticle,
 });
 
 export default rootReducer;

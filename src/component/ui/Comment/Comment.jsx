@@ -1,9 +1,15 @@
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/no-unused-prop-types */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable import/no-named-as-default */
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import CommentCard from '../CommentCard/CommentCard';
 import './Comment.scss';
 import CommentForm from '../CommentForm/CommentForm';
 import { getArticleComment } from '../../../actions/CommentActions/CommentActions';
+
 
 /**
   * renderComponent
@@ -14,9 +20,12 @@ import { getArticleComment } from '../../../actions/CommentActions/CommentAction
   * @property {String|Object} className - String className compatible object for styling
   * @return {Node} React node containing comment card view
   */
-class Comment extends Component {
+export class Comment extends Component {
   componentDidMount() {
-    this.props.getArticleComment(1);
+    const { articleId } = this.props;
+    if (articleId) {
+      this.props.getArticleComment(articleId);
+    }
   }
 
   /**
@@ -26,19 +35,34 @@ class Comment extends Component {
      * @return {string} - HTML markup for the component
    */
   render() {
+    const { user, articleId } = this.props;
     return (
       <Fragment>
         <div className='comment-header'>
         Comment
         </div>
-        <CommentCard />
+        { user.isAuthenticated
+          ? (
+
+            <CommentCard loading={this.props.loading} />
+          )
+          : ''
+        }
+
         <div className='comment__form'>
-          <CommentForm />
+          <CommentForm articleId={articleId} />
         </div>
       </Fragment>
     );
   }
 }
+
+Comment.propTypes = {
+  getArticleComment: PropTypes.func,
+  comment: PropTypes.object.isRequired,
+  loading: PropTypes.bool.isRequired,
+  status: PropTypes.bool,
+};
 
 /**
  * @method module:Reactator.ReduxContainerBuilderMapStateToProps
@@ -49,6 +73,10 @@ class Comment extends Component {
 */
 const mapStateToProps = state => ({
   comment: state.comment,
+  loading: state.comment.loading,
+  status: state.state,
+  user: state.auth,
+  error: state.comment.error,
 });
 
 export default connect(mapStateToProps, { getArticleComment })(Comment);

@@ -1,10 +1,13 @@
+/* eslint-disable react/no-unused-prop-types */
+/* eslint-disable react/forbid-prop-types */
 import React, { Component } from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap';
-import './CommentForm.scss';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Button from '../Buttons/Button';
 import { postArticleComment } from '../../../actions/CommentActions/CommentActions';
 import Alert from '../Alert/Alert';
+import './CommentForm.scss';
 
 /**
   * renderComponent
@@ -15,34 +18,13 @@ import Alert from '../Alert/Alert';
   * @property {String|Object} className - String className compatible object for styling
   * @return {Node} React node containing comment form view
   */
-class CommentForm extends Component {
+export class CommentForm extends Component {
   state = {
     formIsValid: false,
     commentError: '',
     content: '',
     checkbox: false,
   }
-
-   submitForm = (e) => {
-     e.preventDefault();
-     const { user } = this.props.auth;
-     const { formIsValid, content, checkbox } = this.state;
-     if (formIsValid) {
-       const data = {
-         content,
-         isPrivate: checkbox,
-       };
-
-       this.props.postArticleComment(1, data, user.image);
-       this.setState({
-         content: '',
-       });
-     } else {
-       this.setState({
-         commentError: 'Content cannot be Empty',
-       });
-     }
-   }
 
    onChange = (e) => {
      this.setState({
@@ -72,6 +54,32 @@ class CommentForm extends Component {
      });
    }
 
+   submitForm = (e) => {
+     e.preventDefault();
+     const { user } = this.props.auth;
+     const { formIsValid, content, checkbox } = this.state;
+     if (content.length >= 1500) {
+       this.setState({
+         formIsValid: false,
+         commentError: "can't have more than 1500 characters",
+       });
+     } else if (formIsValid) {
+       const data = {
+         content,
+         isPrivate: checkbox,
+       };
+
+       this.props.postArticleComment(this.props.articleId, data, user.image);
+       this.setState({
+         content: '',
+       });
+     } else {
+       this.setState({
+         commentError: 'Content cannot be Empty',
+       });
+     }
+   }
+
    /**
      * Renders the component.
      *
@@ -88,7 +96,7 @@ class CommentForm extends Component {
          </div>
          <div>
            {' '}
-           {commentError !== '' && <Alert type='warning' message='Comment content cannot be empty' title='Invalid Credenntials' /> }
+           {commentError !== '' && <Alert type='warning' message={this.state.commentError} title='Invalid Credenntials' /> }
            <div />
          </div>
          <form className='' onSubmit={this.submitForm}>
@@ -119,6 +127,13 @@ class CommentForm extends Component {
      );
    }
 }
+
+CommentForm.propTypes = {
+  postArticleComment: PropTypes.func.isRequired,
+  comment: PropTypes.object.isRequired,
+  auth: PropTypes.object.isRequired,
+  error: PropTypes.object.isRequired,
+};
 
 /**
  * @method module:Reactator.ReduxContainerBuilderMapStateToProps

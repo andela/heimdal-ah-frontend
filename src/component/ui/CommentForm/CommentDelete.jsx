@@ -1,5 +1,8 @@
+/* eslint-disable react/no-unused-prop-types */
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { deleteArticleComment } from '../../../actions/CommentActions/CommentActions';
 import { deleteCommentReplies } from '../../../actions/ReplyActions/ReplyAction';
@@ -12,7 +15,7 @@ import { deleteCommentReplies } from '../../../actions/ReplyActions/ReplyAction'
   * @property {String|Object} className - String className compatible object for styling
   * @return {Node} React node containing delete comment and replies
   */
-const DeleteButton = (props) => {
+export const DeleteButton = (props) => {
   const deleteComment = (e) => {
     e.preventDefault();
     const { commentId, buttonName, replyId } = props;
@@ -33,6 +36,10 @@ const DeleteButton = (props) => {
   return (
     <button className='archive_button btn btn-danger' onClick={e => deleteComment(e)} type='submit'><FontAwesome name='trash' className='' /></button>
   );
+};
+
+DeleteButton.propTypes = {
+  comment: PropTypes.object.isRequired,
 };
 
 /**

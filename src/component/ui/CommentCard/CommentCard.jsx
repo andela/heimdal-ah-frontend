@@ -1,12 +1,23 @@
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import { connect } from 'react-redux';
-import './CommentCard.scss';
+import PropTypes from 'prop-types';
+import ClipLoader from 'react-spinners/ClipLoader';
 import FontAwesome from 'react-fontawesome';
+import moment from 'moment';
+import TimeAgo from 'javascript-time-ago';
+import english from 'javascript-time-ago/locale/en';
 import { getArticleComment } from '../../../actions/CommentActions/CommentActions';
 import DeleteButton from '../CommentForm/CommentDelete';
 import ReplyComment from '../ReplyComment/ReplyComment';
 import Ellipse from '../Elllipse/Ellipse';
 
+import './CommentCard.scss';
+
+
+TimeAgo.addLocale(english);
+const timeAgo = new TimeAgo('en-US');
 
 /**
   * renderComponent
@@ -18,7 +29,7 @@ import Ellipse from '../Elllipse/Ellipse';
   * @return {Node} React node containing comment card view
 */
 
-const CommentCard = (props) => {
+export const CommentCard = (props) => {
   const { user } = props.user;
   let { comments } = props;
   comments = comments || [];
@@ -37,11 +48,7 @@ const CommentCard = (props) => {
             <span className='comment-name'>{item.profile.username}</span>
             <span className='comment-date small_text'>
               <FontAwesome name='clock' className='fav_icons' />
-              {item.createdAt}
-            </span>
-            <span className='small_text'>
-              <FontAwesome name='calendar' className='fav_icons' />
-              09: 00 am
+              { timeAgo.format(moment(item.createdAt).valueOf()) }
             </span>
             <Ellipse key={item.id} articleId={item.articleId} commentId={item.id} />
             { item.userId === user.userId
@@ -65,6 +72,7 @@ const CommentCard = (props) => {
     </section>
   ));
 
+
   /**
      * Returns the jsx of the component.
      *
@@ -74,11 +82,31 @@ const CommentCard = (props) => {
 
   return (
     <div>
+      {props.loading
+        ? (
+          <div className="col-md-12 text-center">
+            <div className='sweet-loading'>
+              <ClipLoader
+                sizeUnit="px"
+                size={150}
+                color="#123abc"
+                loading={props.loading}
+              />
+            </div>
+          </div>
+        )
+        : ''
+      }
+
       {
       renderCard()
     }
     </div>
   );
+};
+
+CommentCard.propTypes = {
+  user: PropTypes.object.isRequired,
 };
 
 /**
@@ -88,9 +116,11 @@ const CommentCard = (props) => {
  *
  * @return {ReduxContainerBuilder} this builder
 */
+
 const mapStateToProps = state => ({
   comments: state.comment.comments,
   user: state.auth,
+  error: state.comment.error,
 });
 
 export default connect(mapStateToProps, { getArticleComment })(CommentCard);

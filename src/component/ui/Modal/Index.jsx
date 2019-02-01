@@ -24,10 +24,14 @@ class TriggerModal extends Component {
   };
 
   render() {
+    const children = React.Children.map(this.props.children, child => React.cloneElement(child, {
+      toggle: this.toggle,
+    }));
+
     return (
       <Fragment>
         <Button
-          className={this.props.btnClass}
+          Class={`${this.props.Class}`}
           type={this.props.type}
           label={this.props.label}
           onClick={this.toggle}
@@ -44,7 +48,7 @@ class TriggerModal extends Component {
             : <ModalHeader toggle={this.toggle} />
 
         }
-          <ModalBody>{this.props.children}</ModalBody>
+          <ModalBody>{children}</ModalBody>
         </Modal>
       </Fragment>
     );

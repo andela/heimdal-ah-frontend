@@ -1,17 +1,24 @@
 import { ACTIONS } from '../../actions/actionTypes';
 
-
 const initialState = {
   comments: [],
   loading: false,
+  status: false,
+  error: '',
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case ACTIONS.DATA_LOADING:
+    case ACTIONS.DATA_LOADING_COMMENT:
       return ({
         ...state,
         loading: true,
+      });
+
+    case ACTIONS.SUCCESS_COMMENT:
+      return ({
+        ...state,
+        status: true,
       });
 
     case ACTIONS.GET_ARTICLE_COMMENT: {
@@ -31,6 +38,7 @@ export default (state = initialState, action) => {
       return ({
         ...state,
         comments: comments.reverse(),
+        loading: false,
       });
     }
 
@@ -41,13 +49,15 @@ export default (state = initialState, action) => {
       return ({
         ...state,
         comments,
+        loading: false,
       });
     }
 
     case ACTIONS.GET_ERRORS:
       return ({
         ...state,
-        payload: action.payload,
+        error: action.payload,
+        loading: false,
       });
 
     default:
