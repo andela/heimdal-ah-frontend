@@ -1,0 +1,17 @@
+@import '../../../styles//variables.scss';
+
+.tags {
+    background: transparent;
+    border: 1px solid rgb(206, 204, 204);
+    border-radius: 0.4em;
+    cursor: pointer;
+    font-family: $font-family__cardo;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 1.8em;
+    width: 10%;
+}
+
+.tags:hover {
+    opacity: 0.5;
+}
