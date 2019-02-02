@@ -35,6 +35,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
+<<<<<<< HEAD
       "children": <React.Fragment>
         <ReadSingleArticlePresentation
           active={false}
@@ -100,6 +101,10 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <React.Fragment>
+=======
+      "children": Array [
+        <React.Fragment>
+>>>>>>> adb2025cbc8d3deee356f17e6a7da006435dfc14
           <ReadSingleArticlePresentation
             active={false}
             articleId=""
@@ -112,9 +117,14 @@ ShallowWrapper {
             username="@username"
           />
         </React.Fragment>,
-      },
-      "ref": null,
-      "rendered": Object {
+        <Connect(Comment)
+          articleId={2}
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
@@ -155,6 +165,94 @@ ShallowWrapper {
         },
         "type": Symbol(react.fragment),
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "articleId": 2,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <React.Fragment>
+            <ReadSingleArticlePresentation
+              articleId=""
+              author={false}
+              body=""
+              likesCount={0}
+              slug="hello"
+              title=""
+              username="@username"
+            />
+          </React.Fragment>,
+          <Connect(Comment)
+            articleId={2}
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <ReadSingleArticlePresentation
+              articleId=""
+              author={false}
+              body=""
+              likesCount={0}
+              slug="hello"
+              title=""
+              username="@username"
+            />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "articleId": "",
+              "author": false,
+              "body": "",
+              "likesCount": 0,
+              "slug": "hello",
+              "time": undefined,
+              "title": "",
+              "userImage": undefined,
+              "username": "@username",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": Symbol(react.fragment),
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "articleId": 2,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": Symbol(react.fragment),
     },
   ],
@@ -249,6 +347,16 @@ ShallowWrapper {
               <div
                 className="line"
               />
+              <div
+                className="col-md-12"
+              >
+                <TriggerModal
+                  Class="btn-danger p-2 ph-25"
+                  label="Report Article"
+                >
+                  <Connect(ReportArticle) />
+                </TriggerModal>
+              </div>
             </div>
             <div
               className="user-section"
@@ -267,7 +375,7 @@ ShallowWrapper {
                   href="/@username"
                 >
                   <h2>
-                    @username
+                    @username...
                   </h2>
                 </a>
                 <br />
@@ -469,6 +577,16 @@ ShallowWrapper {
                 <div
                   className="line"
                 />
+                <div
+                  className="col-md-12"
+                >
+                  <TriggerModal
+                    Class="btn-danger p-2 ph-25"
+                    label="Report Article"
+                  >
+                    <Connect(ReportArticle) />
+                  </TriggerModal>
+                </div>
               </div>
               <div
                 className="user-section"
@@ -487,7 +605,7 @@ ShallowWrapper {
                     href="/@username"
                   >
                     <h2>
-                      @username
+                      @username...
                     </h2>
                   </a>
                   <br />
@@ -737,6 +855,16 @@ ShallowWrapper {
                   <div
                     className="line"
                   />
+                  <div
+                    className="col-md-12"
+                  >
+                    <TriggerModal
+                      Class="btn-danger p-2 ph-25"
+                      label="Report Article"
+                    >
+                      <Connect(ReportArticle) />
+                    </TriggerModal>
+                  </div>
                 </div>,
                 <div
                   className="user-section"
@@ -755,7 +883,7 @@ ShallowWrapper {
                       href="/@username"
                     >
                       <h2>
-                        @username
+                        @username...
                       </h2>
                     </a>
                     <br />
@@ -922,6 +1050,16 @@ ShallowWrapper {
                     <div
                       className="line"
                     />,
+                    <div
+                      className="col-md-12"
+                    >
+                      <TriggerModal
+                        Class="btn-danger p-2 ph-25"
+                        label="Report Article"
+                      >
+                        <Connect(ReportArticle) />
+                      </TriggerModal>
+                    </div>,
                   ],
                   "className": "article-section",
                 },
@@ -1033,6 +1171,45 @@ ShallowWrapper {
                     "rendered": null,
                     "type": "div",
                   },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <TriggerModal
+                        Class="btn-danger p-2 ph-25"
+                        label="Report Article"
+                      >
+                        <Connect(ReportArticle) />
+                      </TriggerModal>,
+                      "className": "col-md-12",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "Class": "btn-danger p-2 ph-25",
+                        "children": <Connect(ReportArticle) />,
+                        "label": "Report Article",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "articleId": undefined,
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    "type": "div",
+                  },
                 ],
                 "type": "div",
               },
@@ -1056,7 +1233,7 @@ ShallowWrapper {
                         href="/@username"
                       >
                         <h2>
-                          @username
+                          @username...
                         </h2>
                       </a>
                       <br />
@@ -1209,7 +1386,7 @@ ShallowWrapper {
                           href="/@username"
                         >
                           <h2>
-                            @username
+                            @username...
                           </h2>
                         </a>,
                         <br />,
@@ -1287,7 +1464,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": <h2>
-                            @username
+                            @username...
                           </h2>,
                           "className": "user-link",
                           "href": "/@username",
@@ -1298,10 +1475,10 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": "@username",
+                            "children": "@username...",
                           },
                           "ref": null,
-                          "rendered": "@username",
+                          "rendered": "@username...",
                           "type": "h2",
                         },
                         "type": "a",
@@ -2026,6 +2203,16 @@ ShallowWrapper {
                 <div
                   className="line"
                 />
+                <div
+                  className="col-md-12"
+                >
+                  <TriggerModal
+                    Class="btn-danger p-2 ph-25"
+                    label="Report Article"
+                  >
+                    <Connect(ReportArticle) />
+                  </TriggerModal>
+                </div>
               </div>
               <div
                 className="user-section"
@@ -2044,7 +2231,7 @@ ShallowWrapper {
                     href="/@username"
                   >
                     <h2>
-                      @username
+                      @username...
                     </h2>
                   </a>
                   <br />
@@ -2246,6 +2433,16 @@ ShallowWrapper {
                   <div
                     className="line"
                   />
+                  <div
+                    className="col-md-12"
+                  >
+                    <TriggerModal
+                      Class="btn-danger p-2 ph-25"
+                      label="Report Article"
+                    >
+                      <Connect(ReportArticle) />
+                    </TriggerModal>
+                  </div>
                 </div>
                 <div
                   className="user-section"
@@ -2264,7 +2461,7 @@ ShallowWrapper {
                       href="/@username"
                     >
                       <h2>
-                        @username
+                        @username...
                       </h2>
                     </a>
                     <br />
@@ -2514,6 +2711,16 @@ ShallowWrapper {
                     <div
                       className="line"
                     />
+                    <div
+                      className="col-md-12"
+                    >
+                      <TriggerModal
+                        Class="btn-danger p-2 ph-25"
+                        label="Report Article"
+                      >
+                        <Connect(ReportArticle) />
+                      </TriggerModal>
+                    </div>
                   </div>,
                   <div
                     className="user-section"
@@ -2532,7 +2739,7 @@ ShallowWrapper {
                         href="/@username"
                       >
                         <h2>
-                          @username
+                          @username...
                         </h2>
                       </a>
                       <br />
@@ -2699,6 +2906,16 @@ ShallowWrapper {
                       <div
                         className="line"
                       />,
+                      <div
+                        className="col-md-12"
+                      >
+                        <TriggerModal
+                          Class="btn-danger p-2 ph-25"
+                          label="Report Article"
+                        >
+                          <Connect(ReportArticle) />
+                        </TriggerModal>
+                      </div>,
                     ],
                     "className": "article-section",
                   },
@@ -2810,6 +3027,45 @@ ShallowWrapper {
                       "rendered": null,
                       "type": "div",
                     },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <TriggerModal
+                          Class="btn-danger p-2 ph-25"
+                          label="Report Article"
+                        >
+                          <Connect(ReportArticle) />
+                        </TriggerModal>,
+                        "className": "col-md-12",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "Class": "btn-danger p-2 ph-25",
+                          "children": <Connect(ReportArticle) />,
+                          "label": "Report Article",
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "articleId": undefined,
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      "type": "div",
+                    },
                   ],
                   "type": "div",
                 },
@@ -2833,7 +3089,7 @@ ShallowWrapper {
                           href="/@username"
                         >
                           <h2>
-                            @username
+                            @username...
                           </h2>
                         </a>
                         <br />
@@ -2986,7 +3242,7 @@ ShallowWrapper {
                             href="/@username"
                           >
                             <h2>
-                              @username
+                              @username...
                             </h2>
                           </a>,
                           <br />,
@@ -3064,7 +3320,7 @@ ShallowWrapper {
                           "nodeType": "host",
                           "props": Object {
                             "children": <h2>
-                              @username
+                              @username...
                             </h2>,
                             "className": "user-link",
                             "href": "/@username",
@@ -3075,10 +3331,10 @@ ShallowWrapper {
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "@username",
+                              "children": "@username...",
                             },
                             "ref": null,
-                            "rendered": "@username",
+                            "rendered": "@username...",
                             "type": "h2",
                           },
                           "type": "a",

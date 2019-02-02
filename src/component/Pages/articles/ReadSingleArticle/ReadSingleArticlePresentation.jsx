@@ -12,6 +12,8 @@ import english from 'javascript-time-ago/locale/en';
 import Glow from '../../../ui/Buttons/glow/Glow';
 import './ReadSingleArticle.scss';
 import ArticlesRating from '../../../ui/Rating/ArticlesRating';
+import ReportArticle from '../../../ui/Forms/ReportArticle/Index';
+import ModalButton from '../../../ui/Modal/Index';
 
 TimeAgo.addLocale(english);
 const timeAgo = new TimeAgo('en-US');
@@ -22,39 +24,41 @@ const timeAgo = new TimeAgo('en-US');
 class ReadSingleArticlePresentation extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-    };
+    this.state = {};
 
     this.editButton = React.createRef();
     this.followButton = React.createRef();
   }
 
   /**
- * @description - render single article page
- */
+   * @description - render single article page
+   */
   render() {
     setTimeout(() => {
-      return this.props.author ? this.editButton.current.style.display = 'inline' : !this.props.author ? this.followButton.current.style.display = 'inline' : null;
+      return this.props.author
+        ? (this.editButton.current.style.display = 'inline')
+        : !this.props.author
+          ? (this.followButton.current.style.display = 'inline')
+          : null;
     }, 2000);
+    const username = `${this.props.username.substring(0, 9)}...`;
     return (
       <Fragment>
         <Redirect to={`/${this.props.username}/articles/${this.props.slug}`} />
         <div className="single-article-wrapper">
-          <div className='article-header'>
-            <h1>
-              { this.props.title }
-            </h1>
+          <div className="article-header">
+            <h1>{this.props.title}</h1>
           </div>
-          <div className='bookmark-row'>
+          <div className="bookmark-row">
             <div />
             <div>
-              <img className='bookmark-logo' src='/src/images/bookmark.svg' alt='bookmark-logo' />
+              <img className="bookmark-logo" src="/src/images/bookmark.svg" alt="bookmark-logo" />
             </div>
           </div>
-          <div className='body-section'>
-            <div className='article-section'>
-              { this.props.body }
-              <div className='bottom-details'>
+          <div className="body-section">
+            <div className="article-section">
+              {this.props.body}
+              <div className="bottom-details">
                 <div>
                   {this.props.articleId && <ArticlesRating articleId={this.props.articleId} />}
                 </div>
@@ -64,19 +68,40 @@ class ReadSingleArticlePresentation extends Component {
                   <span className='likesCount'>{ this.props.likesCount }</span>
                 </div>
               </div>
-              <div className='line' />
+              <div className="line" />
+              <div className="col-md-12">
+                <ModalButton label="Report Article" Class="btn-danger p-2 ph-25">
+                  <ReportArticle articleId={this.props.articleId} />
+                </ModalButton>
+              </div>
             </div>
-            <div className='user-section'>
-              <div className='user-profile'>
+            <div className="user-section">
+              <div className="user-profile">
                 <img className="user-image" src={this.props.userImage} alt="user" />
                 <br />
                 <br />
-                <a href={`/${this.props.username}`} className="user-link"><h2>{this.props.username}</h2></a>
+                <a href={`/${this.props.username}`} className="user-link">
+                  <h2>{username}</h2>
+                </a>
                 <br />
-                <h4>{ timeAgo.format(moment(this.props.time).valueOf()) }</h4>
+                <h4>{timeAgo.format(moment(this.props.time).valueOf())}</h4>
                 <br />
-                <a href={`http://heimdal-frontend.herokuapp.com/articles/update?id=${this.props.articleId}`}><button className="btn edit-btn btn-secondary" ref={this.editButton} type="submit">edit</button></a>
-                <button className="btn follow-btn" ref={this.followButton} type="submit">follow</button>
+                <a
+                  href={`http://heimdal-frontend.herokuapp.com/articles/update?id=${
+                    this.props.articleId
+                  }`}
+                >
+                  <button
+                    className="btn edit-btn btn-secondary"
+                    ref={this.editButton}
+                    type="submit"
+                  >
+                    edit
+                  </button>
+                </a>
+                <button className="btn follow-btn" ref={this.followButton} type="submit">
+                  follow
+                </button>
                 <br />
                 <br />
                 <div className="social-media">
@@ -87,7 +112,7 @@ class ReadSingleArticlePresentation extends Component {
               <div>
                 <hr />
                 <h5>tags</h5>
-                <div className='tag-buttons'>
+                <div className="tag-buttons">
                   <div className="radio">
                     <input type="radio" name="optradio" checked />
                   </div>

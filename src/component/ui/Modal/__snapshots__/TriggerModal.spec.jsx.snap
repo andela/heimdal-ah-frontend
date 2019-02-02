@@ -3,10 +3,10 @@
 exports[`Render <ModalButton /> should match the snapshot 1`] = `
 <Fragment>
   <Button
-    Class=""
+    Class="undefined"
     label="Default"
     onClick={[Function]}
-    type="default"
+    type=""
   />
   <Modal
     autoFocus={true}
@@ -17,7 +17,7 @@ exports[`Render <ModalButton /> should match the snapshot 1`] = `
         "timeout": 150,
       }
     }
-    centered={false}
+    centered={true}
     fade={true}
     isOpen={false}
     keyboard={true}

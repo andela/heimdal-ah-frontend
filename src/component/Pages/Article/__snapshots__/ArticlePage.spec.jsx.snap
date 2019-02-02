@@ -5,7 +5,7 @@ exports[`Mount Article page should render the article page 1`] = `
   className="mb-5"
 >
   <h2
-    className="mx-auto text-center mb-5"
+    className="mx-auto text-center"
   >
      All Stories
   </h2>

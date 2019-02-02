@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import { toastr as feedback } from 'react-redux-toastr';
 import setToken from '../../../../config/setToken';
 import './UpdateArticles.scss';
-import updateArticles from '../../../../actions/articleActions/updateArticlesActions';
-import getArticleById from '../../../../actions/articleActions/getArticlesByIdActions';
+import updateArticles from '../../../../actions/ArticleActions/updateArticlesActions';
+import { getArticleById } from '../../../../actions/ArticleActions/getArticlesByIdActions';
 
 require('medium-editor/dist/css/medium-editor.css');
 require('medium-editor/dist/css/themes/default.css');

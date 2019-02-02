@@ -19,6 +19,21 @@ export const validateSignup = (data) => {
   };
 };
 
+export const validateReport = (data) => {
+  const rules = {
+    context: 'required|min:10|max:500',
+    reportType: 'required|alpha',
+  };
+
+  const validation = new Validator(data, rules);
+
+  if (validation.passes()) {
+    return null;
+  }
+
+  return { ...validation.errors.all() };
+};
+
 export const validateLogin = (input) => {
   const { email, password } = input;
 
@@ -33,21 +48,6 @@ export const validateLogin = (input) => {
   };
 
   const validation = new Validator(data, rules);
-
-  // const isValid = false;
-
-  // if (validation.passes()) {
-  //   return {
-  //     isValid: true,
-  //   };
-  // }
-
-  // const errors = validation.errors.all();
-
-  // return {
-  //   isValid,
-  //   errors,
-  // };
 
   if (validation.passes()) {
     return null;

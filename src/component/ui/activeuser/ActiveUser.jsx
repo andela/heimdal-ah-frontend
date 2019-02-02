@@ -60,7 +60,7 @@ const ActiveUser = ({ username, image }) => (
             <a href={username}>Profile</a>
           </div>
           <div>
-            <Redirect type='button'  to="/#">Logout</Redirect>
+            <a href="/">Logout</a>
           </div>
         </div>
       </div>

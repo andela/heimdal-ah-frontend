@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable max-len */
 import React, { Component, Fragment } from 'react';
 import { bindActionCreators } from 'redux';
@@ -33,7 +34,6 @@ export class ReadSingleArticle extends Component {
     this.editButton = React.createRef();
     this.followButton = React.createRef();
   }
-
 
   /**
  * @description - component mounts method runs as soon as the page loads

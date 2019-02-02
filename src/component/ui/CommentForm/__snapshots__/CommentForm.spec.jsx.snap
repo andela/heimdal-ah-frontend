@@ -1,0 +1,832 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render the component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CommentForm
+    auth=""
+    comment=""
+    error=""
+    postArticleComment={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="comment__head"
+        >
+          <p
+            className="comment__head__a"
+          >
+            ADD COMMENT
+          </p>
+          <p
+            className="comment__head__b"
+          >
+            Comment
+          </p>
+        </div>,
+        <div>
+           
+          <div />
+        </div>,
+        <form
+          className=""
+          onSubmit={[Function]}
+        >
+          <FormGroup
+            bsClass="form-group"
+            controlId="formControlsTextarea"
+          >
+            <FormControl
+              bsClass="form-control"
+              className="comment-form"
+              cols="70"
+              componentClass="textarea"
+              name="content"
+              onBlur={[Function]}
+              onChange={[Function]}
+              placeholder="textarea"
+              rows="7"
+              value=""
+            />
+          </FormGroup>
+          <div
+            className="flex-container__a"
+          >
+            <div
+              className="form-check flex-container__b"
+            >
+              <div
+                className="private__comment"
+              >
+                Make it Private
+              </div>
+              <div
+                className="comment_check"
+              >
+                <input
+                  className="form-check"
+                  name="checkbox"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={true}
+                />
+              </div>
+            </div>
+            <Button
+              Class=""
+              className="comment-button"
+              label="Add Comment"
+              onClick={[Function]}
+              type="comment"
+            />
+          </div>
+        </form>,
+      ],
+      "className": "container form__comment",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p
+              className="comment__head__a"
+            >
+              ADD COMMENT
+            </p>,
+            <p
+              className="comment__head__b"
+            >
+              Comment
+            </p>,
+          ],
+          "className": "comment__head",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ADD COMMENT",
+              "className": "comment__head__a",
+            },
+            "ref": null,
+            "rendered": "ADD COMMENT",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Comment",
+              "className": "comment__head__b",
+            },
+            "ref": null,
+            "rendered": "Comment",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            false,
+            <div />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          false,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <FormGroup
+              bsClass="form-group"
+              controlId="formControlsTextarea"
+            >
+              <FormControl
+                bsClass="form-control"
+                className="comment-form"
+                cols="70"
+                componentClass="textarea"
+                name="content"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="textarea"
+                rows="7"
+                value=""
+              />
+            </FormGroup>,
+            <div
+              className="flex-container__a"
+            >
+              <div
+                className="form-check flex-container__b"
+              >
+                <div
+                  className="private__comment"
+                >
+                  Make it Private
+                </div>
+                <div
+                  className="comment_check"
+                >
+                  <input
+                    className="form-check"
+                    name="checkbox"
+                    onChange={[Function]}
+                    type="checkbox"
+                    value={true}
+                  />
+                </div>
+              </div>
+              <Button
+                Class=""
+                className="comment-button"
+                label="Add Comment"
+                onClick={[Function]}
+                type="comment"
+              />
+            </div>,
+          ],
+          "className": "",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "bsClass": "form-group",
+              "children": <FormControl
+                bsClass="form-control"
+                className="comment-form"
+                cols="70"
+                componentClass="textarea"
+                name="content"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="textarea"
+                rows="7"
+                value=""
+              />,
+              "controlId": "formControlsTextarea",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "form-control",
+                "className": "comment-form",
+                "cols": "70",
+                "componentClass": "textarea",
+                "name": "content",
+                "onBlur": [Function],
+                "onChange": [Function],
+                "placeholder": "textarea",
+                "rows": "7",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="form-check flex-container__b"
+                >
+                  <div
+                    className="private__comment"
+                  >
+                    Make it Private
+                  </div>
+                  <div
+                    className="comment_check"
+                  >
+                    <input
+                      className="form-check"
+                      name="checkbox"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value={true}
+                    />
+                  </div>
+                </div>,
+                <Button
+                  Class=""
+                  className="comment-button"
+                  label="Add Comment"
+                  onClick={[Function]}
+                  type="comment"
+                />,
+              ],
+              "className": "flex-container__a",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="private__comment"
+                    >
+                      Make it Private
+                    </div>,
+                    <div
+                      className="comment_check"
+                    >
+                      <input
+                        className="form-check"
+                        name="checkbox"
+                        onChange={[Function]}
+                        type="checkbox"
+                        value={true}
+                      />
+                    </div>,
+                  ],
+                  "className": "form-check flex-container__b",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Make it Private",
+                      "className": "private__comment",
+                    },
+                    "ref": null,
+                    "rendered": "Make it Private",
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <input
+                        className="form-check"
+                        name="checkbox"
+                        onChange={[Function]}
+                        type="checkbox"
+                        value={true}
+                      />,
+                      "className": "comment_check",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "form-check",
+                        "name": "checkbox",
+                        "onChange": [Function],
+                        "type": "checkbox",
+                        "value": true,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "Class": "",
+                  "className": "comment-button",
+                  "label": "Add Comment",
+                  "onClick": [Function],
+                  "type": "comment",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="comment__head"
+          >
+            <p
+              className="comment__head__a"
+            >
+              ADD COMMENT
+            </p>
+            <p
+              className="comment__head__b"
+            >
+              Comment
+            </p>
+          </div>,
+          <div>
+             
+            <div />
+          </div>,
+          <form
+            className=""
+            onSubmit={[Function]}
+          >
+            <FormGroup
+              bsClass="form-group"
+              controlId="formControlsTextarea"
+            >
+              <FormControl
+                bsClass="form-control"
+                className="comment-form"
+                cols="70"
+                componentClass="textarea"
+                name="content"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="textarea"
+                rows="7"
+                value=""
+              />
+            </FormGroup>
+            <div
+              className="flex-container__a"
+            >
+              <div
+                className="form-check flex-container__b"
+              >
+                <div
+                  className="private__comment"
+                >
+                  Make it Private
+                </div>
+                <div
+                  className="comment_check"
+                >
+                  <input
+                    className="form-check"
+                    name="checkbox"
+                    onChange={[Function]}
+                    type="checkbox"
+                    value={true}
+                  />
+                </div>
+              </div>
+              <Button
+                Class=""
+                className="comment-button"
+                label="Add Comment"
+                onClick={[Function]}
+                type="comment"
+              />
+            </div>
+          </form>,
+        ],
+        "className": "container form__comment",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="comment__head__a"
+              >
+                ADD COMMENT
+              </p>,
+              <p
+                className="comment__head__b"
+              >
+                Comment
+              </p>,
+            ],
+            "className": "comment__head",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ADD COMMENT",
+                "className": "comment__head__a",
+              },
+              "ref": null,
+              "rendered": "ADD COMMENT",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Comment",
+                "className": "comment__head__b",
+              },
+              "ref": null,
+              "rendered": "Comment",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              false,
+              <div />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <FormGroup
+                bsClass="form-group"
+                controlId="formControlsTextarea"
+              >
+                <FormControl
+                  bsClass="form-control"
+                  className="comment-form"
+                  cols="70"
+                  componentClass="textarea"
+                  name="content"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="textarea"
+                  rows="7"
+                  value=""
+                />
+              </FormGroup>,
+              <div
+                className="flex-container__a"
+              >
+                <div
+                  className="form-check flex-container__b"
+                >
+                  <div
+                    className="private__comment"
+                  >
+                    Make it Private
+                  </div>
+                  <div
+                    className="comment_check"
+                  >
+                    <input
+                      className="form-check"
+                      name="checkbox"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value={true}
+                    />
+                  </div>
+                </div>
+                <Button
+                  Class=""
+                  className="comment-button"
+                  label="Add Comment"
+                  onClick={[Function]}
+                  type="comment"
+                />
+              </div>,
+            ],
+            "className": "",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "form-group",
+                "children": <FormControl
+                  bsClass="form-control"
+                  className="comment-form"
+                  cols="70"
+                  componentClass="textarea"
+                  name="content"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="textarea"
+                  rows="7"
+                  value=""
+                />,
+                "controlId": "formControlsTextarea",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "form-control",
+                  "className": "comment-form",
+                  "cols": "70",
+                  "componentClass": "textarea",
+                  "name": "content",
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "placeholder": "textarea",
+                  "rows": "7",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="form-check flex-container__b"
+                  >
+                    <div
+                      className="private__comment"
+                    >
+                      Make it Private
+                    </div>
+                    <div
+                      className="comment_check"
+                    >
+                      <input
+                        className="form-check"
+                        name="checkbox"
+                        onChange={[Function]}
+                        type="checkbox"
+                        value={true}
+                      />
+                    </div>
+                  </div>,
+                  <Button
+                    Class=""
+                    className="comment-button"
+                    label="Add Comment"
+                    onClick={[Function]}
+                    type="comment"
+                  />,
+                ],
+                "className": "flex-container__a",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <div
+                        className="private__comment"
+                      >
+                        Make it Private
+                      </div>,
+                      <div
+                        className="comment_check"
+                      >
+                        <input
+                          className="form-check"
+                          name="checkbox"
+                          onChange={[Function]}
+                          type="checkbox"
+                          value={true}
+                        />
+                      </div>,
+                    ],
+                    "className": "form-check flex-container__b",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Make it Private",
+                        "className": "private__comment",
+                      },
+                      "ref": null,
+                      "rendered": "Make it Private",
+                      "type": "div",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <input
+                          className="form-check"
+                          name="checkbox"
+                          onChange={[Function]}
+                          type="checkbox"
+                          value={true}
+                        />,
+                        "className": "comment_check",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "form-check",
+                          "name": "checkbox",
+                          "onChange": [Function],
+                          "type": "checkbox",
+                          "value": true,
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "Class": "",
+                    "className": "comment-button",
+                    "label": "Add Comment",
+                    "onClick": [Function],
+                    "type": "comment",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
