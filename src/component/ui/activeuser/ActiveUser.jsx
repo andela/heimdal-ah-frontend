@@ -2,10 +2,10 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
-import './activeUser.scss';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-dom';
+import './activeUser.scss';
+
 
 import logout from '../../../actions/auth/logout';
 
