@@ -1,0 +1,62 @@
+@import '../../../styles/variables.scss';
+
+.comment-section {
+  font-family: $font_family_reem-kufi;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .comment-image {
+    margin-right: -10px;
+  }
+
+  .comment-card {
+    border-top: 1px solid $heimdal-comment-border;
+    margin: auto;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .comment-body {
+    margin-top: 10px;
+    text-align: justify;
+  }
+
+  .comment-card-img {
+    border-radius: 70px;
+    height: 100px;
+    margin-right: -12px;
+    padding: 20px;
+    width: 100px;
+  }
+
+  .comment-body-top {
+    margin-top: 10px;
+    padding-bottom: 22px;
+  }
+
+  .comment-name {
+    margin-right: 30px;
+  }
+
+  .comment-date {
+    margin-right: 30px;
+  }
+
+  .fav_icons {
+    margin-right: 10px!important;
+  }
+
+  .comment-body-footer {
+    margin-top: 15px;
+  }
+
+  .small_text {
+    color: $heimdal-textfield-background;
+    font-size: 12px;
+  }
+
+  .archive_button {
+    float: right;    
+  }
+}
+

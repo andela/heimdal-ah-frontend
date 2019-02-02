@@ -4,7 +4,9 @@
 .footer-wrapper {
   background: $heimdal-footer-background;
   color: $heimdal-text-color;
+  clear: both;
   font-family: "Cardo";
+  
   a {
     color: $heimdal-text-color;
   }

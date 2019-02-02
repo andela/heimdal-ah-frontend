@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 /* eslint-disable no-undef */
 import React from 'react';
 import sinon from 'sinon';

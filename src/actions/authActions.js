@@ -4,10 +4,12 @@ import { ACTIONS } from './actionTypes';
 import { signupEndpoint } from '../apiEndpoints';
 import errorResponse from '../utils/errorResponse';
 import configureLocalStorage from '../utils/configureLocalStorage';
-import axiosInstance, { setToken } from '../utils/axiosInstance';
+import axiosInstance, { setToken } from '../config/http';
+import { toggleLoader } from './loaderActions';
 
 export const setAuthUser = (token) => {
   const decodedToken = JWT.decode(token);
+  // const { userId, username, roleId } = decodedToken;
 
   configureLocalStorage.setAuthUser(token);
   // remember to set axios auth token here
@@ -19,13 +21,22 @@ export const setAuthUser = (token) => {
   };
 };
 
-export const signupUser = (signupData = {}, history) => (dispatch) => {
+export const signupUser = (signupData = {}, history, toggleModal) => (dispatch) => {
   axiosInstance
     .post(signupEndpoint, signupData)
     .then((response) => {
       const { token } = response.data;
       dispatch(setAuthUser(token));
-      return history.push('/');
+      dispatch(toggleLoader());
+
+      setTimeout(() => {
+        dispatch(() => {
+          toggleModal();
+          return {
+            type: ACTIONS.TOGGLE_MODAL,
+          };
+        });
+      }, 200);
     })
     .catch((errors = {}) => {
       const { response = {}, request } = errors;
@@ -36,6 +47,7 @@ export const signupUser = (signupData = {}, history) => (dispatch) => {
         response,
         errors,
       };
+      dispatch(toggleLoader());
       return errorResponse(data);
     });
 };
