@@ -59,11 +59,6 @@ class ReadSingleArticlePresentation extends Component {
           </div>
           <div className="body-section">
             <div className="article-section">
-              {/* <Editor
-              tag="pre"
-              text={this.props.body}
-              contenteditable="false"
-            /> */}
               <div>{this.props.body}</div>
               <div className="bottom-details">
                 <div>
