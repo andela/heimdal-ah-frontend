@@ -25,7 +25,6 @@ export const ACTIONS = keyMirror({
   ARCHIVE_COMMENT_REPLY: null,
   SUCCESS_COMMENT: null,
   SET_AUTH_USER: null,
-  SUCCESS_COMMENT: null,
 
   FOLLOW_USER: null,
   UNFOLLOW_USER: null,
@@ -74,6 +73,8 @@ export const ACTIONS = keyMirror({
   TOGGLE_MODAL: null,
   GET_ALL_ARTICLES: null,
   GETTING_PROFILE_ERROR: null,
+  LIKE_ARTICLE: null,
+  LIKE_ARTICLE_FAIL: null,
 
   SET_FEATURED_ARTICLES: null,
   SET_MAIN_ARTICLES: null,

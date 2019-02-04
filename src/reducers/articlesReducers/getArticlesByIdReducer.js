@@ -1,3 +1,4 @@
+/* eslint-disable no-case-declarations */
 import {
   ACTIONS,
 } from '../../actions/actionTypes';
@@ -29,6 +30,15 @@ export default (state = initialState, action) => {
         payload: action.payload,
         status: 'ERROR',
       });
+
+    case ACTIONS.LIKE_ARTICLE:
+      const likes = (state.payload.likes.some(item => item.userId === action.userId))
+        ? state.payload.likes.filter(item => item.userId !== action.userId)
+        : [...state.payload.likes, { userId: action.userId }];
+      return {
+        status: state.status,
+        payload: { ...state.payload, likes },
+      };
 
     default:
       return (state);
