@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-
 describe('Edit user Profile', () => {
   beforeEach(() => cy.visit('/'));
   it('.should() - visit heimdal home page, login and navigate to profile and click the edit button', () => {

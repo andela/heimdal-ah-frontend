@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-
 describe('User Authentication - Sign in', () => {
   beforeEach(() => cy.visit('/'));
   it('.should() - visit heimdal home page and signs in a user', () => {
