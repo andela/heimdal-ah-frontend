@@ -36,9 +36,6 @@ class ReadSingleArticlePresentation extends Component {
    */
   render() {
     const { author = {}, auth } = this.props;
-    console.log('=====');
-    console.log(auth);
-
     const username = `${this.props.username.substring(0, 9)}...`;
 
     return (
