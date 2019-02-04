@@ -2,7 +2,6 @@ import instance from '../../config/http';
 import { ACTIONS } from '../actionTypes';
 import ActionResponse from '../actionResponse';
 
-
 const getArticleById = identifier => dispatch => instance.get(`/articles/${identifier}`)
   .then((response) => {
     if (response.status === 200) {
