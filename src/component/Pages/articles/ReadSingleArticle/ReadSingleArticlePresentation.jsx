@@ -42,7 +42,6 @@ class ReadSingleArticlePresentation extends Component {
           ? (this.followButton.current.style.display = 'inline')
           : null;
     }, 2000);
-    
     const username = `${this.props.username.substring(0, 9)}...`;
     return (
       <Fragment>
