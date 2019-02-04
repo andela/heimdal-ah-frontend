@@ -67,7 +67,7 @@
       }
       .user-link {
         text-decoration: none;
-        color: #6a7384;; 
+        color: #6a7384;
       }
       .edit-btn {
         align-self: center;
@@ -89,12 +89,14 @@
       .social-media {
         display: grid;
         grid-template-columns: 50% 50%;
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
         .facebook {
           color: #3b5998;
+          outline: none;
         }
         .twitter {
           color: #1da1f2;
+          outline: none;
         }
       }
     }
