@@ -5,7 +5,6 @@ import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import { FacebookShareButton } from 'react-share';
 import './ReadSingleArticle.scss';
 // import setToken from '../../../../config/setToken';
 import getArticleById from '../../../../actions/ArticleActions/getArticlesByIdActions';
@@ -70,6 +69,7 @@ export class ReadSingleArticle extends Component {
     const { status } = this.props;
 
     setArticleId(this.props.singleArticle.id);
+
     return (
       <Fragment>
         {status === 'ERROR' ? (

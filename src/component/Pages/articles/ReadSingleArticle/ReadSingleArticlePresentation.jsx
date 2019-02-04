@@ -42,6 +42,7 @@ class ReadSingleArticlePresentation extends Component {
           ? (this.followButton.current.style.display = 'inline')
           : null;
     }, 2000);
+    
     const username = `${this.props.username.substring(0, 9)}...`;
     return (
       <Fragment>
@@ -106,11 +107,16 @@ class ReadSingleArticlePresentation extends Component {
                 <br />
                 <br />
                 <div className="social-media">
-                  <FacebookShareButton url={window.location} quote={this.props.title}>
+                  <FacebookShareButton
+                    className="no-outline"
+                    url={window.location}
+                    quote={this.props.title}
+                  >
                     <i className="fab fa-4x fa-facebook-square facebook" />
                     <div>Share</div>
                   </FacebookShareButton>
                   <TwitterShareButton
+                    className="no-outline"
                     url={window.location}
                     title={`Kindly check out this awesome article ${
                       this.props.title
@@ -122,6 +128,7 @@ class ReadSingleArticlePresentation extends Component {
                 </div>
                 <div className="text-center col-12">
                   <EmailShareButton
+                    className="no-outline"
                     subject={this.props.title}
                     body={`Kindly check out this awesome article ${window.location} on Heimdal.com`}
                   >
