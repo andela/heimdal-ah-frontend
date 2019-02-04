@@ -25,7 +25,12 @@
     grid-gap: 1em;
     height: 150px;
     .bookmark-logo {
-      width: 25px;
+      color: #6a7390;
+      display:'none'
+    }
+    .bookmark-logo-active {
+      color: #e6ee04;
+      display:'none'
     }
   }
 

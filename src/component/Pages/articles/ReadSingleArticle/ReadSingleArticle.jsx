@@ -6,10 +6,12 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import './ReadSingleArticle.scss';
 // import setToken from '../../../../config/setToken';
-import getArticleById from '../../../../actions/articleActions/getArticlesByIdActions';
+import getArticleById from '../../../../actions/ArticleActions/getArticlesByIdActions';
 import decodeToken from '../../../../utils/decodeToken';
 import ReadSingleArticlePresentation from './ReadSingleArticlePresentation';
-import setArticleId from '../../../../utils/setArticleId';
+import getAllBookmarksAction from '../../../../actions/ArticleActions/bookmarksAction/getAllBookmarksAction';
+import createBookmarkAction from '../../../../actions/ArticleActions/bookmarksAction/createBookmarkAction';
+import deleteBookmarksActions from '../../../../actions/ArticleActions/bookmarksAction/deleteBookmarksActions';
 
 
 /**
@@ -44,6 +46,7 @@ export class ReadSingleArticle extends Component {
   componentDidMount() {
     const { slug } = this.props.match.params;
     this.props.actions.getArticleById(slug);
+    this.props.actions.getAllBookmarksAction();
   }
 
   /**
@@ -53,6 +56,16 @@ export class ReadSingleArticle extends Component {
  */
   componentWillReceiveProps(nextProps) {
     this.setState({ ...nextProps, singleArticle: nextProps.singleArticle });
+  }
+
+  createBookmark = () => {
+    alert('this article was bookmarked');
+    this.props.actions.createBookmarkAction(this.state.singleArticle.id);
+  }
+
+  deleteBookmark = () => {
+    alert('this article was bookmarked');
+    this.props.actions.deleteBookmarksActions(this.state.singleArticle.id);
   }
 
   /**
@@ -67,15 +80,19 @@ export class ReadSingleArticle extends Component {
     const { profile = {} } = user;
     const { slug } = this.props.match.params;
     const { status } = this.props;
+    const bookmarks = this.props.bookmark.payload.rows;
 
-    setArticleId(this.props.singleArticle.id);
 
+    const bookmark = bookmarks && bookmarks.some(item => item.article.id === this.state.singleArticle.id);
     return (
       <Fragment>
         { status === 'ERROR' ? <Redirect to={`/articles/${slug}`} />
           : (
             <Fragment>
               <ReadSingleArticlePresentation
+                createBookmark={this.createBookmark}
+                deleteBookmark={this.deleteBookmark}
+                bookmark={bookmark}
                 slug={slug}
                 author={author}
                 articleId={this.state.singleArticle.id}
@@ -106,12 +123,16 @@ ReadSingleArticlePresentation.propTypes = {
 const mapStateToprops = state => ({
   singleArticle: state.getArticlesById.payload,
   status: state.getArticlesById.status,
+  bookmark: state.getallbookmarks,
 });
 
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(
     {
       getArticleById,
+      getAllBookmarksAction,
+      createBookmarkAction,
+      deleteBookmarksActions,
     },
     dispatch,
   ),

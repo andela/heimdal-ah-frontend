@@ -17,6 +17,7 @@ import ProfileEdit from '../component/Pages/ProfileEdit/ProfileEdit';
 import Articles from '../component/Pages/Article/ArticleListPage';
 import ProtectedRoute from './ProtectedRoute';
 import ScrollToTop from './ScrollToTop.jsx';
+import BookmarkList from '../component/Pages/articles/bookmarksArticles/BookmarksList';
 
 
 const Routes = () => (
@@ -30,6 +31,7 @@ const Routes = () => (
         <Route exact path='/search' component={searchView} />
         <Route exact path='/articles/create' component={CreateArticle} />
         <Route exact path='/:username/articles/:slug' component={SingleArticlePage} />
+        <Route exact path='/bookmarks/articles' component={BookmarkList} />
         <Route exact path='/articles/:slug' component={ReadSingleArticleError} />
         <Route exact path='/articles/update' component={UpdateArticlesPresentation} />
         <Route exact path='/resetpassword' component={PasswordResetPresentation} />
