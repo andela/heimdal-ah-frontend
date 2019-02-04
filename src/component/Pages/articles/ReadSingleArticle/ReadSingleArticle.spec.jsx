@@ -4,7 +4,6 @@ import { ReadSingleArticle } from './ReadSingleArticle';
 import ReadSingleArticlePresentation from './ReadSingleArticlePresentation';
 import ReadSingleArticleError from './ReadSingleArticleError';
 
-
 describe('Single Article Component Test Suite', () => {
   describe('<ReadSingleArticle />', () => {
     it('should render the ReadSingleArticle component', () => {
@@ -20,7 +19,9 @@ describe('Single Article Component Test Suite', () => {
         id: 2,
       };
       // eslint-disable-next-line max-len
-      const wrapper = shallow(<ReadSingleArticle match={match} actions={actions} singleArticle={singleArticle} />);
+      const wrapper = shallow(
+        <ReadSingleArticle match={match} actions={actions} singleArticle={singleArticle} />,
+      );
       expect(wrapper.length).toBe(1);
       expect(wrapper).toMatchSnapshot();
     });
@@ -29,7 +30,6 @@ describe('Single Article Component Test Suite', () => {
     it('should render the ReadSingleArticlePresentation component', () => {
       const wrapper = shallow(<ReadSingleArticlePresentation />);
       expect(wrapper.length).toBe(1);
-      expect(wrapper).toMatchSnapshot();
     });
   });
 
