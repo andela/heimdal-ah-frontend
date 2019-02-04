@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loaderReducer should return the default state if no action is specified 1`] = `
+Object {
+  "isLoading": false,
+}
+`;
+
+exports[`loaderReducer should update the state and toggle the loader when type is TOGGLE_LOADER 1`] = `
+Object {
+  "isLoading": true,
+}
+`;

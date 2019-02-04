@@ -33,7 +33,7 @@ const ActiveUser = ({ username, image }) => (
           <a to="/dashboard">Dashboard</a>
         </div>
         <div>
-          <a to="/create-article">Write An Article</a>
+          <a href="/articles/create">Write An Article</a>
         </div>
         <div>
           <a to="/reading-stats">Reading Stats</a>

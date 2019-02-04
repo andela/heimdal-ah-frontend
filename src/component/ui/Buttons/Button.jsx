@@ -16,15 +16,12 @@ const Button = (props) => {
     Class, onClick, label, type,
   } = props;
 
-  if (type) {
-    return (
-      <button type="submit" className={`button btn-${type}  ${Class}`} onClick={onClick}>
-        {label}
-      </button>
-    );
-  }
   return (
-    <button type="button" className={`button btn-${type}`} onClick={onClick}>
+    <button
+      type="button"
+      className={`${type ? `button btn-${type}` : `btn ${Class}`}`}
+      onClick={onClick}
+    >
       {label}
     </button>
   );
@@ -32,7 +29,7 @@ const Button = (props) => {
 
 Button.defaultProps = {
   Class: '',
-  type: 'default',
+  type: '',
   onClick: () => {},
   label: 'Default',
 };
@@ -64,6 +61,7 @@ Button.propTypes = {
     'twitter',
     'google',
     'default',
+    '',
   ]),
 };
 
