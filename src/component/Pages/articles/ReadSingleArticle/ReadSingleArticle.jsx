@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable max-len */
 import React, { Component, Fragment } from 'react';
 import { bindActionCreators } from 'redux';
@@ -6,10 +7,11 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import './ReadSingleArticle.scss';
 // import setToken from '../../../../config/setToken';
-import getArticleById from '../../../../actions/articleActions/getArticlesByIdActions';
+import getArticleById from '../../../../actions/ArticleActions/getArticlesByIdActions';
 import decodeToken from '../../../../utils/decodeToken';
 import ReadSingleArticlePresentation from './ReadSingleArticlePresentation';
 import setArticleId from '../../../../utils/setArticleId';
+import Comment from '../../../ui/Comment/Comment';
 
 
 /**
@@ -34,7 +36,6 @@ export class ReadSingleArticle extends Component {
     this.editButton = React.createRef();
     this.followButton = React.createRef();
   }
-
 
   /**
  * @description - component mounts method runs as soon as the page loads
@@ -69,7 +70,6 @@ export class ReadSingleArticle extends Component {
     const { status } = this.props;
 
     setArticleId(this.props.singleArticle.id);
-
     return (
       <Fragment>
         { status === 'ERROR' ? <Redirect to={`/articles/${slug}`} />
@@ -88,6 +88,9 @@ export class ReadSingleArticle extends Component {
               />
             </Fragment>
           )
+        }
+        {
+          this.props.singleArticle.id && <Comment articleId={this.props.singleArticle.id} />
         }
       </Fragment>
     );

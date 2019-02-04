@@ -1,0 +1,15 @@
+
+.history-list{
+  padding: 0;
+
+  .history-item, .no-c {
+    list-style: none;
+    padding: 18px;
+    border: solid 1px #ccc;
+    background-color: #eee;
+    border-radius: 6px;
+    margin: 5px;
+    font-size: 12px;
+  }
+}
+

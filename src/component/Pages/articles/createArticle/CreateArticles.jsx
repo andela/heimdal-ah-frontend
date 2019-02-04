@@ -7,7 +7,7 @@ import Alert from '../../../ui/Alert/Alert';
 import Button from '../../../ui/Buttons/Button';
 import checkArticleDetails from '../../../../utils/createArticle';
 import './CreateArticle.scss';
-import { createArticleAction } from '../../../../actions/articleActions/CreateArticle/createArticleActions';
+import { createArticleAction } from '../../../../actions/ArticleActions/CreateArticle/createArticleActions';
 
 /**
  * @description - Creates article for a user

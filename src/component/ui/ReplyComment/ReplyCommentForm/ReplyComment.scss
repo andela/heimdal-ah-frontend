@@ -1,0 +1,22 @@
+
+.reply_button {
+  cursor: pointer;
+}
+.reply_form {
+  margin-top: 20px;
+}
+
+.reply_input {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn__reply {
+  float: right;
+}
+
+.error_msg {
+  margin-top: 10px;
+  text-align: end;
+  margin-left: 50px;
+}
