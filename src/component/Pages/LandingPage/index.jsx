@@ -7,7 +7,7 @@ import { getArticles } from '../../../actions/homeArticles/articleActions';
 import StanadardCard from './StandardCards';
 import FeaturedCard from './FeaturedCard';
 import RecentCard from './RecentCard';
-import LoadingSpinner from '../../ui/loadingSpinners/LoadingSpinner';
+import { DotSpinner } from '../../ui/loadingSpinners/LoadingSpinner';
 
 /**
  * @description - This class enables new users to Signup on the platform
@@ -152,11 +152,7 @@ class LandingPage extends Component {
         </div>
       );
     }
-    return (
-      <div className="col-12 text-center">
-        <LoadingSpinner isLoading />
-      </div>
-    );
+    return <DotSpinner isLoading />;
   }
 }
 

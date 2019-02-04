@@ -5,9 +5,10 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable no-return-assign */
 import React, { Component, Fragment } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import TimeAgo from 'javascript-time-ago';
 import moment from 'moment';
+import { connect } from 'react-redux';
 import english from 'javascript-time-ago/locale/en';
 import Glow from '../../../ui/Buttons/glow/Glow';
 import './ReadSingleArticle.scss';
@@ -34,14 +35,12 @@ class ReadSingleArticlePresentation extends Component {
    * @description - render single article page
    */
   render() {
-    setTimeout(() => {
-      return this.props.author
-        ? (this.editButton.current.style.display = 'inline')
-        : !this.props.author
-          ? (this.followButton.current.style.display = 'inline')
-          : null;
-    }, 2000);
+    const { author = {}, auth } = this.props;
+    console.log('=====');
+    console.log(auth);
+
     const username = `${this.props.username.substring(0, 9)}...`;
+
     return (
       <Fragment>
         <Redirect to={`/${this.props.username}/articles/${this.props.slug}`} />
@@ -70,9 +69,12 @@ class ReadSingleArticlePresentation extends Component {
               </div>
               <div className="line" />
               <div className="col-md-12">
-                <ModalButton label="Report Article" Class="btn-danger p-2 ph-25">
-                  <ReportArticle articleId={this.props.articleId} />
-                </ModalButton>
+                {auth.isAuthenticated
+                  && (!author ? (
+                    <ModalButton label="Report Article" Class="btn-danger p-2 ph-25">
+                      <ReportArticle articleId={this.props.articleId} />
+                    </ModalButton>
+                  ) : null)}
               </div>
             </div>
             <div className="user-section">
@@ -86,22 +88,20 @@ class ReadSingleArticlePresentation extends Component {
                 <br />
                 <h4>{timeAgo.format(moment(this.props.time).valueOf())}</h4>
                 <br />
-                <a
-                  href={`http://heimdal-frontend.herokuapp.com/articles/update?id=${
-                    this.props.articleId
-                  }`}
-                >
-                  <button
-                    className="btn edit-btn btn-secondary"
-                    ref={this.editButton}
-                    type="submit"
-                  >
-                    edit
-                  </button>
-                </a>
-                <button className="btn follow-btn" ref={this.followButton} type="submit">
-                  follow
-                </button>
+
+                {auth.isAuthenticated
+                  && (author ? (
+                    <Link
+                      to={`/update-articles/update?id=${this.props.articleId}`}
+                      className="btn btn-secondary"
+                    >
+                      edit
+                    </Link>
+                  ) : (
+                    <button className="btn follow-btn" type="submit">
+                      follow
+                    </button>
+                  ))}
                 <br />
                 <br />
                 <div className="social-media">
@@ -156,4 +156,8 @@ class ReadSingleArticlePresentation extends Component {
   }
 }
 
-export default ReadSingleArticlePresentation;
+const mapStateToProps = state => ({
+  auth: state.auth,
+});
+
+export default connect(mapStateToProps)(ReadSingleArticlePresentation);
