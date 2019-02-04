@@ -40,7 +40,6 @@ class TaggedArticles extends Component {
 
   render() {
     const { taggedArticles, errors, match } = this.props;
-    console.log(this.props);
 
     if (taggedArticles.length > 0) {
       return (
