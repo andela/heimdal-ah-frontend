@@ -32,9 +32,8 @@ export class ReadSingleArticle extends Component {
         tags: [],
         user: {},
       },
+      bookmarks: false,
     };
-    this.editButton = React.createRef();
-    this.followButton = React.createRef();
   }
 
 
@@ -47,6 +46,13 @@ export class ReadSingleArticle extends Component {
     const { slug } = this.props.match.params;
     this.props.actions.getArticleById(slug);
     this.props.actions.getAllBookmarksAction();
+    // const bookmarks = this.props.bookmark.payload.rows;
+
+    // const isBookmarked = bookmarks && bookmarks.some(item => item.article.id === this.state.singleArticle.id);
+
+    // if (isBookmarked) {
+    //   this.setState({ bookmarks: true });
+    // }
   }
 
   /**
@@ -56,15 +62,22 @@ export class ReadSingleArticle extends Component {
  */
   componentWillReceiveProps(nextProps) {
     this.setState({ ...nextProps, singleArticle: nextProps.singleArticle });
+    const bookmarks = nextProps.bookmark.payload.rows;
+
+    const isBookmarked = bookmarks && bookmarks.some(item => item.article.id === this.state.singleArticle.id);
+
+    if (isBookmarked) {
+      this.setState({ bookmarks: true });
+    }
   }
 
   createBookmark = () => {
-    alert('this article was bookmarked');
+    this.setState({ bookmarks: true });
     this.props.actions.createBookmarkAction(this.state.singleArticle.id);
   }
 
   deleteBookmark = () => {
-    alert('this article was bookmarked');
+    this.setState({ bookmarks: false });
     this.props.actions.deleteBookmarksActions(this.state.singleArticle.id);
   }
 
@@ -80,10 +93,15 @@ export class ReadSingleArticle extends Component {
     const { profile = {} } = user;
     const { slug } = this.props.match.params;
     const { status } = this.props;
-    const bookmarks = this.props.bookmark.payload.rows;
+    
+    // const bookmarks = this.props.bookmark.payload.rows;
 
+    // const isBookmarked = bookmarks && bookmarks.some(item => item.article.id === this.state.singleArticle.id);
 
-    const bookmark = bookmarks && bookmarks.some(item => item.article.id === this.state.singleArticle.id);
+    // // if (isBookmarked) {
+    // //   this.setState({ bookmarks: true });
+    // // }
+
     return (
       <Fragment>
         { status === 'ERROR' ? <Redirect to={`/articles/${slug}`} />
@@ -92,7 +110,7 @@ export class ReadSingleArticle extends Component {
               <ReadSingleArticlePresentation
                 createBookmark={this.createBookmark}
                 deleteBookmark={this.deleteBookmark}
-                bookmark={bookmark}
+                bookmark={this.state.bookmarks}
                 slug={slug}
                 author={author}
                 articleId={this.state.singleArticle.id}

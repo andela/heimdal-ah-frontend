@@ -9,7 +9,6 @@ const deleteBookmarkAction = identifier => dispatch => instance.delete(`articles
       dispatch(ActionResponse(ACTIONS.DELETE_BOOKMARKS, response.data));
     }
   }).catch((error) => {
-      console.log(error.message);
     dispatch(ActionResponse(ACTIONS.DELETE_BOOKMARKS_ERROR, 'Server Error', error));
   });
 export default deleteBookmarkAction;

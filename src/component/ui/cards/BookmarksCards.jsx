@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './bookmarksCards.scss';
 import Glow from '../Buttons/glow/Glow.jsx';
@@ -18,8 +19,8 @@ const BookmarksCards = (props) => {
         <div className='bookmarks-cards'>
           <div className=''>
             <div className='bookmarks-header'>
-              <h2 className="">{title}</h2>
-              <img className='bookmark-logo' src='/src/images/bookmark.svg' alt='bookmark-logo' />
+              <Link to={`/@username/articles/${props.slug}`}><h2 className="">{title}</h2></Link>
+              <i className="fas fa-bookmark fa-3x bookmark-logo" />
             </div>
           </div>
           <div className='text-content'>

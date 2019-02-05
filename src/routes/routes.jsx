@@ -31,7 +31,7 @@ const Routes = () => (
         <Route exact path='/search' component={searchView} />
         <Route exact path='/articles/create' component={CreateArticle} />
         <Route exact path='/:username/articles/:slug' component={SingleArticlePage} />
-        <Route exact path='/bookmarks/articles' component={BookmarkList} />
+        <Route exact path='/articles-bookmarks' component={BookmarkList} />
         <Route exact path='/articles/:slug' component={ReadSingleArticleError} />
         <Route exact path='/articles/update' component={UpdateArticlesPresentation} />
         <Route exact path='/resetpassword' component={PasswordResetPresentation} />

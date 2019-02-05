@@ -1,5 +1,5 @@
 .bookmarks-cards {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   display: grid;
   grid-template-rows: 1fr, 2fr, 1fr;
@@ -15,6 +15,7 @@
     }
     .bookmark-logo{
       width: 20px;
+      color: #6a7390;
     }
   }
   .text-content {

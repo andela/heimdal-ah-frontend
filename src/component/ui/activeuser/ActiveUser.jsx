@@ -39,7 +39,7 @@ const ActiveUser = ({ username, image }) => (
           <a to="/reading-stats">Reading Stats</a>
         </div>
         <div>
-          <a to="/bookmarks">Bookmarks</a>
+          <a to="/articles-bookmarks">Bookmarks</a>
         </div>
         <div>
           <a to="/notifications">Notification</a>

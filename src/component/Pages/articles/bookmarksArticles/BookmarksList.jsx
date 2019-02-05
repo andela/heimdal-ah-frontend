@@ -16,6 +16,9 @@ export class BookmarksList extends Component {
     this.state = {};
   }
 
+  /**
+ * @description - ComponentDidmount call the getAllBookmarks action
+ */
   componentDidMount() {
     this.props.actions.getAllBookmarksActions();
   }
@@ -26,12 +29,14 @@ export class BookmarksList extends Component {
         <Fragment>
           {this.props.bookmarks.map(bookmark => (
             <BookmarksCard
+              slug={bookmark.article.slug}
               article={bookmark.article.body}
               articleTitle={bookmark.article.title}
               username={bookmark.article.user.profile.username}
               userImage={bookmark.article.user.profile.image}
             />
           ))}
+          <br />
         </Fragment>
       );
     }
