@@ -29,5 +29,6 @@ Create a community of like minded authors to foster inspiration and innovation b
 ## Testing the application
 * Run ```npm test```
 
+
 # Authors
 The list of every contributor can be found [here](https://github.com/andela/heimdal-ah-frontend/graphs/contributors) 
