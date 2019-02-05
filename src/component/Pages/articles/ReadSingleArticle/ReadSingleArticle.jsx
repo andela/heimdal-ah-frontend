@@ -11,7 +11,6 @@ import { getArticleById, glow } from '../../../../actions/ArticleActions/getArti
 import decodeToken from '../../../../utils/decodeToken';
 import ReadSingleArticlePresentation from './ReadSingleArticlePresentation';
 
-
 /**
  * @description - Read a single article posted by a user
  * @param {props} singleArticle - the status state object that contains all details about the article
@@ -36,20 +35,20 @@ export class ReadSingleArticle extends Component {
   }
 
   /**
- * @description - component mounts method runs as soon as the page loads
- * * @description token - decode gets the user token from local storage
- * * @description  - decode gets the user token from local storage
- */
+   * @description - component mounts method runs as soon as the page loads
+   * * @description token - decode gets the user token from local storage
+   * * @description  - decode gets the user token from local storage
+   */
   componentDidMount() {
     const { slug } = this.props.match.params;
     this.props.actions.getArticleById(slug);
   }
 
   /**
- * @description - Handles props being received
- * @param {string} nextProps - props being passed
- * @returns {component} update state
- */
+   * @description - Handles props being received
+   * @param {string} nextProps - props being passed
+   * @returns {component} update state
+   */
   componentWillReceiveProps(nextProps) {
     this.setState({ ...nextProps, singleArticle: nextProps.singleArticle });
   }
@@ -57,60 +56,59 @@ export class ReadSingleArticle extends Component {
   /**
    *@description checkuser id
    */
-   checkUserId = (likes, userId) => likes && likes.some(item => item.userId === userId);
+  checkUserId = (likes, userId) => likes && likes.some(item => item.userId === userId);
 
-    handleGlow = () => {
-      if (this.props.userId) {
-        this.props.actions.glow(this.state.singleArticle.id, this.props.userId);
-      }
+  handleGlow = () => {
+    if (this.props.userId) {
+      this.props.actions.glow(this.state.singleArticle.id, this.props.userId);
     }
+  };
 
-    /**
- * @description - render single article page
- * @param {props} status - the status returned from dispatching actions
- * @returns {component} the render component
- */
-    render() {
-      const author = decodeToken(this.state.singleArticle.userId);
-      const likesCount = this.state.singleArticle.likes && this.state.singleArticle.likes.length;
-      const { user = {} } = this.state.singleArticle;
-      const { profile = {} } = user;
-      const { slug } = this.props.match.params;
-      const { status } = this.props;
-      const { likes } = this.state.singleArticle && this.state.singleArticle;
+  /**
+   * @description - render single article page
+   * @param {props} status - the status returned from dispatching actions
+   * @returns {component} the render component
+   */
+  render() {
+    const author = decodeToken(this.state.singleArticle.userId);
+    const likesCount = this.state.singleArticle.likes && this.state.singleArticle.likes.length;
+    const { user = {} } = this.state.singleArticle;
+    const { profile = {} } = user;
+    const { slug } = this.props.match.params;
+    const { status } = this.props;
+    const { likes } = this.state.singleArticle && this.state.singleArticle;
 
-      const active = this.checkUserId(likes, this.props.userId);
+    const active = this.checkUserId(likes, this.props.userId);
 
-      return (
-        <Fragment>
-          { status === 'ERROR' ? <Redirect to={`/articles/${slug}`} />
-            : (
-              <Fragment>
-                <ReadSingleArticlePresentation
-                  slug={slug}
-                  author={author}
-                  articleId={this.state.singleArticle.id}
-                  title={this.state.singleArticle.title}
-                  body={this.state.singleArticle.body}
-                  username={profile.username}
-                  time={this.state.singleArticle.createdAt}
-                  likesCount={likesCount}
-                  userImage={profile.image}
-                  active={active}
-                  handleGlow={this.handleGlow}
-                />
-              </Fragment>
-            )
-        }
-        </Fragment>
-      );
-    }
+    return (
+      <Fragment>
+        {status === 'ERROR' ? (
+          <Redirect to={`/articles/${slug}`} />
+        ) : (
+          <Fragment>
+            <ReadSingleArticlePresentation
+              slug={slug}
+              author={author}
+              articleId={this.state.singleArticle.id}
+              title={this.state.singleArticle.title}
+              body={this.state.singleArticle.body}
+              username={profile.username}
+              time={this.state.singleArticle.createdAt}
+              likesCount={likesCount}
+              userImage={profile.image}
+              active={active}
+              handleGlow={this.handleGlow}
+            />
+          </Fragment>
+        )}
+      </Fragment>
+    );
+  }
 }
 
 ReadSingleArticlePresentation.defaultProps = {
   username: '@username',
 };
-
 
 ReadSingleArticlePresentation.propTypes = {
   username: PropTypes.string,
@@ -132,4 +130,7 @@ const mapDispatchToProps = dispatch => ({
   ),
 });
 
-export default connect(mapStateToprops, mapDispatchToProps)(ReadSingleArticle);
+export default connect(
+  mapStateToprops,
+  mapDispatchToProps,
+)(ReadSingleArticle);

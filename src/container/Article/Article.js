@@ -37,11 +37,16 @@ export class Article extends Component {
 
   getUserArticles = articles => (
     <div className="col-md-10 offset-md-1 mt-2">
-      <div className='row publication-cards container-fluid'>
-        { articles
-          ? articles.map(article => <div className='col-md-4' key={article.id}><ArticleCard key={article.id} {...article} /></div>)
-          : <p className="no-publication">No publications yet</p>
-    }
+      <div className="row publication-cards container-fluid">
+        {articles ? (
+          articles.map(article => (
+            <div className="col-md-4" key={article.id}>
+              <ArticleCard key={article.id} {...article} />
+            </div>
+          ))
+        ) : (
+          <p className="no-publication">No publications yet</p>
+        )}
       </div>
     </div>
   );
@@ -65,32 +70,36 @@ export class Article extends Component {
       if (this.state.displaying === 'published') {
         return (
           <div>
-            <div className='mb-5 mx-auto text-center'>
-              <Link to='#' onClick={this.handlePublishedClick} className=''>Published Articles</Link>
+            <div className="mb-5 mx-auto text-center">
+              <Link to="#" onClick={this.handlePublishedClick} className="">
+                Published Articles
+              </Link>
               <span> | </span>
-              <Link to='#' onClick={this.handleUnpublishedClick} className=''>Unpublished Articles</Link>
+              <Link to="#" onClick={this.handleUnpublishedClick} className="">
+                Unpublished Articles
+              </Link>
             </div>
-            { this.getUserArticles(this.props.articles.rows) }
+            {this.getUserArticles(this.props.articles.rows)}
             {/* {this.getUserArticles(this.props.unpublishedarticle.rows)}  */}
           </div>
         );
       }
       return (
         <div>
-          <div className='mb-5 mx-auto text-center'>
-            <Link to='#' onClick={this.handlePublishedClick} className=''>Published Articles</Link>
+          <div className="mb-5 mx-auto text-center">
+            <Link to="#" onClick={this.handlePublishedClick} className="">
+              Published Articles
+            </Link>
             <span> | </span>
-            <Link to='#' onClick={this.handleUnpublishedClick} className=''>Unpublished Articles</Link>
+            <Link to="#" onClick={this.handleUnpublishedClick} className="">
+              Unpublished Articles
+            </Link>
           </div>
           {this.getUserArticles(this.props.unpublishedarticle.rows)}
         </div>
       );
     }
-    return (
-      <div>
-        { this.getUserArticles(this.props.articles.rows) }
-      </div>
-    );
+    return <div>{this.getUserArticles(this.props.articles.rows)}</div>;
   }
 }
 
@@ -110,4 +119,7 @@ const mapStateToProps = state => ({
   user: state.auth.user,
 });
 
-export default connect(mapStateToProps, matchDispatchToProps)(Article);
+export default connect(
+  mapStateToProps,
+  matchDispatchToProps,
+)(Article);

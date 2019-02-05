@@ -36,7 +36,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": <React.Fragment>
-        <ReadSingleArticlePresentation
+        <Connect(ReadSingleArticlePresentation)
           active={false}
           articleId=""
           author={false}
@@ -55,7 +55,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": <ReadSingleArticlePresentation
+        "children": <Connect(ReadSingleArticlePresentation)
           active={false}
           articleId=""
           author={false}
@@ -100,7 +100,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <React.Fragment>
-          <ReadSingleArticlePresentation
+          <Connect(ReadSingleArticlePresentation)
             active={false}
             articleId=""
             author={false}
@@ -119,7 +119,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": <ReadSingleArticlePresentation
+          "children": <Connect(ReadSingleArticlePresentation)
             active={false}
             articleId=""
             author={false}
@@ -181,7 +181,7 @@ ShallowWrapper {
 exports[`Single Article Component Test Suite <ReadSingleArticlePresentation /> should render the ReadSingleArticlePresentation component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ReadSingleArticlePresentation
+  Symbol(enzyme.__unrendered__): <Connect(ReadSingleArticlePresentation)
     username="@username"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -2084,8 +2084,7 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-    ],
-    "type": Symbol(react.fragment),
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -3980,8 +3979,7 @@ ShallowWrapper {
           ],
           "type": "div",
         },
-      ],
-      "type": Symbol(react.fragment),
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
