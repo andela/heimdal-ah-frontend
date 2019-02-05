@@ -60,10 +60,8 @@ export class Article extends Component {
       />
     </div>
   )
-  // data is current
 
   onChange = (pageNumber) => {
-    // console.log('pr', this.props);
     const { getArticlesByPage } = this.props.actions;
     const size = 3;
     if (pageNumber === 1) {
