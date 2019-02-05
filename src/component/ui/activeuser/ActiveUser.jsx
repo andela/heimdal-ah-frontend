@@ -4,7 +4,6 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import notificationLogo from '../../../images/Icons.png';
 import './activeUser.scss';
 
 
@@ -15,7 +14,7 @@ const ActiveUser = ({ username, image }) => (
     <div className="dropdown">
       <img
         className="notification_icon dropbtn"
-        src={notificationLogo}
+        src="/src/images/Icons.png"
         alt="notification-logo"
       />
       <div className="dropdown-content">

@@ -228,6 +228,7 @@ ShallowWrapper {
             <div
               className="article-section"
             >
+              <div />
               <div
                 className="bottom-details"
               >
@@ -250,7 +251,7 @@ ShallowWrapper {
                 className="line"
               />
               <div
-                className="col-md-12"
+                className="col-md-12 pt-5"
               >
                 <TriggerModal
                   Class="btn-danger p-2 ph-25"
@@ -269,6 +270,11 @@ ShallowWrapper {
                 <img
                   alt="user"
                   className="user-image"
+                  src={
+                    <i
+                      className="fas fa-7x fa-user-circle"
+                    />
+                  }
                 />
                 <br />
                 <br />
@@ -276,9 +282,9 @@ ShallowWrapper {
                   className="user-link"
                   href="/@username"
                 >
-                  <h2>
+                  <h4>
                     @username...
-                  </h2>
+                  </h4>
                 </a>
                 <br />
                 <h4>
@@ -286,7 +292,7 @@ ShallowWrapper {
                 </h4>
                 <br />
                 <a
-                  href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                  href="/update-articles?id=undefined"
                 >
                   <button
                     className="btn edit-btn btn-secondary"
@@ -458,6 +464,7 @@ ShallowWrapper {
               <div
                 className="article-section"
               >
+                <div />
                 <div
                   className="bottom-details"
                 >
@@ -480,7 +487,7 @@ ShallowWrapper {
                   className="line"
                 />
                 <div
-                  className="col-md-12"
+                  className="col-md-12 pt-5"
                 >
                   <TriggerModal
                     Class="btn-danger p-2 ph-25"
@@ -499,6 +506,11 @@ ShallowWrapper {
                   <img
                     alt="user"
                     className="user-image"
+                    src={
+                      <i
+                        className="fas fa-7x fa-user-circle"
+                      />
+                    }
                   />
                   <br />
                   <br />
@@ -506,9 +518,9 @@ ShallowWrapper {
                     className="user-link"
                     href="/@username"
                   >
-                    <h2>
+                    <h4>
                       @username...
-                    </h2>
+                    </h4>
                   </a>
                   <br />
                   <h4>
@@ -516,7 +528,7 @@ ShallowWrapper {
                   </h4>
                   <br />
                   <a
-                    href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                    href="/update-articles?id=undefined"
                   >
                     <button
                       className="btn edit-btn btn-secondary"
@@ -736,6 +748,7 @@ ShallowWrapper {
                 <div
                   className="article-section"
                 >
+                  <div />
                   <div
                     className="bottom-details"
                   >
@@ -758,7 +771,7 @@ ShallowWrapper {
                     className="line"
                   />
                   <div
-                    className="col-md-12"
+                    className="col-md-12 pt-5"
                   >
                     <TriggerModal
                       Class="btn-danger p-2 ph-25"
@@ -777,6 +790,11 @@ ShallowWrapper {
                     <img
                       alt="user"
                       className="user-image"
+                      src={
+                        <i
+                          className="fas fa-7x fa-user-circle"
+                        />
+                      }
                     />
                     <br />
                     <br />
@@ -784,9 +802,9 @@ ShallowWrapper {
                       className="user-link"
                       href="/@username"
                     >
-                      <h2>
+                      <h4>
                         @username...
-                      </h2>
+                      </h4>
                     </a>
                     <br />
                     <h4>
@@ -794,7 +812,7 @@ ShallowWrapper {
                     </h4>
                     <br />
                     <a
-                      href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                      href="/update-articles?id=undefined"
                     >
                       <button
                         className="btn edit-btn btn-secondary"
@@ -930,7 +948,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    undefined,
+                    <div />,
                     <div
                       className="bottom-details"
                     >
@@ -953,7 +971,7 @@ ShallowWrapper {
                       className="line"
                     />,
                     <div
-                      className="col-md-12"
+                      className="col-md-12 pt-5"
                     >
                       <TriggerModal
                         Class="btn-danger p-2 ph-25"
@@ -967,7 +985,17 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": Array [
-                  undefined,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
                   Object {
                     "instance": null,
                     "key": undefined,
@@ -1084,7 +1112,7 @@ ShallowWrapper {
                       >
                         <Connect(ReportArticle) />
                       </TriggerModal>,
-                      "className": "col-md-12",
+                      "className": "col-md-12 pt-5",
                     },
                     "ref": null,
                     "rendered": Object {
@@ -1127,6 +1155,11 @@ ShallowWrapper {
                       <img
                         alt="user"
                         className="user-image"
+                        src={
+                          <i
+                            className="fas fa-7x fa-user-circle"
+                          />
+                        }
                       />
                       <br />
                       <br />
@@ -1134,9 +1167,9 @@ ShallowWrapper {
                         className="user-link"
                         href="/@username"
                       >
-                        <h2>
+                        <h4>
                           @username...
-                        </h2>
+                        </h4>
                       </a>
                       <br />
                       <h4>
@@ -1144,7 +1177,7 @@ ShallowWrapper {
                       </h4>
                       <br />
                       <a
-                        href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                        href="/update-articles?id=undefined"
                       >
                         <button
                           className="btn edit-btn btn-secondary"
@@ -1280,6 +1313,11 @@ ShallowWrapper {
                         <img
                           alt="user"
                           className="user-image"
+                          src={
+                            <i
+                              className="fas fa-7x fa-user-circle"
+                            />
+                          }
                         />,
                         <br />,
                         <br />,
@@ -1287,9 +1325,9 @@ ShallowWrapper {
                           className="user-link"
                           href="/@username"
                         >
-                          <h2>
+                          <h4>
                             @username...
-                          </h2>
+                          </h4>
                         </a>,
                         <br />,
                         <h4>
@@ -1297,7 +1335,7 @@ ShallowWrapper {
                         </h4>,
                         <br />,
                         <a
-                          href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                          href="/update-articles?id=undefined"
                         >
                           <button
                             className="btn edit-btn btn-secondary"
@@ -1336,7 +1374,9 @@ ShallowWrapper {
                         "props": Object {
                           "alt": "user",
                           "className": "user-image",
-                          "src": undefined,
+                          "src": <i
+                            className="fas fa-7x fa-user-circle"
+                          />,
                         },
                         "ref": null,
                         "rendered": null,
@@ -1365,9 +1405,9 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": <h2>
+                          "children": <h4>
                             @username...
-                          </h2>,
+                          </h4>,
                           "className": "user-link",
                           "href": "/@username",
                         },
@@ -1381,7 +1421,7 @@ ShallowWrapper {
                           },
                           "ref": null,
                           "rendered": "@username...",
-                          "type": "h2",
+                          "type": "h4",
                         },
                         "type": "a",
                       },
@@ -1425,7 +1465,7 @@ ShallowWrapper {
                           >
                             edit
                           </button>,
-                          "href": "http://heimdal-frontend.herokuapp.com/articles/update?id=undefined",
+                          "href": "/update-articles?id=undefined",
                         },
                         "ref": null,
                         "rendered": Object {
@@ -2084,6 +2124,7 @@ ShallowWrapper {
               <div
                 className="article-section"
               >
+                <div />
                 <div
                   className="bottom-details"
                 >
@@ -2106,7 +2147,7 @@ ShallowWrapper {
                   className="line"
                 />
                 <div
-                  className="col-md-12"
+                  className="col-md-12 pt-5"
                 >
                   <TriggerModal
                     Class="btn-danger p-2 ph-25"
@@ -2125,6 +2166,11 @@ ShallowWrapper {
                   <img
                     alt="user"
                     className="user-image"
+                    src={
+                      <i
+                        className="fas fa-7x fa-user-circle"
+                      />
+                    }
                   />
                   <br />
                   <br />
@@ -2132,9 +2178,9 @@ ShallowWrapper {
                     className="user-link"
                     href="/@username"
                   >
-                    <h2>
+                    <h4>
                       @username...
-                    </h2>
+                    </h4>
                   </a>
                   <br />
                   <h4>
@@ -2142,7 +2188,7 @@ ShallowWrapper {
                   </h4>
                   <br />
                   <a
-                    href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                    href="/update-articles?id=undefined"
                   >
                     <button
                       className="btn edit-btn btn-secondary"
@@ -2314,6 +2360,7 @@ ShallowWrapper {
                 <div
                   className="article-section"
                 >
+                  <div />
                   <div
                     className="bottom-details"
                   >
@@ -2336,7 +2383,7 @@ ShallowWrapper {
                     className="line"
                   />
                   <div
-                    className="col-md-12"
+                    className="col-md-12 pt-5"
                   >
                     <TriggerModal
                       Class="btn-danger p-2 ph-25"
@@ -2355,6 +2402,11 @@ ShallowWrapper {
                     <img
                       alt="user"
                       className="user-image"
+                      src={
+                        <i
+                          className="fas fa-7x fa-user-circle"
+                        />
+                      }
                     />
                     <br />
                     <br />
@@ -2362,9 +2414,9 @@ ShallowWrapper {
                       className="user-link"
                       href="/@username"
                     >
-                      <h2>
+                      <h4>
                         @username...
-                      </h2>
+                      </h4>
                     </a>
                     <br />
                     <h4>
@@ -2372,7 +2424,7 @@ ShallowWrapper {
                     </h4>
                     <br />
                     <a
-                      href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                      href="/update-articles?id=undefined"
                     >
                       <button
                         className="btn edit-btn btn-secondary"
@@ -2592,6 +2644,7 @@ ShallowWrapper {
                   <div
                     className="article-section"
                   >
+                    <div />
                     <div
                       className="bottom-details"
                     >
@@ -2614,7 +2667,7 @@ ShallowWrapper {
                       className="line"
                     />
                     <div
-                      className="col-md-12"
+                      className="col-md-12 pt-5"
                     >
                       <TriggerModal
                         Class="btn-danger p-2 ph-25"
@@ -2633,6 +2686,11 @@ ShallowWrapper {
                       <img
                         alt="user"
                         className="user-image"
+                        src={
+                          <i
+                            className="fas fa-7x fa-user-circle"
+                          />
+                        }
                       />
                       <br />
                       <br />
@@ -2640,9 +2698,9 @@ ShallowWrapper {
                         className="user-link"
                         href="/@username"
                       >
-                        <h2>
+                        <h4>
                           @username...
-                        </h2>
+                        </h4>
                       </a>
                       <br />
                       <h4>
@@ -2650,7 +2708,7 @@ ShallowWrapper {
                       </h4>
                       <br />
                       <a
-                        href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                        href="/update-articles?id=undefined"
                       >
                         <button
                           className="btn edit-btn btn-secondary"
@@ -2786,7 +2844,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      undefined,
+                      <div />,
                       <div
                         className="bottom-details"
                       >
@@ -2809,7 +2867,7 @@ ShallowWrapper {
                         className="line"
                       />,
                       <div
-                        className="col-md-12"
+                        className="col-md-12 pt-5"
                       >
                         <TriggerModal
                           Class="btn-danger p-2 ph-25"
@@ -2823,7 +2881,17 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": Array [
-                    undefined,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
                     Object {
                       "instance": null,
                       "key": undefined,
@@ -2940,7 +3008,7 @@ ShallowWrapper {
                         >
                           <Connect(ReportArticle) />
                         </TriggerModal>,
-                        "className": "col-md-12",
+                        "className": "col-md-12 pt-5",
                       },
                       "ref": null,
                       "rendered": Object {
@@ -2983,6 +3051,11 @@ ShallowWrapper {
                         <img
                           alt="user"
                           className="user-image"
+                          src={
+                            <i
+                              className="fas fa-7x fa-user-circle"
+                            />
+                          }
                         />
                         <br />
                         <br />
@@ -2990,9 +3063,9 @@ ShallowWrapper {
                           className="user-link"
                           href="/@username"
                         >
-                          <h2>
+                          <h4>
                             @username...
-                          </h2>
+                          </h4>
                         </a>
                         <br />
                         <h4>
@@ -3000,7 +3073,7 @@ ShallowWrapper {
                         </h4>
                         <br />
                         <a
-                          href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                          href="/update-articles?id=undefined"
                         >
                           <button
                             className="btn edit-btn btn-secondary"
@@ -3136,6 +3209,11 @@ ShallowWrapper {
                           <img
                             alt="user"
                             className="user-image"
+                            src={
+                              <i
+                                className="fas fa-7x fa-user-circle"
+                              />
+                            }
                           />,
                           <br />,
                           <br />,
@@ -3143,9 +3221,9 @@ ShallowWrapper {
                             className="user-link"
                             href="/@username"
                           >
-                            <h2>
+                            <h4>
                               @username...
-                            </h2>
+                            </h4>
                           </a>,
                           <br />,
                           <h4>
@@ -3153,7 +3231,7 @@ ShallowWrapper {
                           </h4>,
                           <br />,
                           <a
-                            href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                            href="/update-articles?id=undefined"
                           >
                             <button
                               className="btn edit-btn btn-secondary"
@@ -3192,7 +3270,9 @@ ShallowWrapper {
                           "props": Object {
                             "alt": "user",
                             "className": "user-image",
-                            "src": undefined,
+                            "src": <i
+                              className="fas fa-7x fa-user-circle"
+                            />,
                           },
                           "ref": null,
                           "rendered": null,
@@ -3221,9 +3301,9 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": <h2>
+                            "children": <h4>
                               @username...
-                            </h2>,
+                            </h4>,
                             "className": "user-link",
                             "href": "/@username",
                           },
@@ -3237,7 +3317,7 @@ ShallowWrapper {
                             },
                             "ref": null,
                             "rendered": "@username...",
-                            "type": "h2",
+                            "type": "h4",
                           },
                           "type": "a",
                         },
@@ -3281,7 +3361,7 @@ ShallowWrapper {
                             >
                               edit
                             </button>,
-                            "href": "http://heimdal-frontend.herokuapp.com/articles/update?id=undefined",
+                            "href": "/update-articles?id=undefined",
                           },
                           "ref": null,
                           "rendered": Object {
