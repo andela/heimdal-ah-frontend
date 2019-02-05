@@ -38,6 +38,7 @@
     font-family: "Ovo", serif;
     .article-section {
       background-color: whitesmoke;
+      white-space: normal;
       padding: 0px 20px;
       font-size: 20px;
       color: #3e4653;
@@ -51,6 +52,7 @@
         }
       }
     }
+
     .user-section {
       background-color: whitesmoke;
       border: 0.5px solid #c4c4c4;
@@ -109,6 +111,7 @@
       background-color: #6a7384;
     }
   }
+
   .tag-buttons {
     padding: 10px;
     margin-top: 3%;

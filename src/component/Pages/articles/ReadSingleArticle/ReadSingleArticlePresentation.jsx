@@ -37,7 +37,7 @@ class ReadSingleArticlePresentation extends Component {
   render() {
     const { author = {}, auth } = this.props;
     const username = `${this.props.username.substring(0, 9)}...`;
-
+    const userImage = this.props.userImage || <i className="fas fa-7x fa-user-circle" />;
     return (
       <Fragment>
         <Redirect to={`/${this.props.username}/articles/${this.props.slug}`} />
@@ -53,19 +53,19 @@ class ReadSingleArticlePresentation extends Component {
           </div>
           <div className="body-section">
             <div className="article-section">
-              {this.props.body}
+              <div>{this.props.body}</div>
               <div className="bottom-details">
                 <div>
                   {this.props.articleId && <ArticlesRating articleId={this.props.articleId} />}
                 </div>
-                <div className='ratings' />
-                <div className='glow'>
+                <div className="ratings" />
+                <div className="glow">
                   <Glow active={this.props.active} handleGlow={this.props.handleGlow} />
-                  <span className='likesCount'>{ this.props.likesCount }</span>
+                  <span className="likesCount">{this.props.likesCount}</span>
                 </div>
               </div>
               <div className="line" />
-              <div className="col-md-12">
+              <div className="col-md-12 pt-5">
                 {auth.isAuthenticated
                   && (!author ? (
                     <ModalButton label="Report Article" Class="btn-danger p-2 ph-25">
@@ -76,11 +76,11 @@ class ReadSingleArticlePresentation extends Component {
             </div>
             <div className="user-section">
               <div className="user-profile">
-                <img className="user-image" src={this.props.userImage} alt="user" />
+                <img className="user-image" src={userImage} alt="user" />
                 <br />
                 <br />
                 <a href={`/${this.props.username}`} className="user-link">
-                  <h2>{username}</h2>
+                  <h4>{username}</h4>
                 </a>
                 <br />
                 <h4>{timeAgo.format(moment(this.props.time).valueOf())}</h4>
@@ -89,7 +89,7 @@ class ReadSingleArticlePresentation extends Component {
                 {auth.isAuthenticated
                   && (author ? (
                     <Link
-                      to={`/update-articles/update?id=${this.props.articleId}`}
+                      to={`/update-articles?id=${this.props.articleId}`}
                       className="btn btn-secondary"
                     >
                       edit
