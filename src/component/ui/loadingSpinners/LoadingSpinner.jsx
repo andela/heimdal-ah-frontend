@@ -1,23 +1,15 @@
 import React from 'react';
-import { css } from '@emotion/core';
-import { DotLoader } from 'react-spinners';
+import { FadeLoader } from 'react-spinners';
 
-const override = css`
+const override = `
   display: block;
   margin: 0 auto;
-  border-color: red;
 `;
 
-const LoadingSpinner = ({ isLoading }) => (
-  <div className={`col-md-12 text-center ${isLoading ? '' : 'd-none'}`}>
-    <i className="fa fa-spin fa-spinner" />
-  </div>
-);
-
-export const DotSpinner = ({ isLoading, size, color }) => (
+const LoadingSpinner = ({ isLoading, size, color }) => (
   <div className="col-md-12 text-center">
     <div className="sweet-loading">
-      <DotLoader
+      <FadeLoader
         css={override}
         sizeUnit="px"
         size={size || 100}

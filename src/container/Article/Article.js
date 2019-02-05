@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import { getArticles } from '../../actions/ArticleActions/articles';
 import { getUnpublishedArticles } from '../../actions/ArticleActions/unPublishedAction';
 import ArticleCard from '../../component/ui/cards/ArticleCard/ArticleCard';
-import { DotSpinner } from '../../component/ui/loadingSpinners/LoadingSpinner';
+import LoadingSpinner from '../../component/ui/loadingSpinners/LoadingSpinner';
 import '../../component/ui/cards/ArticleCard/articleCard.scss';
 
 /**
@@ -64,7 +64,7 @@ export class Article extends Component {
   render() {
     const { isLoading } = this.props.articles;
     if (isLoading) {
-      return <DotSpinner isLoading={isLoading} />;
+      return <LoadingSpinner isLoading={isLoading} />;
     }
     if ([1, 3].includes(this.props.user.roleId)) {
       if (this.state.displaying === 'published') {
