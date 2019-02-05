@@ -1,92 +1,51 @@
 @import '../../../styles/variables.scss';
 
 .search-articles {
-    table {
-        background-color: $white-color;
-        border-collapse: collapse;
-        box-shadow: 2px 2px 6px rgb(136, 134, 134);
-        color: $search-articles__tr--bg-color;
-        font-family: 'Roboto, sans-serif';
-        font-size: 17px;
-        position: absolute;
-        right: 4.5%;
-        top: 3.6em;
-        width: 30%;
-        z-index: 2;
-    }
-    
-    td, th {
-        padding: 10px 10px 10px 30px;
-    }
-    
-    a {
-        color: $heimdal-textfield-background;
-    }
-    
-    a:hover {
-        opacity: 0.5;
-        text-decoration: none;
-    }
-    
-    // tr:nth-child(even) {
-    //     color: $white-color;
-    //     background-color: $search-articles__tr--bg-color;
-    // }
-    
-    // tr:nth-child(even) a {
-    //     color: $white-color;
-    // }
+	table {
+		background-color: $white-color;
+		border-collapse: collapse;
+		box-shadow: 2px 2px 6px rgb(136, 134, 134);
+		color: $search-articles__tr--bg-color;
+		font-family: 'Roboto, sans-serif';
+		font-size: 17px;
+		position: absolute;
+		right: 4.5%;
+		top: 3.6em;
+		width: 30%;
+		z-index: 2;
+	}
+
+	td,
+	th {
+		padding: 10px 10px 10px 30px;
+	}
+
+	a {
+		color: $heimdal-textfield-background;
+	}
+
+	a:hover {
+		opacity: 0.5;
+		text-decoration: none;
+	}
 }
 
 .search-articles-full-body {
-   &.header-formm {
-    margin: 4% 30% 2% 30%;
-   }
+	&.header-formm {
+		margin: 4% 30% 2% 30%;
+  }
 
-    table {
-        background-color: $white-color;
-        border-collapse: collapse;
-        box-shadow: 2px 2px 6px rgb(136, 134, 134);
-        color: $search-articles__tr--bg-color;
-        font-family: 'Roboto, sans-serif';
-        font-size: 20px;
-        left: 4%;
-        margin-bottom: 10%;
-        position: relative;
-        right: 2%;
-        width: 92%;
-    }
-    
-    td, th {
-        padding: 3px 3px 3px 20px;
-        border-bottom: 1px solid rgb(173, 171, 171);
-    }
+	&.returned-articles{
+		margin: 0 34%;
+  }
+  
+	a {
+		color: $black;
+	}
 
-    th {
-        background-color: rgb(122, 187, 212);;
-        color: $black;
-    }
-
-    td:hover {
-        background-color: rgba(122, 187, 212, 0.2);
-    }
-    
-    a {
-        color: $black;
-    }
-    
-    a:hover {
-        opacity: 0.5;
-        color: blueviolet;
-        text-decoration: none;
-    }
-    
-    // tr:nth-child(even) {
-    //     color: $white-color;
-    //     background-color: plum;
-    // }
-    
-    // tr:nth-child(even) a {
-    //     color: $white-color;
-    // }
+	a:hover {
+		opacity: 0.5;
+		color: blueviolet;
+		text-decoration: none;
+	}
 }
