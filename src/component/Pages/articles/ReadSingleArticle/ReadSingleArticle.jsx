@@ -7,11 +7,9 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import './ReadSingleArticle.scss';
 // import setToken from '../../../../config/setToken';
-import getArticleById from '../../../../actions/ArticleActions/getArticlesByIdActions';
+import { getArticleById, glow } from '../../../../actions/ArticleActions/getArticlesByIdActions';
 import decodeToken from '../../../../utils/decodeToken';
 import ReadSingleArticlePresentation from './ReadSingleArticlePresentation';
-import setArticleId from '../../../../utils/setArticleId';
-import Comment from '../../../ui/Comment/Comment';
 
 /**
  * @description - Read a single article posted by a user
@@ -56,6 +54,17 @@ export class ReadSingleArticle extends Component {
   }
 
   /**
+   *@description checkuser id
+   */
+  checkUserId = (likes, userId) => likes && likes.some(item => item.userId === userId);
+
+  handleGlow = () => {
+    if (this.props.userId) {
+      this.props.actions.glow(this.state.singleArticle.id, this.props.userId);
+    }
+  };
+
+  /**
    * @description - render single article page
    * @param {props} status - the status returned from dispatching actions
    * @returns {component} the render component
@@ -67,8 +76,10 @@ export class ReadSingleArticle extends Component {
     const { profile = {} } = user;
     const { slug } = this.props.match.params;
     const { status } = this.props;
+    const { likes } = this.state.singleArticle && this.state.singleArticle;
 
-    setArticleId(this.props.singleArticle.id);
+    const active = this.checkUserId(likes, this.props.userId);
+
     return (
       <Fragment>
         {status === 'ERROR' ? (
@@ -85,10 +96,11 @@ export class ReadSingleArticle extends Component {
               time={this.state.singleArticle.createdAt}
               likesCount={likesCount}
               userImage={profile.image}
+              active={active}
+              handleGlow={this.handleGlow}
             />
           </Fragment>
         )}
-        {this.props.singleArticle.id && <Comment articleId={this.props.singleArticle.id} />}
       </Fragment>
     );
   }
@@ -105,12 +117,14 @@ ReadSingleArticlePresentation.propTypes = {
 const mapStateToprops = state => ({
   singleArticle: state.getArticlesById.payload,
   status: state.getArticlesById.status,
+  userId: state.auth.user.userId,
 });
 
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(
     {
       getArticleById,
+      glow,
     },
     dispatch,
   ),
