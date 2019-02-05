@@ -26,11 +26,10 @@
     height: 150px;
     .bookmark-logo {
       color: #6a7390;
-      display:'none'
+      display:'none',
     }
-    .bookmark-logo-active {
-      color: #e6ee04;
-      display:'none'
+    .bookmark-logo:hover {
+      color: #383e4e;
     }
   }
 

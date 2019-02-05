@@ -12,6 +12,7 @@ import ReadSingleArticlePresentation from './ReadSingleArticlePresentation';
 import getAllBookmarksAction from '../../../../actions/ArticleActions/bookmarksAction/getAllBookmarksAction';
 import createBookmarkAction from '../../../../actions/ArticleActions/bookmarksAction/createBookmarkAction';
 import deleteBookmarksActions from '../../../../actions/ArticleActions/bookmarksAction/deleteBookmarksActions';
+import LoadingSpinner from '../../../ui/loadingSpinners/LoadingSpinner';
 
 
 /**
@@ -46,13 +47,6 @@ export class ReadSingleArticle extends Component {
     const { slug } = this.props.match.params;
     this.props.actions.getArticleById(slug);
     this.props.actions.getAllBookmarksAction();
-    // const bookmarks = this.props.bookmark.payload.rows;
-
-    // const isBookmarked = bookmarks && bookmarks.some(item => item.article.id === this.state.singleArticle.id);
-
-    // if (isBookmarked) {
-    //   this.setState({ bookmarks: true });
-    // }
   }
 
   /**
@@ -63,7 +57,6 @@ export class ReadSingleArticle extends Component {
   componentWillReceiveProps(nextProps) {
     this.setState({ ...nextProps, singleArticle: nextProps.singleArticle });
     const bookmarks = nextProps.bookmark.payload.rows;
-
     const isBookmarked = bookmarks && bookmarks.some(item => item.article.id === this.state.singleArticle.id);
 
     if (isBookmarked) {
@@ -72,14 +65,17 @@ export class ReadSingleArticle extends Component {
   }
 
   createBookmark = () => {
-    this.setState({ bookmarks: true });
-    this.props.actions.createBookmarkAction(this.state.singleArticle.id);
+    this.props.actions.createBookmarkAction(this.state.singleArticle.id, this.toggleBookmark);
   }
 
   deleteBookmark = () => {
-    this.setState({ bookmarks: false });
-    this.props.actions.deleteBookmarksActions(this.state.singleArticle.id);
+    this.props.actions.deleteBookmarksActions(this.state.singleArticle.id, this.toggleBookmark);
   }
+
+  toggleBookmark = () => {
+    this.setState((prevState => ({ bookmarks: !prevState.bookmarks })));
+  }
+
 
   /**
  * @description - render single article page
@@ -87,45 +83,40 @@ export class ReadSingleArticle extends Component {
  * @returns {component} the render component
  */
   render() {
-    const author = decodeToken(this.state.singleArticle.userId);
-    const likesCount = this.state.singleArticle.likes && this.state.singleArticle.likes.length;
-    const { user = {} } = this.state.singleArticle;
-    const { profile = {} } = user;
-    const { slug } = this.props.match.params;
-    const { status } = this.props;
-    
-    // const bookmarks = this.props.bookmark.payload.rows;
+    if (this.props.singleArticle) {
+      const author = decodeToken(this.state.singleArticle.userId);
+      const likesCount = this.state.singleArticle.likes && this.state.singleArticle.likes.length;
+      const { user = {} } = this.state.singleArticle;
+      const { profile = {} } = user;
+      const { slug } = this.props.match.params;
+      const { status } = this.props;
 
-    // const isBookmarked = bookmarks && bookmarks.some(item => item.article.id === this.state.singleArticle.id);
-
-    // // if (isBookmarked) {
-    // //   this.setState({ bookmarks: true });
-    // // }
-
-    return (
-      <Fragment>
-        { status === 'ERROR' ? <Redirect to={`/articles/${slug}`} />
-          : (
-            <Fragment>
-              <ReadSingleArticlePresentation
-                createBookmark={this.createBookmark}
-                deleteBookmark={this.deleteBookmark}
-                bookmark={this.state.bookmarks}
-                slug={slug}
-                author={author}
-                articleId={this.state.singleArticle.id}
-                title={this.state.singleArticle.title}
-                body={this.state.singleArticle.body}
-                username={profile.username}
-                time={this.state.singleArticle.createdAt}
-                likesCount={likesCount}
-                userImage={profile.image}
-              />
-            </Fragment>
-          )
-        }
-      </Fragment>
-    );
+      return (
+        <Fragment>
+          { status === 'ERROR' ? <Redirect to={`/articles/${slug}`} />
+            : (
+              <Fragment>
+                <ReadSingleArticlePresentation
+                  createBookmark={this.createBookmark}
+                  deleteBookmark={this.deleteBookmark}
+                  bookmark={this.state.bookmarks}
+                  slug={slug}
+                  author={author}
+                  articleId={this.state.singleArticle.id}
+                  title={this.state.singleArticle.title}
+                  body={this.state.singleArticle.body}
+                  username={profile.username}
+                  time={this.state.singleArticle.createdAt}
+                  likesCount={likesCount}
+                  userImage={profile.image}
+                />
+              </Fragment>
+            )
+          }
+        </Fragment>
+      );
+    }
+    return <LoadingSpinner />;
   }
 }
 
@@ -142,6 +133,8 @@ const mapStateToprops = state => ({
   singleArticle: state.getArticlesById.payload,
   status: state.getArticlesById.status,
   bookmark: state.getallbookmarks,
+  deleteBookmarks: state.deleteBookmarks,
+  createBookmarks: state.createbookmarks,
 });
 
 const mapDispatchToProps = dispatch => ({
