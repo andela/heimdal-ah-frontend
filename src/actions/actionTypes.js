@@ -32,6 +32,7 @@ export const ACTIONS = keyMirror({
   GET_USER_NOTIFICATION: null,
   TOGGLE_NOTIFICATION_READ: null,
   USER_INSTANT_NOTIFICATION: null,
+
   FOLLOW_USER: null,
   UNFOLLOW_USER: null,
   GET_ALL_FOLLOWERS: null,
@@ -79,6 +80,8 @@ export const ACTIONS = keyMirror({
   TOGGLE_MODAL: null,
   GET_ALL_ARTICLES: null,
   GETTING_PROFILE_ERROR: null,
+  LIKE_ARTICLE: null,
+  LIKE_ARTICLE_FAIL: null,
 
   SET_FEATURED_ARTICLES: null,
   SET_MAIN_ARTICLES: null,

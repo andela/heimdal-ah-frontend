@@ -1,6 +1,14 @@
+/* eslint-disable react/no-this-in-sfc */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import './activeUser.scss';
 import NotificationDropDown from '../Notification/NotificationDropDown/NotificationDropDown';
+
+
+import logout from '../../../actions/auth/logout';
 
 const ActiveUser = ({ username, image }) => (
   <div className="active_user_logo">
@@ -47,7 +55,7 @@ const ActiveUser = ({ username, image }) => (
             <a href={username}>Profile</a>
           </div>
           <div>
-            <a to="/logout">Logout</a>
+            <a href="/">Logout</a>
           </div>
         </div>
       </div>
@@ -55,4 +63,13 @@ const ActiveUser = ({ username, image }) => (
   </div>
 );
 
-export default ActiveUser;
+
+const mapDispatchToProps = dispatch => ({
+  actions: bindActionCreators(
+    {
+      logout,
+    },
+    dispatch,
+  ),
+});
+export default connect(mapDispatchToProps)(ActiveUser);

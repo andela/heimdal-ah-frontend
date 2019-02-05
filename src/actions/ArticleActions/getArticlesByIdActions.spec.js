@@ -3,7 +3,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import moxios from 'moxios';
-import getArticleById from './getArticlesByIdActions';
+import { getArticleById } from './getArticlesByIdActions';
 import setToken from '../../config/setToken';
 
 const middlewares = [thunk];
