@@ -38,6 +38,7 @@
     font-family: "Ovo", serif;
     .article-section {
       background-color: whitesmoke;
+      white-space: normal;
       padding: 0px 20px;
       font-size: 20px;
       color: #3e4653;
@@ -51,6 +52,7 @@
         }
       }
     }
+
     .user-section {
       background-color: whitesmoke;
       border: 0.5px solid #c4c4c4;
@@ -62,16 +64,16 @@
       .follow-btn {
         background-color: #153771;
         color: white;
-        display: none;
+        // display: none;
         align-self: center;
       }
       .user-link {
         text-decoration: none;
-        color: #6a7384;; 
+        color: #6a7384;
       }
       .edit-btn {
         align-self: center;
-        display: none;
+        // display: none;
       }
 
       .user-profile {
@@ -89,13 +91,22 @@
       .social-media {
         display: grid;
         grid-template-columns: 50% 50%;
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
         .facebook {
           color: #3b5998;
+          outline: none;
         }
         .twitter {
           color: #1da1f2;
+          outline: none;
         }
+        .no-outline {
+          outline: none;
+        }
+      }
+      
+      .no-outline {
+        outline: none;
       }
     }
     .glow {
@@ -109,6 +120,7 @@
       background-color: #6a7384;
     }
   }
+
   .tag-buttons {
     padding: 10px;
     margin-top: 3%;
