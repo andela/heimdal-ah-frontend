@@ -22,6 +22,7 @@ import articleReducer from './Article/articleReducer';
 import profileReducer from './profile/profileReducer';
 import homeReducer from './homeReducer';
 import loaderReducer from './loaderReducer';
+import taggedArticlesReducer from './taggedArticles';
 
 const rootReducer = combineReducers({
   createArticleReducer,
@@ -45,6 +46,7 @@ const rootReducer = combineReducers({
   profile: profileReducer,
   home: homeReducer,
   unpublishedarticle: unPublishedArticle,
+  taggedArticles: taggedArticlesReducer,
 });
 
 export default rootReducer;

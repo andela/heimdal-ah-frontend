@@ -61,7 +61,10 @@ likes
         </span>
       </div>
       <div className="col-6 mt-2">
-        <i className="far fa-comment-alt comment float-right"> 5 comments</i>
+        <i className="far fa-comment-alt comment float-right">
+          {' '}
+          {props.comments.length}
+        </i>
       </div>
     </div>
     <div className="row">
