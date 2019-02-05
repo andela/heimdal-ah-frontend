@@ -3,7 +3,6 @@ import instance from '../../config/http';
 import { ACTIONS } from '../actionTypes';
 import ActionResponse from '../actionResponse';
 
-
 /**
  * get articles function
  * @returns {object} dispatch
@@ -15,7 +14,7 @@ export function getArticlesByPage(size, offset) {
     dispatch({
       type: ACTIONS.SET_LOADER,
     });
-    return instance.get(`/articles?offset=${offset}&size=${size}`)
+    return instance.get(`/articles?size=${size}&offset=${offset}`)
       .then((response) => {
         // const { articles } = response.data;
         dispatch(ActionResponse(ACTIONS.GET_ARTICLES_BY_PAGE, response.data));

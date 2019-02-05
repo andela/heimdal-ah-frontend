@@ -62,16 +62,15 @@ export class Article extends Component {
   )
   // data is current
 
-  onChange = (data) => {
+  onChange = (pageNumber) => {
     // console.log('pr', this.props);
-    const newSelectedNum = data;
     const { getArticlesByPage } = this.props.actions;
     const size = 3;
-    if (data === 1) {
-      const offset = ((size * newSelectedNum) - data);
+    if (pageNumber === 1) {
+      const offset = ((size * pageNumber) - pageNumber);
       getArticlesByPage(size, offset);
     } else {
-      const offset = ((size * newSelectedNum) - data + 1);
+      const offset = ((size * pageNumber) - pageNumber + 1);
       getArticlesByPage(size, offset);
     }
   }
