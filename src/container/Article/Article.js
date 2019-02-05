@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 import Pagination from 'rc-pagination';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
-import { getArticles, getArticlesByPage } from '../../actions/ArticleActions/articles';
+import { getArticlesByPage } from '../../actions/ArticleActions/articles';
 import { getUnpublishedArticles } from '../../actions/ArticleActions/unPublishedAction';
 import ArticleCard from '../../component/ui/cards/ArticleCard/ArticleCard';
 import LoadingSpinner from '../../component/ui/loadingSpinners/LoadingSpinner';
@@ -134,7 +134,6 @@ export class Article extends Component {
 const matchDispatchToProps = dispatch => ({
   actions: bindActionCreators(
     {
-      getArticles,
       getUnpublishedArticles,
       getArticlesByPage,
     },
