@@ -8,7 +8,6 @@ import React, { Component, Fragment } from 'react';
 import { Redirect } from 'react-router-dom';
 import TimeAgo from 'javascript-time-ago';
 import moment from 'moment';
-import Editor from 'react-medium-editor';
 import english from 'javascript-time-ago/locale/en';
 import Glow from '../../../ui/Buttons/glow/Glow';
 import './ReadSingleArticle.scss';
