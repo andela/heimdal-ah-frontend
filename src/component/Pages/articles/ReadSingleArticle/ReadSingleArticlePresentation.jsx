@@ -5,9 +5,10 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable no-return-assign */
 import React, { Component, Fragment } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import TimeAgo from 'javascript-time-ago';
 import moment from 'moment';
+import { connect } from 'react-redux';
 import english from 'javascript-time-ago/locale/en';
 import { FacebookShareButton, TwitterShareButton, EmailShareButton } from 'react-share';
 import Glow from '../../../ui/Buttons/glow/Glow';
@@ -35,14 +36,9 @@ class ReadSingleArticlePresentation extends Component {
    * @description - render single article page
    */
   render() {
-    setTimeout(() => {
-      return this.props.author
-        ? (this.editButton.current.style.display = 'inline')
-        : !this.props.author
-          ? (this.followButton.current.style.display = 'inline')
-          : null;
-    }, 2000);
+    const { author = {}, auth } = this.props;
     const username = `${this.props.username.substring(0, 9)}...`;
+    const userImage = this.props.userImage || <i className="fas fa-7x fa-user-circle" />;
     return (
       <Fragment>
         <Redirect to={`/${this.props.username}/articles/${this.props.slug}`} />
@@ -58,51 +54,52 @@ class ReadSingleArticlePresentation extends Component {
           </div>
           <div className="body-section">
             <div className="article-section">
-              {this.props.body}
+              <div>{this.props.body}</div>
               <div className="bottom-details">
                 <div>
                   {this.props.articleId && <ArticlesRating articleId={this.props.articleId} />}
                 </div>
                 <div className="ratings" />
                 <div className="glow">
-                  <Glow active handleGlow={() => {}} />
+                  <Glow active={this.props.active} handleGlow={this.props.handleGlow} />
                   <span className="likesCount">{this.props.likesCount}</span>
                 </div>
               </div>
               <div className="line" />
-              <div className="col-md-12">
-                <ModalButton label="Report Article" Class="btn-danger p-2 ph-25">
-                  <ReportArticle articleId={this.props.articleId} />
-                </ModalButton>
+              <div className="col-md-12 pt-5">
+                {auth.isAuthenticated
+                  && (!author ? (
+                    <ModalButton label="Report Article" Class="btn-danger p-2 ph-25">
+                      <ReportArticle articleId={this.props.articleId} />
+                    </ModalButton>
+                  ) : null)}
               </div>
             </div>
             <div className="user-section">
               <div className="user-profile">
-                <img className="user-image" src={this.props.userImage} alt="user" />
+                <img className="user-image" src={userImage} alt="user" />
                 <br />
                 <br />
                 <a href={`/${this.props.username}`} className="user-link">
-                  <h2>{username}</h2>
+                  <h4>{username}</h4>
                 </a>
                 <br />
                 <h4>{timeAgo.format(moment(this.props.time).valueOf())}</h4>
                 <br />
-                <a
-                  href={`http://heimdal-frontend.herokuapp.com/articles/update?id=${
-                    this.props.articleId
-                  }`}
-                >
-                  <button
-                    className="btn edit-btn btn-secondary"
-                    ref={this.editButton}
-                    type="submit"
-                  >
-                    edit
-                  </button>
-                </a>
-                <button className="btn follow-btn" ref={this.followButton} type="submit">
-                  follow
-                </button>
+
+                {auth.isAuthenticated
+                  && (author ? (
+                    <Link
+                      to={`/update-articles?id=${this.props.articleId}`}
+                      className="btn btn-secondary"
+                    >
+                      edit
+                    </Link>
+                  ) : (
+                    <button className="btn follow-btn" type="submit">
+                      follow
+                    </button>
+                  ))}
                 <br />
                 <br />
                 <div className="social-media">
@@ -183,4 +180,8 @@ class ReadSingleArticlePresentation extends Component {
   }
 }
 
-export default ReadSingleArticlePresentation;
+const mapStateToProps = state => ({
+  auth: state.auth,
+});
+
+export default connect(mapStateToProps)(ReadSingleArticlePresentation);

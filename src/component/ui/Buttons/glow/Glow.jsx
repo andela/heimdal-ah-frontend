@@ -25,5 +25,4 @@ Glow.defaultProps = {
   active: false,
 };
 
-
 export default Glow;
