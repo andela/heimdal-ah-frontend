@@ -9,7 +9,9 @@ import SearchArticles from './SearchArticles';
 
 let sum = 0;
 window.onload = () => {
-  document.querySelector('.search-button').click();
+  if (window.location.search === '?query=' || window.location.pathname === '/search' || new URLSearchParams(window.location.search).get('query')) {
+    document.querySelector('.search-button').click();
+  }
 };
 
 const searchView = () => (
@@ -36,6 +38,7 @@ const searchView = () => (
               tabIndex="-1"
             >
               <button type='button' hidden className='search-button' onClick={e => data.onHandleChange(e)}>Search</button>
+
             </div>
           </form>
           {data.articlesByAuthorStatus === 'SUCCESS' ? (

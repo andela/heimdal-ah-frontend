@@ -1,5 +1,10 @@
 import { combineReducers } from 'redux';
 import { reducer as toastrReducer } from 'react-redux-toastr';
+import CommentReducer from './CommentReducer/CommentReducer';
+import ReplyReducer from './ReplyReducer/ReplyReducer';
+import authReducer from './authReducer';
+import errorsReducer from './errorsReducer';
+import CommentHistoryReducer from './CommentHistoryReducer/CommentHistoryReducer';
 import getArticlesByIdReducer from './articlesReducers/getArticlesByIdReducer';
 import updateArticlesReducer from './articlesReducers/updateArticlesReducer';
 import {
@@ -13,10 +18,9 @@ import {
   createArticleReducer,
   unPublishedArticle,
 } from './index';
-import authReducer from './authReducer';
-import errorsReducer from './errorsReducer';
 import articleReducer from './Article/articleReducer';
 import profileReducer from './profile/profileReducer';
+import homeReducer from './homeReducer';
 import loaderReducer from './loaderReducer';
 
 const rootReducer = combineReducers({
@@ -24,18 +28,22 @@ const rootReducer = combineReducers({
   resetpassword: resetPassword,
   updatepassword: updatePassword,
   toastr: toastrReducer,
+  comment: CommentReducer,
+  replies: ReplyReducer,
+  errors: errorsReducer,
+  auth: authReducer,
+  commentHistory: CommentHistoryReducer,
+  articlerating: articleRating,
+  getarticlerating: getarticleRating,
   searcharticlesbyauthor: searchArticlesByAuthorReducer,
   searcharticlesbytitle: searchArticlesByTitleReducer,
   searcharticlesbytags: searchArticlesByTagsReducer,
   getArticlesById: getArticlesByIdReducer,
   updateArticles: updateArticlesReducer,
-  articlerating: articleRating,
-  getarticlerating: getarticleRating,
-  errors: errorsReducer,
-  auth: authReducer,
   loader: loaderReducer,
   articles: articleReducer,
   profile: profileReducer,
+  home: homeReducer,
   unpublishedarticle: unPublishedArticle,
 });
 

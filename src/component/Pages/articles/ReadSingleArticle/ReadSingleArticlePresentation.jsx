@@ -64,10 +64,10 @@ class ReadSingleArticlePresentation extends Component {
                 <div>
                   {this.props.articleId && <ArticlesRating articleId={this.props.articleId} />}
                 </div>
-                <div className="ratings" />
-                <div className="glow">
-                  <Glow active handleGlow={() => {}} />
-                  <span className="likesCount">{this.props.likesCount}</span>
+                <div className='ratings' />
+                <div className='glow'>
+                  <Glow active={this.props.active} handleGlow={this.props.handleGlow} />
+                  <span className='likesCount'>{ this.props.likesCount }</span>
                 </div>
               </div>
               <div className="line" />
