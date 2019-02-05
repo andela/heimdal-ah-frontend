@@ -10,6 +10,8 @@ import './ReadSingleArticle.scss';
 import { getArticleById, glow } from '../../../../actions/ArticleActions/getArticlesByIdActions';
 import decodeToken from '../../../../utils/decodeToken';
 import ReadSingleArticlePresentation from './ReadSingleArticlePresentation';
+import setArticleId from '../../../../utils/setArticleId';
+import Comment from '../../../ui/Comment/Comment';
 
 /**
  * @description - Read a single article posted by a user
@@ -101,6 +103,7 @@ export class ReadSingleArticle extends Component {
             />
           </Fragment>
         )}
+        {this.props.singleArticle.id && <Comment articleId={this.props.singleArticle.id} />}
       </Fragment>
     );
   }
