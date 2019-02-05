@@ -52,7 +52,7 @@ class ReadSingleArticlePresentation extends Component {
           <div className="bookmark-row">
             <div />
             <div>
-              <img className="bookmark-logo" src="/src/images/bookmark.svg" alt="bookmark-logo" />
+              <img className="bookmark-logo" src="https://res.cloudinary.com/naijavibz/image/upload/v1549376036/bookmark.svg" alt="bookmark-logo" />
             </div>
           </div>
           <div className="body-section">
