@@ -29,3 +29,43 @@ a {
 a:hover {
   color: #4242427f;
 }
+
+.react-paginate ul {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.react-paginate li {
+  display: inline-block;
+  margin: 10px;
+}
+.break-me li {
+ display: none;
+}
+.rc-pagination-item-active {
+  background-color: #434343;
+  border-color: #f2f2f2;
+  color: #f2f2f2 !important;
+  text-align: center;
+  border-radius: 0%;
+}
+.rc-pagination a {
+  color: #434343;
+}
+
+.rc-pagination a:hover {
+  color: #424242;
+}
+.react-paginate li {
+  border-radius: 0%;
+}
+.react-paginate li:hover {
+  border-radius: 0%;
+  border-color: #434343;
+  color: #434343 !important;
+  // background-color: #f2f2f2 !important;
+}
+.react-paginate ul {
+  margin-top:30px !important;
+}

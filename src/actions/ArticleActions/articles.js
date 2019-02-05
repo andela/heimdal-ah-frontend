@@ -9,20 +9,20 @@ import ActionResponse from '../actionResponse';
  * @returns {object} axios instance
  * @returns {object} article object
  */
-export function getArticles() {
+export function getArticlesByPage(size, offset) {
   return function (dispatch) {
     dispatch({
       type: ACTIONS.SET_LOADER,
     });
-    return instance.get('/articles')
+    return instance.get(`/articles?size=${size}&offset=${offset}`)
       .then((response) => {
-        const { articles } = response.data;
-        dispatch(ActionResponse(ACTIONS.GET_ALL_ARTICLES, articles));
+        // const { articles } = response.data;
+        dispatch(ActionResponse(ACTIONS.GET_ARTICLES_BY_PAGE, response.data));
         dispatch({
           type: ACTIONS.SET_LOADER,
         });
       }).catch((error) => {
-        dispatch(ActionResponse(ACTIONS.GET_ALL_ARTICLES, 'Server error', error));
+        dispatch(ActionResponse(ACTIONS.GET_ARTICLES_BY_PAGE, 'Server error', error));
       });
   };
 }

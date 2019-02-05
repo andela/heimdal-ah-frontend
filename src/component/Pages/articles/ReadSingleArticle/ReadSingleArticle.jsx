@@ -10,6 +10,7 @@ import './ReadSingleArticle.scss';
 import { getArticleById, glow } from '../../../../actions/ArticleActions/getArticlesByIdActions';
 import decodeToken from '../../../../utils/decodeToken';
 import ReadSingleArticlePresentation from './ReadSingleArticlePresentation';
+// import setArticleId from '../../../../utils/setArticleId';
 import Comment from '../../../ui/Comment/Comment';
 
 /**

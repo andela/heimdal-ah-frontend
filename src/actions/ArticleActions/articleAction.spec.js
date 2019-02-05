@@ -3,7 +3,7 @@ import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import moxios from 'moxios';
 // import axiosInstance from '../../utils/axiosInstance';
-import { getArticles } from './articles';
+import { getArticlesByPage } from './articles';
 import mockData from '../../__mocks__/articleMocks';
 
 const middlewares = [thunk];
@@ -22,7 +22,7 @@ describe('Article action test', () => {
     const expectedResult = [
       {
         articles: mockData.articles,
-        type: 'GET_ALL_ARTICLES',
+        type: 'GET_ARTICLES_BY_PAGE',
       },
     ];
     moxios.stubRequest(`${process.env.BASE_URL_PROD}/api/v1/articles`, {
@@ -32,7 +32,7 @@ describe('Article action test', () => {
       },
     });
 
-    store.dispatch(getArticles()).then(() => {
+    store.dispatch(getArticlesByPage()).then(() => {
       expect(store.getActions()).toEqual(expectedResult);
     });
   });
