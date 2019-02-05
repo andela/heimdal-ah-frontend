@@ -10,6 +10,7 @@ import Logo from '../logo/Logo';
 import HeaderButton from '../headerButton/HeaderButton';
 import SearchArticlesPresentation from '../searchForm/searchArticlesPresentation';
 
+
 /**
  * @param {boolean} isAuthenticated should be a boolean
  */
@@ -42,4 +43,9 @@ Header.defaultProps = {
 const mapStateToProps = state => ({
   auth: state.auth,
 });
-export default connect(mapStateToProps)(Header);
+
+const matchDispatchToProps = dispatch => ({
+  actions: action => dispatch(action),
+});
+
+export default connect(mapStateToProps, matchDispatchToProps)(Header);
