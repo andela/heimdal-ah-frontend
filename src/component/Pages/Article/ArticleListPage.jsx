@@ -10,6 +10,7 @@ export default function ArticleListPage() {
     <div className='mb-5'>
       <h2 className='mx-auto text-center'> All Stories</h2>
       <ArticleList />
+
     </div>
   );
 }

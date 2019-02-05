@@ -4,7 +4,10 @@ const initialState = {
   articles: {
     isLoading: false,
     count: 0,
-    rows: [],
+    metadata: {},
+    articles: {
+      rows: [],
+    },
   },
 };
 
@@ -18,7 +21,7 @@ export default (state = initialState, action) => {
         },
       };
 
-    case ACTIONS.GET_ALL_ARTICLES:
+    case ACTIONS.GET_ARTICLES_BY_PAGE:
       return {
         articles: {
           ...state.articles,
