@@ -4,16 +4,16 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/be30b73ce68362e74d27/test_coverage)](https://codeclimate.com/github/andela/heimdal-ah-frontend/test_coverage)
 
 ## [View Application](http://heimdal-frontend.herokuapp.com/)
-# Welcome to Authors Haven 
+# Welcome to Heimdal
 
-Authors Haven - A social platform for the creative at heart
+Hiemdal is a community, a place to geek out about all forms of literature with other enthusiastic people.
 
 
 # Vision
-Create a community of like minded authors to foster inspiration and innovation by leveraging the modern web.
+Create a community of like-minded authors to foster inspiration and innovation by leveraging the modern web.
 
 
-# Setting up
+# Getting started
 * Install the latest nodejs from [here](https://nodejs.org/en/)
 
 * Clone the repositiory [here](https://github.com/andela/heimdal-ah-frontend.git) 
@@ -29,6 +29,7 @@ Create a community of like minded authors to foster inspiration and innovation b
 ## Testing the application
 * Run ```npm test```
 
-
+# License
+ISC
 # Authors
 The list of every contributor can be found [here](https://github.com/andela/heimdal-ah-frontend/graphs/contributors) 
