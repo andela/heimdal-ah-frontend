@@ -4,6 +4,7 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import './activeUser.scss';
 import NotificationDropDown from '../Notification/NotificationDropDown/NotificationDropDown';
 
@@ -45,7 +46,7 @@ const ActiveUser = ({ username, image }) => (
           <a to="/bookmarks">Bookmarks</a>
         </div>
         <div>
-          <a to="/notifications">Notification</a>
+          <Link to="/notifications">Notification</Link>
         </div>
         <div>
           <a to="/publication">Publication</a>

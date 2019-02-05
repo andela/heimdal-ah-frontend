@@ -37,7 +37,7 @@ const Routes = () => (
         <Route exact path='/update-articles' component={UpdateArticlesPresentation} />
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
         <Route exact path='/update-password' component={UpdatePasswordPresentation} />
-        <ProtectedRoute exact path='/notification' component={Notification} />
+        <ProtectedRoute exact path='/notifications' component={Notification} />
         <ProtectedRoute exact path='/:username' component={Profile} />
         <Route exact path="/articles/update" component={UpdateArticlesPresentation} />
         <ProtectedRoute exact path="/:username/edit" component={ProfileEdit} />
