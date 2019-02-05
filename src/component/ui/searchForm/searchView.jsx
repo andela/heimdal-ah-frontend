@@ -9,7 +9,9 @@ import SearchArticles from './SearchArticles';
 
 let sum = 0;
 window.onload = () => {
-  document.querySelector('.search-button').click();
+  if (window.location.search === '?query=' || window.location.pathname === '/search' || new URLSearchParams(window.location.search).get('query')) {
+    document.querySelector('.search-button').click();
+  }
 };
 
 const searchView = () => (
@@ -36,6 +38,7 @@ const searchView = () => (
               tabIndex="-1"
             >
               <button type='button' hidden className='search-button' onClick={e => data.onHandleChange(e)}>Search</button>
+
             </div>
           </form>
           {data.articlesByAuthorStatus === 'SUCCESS' ? (
@@ -51,8 +54,7 @@ const searchView = () => (
                   {data.articlesByAuthor.map(article => (
                     <tr className='search-articles-full-body' key={sum += 1}>
                       <td>
-                        {console.log(article.user.profile.username, '****(')}
-                        <a href={`https://heimdal-frontend.herokuapp.com/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
+                        <a href={`/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
                         <br />
                         <span>{article.user.profile.username}</span>
                       </td>
@@ -75,7 +77,7 @@ const searchView = () => (
                   {data.articlesByTitle.map(article => (
                     <tr className='search-articles-full-body' key={sum += 1}>
                       <td>
-                        <a href={`https://heimdal-frontend.herokuapp.com/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
+                        <a href={`/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
                         <br />
                         <span>{article.user.profile.username}</span>
                       </td>
@@ -98,7 +100,7 @@ const searchView = () => (
                   {data.articlesByTags.map(article => (
                     <tr className='search-articles-full-body' key={sum += 1}>
                       <td>
-                        <a href={`https://heimdal-frontend.herokuapp.com/articles/${article.article.user.profile.username}/${article.article.slug}`}>{article.article.title}</a>
+                        <a href={`/${article.article.user.profile.username}/articles/${article.article.slug}`}>{article.article.title}</a>
                         <br />
                         <span>{article.article.user.profile.username}</span>
                       </td>

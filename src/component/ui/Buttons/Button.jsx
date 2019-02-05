@@ -18,7 +18,7 @@ const Button = (props) => {
 
   return (
     <button
-      type="button"
+      type="submit"
       className={`${type ? `button btn-${type}` : `btn ${Class}`}`}
       onClick={onClick}
     >
