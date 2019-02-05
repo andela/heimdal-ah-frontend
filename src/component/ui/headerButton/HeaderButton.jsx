@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import ModalButton from '../Modal/Index';
 import AuthContainer from '../../../container/AuthContainer';

@@ -1,0 +1,61 @@
+@import '../../../../styles//variables.scss';
+
+.update-articles{
+    &.__button {
+        float: right;
+        font-size: 20px;
+        height: 2.5em;
+        margin: 2% 10.5% 0 0;
+        width: 11%;
+    }
+
+    &.__text {
+        font-size: 1.5em;
+        margin: 1% 0 15% 0;
+        padding: 0 10%;
+        text-align: justify;
+    }
+
+    &.__title {
+        font-size: 3em;
+        font-weight: bold;
+        margin-top: 11%;
+        padding: 0 10%;
+        text-align: justify;
+    }
+}
+
+.medium-editor-element {
+    font-family: $font-family__cardo;
+    padding-bottom: 2%;
+    white-space: normal;
+}
+
+.medium-editor-element:focus {
+    outline: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .update-articles{
+        &.__button {
+            width: 25%;
+        }
+    }
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .update-articles{
+        &.__button {
+            width: 38%;
+        }
+
+        &.__text {
+            font-size: 1.2em;
+        }
+
+        &.__title {
+            font-size: 1.7em;
+            margin-top: 30%;
+        }
+    }
+}

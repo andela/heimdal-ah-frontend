@@ -1,5 +1,17 @@
+/* eslint-disable react/no-unused-prop-types */
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/forbid-prop-types */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Notification.scss';
+import { connect } from 'react-redux';
+import {
+  subscribeToNotification,
+  checkSubscription,
+  getUserNotification,
+  getNewNotification,
+} from '../../../actions/NotificationActions/NotificationAction';
+import NotificationCard from './NotificationCard/NotificationCard';
 
 /**
   * renderComponent
@@ -11,47 +23,87 @@ import './Notification.scss';
   * @return {Node} React node containing comment card view
   */
 class Notification extends Component {
-  state={
-
+  state = {
+    subscribed: this.props.userDetails && this.props.userDetails.notification,
   }
 
+  componentWillMount() {
+    const { username } = this.props.user.user;
+    this.props.checkSubscription(username);
+  }
+
+  componentDidMount() {
+    const { userId } = this.props.user.user;
+    this.props.getUserNotification(userId);
+    if (this.props.userDetails && this.props.userDetails.notification) {
+      this.setState({
+        subscribed: this.props.userDetails.notification,
+      });
+    }
+    this.props.getNewNotification();
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      subscribed: nextProps.subscribe.status || nextProps.userDetails.notification,
+    });
+  }
+
+  subscribe = (e) => {
+    e.preventDefault();
+    this.props.subscribeToNotification();
+  }
+
+  /**
+     * Renders the component.
+     *
+     * @memberof app.components.Comment
+     * @return {string} - HTML markup for the component
+   */
   render() {
     return (
       <div>
+        {/* { this.props.data && this.props.data.message && <Alert type='success' message={this.props.data.message} title='Notifications' />} */}
         <div className='container notification_header'>
-          <div>Notification</div>
-          <p className='notification_header_sm'>Your Notifications</p>
-        </div>
-        <div className='notification_card row'>
-          <div className="notification_card_a col-3">
-            <img className="notification_card_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDlA27UJdhx1W6_SOMyFZqoVqLW91JCGUzjT545L6PPka-Y9Is" alt="user-profile-img" />
+          <div className='notification_container'>
+            <div>Notification</div>
+            <p className='notification_header_sm'>Your Notifications</p>
           </div>
-          <div className="notification_section col-9">
-            <div className="notification_card_top">
-              <div>
-                <span>Henry P</span>
-                <span className="notification_card_message_type">message you</span>
-              </div>
-              <div>
-                <span className="notification_card_mark_read">
-                  <label htmlFor='checkbox'>
-                    <input id='checkbox' type="checkbox" />
-                    <span className="checkmark" />
-                  </label>
-                </span>
-              </div>
-            </div>
-            <div className="notification_card_body">
-          Content of the message being sent to the user
-            </div>
-            <div className="notification_card_bottom"> Date June</div>
-            <div />
+          <div className='subscribe_btn_container'>
+            <button onClick={e => this.subscribe(e)} className='subscribe_btn' type='submit'>
+              {this.state.subscribed ? 'UnSubscribe' : 'Subscribe'}
+            </button>
           </div>
         </div>
+        <NotificationCard />
       </div>
     );
   }
 }
 
+Notification.propTypes = {
+  subscribeToNotification: PropTypes.func.isRequired,
+  message: PropTypes.object,
+  subscribe: PropTypes.string,
+};
 
-export default Notification;
+/**
+ * @method module:Reactator.ReduxContainerBuilderMapStateToProps
+ *
+ * @param {function} mapStateToProps - function mapping redux state to props
+ *
+ * @return {ReduxContainerBuilder} this builder
+*/
+const mapStateToProps = state => ({
+  subscribe: state.notification.data,
+  user: state.auth,
+  userDetails: state.notification.userProfile.user,
+  toggle: state.notification.toggleData,
+});
+
+export default connect(mapStateToProps, {
+  subscribeToNotification,
+  getUserNotification,
+  checkSubscription,
+  getNewNotification,
+})(Notification);

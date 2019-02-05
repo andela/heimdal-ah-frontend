@@ -22,9 +22,9 @@ export class PasswordReset extends Component {
   }
 
   /**
- * @description - Handles the form input change
+ * @description - Handles the form submit by calling resetPassword action
  * @param {event} e - the event passed to the method
- * @returns {component} updated state
+ * @returns {component} null
  */
   onHandleChange(e) {
     this.setState({

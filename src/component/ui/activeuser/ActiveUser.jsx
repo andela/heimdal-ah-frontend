@@ -1,5 +1,6 @@
 import React from 'react';
 import './activeUser.scss';
+import NotificationDropDown from '../Notification/NotificationDropDown/NotificationDropDown';
 
 const ActiveUser = ({ username, image }) => (
   <div className="active_user_logo">
@@ -12,13 +13,7 @@ const ActiveUser = ({ username, image }) => (
       <div className="dropdown-content">
         <div className="username">Notification</div>
         <div>
-          <a to="/">a 1</a>
-        </div>
-        <div>
-          <a to="/">a 2</a>
-        </div>
-        <div>
-          <a to="/">a 3</a>
+          <NotificationDropDown />
         </div>
       </div>
     </div>
@@ -33,7 +28,7 @@ const ActiveUser = ({ username, image }) => (
           <a to="/dashboard">Dashboard</a>
         </div>
         <div>
-          <a to="/create-article">Write An Article</a>
+          <a href="/articles/create">Write An Article</a>
         </div>
         <div>
           <a to="/reading-stats">Reading Stats</a>

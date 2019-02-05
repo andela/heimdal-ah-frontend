@@ -6,6 +6,8 @@ $break-large: 1200px;
 .notification_header {
   font-family: $font-family__cardo;
   font-size: 1.9em;
+  display: flex;
+  justify-content: space-between;
 
   @media screen and (max-width: $break-small) {
     font-size: 20px!important;
@@ -20,6 +22,17 @@ $break-large: 1200px;
       font-size: 12px!important;
     }
   }
+
+  .subscribe_btn_container button {
+    font-size: 15px;
+    color: $heimdal-text-color;
+    border: 1px solid #606e86 ;
+    background-color: #606e86!important;
+    cursor: pointer;
+  }
+}
+.mark_as_read {
+  background-color: $heimdal-comment-border;
 }
 
 .notification_card {
@@ -30,7 +43,13 @@ $break-large: 1200px;
   padding: 20px;
   width: 70%;
   font-size: 15px;
+  margin-bottom: 30px;
 
+  &.notification_card:hover {
+    color: white;
+    background: #606e86;
+  }
+  
   @media screen and (max-width: $break-small) {
     width: 90%;
     font-size: 12px!important;
@@ -38,6 +57,25 @@ $break-large: 1200px;
   @media screen and (min-width: $break-large) {
     
   }
+
+  .notification_dropdown {
+    width: 300px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between!important;
+
+    .dropdown_btm {
+      margin-right: 7px;
+    }
+  }
+  .notification_dropdown_bottom {
+    font-size: 12px;
+  }
+
+  .dropdown {
+    margin-right: 10px!important;
+  }
+
   .notification_card_a {
     margin-right: -50px;
   }
@@ -81,7 +119,20 @@ $break-large: 1200px;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    
+    .mark_as_read_toggle_a {
+      border: 1px solid #5d6e88;
+      padding: 10px;
+    }
+    .mark_as_read_toggle_b {
+      border: 1px solid #5d6e88;
+      padding: 10px;
+      background-color: #5d6e88;
+    }
+
   }
+
+  
 
   .notification_card_mark_read input {
     position: absolute;
@@ -93,6 +144,10 @@ $break-large: 1200px;
   .notification_card_bottom {
     float: right;
     font-size: 12px;
+
+    .fav_icons {
+      margin-right: 7px;
+    }
   }
 
 .checkmark {
