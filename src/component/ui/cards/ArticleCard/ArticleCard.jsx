@@ -57,7 +57,7 @@ const ArticleCard = props => (
       </div>
       <div className='row'>
         <div className='col-6 glow-likes'>
-          <Glow active handleGlow={() => {}} />
+          <Glow active={false} handleGlow={() => {}} />
           <span>{props.likes.length}</span>
         </div>
         <div className='col-6 mt-2'>
