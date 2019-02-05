@@ -5,7 +5,6 @@ import NotFound from '../component/Pages/NotFound.jsx';
 import MainLayout from '../component/Layout/MainLayout/MainLayout';
 import CreateArticle from '../component/Pages/articles/createArticle/CreateArticles';
 import SingleArticlePage from '../component/Pages/articles/ReadSingleArticle/ReadSingleArticle';
-// import HomePage from '../component/Pages/HomePage.jsx';
 import LandingPage from '../component/Pages/LandingPage/index';
 import SocialAuth from '../component/ui/SocialAuth/SocialAuth';
 import PasswordResetPresentation from '../component/Pages/PasswordResetPage/PasswordResetPresentation';
@@ -35,14 +34,13 @@ const Routes = () => (
       <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/social-auth" component={SocialAuth} />
-        <Route exact path="/resetpassword" component={PasswordResetPresentation} />
-        <Route exact path="/updatepassword" component={UpdatePasswordPresentation} />
         <Route exact path="/search" component={searchView} />
         <Route exact path="/articles/create" component={CreateArticle} />
         <Route exact path="/:username/articles/:slug" component={SingleArticlePage} />
         <Route exact path="/articles/:slug" component={ReadSingleArticleError} />
         <Route exact path="/update-articles" component={UpdateArticlesPresentation} />
         <Route exact path="/reset-password" component={PasswordResetPresentation} />
+        <Route exact path="/update-password" component={UpdatePasswordPresentation} />
         <Route exact path="/all-stories" component={Articles} />
         <ProtectedRoute exact path="/:username" component={Profile} />
         <Route exact path="/articles/update" component={UpdateArticlesPresentation} />

@@ -35,34 +35,96 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <React.Fragment>
-          <ReadSingleArticlePresentation
+      "children": <React.Fragment>
+        <Connect(ReadSingleArticlePresentation)
+          active={false}
+          articleId=""
+          author={false}
+          body=""
+          handleGlow={[Function]}
+          likesCount={0}
+          slug="hello"
+          title=""
+          username="@username"
+        />
+      </React.Fragment>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <Connect(ReadSingleArticlePresentation)
+          active={false}
+          articleId=""
+          author={false}
+          body=""
+          handleGlow={[Function]}
+          likesCount={0}
+          slug="hello"
+          title=""
+          username="@username"
+        />,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "active": false,
+          "articleId": "",
+          "author": false,
+          "body": "",
+          "handleGlow": [Function],
+          "likesCount": 0,
+          "slug": "hello",
+          "time": undefined,
+          "title": "",
+          "userImage": undefined,
+          "username": "@username",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": Symbol(react.fragment),
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <React.Fragment>
+          <Connect(ReadSingleArticlePresentation)
+            active={false}
             articleId=""
             author={false}
             body=""
+            handleGlow={[Function]}
             likesCount={0}
             slug="hello"
             title=""
             username="@username"
           />
         </React.Fragment>,
-        <Connect(Comment)
-          articleId={2}
-        />,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": <ReadSingleArticlePresentation
+          "children": <Connect(ReadSingleArticlePresentation)
+            active={false}
             articleId=""
             author={false}
             body=""
+            handleGlow={[Function]}
             likesCount={0}
             slug="hello"
             title=""
@@ -75,9 +137,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "active": false,
             "articleId": "",
             "author": false,
             "body": "",
+            "handleGlow": [Function],
             "likesCount": 0,
             "slug": "hello",
             "time": undefined,
@@ -91,94 +155,6 @@ ShallowWrapper {
         },
         "type": Symbol(react.fragment),
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "articleId": 2,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <React.Fragment>
-            <ReadSingleArticlePresentation
-              articleId=""
-              author={false}
-              body=""
-              likesCount={0}
-              slug="hello"
-              title=""
-              username="@username"
-            />
-          </React.Fragment>,
-          <Connect(Comment)
-            articleId={2}
-          />,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": <ReadSingleArticlePresentation
-              articleId=""
-              author={false}
-              body=""
-              likesCount={0}
-              slug="hello"
-              title=""
-              username="@username"
-            />,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "articleId": "",
-              "author": false,
-              "body": "",
-              "likesCount": 0,
-              "slug": "hello",
-              "time": undefined,
-              "title": "",
-              "userImage": undefined,
-              "username": "@username",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": Symbol(react.fragment),
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "articleId": 2,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
       "type": Symbol(react.fragment),
     },
   ],
@@ -205,7 +181,7 @@ ShallowWrapper {
 exports[`Single Article Component Test Suite <ReadSingleArticlePresentation /> should render the ReadSingleArticlePresentation component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ReadSingleArticlePresentation
+  Symbol(enzyme.__unrendered__): <Connect(ReadSingleArticlePresentation)
     username="@username"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -252,6 +228,7 @@ ShallowWrapper {
             <div
               className="article-section"
             >
+              <div />
               <div
                 className="bottom-details"
               >
@@ -263,8 +240,7 @@ ShallowWrapper {
                   className="glow"
                 >
                   <Glow
-                    active={true}
-                    handleGlow={[Function]}
+                    active={false}
                   />
                   <span
                     className="likesCount"
@@ -275,7 +251,7 @@ ShallowWrapper {
                 className="line"
               />
               <div
-                className="col-md-12"
+                className="col-md-12 pt-5"
               >
                 <TriggerModal
                   Class="btn-danger p-2 ph-25"
@@ -294,6 +270,11 @@ ShallowWrapper {
                 <img
                   alt="user"
                   className="user-image"
+                  src={
+                    <i
+                      className="fas fa-7x fa-user-circle"
+                    />
+                  }
                 />
                 <br />
                 <br />
@@ -301,9 +282,9 @@ ShallowWrapper {
                   className="user-link"
                   href="/@username"
                 >
-                  <h2>
+                  <h4>
                     @username...
-                  </h2>
+                  </h4>
                 </a>
                 <br />
                 <h4>
@@ -311,7 +292,7 @@ ShallowWrapper {
                 </h4>
                 <br />
                 <a
-                  href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                  href="/update-articles?id=undefined"
                 >
                   <button
                     className="btn edit-btn btn-secondary"
@@ -483,6 +464,7 @@ ShallowWrapper {
               <div
                 className="article-section"
               >
+                <div />
                 <div
                   className="bottom-details"
                 >
@@ -494,8 +476,7 @@ ShallowWrapper {
                     className="glow"
                   >
                     <Glow
-                      active={true}
-                      handleGlow={[Function]}
+                      active={false}
                     />
                     <span
                       className="likesCount"
@@ -506,7 +487,7 @@ ShallowWrapper {
                   className="line"
                 />
                 <div
-                  className="col-md-12"
+                  className="col-md-12 pt-5"
                 >
                   <TriggerModal
                     Class="btn-danger p-2 ph-25"
@@ -525,6 +506,11 @@ ShallowWrapper {
                   <img
                     alt="user"
                     className="user-image"
+                    src={
+                      <i
+                        className="fas fa-7x fa-user-circle"
+                      />
+                    }
                   />
                   <br />
                   <br />
@@ -532,9 +518,9 @@ ShallowWrapper {
                     className="user-link"
                     href="/@username"
                   >
-                    <h2>
+                    <h4>
                       @username...
-                    </h2>
+                    </h4>
                   </a>
                   <br />
                   <h4>
@@ -542,7 +528,7 @@ ShallowWrapper {
                   </h4>
                   <br />
                   <a
-                    href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                    href="/update-articles?id=undefined"
                   >
                     <button
                       className="btn edit-btn btn-secondary"
@@ -762,6 +748,7 @@ ShallowWrapper {
                 <div
                   className="article-section"
                 >
+                  <div />
                   <div
                     className="bottom-details"
                   >
@@ -773,8 +760,7 @@ ShallowWrapper {
                       className="glow"
                     >
                       <Glow
-                        active={true}
-                        handleGlow={[Function]}
+                        active={false}
                       />
                       <span
                         className="likesCount"
@@ -785,7 +771,7 @@ ShallowWrapper {
                     className="line"
                   />
                   <div
-                    className="col-md-12"
+                    className="col-md-12 pt-5"
                   >
                     <TriggerModal
                       Class="btn-danger p-2 ph-25"
@@ -804,6 +790,11 @@ ShallowWrapper {
                     <img
                       alt="user"
                       className="user-image"
+                      src={
+                        <i
+                          className="fas fa-7x fa-user-circle"
+                        />
+                      }
                     />
                     <br />
                     <br />
@@ -811,9 +802,9 @@ ShallowWrapper {
                       className="user-link"
                       href="/@username"
                     >
-                      <h2>
+                      <h4>
                         @username...
-                      </h2>
+                      </h4>
                     </a>
                     <br />
                     <h4>
@@ -821,7 +812,7 @@ ShallowWrapper {
                     </h4>
                     <br />
                     <a
-                      href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                      href="/update-articles?id=undefined"
                     >
                       <button
                         className="btn edit-btn btn-secondary"
@@ -957,7 +948,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    undefined,
+                    <div />,
                     <div
                       className="bottom-details"
                     >
@@ -969,8 +960,7 @@ ShallowWrapper {
                         className="glow"
                       >
                         <Glow
-                          active={true}
-                          handleGlow={[Function]}
+                          active={false}
                         />
                         <span
                           className="likesCount"
@@ -981,7 +971,7 @@ ShallowWrapper {
                       className="line"
                     />,
                     <div
-                      className="col-md-12"
+                      className="col-md-12 pt-5"
                     >
                       <TriggerModal
                         Class="btn-danger p-2 ph-25"
@@ -995,7 +985,17 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": Array [
-                  undefined,
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
                   Object {
                     "instance": null,
                     "key": undefined,
@@ -1010,8 +1010,7 @@ ShallowWrapper {
                           className="glow"
                         >
                           <Glow
-                            active={true}
-                            handleGlow={[Function]}
+                            active={false}
                           />
                           <span
                             className="likesCount"
@@ -1051,8 +1050,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": Array [
                             <Glow
-                              active={true}
-                              handleGlow={[Function]}
+                              active={false}
                             />,
                             <span
                               className="likesCount"
@@ -1067,8 +1065,8 @@ ShallowWrapper {
                             "key": undefined,
                             "nodeType": "function",
                             "props": Object {
-                              "active": true,
-                              "handleGlow": [Function],
+                              "active": false,
+                              "handleGlow": undefined,
                             },
                             "ref": null,
                             "rendered": null,
@@ -1114,7 +1112,7 @@ ShallowWrapper {
                       >
                         <Connect(ReportArticle) />
                       </TriggerModal>,
-                      "className": "col-md-12",
+                      "className": "col-md-12 pt-5",
                     },
                     "ref": null,
                     "rendered": Object {
@@ -1157,6 +1155,11 @@ ShallowWrapper {
                       <img
                         alt="user"
                         className="user-image"
+                        src={
+                          <i
+                            className="fas fa-7x fa-user-circle"
+                          />
+                        }
                       />
                       <br />
                       <br />
@@ -1164,9 +1167,9 @@ ShallowWrapper {
                         className="user-link"
                         href="/@username"
                       >
-                        <h2>
+                        <h4>
                           @username...
-                        </h2>
+                        </h4>
                       </a>
                       <br />
                       <h4>
@@ -1174,7 +1177,7 @@ ShallowWrapper {
                       </h4>
                       <br />
                       <a
-                        href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                        href="/update-articles?id=undefined"
                       >
                         <button
                           className="btn edit-btn btn-secondary"
@@ -1310,6 +1313,11 @@ ShallowWrapper {
                         <img
                           alt="user"
                           className="user-image"
+                          src={
+                            <i
+                              className="fas fa-7x fa-user-circle"
+                            />
+                          }
                         />,
                         <br />,
                         <br />,
@@ -1317,9 +1325,9 @@ ShallowWrapper {
                           className="user-link"
                           href="/@username"
                         >
-                          <h2>
+                          <h4>
                             @username...
-                          </h2>
+                          </h4>
                         </a>,
                         <br />,
                         <h4>
@@ -1327,7 +1335,7 @@ ShallowWrapper {
                         </h4>,
                         <br />,
                         <a
-                          href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                          href="/update-articles?id=undefined"
                         >
                           <button
                             className="btn edit-btn btn-secondary"
@@ -1366,7 +1374,9 @@ ShallowWrapper {
                         "props": Object {
                           "alt": "user",
                           "className": "user-image",
-                          "src": undefined,
+                          "src": <i
+                            className="fas fa-7x fa-user-circle"
+                          />,
                         },
                         "ref": null,
                         "rendered": null,
@@ -1395,9 +1405,9 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "host",
                         "props": Object {
-                          "children": <h2>
+                          "children": <h4>
                             @username...
-                          </h2>,
+                          </h4>,
                           "className": "user-link",
                           "href": "/@username",
                         },
@@ -1411,7 +1421,7 @@ ShallowWrapper {
                           },
                           "ref": null,
                           "rendered": "@username...",
-                          "type": "h2",
+                          "type": "h4",
                         },
                         "type": "a",
                       },
@@ -1455,7 +1465,7 @@ ShallowWrapper {
                           >
                             edit
                           </button>,
-                          "href": "http://heimdal-frontend.herokuapp.com/articles/update?id=undefined",
+                          "href": "/update-articles?id=undefined",
                         },
                         "ref": null,
                         "rendered": Object {
@@ -2074,8 +2084,7 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-    ],
-    "type": Symbol(react.fragment),
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -2114,6 +2123,7 @@ ShallowWrapper {
               <div
                 className="article-section"
               >
+                <div />
                 <div
                   className="bottom-details"
                 >
@@ -2125,8 +2135,7 @@ ShallowWrapper {
                     className="glow"
                   >
                     <Glow
-                      active={true}
-                      handleGlow={[Function]}
+                      active={false}
                     />
                     <span
                       className="likesCount"
@@ -2137,7 +2146,7 @@ ShallowWrapper {
                   className="line"
                 />
                 <div
-                  className="col-md-12"
+                  className="col-md-12 pt-5"
                 >
                   <TriggerModal
                     Class="btn-danger p-2 ph-25"
@@ -2156,6 +2165,11 @@ ShallowWrapper {
                   <img
                     alt="user"
                     className="user-image"
+                    src={
+                      <i
+                        className="fas fa-7x fa-user-circle"
+                      />
+                    }
                   />
                   <br />
                   <br />
@@ -2163,9 +2177,9 @@ ShallowWrapper {
                     className="user-link"
                     href="/@username"
                   >
-                    <h2>
+                    <h4>
                       @username...
-                    </h2>
+                    </h4>
                   </a>
                   <br />
                   <h4>
@@ -2173,7 +2187,7 @@ ShallowWrapper {
                   </h4>
                   <br />
                   <a
-                    href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                    href="/update-articles?id=undefined"
                   >
                     <button
                       className="btn edit-btn btn-secondary"
@@ -2345,6 +2359,7 @@ ShallowWrapper {
                 <div
                   className="article-section"
                 >
+                  <div />
                   <div
                     className="bottom-details"
                   >
@@ -2356,8 +2371,7 @@ ShallowWrapper {
                       className="glow"
                     >
                       <Glow
-                        active={true}
-                        handleGlow={[Function]}
+                        active={false}
                       />
                       <span
                         className="likesCount"
@@ -2368,7 +2382,7 @@ ShallowWrapper {
                     className="line"
                   />
                   <div
-                    className="col-md-12"
+                    className="col-md-12 pt-5"
                   >
                     <TriggerModal
                       Class="btn-danger p-2 ph-25"
@@ -2387,6 +2401,11 @@ ShallowWrapper {
                     <img
                       alt="user"
                       className="user-image"
+                      src={
+                        <i
+                          className="fas fa-7x fa-user-circle"
+                        />
+                      }
                     />
                     <br />
                     <br />
@@ -2394,9 +2413,9 @@ ShallowWrapper {
                       className="user-link"
                       href="/@username"
                     >
-                      <h2>
+                      <h4>
                         @username...
-                      </h2>
+                      </h4>
                     </a>
                     <br />
                     <h4>
@@ -2404,7 +2423,7 @@ ShallowWrapper {
                     </h4>
                     <br />
                     <a
-                      href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                      href="/update-articles?id=undefined"
                     >
                       <button
                         className="btn edit-btn btn-secondary"
@@ -2624,6 +2643,7 @@ ShallowWrapper {
                   <div
                     className="article-section"
                   >
+                    <div />
                     <div
                       className="bottom-details"
                     >
@@ -2635,8 +2655,7 @@ ShallowWrapper {
                         className="glow"
                       >
                         <Glow
-                          active={true}
-                          handleGlow={[Function]}
+                          active={false}
                         />
                         <span
                           className="likesCount"
@@ -2647,7 +2666,7 @@ ShallowWrapper {
                       className="line"
                     />
                     <div
-                      className="col-md-12"
+                      className="col-md-12 pt-5"
                     >
                       <TriggerModal
                         Class="btn-danger p-2 ph-25"
@@ -2666,6 +2685,11 @@ ShallowWrapper {
                       <img
                         alt="user"
                         className="user-image"
+                        src={
+                          <i
+                            className="fas fa-7x fa-user-circle"
+                          />
+                        }
                       />
                       <br />
                       <br />
@@ -2673,9 +2697,9 @@ ShallowWrapper {
                         className="user-link"
                         href="/@username"
                       >
-                        <h2>
+                        <h4>
                           @username...
-                        </h2>
+                        </h4>
                       </a>
                       <br />
                       <h4>
@@ -2683,7 +2707,7 @@ ShallowWrapper {
                       </h4>
                       <br />
                       <a
-                        href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                        href="/update-articles?id=undefined"
                       >
                         <button
                           className="btn edit-btn btn-secondary"
@@ -2819,7 +2843,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      undefined,
+                      <div />,
                       <div
                         className="bottom-details"
                       >
@@ -2831,8 +2855,7 @@ ShallowWrapper {
                           className="glow"
                         >
                           <Glow
-                            active={true}
-                            handleGlow={[Function]}
+                            active={false}
                           />
                           <span
                             className="likesCount"
@@ -2843,7 +2866,7 @@ ShallowWrapper {
                         className="line"
                       />,
                       <div
-                        className="col-md-12"
+                        className="col-md-12 pt-5"
                       >
                         <TriggerModal
                           Class="btn-danger p-2 ph-25"
@@ -2857,7 +2880,17 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": Array [
-                    undefined,
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "div",
+                    },
                     Object {
                       "instance": null,
                       "key": undefined,
@@ -2872,8 +2905,7 @@ ShallowWrapper {
                             className="glow"
                           >
                             <Glow
-                              active={true}
-                              handleGlow={[Function]}
+                              active={false}
                             />
                             <span
                               className="likesCount"
@@ -2913,8 +2945,7 @@ ShallowWrapper {
                           "props": Object {
                             "children": Array [
                               <Glow
-                                active={true}
-                                handleGlow={[Function]}
+                                active={false}
                               />,
                               <span
                                 className="likesCount"
@@ -2929,8 +2960,8 @@ ShallowWrapper {
                               "key": undefined,
                               "nodeType": "function",
                               "props": Object {
-                                "active": true,
-                                "handleGlow": [Function],
+                                "active": false,
+                                "handleGlow": undefined,
                               },
                               "ref": null,
                               "rendered": null,
@@ -2976,7 +3007,7 @@ ShallowWrapper {
                         >
                           <Connect(ReportArticle) />
                         </TriggerModal>,
-                        "className": "col-md-12",
+                        "className": "col-md-12 pt-5",
                       },
                       "ref": null,
                       "rendered": Object {
@@ -3019,6 +3050,11 @@ ShallowWrapper {
                         <img
                           alt="user"
                           className="user-image"
+                          src={
+                            <i
+                              className="fas fa-7x fa-user-circle"
+                            />
+                          }
                         />
                         <br />
                         <br />
@@ -3026,9 +3062,9 @@ ShallowWrapper {
                           className="user-link"
                           href="/@username"
                         >
-                          <h2>
+                          <h4>
                             @username...
-                          </h2>
+                          </h4>
                         </a>
                         <br />
                         <h4>
@@ -3036,7 +3072,7 @@ ShallowWrapper {
                         </h4>
                         <br />
                         <a
-                          href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                          href="/update-articles?id=undefined"
                         >
                           <button
                             className="btn edit-btn btn-secondary"
@@ -3172,6 +3208,11 @@ ShallowWrapper {
                           <img
                             alt="user"
                             className="user-image"
+                            src={
+                              <i
+                                className="fas fa-7x fa-user-circle"
+                              />
+                            }
                           />,
                           <br />,
                           <br />,
@@ -3179,9 +3220,9 @@ ShallowWrapper {
                             className="user-link"
                             href="/@username"
                           >
-                            <h2>
+                            <h4>
                               @username...
-                            </h2>
+                            </h4>
                           </a>,
                           <br />,
                           <h4>
@@ -3189,7 +3230,7 @@ ShallowWrapper {
                           </h4>,
                           <br />,
                           <a
-                            href="http://heimdal-frontend.herokuapp.com/articles/update?id=undefined"
+                            href="/update-articles?id=undefined"
                           >
                             <button
                               className="btn edit-btn btn-secondary"
@@ -3228,7 +3269,9 @@ ShallowWrapper {
                           "props": Object {
                             "alt": "user",
                             "className": "user-image",
-                            "src": undefined,
+                            "src": <i
+                              className="fas fa-7x fa-user-circle"
+                            />,
                           },
                           "ref": null,
                           "rendered": null,
@@ -3257,9 +3300,9 @@ ShallowWrapper {
                           "key": undefined,
                           "nodeType": "host",
                           "props": Object {
-                            "children": <h2>
+                            "children": <h4>
                               @username...
-                            </h2>,
+                            </h4>,
                             "className": "user-link",
                             "href": "/@username",
                           },
@@ -3273,7 +3316,7 @@ ShallowWrapper {
                             },
                             "ref": null,
                             "rendered": "@username...",
-                            "type": "h2",
+                            "type": "h4",
                           },
                           "type": "a",
                         },
@@ -3317,7 +3360,7 @@ ShallowWrapper {
                             >
                               edit
                             </button>,
-                            "href": "http://heimdal-frontend.herokuapp.com/articles/update?id=undefined",
+                            "href": "/update-articles?id=undefined",
                           },
                           "ref": null,
                           "rendered": Object {
@@ -3936,8 +3979,7 @@ ShallowWrapper {
           ],
           "type": "div",
         },
-      ],
-      "type": Symbol(react.fragment),
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {

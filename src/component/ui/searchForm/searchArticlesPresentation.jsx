@@ -8,7 +8,9 @@ import SearchArticles from './SearchArticles';
 
 let sum = 0;
 window.document.addEventListener('click', () => {
-  document.querySelector('.search-articles').style.display = 'none';
+  if (window.location.pathname === '/' && document.querySelector('.search-articles')) {
+    document.querySelector('.search-articles').style.display = 'none';
+  }
 });
 
 const SearchArticlesPresentation = () => (
@@ -24,7 +26,12 @@ const SearchArticlesPresentation = () => (
                 name='query'
                 value={data.state.query}
                 onChange={e => data.onHandleChange(e)}
-                onInput={() => document.querySelector('.search-articles').style.display = 'block'}
+                onInput={() => {
+                  if (window.location.pathname === '/' && document.querySelector('.search-articles')) {
+                    document.querySelector('.search-articles').style.display = 'block';
+                  }
+                }
+                }
               />
             </div>
             <div
@@ -50,7 +57,7 @@ const SearchArticlesPresentation = () => (
                   {data.articlesByAuthor.map(article => (
                     <tr className='search-articles' key={sum += 1}>
                       <td>
-                        <a href={`https://heimdal-frontend.herokuapp.com/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
+                        <a href={`/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
                         <br />
                         <span>{article.user.profile.username}</span>
                       </td>
@@ -82,7 +89,7 @@ const SearchArticlesPresentation = () => (
                   {data.articlesByTitle.map(article => (
                     <tr className='search-articles' key={sum += 1}>
                       <td>
-                        <a href={`https://heimdal-frontend.herokuapp.com/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
+                        <a href={`/${article.user.profile.username}/articles/${article.slug}`}>{article.title}</a>
                         <br />
                         <span>{article.user.profile.username}</span>
                       </td>
@@ -111,7 +118,7 @@ const SearchArticlesPresentation = () => (
                   {data.articlesByTags.map(article => (
                     <tr className='search-articles' key={sum += 1}>
                       <td>
-                        <a href={`https://heimdal-frontend.herokuapp.com/${article.article.user.profile.username}/articles/${article.article.slug}`}>{article.article.title}</a>
+                        <a href={`/${article.article.user.profile.username}/articles/${article.article.slug}`}>{article.article.title}</a>
                         <br />
                         <span>{article.article.user.profile.username}</span>
                       </td>

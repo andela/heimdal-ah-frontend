@@ -6,7 +6,6 @@ import React, { Component } from 'react';
 import { getArticles } from '../../../actions/homeArticles/articleActions';
 import StanadardCard from './StandardCards';
 import FeaturedCard from './FeaturedCard';
-// import ArticleCard from '../../ui/cards/ArticleCard/ArticleCard';
 import RecentCard from './RecentCard';
 import LoadingSpinner from '../../ui/loadingSpinners/LoadingSpinner';
 
@@ -159,11 +158,7 @@ class LandingPage extends Component {
         </div>
       );
     }
-    return (
-      <div className="col-12 text-center">
-        <LoadingSpinner isLoading />
-      </div>
-    );
+    return <LoadingSpinner isLoading />;
   }
 }
 

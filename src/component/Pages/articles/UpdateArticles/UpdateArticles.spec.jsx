@@ -3,7 +3,7 @@ import React from 'react';
 import sinon from 'sinon';
 import UpdateArticlesPresentation from './UpdateArticlesPresentation';
 import { UpdateArticles } from './UpdateArticles';
-import getArticlesById from '../../../../actions/ArticleActions/getArticlesByIdActions';
+import { getArticleById } from '../../../../actions/ArticleActions/getArticlesByIdActions';
 import updateArticles from '../../../../actions/ArticleActions/updateArticlesActions';
 import setToken from '../../../../config/setToken';
 
@@ -56,7 +56,7 @@ describe('Update Articles Component Test Suite', () => {
       const token = localStorage.getItem('access-token');
       setToken(token);
       wrapper.instance().componentDidMount();
-      expect(jest.fn(getArticlesById(identifier)).mock.calls.length).toBe(0);
+      expect(jest.fn(getArticleById(identifier)).mock.calls.length).toBe(0);
     });
   });
 });
