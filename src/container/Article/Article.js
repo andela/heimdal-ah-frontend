@@ -5,13 +5,16 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Pagination from 'rc-pagination';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
-import { getArticles } from '../../actions/ArticleActions/articles';
+import { getArticles, getArticlesByPage } from '../../actions/ArticleActions/articles';
 import { getUnpublishedArticles } from '../../actions/ArticleActions/unPublishedAction';
 import ArticleCard from '../../component/ui/cards/ArticleCard/ArticleCard';
 import LoadingSpinner from '../../component/ui/loadingSpinners/LoadingSpinner';
 import '../../component/ui/cards/ArticleCard/articleCard.scss';
+import 'rc-pagination/assets/index.css';
+
 
 /**
  * article class
@@ -24,15 +27,15 @@ export class Article extends Component {
     };
     this.handleUnpublishedClick = this.handleUnpublishedClick.bind(this);
     this.handlePublishedClick = this.handlePublishedClick.bind(this);
+    this.onChange = this.onChange.bind(this);
   }
 
   componentDidMount() {
-    const { getArticles, getUnpublishedArticles } = this.props.actions;
-
-    getArticles();
+    const { getUnpublishedArticles, getArticlesByPage } = this.props.actions;
     if ([1, 3].includes(this.props.user.roleId)) {
       getUnpublishedArticles();
     }
+    getArticlesByPage(3, 0);
   }
 
   getUserArticles = articles => (
@@ -46,6 +49,33 @@ export class Article extends Component {
     </div>
   );
 
+  returnPaginate = () => (
+    <div className='react-paginate mx-auto text-center mt-5'>
+      <Pagination
+        defaultPageSize={1}
+        defaultCurrent={5}
+        current={this.props.articles.metadata.currentPage}
+        onChange={this.onChange}
+        total={this.props.articles.metadata.totalPages}
+      />
+    </div>
+  )
+  // data is current
+
+  onChange = (data) => {
+    // console.log('pr', this.props);
+    const newSelectedNum = data;
+    const { getArticlesByPage } = this.props.actions;
+    const size = 3;
+    if (data === 1) {
+      const offset = ((size * newSelectedNum) - data);
+      getArticlesByPage(size, offset);
+    } else {
+      const offset = ((size * newSelectedNum) - data + 1);
+      getArticlesByPage(size, offset);
+    }
+  }
+
   handlePublishedClick(event) {
     event.preventDefault();
     this.setState({ displaying: 'published' });
@@ -55,6 +85,7 @@ export class Article extends Component {
     event.preventDefault();
     this.setState({ displaying: 'unpublished' });
   }
+
 
   render() {
     const { isLoading } = this.props.articles;
@@ -70,8 +101,12 @@ export class Article extends Component {
               <span> | </span>
               <Link to='#' onClick={this.handleUnpublishedClick} className=''>Unpublished Articles</Link>
             </div>
-            { this.getUserArticles(this.props.articles.rows) }
+            { this.getUserArticles(this.props.articles.articles.rows) }
             {/* {this.getUserArticles(this.props.unpublishedarticle.rows)}  */}
+            <div className='react-paginate mx-auto text-center mt-5'>
+              {this.returnPaginate()}
+
+            </div>
           </div>
         );
       }
@@ -83,12 +118,14 @@ export class Article extends Component {
             <Link to='#' onClick={this.handleUnpublishedClick} className=''>Unpublished Articles</Link>
           </div>
           {this.getUserArticles(this.props.unpublishedarticle.rows)}
+          {this.returnPaginate()}
         </div>
       );
     }
     return (
       <div>
-        { this.getUserArticles(this.props.articles.rows) }
+        { this.getUserArticles(this.props.articles.articles.rows) }
+        {this.returnPaginate()}
       </div>
     );
   }
@@ -99,6 +136,7 @@ const matchDispatchToProps = dispatch => ({
     {
       getArticles,
       getUnpublishedArticles,
+      getArticlesByPage,
     },
     dispatch,
   ),
