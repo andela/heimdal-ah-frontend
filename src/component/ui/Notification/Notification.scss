@@ -44,11 +44,6 @@ $break-large: 1200px;
   width: 70%;
   font-size: 15px;
   margin-bottom: 30px;
-
-  &.notification_card:hover {
-    color: white;
-    background: #606e86;
-  }
   
   @media screen and (max-width: $break-small) {
     width: 90%;
@@ -123,6 +118,7 @@ $break-large: 1200px;
     .mark_as_read_toggle_a {
       border: 1px solid #5d6e88;
       padding: 10px;
+
     }
     .mark_as_read_toggle_b {
       border: 1px solid #5d6e88;

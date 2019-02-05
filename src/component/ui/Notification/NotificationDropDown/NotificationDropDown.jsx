@@ -24,7 +24,8 @@ function NotificationDropDown(props) {
   const { userId } = props.user.user;
   let notifications = props.result.rows;
   notifications = notifications || [];
-  const renderCard = () => notifications.map((item) => {
+  const arrayData = notifications.slice(0, 4);
+  const renderCard = () => arrayData.map((item) => {
     const { profile = {} } = item;
     const { data = {} } = item;
     return (
@@ -33,20 +34,20 @@ function NotificationDropDown(props) {
           {/* <div className="notification_card_a col-3">
             <img className="notification_card_img" src={profile.image} alt="user-profile-img" />
           </div> */}
-          <div className='row notification_dropdown'>
-            <div className=''>
+          <div className='row notification_dropdown col-12'>
+            <div className='col-4'>
               <div>
                 {' '}
                 <span>{profile.username || item.senderUsername}</span>
               </div>
             </div>
-            <div className=''>
+            <div className='col-4'>
             Notification:
               {' '}
               <span>{item.type.toLowerCase()}</span>
               {' '}
             </div>
-            <div>
+            <div className='col-4'>
               <span className="notification_card_mark_read">
                 <NotificationCheckButton
                   isRead={item.isRead}

@@ -17,7 +17,6 @@ import Profile from '../component/Pages/Profile/Profile';
 import ProfileEdit from '../component/Pages/ProfileEdit/ProfileEdit';
 import Articles from '../component/Pages/Article/ArticleListPage';
 import ProtectedRoute from './ProtectedRoute';
-import UserDashboardPage from '../component/Pages/UserDashboardPage/UserDashboardPage';
 import Notification from '../component/ui/Notification/Notification';
 
 import ScrollToTop from './ScrollToTop.jsx';
@@ -38,10 +37,7 @@ const Routes = () => (
         <Route exact path='/update-articles' component={UpdateArticlesPresentation} />
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
         <Route exact path='/update-password' component={UpdatePasswordPresentation} />
-        <ProtectedRoute exact path='/dashboard' component={UserDashboardPage} />
-        <UserDashboardPage>
-          <Route exact path='/notification' component={Notification} />
-        </UserDashboardPage>
+        <ProtectedRoute exact path='/notification' component={Notification} />
         <ProtectedRoute exact path='/:username' component={Profile} />
         <Route exact path="/articles/update" component={UpdateArticlesPresentation} />
         <ProtectedRoute exact path="/:username/edit" component={ProfileEdit} />
