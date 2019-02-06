@@ -41,9 +41,10 @@ const ReadSingleArticlePresentation = (props) => {
           <div className="bookmark-row">
             <div />
             <div>
-              {props.bookmark
-                ? <i className="fas fa-bookmark fa-3x bookmark-logo" onClick={props.deleteBookmark} />
-                : <i className="far fa-bookmark fa-3x bookmark-logo" onClick={props.createBookmark} />
+              {auth.isAuthenticated
+                    && (props.bookmark
+                      ? <i className="fas fa-bookmark fa-3x bookmark-logo" onClick={props.deleteBookmark} />
+                      : <i className="far fa-bookmark fa-3x bookmark-logo" onClick={props.createBookmark} />)
                 }
             </div>
           </div>
@@ -54,10 +55,10 @@ const ReadSingleArticlePresentation = (props) => {
                 <div>
                   {props.articleId && <ArticlesRating articleId={props.articleId} />}
                 </div>
-                <div className="ratings" />
-                <div className="glow">
-                  <Glow active handleGlow={() => {}} />
-                  <span className="likesCount">{props.likesCount}</span>
+                <div className='ratings' />
+                <div className='glow'>
+                  <Glow active={props.active} handleGlow={props.handleGlow} />
+                  <span className='likesCount'>{ props.likesCount }</span>
                 </div>
               </div>
               <div className="line" />
@@ -85,7 +86,7 @@ const ReadSingleArticlePresentation = (props) => {
                 {auth.isAuthenticated
                     && (author ? (
                       <Link
-                        to={`/update-articles/update?id=${props.articleId}`}
+                        to={`/update-articles?id=${props.articleId}`}
                         className="btn btn-secondary"
                       >
                         edit

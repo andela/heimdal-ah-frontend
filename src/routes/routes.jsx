@@ -5,7 +5,8 @@ import NotFound from '../component/Pages/NotFound.jsx';
 import MainLayout from '../component/Layout/MainLayout/MainLayout';
 import CreateArticle from '../component/Pages/articles/createArticle/CreateArticles';
 import SingleArticlePage from '../component/Pages/articles/ReadSingleArticle/ReadSingleArticle';
-import HomePage from '../component/Pages/HomePage.jsx';
+// import HomePage from '../component/Pages/HomePage.jsx';
+import LandingPage from '../component/Pages/LandingPage/index';
 import SocialAuth from '../component/ui/SocialAuth/SocialAuth';
 import PasswordResetPresentation from '../component/Pages/PasswordResetPage/PasswordResetPresentation';
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
@@ -19,12 +20,11 @@ import ProtectedRoute from './ProtectedRoute';
 import ScrollToTop from './ScrollToTop.jsx';
 import BookmarkList from '../component/Pages/articles/bookmarksArticles/BookmarksList';
 
-
 const Routes = () => (
   <MainLayout>
     <ScrollToTop>
       <Switch>
-        <Route exact path='/' component={HomePage} />
+        <Route exact path='/' component={LandingPage} />
         <Route exact path='/social-auth' component={SocialAuth} />
         <Route exact path='/resetpassword' component={PasswordResetPresentation} />
         <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
@@ -33,16 +33,12 @@ const Routes = () => (
         <Route exact path='/:username/articles/:slug' component={SingleArticlePage} />
         <Route exact path='/bookmarks' component={BookmarkList} />
         <Route exact path='/articles/:slug' component={ReadSingleArticleError} />
-        <Route exact path='/articles/update' component={UpdateArticlesPresentation} />
-        <Route exact path='/resetpassword' component={PasswordResetPresentation} />
-        <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
+        <Route exact path='/update-articles' component={UpdateArticlesPresentation} />
         <Route exact path='/reset-password' component={PasswordResetPresentation} />
-        <Route exact path='/update-password' component={UpdatePasswordPresentation} />
-        <Route exact path='/reset-password' component={PasswordResetPresentation} />
-        <Route exact path='/update-password' component={UpdatePasswordPresentation} />
         <Route exact path='/all-stories' component={Articles} />
         <ProtectedRoute exact path='/:username' component={Profile} />
-        <ProtectedRoute exact path='/:username/edit' component={ProfileEdit} />
+        <Route exact path="/articles/update" component={UpdateArticlesPresentation} />
+        <ProtectedRoute exact path="/:username/edit" component={ProfileEdit} />
         <Route component={NotFound} />
       </Switch>
       <ReduxToastr />

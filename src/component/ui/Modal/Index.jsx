@@ -36,8 +36,18 @@ class TriggerModal extends Component {
           label={this.props.label}
           onClick={this.toggle}
         />
-        <Modal isOpen={this.state.display} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle} />
+        <Modal
+          isOpen={this.state.display}
+          toggle={this.toggle}
+          className={this.props.className}
+          size={this.props.size}
+          centered
+        >
+          {this.props.title
+            ? <ModalHeader toggle={this.toggle}>{this.props.title}</ModalHeader>
+            : <ModalHeader toggle={this.toggle} />
+
+        }
           <ModalBody>{children}</ModalBody>
         </Modal>
       </Fragment>
