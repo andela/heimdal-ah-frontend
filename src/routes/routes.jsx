@@ -21,14 +21,6 @@ import ScrollToTop from './ScrollToTop.jsx';
 import BookmarkList from '../component/Pages/articles/bookmarksArticles/BookmarksList';
 import TaggedArticles from '../component/Pages/Article/TaggedArticles.jsx';
 
-// class TaggedArticles {
-//   console.log(props.match);
-
-//   render () {
-
-//     return (<div>Tag page</div>);
-//   }
-// };
 
 const Routes = () => (
   <MainLayout>

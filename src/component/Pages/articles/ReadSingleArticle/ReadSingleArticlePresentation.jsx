@@ -29,7 +29,7 @@ const timeAgo = new TimeAgo('en-US');
 const ReadSingleArticlePresentation = (props) => {
   const { author = {}, auth } = props;
   const username = `${props.username.substring(0, 9)}...`;
-  const userImage = this.props.userImage || <i className="fas fa-7x fa-user-circle" />;
+  const userImage = props.userImage || <i className="fas fa-7x fa-user-circle" />;
   if (props) {
     return (
       <Fragment>
@@ -102,7 +102,7 @@ const ReadSingleArticlePresentation = (props) => {
                   <FacebookShareButton
                     className="no-outline"
                     url={window.location}
-                    quote={this.props.title}
+                    quote={props.title}
                   >
                     <i className="fab fa-4x fa-facebook-square facebook" />
                     <div>Share</div>
@@ -111,7 +111,7 @@ const ReadSingleArticlePresentation = (props) => {
                     className="no-outline"
                     url={window.location}
                     title={`Kindly check out this awesome article ${
-                      this.props.title
+                      props.title
                     } on Heimdal.com`}
                   >
                     <i className="fab fa-4x fa-twitter-square twitter" />
@@ -121,50 +121,13 @@ const ReadSingleArticlePresentation = (props) => {
                 <div className="text-center col-12">
                   <EmailShareButton
                     className="no-outline"
-                    subject={this.props.title}
+                    subject={props.title}
                     body={`Kindly check out this awesome article ${window.location} on Heimdal.com`}
                   >
                     <i className="fa fa-4x fa-envelope" />
                     <div>Share</div>
                   </EmailShareButton>
                 </div>
-              </div>
-              <div>
-                <hr />
-                <h5>tags</h5>
-                <div className="tag-buttons">
-                  <div className="radio">
-                    <input type="radio" name="optradio" checked />
-                  </div>
-                  <div className="radio">
-                    <input type="radio" name="optradio" />
-                  </div>
-                  <div className="radio disabled">
-                    <input type="radio" name="optradio" disabled />
-                  </div>
-                  <div className="radio">
-                    <input type="radio" name="optradio" checked />
-                  </div>
-                  <div className="radio">
-                    <input type="radio" name="optradio" />
-                  </div>
-                  <div className="radio disabled">
-                    <input type="radio" name="optradio" disabled />
-                  </div>
-                  <div className="radio">
-                    <input type="radio" name="optradio" checked />
-                  </div>
-                  <div className="radio">
-                    <input type="radio" name="optradio" />
-                  </div>
-                  <div className="radio disabled">
-                    <input type="radio" name="optradio" disabled />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <hr />
-                <h5>Recent articles</h5>
               </div>
             </div>
             <div />
@@ -175,10 +138,6 @@ const ReadSingleArticlePresentation = (props) => {
     );
   }
 };
-
-const mapStateToProps = state => ({
-  auth: state.auth,
-});
 
 const mapStateToProps = state => ({
   auth: state.auth,
