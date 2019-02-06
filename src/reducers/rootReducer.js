@@ -25,6 +25,7 @@ import articleReducer from './Article/articleReducer';
 import profileReducer from './profile/profileReducer';
 import homeReducer from './homeReducer';
 import loaderReducer from './loaderReducer';
+import taggedArticlesReducer from './taggedArticles';
 
 
 const rootReducer = combineReducers({
@@ -52,6 +53,7 @@ const rootReducer = combineReducers({
   getallbookmarks: getAllBookmarksReducer,
   createbookmarks: createBookmarksReducer,
   deleteBookmarks: deleteBookmarksReducer,
+  taggedArticles: taggedArticlesReducer,
 });
 
 export default rootReducer;

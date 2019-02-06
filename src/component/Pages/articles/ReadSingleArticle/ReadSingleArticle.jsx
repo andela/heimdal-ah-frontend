@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable max-len */
 import React, { Component, Fragment } from 'react';
 import { bindActionCreators } from 'redux';
@@ -14,6 +15,8 @@ import createBookmarkAction from '../../../../actions/ArticleActions/bookmarksAc
 import deleteBookmarksActions from '../../../../actions/ArticleActions/bookmarksAction/deleteBookmarksActions';
 import LoadingSpinner from '../../../ui/loadingSpinners/LoadingSpinner';
 
+import setArticleId from '../../../../utils/setArticleId';
+import Comment from '../../../ui/Comment/Comment';
 
 /**
  * @description - Read a single article posted by a user
@@ -37,12 +40,11 @@ export class ReadSingleArticle extends Component {
     };
   }
 
-
   /**
- * @description - component mounts method runs as soon as the page loads
- * * @description token - decode gets the user token from local storage
- * * @description  - decode gets the user token from local storage
- */
+   * @description - component mounts method runs as soon as the page loads
+   * * @description token - decode gets the user token from local storage
+   * * @description  - decode gets the user token from local storage
+   */
   componentDidMount() {
     const { slug } = this.props.match.params;
     this.props.actions.getArticleById(slug);
@@ -50,10 +52,10 @@ export class ReadSingleArticle extends Component {
   }
 
   /**
- * @description - Handles props being received
- * @param {string} nextProps - props being passed
- * @returns {component} update state
- */
+   * @description - Handles props being received
+   * @param {string} nextProps - props being passed
+   * @returns {component} update state
+   */
   componentWillReceiveProps(nextProps) {
     this.setState({ ...nextProps, singleArticle: nextProps.singleArticle });
     const bookmarks = nextProps.bookmark.payload.rows;
@@ -78,10 +80,21 @@ export class ReadSingleArticle extends Component {
 
 
   /**
- * @description - render single article page
- * @param {props} status - the status returned from dispatching actions
- * @returns {component} the render component
- */
+   *@description checkuser id
+   */
+  checkUserId = (likes, userId) => likes && likes.some(item => item.userId === userId);
+
+  handleGlow = () => {
+    if (this.props.userId) {
+      this.props.actions.glow(this.state.singleArticle.id, this.props.userId);
+    }
+  };
+
+  /**
+   * @description - render single article page
+   * @param {props} status - the status returned from dispatching actions
+   * @returns {component} the render component
+   */
   render() {
     if (this.props.singleArticle) {
       const author = decodeToken(this.state.singleArticle.userId);
@@ -113,6 +126,7 @@ export class ReadSingleArticle extends Component {
               </Fragment>
             )
           }
+          {this.props.singleArticle.id && <Comment articleId={this.props.singleArticle.id} />}
         </Fragment>
       );
     }
@@ -124,7 +138,6 @@ ReadSingleArticlePresentation.defaultProps = {
   username: '@username',
 };
 
-
 ReadSingleArticlePresentation.propTypes = {
   username: PropTypes.string,
 };
@@ -135,6 +148,7 @@ const mapStateToprops = state => ({
   bookmark: state.getallbookmarks,
   deleteBookmarks: state.deleteBookmarks,
   createBookmarks: state.createbookmarks,
+  userId: state.auth.user.userId,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -144,9 +158,13 @@ const mapDispatchToProps = dispatch => ({
       getAllBookmarksAction,
       createBookmarkAction,
       deleteBookmarksActions,
+      glow,
     },
     dispatch,
   ),
 });
 
-export default connect(mapStateToprops, mapDispatchToProps)(ReadSingleArticle);
+export default connect(
+  mapStateToprops,
+  mapDispatchToProps,
+)(ReadSingleArticle);

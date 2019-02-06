@@ -6,7 +6,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import './activeUser.scss';
 
-
 import logout from '../../../actions/auth/logout';
 
 const ActiveUser = ({ username, image }) => (
@@ -14,7 +13,7 @@ const ActiveUser = ({ username, image }) => (
     <div className="dropdown">
       <img
         className="notification_icon dropbtn"
-        src="/src/images/Icons.png"
+        src="https://res.cloudinary.com/naijavibz/image/upload/v1549376036/Icons.png"
         alt="notification-logo"
       />
       <div className="dropdown-content">
@@ -31,10 +30,10 @@ const ActiveUser = ({ username, image }) => (
       </div>
     </div>
     <div className="dropdown">
-      <img className="profile-icon" src={image || '/src/images/Group 2.1.png'} alt="profile-logo" />
+      <img className="profile-icon" src={image || 'https://res.cloudinary.com/naijavibz/image/upload/v1549376036/Group_2.1.png'} alt="profile-logo" />
       <div className="dropdown-content">
         <div className="username">
-          @
+@
           {username}
         </div>
         <div>
@@ -57,7 +56,7 @@ const ActiveUser = ({ username, image }) => (
         </div>
         <div className="user-settings">
           <div>
-            <a href={username}>Profile</a>
+            <a href={`/${username}`}>Profile</a>
           </div>
           <div>
             <a href="/">Logout</a>
@@ -67,7 +66,6 @@ const ActiveUser = ({ username, image }) => (
     </div>
   </div>
 );
-
 
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(

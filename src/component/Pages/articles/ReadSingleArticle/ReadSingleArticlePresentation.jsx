@@ -13,6 +13,7 @@ import TimeAgo from 'javascript-time-ago';
 import moment from 'moment';
 import { connect } from 'react-redux';
 import english from 'javascript-time-ago/locale/en';
+import { FacebookShareButton, TwitterShareButton, EmailShareButton } from 'react-share';
 import Glow from '../../../ui/Buttons/glow/Glow';
 import './ReadSingleArticle.scss';
 import ArticlesRating from '../../../ui/Rating/ArticlesRating';
@@ -27,9 +28,8 @@ const timeAgo = new TimeAgo('en-US');
  */
 const ReadSingleArticlePresentation = (props) => {
   const { author = {}, auth } = props;
-
-
   const username = `${props.username.substring(0, 9)}...`;
+  const userImage = this.props.userImage || <i className="fas fa-7x fa-user-circle" />;
   if (props) {
     return (
       <Fragment>
@@ -73,7 +73,7 @@ const ReadSingleArticlePresentation = (props) => {
             </div>
             <div className="user-section">
               <div className="user-profile">
-                <img className="user-image" src={props.userImage} alt="user" />
+                <img className="user-image" src={userImage} alt="user" />
                 <br />
                 <br />
                 <a href={`/${props.username}`} className="user-link">
@@ -99,8 +99,34 @@ const ReadSingleArticlePresentation = (props) => {
                 <br />
                 <br />
                 <div className="social-media">
-                  <i className="fab fa-4x fa-facebook-square facebook" />
-                  <i className="fab fa-4x fa-twitter-square twitter" />
+                  <FacebookShareButton
+                    className="no-outline"
+                    url={window.location}
+                    quote={this.props.title}
+                  >
+                    <i className="fab fa-4x fa-facebook-square facebook" />
+                    <div>Share</div>
+                  </FacebookShareButton>
+                  <TwitterShareButton
+                    className="no-outline"
+                    url={window.location}
+                    title={`Kindly check out this awesome article ${
+                      this.props.title
+                    } on Heimdal.com`}
+                  >
+                    <i className="fab fa-4x fa-twitter-square twitter" />
+                    <div>Share</div>
+                  </TwitterShareButton>
+                </div>
+                <div className="text-center col-12">
+                  <EmailShareButton
+                    className="no-outline"
+                    subject={this.props.title}
+                    body={`Kindly check out this awesome article ${window.location} on Heimdal.com`}
+                  >
+                    <i className="fa fa-4x fa-envelope" />
+                    <div>Share</div>
+                  </EmailShareButton>
                 </div>
               </div>
               <div>
@@ -149,6 +175,10 @@ const ReadSingleArticlePresentation = (props) => {
     );
   }
 };
+
+const mapStateToProps = state => ({
+  auth: state.auth,
+});
 
 const mapStateToProps = state => ({
   auth: state.auth,
