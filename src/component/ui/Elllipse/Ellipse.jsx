@@ -37,7 +37,7 @@ class Ellipse extends Component {
           />
         </DropdownToggle>
         <DropdownMenu>
-          <ModalButton type='signup' label='view history' title='Edit History'>
+          <ModalButton type='signup' label='edit history' title='Edit History'>
             <CommentEditHistory articleId={articleId} commentId={commentId} />
           </ModalButton>
         </DropdownMenu>

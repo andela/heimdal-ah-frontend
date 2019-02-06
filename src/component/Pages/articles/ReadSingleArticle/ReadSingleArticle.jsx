@@ -14,8 +14,6 @@ import getAllBookmarksAction from '../../../../actions/ArticleActions/bookmarksA
 import createBookmarkAction from '../../../../actions/ArticleActions/bookmarksAction/createBookmarkAction';
 import deleteBookmarksActions from '../../../../actions/ArticleActions/bookmarksAction/deleteBookmarksActions';
 import LoadingSpinner from '../../../ui/loadingSpinners/LoadingSpinner';
-
-import setArticleId from '../../../../utils/setArticleId';
 import Comment from '../../../ui/Comment/Comment';
 
 /**
