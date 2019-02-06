@@ -9,7 +9,9 @@ const propTypes = {};
 
 const defaultProps = {};
 
-// eslint-disable-next-line require-jsdoc
+ /**
+ * @description - BookmarksList- List all avaliable bookmark by a user
+ */
 export class BookmarksList extends Component {
   constructor(props) {
     super(props);
