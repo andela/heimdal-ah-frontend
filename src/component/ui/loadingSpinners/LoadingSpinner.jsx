@@ -9,18 +9,24 @@
 // export default LoadingSpinner;
 
 import React from 'react';
-import { css } from '@emotion/core';
-import { DotLoader } from 'react-spinners';
+import { FadeLoader } from 'react-spinners';
 
-const override = css`
+const override = `
   display: block;
   margin: 0 auto;
-  border-color: red;
 `;
 
-const LoadingSpinner = ({ isLoading }) => (
-  <div className="sweet-loading">
-    <DotLoader css={override} sizeUnit="px" size={150} color="#2C4D45" loading={isLoading} />
+const LoadingSpinner = ({ isLoading, size, color }) => (
+  <div className="col-md-12 text-center">
+    <div className="sweet-loading">
+      <FadeLoader
+        css={override}
+        sizeUnit="px"
+        size={size || 100}
+        color={color || '#2C4D45'}
+        loading={isLoading}
+      />
+    </div>
   </div>
 );
 

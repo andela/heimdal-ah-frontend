@@ -8,7 +8,7 @@ exports[`testing the logo should create a snapshot of the logo 1`] = `
   <img
     alt="heimdal-logo"
     className="logo"
-    src="/src/images/logo.png"
+    src="https://res.cloudinary.com/naijavibz/image/upload/v1549376036/logo.png"
   />
 </Link>
 `;

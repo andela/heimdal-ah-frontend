@@ -14,9 +14,6 @@ const miniCssPlugin = new MiniCssExtractPlugin({
 
 module.exports = {
   entry: ['@babel/polyfill', './src/index.jsx'],
-  resolve: {
-    extensions: ['.jsx', '.js', '.json'],
-  },
   output: {
     filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist'),
@@ -31,20 +28,30 @@ module.exports = {
       },
       {
         test: /\.s?(a|c)ss$/,
-        use: [{
-          loader: 'style-loader',
-        }, {
-          loader: 'css-loader',
-        }, {
-          loader: 'sass-loader',
-        }],
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
       },
       {
         test: /\.(jpe?g|gif|png|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
         use: [
+          'file-loader',
           {
-            loader: 'file-loader?name=images/[name].[ext]',
-          }],
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true,
+              disable: true,
+            },
+          },
+        ],
       },
     ],
   },
@@ -58,7 +65,9 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.BASE_URL_PROD': JSON.stringify(process.env.BASE_URL_PROD),
       'process.env.CLOUDINARY_URL': JSON.stringify(process.env.CLOUDINARY_URL),
-      'process.env.CLOUDINARY_UPLOAD_PRESET': JSON.stringify(process.env.CLOUDINARY_UPLOAD_PRESET),
+      'process.env.CLOUDINARY_UPLOAD_PRESET': JSON.stringify(
+        process.env.CLOUDINARY_UPLOAD_PRESET,
+      ),
     }),
     miniCssPlugin,
     new HtmlWebPackPlugin({
@@ -66,4 +75,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(['dist']),
   ],
+  resolve: {
+    extensions: ['.js', '.jsx', '.json', '.css', '.jpg', '.png'],
+  },
 };
