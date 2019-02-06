@@ -81,4 +81,6 @@ export const ACTIONS = keyMirror({
   SET_MAIN_ARTICLES: null,
   SET_RECENT_ARTICLES: null,
   GET_ALL_UNPUBLISHED_ARTICLES: null,
+
+  SET_TAGGED_ARTICLES: null,
 });

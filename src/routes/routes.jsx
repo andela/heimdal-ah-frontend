@@ -17,6 +17,16 @@ import ProfileEdit from '../component/Pages/ProfileEdit/ProfileEdit';
 import Articles from '../component/Pages/Article/ArticleListPage';
 import ProtectedRoute from './ProtectedRoute';
 import ScrollToTop from './ScrollToTop.jsx';
+import TaggedArticles from '../component/Pages/Article/TaggedArticles.jsx';
+
+// class TaggedArticles {
+//   console.log(props.match);
+
+//   render () {
+
+//     return (<div>Tag page</div>);
+//   }
+// };
 
 const Routes = () => (
   <MainLayout>
@@ -35,6 +45,7 @@ const Routes = () => (
         <ProtectedRoute exact path="/:username" component={Profile} />
         <Route exact path="/articles/update" component={UpdateArticlesPresentation} />
         <ProtectedRoute exact path="/:username/edit" component={ProfileEdit} />
+        <ProtectedRoute exact path="/articles/tag/:tagName" component={TaggedArticles} />
         <Route component={NotFound} />
       </Switch>
       <ReduxToastr />

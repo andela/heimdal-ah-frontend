@@ -6,6 +6,9 @@ const errorResponse = ({
   if (response.status === 400) {
     return dispatch(setErrors(response.data.errors));
   }
+  if (response.status === 404) {
+    return dispatch(setErrors({ mainError: response.data.message }));
+  }
   if (response.status === 409) {
     return dispatch(
       setErrors({
