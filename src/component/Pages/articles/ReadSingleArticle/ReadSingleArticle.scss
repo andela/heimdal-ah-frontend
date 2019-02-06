@@ -25,7 +25,11 @@
     grid-gap: 1em;
     height: 150px;
     .bookmark-logo {
-      width: 25px;
+      color: #6a7390;
+      display:'none',
+    }
+    .bookmark-logo:hover {
+      color: #383e4e;
     }
   }
 
@@ -59,12 +63,11 @@
       padding: 5%;
       display: grid;
       grid-template-rows: 35% 25% 30%;
-      height: 1400px;
+      height: 520px;
 
       .follow-btn {
         background-color: #153771;
         color: white;
-        // display: none;
         align-self: center;
       }
       .user-link {
@@ -73,7 +76,6 @@
       }
       .edit-btn {
         align-self: center;
-        // display: none;
       }
 
       .user-profile {

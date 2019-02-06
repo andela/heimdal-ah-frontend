@@ -17,10 +17,28 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <i
-        className="fa fa-spin fa-spinner"
-      />,
-      "className": "col-md-12 text-center d-none",
+      "children": <div
+        className="sweet-loading"
+      >
+        <onlyUpdateForKeys(Loader)
+          color="#2C4D45"
+          css="
+  display: block;
+  margin: 0 auto;
+"
+          height={15}
+          heightUnit="px"
+          loading={true}
+          margin="2px"
+          radius={2}
+          radiusUnit="px"
+          size={100}
+          sizeUnit="px"
+          width={5}
+          widthUnit="px"
+        />
+      </div>,
+      "className": "col-md-12 text-center",
     },
     "ref": null,
     "rendered": Object {
@@ -28,11 +46,52 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "className": "fa fa-spin fa-spinner",
+        "children": <onlyUpdateForKeys(Loader)
+          color="#2C4D45"
+          css="
+  display: block;
+  margin: 0 auto;
+"
+          height={15}
+          heightUnit="px"
+          loading={true}
+          margin="2px"
+          radius={2}
+          radiusUnit="px"
+          size={100}
+          sizeUnit="px"
+          width={5}
+          widthUnit="px"
+        />,
+        "className": "sweet-loading",
       },
       "ref": null,
-      "rendered": null,
-      "type": "i",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "color": "#2C4D45",
+          "css": "
+  display: block;
+  margin: 0 auto;
+",
+          "height": 15,
+          "heightUnit": "px",
+          "loading": true,
+          "margin": "2px",
+          "radius": 2,
+          "radiusUnit": "px",
+          "size": 100,
+          "sizeUnit": "px",
+          "width": 5,
+          "widthUnit": "px",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
     },
     "type": "div",
   },
@@ -42,10 +101,28 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <i
-          className="fa fa-spin fa-spinner"
-        />,
-        "className": "col-md-12 text-center d-none",
+        "children": <div
+          className="sweet-loading"
+        >
+          <onlyUpdateForKeys(Loader)
+            color="#2C4D45"
+            css="
+  display: block;
+  margin: 0 auto;
+"
+            height={15}
+            heightUnit="px"
+            loading={true}
+            margin="2px"
+            radius={2}
+            radiusUnit="px"
+            size={100}
+            sizeUnit="px"
+            width={5}
+            widthUnit="px"
+          />
+        </div>,
+        "className": "col-md-12 text-center",
       },
       "ref": null,
       "rendered": Object {
@@ -53,11 +130,52 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "fa fa-spin fa-spinner",
+          "children": <onlyUpdateForKeys(Loader)
+            color="#2C4D45"
+            css="
+  display: block;
+  margin: 0 auto;
+"
+            height={15}
+            heightUnit="px"
+            loading={true}
+            margin="2px"
+            radius={2}
+            radiusUnit="px"
+            size={100}
+            sizeUnit="px"
+            width={5}
+            widthUnit="px"
+          />,
+          "className": "sweet-loading",
         },
         "ref": null,
-        "rendered": null,
-        "type": "i",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "color": "#2C4D45",
+            "css": "
+  display: block;
+  margin: 0 auto;
+",
+            "height": 15,
+            "heightUnit": "px",
+            "loading": true,
+            "margin": "2px",
+            "radius": 2,
+            "radiusUnit": "px",
+            "size": 100,
+            "sizeUnit": "px",
+            "width": 5,
+            "widthUnit": "px",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
       },
       "type": "div",
     },

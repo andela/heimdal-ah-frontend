@@ -9,7 +9,9 @@ import articles from './Article/articleReducer';
 import articleRating from './ArticlesRating/articlesRatingReducer';
 import getarticleRating from './ArticlesRating/getArticlesRatingReducer';
 import unPublishedArticle from './Article/unpublishedArticleReducer';
-
+import getAllBookmarksReducer from './bookmarksReducer/getAllBookmarksReducer';
+import createBookmarksReducer from './bookmarksReducer/createBookmarksReducer';
+import deleteBookmarksReducer from './bookmarksReducer/deleteBookmarksReducer';
 
 export {
   createArticleReducer,
@@ -23,4 +25,7 @@ export {
   articleRating,
   getarticleRating,
   unPublishedArticle,
+  getAllBookmarksReducer,
+  createBookmarksReducer,
+  deleteBookmarksReducer,
 };

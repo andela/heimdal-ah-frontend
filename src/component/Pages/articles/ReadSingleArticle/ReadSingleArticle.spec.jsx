@@ -15,6 +15,7 @@ describe('Single Article Component Test Suite', () => {
       };
       const actions = {
         getArticleById: () => {},
+        getAllBookmarksAction: () => {},
       };
       const singleArticle = {
         id: 2,

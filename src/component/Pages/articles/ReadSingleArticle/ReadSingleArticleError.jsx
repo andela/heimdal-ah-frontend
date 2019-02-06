@@ -5,7 +5,7 @@ const ReadSingleArticleError = () => (
     <h3>
         Sorry This Article
       <br />
-      Sorry This Article Does Not Exist
+      oops something went wrong!
     </h3>
     <br />
     <a to='/'>
