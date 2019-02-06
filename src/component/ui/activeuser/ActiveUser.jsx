@@ -11,6 +11,7 @@ import NotificationDropDown from '../Notification/NotificationDropDown/Notificat
 
 import logout from '../../../actions/auth/logout';
 
+
 const ActiveUser = ({ username, image }) => (
   <div className="active_user_logo">
     <div className="dropdown">

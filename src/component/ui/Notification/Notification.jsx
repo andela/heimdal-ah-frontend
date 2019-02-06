@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable react/no-unused-prop-types */
 /* eslint-disable react/require-default-props */
 /* eslint-disable react/forbid-prop-types */
@@ -63,15 +64,13 @@ class Notification extends Component {
   render() {
     return (
       <div>
-        {/* { this.props.data && this.props.data.message && <Alert type='success' message={this.props.data.message} title='Notifications' />} */}
         <div className='container notification_header'>
           <div className='notification_container'>
             <div>Notification</div>
-            <p className='notification_header_sm'>Your Notifications</p>
           </div>
           <div className='subscribe_btn_container'>
             <button onClick={e => this.subscribe(e)} className='subscribe_btn' type='submit'>
-              {this.state.subscribed ? 'UnSubscribe' : 'Subscribe'}
+              {this.state.subscribed ? 'Unsubscribe' : 'Subscribe'}
             </button>
           </div>
         </div>

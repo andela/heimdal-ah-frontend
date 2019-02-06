@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 import { toggleNotificationRead } from '../../../../../actions/NotificationActions/NotificationAction';
 
 /**
@@ -14,7 +14,7 @@ import { toggleNotificationRead } from '../../../../../actions/NotificationActio
   * @property {String|Object} className - String className compatible object for styling
   * @return {Node} React node containing Notification checkbox view
 */
-class NotificationCheckButton extends Component {
+export class NotificationCheckButton extends Component {
   MarkAsRead = (e) => {
     e.preventDefault();
     const { userId, notificationId } = this.props;

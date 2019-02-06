@@ -10,7 +10,7 @@ $break-large: 1200px;
   justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 60px;
-  
+
   @media screen and (max-width: $break-small) {
     font-size: 20px!important;
   }
@@ -39,7 +39,6 @@ $break-large: 1200px;
 
 .notification_card {
   border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
   margin: 0 auto;
   font-family: $font-family__cardo;
   padding: 20px;

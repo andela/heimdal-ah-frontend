@@ -8,7 +8,9 @@ import SearchArticles from './SearchArticles';
 
 let sum = 0;
 window.document.addEventListener('click', () => {
-  // document.querySelector('.search-articles').style.display = 'none';
+  if (window.location.pathname === '/' && document.querySelector('.search-articles')) {
+    document.querySelector('.search-articles').style.display = 'none';
+  }
 });
 
 const SearchArticlesPresentation = () => (
@@ -24,7 +26,12 @@ const SearchArticlesPresentation = () => (
                 name='query'
                 value={data.state.query}
                 onChange={e => data.onHandleChange(e)}
-                onInput={() => document.querySelector('.search-articles').style.display = 'block'}
+                onInput={() => {
+                  if (window.location.pathname === '/' && document.querySelector('.search-articles')) {
+                    document.querySelector('.search-articles').style.display = 'block';
+                  }
+                }
+                }
               />
             </div>
             <div

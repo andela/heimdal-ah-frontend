@@ -19,7 +19,7 @@ const timeAgo = new TimeAgo('en-US');
   * @property {String|Object} className - String className compatible object for styling
   * @return {Node} React node containing Notification card view
 */
-function NotificationCard(props) {
+export function NotificationCard(props) {
   const { userId } = props.user.user;
   let notifications = props.result.rows;
   notifications = notifications || [];

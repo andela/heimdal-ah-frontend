@@ -18,7 +18,6 @@ import ProfileEdit from '../component/Pages/ProfileEdit/ProfileEdit';
 import Articles from '../component/Pages/Article/ArticleListPage';
 import ProtectedRoute from './ProtectedRoute';
 import Notification from '../component/ui/Notification/Notification';
-
 import ScrollToTop from './ScrollToTop.jsx';
 
 const Routes = () => (

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import { connect } from 'react-redux';
 import ClipLoader from 'react-spinners/ClipLoader';
@@ -20,7 +21,7 @@ const timeAgo = new TimeAgo('en-US');
   * @property {String|Object} className - String className compatible object for styling
   * @return {Node} React node containing Notification card view
 */
-function NotificationDropDown(props) {
+export function NotificationDropDown(props) {
   const { userId } = props.user.user;
   let notifications = props.result.rows;
   notifications = notifications || [];
@@ -95,7 +96,6 @@ function NotificationDropDown(props) {
     </div>
   );
 }
-
 
 /**
  * @method module:Reactator.ReduxContainerBuilderMapStateToProps
