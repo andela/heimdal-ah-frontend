@@ -9,10 +9,13 @@ const propTypes = {};
 
 const defaultProps = {};
 
- /**
+/**
  * @description - BookmarksList- List all avaliable bookmark by a user
  */
 export class BookmarksList extends Component {
+  /**
+ * @description - constructor state
+ */
   constructor(props) {
     super(props);
     this.state = {};
@@ -25,6 +28,9 @@ export class BookmarksList extends Component {
     this.props.actions.getAllBookmarksActions();
   }
 
+  /**
+ * @description - render all bookmarks for a user
+ */
   render() {
     if (this.props.bookmarks && this.props.bookmarks.length > 0) {
       return (
