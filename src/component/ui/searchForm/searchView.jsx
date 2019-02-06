@@ -10,7 +10,9 @@ import StandardCard from '../../Pages/LandingPage/StandardCards';
 
 let sum = 0;
 window.onload = () => {
-  document.querySelector('.search-button').click();
+  if (window.location.search === '?query=' || window.location.pathname === '/search' || new URLSearchParams(window.location.search).get('query')) {
+    document.querySelector('.search-button').click();
+  }
 };
 
 const searchView = () => (

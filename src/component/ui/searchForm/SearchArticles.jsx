@@ -97,7 +97,7 @@ export class SearchArticles extends Component {
       displayInput,
       realTime,
       query,
-      
+
     });
   }
 }

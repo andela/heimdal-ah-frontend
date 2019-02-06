@@ -58,3 +58,25 @@ export const getArticles = () => dispatch => axiosInstance
     };
     return errorResponse(data);
   });
+
+export const setTaggedArticles = articles => ({
+  type: ACTIONS.SET_TAGGED_ARTICLES,
+  payload: articles,
+});
+
+export const getArticlesByTagName = tagName => dispatch => axiosInstance
+  .get(`/articles_search/tag?tag=${tagName}`)
+  .then((response) => {
+    const { articles } = response.data;
+    dispatch(setTaggedArticles(articles.rows));
+  })
+  .catch((errors) => {
+    const { response = {}, request } = errors;
+    const data = {
+      dispatch,
+      request,
+      response,
+      errors,
+    };
+    return errorResponse(data);
+  });

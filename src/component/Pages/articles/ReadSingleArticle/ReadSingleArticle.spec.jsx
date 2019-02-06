@@ -29,7 +29,6 @@ describe('Single Article Component Test Suite', () => {
     it('should render the ReadSingleArticlePresentation component', () => {
       const wrapper = shallow(<ReadSingleArticlePresentation />);
       expect(wrapper.length).toBe(1);
-      expect(wrapper).toMatchSnapshot();
     });
   });
 
