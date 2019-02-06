@@ -40,7 +40,7 @@ ShallowWrapper {
           tag="div"
         >
           <TriggerModal
-            label="view history"
+            label="edit history"
             title="Edit History"
             type="signup"
           >
@@ -98,7 +98,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": <TriggerModal
-            label="view history"
+            label="edit history"
             title="Edit History"
             type="signup"
           >
@@ -114,7 +114,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Connect(CommentEditHistory) />,
-            "label": "view history",
+            "label": "edit history",
             "title": "Edit History",
             "type": "signup",
           },
@@ -167,7 +167,7 @@ ShallowWrapper {
             tag="div"
           >
             <TriggerModal
-              label="view history"
+              label="edit history"
               title="Edit History"
               type="signup"
             >
@@ -225,7 +225,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": <TriggerModal
-              label="view history"
+              label="edit history"
               title="Edit History"
               type="signup"
             >
@@ -241,7 +241,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <Connect(CommentEditHistory) />,
-              "label": "view history",
+              "label": "edit history",
               "title": "Edit History",
               "type": "signup",
             },
