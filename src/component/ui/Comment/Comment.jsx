@@ -38,9 +38,7 @@ export class Comment extends Component {
     const { user, articleId } = this.props;
     return (
       <Fragment>
-        <div className='comment-header'>
-        Comment
-        </div>
+
         { user.isAuthenticated
           ? (
 
