@@ -7,10 +7,9 @@ import '../../ui/cards/ArticleCard/articleCard.scss';
  */
 export default function ArticleListPage() {
   return (
-    <div className='mb-5'>
-      <h2 className='mx-auto text-center'> All Stories</h2>
+    <div className="mb-5 p-5">
+      <h2 className="mx-auto text-center text-muted"> All Stories</h2>
       <ArticleList />
-
     </div>
   );
 }

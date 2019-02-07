@@ -92,7 +92,7 @@ export function NotificationCard(props) {
   );
 }
 
-Notification.propTypes = {
+NotificationCard.propTypes = {
 };
 
 /**

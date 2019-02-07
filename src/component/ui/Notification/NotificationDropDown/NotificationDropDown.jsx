@@ -21,7 +21,7 @@ const timeAgo = new TimeAgo('en-US');
   * @property {String|Object} className - String className compatible object for styling
   * @return {Node} React node containing Notification card view
 */
-export function NotificationDropDown(props) {
+function NotificationDropDown(props) {
   const { userId } = props.user.user;
   let notifications = props.result.rows;
   notifications = notifications || [];

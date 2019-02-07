@@ -15,7 +15,6 @@ import LoadingSpinner from '../../component/ui/loadingSpinners/LoadingSpinner';
 import '../../component/ui/cards/ArticleCard/articleCard.scss';
 import 'rc-pagination/assets/index.css';
 
-
 /**
  * article class
  */
@@ -55,7 +54,7 @@ export class Article extends Component {
   );
 
   returnPaginate = () => (
-    <div className='react-paginate mx-auto text-center mt-5'>
+    <div className="react-paginate mx-auto text-center mt-5">
       <Pagination
         defaultPageSize={1}
         defaultCurrent={5}
@@ -64,19 +63,19 @@ export class Article extends Component {
         total={this.props.articles.metadata.totalPages}
       />
     </div>
-  )
+  );
 
   onChange = (pageNumber) => {
     const { getArticlesByPage } = this.props.actions;
     const size = 3;
     if (pageNumber === 1) {
-      const offset = ((size * pageNumber) - pageNumber);
+      const offset = size * pageNumber - pageNumber;
       getArticlesByPage(size, offset);
     } else {
-      const offset = ((size * pageNumber) - pageNumber + 1);
+      const offset = size * pageNumber - pageNumber + 1;
       getArticlesByPage(size, offset);
     }
-  }
+  };
 
   handlePublishedClick(event) {
     event.preventDefault();
@@ -88,11 +87,20 @@ export class Article extends Component {
     this.setState({ displaying: 'unpublished' });
   }
 
-
   render() {
     const { isLoading } = this.props.articles;
     if (isLoading) {
-      return <LoadingSpinner isLoading={isLoading} />;
+      return (
+        <div className="container h-50">
+          <div className="row align-items-center h-50">
+            <div className="mx-auto my-auto">
+              <div className="h-50 justify-content-center">
+                <LoadingSpinner isLoading />
+              </div>
+            </div>
+          </div>
+        </div>
+      );
     }
     if ([1, 3].includes(this.props.user.roleId)) {
       if (this.state.displaying === 'published') {
@@ -107,13 +115,10 @@ export class Article extends Component {
                 Unpublished Articles
               </Link>
             </div>
-            { this.getUserArticles(this.props.articles.articles.rows) }
+            {this.getUserArticles(this.props.articles.articles.rows)}
             {this.getUserArticles(this.props.articles.rows)}
             {/* {this.getUserArticles(this.props.unpublishedarticle.rows)}  */}
-            <div className='react-paginate mx-auto text-center mt-5'>
-              {this.returnPaginate()}
-
-            </div>
+            <div className="react-paginate mx-auto text-center mt-5">{this.returnPaginate()}</div>
           </div>
         );
       }
@@ -135,7 +140,7 @@ export class Article extends Component {
     }
     return (
       <div>
-        { this.getUserArticles(this.props.articles.articles.rows) }
+        {this.getUserArticles(this.props.articles.articles.rows)}
         {this.returnPaginate()}
       </div>
     );

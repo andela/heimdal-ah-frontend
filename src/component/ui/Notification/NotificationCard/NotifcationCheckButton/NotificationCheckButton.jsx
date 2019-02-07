@@ -14,7 +14,7 @@ import { toggleNotificationRead } from '../../../../../actions/NotificationActio
   * @property {String|Object} className - String className compatible object for styling
   * @return {Node} React node containing Notification checkbox view
 */
-export class NotificationCheckButton extends Component {
+class NotificationCheckButton extends Component {
   MarkAsRead = (e) => {
     e.preventDefault();
     const { userId, notificationId } = this.props;
@@ -30,7 +30,7 @@ export class NotificationCheckButton extends Component {
   }
 }
 
-Notification.propTypes = {
+NotificationCheckButton.propTypes = {
   toggleNotificationRead: PropTypes.func.isRequired,
 };
 

@@ -10,22 +10,30 @@ import Logo from '../logo/Logo';
 import HeaderButton from '../headerButton/HeaderButton';
 import SearchArticlesPresentation from '../searchForm/searchArticlesPresentation';
 
-
 /**
  * @param {boolean} isAuthenticated should be a boolean
  */
 const Header = ({ auth }) => {
-  const { isAuthenticated, user: { username, image } } = auth;
+  const {
+    isAuthenticated,
+    user: { username, image },
+  } = auth;
   return (
-    <header className="header">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <header className="header mb-5 pb-5">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <Logo />
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav mr-auto">
             <NavItems />
           </ul>
           {isAuthenticated ? <ActiveUser username={username} image={image} /> : <HeaderButton />}
-          {(window.location.search === '?query=' || window.location.pathname === '/search' || new URLSearchParams(window.location.search).get('query')) ? '' : <SearchArticlesPresentation /> }
+          {window.location.search === '?query='
+          || window.location.pathname === '/search'
+          || new URLSearchParams(window.location.search).get('query') ? (
+              ''
+            ) : (
+              <SearchArticlesPresentation />
+            )}
         </div>
       </nav>
     </header>
@@ -48,4 +56,7 @@ const matchDispatchToProps = dispatch => ({
   actions: action => dispatch(action),
 });
 
-export default connect(mapStateToProps, matchDispatchToProps)(Header);
+export default connect(
+  mapStateToProps,
+  matchDispatchToProps,
+)(Header);

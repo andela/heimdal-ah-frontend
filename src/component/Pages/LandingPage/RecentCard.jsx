@@ -5,10 +5,10 @@ import Glow from '../../ui/Buttons/glow/Glow';
 const RecentCard = props => (
   <div className="article-card mt-4">
     <div className="row">
-      <div className="col-md-5 m-0 pr-0">
-        <div className="card-image-container-2 mb-4">
+      <div className="col-md-5 m-0">
+        <div className="card-image-container-2">
           <img
-            className="card-imageX img-fluid rounded-20"
+            className="card-image img-fluid rounded-20"
             src={`https://picsum.photos/1200/1300/?image=${Math.trunc(Math.random() * 20)}`}
             alt="Card"
           />
@@ -50,7 +50,6 @@ const RecentCard = props => (
           </div>
         </div>
       </div>
-      <hr />
     </div>
   </div>
 );
