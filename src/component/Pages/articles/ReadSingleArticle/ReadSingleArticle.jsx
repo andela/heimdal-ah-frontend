@@ -101,6 +101,9 @@ export class ReadSingleArticle extends Component {
       const { profile = {} } = user;
       const { slug } = this.props.match.params;
       const { status } = this.props;
+      const { likes } = this.state.singleArticle && this.state.singleArticle;
+
+      const active = this.checkUserId(likes, this.props.userId);
 
       return (
         <Fragment>
@@ -120,6 +123,8 @@ export class ReadSingleArticle extends Component {
                   time={this.state.singleArticle.createdAt}
                   likesCount={likesCount}
                   userImage={profile.image}
+                  active={active}
+                  handleGlow={this.handleGlow}
                 />
               </Fragment>
             )
