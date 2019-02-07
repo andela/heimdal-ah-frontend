@@ -32,7 +32,7 @@ const StanadardCard = props => (
         alt="Card"
       />
     </div>
-    <p className="card-text">{props.body}</p>
+    <p className="card-text text-muted text-light">{props.body}</p>
     <div className="row mb-2">
       <div className="col-6">
         <img
@@ -68,11 +68,8 @@ likes
       </div>
     </div>
     <div className="row">
-      <div className="col-12 text-center ratings">
-        <Rating />
-      </div>
+      <div className="col-12 text-center ratings">{/* <Rating /> */}</div>
     </div>
-    <hr />
   </div>
 );
 

@@ -1,9 +1,11 @@
 @import "../../../../styles/variables.scss";
 
 .article-card {
-  font-family: "Cardo", serif;
+  // font-family: "Roboto", serif;
   border: 0rem;
-  // background-color: $white-color;
+  background-color: $white-color;
+  padding: 10px;
+  box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.1);
 
   .read-time {
     display: inline-block;
@@ -29,7 +31,7 @@
     text-transform: uppercase;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 18px;
+    font-size: 15px;
   }
 
   a {

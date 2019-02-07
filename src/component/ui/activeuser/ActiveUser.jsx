@@ -33,10 +33,16 @@ const ActiveUser = (props) => {
         </div>
       </div>
       <div className="dropdown">
-        <img className="profile-icon" src={image || 'https://res.cloudinary.com/naijavibz/image/upload/v1549376036/Group_2.1.png'} alt="profile-logo" />
+        <img
+          className="profile-icon"
+          src={
+            image || 'https://res.cloudinary.com/naijavibz/image/upload/v1549376036/Group_2.1.png'
+          }
+          alt="profile-logo"
+        />
         <div className="dropdown-content">
           <div className="username">
-            @
+@
             {username}
           </div>
           <div>
@@ -59,10 +65,12 @@ const ActiveUser = (props) => {
           </div>
           <div className="user-settings">
             <div>
-              <a href={username}>Profile</a>
+              <a href={`/${username}`}>Profile</a>
             </div>
             <div>
-              <Link to='/' onClick={() => actions.logout()}>Logout</Link>
+              <Link to="/" onClick={() => actions.logout()}>
+                Logout
+              </Link>
             </div>
           </div>
         </div>
@@ -79,4 +87,7 @@ const mapDispatchToProps = dispatch => ({
     dispatch,
   ),
 });
-export default connect(null, mapDispatchToProps)(ActiveUser);
+export default connect(
+  null,
+  mapDispatchToProps,
+)(ActiveUser);

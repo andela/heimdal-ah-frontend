@@ -13,8 +13,8 @@ $primary-color: #606e86;
 .active::after {
   border-bottom: 2px solid $primary-color;
   content: "";
-  display: block; 
-  float: right;
-  margin: 0 auto; 
-  width: 50%;
+  display: block;
+  // float: right;
+  margin: 0 auto;
+  // width: 50%;
 }

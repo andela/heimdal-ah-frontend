@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import Glow from '../../ui/Buttons/glow/Glow';
 
 const FeaturedCard = props => (
-  <div className="article-card mt-5">
+  <div className="article-card mt-2">
     <div className="row">
-      <div className="col-md-5 m-0 pr-0">
+      <div className="col-md-5 m-0">
         <div className="card-image-container-2">
           <img
             className="card-image img-fluid"
@@ -19,9 +19,9 @@ const FeaturedCard = props => (
           to={`/${props.user.profile.username}/articles/${props.slug}`}
           className="card-title-link"
         >
-          <h5 className="card-title text-dark">{props.title}</h5>
+          <span className="card-title">{props.title}</span>
         </Link>
-        <p className="card-text card-text-2">{props.body}</p>
+        <p className="card-text card-text-2 text-muted">{props.body}</p>
         <div className="row mb-1">
           <div className="col-6">
             <img
@@ -32,12 +32,6 @@ const FeaturedCard = props => (
             <div className="user-name pl-1">
               <Link to="/username">{props.user.profile.username}</Link>
             </div>
-          </div>
-          <div className="col-6">
-            <i className="far fa-comment-alt comment float-right">
-              {' '}
-              {props.comments.length}
-            </i>
           </div>
         </div>
         <div className="row">
@@ -50,7 +44,6 @@ const FeaturedCard = props => (
           </div>
         </div>
       </div>
-      <hr />
     </div>
   </div>
 );
