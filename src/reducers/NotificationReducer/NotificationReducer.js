@@ -43,7 +43,8 @@ export default (state = initialState, action) => {
     }
 
     case ACTIONS.USER_INSTANT_NOTIFICATION: {
-      const data = { count: state.getData.count + 1, rows: state.getData.rows.concat(action.payload) };
+      const data = { count: state.getData.count + 1, rows: state.getData.rows.concat(action.payload).reverse() };
+
       return ({
         ...state,
         getData: data,

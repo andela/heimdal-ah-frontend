@@ -92,7 +92,7 @@ export function NotificationDropDown(props) {
       {
       renderCard()
     }
-      <div className='dropdown_btn_all'><Link to='/notification'>See All</Link></div>
+      <div className='dropdown_btn_all'><Link to='/notifications'>See All</Link></div>
     </div>
   );
 }
