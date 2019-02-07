@@ -36,10 +36,10 @@ class LandingPage extends Component {
       return (
         <div className="col-md-12 p-5">
           {/** Featured Articles Section Start */}
-          <h2 className="text-center">Featured</h2>
+          <h2 className="text-center text-muted text-light">Featured Articles</h2>
           <div className="row p-3">
             <div className="col-md-3 col-sm-4">{<StanadardCard {...featuredArticles[0]} />}</div>
-            <div className="col-md-6 col-sm-4 mt-4">
+            <div className="col-md-6 col-sm-4 mt-3">
               <div className="row">
                 {featuredArticles.slice(1, 5).map(item => (
                   <div className="col-md-6 col-sm-12 mb-2" key={Math.random()}>
@@ -57,7 +57,7 @@ class LandingPage extends Component {
             <div className="col-md-10">
               <div className="row">
                 {mainArticles.map(item => (
-                  <div className="col-md-4" key={Math.random()}>
+                  <div className="col-md-4 mt-4" key={Math.random()}>
                     <StanadardCard {...item} />
                   </div>
                 ))}
@@ -66,39 +66,35 @@ class LandingPage extends Component {
             {/** Main Articles Section End */}
 
             {/** Aside Card Section Start */}
-            <div className="col-md-2 pt-5">
+            <div className="col-md-2 pt-3">
               <div className="card p-3">
                 <div className="mb-5">
-                  <span className="text-center h4">Tags</span>
+                  <span className="text-center h5 font-weight-light text-muted">Tags</span>
                   <hr />
-                  <Link to="/articles/tag/nodeJs" className="form-check text-dark pb-2">
-                    <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="tag" />
+                  <Link to="/articles/tag/nodeJs" className="pb-2">
+                    <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
                       NodeJs
-                    </label>
+                    </span>
                   </Link>
-                  <Link to="/articles/tag/angular" className="form-check text-dark pb-2">
-                    <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="tag" />
+                  <Link to="/articles/tag/angular" className="text-dark pb-2">
+                    <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
                       Angular
-                    </label>
+                    </span>
                   </Link>
-                  <Link to="/articles/tag/react" className="form-check text-dark pb-2">
-                    <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="tag" />
+                  <Link to="/articles/tag/react" className="text-dark pb-2">
+                    <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
                       React
-                    </label>
+                    </span>
                   </Link>
-                  <Link to="/articles/tag/node" className="form-check text-dark pb-2">
-                    <label htmlFor="beauty" className="form-check-label">
-                      <input type="radio" className="form-check-input" name="tag" />
+                  <Link to="/articles/tag/node" className="text-dark pb-2">
+                    <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
                       Node
-                    </label>
+                    </span>
                   </Link>
                 </div>
 
                 <div className="recent-posts">
-                  <span className="text-center h4">Recent posts</span>
+                  <span className="text-center h5 font-weight-light text-muted">Recent posts</span>
                   <hr />
                   {recentArticles.map(item => (
                     <Link
@@ -108,7 +104,7 @@ class LandingPage extends Component {
                     >
                       <div className="col-md-12 mb-3">
                         <div className="row">
-                          <div className="col-md-5 mr-0 pl-0 pr-0">
+                          <div className="col-md-3 mr-0 pl-0 pr-0">
                             <img
                               className="img-fluid rounded-circle"
                               width="40"
@@ -118,8 +114,8 @@ class LandingPage extends Component {
                               alt="Card"
                             />
                           </div>
-                          <div className="col-md-7 pl-0 ml-0 p-0 m-0">
-                            <span className="">{item.title}</span>
+                          <div className="col-md-9 ml-0">
+                            <span className="h6 text-muted">{`${item.title.substring(0, 15)}...`}</span>
                           </div>
                         </div>
                       </div>
@@ -131,7 +127,7 @@ class LandingPage extends Component {
             </div>
             {/** Aside Card Section End */}
 
-            <div className="text-center col-md-12">
+            <div className="text-center col-md-12 mt-5">
               <Link to="/all-stories" className="btn btn-secondary">
                 All Stories
               </Link>
@@ -139,7 +135,7 @@ class LandingPage extends Component {
           </div>
 
           {/** Recent Articles Section Start */}
-          <h2 className="text-center">Recent Posts</h2>
+          <h2 className="text-center text-muted text-light">Recent Posts</h2>
           <div className="row">
             {recentArticles.slice(0, 4).map(item => (
               <div className="col-md-3 mb-2" key={Math.random()}>
@@ -158,7 +154,17 @@ class LandingPage extends Component {
         </div>
       );
     }
-    return <LoadingSpinner isLoading />;
+    return (
+      <div className="container vh-100">
+        <div className="row align-items-center h-100">
+          <div className="mx-auto my-auto">
+            <div className="h-100 justify-content-center">
+              <LoadingSpinner isLoading />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 

@@ -65,7 +65,9 @@ const SignupForm = (props) => {
             errors={errors}
           />
           <div className="row">
-            <LoadingSpinner isLoading={isLoading} />
+            <div className="col-12 text-center">
+              <LoadingSpinner isLoading={isLoading} />
+            </div>
             <MainError errors={errors} />
             <div className="col-md-8 text-left mb-10">
               <span className="text-muted p-t-10">
@@ -100,7 +102,10 @@ const SignupForm = (props) => {
           Login with twitter
         </a>
         <br />
-        <a href={`${process.env.BASE_URL_PROD}/api/v1/auth/google`} className="btn btn-block btn-google">
+        <a
+          href={`${process.env.BASE_URL_PROD}/api/v1/auth/google`}
+          className="btn btn-block btn-google"
+        >
           Login With Google
         </a>
       </div>
