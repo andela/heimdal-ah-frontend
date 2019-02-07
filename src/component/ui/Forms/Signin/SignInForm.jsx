@@ -16,13 +16,7 @@ import './Signin.scss';
  */
 const SigninForm = (props) => {
   const {
-    email,
-    errors,
-    error,
-    password,
-    onChange,
-    isLoading,
-    onLoginSubmit,
+    email, errors, error, password, onChange, isLoading, onLoginSubmit,
   } = props;
 
   return (
@@ -55,35 +49,32 @@ const SigninForm = (props) => {
                 <Label check>
                   <Input type="checkbox" />
                   {' '}
-                  Remember me
+Remember me
                 </Label>
               </FormGroup>
-
             </div>
             <div className="p-2">
               {' '}
-              <a
-                href='/reset-password'
-              >
-                Forgot password?
-              </a>
+              <a href="/reset-password">Forgot password?</a>
             </div>
           </div>
           <SignInError error={error} />
           <div className="row">
-            <LoadingSpinner isLoading={isLoading} />
+            <div className="col-12 text-center">
+              <LoadingSpinner isLoading={isLoading} />
+            </div>
             <div className="col-md-8 text-left mb-10">
               <span className="text-muted p-t-10">
-              Dont have an account?
+                Dont have an account?
                 {' '}
                 <Link to="/" className="link pt-2">
-                Signup here
+                  Signup here
                 </Link>
               </span>
             </div>
             <div className="col-md-4 text-right">
               <button type="submit" className="btn btn-default ph-25">
-              Sign In
+                Sign In
               </button>
             </div>
           </div>
@@ -95,18 +86,21 @@ const SigninForm = (props) => {
           href={`${process.env.BASE_URL_PROD}/api/v1/auth/facebook`}
           className="btn btn-block btn-facebook"
         >
-        Login with Facebook
+          Login with Facebook
         </a>
         <br />
         <a
           href={`${process.env.BASE_URL_PROD}/api/v1/auth_twitter/twitter`}
           className="btn btn-block btn-twitter"
         >
-        Login with Twitter
+          Login with Twitter
         </a>
         <br />
-        <a href={`${process.env.BASE_URL_PROD}/api/v1/auth/google`} className="btn btn-block btn-google">
-        Login With Google
+        <a
+          href={`${process.env.BASE_URL_PROD}/api/v1/auth/google`}
+          className="btn btn-block btn-google"
+        >
+          Login With Google
         </a>
       </div>
     </div>

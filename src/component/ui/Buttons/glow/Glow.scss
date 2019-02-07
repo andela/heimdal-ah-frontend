@@ -19,14 +19,25 @@
     height: 55px;
     width: 75px;
   }
+  
+  // &.glow-on {
+  //   background-image: url("/src/images/glow-on.svg");
+  //   background-repeat: no-repeat;
+  // }
+  
+  // &.glow-off {
+  //   background-image: url("/src/images/glow-off.svg");
+  //   background-repeat: no-repeat;
+  // }
 
   &.glow-on {
-    background-image: url("/src/images/glow-on.svg");
+    background-image: url("https://res.cloudinary.com/naijavibz/image/upload/v1549376037/glow-on.svg");
     background-repeat: no-repeat;
   }
 
+  
   &.glow-off {
-    background-image: url("/src/images/glow-off.svg");
+    background-image: url("https://res.cloudinary.com/naijavibz/image/upload/v1549376036/glow-off.svg");
     background-repeat: no-repeat;
   }
 }

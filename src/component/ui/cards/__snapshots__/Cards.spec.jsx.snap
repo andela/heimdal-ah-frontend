@@ -3313,7 +3313,6 @@ ShallowWrapper {
     articleTitle="Lorem ipsum dolor"
     commentCount=" 10"
     glowCount=""
-    moreClass=""
     updatedTime="5 mins"
     userImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
     username="Henry Henry Henry Henry"
@@ -3331,562 +3330,47 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": <div
-        className="col-md-12"
-      >
-        <div
-          className="bookmarks-cards "
-        >
+      "children": Array [
+        <br />,
+        <div>
           <div
-            className="col-md-12"
+            className="bookmarks-cards"
           >
             <div
-              className="header"
+              className=""
             >
-              <h1
-                className="col-md-11 card-title"
+              <div
+                className="bookmarks-header"
               >
-                Lorem ipsum dolor
-              </h1>
-              <img
-                alt="bookmark-logo"
-                className="bookmark-logo col-md-1"
-                src="/src/images/bookmark.svg"
-              />
+                <Link
+                  replace={false}
+                  to="/@username/articles/undefined"
+                >
+                  <h2
+                    className=""
+                  >
+                    Lorem ipsum dolor...
+                  </h2>
+                </Link>
+                <i
+                  className="fas fa-bookmark fa-3x bookmark-logo"
+                />
+              </div>
             </div>
-          </div>
-          <div
-            className="col-md-12"
-          >
-            <p
+            <div
               className="text-content"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
-            </p>
-          </div>
-          <br />
-          <div
-            className="user-section ml-10 card-bottom"
-          >
-            <div
-              className="col-md-12"
-            >
-              <span>
-                <img
-                  alt="user"
-                  className="user-image"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                />
-              </span>
-              <p
-                className="col-8 col-md-9 username"
-                style={
-                  Object {
-                    "display": "inline-block",
-                  }
-                }
-              >
-                Henry Henry Henry Henry
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...
               </p>
-              <span>
-                <Glow
-                  active={true}
-                  className="col-1 glowButton"
-                  handleGlow={[Function]}
-                />
-              </span>
-              <span
-                className="glow-text"
-              >
-                
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div
-          className="bookmarks-cards "
-        >
-          <div
-            className="col-md-12"
-          >
-            <div
-              className="header"
-            >
-              <h1
-                className="col-md-11 card-title"
-              >
-                Lorem ipsum dolor
-              </h1>
-              <img
-                alt="bookmark-logo"
-                className="bookmark-logo col-md-1"
-                src="/src/images/bookmark.svg"
-              />
-            </div>
-          </div>
-          <div
-            className="col-md-12"
-          >
-            <p
-              className="text-content"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
-            </p>
-          </div>
-          <br />
-          <div
-            className="user-section ml-10 card-bottom"
-          >
-            <div
-              className="col-md-12"
-            >
-              <span>
-                <img
-                  alt="user"
-                  className="user-image"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                />
-              </span>
-              <p
-                className="col-8 col-md-9 username"
-                style={
-                  Object {
-                    "display": "inline-block",
-                  }
-                }
-              >
-                Henry Henry Henry Henry
-              </p>
-              <span>
-                <Glow
-                  active={true}
-                  className="col-1 glowButton"
-                  handleGlow={[Function]}
-                />
-              </span>
-              <span
-                className="glow-text"
-              >
-                
-              </span>
-            </div>
-          </div>
-        </div>,
-        "className": "col-md-12",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div
-              className="col-md-12"
-            >
-              <div
-                className="header"
-              >
-                <h1
-                  className="col-md-11 card-title"
-                >
-                  Lorem ipsum dolor
-                </h1>
-                <img
-                  alt="bookmark-logo"
-                  className="bookmark-logo col-md-1"
-                  src="/src/images/bookmark.svg"
-                />
-              </div>
-            </div>,
-            <div
-              className="col-md-12"
-            >
-              <p
-                className="text-content"
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
-              </p>
-            </div>,
-            <br />,
-            <div
-              className="user-section ml-10 card-bottom"
-            >
-              <div
-                className="col-md-12"
-              >
-                <span>
-                  <img
-                    alt="user"
-                    className="user-image"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                  />
-                </span>
-                <p
-                  className="col-8 col-md-9 username"
-                  style={
-                    Object {
-                      "display": "inline-block",
-                    }
-                  }
-                >
-                  Henry Henry Henry Henry
-                </p>
-                <span>
-                  <Glow
-                    active={true}
-                    className="col-1 glowButton"
-                    handleGlow={[Function]}
-                  />
-                </span>
-                <span
-                  className="glow-text"
-                >
-                  
-                </span>
-              </div>
-            </div>,
-          ],
-          "className": "bookmarks-cards ",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div
-                className="header"
-              >
-                <h1
-                  className="col-md-11 card-title"
-                >
-                  Lorem ipsum dolor
-                </h1>
-                <img
-                  alt="bookmark-logo"
-                  className="bookmark-logo col-md-1"
-                  src="/src/images/bookmark.svg"
-                />
-              </div>,
-              "className": "col-md-12",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <h1
-                    className="col-md-11 card-title"
-                  >
-                    Lorem ipsum dolor
-                  </h1>,
-                  <img
-                    alt="bookmark-logo"
-                    className="bookmark-logo col-md-1"
-                    src="/src/images/bookmark.svg"
-                  />,
-                ],
-                "className": "header",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Lorem ipsum dolor",
-                    "className": "col-md-11 card-title",
-                  },
-                  "ref": null,
-                  "rendered": "Lorem ipsum dolor",
-                  "type": "h1",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "alt": "bookmark-logo",
-                    "className": "bookmark-logo col-md-1",
-                    "src": "/src/images/bookmark.svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-              ],
-              "type": "div",
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <p
-                className="text-content"
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
-              </p>,
-              "className": "col-md-12",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
-                "className": "text-content",
-              },
-              "ref": null,
-              "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
-              "type": "p",
-            },
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div
-                className="col-md-12"
-              >
-                <span>
-                  <img
-                    alt="user"
-                    className="user-image"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                  />
-                </span>
-                <p
-                  className="col-8 col-md-9 username"
-                  style={
-                    Object {
-                      "display": "inline-block",
-                    }
-                  }
-                >
-                  Henry Henry Henry Henry
-                </p>
-                <span>
-                  <Glow
-                    active={true}
-                    className="col-1 glowButton"
-                    handleGlow={[Function]}
-                  />
-                </span>
-                <span
-                  className="glow-text"
-                >
-                  
-                </span>
-              </div>,
-              "className": "user-section ml-10 card-bottom",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <span>
-                    <img
-                      alt="user"
-                      className="user-image"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                    />
-                  </span>,
-                  <p
-                    className="col-8 col-md-9 username"
-                    style={
-                      Object {
-                        "display": "inline-block",
-                      }
-                    }
-                  >
-                    Henry Henry Henry Henry
-                  </p>,
-                  <span>
-                    <Glow
-                      active={true}
-                      className="col-1 glowButton"
-                      handleGlow={[Function]}
-                    />
-                  </span>,
-                  <span
-                    className="glow-text"
-                  >
-                    
-                  </span>,
-                ],
-                "className": "col-md-12",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <img
-                      alt="user"
-                      className="user-image"
-                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                    />,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "alt": "user",
-                      "className": "user-image",
-                      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "img",
-                  },
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Henry Henry Henry Henry",
-                    "className": "col-8 col-md-9 username",
-                    "style": Object {
-                      "display": "inline-block",
-                    },
-                  },
-                  "ref": null,
-                  "rendered": "Henry Henry Henry Henry",
-                  "type": "p",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <Glow
-                      active={true}
-                      className="col-1 glowButton"
-                      handleGlow={[Function]}
-                    />,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "active": true,
-                      "className": "col-1 glowButton",
-                      "handleGlow": [Function],
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                  "type": "span",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "",
-                    "className": "glow-text",
-                  },
-                  "ref": null,
-                  "rendered": "",
-                  "type": "span",
-                },
-              ],
-              "type": "div",
-            },
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-      "type": "div",
-    },
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": <div
-          className="col-md-12"
-        >
-          <div
-            className="bookmarks-cards "
-          >
-            <div
-              className="col-md-12"
-            >
-              <div
-                className="header"
-              >
-                <h1
-                  className="col-md-11 card-title"
-                >
-                  Lorem ipsum dolor
-                </h1>
-                <img
-                  alt="bookmark-logo"
-                  className="bookmark-logo col-md-1"
-                  src="/src/images/bookmark.svg"
-                />
-              </div>
-            </div>
-            <div
-              className="col-md-12"
-            >
-              <p
-                className="text-content"
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
-              </p>
+              <div />
             </div>
             <br />
             <div
-              className="user-section ml-10 card-bottom"
+              className="user-section"
             >
               <div
-                className="col-md-12"
+                className="user-profile"
               >
                 <span>
                   <img
@@ -3895,20 +3379,17 @@ ShallowWrapper {
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />
                 </span>
-                <p
-                  className="col-8 col-md-9 username"
-                  style={
-                    Object {
-                      "display": "inline-block",
-                    }
-                  }
+                <span
+                  className="username"
                 >
                   Henry Henry Henry Henry
-                </p>
+                </span>
+              </div>
+              <div>
                 <span>
                   <Glow
                     active={true}
-                    className="col-1 glowButton"
+                    className="glowButton"
                     handleGlow={[Function]}
                   />
                 </span>
@@ -3921,49 +3402,62 @@ ShallowWrapper {
             </div>
           </div>
         </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
       },
-      "ref": null,
-      "rendered": Object {
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": <div
-            className="bookmarks-cards "
+            className="bookmarks-cards"
           >
             <div
-              className="col-md-12"
+              className=""
             >
               <div
-                className="header"
+                className="bookmarks-header"
               >
-                <h1
-                  className="col-md-11 card-title"
+                <Link
+                  replace={false}
+                  to="/@username/articles/undefined"
                 >
-                  Lorem ipsum dolor
-                </h1>
-                <img
-                  alt="bookmark-logo"
-                  className="bookmark-logo col-md-1"
-                  src="/src/images/bookmark.svg"
+                  <h2
+                    className=""
+                  >
+                    Lorem ipsum dolor...
+                  </h2>
+                </Link>
+                <i
+                  className="fas fa-bookmark fa-3x bookmark-logo"
                 />
               </div>
             </div>
             <div
-              className="col-md-12"
+              className="text-content"
             >
-              <p
-                className="text-content"
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...
               </p>
+              <div />
             </div>
             <br />
             <div
-              className="user-section ml-10 card-bottom"
+              className="user-section"
             >
               <div
-                className="col-md-12"
+                className="user-profile"
               >
                 <span>
                   <img
@@ -3972,20 +3466,17 @@ ShallowWrapper {
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                   />
                 </span>
-                <p
-                  className="col-8 col-md-9 username"
-                  style={
-                    Object {
-                      "display": "inline-block",
-                    }
-                  }
+                <span
+                  className="username"
                 >
                   Henry Henry Henry Henry
-                </p>
+                </span>
+              </div>
+              <div>
                 <span>
                   <Glow
                     active={true}
-                    className="col-1 glowButton"
+                    className="glowButton"
                     handleGlow={[Function]}
                   />
                 </span>
@@ -3997,7 +3488,6 @@ ShallowWrapper {
               </div>
             </div>
           </div>,
-          "className": "col-md-12",
         },
         "ref": null,
         "rendered": Object {
@@ -4007,38 +3497,40 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="col-md-12"
+                className=""
               >
                 <div
-                  className="header"
+                  className="bookmarks-header"
                 >
-                  <h1
-                    className="col-md-11 card-title"
+                  <Link
+                    replace={false}
+                    to="/@username/articles/undefined"
                   >
-                    Lorem ipsum dolor
-                  </h1>
-                  <img
-                    alt="bookmark-logo"
-                    className="bookmark-logo col-md-1"
-                    src="/src/images/bookmark.svg"
+                    <h2
+                      className=""
+                    >
+                      Lorem ipsum dolor...
+                    </h2>
+                  </Link>
+                  <i
+                    className="fas fa-bookmark fa-3x bookmark-logo"
                   />
                 </div>
               </div>,
               <div
-                className="col-md-12"
+                className="text-content"
               >
-                <p
-                  className="text-content"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...
                 </p>
+                <div />
               </div>,
               <br />,
               <div
-                className="user-section ml-10 card-bottom"
+                className="user-section"
               >
                 <div
-                  className="col-md-12"
+                  className="user-profile"
                 >
                   <span>
                     <img
@@ -4047,20 +3539,17 @@ ShallowWrapper {
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     />
                   </span>
-                  <p
-                    className="col-8 col-md-9 username"
-                    style={
-                      Object {
-                        "display": "inline-block",
-                      }
-                    }
+                  <span
+                    className="username"
                   >
                     Henry Henry Henry Henry
-                  </p>
+                  </span>
+                </div>
+                <div>
                   <span>
                     <Glow
                       active={true}
-                      className="col-1 glowButton"
+                      className="glowButton"
                       handleGlow={[Function]}
                     />
                   </span>
@@ -4072,7 +3561,7 @@ ShallowWrapper {
                 </div>
               </div>,
             ],
-            "className": "bookmarks-cards ",
+            "className": "bookmarks-cards",
           },
           "ref": null,
           "rendered": Array [
@@ -4082,20 +3571,23 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <div
-                  className="header"
+                  className="bookmarks-header"
                 >
-                  <h1
-                    className="col-md-11 card-title"
+                  <Link
+                    replace={false}
+                    to="/@username/articles/undefined"
                   >
-                    Lorem ipsum dolor
-                  </h1>
-                  <img
-                    alt="bookmark-logo"
-                    className="bookmark-logo col-md-1"
-                    src="/src/images/bookmark.svg"
+                    <h2
+                      className=""
+                    >
+                      Lorem ipsum dolor...
+                    </h2>
+                  </Link>
+                  <i
+                    className="fas fa-bookmark fa-3x bookmark-logo"
                   />
                 </div>,
-                "className": "col-md-12",
+                "className": "",
               },
               "ref": null,
               "rendered": Object {
@@ -4104,45 +3596,62 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <h1
-                      className="col-md-11 card-title"
+                    <Link
+                      replace={false}
+                      to="/@username/articles/undefined"
                     >
-                      Lorem ipsum dolor
-                    </h1>,
-                    <img
-                      alt="bookmark-logo"
-                      className="bookmark-logo col-md-1"
-                      src="/src/images/bookmark.svg"
+                      <h2
+                        className=""
+                      >
+                        Lorem ipsum dolor...
+                      </h2>
+                    </Link>,
+                    <i
+                      className="fas fa-bookmark fa-3x bookmark-logo"
                     />,
                   ],
-                  "className": "header",
+                  "className": "bookmarks-header",
                 },
                 "ref": null,
                 "rendered": Array [
                   Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "class",
                     "props": Object {
-                      "children": "Lorem ipsum dolor",
-                      "className": "col-md-11 card-title",
+                      "children": <h2
+                        className=""
+                      >
+                        Lorem ipsum dolor...
+                      </h2>,
+                      "replace": false,
+                      "to": "/@username/articles/undefined",
                     },
                     "ref": null,
-                    "rendered": "Lorem ipsum dolor",
-                    "type": "h1",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Lorem ipsum dolor...",
+                        "className": "",
+                      },
+                      "ref": null,
+                      "rendered": "Lorem ipsum dolor...",
+                      "type": "h2",
+                    },
+                    "type": [Function],
                   },
                   Object {
                     "instance": null,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "alt": "bookmark-logo",
-                      "className": "bookmark-logo col-md-1",
-                      "src": "/src/images/bookmark.svg",
+                      "className": "fas fa-bookmark fa-3x bookmark-logo",
                     },
                     "ref": null,
                     "rendered": null,
-                    "type": "img",
+                    "type": "i",
                   },
                 ],
                 "type": "div",
@@ -4154,26 +3663,37 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <p
-                  className="text-content"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur
-                </p>,
-                "className": "col-md-12",
+                "children": Array [
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...
+                  </p>,
+                  <div />,
+                ],
+                "className": "text-content",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
-                  "className": "text-content",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...",
+                  },
+                  "ref": null,
+                  "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...",
+                  "type": "p",
                 },
-                "ref": null,
-                "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicingsit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing  dolor sit amet consectetur",
-                "type": "p",
-              },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+              ],
               "type": "div",
             },
             Object {
@@ -4190,8 +3710,229 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <div
-                  className="col-md-12"
+                "children": Array [
+                  <div
+                    className="user-profile"
+                  >
+                    <span>
+                      <img
+                        alt="user"
+                        className="user-image"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                      />
+                    </span>
+                    <span
+                      className="username"
+                    >
+                      Henry Henry Henry Henry
+                    </span>
+                  </div>,
+                  <div>
+                    <span>
+                      <Glow
+                        active={true}
+                        className="glowButton"
+                        handleGlow={[Function]}
+                      />
+                    </span>
+                    <span
+                      className="glow-text"
+                    >
+                      
+                    </span>
+                  </div>,
+                ],
+                "className": "user-section",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span>
+                        <img
+                          alt="user"
+                          className="user-image"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                        />
+                      </span>,
+                      <span
+                        className="username"
+                      >
+                        Henry Henry Henry Henry
+                      </span>,
+                    ],
+                    "className": "user-profile",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <img
+                          alt="user"
+                          className="user-image"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                        />,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "user",
+                          "className": "user-image",
+                          "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Henry Henry Henry Henry",
+                        "className": "username",
+                      },
+                      "ref": null,
+                      "rendered": "Henry Henry Henry Henry",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span>
+                        <Glow
+                          active={true}
+                          className="glowButton"
+                          handleGlow={[Function]}
+                        />
+                      </span>,
+                      <span
+                        className="glow-text"
+                      >
+                        
+                      </span>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Glow
+                          active={true}
+                          className="glowButton"
+                          handleGlow={[Function]}
+                        />,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "active": true,
+                          "className": "glowButton",
+                          "handleGlow": [Function],
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "",
+                        "className": "glow-text",
+                      },
+                      "ref": null,
+                      "rendered": "",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <br />,
+          <div>
+            <div
+              className="bookmarks-cards"
+            >
+              <div
+                className=""
+              >
+                <div
+                  className="bookmarks-header"
+                >
+                  <Link
+                    replace={false}
+                    to="/@username/articles/undefined"
+                  >
+                    <h2
+                      className=""
+                    >
+                      Lorem ipsum dolor...
+                    </h2>
+                  </Link>
+                  <i
+                    className="fas fa-bookmark fa-3x bookmark-logo"
+                  />
+                </div>
+              </div>
+              <div
+                className="text-content"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...
+                </p>
+                <div />
+              </div>
+              <br />
+              <div
+                className="user-section"
+              >
+                <div
+                  className="user-profile"
                 >
                   <span>
                     <img
@@ -4200,20 +3941,17 @@ ShallowWrapper {
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                     />
                   </span>
-                  <p
-                    className="col-8 col-md-9 username"
-                    style={
-                      Object {
-                        "display": "inline-block",
-                      }
-                    }
+                  <span
+                    className="username"
                   >
                     Henry Henry Henry Henry
-                  </p>
+                  </span>
+                </div>
+                <div>
                   <span>
                     <Glow
                       active={true}
-                      className="col-1 glowButton"
+                      className="glowButton"
                       handleGlow={[Function]}
                     />
                   </span>
@@ -4222,47 +3960,278 @@ ShallowWrapper {
                   >
                     
                   </span>
+                </div>
+              </div>
+            </div>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="bookmarks-cards"
+            >
+              <div
+                className=""
+              >
+                <div
+                  className="bookmarks-header"
+                >
+                  <Link
+                    replace={false}
+                    to="/@username/articles/undefined"
+                  >
+                    <h2
+                      className=""
+                    >
+                      Lorem ipsum dolor...
+                    </h2>
+                  </Link>
+                  <i
+                    className="fas fa-bookmark fa-3x bookmark-logo"
+                  />
+                </div>
+              </div>
+              <div
+                className="text-content"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...
+                </p>
+                <div />
+              </div>
+              <br />
+              <div
+                className="user-section"
+              >
+                <div
+                  className="user-profile"
+                >
+                  <span>
+                    <img
+                      alt="user"
+                      className="user-image"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                    />
+                  </span>
+                  <span
+                    className="username"
+                  >
+                    Henry Henry Henry Henry
+                  </span>
+                </div>
+                <div>
+                  <span>
+                    <Glow
+                      active={true}
+                      className="glowButton"
+                      handleGlow={[Function]}
+                    />
+                  </span>
+                  <span
+                    className="glow-text"
+                  >
+                    
+                  </span>
+                </div>
+              </div>
+            </div>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className=""
+                >
+                  <div
+                    className="bookmarks-header"
+                  >
+                    <Link
+                      replace={false}
+                      to="/@username/articles/undefined"
+                    >
+                      <h2
+                        className=""
+                      >
+                        Lorem ipsum dolor...
+                      </h2>
+                    </Link>
+                    <i
+                      className="fas fa-bookmark fa-3x bookmark-logo"
+                    />
+                  </div>
                 </div>,
-                "className": "user-section ml-10 card-bottom",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
+                <div
+                  className="text-content"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...
+                  </p>
+                  <div />
+                </div>,
+                <br />,
+                <div
+                  className="user-section"
+                >
+                  <div
+                    className="user-profile"
+                  >
                     <span>
                       <img
                         alt="user"
                         className="user-image"
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
                       />
-                    </span>,
-                    <p
-                      className="col-8 col-md-9 username"
-                      style={
-                        Object {
-                          "display": "inline-block",
-                        }
-                      }
+                    </span>
+                    <span
+                      className="username"
                     >
                       Henry Henry Henry Henry
-                    </p>,
+                    </span>
+                  </div>
+                  <div>
                     <span>
                       <Glow
                         active={true}
-                        className="col-1 glowButton"
+                        className="glowButton"
                         handleGlow={[Function]}
                       />
-                    </span>,
+                    </span>
                     <span
                       className="glow-text"
                     >
                       
-                    </span>,
+                    </span>
+                  </div>
+                </div>,
+              ],
+              "className": "bookmarks-cards",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <div
+                    className="bookmarks-header"
+                  >
+                    <Link
+                      replace={false}
+                      to="/@username/articles/undefined"
+                    >
+                      <h2
+                        className=""
+                      >
+                        Lorem ipsum dolor...
+                      </h2>
+                    </Link>
+                    <i
+                      className="fas fa-bookmark fa-3x bookmark-logo"
+                    />
+                  </div>,
+                  "className": "",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <Link
+                        replace={false}
+                        to="/@username/articles/undefined"
+                      >
+                        <h2
+                          className=""
+                        >
+                          Lorem ipsum dolor...
+                        </h2>
+                      </Link>,
+                      <i
+                        className="fas fa-bookmark fa-3x bookmark-logo"
+                      />,
+                    ],
+                    "className": "bookmarks-header",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <h2
+                          className=""
+                        >
+                          Lorem ipsum dolor...
+                        </h2>,
+                        "replace": false,
+                        "to": "/@username/articles/undefined",
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Lorem ipsum dolor...",
+                          "className": "",
+                        },
+                        "ref": null,
+                        "rendered": "Lorem ipsum dolor...",
+                        "type": "h2",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fas fa-bookmark fa-3x bookmark-logo",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "i",
+                    },
                   ],
-                  "className": "col-md-12",
+                  "type": "div",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...
+                    </p>,
+                    <div />,
+                  ],
+                  "className": "text-content",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -4271,92 +4240,212 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": <img
-                        alt="user"
-                        className="user-image"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
-                      />,
+                      "children": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...",
                     },
                     "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "alt": "user",
-                        "className": "user-image",
-                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "img",
-                    },
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Henry Henry Henry Henry",
-                      "className": "col-8 col-md-9 username",
-                      "style": Object {
-                        "display": "inline-block",
-                      },
-                    },
-                    "ref": null,
-                    "rendered": "Henry Henry Henry Henry",
+                    "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum psum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur Lor...",
                     "type": "p",
                   },
                   Object {
                     "instance": null,
                     "key": undefined,
                     "nodeType": "host",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <div
+                      className="user-profile"
+                    >
+                      <span>
+                        <img
+                          alt="user"
+                          className="user-image"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                        />
+                      </span>
+                      <span
+                        className="username"
+                      >
+                        Henry Henry Henry Henry
+                      </span>
+                    </div>,
+                    <div>
+                      <span>
+                        <Glow
+                          active={true}
+                          className="glowButton"
+                          handleGlow={[Function]}
+                        />
+                      </span>
+                      <span
+                        className="glow-text"
+                      >
+                        
+                      </span>
+                    </div>,
+                  ],
+                  "className": "user-section",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
                     "props": Object {
-                      "children": <Glow
-                        active={true}
-                        className="col-1 glowButton"
-                        handleGlow={[Function]}
-                      />,
+                      "children": Array [
+                        <span>
+                          <img
+                            alt="user"
+                            className="user-image"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                          />
+                        </span>,
+                        <span
+                          className="username"
+                        >
+                          Henry Henry Henry Henry
+                        </span>,
+                      ],
+                      "className": "user-profile",
                     },
                     "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "active": true,
-                        "className": "col-1 glowButton",
-                        "handleGlow": [Function],
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <img
+                            alt="user"
+                            className="user-image"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE"
+                          />,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "user",
+                            "className": "user-image",
+                            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0UbLajYfsrOhMGIXZBFegzgqKRidwkbGyx8KLdRefF5ZtQLE",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        "type": "span",
                       },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
-                    },
-                    "type": "span",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Henry Henry Henry Henry",
+                          "className": "username",
+                        },
+                        "ref": null,
+                        "rendered": "Henry Henry Henry Henry",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "div",
                   },
                   Object {
                     "instance": null,
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "",
-                      "className": "glow-text",
+                      "children": Array [
+                        <span>
+                          <Glow
+                            active={true}
+                            className="glowButton"
+                            handleGlow={[Function]}
+                          />
+                        </span>,
+                        <span
+                          className="glow-text"
+                        >
+                          
+                        </span>,
+                      ],
                     },
                     "ref": null,
-                    "rendered": "",
-                    "type": "span",
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Glow
+                            active={true}
+                            className="glowButton"
+                            handleGlow={[Function]}
+                          />,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "active": true,
+                            "className": "glowButton",
+                            "handleGlow": [Function],
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "",
+                          "className": "glow-text",
+                        },
+                        "ref": null,
+                        "rendered": "",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "div",
                   },
                 ],
                 "type": "div",
               },
-              "type": "div",
-            },
-          ],
+            ],
+            "type": "div",
+          },
           "type": "div",
         },
-        "type": "div",
-      },
+      ],
       "type": Symbol(react.fragment),
     },
   ],
