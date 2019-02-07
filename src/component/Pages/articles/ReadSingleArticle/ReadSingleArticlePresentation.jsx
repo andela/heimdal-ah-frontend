@@ -38,7 +38,6 @@ const ReadSingleArticlePresentation = (props) => {
         <div className="single-article-wrapper">
           <div className="bookmark-row">
             <div />
-
           </div>
           <div className="body-section">
             <div className="article-section">
