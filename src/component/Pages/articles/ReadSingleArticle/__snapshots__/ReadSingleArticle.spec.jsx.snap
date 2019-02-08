@@ -219,11 +219,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <br />,
+        <br />,
+        <br />,
+        <br />,
         <h3>
           Sorry This Article
           <br />
           oops something went wrong!
         </h3>,
+        <br />,
+        <br />,
         <br />,
         <a
           to="/"
@@ -237,6 +243,42 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -263,6 +305,24 @@ ShallowWrapper {
           "oops something went wrong!",
         ],
         "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
       },
       Object {
         "instance": null,
@@ -307,11 +367,17 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <br />,
+          <br />,
+          <br />,
+          <br />,
           <h3>
             Sorry This Article
             <br />
             oops something went wrong!
           </h3>,
+          <br />,
+          <br />,
           <br />,
           <a
             to="/"
@@ -325,6 +391,42 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -351,6 +453,24 @@ ShallowWrapper {
             "oops something went wrong!",
           ],
           "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
         },
         Object {
           "instance": null,

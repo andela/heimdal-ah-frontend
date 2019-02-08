@@ -60,7 +60,7 @@ const ReadSingleArticlePresentation = (props) => {
               {/* {props.body} */}
               <div className="bottom-details">
                 <div className='socails'>
-                  <span>
+                  {/* <span>
                     <FacebookShareButton
                       className="no-outline"
                       url={window.location}
@@ -68,7 +68,7 @@ const ReadSingleArticlePresentation = (props) => {
                     >
                       <i className="fab fa-2x fa-facebook-square facebook" />
                     </FacebookShareButton>
-                  </span>
+                  </span> */}
                   <span>
                     <TwitterShareButton
                       className="no-outline"
