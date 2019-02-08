@@ -19,6 +19,7 @@ import './ReadSingleArticle.scss';
 import ArticlesRating from '../../../ui/Rating/ArticlesRating';
 import ReportArticle from '../../../ui/Forms/ReportArticle/Index';
 import ModalButton from '../../../ui/Modal/Index';
+import Comment from '../../../ui/Comment/Comment';
 
 TimeAgo.addLocale(english);
 const timeAgo = new TimeAgo('en-US');
@@ -35,21 +36,20 @@ const ReadSingleArticlePresentation = (props) => {
       <Fragment>
         <Redirect to={`/${props.username}/articles/${props.slug}`} />
         <div className="single-article-wrapper">
-          <div className="article-header">
-            <h1>{props.title}</h1>
-          </div>
           <div className="bookmark-row">
             <div />
-            <div>
-              {auth.isAuthenticated
-                    && (props.bookmark
-                      ? <i className="fas fa-bookmark fa-3x bookmark-logo" onClick={props.deleteBookmark} />
-                      : <i className="far fa-bookmark fa-3x bookmark-logo" onClick={props.createBookmark} />)
-                }
-            </div>
           </div>
           <div className="body-section">
             <div className="article-section">
+              <div className="body-header">
+                <h1>{props.title}</h1>
+                {auth.isAuthenticated
+                  && (props.bookmark
+                    ? <i className="fas fa-bookmark fa-3x bookmark-logo" onClick={props.deleteBookmark} />
+                    : <i className="far fa-bookmark fa-3x bookmark-logo" onClick={props.createBookmark} />)
+              }
+              </div>
+              <br />
               {props.body}
               <div className="bottom-details">
                 <div>
@@ -61,7 +61,10 @@ const ReadSingleArticlePresentation = (props) => {
                   <span className='likesCount'>{ props.likesCount }</span>
                 </div>
               </div>
-              <div className="line" />
+
+              <div>
+                {props.articleId && <Comment articleId={props.articleId} />}
+              </div>
               <div className="col-md-12">
                 {auth.isAuthenticated
                     && (!author ? (
