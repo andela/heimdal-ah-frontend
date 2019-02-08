@@ -6,7 +6,7 @@
   .article-header {
     text-align: center;
     background: #6a7390;
-    font-family: "Cardo", serif;
+    font-family: "Roboto", serif;
     padding-right: 10%;
     padding-left: 10%;
     height: 200px;
@@ -23,14 +23,14 @@
     display: grid;
     grid-template-columns: 73% 27%;
     grid-gap: 1em;
-    height: 150px;
+    height: 80px;
+
     .bookmark-logo {
       color: #6a7390;
-      display:'none',
+      display:'none';
+      cursor: pointer;
     }
-    .bookmark-logo:hover {
-      color: #383e4e;
-    }
+ 
   }
 
   .body-section {
@@ -39,18 +39,56 @@
     text-align: justify;
     grid-gap: 1.5em;
     padding: 0 5%;
-    font-family: "Ovo", serif;
+    font-family: "Roboto thin", serif;
+    word-break: break-all;
+    
     .article-section {
       background-color: whitesmoke;
       white-space: normal;
       padding: 0px 20px;
-      font-size: 20px;
+      font-size: 18px;
       color: #3e4653;
       line-height: 2;
+      .body-header {
+        display: grid;
+        grid-template-columns: 95% 5%;
+        .bookmark-logo {
+          color: #6a7390;
+          display:'none';
+          cursor: pointer;
+          font-size: 40px;
+        }
+        .bookmark-logo:hover{
+          color: rgb(126, 125, 66);
+        }
+      }
       .bottom-details {
         // display: grid;
         grid-template-columns: 30% 40% 30%;
-        margin-top: 20%;
+        margin-top: 10%;
+        .ratings {
+          padding-left: 15px;
+        }
+        .socails {
+          grid-template-columns: 30% 30% 30%;
+          .span {
+            display: inline-block;
+            padding-right: 10px;
+          }
+          .facebook {
+            color: #3b5998;
+            outline: none;
+          }
+          .twitter {
+            color: #1da1f2;
+            outline: none;
+          }
+          .no-outline {
+            outline: none;
+            display: inline-block;
+            padding-right: 20px;
+          }
+        }
         .likesCount {
           margin-bottom: 2px;
         }
@@ -59,11 +97,13 @@
 
     .user-section {
       background-color: whitesmoke;
-      border: 0.5px solid #c4c4c4;
+      border: none;
+      border-radius: 10px;
       padding: 5%;
       display: grid;
       grid-template-rows: 35% 25% 30%;
-      height: 520px;
+      height: 300px;
+      box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.2);
 
       .follow-btn {
         background-color: #153771;
@@ -73,9 +113,6 @@
       .user-link {
         text-decoration: none;
         color: #6a7384;
-      }
-      .edit-btn {
-        align-self: center;
       }
 
       .user-profile {
@@ -94,22 +131,11 @@
         display: grid;
         grid-template-columns: 50% 50%;
         // margin-bottom: 60px;
-        .facebook {
-          color: #3b5998;
-          outline: none;
-        }
-        .twitter {
-          color: #1da1f2;
-          outline: none;
-        }
-        .no-outline {
-          outline: none;
-        }
       }
       
-      .no-outline {
-        outline: none;
-      }
+      // .no-outline {
+      //   outline: none;
+      // }
     }
     .glow {
       text-align: end;

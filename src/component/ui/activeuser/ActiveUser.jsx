@@ -40,26 +40,17 @@ class ActiveUser extends Component {
               {username}
             </div>
             <div>
-              <a to="/dashboard">Dashboard</a>
+              <Link to="/articles/create">Write An Article</Link>
             </div>
             <div>
-              <a href="/articles/create">Write An Article</a>
+              <Link to="/bookmarks">Bookmarks</Link>
             </div>
             <div>
-              <a to="/reading-stats">Reading Stats</a>
-            </div>
-            <div>
-              <a to="/bookmarks">Bookmarks</a>
-            </div>
-            <div>
-              <a to="/notifications">Notification</a>
-            </div>
-            <div>
-              <a to="/publication">Publication</a>
+              <Link to="/notifications">Notifications</Link>
             </div>
             <div className="user-settings">
               <div>
-                <a href={username}>Profile</a>
+                <Link to={`/${username}`}>Profile</Link>
               </div>
               <div>
                 <Link to='/' onClick={() => actions.logout()}>Logout</Link>

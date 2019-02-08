@@ -2,4 +2,7 @@
 
 .main-layout {
   background-color: $layout-bg-color;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
 }

@@ -116,9 +116,11 @@ export class ReadSingleArticle extends Component {
                   bookmark={this.state.bookmarks}
                   slug={slug}
                   author={author}
+                  readingTime={this.state.singleArticle.readingTime}
                   articleId={this.state.singleArticle.id}
                   title={this.state.singleArticle.title}
                   body={this.state.singleArticle.body}
+                  description={this.state.singleArticle.description}
                   username={profile.username}
                   time={this.state.singleArticle.createdAt}
                   likesCount={likesCount}
@@ -129,7 +131,6 @@ export class ReadSingleArticle extends Component {
               </Fragment>
             )
           }
-          {/* {this.props.singleArticle.id && <Comment articleId={this.props.singleArticle.id} />} */}
         </Fragment>
       );
     }

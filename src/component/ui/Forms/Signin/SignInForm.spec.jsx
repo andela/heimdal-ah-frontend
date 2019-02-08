@@ -23,6 +23,6 @@ describe('The Signin Component Test Suite', () => {
   });
 
   it('it should render exactly one error component', () => {
-    expect(wrapper.find(SignInError)).toHaveLength(1);
+    expect(wrapper.find(SignInError)).toHaveLength(0);
   });
 });

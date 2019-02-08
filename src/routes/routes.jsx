@@ -28,8 +28,6 @@ const Routes = () => (
       <Switch>
         <Route exact path='/' component={LandingPage} />
         <Route exact path='/social-auth' component={SocialAuth} />
-        <Route exact path='/resetpassword' component={PasswordResetPresentation} />
-        <Route exact path='/updatepassword' component={UpdatePasswordPresentation} />
         <Route exact path='/search' component={searchView} />
         <Route exact path='/all-stories' component={Articles} />
         <Route exact path='/articles/create' component={CreateArticle} />
@@ -54,6 +52,7 @@ const Routes = () => (
         <Route exact path="/reset-password" component={PasswordResetPresentation} />
         <Route exact path="/all-stories" component={Articles} />
         <Route exact path="/articles/update" component={UpdateArticlesPresentation} />
+        <Route exact path='/:username' component={Profile} />
         <ProtectedRoute exact path="/:username/edit" component={ProfileEdit} />
         <Route exact path="/articles/tag/:tagName" component={TaggedArticles} />
         <Route component={NotFound} />

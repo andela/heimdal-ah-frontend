@@ -36,7 +36,7 @@ const BookmarksCards = (props) => {
               <span className="username">{ props.username }</span>
             </div>
             <div>
-              <span><Glow className="glowButton" active handleGlow={() => {}} /></span>
+              <div />
               <span className='glow-text'>{props.glowCount}</span>
             </div>
           </div>

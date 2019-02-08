@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FormGroup, Label, Input } from 'reactstrap';
+import PropTypes from 'prop-types';
 import FormInput from '../../InputElements/FormInput';
 import LoadingSpinner from '../../loadingSpinners/LoadingSpinner';
-import SignInError from '../../errors/SignInError';
+import MainError from '../../errors/MainError';
 import './Signin.scss';
 
 /**
@@ -58,22 +60,24 @@ Remember me
               <a href="/reset-password">Forgot password?</a>
             </div>
           </div>
-          <SignInError error={error} />
           <div className="row">
             <div className="col-12 text-center">
               <LoadingSpinner isLoading={isLoading} />
             </div>
+            <MainError errors={errors} />
             <div className="col-md-8 text-left mb-10">
-              <span className="text-muted p-t-10">
-                Dont have an account?
-                {' '}
-                <Link to="/" className="link pt-2">
-                  Signup here
-                </Link>
-              </span>
+              { //   <span className="text-muted p-t-10">
+                //     Dont have an account?
+                //     {' '}
+                //     <Link to="/" className="link pt-2">
+                //       Signup here
+                //     </Link>
+                //   </span>
+              }
             </div>
+
             <div className="col-md-4 text-right">
-              <button type="submit" className="btn btn-default ph-25">
+              <button type="submit" className="btn btn-default ph-25 mx-r">
                 Sign In
               </button>
             </div>
@@ -107,4 +111,11 @@ Remember me
   );
 };
 
+SigninForm.defaultProps = {
+  isLoading: false,
+};
+
+SigninForm.propTypes = {
+  isLoading: PropTypes.bool,
+};
 export default SigninForm;

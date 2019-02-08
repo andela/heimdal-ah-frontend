@@ -17,10 +17,10 @@ const FormInput = (props = {}) => {
         onChange={onChange}
       />
       {errors[name] && errors[name].constructor === Object && (
-        <small className="text-danger h5">{errors[name].msg}</small>
+        <small className="text-danger small">{errors[name].msg}</small>
       )}
       {errors[name] && errors[name].constructor === Array && (
-        <small className="text-danger h5">{errors[name]}</small>
+        <small className="text-danger small">{errors[name]}</small>
       )}
     </div>
   );

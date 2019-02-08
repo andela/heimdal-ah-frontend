@@ -71,37 +71,27 @@ exports[`The Signin Component Test Suite should match the snapshot 1`] = `
           </a>
         </div>
       </div>
-      <SignInError />
       <div
         className="row"
       >
         <div
           className="col-12 text-center"
         >
-          <LoadingSpinner />
+          <LoadingSpinner
+            isLoading={false}
+          />
         </div>
+        <MainError
+          errors={Object {}}
+        />
         <div
           className="col-md-8 text-left mb-10"
-        >
-          <span
-            className="text-muted p-t-10"
-          >
-            Dont have an account?
-             
-            <Link
-              className="link pt-2"
-              replace={false}
-              to="/"
-            >
-              Signup here
-            </Link>
-          </span>
-        </div>
+        />
         <div
           className="col-md-4 text-right"
         >
           <button
-            className="btn btn-default ph-25"
+            className="btn btn-default ph-25 mx-r"
             type="submit"
           >
             Sign In

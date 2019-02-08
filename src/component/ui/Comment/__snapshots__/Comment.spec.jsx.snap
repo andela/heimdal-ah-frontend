@@ -26,11 +26,6 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <div
-          className="comment-header"
-        >
-          Comment
-        </div>,
         <Connect(CommentCard) />,
         <div
           className="comment__form"
@@ -41,18 +36,6 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Comment",
-          "className": "comment-header",
-        },
-        "ref": null,
-        "rendered": "Comment",
-        "type": "div",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -96,11 +79,6 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <div
-            className="comment-header"
-          >
-            Comment
-          </div>,
           <Connect(CommentCard) />,
           <div
             className="comment__form"
@@ -111,18 +89,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Comment",
-            "className": "comment-header",
-          },
-          "ref": null,
-          "rendered": "Comment",
-          "type": "div",
-        },
         Object {
           "instance": null,
           "key": undefined,
