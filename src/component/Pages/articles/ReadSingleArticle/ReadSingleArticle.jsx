@@ -129,7 +129,7 @@ export class ReadSingleArticle extends Component {
               </Fragment>
             )
           }
-          {this.props.singleArticle.id && <Comment articleId={this.props.singleArticle.id} />}
+         
         </Fragment>
       );
     }
