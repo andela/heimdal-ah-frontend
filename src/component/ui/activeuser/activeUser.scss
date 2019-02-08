@@ -3,6 +3,8 @@
     .profile-icon {
       border-radius: 50%;
       border: solid #606E86 2.5px;
+      height: 30px;
+      width: 30px;
     }
 
     .dropdown-content{
@@ -13,5 +15,8 @@
         max-width: 18ch;
       }
     }
+  }
+  .dropdown_btn_all {
+    text-align: center;
   }
 }

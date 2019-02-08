@@ -39,12 +39,14 @@ ShallowWrapper {
       "children": Array [
         <React.Fragment>
           <Connect(ReadSingleArticlePresentation)
+            active={false}
             articleId=""
             author={false}
             body=""
             bookmark={false}
             createBookmark={[Function]}
             deleteBookmark={[Function]}
+            handleGlow={[Function]}
             likesCount={0}
             slug="hello"
             title=""
@@ -64,12 +66,14 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": <Connect(ReadSingleArticlePresentation)
+            active={false}
             articleId=""
             author={false}
             body=""
             bookmark={false}
             createBookmark={[Function]}
             deleteBookmark={[Function]}
+            handleGlow={[Function]}
             likesCount={0}
             slug="hello"
             title=""
@@ -82,12 +86,14 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "active": false,
             "articleId": "",
             "author": false,
             "body": "",
             "bookmark": false,
             "createBookmark": [Function],
             "deleteBookmark": [Function],
+            "handleGlow": [Function],
             "likesCount": 0,
             "slug": "hello",
             "time": undefined,
@@ -124,12 +130,14 @@ ShallowWrapper {
         "children": Array [
           <React.Fragment>
             <Connect(ReadSingleArticlePresentation)
+              active={false}
               articleId=""
               author={false}
               body=""
               bookmark={false}
               createBookmark={[Function]}
               deleteBookmark={[Function]}
+              handleGlow={[Function]}
               likesCount={0}
               slug="hello"
               title=""
@@ -149,12 +157,14 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": <Connect(ReadSingleArticlePresentation)
+              active={false}
               articleId=""
               author={false}
               body=""
               bookmark={false}
               createBookmark={[Function]}
               deleteBookmark={[Function]}
+              handleGlow={[Function]}
               likesCount={0}
               slug="hello"
               title=""
@@ -167,12 +177,14 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "active": false,
               "articleId": "",
               "author": false,
               "body": "",
               "bookmark": false,
               "createBookmark": [Function],
               "deleteBookmark": [Function],
+              "handleGlow": [Function],
               "likesCount": 0,
               "slug": "hello",
               "time": undefined,

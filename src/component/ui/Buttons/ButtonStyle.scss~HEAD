@@ -52,8 +52,6 @@ button:active {
   &.btn-follow {
     background: $default-color;
     box-shadow: 2.5px 3.5px $shadow3;
-    border: none;
-    border-radius: 3px;
     color: $white-color;
     cursor: pointer;
     font-family: $cardo;
@@ -61,7 +59,7 @@ button:active {
     font-weight: bold;
     height: 2em;
     padding: 5px 20px;
-    width: 120px !important;
+    width: 12.2%;
   }
 
   &.btn-tag {
@@ -154,11 +152,9 @@ button:active {
     box-shadow: 1px 1.5px $shadow;
     color: $white-color;
     cursor: pointer;
-    float: right;
     font-family: $cardo;
     font-size: 1em;
     height: 2em;
-    margin: 0.5% 10% 0 0;
     padding: 1px;
     width: 14%;
   }
@@ -178,6 +174,7 @@ button:active {
   &.btn-save-profile {
     background: $btn-most;
     border-radius: 0.5em;
+    box-shadow: 3px 3px $shadow;
     color: $white-color;
     cursor: pointer;
     font-family: $cardo;
@@ -189,6 +186,7 @@ button:active {
   &.btn-cancel {
     background: $btn-most;
     border-radius: 0.5em;
+    box-shadow: 3px 3px $shadow;
     color: $white-color;
     cursor: pointer;
     font-family: $cardo;
@@ -200,8 +198,6 @@ button:active {
   &.btn-edit-profile {
     background: $white-color;
     box-shadow: 2.5px 4.5px $shadow;
-    border: none;
-    border-radius: 3px;
     color: $btn-most;
     cursor: pointer;
     font-family: $cardo;
@@ -220,6 +216,7 @@ button:active {
     font-family: $cardo;
     font-size: 0.9em;
     height: 2.5em;
+    width: 15%;
   }
 
   &.btn-comment {
@@ -230,6 +227,7 @@ button:active {
     font-family: $cardo;
     font-size: 0.9em;
     height: 2.5em;
+    width: 15%;
   }
 
   &.btn-stories {

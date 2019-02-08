@@ -1,5 +1,6 @@
 import React from 'react';
 import { range } from 'lodash';
+import { toastr as flashToast } from 'react-redux-toastr';
 import Button from '../../ui/Buttons/Button';
 import ArticleCard from '../../ui/cards/ArticleCard/ArticleCard';
 import ProfileContainer from '../../../container/Profile/ProfileContainer';
@@ -58,10 +59,15 @@ const getUserImage = (profile) => {
  * @param {string} username - logged in user
  * @returns {object} - react component
  */
-const getUserInfo = (profile, onClick, user) => {
+const getUserInfo = (profile, onClick, user, flashMessage) => {
   if (Object.keys(profile).length) {
     return (
       <div>
+        {flashMessage.showFlash && (
+        <span>
+          {flashToast[flashMessage.type](flashMessage.title, flashMessage.message)}
+        </span>
+        )}
         <h3 className="profile-name">
           {`${profile.firstName || ''} ${profile.lastName || ''}`}
         </h3>
@@ -83,7 +89,7 @@ const getUserInfo = (profile, onClick, user) => {
             ? <Button label='Edit' type='edit-profile' onClick={onClick} />
             : (
               <Button
-                label={profile.followers && profile.followers.some(item => item.followerId === user.userId) ? 'unfollow' : 'follow'}
+                label={profile.followers && profile.followers.some(item => item.followerId === user.userId) ? 'Unfollow' : 'Follow'}
                 type="follow"
                 onClick={onClick}
               />
@@ -107,6 +113,7 @@ const getProfileView = (props) => {
     profile,
     onClick,
     loggedInUser,
+    flashMessage,
     error,
   } = props;
 
@@ -120,7 +127,7 @@ const getProfileView = (props) => {
               { getUserImage(profile) }
             </div>
             <div className="col-8 mt-2">
-              { getUserInfo(profile, onClick, loggedInUser) }
+              { getUserInfo(profile, onClick, loggedInUser, flashMessage) }
             </div>
           </div>
 

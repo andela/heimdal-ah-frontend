@@ -7,6 +7,7 @@ import errorsReducer from './errorsReducer';
 import CommentHistoryReducer from './CommentHistoryReducer/CommentHistoryReducer';
 import getArticlesByIdReducer from './articlesReducers/getArticlesByIdReducer';
 import updateArticlesReducer from './articlesReducers/updateArticlesReducer';
+import NotificationReducer from './NotificationReducer/NotificationReducer';
 import {
   resetPassword,
   updatePassword,
@@ -50,6 +51,7 @@ const rootReducer = combineReducers({
   profile: profileReducer,
   home: homeReducer,
   unpublishedarticle: unPublishedArticle,
+  notification: NotificationReducer,
   getallbookmarks: getAllBookmarksReducer,
   createbookmarks: createBookmarksReducer,
   deleteBookmarks: deleteBookmarksReducer,

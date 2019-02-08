@@ -1,61 +1,76 @@
 @import '../../../../styles//variables.scss';
 
-.update-articles{
-    &.__button {
-        float: right;
-        font-size: 20px;
-        height: 2.5em;
-        margin: 2% 10.5% 0 0;
-        width: 11%;
-    }
+.update-articles {
+	&.__button {
+		background-color: $password-reset__body--color;
+		border-radius: 0.2em;
+		color: rgb(221, 218, 218);
+		cursor: pointer;
+		font-size: 1.4em;
+		height: 2em;
+    margin-left: 68%;
+    position: fixed;
+		width: 12%;
+  }
+  
+  &.__button:hover {
+    opacity: 0.9;
+  }
 
-    &.__text {
-        font-size: 1.5em;
-        margin: 1% 0 15% 0;
-        padding: 0 10%;
-        text-align: justify;
-    }
+	&.__title {
+		font-size: 2.5em;
+		font-weight: bold;
+		margin-top: 2%;
+		padding: 0 20%;
+    text-align: justify;
+  }
 
-    &.__title {
-        font-size: 3em;
-        font-weight: bold;
-        margin-top: 11%;
-        padding: 0 10%;
-        text-align: justify;
-    }
+	&.__text {
+		font-size: 1.5em;
+		padding: 0 20%;
+		text-align: justify;
+	}
 }
 
 .medium-editor-element {
-    font-family: $font-family__cardo;
-    padding-bottom: 2%;
-    white-space: normal;
+	font-family: $font-family__cardo;
+	padding-bottom: 2%;
+	white-space: normal;
 }
 
 .medium-editor-element:focus {
-    outline: 0;
+	outline: 0;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .update-articles{
-        &.__button {
-            width: 25%;
-        }
+	.update-articles {
+		&.__button {
+      margin-left: 55%;
+			width: 25%;
     }
+
+    &.__title {
+      margin-top: 1.5em;
+    }
+	}
 }
 
 @media (min-width: 1px) and (max-width: 480px) {
-    .update-articles{
-        &.__button {
-            width: 38%;
-        }
+	.update-articles {
+		&.__button {
+      font-size: 1em;
+      height: 3em;
+      margin-left: 41%;
+			width: 40%;
+		}
 
-        &.__text {
-            font-size: 1.2em;
-        }
+		&.__text {
+			font-size: 1.2em;
+		}
 
-        &.__title {
-            font-size: 1.7em;
-            margin-top: 30%;
-        }
-    }
+		&.__title {
+			font-size: 1.7em;
+			margin-top: 30%;
+		}
+	}
 }
