@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`select_reducer is correct 1`] = `
+Object {
+  "loading": false,
+  "replyError": null,
+  "status": null,
+}
+`;
+
+exports[`select_reducer returns the correct state 1`] = `
+Object {
+  "loading": false,
+  "replyError": null,
+  "status": null,
+}
+`;

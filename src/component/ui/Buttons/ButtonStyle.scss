@@ -152,9 +152,11 @@ button:active {
     box-shadow: 1px 1.5px $shadow;
     color: $white-color;
     cursor: pointer;
+    float: right;
     font-family: $cardo;
     font-size: 1em;
     height: 2em;
+    margin: 0.5% 10% 0 0;
     padding: 1px;
     width: 14%;
   }
@@ -216,7 +218,6 @@ button:active {
     font-family: $cardo;
     font-size: 0.9em;
     height: 2.5em;
-    width: 15%;
   }
 
   &.btn-comment {
@@ -227,7 +228,6 @@ button:active {
     font-family: $cardo;
     font-size: 0.9em;
     height: 2.5em;
-    width: 15%;
   }
 
   &.btn-stories {

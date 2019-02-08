@@ -40,7 +40,6 @@ describe('Password Reset Component Test Suite', () => {
       // eslint-disable-next-line react/no-children-prop
       const wrapper = shallow(<PasswordReset status="SUCCESS" children={() => {}} />);
       const e = { target: { name: 'email', value: 'Heimdal' }, preventDefault: () => {} };
-      console.log(wrapper.state().email);
 
       expect(wrapper.state().email).toEqual('');
       wrapper.instance().onHandleChange(e);

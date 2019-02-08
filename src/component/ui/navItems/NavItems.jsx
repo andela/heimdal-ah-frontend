@@ -18,7 +18,7 @@ const NavItems = () => {
       linkClass: 'nav-link',
     },
     {
-      link: '/tags',
+      link: '/articles/tag/react',
       text: 'Tags',
       isActive: false,
       linkClass: 'nav-link',
@@ -26,22 +26,19 @@ const NavItems = () => {
   ];
   return navItem.map((item, i) => (
     <div key={i}>
-      {item.isActive
-        ? (
-          <li key={i} className='nav-item'>
-            <Link className={item.linkClass} to={item.link}>
-              {item.text}
-            </Link>
-          </li>
-        )
-        : (
-          <li key={i} className='nav-item'>
-            <Link className={item.linkClass} to={item.link}>
-              {item.text}
-            </Link>
-          </li>
-        )
-        }
+      {item.isActive ? (
+        <li key={i} className="nav-item" activeClassName="active">
+          <Link className={item.linkClass} activeClassName="active" to={item.link}>
+            {item.text}
+          </Link>
+        </li>
+      ) : (
+        <li key={i} className="nav-item">
+          <Link className={item.linkClass} activeClassName="active" to={item.link}>
+            {item.text}
+          </Link>
+        </li>
+      )}
     </div>
   ));
 };

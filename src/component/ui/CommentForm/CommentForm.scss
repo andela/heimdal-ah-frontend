@@ -1,0 +1,46 @@
+@import '../../../styles/variables.scss';
+
+.form__comment {
+  font-family:$font_family_reem-kufi;
+  border-top: 1px solid $heimdal-comment-border;
+  
+  .comment__head__a {
+    font-size: 25px;
+    margin-top: 60px;
+    padding-top: 70px;
+  }
+  .comment__head__b {
+    font-size: 20px;
+  }
+  .comment-form {
+    border: 1px solid $heimdal-comment-border;
+    border-radius: 0!important; 
+    margin-right: 70px!important;
+    width: 100%;
+  }
+  
+  .flex-container__a {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px!important;
+  }
+  .flex-container__b {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .comment_check {
+    margin-right: 30px!important;
+    margin-top: 8px;
+
+  }
+
+  .private__comment {
+    margin-right: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: $heimdal-private-comment-color;
+    font-family: $font-family__cardo;
+  }
+}
+

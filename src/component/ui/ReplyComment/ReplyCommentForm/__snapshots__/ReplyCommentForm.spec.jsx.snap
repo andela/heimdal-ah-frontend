@@ -1,0 +1,440 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render the component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ReplyCommentForm
+    auth=""
+    postCommentReplies={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="error_msg"
+        >
+           
+        </div>,
+        <div
+          className="reply_input"
+        >
+          <form
+            className=""
+            onSubmit={[Function]}
+          >
+            <FormGroup
+              bsClass="form-group"
+              controlId="formControlsTextarea"
+            >
+              <FormControl
+                bsClass="form-control"
+                className="reply_form"
+                cols="80"
+                componentClass="textarea"
+                name="content"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="textarea"
+                rows="5"
+                value=""
+              />
+            </FormGroup>
+            <Button
+              Class="btn__reply"
+              label="Add Reply"
+              onClick={[Function]}
+              type="reply"
+            />
+          </form>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            false,
+          ],
+          "className": "error_msg",
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          false,
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <form
+            className=""
+            onSubmit={[Function]}
+          >
+            <FormGroup
+              bsClass="form-group"
+              controlId="formControlsTextarea"
+            >
+              <FormControl
+                bsClass="form-control"
+                className="reply_form"
+                cols="80"
+                componentClass="textarea"
+                name="content"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="textarea"
+                rows="5"
+                value=""
+              />
+            </FormGroup>
+            <Button
+              Class="btn__reply"
+              label="Add Reply"
+              onClick={[Function]}
+              type="reply"
+            />
+          </form>,
+          "className": "reply_input",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <FormGroup
+                bsClass="form-group"
+                controlId="formControlsTextarea"
+              >
+                <FormControl
+                  bsClass="form-control"
+                  className="reply_form"
+                  cols="80"
+                  componentClass="textarea"
+                  name="content"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="textarea"
+                  rows="5"
+                  value=""
+                />
+              </FormGroup>,
+              <Button
+                Class="btn__reply"
+                label="Add Reply"
+                onClick={[Function]}
+                type="reply"
+              />,
+            ],
+            "className": "",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "bsClass": "form-group",
+                "children": <FormControl
+                  bsClass="form-control"
+                  className="reply_form"
+                  cols="80"
+                  componentClass="textarea"
+                  name="content"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="textarea"
+                  rows="5"
+                  value=""
+                />,
+                "controlId": "formControlsTextarea",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "form-control",
+                  "className": "reply_form",
+                  "cols": "80",
+                  "componentClass": "textarea",
+                  "name": "content",
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "placeholder": "textarea",
+                  "rows": "5",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "Class": "btn__reply",
+                "label": "Add Reply",
+                "onClick": [Function],
+                "type": "reply",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "form",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="error_msg"
+          >
+             
+          </div>,
+          <div
+            className="reply_input"
+          >
+            <form
+              className=""
+              onSubmit={[Function]}
+            >
+              <FormGroup
+                bsClass="form-group"
+                controlId="formControlsTextarea"
+              >
+                <FormControl
+                  bsClass="form-control"
+                  className="reply_form"
+                  cols="80"
+                  componentClass="textarea"
+                  name="content"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="textarea"
+                  rows="5"
+                  value=""
+                />
+              </FormGroup>
+              <Button
+                Class="btn__reply"
+                label="Add Reply"
+                onClick={[Function]}
+                type="reply"
+              />
+            </form>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              false,
+            ],
+            "className": "error_msg",
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            false,
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <form
+              className=""
+              onSubmit={[Function]}
+            >
+              <FormGroup
+                bsClass="form-group"
+                controlId="formControlsTextarea"
+              >
+                <FormControl
+                  bsClass="form-control"
+                  className="reply_form"
+                  cols="80"
+                  componentClass="textarea"
+                  name="content"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="textarea"
+                  rows="5"
+                  value=""
+                />
+              </FormGroup>
+              <Button
+                Class="btn__reply"
+                label="Add Reply"
+                onClick={[Function]}
+                type="reply"
+              />
+            </form>,
+            "className": "reply_input",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FormGroup
+                  bsClass="form-group"
+                  controlId="formControlsTextarea"
+                >
+                  <FormControl
+                    bsClass="form-control"
+                    className="reply_form"
+                    cols="80"
+                    componentClass="textarea"
+                    name="content"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    placeholder="textarea"
+                    rows="5"
+                    value=""
+                  />
+                </FormGroup>,
+                <Button
+                  Class="btn__reply"
+                  label="Add Reply"
+                  onClick={[Function]}
+                  type="reply"
+                />,
+              ],
+              "className": "",
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "bsClass": "form-group",
+                  "children": <FormControl
+                    bsClass="form-control"
+                    className="reply_form"
+                    cols="80"
+                    componentClass="textarea"
+                    name="content"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    placeholder="textarea"
+                    rows="5"
+                    value=""
+                  />,
+                  "controlId": "formControlsTextarea",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "form-control",
+                    "className": "reply_form",
+                    "cols": "80",
+                    "componentClass": "textarea",
+                    "name": "content",
+                    "onBlur": [Function],
+                    "onChange": [Function],
+                    "placeholder": "textarea",
+                    "rows": "5",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "Class": "btn__reply",
+                  "label": "Add Reply",
+                  "onClick": [Function],
+                  "type": "reply",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "form",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
