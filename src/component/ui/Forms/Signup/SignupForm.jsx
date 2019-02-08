@@ -68,7 +68,6 @@ const SignupForm = (props) => {
           <div className="row">
             <div className="col-12 text-center">
               <LoadingSpinner isLoading={isLoading} />
-              {console.log('====================================', isLoading)}
             </div>
             <MainError errors={errors} />
             <div className="col-md-8 text-left mb-10">
