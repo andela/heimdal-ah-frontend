@@ -119,6 +119,10 @@ const ReadSingleArticlePresentation = (props) => {
                 {props.articleId && <Comment articleId={props.articleId} />}
               </div>
               <br />
+              <div>
+                {props.articleId && <Comment articleId={props.articleId} />}
+              </div>
+              <br />
             </div>
             <div className="user-section">
               <div className="user-profile">
