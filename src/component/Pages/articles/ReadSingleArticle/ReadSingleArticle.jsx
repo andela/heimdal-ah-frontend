@@ -131,11 +131,10 @@ export class ReadSingleArticle extends Component {
               </Fragment>
             )
           }
-         
         </Fragment>
       );
     }
-    return <LoadingSpinner />;
+    return null;
   }
 }
 

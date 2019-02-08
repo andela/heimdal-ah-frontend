@@ -50,6 +50,11 @@ export class BookmarksList extends Component {
     }
     return (
       <Fragment>
+        <br />
+        <br />
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;
         <h1> No bookmarks found </h1>
       </Fragment>
     );
