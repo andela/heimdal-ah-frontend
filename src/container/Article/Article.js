@@ -38,7 +38,7 @@ export class Article extends Component {
   }
 
   getUserArticles = articles => (
-    <div className="col-md-10 offset-md-1 mt-2">
+    <div className="col-md-10 offset-md-1 mt-2 pt-3">
       <div className="row publication-cards container-fluid">
         {articles ? (
           articles.map(article => (

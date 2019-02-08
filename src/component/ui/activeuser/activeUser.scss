@@ -3,6 +3,8 @@
     .profile-icon {
       border-radius: 50%;
       border: solid #606E86 2.5px;
+      height: 30px;
+      width: 30px;
     }
 
     .dropdown-content{
@@ -10,7 +12,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        max-width: 50ch;
+        max-width: 18ch;
       }
     }
   }

@@ -79,7 +79,7 @@ class TaggedArticles extends Component {
             {' '}
             {match.params.tagName}
           </h3>
-          <div className="row p-3 mb-5 mt-5">
+          <div className="row p-3 mb-5 pt-4">
             {/** Tagged Articles Section Start */}
             <div className="col-md-12">
               {taggedArticles.map(item => (

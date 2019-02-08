@@ -34,10 +34,7 @@ const ArticleCard = props => (
       <div className="card-image-container">
         <img
           className="card-image"
-          src={
-            props.image
-            || `https://picsum.photos/1200/1300/?image=${Math.trunc(Math.random() * 20)}`
-          }
+          src={props.image || `https://picsum.photos/1200/1300/?image=${props.id}`}
           alt="Card"
         />
       </div>
@@ -80,7 +77,6 @@ const ArticleCard = props => (
           <Rating />
         </div>
       </div>
-      <hr />
     </div>
   </Fragment>
 );
