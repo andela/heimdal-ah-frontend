@@ -15,7 +15,26 @@
     position: fixed;
     width: 12%;
 }
-
+@media (min-width: 768px) and (max-width: 1024px) {
+  .update-articles {
+    .post-article-button {
+ margin-left: 55%;
+      width: 25%;
+ }
+  }
+ }
+ 
+ @media (min-width: 1px) and (max-width: 480px) {
+  .update-articles {
+    .post-article-button
+ {
+ font-size: 1em;
+ height: 3em;
+ margin-left: 41%;
+      width: 40%;
+    }
+  }
+ }
 .post-article:hover {
  opacity: 0.9;
 }

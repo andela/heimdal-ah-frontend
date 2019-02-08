@@ -27,10 +27,9 @@
 
     .bookmark-logo {
       color: #6a7390;
-      display:'none';
+      display: "none";
       cursor: pointer;
     }
- 
   }
 
   .body-section {
@@ -41,7 +40,7 @@
     padding: 0 5%;
     font-family: "Roboto thin", serif;
     word-break: break-all;
-    
+
     .article-section {
       background-color: whitesmoke;
       white-space: normal;
@@ -54,16 +53,16 @@
         grid-template-columns: 95% 5%;
         .bookmark-logo {
           color: #6a7390;
-          display:'none';
+          display: "none";
           cursor: pointer;
           font-size: 40px;
         }
-        .bookmark-logo:hover{
+        .bookmark-logo:hover {
           color: rgb(126, 125, 66);
         }
       }
       .bottom-details {
-        // display: grid;
+        display: grid;
         grid-template-columns: 30% 40% 30%;
         margin-top: 10%;
         .ratings {
@@ -132,7 +131,7 @@
         grid-template-columns: 50% 50%;
         // margin-bottom: 60px;
       }
-      
+
       // .no-outline {
       //   outline: none;
       // }

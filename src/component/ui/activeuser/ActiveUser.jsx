@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './activeUser.scss';
 import NotificationDropDown from '../Notification/NotificationDropDown/NotificationDropDown';
-
+import NotificationLogo from '../../../images/non-notified.png';
 import logout from '../../../actions/auth/logout';
 
 class ActiveUser extends Component {
@@ -24,7 +24,7 @@ class ActiveUser extends Component {
         <div className="dropdown">
           <img
             className="notification_icon dropbtn"
-            src="https://res.cloudinary.com/naijavibz/image/upload/v1549376036/Icons.png"
+            src={NotificationLogo}
             alt="notification-logo"
           />
           <div className="dropdown-content">
