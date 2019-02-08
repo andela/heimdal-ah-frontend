@@ -38,7 +38,7 @@ export class Article extends Component {
   }
 
   getUserArticles = articles => (
-    <div className="col-md-10 offset-md-1 mt-2">
+    <div className="col-md-10 offset-md-1 mt-2 pt-3">
       <div className="row publication-cards container-fluid">
         {articles ? (
           articles.map(article => (
@@ -91,10 +91,10 @@ export class Article extends Component {
     const { isLoading } = this.props.articles;
     if (isLoading) {
       return (
-        <div className="container h-50">
-          <div className="row align-items-center h-50">
+        <div className="container vh-100">
+          <div className="row align-items-center h-100">
             <div className="mx-auto my-auto">
-              <div className="h-50 justify-content-center">
+              <div className="h-100 justify-content-center">
                 <LoadingSpinner isLoading />
               </div>
             </div>

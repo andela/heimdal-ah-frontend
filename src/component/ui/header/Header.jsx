@@ -19,7 +19,7 @@ const Header = ({ auth }) => {
     user: { username, image },
   } = auth;
   return (
-    <header className="header mb-5 pb-5">
+    <header className="header mb-5 pb-4">
       <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <Logo />
         <div className="collapse navbar-collapse" id="navbarCollapse">
