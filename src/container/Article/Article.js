@@ -38,16 +38,16 @@ export class Article extends Component {
   }
 
   getUserArticles = articles => (
-    <div className="col-md-10 offset-md-1 mt-2">
+    <div className="col-md-10 offset-md-1 mt-2 pt-3">
       <div className="row publication-cards container-fluid">
         {articles ? (
           articles.map(article => (
-            <div className="col-md-4" key={article.id}>
+            <div className="col-md-4 mb-5" key={article.id}>
               <ArticleCard key={article.id} {...article} />
             </div>
           ))
         ) : (
-          <p className="no-publication">No publications yet</p>
+          <p />
         )}
       </div>
     </div>
@@ -91,10 +91,10 @@ export class Article extends Component {
     const { isLoading } = this.props.articles;
     if (isLoading) {
       return (
-        <div className="container h-50">
-          <div className="row align-items-center h-50">
+        <div className="container vh-100">
+          <div className="row align-items-center h-100">
             <div className="mx-auto my-auto">
-              <div className="h-50 justify-content-center">
+              <div className="h-100 justify-content-center">
                 <LoadingSpinner isLoading />
               </div>
             </div>
@@ -107,7 +107,7 @@ export class Article extends Component {
         return (
           <div>
             <div className="mb-5 mx-auto text-center">
-              <Link to="#" onClick={this.handlePublishedClick} className="">
+              <Link to="#" onClick={this.handlePublishedClick} className="activeo">
                 Published Articles
               </Link>
               <span> | </span>
@@ -129,7 +129,7 @@ export class Article extends Component {
               Published Articles
             </Link>
             <span> | </span>
-            <Link to="#" onClick={this.handleUnpublishedClick} className="">
+            <Link to="#" onClick={this.handleUnpublishedClick} className="activeo">
               Unpublished Articles
             </Link>
           </div>

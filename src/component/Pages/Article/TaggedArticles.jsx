@@ -73,69 +73,13 @@ class TaggedArticles extends Component {
                 </span>
               </Link>
             </div>
-            <div className="col-md-1">
-              <Link to="/articles/tag/nodeJs" className="pb-2" activeClassName="btn-danger">
-                <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
-                  NodeJs
-                </span>
-              </Link>
-            </div>
-            <div className="col-md-1">
-              <Link to="/articles/tag/react" className="pb-2">
-                <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
-                  React
-                </span>
-              </Link>
-            </div>
-            <div className="col-md-1">
-              <Link to="/articles/tag/node" className="pb-2">
-                <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
-                  NodeJs
-                </span>
-              </Link>
-            </div>
-            <div className="col-md-1">
-              <Link to="/articles/tag/angular" className="pb-2">
-                <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
-                  Angular
-                </span>
-              </Link>
-            </div>
-            <div className="col-md-1">
-              <Link to="/articles/tag/nodeJs" className="pb-2" activeClassName="btn-danger">
-                <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
-                  NodeJs
-                </span>
-              </Link>
-            </div>
-            <div className="col-md-1">
-              <Link to="/articles/tag/react" className="pb-2">
-                <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
-                  React
-                </span>
-              </Link>
-            </div>
-            <div className="col-md-1">
-              <Link to="/articles/tag/node" className="pb-2">
-                <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
-                  NodeJs
-                </span>
-              </Link>
-            </div>
-            <div className="col-md-1">
-              <Link to="/articles/tag/angular" className="pb-2">
-                <span htmlFor="beauty" className="btn-badge badge badge-light h6 text-muted">
-                  Angular
-                </span>
-              </Link>
-            </div>
           </div>
           <h3 className="text-center text-muted h4 mt-4 text-capitalize">
             All articles relating to
             {' '}
             {match.params.tagName}
           </h3>
-          <div className="row p-3 mb-5 mt-5">
+          <div className="row p-3 mb-5 pt-4">
             {/** Tagged Articles Section Start */}
             <div className="col-md-12">
               {taggedArticles.map(item => (
@@ -151,14 +95,20 @@ class TaggedArticles extends Component {
     }
     if (errors && errors.mainError) {
       return (
-        <div className="col-12 text-center">
+        <div className="col-12 p-5 text-center">
           <h2>{errors.mainError}</h2>
         </div>
       );
     }
     return (
-      <div className="col-12 text-center">
-        <LoadingSpinner isLoading />
+      <div className="container vh-100">
+        <div className="row align-items-center h-100">
+          <div className="mx-auto my-auto">
+            <div className="h-100 justify-content-center">
+              <LoadingSpinner isLoading />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
