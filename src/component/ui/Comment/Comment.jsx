@@ -38,7 +38,6 @@ export class Comment extends Component {
     const { user, articleId } = this.props;
     return (
       <Fragment>
-
         <CommentCard loading={this.props.loading} />
 
         {

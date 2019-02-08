@@ -10,6 +10,7 @@ $break-large: 1200px;
   justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 60px;
+  padding-top: 80px;
 
   @media screen and (max-width: $break-small) {
     font-size: 20px!important;
@@ -27,9 +28,13 @@ $break-large: 1200px;
 
   .subscribe_btn_container button {
     font-size: 15px;
-    color: $heimdal-text-color;
-    border: 1px solid #606e86 ;
-    background-color: #606e86!important;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+    color: #fff;
+    border: 1px solid #606e86;
+    background-color: #606e86 !important;
     cursor: pointer;
   }
 }
