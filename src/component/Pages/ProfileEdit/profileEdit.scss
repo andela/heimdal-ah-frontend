@@ -31,7 +31,6 @@
       }
       
       .overlay {
-        background-color: #606E86af;
         opacity: 0.9;
         display: inline-block;
         transform: translateX(-100%);
@@ -42,6 +41,10 @@
         cursor: pointer;
         background-repeat: no-repeat;
         box-shadow: 2px 2px 5px 5px 10px #606E86;
+
+      }
+      .overlay:hover {
+        background-color: #606E866f;
       }
     }
 

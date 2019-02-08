@@ -10,17 +10,42 @@ import * as profileActions from '../../actions/profile/profileActions';
  * @returns {component} Component
  */
 class ProfileContainer extends Component {
+  state = {
+    flashMessage: {
+      showFlash: false,
+      type: 'success',
+      message: '',
+      title: '',
+    },
+  }
+
   componentDidMount() {
     const { username } = this.props;
     this.props.profileActions.getArticlesByAuthor(username);
     this.props.profileActions.getProfile(username);
   }
 
+  toggleFlashMessage = () => {
+    this.setState(prevState => ({
+      ...prevState,
+      flashMessage: {
+        showFlash: !prevState.flashMessage.showFlash,
+        type: 'warning',
+        message: 'Please login to perform this operation',
+        title: 'Follow Alert',
+      },
+    }));
+  }
+
+
   handleEditButtonClick = () => this.props.history.push(`${this.props.username}/edit`);
 
   handleFollowButtonClick = () => {
     const { user, profile: { followers, id } } = this.props;
-    if (followers.filter(item => item.followerId === user.userId).length) {
+    if (!user.userId) {
+      this.toggleFlashMessage();
+      setTimeout(this.toggleFlashMessage, 2000);
+    } else if (followers.filter(item => item.followerId === user.userId).length) {
       this.props.profileActions.unfollowUser(id, user.userId);
     } else {
       this.props.profileActions.followUser(id, user.userId);
@@ -32,6 +57,7 @@ class ProfileContainer extends Component {
     loggedInUser: this.props.user,
     articles: this.props.articles,
     profile: this.props.profile,
+    flashMessage: this.state.flashMessage,
     onClick: this.props.username === this.props.user.username
       ? this.handleEditButtonClick : this.handleFollowButtonClick,
   });
