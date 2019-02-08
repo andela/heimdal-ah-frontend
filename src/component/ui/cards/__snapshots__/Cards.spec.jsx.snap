@@ -3386,13 +3386,7 @@ ShallowWrapper {
                 </span>
               </div>
               <div>
-                <span>
-                  <Glow
-                    active={true}
-                    className="glowButton"
-                    handleGlow={[Function]}
-                  />
-                </span>
+                <div />
                 <span
                   className="glow-text"
                 >
@@ -3473,13 +3467,7 @@ ShallowWrapper {
                 </span>
               </div>
               <div>
-                <span>
-                  <Glow
-                    active={true}
-                    className="glowButton"
-                    handleGlow={[Function]}
-                  />
-                </span>
+                <div />
                 <span
                   className="glow-text"
                 >
@@ -3546,13 +3534,7 @@ ShallowWrapper {
                   </span>
                 </div>
                 <div>
-                  <span>
-                    <Glow
-                      active={true}
-                      className="glowButton"
-                      handleGlow={[Function]}
-                    />
-                  </span>
+                  <div />
                   <span
                     className="glow-text"
                   >
@@ -3728,13 +3710,7 @@ ShallowWrapper {
                     </span>
                   </div>,
                   <div>
-                    <span>
-                      <Glow
-                        active={true}
-                        className="glowButton"
-                        handleGlow={[Function]}
-                      />
-                    </span>
+                    <div />
                     <span
                       className="glow-text"
                     >
@@ -3817,13 +3793,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": Array [
-                      <span>
-                        <Glow
-                          active={true}
-                          className="glowButton"
-                          handleGlow={[Function]}
-                        />
-                      </span>,
+                      <div />,
                       <span
                         className="glow-text"
                       >
@@ -3837,28 +3807,10 @@ ShallowWrapper {
                       "instance": null,
                       "key": undefined,
                       "nodeType": "host",
-                      "props": Object {
-                        "children": <Glow
-                          active={true}
-                          className="glowButton"
-                          handleGlow={[Function]}
-                        />,
-                      },
+                      "props": Object {},
                       "ref": null,
-                      "rendered": Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "function",
-                        "props": Object {
-                          "active": true,
-                          "className": "glowButton",
-                          "handleGlow": [Function],
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": [Function],
-                      },
-                      "type": "span",
+                      "rendered": null,
+                      "type": "div",
                     },
                     Object {
                       "instance": null,
@@ -3948,13 +3900,7 @@ ShallowWrapper {
                   </span>
                 </div>
                 <div>
-                  <span>
-                    <Glow
-                      active={true}
-                      className="glowButton"
-                      handleGlow={[Function]}
-                    />
-                  </span>
+                  <div />
                   <span
                     className="glow-text"
                   >
@@ -4035,13 +3981,7 @@ ShallowWrapper {
                   </span>
                 </div>
                 <div>
-                  <span>
-                    <Glow
-                      active={true}
-                      className="glowButton"
-                      handleGlow={[Function]}
-                    />
-                  </span>
+                  <div />
                   <span
                     className="glow-text"
                   >
@@ -4108,13 +4048,7 @@ ShallowWrapper {
                     </span>
                   </div>
                   <div>
-                    <span>
-                      <Glow
-                        active={true}
-                        className="glowButton"
-                        handleGlow={[Function]}
-                      />
-                    </span>
+                    <div />
                     <span
                       className="glow-text"
                     >
@@ -4290,13 +4224,7 @@ ShallowWrapper {
                       </span>
                     </div>,
                     <div>
-                      <span>
-                        <Glow
-                          active={true}
-                          className="glowButton"
-                          handleGlow={[Function]}
-                        />
-                      </span>
+                      <div />
                       <span
                         className="glow-text"
                       >
@@ -4379,13 +4307,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": Array [
-                        <span>
-                          <Glow
-                            active={true}
-                            className="glowButton"
-                            handleGlow={[Function]}
-                          />
-                        </span>,
+                        <div />,
                         <span
                           className="glow-text"
                         >
@@ -4399,28 +4321,10 @@ ShallowWrapper {
                         "instance": null,
                         "key": undefined,
                         "nodeType": "host",
-                        "props": Object {
-                          "children": <Glow
-                            active={true}
-                            className="glowButton"
-                            handleGlow={[Function]}
-                          />,
-                        },
+                        "props": Object {},
                         "ref": null,
-                        "rendered": Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "function",
-                          "props": Object {
-                            "active": true,
-                            "className": "glowButton",
-                            "handleGlow": [Function],
-                          },
-                          "ref": null,
-                          "rendered": null,
-                          "type": [Function],
-                        },
-                        "type": "span",
+                        "rendered": null,
+                        "type": "div",
                       },
                       Object {
                         "instance": null,
