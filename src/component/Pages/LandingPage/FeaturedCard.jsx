@@ -9,7 +9,7 @@ const FeaturedCard = props => (
         <div className="card-image-container-2">
           <img
             className="card-image img-fluid"
-            src={`https://picsum.photos/1200/1300/?image=${Math.trunc(Math.random() * 20)}`}
+            src={props.image || `https://picsum.photos/1200/1300/?image=${props.id}`}
             alt="Card"
           />
         </div>
@@ -26,7 +26,10 @@ const FeaturedCard = props => (
           <div className="col-6">
             <img
               className="user-image float-left"
-              src="https://avatars.mds.yandex.net/get-pdb/938499/43932b0d-b15b-4962-ab61-cc93e0b1b5ed/orig"
+              src={
+                props.user.profile.image
+                || 'https://avatars.mds.yandex.net/get-pdb/938499/43932b0d-b15b-4962-ab61-cc93e0b1b5ed/orig'
+              }
               alt="user"
             />
             <div className="user-name pl-1">

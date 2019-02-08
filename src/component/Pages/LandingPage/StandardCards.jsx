@@ -28,7 +28,7 @@ const StanadardCard = props => (
     <div className="card-image-container">
       <img
         className="card-image img-fluid"
-        src={`https://picsum.photos/1200/1300/?image=${Math.trunc(Math.random() * 20)}`}
+        src={props.image || `https://picsum.photos/1200/1300/?image=${props.id}`}
         alt="Card"
       />
     </div>
@@ -36,12 +36,15 @@ const StanadardCard = props => (
     <div className="row mb-2">
       <div className="col-6">
         <img
-          className="user-image float-left"
-          src="https://avatars.mds.yandex.net/get-pdb/938499/43932b0d-b15b-4962-ab61-cc93e0b1b5ed/orig"
+          className="user-image float-left mt-1"
+          src={
+            props.user.profile.image
+            || 'https://avatars.mds.yandex.net/get-pdb/938499/43932b0d-b15b-4962-ab61-cc93e0b1b5ed/orig'
+          }
           alt="user"
         />
         <div className="user-name pl-1">
-          <Link to="/username">{props.user.profile.username}</Link>
+          <Link to={`/${props.user.profile.username}`}>{props.user.profile.username}</Link>
         </div>
       </div>
       <div className="col-6 mt-2 text-right">

@@ -56,7 +56,7 @@ class LandingPage extends Component {
             {/** Main Articles Section Start */}
             <div className="col-md-10">
               <div className="row">
-                {mainArticles.map(item => (
+                {mainArticles.slice(0, 6).map(item => (
                   <div className="col-md-4 mt-4" key={Math.random()}>
                     <StanadardCard {...item} />
                   </div>
@@ -115,7 +115,9 @@ class LandingPage extends Component {
                             />
                           </div>
                           <div className="col-md-9 ml-0">
-                            <span className="h6 text-muted">{`${item.title.substring(0, 15)}...`}</span>
+                            <span className="h6 text-muted">
+                              {`${item.title.substring(0, 15)}...`}
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -126,12 +128,6 @@ class LandingPage extends Component {
               </div>
             </div>
             {/** Aside Card Section End */}
-
-            <div className="text-center col-md-12 mt-5">
-              <Link to="/all-stories" className="btn btn-secondary">
-                All Stories
-              </Link>
-            </div>
           </div>
 
           {/** Recent Articles Section Start */}
