@@ -1,6 +1,8 @@
 import { ACTIONS } from '../actionTypes';
 import instance from '../../config/http';
 import { setAuthUser } from '../authActions';
+import { toggleLoader } from '../loaderActions';
+import errorResponse from '../../utils/errorResponse';
 
 export const setCurrentUser = user => ({
   type: ACTIONS.SET_AUTH_USER,
@@ -16,14 +18,32 @@ export const removeErrorMsg = () => ({
   type: ACTIONS.REMOVE_CURRENT_USER_ERROR,
 });
 
-const logIn = payload => dispatch => instance
+const logIn = (payload, toggleModal) => dispatch => instance
   .post('/auth/login', payload)
   .then((response) => {
     const { token } = response.data;
     dispatch(setAuthUser(token));
+    dispatch(toggleLoader());
+
+    setTimeout(() => {
+      dispatch(() => {
+        toggleModal();
+        return {
+          type: ACTIONS.TOGGLE_MODAL,
+        };
+      });
+    }, 200);
   })
-  .catch((error) => {
-    const { data } = error.response;
-    dispatch(setCurrentUserError(data));
+  .catch((errors = {}) => {
+    const { response = {}, request } = errors;
+
+    const data = {
+      dispatch,
+      request,
+      response,
+      errors,
+    };
+    dispatch(toggleLoader());
+    return errorResponse(data);
   });
 export default logIn;

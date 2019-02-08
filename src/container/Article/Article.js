@@ -47,7 +47,7 @@ export class Article extends Component {
             </div>
           ))
         ) : (
-          <p className="no-publication">No publications yet</p>
+          <p />
         )}
       </div>
     </div>
@@ -107,7 +107,7 @@ export class Article extends Component {
         return (
           <div>
             <div className="mb-5 mx-auto text-center">
-              <Link to="#" onClick={this.handlePublishedClick} className="">
+              <Link to="#" onClick={this.handlePublishedClick} className="activeo">
                 Published Articles
               </Link>
               <span> | </span>
@@ -129,7 +129,7 @@ export class Article extends Component {
               Published Articles
             </Link>
             <span> | </span>
-            <Link to="#" onClick={this.handleUnpublishedClick} className="">
+            <Link to="#" onClick={this.handleUnpublishedClick} className="activeo">
               Unpublished Articles
             </Link>
           </div>
