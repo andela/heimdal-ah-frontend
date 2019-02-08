@@ -120,6 +120,7 @@ export class ReadSingleArticle extends Component {
                   articleId={this.state.singleArticle.id}
                   title={this.state.singleArticle.title}
                   body={this.state.singleArticle.body}
+                  description={this.state.singleArticle.description}
                   username={profile.username}
                   time={this.state.singleArticle.createdAt}
                   likesCount={likesCount}

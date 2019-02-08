@@ -106,8 +106,11 @@ class CreateArticle extends React.Component {
         <br />
         <div className="article-create-container">
           <button type="submit" className="btn btn-secondary post-article-button" onClick={e => this.onHandleSubmit(e)}>
-          Post article
+          Create Article
           </button>
+          <br />
+          <br />
+          <br />
           <div className="create-article-container">
             <div className="create-articles __title">
               {/* <input type="text" className="title-text" /> */}
@@ -124,7 +127,7 @@ class CreateArticle extends React.Component {
             <div className="create-articles  __discription ">
               <Editor
                 tag="p"
-                data-placeholder=" decription..."
+                data-placeholder="Description..."
                 text={this.state.description}
                 onChange={this.descriptionHandleChange}
                 options={{
@@ -149,7 +152,7 @@ class CreateArticle extends React.Component {
             <div className="create-articles __discription">
               <Editor
                 tag="p"
-                data-placeholder="Type your article...."
+                data-placeholder="Tell us your story...."
                 text={this.state.body}
                 onChange={this.articleHandleChange}
                 options={{
