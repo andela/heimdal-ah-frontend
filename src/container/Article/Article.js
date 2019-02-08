@@ -42,7 +42,7 @@ export class Article extends Component {
       <div className="row publication-cards container-fluid">
         {articles ? (
           articles.map(article => (
-            <div className="col-md-4" key={article.id}>
+            <div className="col-md-4 mb-5" key={article.id}>
               <ArticleCard key={article.id} {...article} />
             </div>
           ))
