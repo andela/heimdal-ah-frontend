@@ -98,11 +98,8 @@ const ReadSingleArticlePresentation = (props) => {
                   <span className='likesCount'>{ props.likesCount }</span>
                 </div>
               </div>
-              <div className="line" />
-              <div>
-                {props.articleId && <Comment articleId={props.articleId} />}
-              </div>
-              <div className="col-md-12">
+              <br />
+              <div className="">
                 {auth.isAuthenticated
                     && (!author ? (
                       <ModalButton label="Report Article" Class="btn-danger p-2 ph-25">
@@ -117,6 +114,10 @@ const ReadSingleArticlePresentation = (props) => {
                       </Link>
                     )
                     )}
+              </div>
+              <br />
+              <div>
+                {props.articleId && <Comment articleId={props.articleId} />}
               </div>
               <br />
             </div>
