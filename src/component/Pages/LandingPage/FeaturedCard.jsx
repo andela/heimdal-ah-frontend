@@ -25,7 +25,7 @@ const FeaturedCard = props => (
         <div className="row mb-1">
           <div className="col-6">
             <img
-              className="user-image float-left"
+              className="user-image float-left mt-1"
               src={
                 props.user.profile.image
                 || 'https://avatars.mds.yandex.net/get-pdb/938499/43932b0d-b15b-4962-ab61-cc93e0b1b5ed/orig'
@@ -33,7 +33,7 @@ const FeaturedCard = props => (
               alt="user"
             />
             <div className="user-name pl-1">
-              <Link to="/username">{props.user.profile.username}</Link>
+              <Link to={`/${props.user.profile.username}`}>{props.user.profile.username}</Link>
             </div>
           </div>
         </div>

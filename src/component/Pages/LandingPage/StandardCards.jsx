@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import english from 'javascript-time-ago/locale/en';
 import moment from 'moment';
 import TimeAgo from 'javascript-time-ago';
-import Rating from '../../ui/Rating/Rating';
 import Glow from '../../ui/Buttons/glow/Glow';
 
 TimeAgo.addLocale(english);

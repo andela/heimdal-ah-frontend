@@ -33,7 +33,7 @@ const RecentCard = props => (
               alt="user"
             />
             <div className="user-name pl-1">
-              <Link to="/username">{props.user.profile.username}</Link>
+              <Link to={`/${props.user.profile.username}`}>{props.user.profile.username}</Link>
             </div>
           </div>
           <div className="col-6">

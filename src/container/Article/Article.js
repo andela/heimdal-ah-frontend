@@ -91,10 +91,10 @@ export class Article extends Component {
     const { isLoading } = this.props.articles;
     if (isLoading) {
       return (
-        <div className="container h-50">
-          <div className="row align-items-center h-50">
+        <div className="container vh-100">
+          <div className="row align-items-center h-100">
             <div className="mx-auto my-auto">
-              <div className="h-50 justify-content-center">
+              <div className="h-100 justify-content-center">
                 <LoadingSpinner isLoading />
               </div>
             </div>

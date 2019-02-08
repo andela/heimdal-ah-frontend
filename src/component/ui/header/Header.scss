@@ -1,15 +1,16 @@
-$cardo: 'Cardo', serif;
+$cardo: "Cardo", serif;
 $dropdown-content: #f1f1f1;
 $dropdown-content-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 $primary-color: #606e86;
-$secondary-color : #ffff;
-$reem-kufi: 'Reem Kufi', sans-serif;
+$secondary-color: #ffff;
+$reem-kufi: "Reem Kufi", sans-serif;
 
 .header {
   font-family: $reem-kufi;
 
   .navbar {
     background: $secondary-color;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
   }
 
   .bg-light {
@@ -60,7 +61,7 @@ $reem-kufi: 'Reem Kufi', sans-serif;
 
     &::after {
       border-bottom: 1px solid $primary-color;
-      content: '';
+      content: "";
       display: block;
       margin: 0 auto;
       margin-top: 12px;
@@ -78,7 +79,7 @@ $reem-kufi: 'Reem Kufi', sans-serif;
     background-color: $dropdown-content;
     box-shadow: $dropdown-content-shadow;
     display: none;
-    font-family: 'Cardo', serif;
+    font-family: "Cardo", serif;
     min-width: 160px;
     position: absolute;
     z-index: 1;
@@ -102,7 +103,7 @@ $reem-kufi: 'Reem Kufi', sans-serif;
     margin: 0 auto;
     width: 90%;
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
     margin-right: 60px;
