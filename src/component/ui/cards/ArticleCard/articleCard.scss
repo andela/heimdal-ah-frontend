@@ -17,6 +17,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 9ch;
+    cursor: none;
   }
 
   .card-title-link:hover {
@@ -108,4 +109,7 @@
   .glow-likes {
     font-size: 14px;
   }
+}
+.article-card:hover {
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
