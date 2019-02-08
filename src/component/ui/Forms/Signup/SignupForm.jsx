@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -70,13 +71,15 @@ const SignupForm = (props) => {
             </div>
             <MainError errors={errors} />
             <div className="col-md-8 text-left mb-10">
-              <span className="text-muted p-t-10">
-                Already have an account?
-                {' '}
-                <Link to="/" className="link pt-2">
-                  Log in here
-                </Link>
-              </span>
+              {
+                // <span className="text-muted p-t-10">
+                //   Already have an account?
+                //   {' '}
+                //   <Link to="/" className="link pt-2">
+                //     Log in here
+                //   </Link>
+                // </span>
+              }
             </div>
             <div className="col-md-4 text-right">
               <button type="submit" className="btn btn-default ph-25">

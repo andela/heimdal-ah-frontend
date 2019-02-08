@@ -3,7 +3,9 @@
 exports[`<AuthContainer /> should render the AuthContainer component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <AuthContainer>
+  Symbol(enzyme.__unrendered__): <AuthContainer
+    isLoading={false}
+  >
     [Function]
   </AuthContainer>,
   Symbol(enzyme.__renderer__): Object {
@@ -41,7 +43,9 @@ ShallowWrapper {
 exports[`<AuthContainer /> should render the AuthContainer component 2`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <AuthContainer>
+  Symbol(enzyme.__unrendered__): <AuthContainer
+    isLoading={false}
+  >
     [Function]
   </AuthContainer>,
   Symbol(enzyme.__renderer__): Object {

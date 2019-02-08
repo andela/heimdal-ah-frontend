@@ -1,9 +1,11 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import signin, { removeErrorMsg } from '../actions/auth/signin';
 // import validateLoginInput from '../validations/authValidations';
 import { validateLogin } from '../helpers/validateInputs';
 import { removeAnError, setErrors, clearErrors } from '../actions/errorActions';
+import { toggleLoader } from '../actions/loaderActions';
 
 /**
  * @description - Helps a user resets his password
@@ -42,39 +44,55 @@ export class AuthContainer extends Component {
  * @param {props} e - event recieved
  */
   onLoginSubmit = (e) => {
-    const { actions } = this.props;
     e.preventDefault();
+    const { actions, toggle: toggleModal } = this.props;
     this.setState({ isLoading: true });
+    actions(toggleLoader());
     const errors = validateLogin(this.state);
     if (errors) {
+      actions(toggleLoader());
       this.setState({ isLoading: false });
       return actions(setErrors(errors.errors));
     }
 
     actions(clearErrors());
-    return actions(signin(this.state));
+    return actions(signin(this.state, toggleModal));
   };
 
   /**
  * @description - send props function
  * @param {returns} e - props
  */
-  sendProps = () => ({
-    ...this.props,
-    ...this.state,
-    onChange: this.onChange,
-    onLoginSubmit: this.onLoginSubmit,
-  })
+  sendProps = () => {
+    const { isLoading } = this.props;
+    return (
+      {
+        ...this.props,
+        ...this.state,
+        onChange: this.onChange,
+        onLoginSubmit: this.onLoginSubmit,
+        isLoading,
+      });
+  }
 
   render() {
     return this.props.children(this.sendProps());
   }
 }
 
+AuthContainer.defaultProps = {
+  isLoading: false,
+};
+AuthContainer.propTypes = {
+  toggle: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool,
+};
+
 const mapStateToProps = state => ({
   auth: state.auth.isAuthenticated,
   error: state.auth.error,
   errors: state.errors,
+  isLoading: state.loader.isLoading,
 });
 
 const matchDispatchToProps = dispatch => ({
