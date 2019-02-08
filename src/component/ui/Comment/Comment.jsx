@@ -39,17 +39,18 @@ export class Comment extends Component {
     return (
       <Fragment>
 
-        { user.isAuthenticated
-          ? (
+        <CommentCard loading={this.props.loading} />
 
-            <CommentCard loading={this.props.loading} />
-          )
-          : ''
+        {
+          user.user.userId
+            ? (
+              <div className='comment__form'>
+                <CommentForm articleId={articleId} />
+              </div>
+            )
+            : ''
         }
 
-        <div className='comment__form'>
-          <CommentForm articleId={articleId} />
-        </div>
       </Fragment>
     );
   }

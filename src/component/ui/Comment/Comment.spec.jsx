@@ -14,6 +14,9 @@ describe('rendering', () => {
       comment: '',
       user: {
         isAuthenticated: true,
+        user: {
+          userId: 1,
+        },
       },
     };
   });
