@@ -43,7 +43,6 @@ export class PasswordUpdate extends Component {
     const { password, confirmpassword } = this.state;
     const token = new URLSearchParams(window.location.search).get('token');
     if (password === confirmpassword) {
-      feedback.success('Loading...', 'Loading please be patient');
       // eslint-disable-next-line react/destructuring-assignment
       this.props.actions(updatePassword(token, { password, confirmpassword }));
     } else {

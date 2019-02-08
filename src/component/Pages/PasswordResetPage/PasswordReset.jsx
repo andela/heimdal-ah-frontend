@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
-import { toastr as feedback } from 'react-redux-toastr';
 import PropTypes from 'prop-types';
 import './PasswordReset.scss';
 import resetPassword from '../../../actions/PasswordReset/resetPasswordActions';
@@ -38,7 +37,6 @@ export class PasswordReset extends Component {
  * @returns {component} null
  */
   onHandleSubmit(e) {
-    feedback.success('Loading...', 'Loading, please be patient');
     const { email } = this.state;
     e.preventDefault();
     // eslint-disable-next-line react/destructuring-assignment
