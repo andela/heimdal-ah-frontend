@@ -34,7 +34,7 @@ export class Article extends Component {
     if ([1, 3].includes(this.props.user.roleId)) {
       getUnpublishedArticles();
     }
-    getArticlesByPage(3, 0);
+    getArticlesByPage(12, 0);
   }
 
   getUserArticles = articles => (
@@ -67,7 +67,7 @@ export class Article extends Component {
 
   onChange = (pageNumber) => {
     const { getArticlesByPage } = this.props.actions;
-    const size = 3;
+    const size = 12;
     if (pageNumber === 1) {
       const offset = size * pageNumber - pageNumber;
       getArticlesByPage(size, offset);
