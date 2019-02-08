@@ -19,6 +19,7 @@ import './ReadSingleArticle.scss';
 import ArticlesRating from '../../../ui/Rating/ArticlesRating';
 import ReportArticle from '../../../ui/Forms/ReportArticle/Index';
 import ModalButton from '../../../ui/Modal/Index';
+import Comment from '../../../ui/Comment/Comment';
 
 TimeAgo.addLocale(english);
 const timeAgo = new TimeAgo('en-US');
@@ -62,6 +63,9 @@ const ReadSingleArticlePresentation = (props) => {
                 </div>
               </div>
               <div className="line" />
+              <div>
+                {props.articleId && <Comment articleId={props.articleId} />}
+              </div>
               <div className="col-md-12">
                 {auth.isAuthenticated
                     && (!author ? (

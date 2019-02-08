@@ -34,11 +34,7 @@ export class CommentForm extends Component {
    }
 
    onBlur = (e) => {
-     if (e.target.value === '') {
-       this.setState({
-         commentError: 'Content cannot be Empty',
-       });
-     } else {
+     if (e.target.value !== '') {
        this.setState({
          formIsValid: true,
          commentError: '',
@@ -92,7 +88,6 @@ export class CommentForm extends Component {
        <div className='container form__comment'>
          <div className='comment__head'>
            <p className='comment__head__a'>ADD COMMENT</p>
-           <p className='comment__head__b'>Comment</p>
          </div>
          <div>
            {' '}
@@ -109,16 +104,15 @@ export class CommentForm extends Component {
                name='content'
                className='comment-form'
                rows="7"
-               cols="70"
-               placeholder="textarea"
+               cols="7"
              />
            </FormGroup>
            <div className='flex-container__a'>
              <div className="form-check flex-container__b">
-               <div className='private__comment'>Make it Private</div>
                <div className='comment_check'>
                  <input type="checkbox" name='checkbox' onChange={e => this.onCheck(e)} className="form-check" value={!checkbox} />
                </div>
+               <div className='private__comment'>Make it Private</div>
              </div>
              <Button type="comment" className='comment-button' label="Add Comment" />
            </div>

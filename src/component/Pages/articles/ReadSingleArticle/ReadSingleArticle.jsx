@@ -14,7 +14,7 @@ import getAllBookmarksAction from '../../../../actions/ArticleActions/bookmarksA
 import createBookmarkAction from '../../../../actions/ArticleActions/bookmarksAction/createBookmarkAction';
 import deleteBookmarksActions from '../../../../actions/ArticleActions/bookmarksAction/deleteBookmarksActions';
 import LoadingSpinner from '../../../ui/loadingSpinners/LoadingSpinner';
-import Comment from '../../../ui/Comment/Comment';
+
 
 /**
  * @description - Read a single article posted by a user
@@ -129,7 +129,7 @@ export class ReadSingleArticle extends Component {
               </Fragment>
             )
           }
-          {this.props.singleArticle.id && <Comment articleId={this.props.singleArticle.id} />}
+          {/* {this.props.singleArticle.id && <Comment articleId={this.props.singleArticle.id} />} */}
         </Fragment>
       );
     }
