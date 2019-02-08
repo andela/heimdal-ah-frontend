@@ -83,7 +83,7 @@ ProfileEdit.profile = (data) => {
         />
 
         <div className="text-right">
-          <Button type="save-profile" label="Save Profile" onClick={event => data.handleSubmit(event)} />
+          <Button type="save-profile" label="Save" onClick={event => data.handleSubmit(event)} />
           <Button type="cancel" label="Cancel" onClick={event => data.handleCancel(event)} />
         </div>
       </form>

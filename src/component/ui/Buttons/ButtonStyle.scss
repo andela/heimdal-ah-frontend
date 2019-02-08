@@ -52,6 +52,8 @@ button:active {
   &.btn-follow {
     background: $default-color;
     box-shadow: 2.5px 3.5px $shadow3;
+    border: none;
+    border-radius: 3px;
     color: $white-color;
     cursor: pointer;
     font-family: $cardo;
@@ -176,7 +178,6 @@ button:active {
   &.btn-save-profile {
     background: $btn-most;
     border-radius: 0.5em;
-    box-shadow: 3px 3px $shadow;
     color: $white-color;
     cursor: pointer;
     font-family: $cardo;
@@ -188,7 +189,6 @@ button:active {
   &.btn-cancel {
     background: $btn-most;
     border-radius: 0.5em;
-    box-shadow: 3px 3px $shadow;
     color: $white-color;
     cursor: pointer;
     font-family: $cardo;
@@ -200,6 +200,8 @@ button:active {
   &.btn-edit-profile {
     background: $white-color;
     box-shadow: 2.5px 4.5px $shadow;
+    border: none;
+    border-radius: 3px;
     color: $btn-most;
     cursor: pointer;
     font-family: $cardo;
