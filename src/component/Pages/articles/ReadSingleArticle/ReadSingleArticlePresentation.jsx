@@ -49,29 +49,75 @@ const ReadSingleArticlePresentation = (props) => {
                     : <i className="far fa-bookmark fa-3x bookmark-logo" onClick={props.createBookmark} />)
               }
               </div>
+              <p>
+                {timeAgo.format(moment(props.time).valueOf())}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {props.readingTime}
+              </p>
+              <p>{}</p>
               <br />
-              {props.body}
+              <div dangerouslySetInnerHTML={{ __html: props.body }} />
+              {/* {props.body} */}
               <div className="bottom-details">
-                <div>
+                <div className='socails'>
+                  <span>
+                    <FacebookShareButton
+                      className="no-outline"
+                      url={window.location}
+                      quote={props.title}
+                    >
+                      <i className="fab fa-2x fa-facebook-square facebook" />
+                    </FacebookShareButton>
+                  </span>
+                  <span>
+                    <TwitterShareButton
+                      className="no-outline"
+                      url={window.location}
+                      title={`Kindly check out this awesome article ${
+                        props.title
+                      } on Heimdal.com`}
+                    >
+                      <i className="fab fa-2x fa-twitter-square twitter" />
+                    </TwitterShareButton>
+                  </span>
+                  <span>
+                    <EmailShareButton
+                      className="no-outline"
+                      subject={props.title}
+                      body={`Kindly check out this awesome article ${window.location} on Heimdal.com`}
+                    >
+                      <i className="fa fa-2x fa-envelope" />
+                    </EmailShareButton>
+                  </span>
+                </div>
+                <div className="ratings">
                   {props.articleId && <ArticlesRating articleId={props.articleId} />}
                 </div>
-                <div className='ratings' />
                 <div className='glow'>
                   <Glow active={props.active} handleGlow={props.handleGlow} />
                   <span className='likesCount'>{ props.likesCount }</span>
                 </div>
               </div>
-
-              <div>
-                {props.articleId && <Comment articleId={props.articleId} />}
-              </div>
-              <div className="col-md-12">
+              <br />
+              <div className="">
                 {auth.isAuthenticated
                     && (!author ? (
                       <ModalButton label="Report Article" Class="btn-danger p-2 ph-25">
                         <ReportArticle articleId={props.articleId} />
                       </ModalButton>
-                    ) : null)}
+                    ) : (
+                      <Link
+                        to={`/update-articles?id=${props.articleId}`}
+                        className="btn btn-secondary p-70 ph-25"
+                      >
+                    Edit
+                      </Link>
+                    )
+                    )}
+              </div>
+              <br />
+              <div>
+                {props.articleId && <Comment articleId={props.articleId} />}
               </div>
             </div>
             <div className="user-section">
@@ -83,54 +129,9 @@ const ReadSingleArticlePresentation = (props) => {
                   <h2>{username}</h2>
                 </a>
                 <br />
-                <h4>{timeAgo.format(moment(props.time).valueOf())}</h4>
-                <br />
-
-                {auth.isAuthenticated
-                    && (author ? (
-                      <Link
-                        to={`/update-articles?id=${props.articleId}`}
-                        className="btn btn-secondary"
-                      >
-                        edit
-                      </Link>
-                    ) : (
-                      <button className="btn follow-btn" type="submit">
-                        follow
-                      </button>
-                    ))}
-                <br />
-                <br />
-                <div className="social-media">
-                  <FacebookShareButton
-                    className="no-outline"
-                    url={window.location}
-                    quote={props.title}
-                  >
-                    <i className="fab fa-4x fa-facebook-square facebook" />
-                    <div>Share</div>
-                  </FacebookShareButton>
-                  <TwitterShareButton
-                    className="no-outline"
-                    url={window.location}
-                    title={`Kindly check out this awesome article ${
-                      props.title
-                    } on Heimdal.com`}
-                  >
-                    <i className="fab fa-4x fa-twitter-square twitter" />
-                    <div>Share</div>
-                  </TwitterShareButton>
-                </div>
-                <div className="text-center col-12">
-                  <EmailShareButton
-                    className="no-outline"
-                    subject={props.title}
-                    body={`Kindly check out this awesome article ${window.location} on Heimdal.com`}
-                  >
-                    <i className="fa fa-4x fa-envelope" />
-                    <div>Share</div>
-                  </EmailShareButton>
-                </div>
+                <button className="btn follow-btn" type="submit">
+                        Follow
+                </button>
               </div>
             </div>
             <div />

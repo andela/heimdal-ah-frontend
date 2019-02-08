@@ -4,7 +4,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Editor from 'react-medium-editor';
 import Alert from '../../../ui/Alert/Alert';
-import Button from '../../../ui/Buttons/Button';
 import checkArticleDetails from '../../../../utils/createArticle';
 import './CreateArticle.scss';
 import { createArticleAction } from '../../../../actions/ArticleActions/CreateArticle/createArticleActions';
@@ -97,88 +96,81 @@ class CreateArticle extends React.Component {
         {alert === 'FAILURE' && (<Alert type="warning" title="All fields should be filled" message="Error : Article was not posted" />)}
         {alert === 'FAILED' && (<Alert type="warning" title="Exceeded max Character in text feilds" message="Error : Article was not posted" />)}
         {status === 'FAILURE' && (<Alert type="warning" title="user should be logged in" message="please log-in" />)}
-        <Button
+        {/* <Button
           type="article"
           label="Post Article"
           Class="update-articles __button"
           onClick={e => this.onHandleSubmit(e)}
-        />
-        <div className="create-article-container">
-          <br />
-          <div className="create-articles __title">
-            <Editor
-              tag="pre"
-              data-placeholder="Type your title...."
-              text={this.state.title}
-              onChange={this.titleHandleChange}
-              options={{
-                toolbar: {
-                  buttons: [
-                    'bold',
-                    'italic',
-                    'underline',
-                    'anchor',
-                    'h2',
-                    'h3',
-                    'quote',
-                    'html',
-                    'strikethrough',
-                    'subscript',
-                    'superscript',
-                  ],
-                },
-              }}
-            />
-          </div>
-          <div className="create-articles __text">
-            <Editor
-              tag="pre"
-              data-placeholder="Type your decription...."
-              text={this.state.description}
-              onChange={this.descriptionHandleChange}
-              options={{
-                toolbar: {
-                  buttons: [
-                    'bold',
-                    'italic',
-                    'underline',
-                    'anchor',
-                    'h2',
-                    'h3',
-                    'quote',
-                    'html',
-                    'strikethrough',
-                    'subscript',
-                    'superscript',
-                  ],
-                },
-              }}
-            />
-          </div>
-          <div className="create-articles __text">
-            <Editor
-              tag="pre"
-              data-placeholder="Type your article...."
-              text={this.state.body}
-              onChange={this.articleHandleChange}
-              options={{
-                toolbar: {
-                  buttons: [
-                    'bold',
-                    'italic',
-                    'underline',
-                    'anchor',
-                    'h2',
-                    'h3',
-                    'quote',
-                    'html',
-                    'strikethrough',
-                    'subscript',
-                    'superscript',
-                  ],
-                },
-              }}
-            />
+        /> */}
+        <br />
+        <br />
+        <div className="article-create-container">
+          <button type="submit" className="btn btn-secondary post-article-button" onClick={e => this.onHandleSubmit(e)}>
+          Post article
+          </button>
+          <div className="create-article-container">
+            <div className="create-articles __title">
+              {/* <input type="text" className="title-text" /> */}
+              <Editor
+                tag="p"
+                data-placeholder="Title..."
+                text={this.state.title}
+                onChange={this.titleHandleChange}
+                options={{
+                  toolbar: false,
+                }}
+              />
+            </div>
+            <div className="create-articles  __discription ">
+              <Editor
+                tag="p"
+                data-placeholder=" decription..."
+                text={this.state.description}
+                onChange={this.descriptionHandleChange}
+                options={{
+                  toolbar: {
+                    buttons: [
+                      'bold',
+                      'italic',
+                      'underline',
+                      'anchor',
+                      'h2',
+                      'h3',
+                      'quote',
+                      'html',
+                      'strikethrough',
+                      'subscript',
+                      'superscript',
+                    ],
+                  },
+                }}
+              />
+            </div>
+            <div className="create-articles __discription">
+              <Editor
+                tag="p"
+                data-placeholder="Type your article...."
+                text={this.state.body}
+                onChange={this.articleHandleChange}
+                options={{
+                  toolbar: {
+                    buttons: [
+                      'bold',
+                      'italic',
+                      'underline',
+                      'anchor',
+                      'h2',
+                      'h3',
+                      'quote',
+                      'html',
+                      'strikethrough',
+                      'subscript',
+                      'superscript',
+                    ],
+                  },
+                }}
+              />
+            </div>
           </div>
         </div>
       </Fragment>
