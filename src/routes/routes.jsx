@@ -5,7 +5,6 @@ import NotFound from '../component/Pages/NotFound.jsx';
 import MainLayout from '../component/Layout/MainLayout/MainLayout';
 import CreateArticle from '../component/Pages/articles/createArticle/CreateArticles';
 import SingleArticlePage from '../component/Pages/articles/ReadSingleArticle/ReadSingleArticle';
-import HomePage from '../component/Pages/HomePage.jsx';
 import SocialAuth from '../component/ui/SocialAuth/SocialAuth';
 import PasswordResetPresentation from '../component/Pages/PasswordResetPage/PasswordResetPresentation';
 import UpdatePasswordPresentation from '../component/Pages/PasswordResetPage/UpdatePasswordPresentation';
